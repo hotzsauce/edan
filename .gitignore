@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# data for this instance of the package
+edan/data/warehouse/
+
 # C extensions
 *.so
 
