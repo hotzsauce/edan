@@ -5,6 +5,8 @@ __pycache__/
 
 # data for this instance of the package
 edan/data/warehouse/
+edan/data/.api_keys.json
+edan/data/.inventory.json
 
 # C extensions
 *.so
