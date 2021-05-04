@@ -6,7 +6,7 @@ and other interest rate-related markets
 'edan' <- e(conomic) d(ata) an(alysis)
 """
 
-import edan.gdp
+import edan.nipa
 import edan.fetch
 
-__all__ = ['gdp', 'fetch']
+__all__ = ['nipa', 'fetch']
