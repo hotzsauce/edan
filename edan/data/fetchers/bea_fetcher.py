@@ -1,5 +1,5 @@
 """
-
+fetcher for Bureau of Economic Analysis data
 """
 
 from edan.data.fetchers.base import EdanFetcher

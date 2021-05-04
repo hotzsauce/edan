@@ -1,5 +1,5 @@
 """
-accessing underlying pandas Series and DataFrames of pandas data objects
+accessing underlying pandas Series and DataFrames of edan data objects
 """
 
 from __future__ import annotations
