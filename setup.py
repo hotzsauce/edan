@@ -22,9 +22,11 @@ setup(
 	install_requires = [
 		'numpy',
 		'pandas',
+		'pyarrow',
 		'matplotlib',
 		'fredapi',
-		'beapy'
+		'beapy',
+		'funnelmap'
 	],
 	include_package_data = True,
 	classifiers = [
