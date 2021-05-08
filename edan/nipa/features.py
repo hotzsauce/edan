@@ -8,7 +8,7 @@ might involve data from other related GDP compoonents
 from __future__ import annotations
 
 
-from edan.gdp.base import ABCComponent
+from edan.nipa.base import ABCComponent
 
 
 class Feature(object):

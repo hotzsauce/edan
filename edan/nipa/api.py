@@ -6,7 +6,7 @@ from __future__ import annotations
 
 from copy import deepcopy
 
-from edan.gdp.registering import decode_registry
+from edan.nipa.registering import decode_registry
 
 
 

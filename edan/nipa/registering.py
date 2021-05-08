@@ -7,7 +7,7 @@ from __future__ import annotations
 import json
 import pathlib
 
-from edan.gdp.components import (
+from edan.nipa.components import (
 	Component
 )
 

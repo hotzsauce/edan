@@ -1,5 +1,6 @@
-from edan.gdp.components import Component
+from edan.nipa.components import Component
 
+"""
 from edan.gdp.api import (
 	GDP,
 	GDPTable
@@ -15,3 +16,4 @@ from edan.gdp.registering import (
 	register_component,
 	update_registry
 )
+"""

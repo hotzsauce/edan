@@ -10,19 +10,14 @@ from edan.containers import (
 	CompoundStorage
 )
 
-from edan.gdp.base import ABCComponent
+from edan.nipa.base import ABCComponent
 
-from edan.gdp.features import (
+from edan.nipa.features import (
 	Nominal,
 	Contribution
 )
 
-from edan.gdp.modifications import ModificationAccessor
-
-from edan.fetch.get import (
-	get_series,
-	get_metadata
-)
+from edan.nipa.modifications import ModificationAccessor
 
 from edan.plotting.gdp import GDPPlotAccessor
 
@@ -34,10 +29,10 @@ class GDPSeries(CoreSeries):
 		name: str, code: str, gtype: str, obj: Component,
 		*args, **kwargs
 	):
-		data = get_series(code) if code else None
-		super().__init__(name, data)
+		# data = get_series(code) if code else None
+		# super().__init__(name, data)
 
-		self.meta = get_metadata(code)
+		# self.meta = get_metadata(code)
 		self.code = code
 		self.gtype = gtype
 		self.obj = obj
