@@ -23,102 +23,96 @@ class EdanDataRetriever(object):
 	def __init__(self):
 		pass
 
-	def retrieve_data(self, code: str, source: str = ''):
-
+	def retrieve(
+		self,
+		code: str,
+		source: str = '',
+		*init_args, **init_kwargs
+	):
+		""" """
 		if code in inventory:
-			return self.retrieve_data_from_warehouse(code)
+			return self.retrieve_from_warehouse(code)
 
 		if source:
 			fetcher = fetchers_by_source[source]
 
+			if isinstance(fetcher, type):
+				# this fetcher hasn't been initialized yet. use provided
+				#	initialization args & kwargs
+				fetcher = fetcher(*init_args, **init_kwargs)
+				fetchers_by_source[source] = fetcher
+
 			data, meta = fetcher.fetch(code)
-			self.save_fetched_data_to_warehouse(data, meta)
-			return data.squeeze().dropna(axis='index', how='all')
+			self.save_fetched_info_to_warehouse(data, meta)
+			return data, meta
 
-		return self.retrieve_data_no_source(code)
+		raise NotImplementedError("cannot retrieve without source yet")
 
-	def retrieve_data_from_warehouse(self, code: str):
+
+	def retrieve_from_warehouse(self, code: str):
 		"""
-		retrieve & return economic data from parquet file in the warehouse
+		retrieve & return the economic & meta data from the parquet files
+		in the warehouse
 
 		Parameters
 		----------
 		code : str
 			data series identifier
 		"""
+		# retrieving data
 		source, freq = inventory[code]
 		path = warehouse / source / f'{freq}.parquet'
 		data = self.load_parquet(path, columns=[code])
 
-		return data.squeeze().dropna(axis='index', how='all')
+		path = warehouse / source / 'metadata.parquet'
+		meta = self.load_parquet(path, columns=[code])
 
-	def retrieve_data_no_source(self, code: str):
-		"""
-		retrieve & store economic data & associated metadata from the source API,
-		and return the data Series
+		return data, meta
 
-		Parameters
-		----------
-		code : str
-			data series identifier
-		"""
+
+	def retrieve_no_source(self, code: str):
+		raise NotImplementedError("retrieve_no_source")
+
 		for fetcher in fetchers_by_source.values():
+			if isinstance(fetcher, type):
+				# this fetcher has not been initialized
+				fetcher = fetcher(*init_args, **init_kwargs)
+
 			try:
 				data, meta = fetcher.fetch(code)
 				self.save_fetched_data_to_warehouse(data, meta)
 				return data.squeeze().dropna(axis='index', how='all')
+
 			except:
 				pass
 
-	def retrieve_metadata(self, code: str, source: str = ''):
-		if code in inventory:
-			return self.retrieve_metadata_from_warehouse(code)
+		raise ValueError(
+			"could not retrieve data without 'source' parameter in 'retrieve_data' "
+			"method. either the Fetcher's API wasn't initialized or 'code' did "
+			"not match identifiers for any API"
+		)
 
-		if source:
-			fetcher = fetchers_by_source[source]
 
-			data, meta = fetcher.fetch(code)
-			self.save_fetched_data_to_warehouse(data, meta)
-			return meta.squeeze()
+	def retrieve_data(
+		self,
+		code: str,
+		source: str = '',
+		*init_args, **init_kwargs
+	):
+		data, meta = self.retrieve(code, source, *init_args, **init_kwargs)
+		return data.squeeze().dropna(axis='index', how='all')
 
-		return self.retrieve_metadata_no_source(code)
 
-	def retrieve_metadata_from_warehouse(self, code: str):
-		"""
-		retrieve & return metadata from parquet file in the warehouse
-
-		Parameters
-		----------
-		code : str
-			data series identifier
-		"""
-		source, _ = inventory[code]
-		path = warehouse / source / 'metadata.parquet'
-		meta = self.load_parquet(path, columns=[code])
-
+	def retrieve_metadata(
+		self,
+		code: str,
+		source: str = '',
+		*init_args, **init_kwargs
+	):
+		data, meta = self.retrieve(code, source, *init_args, **init_kwargs)
 		return meta.squeeze()
 
-	def retrieve_metadata_no_source(self, code: str):
-		"""
-		retrieve & store economic data & associated metadata from the source API,
-		and return the metadata Series
-
-		Parameters
-		----------
-		code : str
-			data series identifier
-		"""
-		for fetcher in fetchers_by_source.values():
-			try:
-				data, meta = fetcher.fetch(code)
-				self.save_fetched_data_to_warehouse(data, meta)
-				return meta.squeeze()
-			except:
-				pass
-
-		raise ValueError(f"{repr(code)} is not recognized by any saved Fetcher")
-
-	def save_fetched_data_to_warehouse(
+	def save_fetched_info_to_warehouse(
 		self,
 		data: Series,
 		meta: Series
