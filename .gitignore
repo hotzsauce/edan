@@ -8,6 +8,9 @@ edan/data/warehouse/
 edan/data/.api_keys.json
 edan/data/.inventory.json
 
+edan/data/aliases/warehouse/
+
+
 # C extensions
 *.so
 
