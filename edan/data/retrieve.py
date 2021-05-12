@@ -1,5 +1,5 @@
 """
-
+retrieving data from API sources & storing it in the local data warehouse
 """
 
 from __future__ import annotations
@@ -13,6 +13,9 @@ from edan.data.fetchers import (
 	EdanFetcher,
 	fetchers_by_source
 )
+
+from edan.data.aliases import alias_maps
+
 
 warehouse = pathlib.Path(__file__).parent / 'warehouse'
 
@@ -29,7 +32,52 @@ class EdanDataRetriever(object):
 		source: str = '',
 		*init_args, **init_kwargs
 	):
-		""" """
+		"""
+		retrieve and return both economic data and metadata for data series
+		corresponding to `code`. if this data has already been retrieved from
+		the appropriate fetcher, then the saved data is read in & from the
+		parquet files in the data/warehouse directory. if not, the fetcher
+		uses the API to pull the data, which is then formatted to be consistent
+		with the `edan` data style, then saved, then finally both the data and
+		metadata are returned.
+
+		Parameters
+		----------
+		code : str
+			the code referencing the desired series. the alias maps are checked
+			in case the provided `code` is an alias
+		source : str ( = '' )
+			the source api that hosts the series' data & metadata. built-in
+			sources are FRED (mortadata/fredapi), BEA (hotzsauce/beapy), and
+			AlphaVantage (RomelTorres/alpha_vantage). although this parameter
+			is not required as per the method definition, doing a blind retrieval
+			on all the saved fetchers is not implemented yet
+		*init_args : positional arguments
+			initialization arguments in case the source API key is not saved
+		*init_kwargs : keyword arguments
+			initialization arguments in case the source API key is not saved
+
+		TODO
+		----
+			- blind retrieval when `source` is not provided
+			- AlphaVantage API
+
+		Returns
+		-------
+		2-tuple of pandas DataFrame
+			data, metadata
+		"""
+
+		# retrieve the 'official' identifier in case this code is an alias
+		fm = alias_maps[source]
+		try:
+			code = fm[code]
+		except KeyError:
+			# `code` might be a code I haven't constructed a crosswalk for
+			pass
+
+
+		# retrieving stored data or fetching from API
 		if code in inventory:
 			return self.retrieve_from_warehouse(code)
 
@@ -46,7 +94,7 @@ class EdanDataRetriever(object):
 			self.save_fetched_info_to_warehouse(data, meta)
 			return data, meta
 
-		raise NotImplementedError("cannot retrieve without source yet")
+		raise NotImplementedError("cannot retrieve without `source` yet")
 
 
 	def retrieve_from_warehouse(self, code: str):
@@ -69,30 +117,6 @@ class EdanDataRetriever(object):
 
 		return data, meta
 
-
-	def retrieve_no_source(self, code: str):
-		raise NotImplementedError("retrieve_no_source")
-
-		for fetcher in fetchers_by_source.values():
-			if isinstance(fetcher, type):
-				# this fetcher has not been initialized
-				fetcher = fetcher(*init_args, **init_kwargs)
-
-			try:
-				data, meta = fetcher.fetch(code)
-				self.save_fetched_data_to_warehouse(data, meta)
-				return data.squeeze().dropna(axis='index', how='all')
-
-			except:
-				pass
-
-		raise ValueError(
-			"could not retrieve data without 'source' parameter in 'retrieve_data' "
-			"method. either the Fetcher's API wasn't initialized or 'code' did "
-			"not match identifiers for any API"
-		)
-
-
 	def retrieve_data(
 		self,
 		code: str,
@@ -101,7 +125,6 @@ class EdanDataRetriever(object):
 	):
 		data, meta = self.retrieve(code, source, *init_args, **init_kwargs)
 		return data.squeeze().dropna(axis='index', how='all')
-
 
 	def retrieve_metadata(
 		self,
