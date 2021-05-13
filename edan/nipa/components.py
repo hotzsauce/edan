@@ -10,7 +10,7 @@ from edan.containers import (
 	CompoundStorage
 )
 
-from edan.nipa.base import ABCComponent
+from edan.data.retrieve import retriever
 
 from edan.nipa.features import (
 	Nominal,
@@ -26,15 +26,15 @@ class GDPSeries(CoreSeries):
 
 	def __init__(
 		self,
-		name: str, code: str, gtype: str, obj: Component,
+		code: str, dtype: str, obj: Component,
 		*args, **kwargs
 	):
-		# data = get_series(code) if code else None
-		# super().__init__(name, data)
+		data, meta = retriever.retrieve(code)
+		super().__init__(code, data)
 
-		# self.meta = get_metadata(code)
+		self.meta = meta
 		self.code = code
-		self.gtype = gtype
+		self.dtype = dtype
 		self.obj = obj
 
 
@@ -45,56 +45,54 @@ class GDPSeries(CoreSeries):
 	modify = CachedAccessor('modify', ModificationAccessor)
 
 
-class Component(CompoundStorage, ABCComponent):
+class Component(CompoundStorage):
 	"""
-	a collection of GDPSeries, usually just a real level series & a price index
-	series that represents a single GDP component.
-
-	Attributes
-	----------
-	name : str
-		the human-readable name of the GDP component; e.g. 'bfi' or 'serv'
+	a collection of GDPSeries that represents a single Component
 	"""
-
-
-	def __init__(self, name: str,
-		level_code: str = '', price_code: str = '',
-		subs: list = [], sups: list = [],
-		long_name: str = '', short_name: str = ''
+	def __init__(
+		self,
+		code: str,
+		qcode: str = '',
+		pcode: str = '',
+		ncode: str = '',
+		rcode: str = '',
+		level: int = 0,
+		subs: list = [],
+		sups: str = '',
+		long_name: str = '',
+		short_name: str = ''
 	):
 		# initialize CompoundStorage class with attribute names that hold data
-		super().__init__(fields=('level', 'price'))
+		super().__init__(fields=('quantity', 'price', 'nominal', 'real'))
 
-		self.name = name
-		self.level_code = level_code
-		self.price_code = price_code
+		# various codes for referencing the different data comprising this Component
+		self.code = code
+		self.qcode = qcode
+		self.pcode = pcode
+		self.ncode = ncode
+		self.rcode = rcode
 
-		# sub- and super-components. when initialized via .from_json, these are
-		#	component names, but later converted to Components in edan.gdp.api
-		self._subs = subs
-		self._sups = sups
+		# attributes about relations to other Components
+		self.level = level
+		self.subs = subs
+		self.sups = sups
 
+		# display names
 		self.long_name = long_name
 		self.short_name = short_name
 
-		# attributes for GDPSeries
-		self._level, self._price = None, None
-
-
 	@property
-	def level(self):
+	def quantity(self):
 		"""
-		access the GDPSeries corresponding to the real level of this Component.
+		access the GDPSeries corresponding to the quantity index of this Component.
 		It's implemented this way, and not with @cached_property, because I don't
 		think the decorator could tell if attributes of the GDPSeries were changed
 		"""
-		if self._level:
-			return self._level
+		if hasattr(self, '_quantity'):
+			return self._quantity
 		else:
-			name = f"{self.name}_level"
-			self._level = GDPSeries(name, self.level_code, 'level', self)
-			return self._level
-
+			self._quantity = GDPSeries(self.qcode, 'quantity', self)
+			return self._quantity
 
 	@property
 	def price(self):
@@ -103,52 +101,59 @@ class Component(CompoundStorage, ABCComponent):
 		It's implemented this way, and not with @cached_property, because I don't
 		think the decorator could tell if attributes of the GDPSeries were changed
 		"""
-		if self._price:
+		if hasattr(self, '_price'):
 			return self._price
 		else:
-			name = f"{self.name}_price"
-			self._price = GDPSeries(name, self.price_code, 'price', self)
+			self._price = GDPSeries(self.pcode, 'price', self)
 			return self._price
 
+	@property
+	def nominal(self):
+		"""
+		access the GDPSeries corresponding to the nominal level of this Component.
+		It's implemented this way, and not with @cached_property, because I don't
+		think the decorator could tell if attributes of the GDPSeries were changed
+		"""
+		if hasattr(self, '_nominal'):
+			return self._nominal
+		else:
+			self._nominal = GDPSeries(self.ncode, 'nominal', self)
+			return self._nominal
 
 	@property
-	def subs(self):
-		return self.subcomponents
-
-	@property
-	def subcomponents(self):
-		return self._subs
-
-
-	def __getitem__(self, key):
-		"""indexing into Component returns a subcomponent by name"""
-		names = [sc.name for sc in self._subs]
-		try:
-			idx = names.index(key)
-			return self._subs[idx]
-		except ValueError:
-			raise KeyError(f"'{key}' is not a subcomponent of {self.short_name}")
-
+	def real(self):
+		"""
+		access the GDPSeries corresponding to the real level of this Component.
+		It's implemented this way, and not with @cached_property, because I don't
+		think the decorator could tell if attributes of the GDPSeries were changed
+		"""
+		if hasattr(self, '_real'):
+			return self._real
+		else:
+			self._real = GDPSeries(self.rcode, 'real', self)
+			return self._real
 
 	@classmethod
-	def from_json(cls, d):
-		"""
-		classmethod for constructing a Component instance from the existing
-		json registry
-		"""
+	def from_registry(self, dct: dict):
 		return Component(
-			d['name'], d['level'], d['price'], d['subs'], d['sups'],
-			d['long_name'], d['short_name']
+			dct['code'],
+			dct['quantity'],
+			dct['price'],
+			dct['nominal'],
+			dct['real'],
+			dct['level'],
+			dct['subs'],
+			dct['sups'],
+			dct['long_name'],
+			dct['short_name']
 		)
 
-
 	def __repr__(self):
-		return f"Component[{self.name}]"
-
+		return f"Component({self.code}: {self.level})"
 
 	# add accessor for plotting
 	plot = CachedAccessor('plot', GDPPlotAccessor)
 
 	# add accessors for common features
-	nominal = CachedAccessor('nominal', Nominal)
+	# nominal = CachedAccessor('nominal', Nominal)
 	contribution = CachedAccessor('contribution', Contribution)
