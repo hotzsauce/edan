@@ -4,6 +4,7 @@ accessing underlying pandas Series and DataFrames of edan data objects
 
 from __future__ import annotations
 
+import pandas as pd
 
 class _GenericIndexer(object):
 
@@ -12,7 +13,6 @@ class _GenericIndexer(object):
 		self.obj = obj
 
 	def concat(self, objs):
-		import pandas as pd
 
 		series = []
 		for o in objs:
@@ -45,7 +45,6 @@ class _LocIndexer(_GenericIndexer):
 	accessing data in underlying fields by index keys
 	"""
 	def __getitem__(self, key):
-
 		data = [getattr(self.obj, f).data for f in self.obj.fields]
 
 		df = self.concat(data)
