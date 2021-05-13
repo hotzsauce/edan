@@ -68,6 +68,10 @@ class EdanDataRetriever(object):
 			data, metadata
 		"""
 
+		# if this code doesn't need to be translated, return immediately
+		if code in inventory:
+			return self.retrieve_from_warehouse(code)
+
 		# retrieve the 'official' identifier in case this code is an alias
 		fm = alias_maps[source]
 		try:
