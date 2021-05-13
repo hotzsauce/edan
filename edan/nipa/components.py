@@ -29,17 +29,21 @@ class GDPSeries(CoreSeries):
 		code: str, dtype: str, obj: Component,
 		*args, **kwargs
 	):
-		data, meta = retriever.retrieve(code)
-		super().__init__(code, data)
+		if code:
+			data, meta = retriever.retrieve(code, source=obj.source)
+			super().__init__(code, data)
 
-		self.meta = meta
-		self.code = code
+			self.meta = meta
+		else:
+			super().__init__(code)
+			self.meta = None
+
 		self.dtype = dtype
 		self.obj = obj
 
 
 	def __repr__(self):
-		return f"GDPSeries({self.name})"
+		return f"GDPSeries({self.code})"
 
 	# add accessor for functions of data
 	modify = CachedAccessor('modify', ModificationAccessor)
@@ -57,10 +61,9 @@ class Component(CompoundStorage):
 		ncode: str = '',
 		rcode: str = '',
 		level: int = 0,
-		subs: list = [],
-		sups: str = '',
 		long_name: str = '',
-		short_name: str = ''
+		short_name: str = '',
+		source: str = ''
 	):
 		# initialize CompoundStorage class with attribute names that hold data
 		super().__init__(fields=('quantity', 'price', 'nominal', 'real'))
@@ -74,12 +77,13 @@ class Component(CompoundStorage):
 
 		# attributes about relations to other Components
 		self.level = level
-		self.subs = subs
-		self.sups = sups
+		self.subs = []
+		self.sups = ''
 
-		# display names
+		# display names & source api
 		self.long_name = long_name
 		self.short_name = short_name
+		self.source = source
 
 	@property
 	def quantity(self):
@@ -142,14 +146,13 @@ class Component(CompoundStorage):
 			dct['nominal'],
 			dct['real'],
 			dct['level'],
-			dct['subs'],
-			dct['sups'],
 			dct['long_name'],
-			dct['short_name']
+			dct['short_name'],
+			dct['source']
 		)
 
 	def __repr__(self):
-		return f"Component({self.code}: {self.level})"
+		return f"Component({self.code}, {self.level})"
 
 	# add accessor for plotting
 	plot = CachedAccessor('plot', GDPPlotAccessor)
