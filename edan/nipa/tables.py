@@ -28,9 +28,9 @@ class TableIterator(object):
 		return self
 
 	def __next__(self):
-		idx += 1
+		self.idx += 1
 		try:
-			return self.data[self.idx-1]
+			return self.data[self.idx+1]
 		except IndexError:
 			self.idx = 0
 			raise StopIteration
@@ -132,7 +132,7 @@ class NIPATable(object):
 		return self.rows[key]
 
 	def __iter__(self):
-		return TableIterator(self.rows)
+		return TableIterator(list(self.rows.keys()))
 
 	def __repr__(self):
 		return f"{self.category} Table"
