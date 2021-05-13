@@ -8,9 +8,6 @@ might involve data from other related GDP compoonents
 from __future__ import annotations
 
 
-from edan.nipa.base import ABCComponent
-
-
 class Feature(object):
 	"""
 	Features are intented to be CachedAccessors of Components, or used via the
