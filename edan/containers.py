@@ -12,8 +12,8 @@ from edan.indexing import CompoundAccessor
 
 class CoreSeries(EdanObject):
 
-	def __init__(self, name='', data=None):
-		self.name = name
+	def __init__(self, code='', data=None):
+		self.code = code
 		self.data = data
 
 	def resample(self, rule, **kwargs):
@@ -46,10 +46,10 @@ class CoreSeries(EdanObject):
 				self.data = self.data.resample(rule, **kwargs)
 				return None
 			else:
-				return CoreSeries(self.name, self.data.resample(rule, **kwargs))
+				return CoreSeries(self.code, self.data.resample(rule, **kwargs))
 
 		except AttributeError:
-			raise ValueError(f"CoreSeries {repr(self.name)} has no data to resample")
+			raise ValueError(f"CoreSeries {repr(self.code)} has no data to resample")
 
 
 class CompoundStorage(CompoundAccessor, EdanObject):
