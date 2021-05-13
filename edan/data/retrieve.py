@@ -111,10 +111,14 @@ class EdanDataRetriever(object):
 		code : str
 			data series identifier
 		"""
-		# retrieving data
+		# retrieving data source & frequency
 		source, freq = inventory[code]
+
+		# the datetime index is stored as a string (requirement of parquet)
+		#	so we cast to datetime  here
 		path = warehouse / source / f'{freq}.parquet'
 		data = self.load_parquet(path, columns=[code])
+		data.index = pd.to_datetime(data.index)
 
 		path = warehouse / source / 'metadata.parquet'
 		meta = self.load_parquet(path, columns=[code])
