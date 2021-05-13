@@ -5,7 +5,6 @@ module that prepares the GDP component tree
 from __future__ import annotations
 
 
-# new structure
 from edan.algos import construct_forest
 
 from edan.nipa.tables import NIPATable
