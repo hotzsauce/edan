@@ -1,6 +1,6 @@
 """
 wrapping the matplotlib.pyplot package so the user doesn't have to import
-both `dover` and `matplotlib.pyplot`
+both `edan` and `matplotlib.pyplot`
 """
 
 import matplotlib.pyplot as _plt
