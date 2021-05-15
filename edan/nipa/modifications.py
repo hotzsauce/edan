@@ -1,5 +1,5 @@
 """
-module for functions of time series data of the GDPSeries
+module for functions of time series data of the NIPASeries
 """
 
 from __future__ import annotations
