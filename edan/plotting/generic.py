@@ -1,5 +1,5 @@
 """
-
+generic plotting classes shared across the different plot accessors
 """
 
 from __future__ import annotations
@@ -25,10 +25,9 @@ class GenericPlotAccessor(object):
 	):
 		"""
 		interpolate the data, if need be. this method is associated with the
-		GenericPlotManager, as opposed to the PlotDataManager because interpolating
-		the data is necessary because of the plotting limitations (pandas
-		interprets NaNs as breaks in the lines), and not because of any
-		data manipulations
+		GenericPlotManager, as opposed to the PlotDataManager, because the need
+		to interpolate the data is due to plotting limitations (pandas interprets
+		NaNs as breaks in lines), and not because of any data manipulations
 
 		Parameters
 		----------
@@ -58,14 +57,16 @@ class PlotDataManager(object):
 		'A': 12, 'Q': 20, 'M': 60, 'W': 260, 'D': 365*5
 	}
 
-	def __init__(self, objs: Iterable[DoverObject]):
+	def __init__(self, objs: Iterable[EdanObject]):
 		self.objs = [deepcopy(obj) for obj in objs]
 
 
 	def select_containers(self, attr: str):
 		"""
 		in the case that self.objs don't hold the data themselves, but instead
-		hold containers of the data, we save references to those containers that
+		hold containers of the data, (e.g. a Component object will hold NIPASeries
+		in one of the attrs in {'quantity', 'price', 'nominal', 'real'}, which
+		in turn store data) we save references to those containers that
 		are held in `obj.attr` for all the objects in self.objs
 
 		Parameters
@@ -82,7 +83,8 @@ class PlotDataManager(object):
 	def merge_print_data(self, objs):
 		"""
 		concatenate an iterable of pandas Series/DataFrames together into the
-		final DataFrame that will be printed.
+		final DataFrame that will be printed. observations where all series are
+		NaN are dropped.
 
 		Parameters
 		----------
@@ -111,7 +113,10 @@ class PlotDataManager(object):
 
 			1) [start not provided], [end not provided], [periods not provided]
 				last observation printed is the final observation of dataset.
-				number of periods printed is set according to _default_periods
+				number of periods printed is set according to _default_periods:
+					self._default_periods = {
+						'A': 12, 'Q': 20, 'M': 60, 'W': 260, 'D': 365*5
+					}
 
 			2) [start not provided], [end not provided], [periods provided]
 				last observation printed is the final observation of dataset.
@@ -202,14 +207,20 @@ class PlotDataManager(object):
 	def series_names(self, names: Union[str, list], *args):
 		""" """
 		if not names:
-			# using short human-readable names
+			# using  human-readable names
 			objs = self.objs
 			name_list = list()
 			for obj in objs:
+
 				entry = obj.short_name
+				if entry == '':
+					entry = obj.long_name
+
 				for arg in args:
 					entry += f" {arg.capitalize()}"
+
 				name_list.append(entry)
+
 			return name_list
 
 		elif names == 'codes':
