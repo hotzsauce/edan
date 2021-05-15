@@ -84,7 +84,7 @@ def infer_freq_by_series(obj) -> Union[str, List[str]]:
 	Returns
 	-------
 	str | List[str]
-		if `obj` was a single pandss Series or CoreSeries, a string is returned.
+		if `obj` was a single pandas Series or CoreSeries, a string is returned.
 		otherwise, a list of frequency strings is returned
 	"""
 
