@@ -1,5 +1,5 @@
 """
-module for gdp components
+module for NIPA components
 """
 
 from __future__ import annotations
@@ -19,10 +19,10 @@ from edan.nipa.features import (
 
 from edan.nipa.modifications import ModificationAccessor
 
-from edan.plotting.gdp import GDPPlotAccessor
+from edan.plotting.nipa import NIPAPlotAccessor
 
 
-class GDPSeries(CoreSeries):
+class NIPASeries(CoreSeries):
 
 	def __init__(
 		self,
@@ -43,7 +43,7 @@ class GDPSeries(CoreSeries):
 
 
 	def __repr__(self):
-		return f"GDPSeries({self.code})"
+		return f"NIPASeries({self.code})"
 
 	# add accessor for functions of data
 	modify = CachedAccessor('modify', ModificationAccessor)
@@ -51,7 +51,7 @@ class GDPSeries(CoreSeries):
 
 class Component(CompoundStorage):
 	"""
-	a collection of GDPSeries that represents a single Component
+	a collection of NIPASeries that represents a single Component
 	"""
 	def __init__(
 		self,
@@ -88,53 +88,53 @@ class Component(CompoundStorage):
 	@property
 	def quantity(self):
 		"""
-		access the GDPSeries corresponding to the quantity index of this Component.
+		access the NIPASeries corresponding to the quantity index of this Component.
 		It's implemented this way, and not with @cached_property, because I don't
-		think the decorator could tell if attributes of the GDPSeries were changed
+		think the decorator could tell if attributes of the NIPASeries were changed
 		"""
 		if hasattr(self, '_quantity'):
 			return self._quantity
 		else:
-			self._quantity = GDPSeries(self.qcode, 'quantity', self)
+			self._quantity = NIPASeries(self.qcode, 'quantity', self)
 			return self._quantity
 
 	@property
 	def price(self):
 		"""
-		access the GDPSeries corresponding to the price index of this Component.
+		access the NIPASeries corresponding to the price index of this Component.
 		It's implemented this way, and not with @cached_property, because I don't
-		think the decorator could tell if attributes of the GDPSeries were changed
+		think the decorator could tell if attributes of the NIPASeries were changed
 		"""
 		if hasattr(self, '_price'):
 			return self._price
 		else:
-			self._price = GDPSeries(self.pcode, 'price', self)
+			self._price = NIPASeries(self.pcode, 'price', self)
 			return self._price
 
 	@property
 	def nominal(self):
 		"""
-		access the GDPSeries corresponding to the nominal level of this Component.
+		access the NIPASeries corresponding to the nominal level of this Component.
 		It's implemented this way, and not with @cached_property, because I don't
-		think the decorator could tell if attributes of the GDPSeries were changed
+		think the decorator could tell if attributes of the NIPASeries were changed
 		"""
 		if hasattr(self, '_nominal'):
 			return self._nominal
 		else:
-			self._nominal = GDPSeries(self.ncode, 'nominal', self)
+			self._nominal = NIPASeries(self.ncode, 'nominal', self)
 			return self._nominal
 
 	@property
 	def real(self):
 		"""
-		access the GDPSeries corresponding to the real level of this Component.
+		access the NIPASeries corresponding to the real level of this Component.
 		It's implemented this way, and not with @cached_property, because I don't
-		think the decorator could tell if attributes of the GDPSeries were changed
+		think the decorator could tell if attributes of the NIPASeries were changed
 		"""
 		if hasattr(self, '_real'):
 			return self._real
 		else:
-			self._real = GDPSeries(self.rcode, 'real', self)
+			self._real = NIPASeries(self.rcode, 'real', self)
 			return self._real
 
 	@classmethod
@@ -155,7 +155,7 @@ class Component(CompoundStorage):
 		return f"Component({self.code}, {self.level})"
 
 	# add accessor for plotting
-	plot = CachedAccessor('plot', GDPPlotAccessor)
+	plot = CachedAccessor('plot', NIPAPlotAccessor)
 
 	# add accessors for common features
 	# nominal = CachedAccessor('nominal', Nominal)
