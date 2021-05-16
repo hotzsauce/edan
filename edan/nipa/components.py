@@ -4,6 +4,8 @@ module for NIPA components
 
 from __future__ import annotations
 
+import re
+
 from edan.accessors import CachedAccessor
 from edan.containers import (
 	CoreSeries,
@@ -12,11 +14,7 @@ from edan.containers import (
 
 from edan.data.retrieve import retriever
 
-from edan.nipa.features import (
-	Nominal,
-	Contribution
-)
-
+from edan.nipa.features import Contribution
 from edan.nipa.modifications import ModificationAccessor
 
 from edan.plotting.nipa import NIPAPlotAccessor
@@ -53,6 +51,9 @@ class Component(CompoundStorage):
 	"""
 	a collection of NIPASeries that represents a single Component
 	"""
+
+	edan_delimiters = (':', '+', '-')
+
 	def __init__(
 		self,
 		code: str,
@@ -84,6 +85,38 @@ class Component(CompoundStorage):
 		self.long_name = long_name
 		self.short_name = short_name
 		self.source = source
+
+
+
+	def __getitem__(self, key: str):
+		if self.elemental:
+			raise TypeError(f"{repr(self)} is an elemental component")
+
+		subs = [s.code for s in self.subs]
+		try:
+			# assume `key` is the entire code of a subcomponent
+			idx = subs.index(key)
+			return self.subs[idx]
+
+		except ValueError:
+			# `key` is a partial code of the subcomponent
+
+			regex_pattern = '|'.join(map(re.escape, self.edan_delimiters))
+			split_code = re.split(regex_pattern, self.code)
+			split_key = re.split(regex_pattern, key)
+
+			overlap = len(split_key) - 1
+			full_key = ':'.join(split_code[:overlap]) + ':' + key
+
+			idx = subs.index(full_key)
+			return self.subs[idx]
+
+	@property
+	def elemental(self):
+		"""return True if there are no subcomponents"""
+		if self.subs:
+			return False
+		return True
 
 	@property
 	def quantity(self):
@@ -158,5 +191,4 @@ class Component(CompoundStorage):
 	plot = CachedAccessor('plot', NIPAPlotAccessor)
 
 	# add accessors for common features
-	# nominal = CachedAccessor('nominal', Nominal)
 	contribution = CachedAccessor('contribution', Contribution)
