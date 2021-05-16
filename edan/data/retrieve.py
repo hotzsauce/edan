@@ -20,7 +20,6 @@ from edan.data.aliases import alias_maps
 warehouse = pathlib.Path(__file__).parent / 'warehouse'
 
 
-
 class EdanDataRetriever(object):
 
 	def __init__(self):
@@ -80,7 +79,6 @@ class EdanDataRetriever(object):
 			# `code` might be a code I haven't constructed a crosswalk for
 			pass
 
-
 		# retrieving stored data or fetching from API
 		if code in inventory:
 			return self.retrieve_from_warehouse(code)
@@ -96,7 +94,7 @@ class EdanDataRetriever(object):
 
 			data, meta = fetcher.fetch(code)
 			self.save_fetched_info_to_warehouse(data, meta)
-			return data, meta
+			return data.squeeze().dropna(how='all', axis='index'), meta
 
 		raise NotImplementedError("cannot retrieve without `source` yet")
 
@@ -123,7 +121,7 @@ class EdanDataRetriever(object):
 		path = warehouse / source / 'metadata.parquet'
 		meta = self.load_parquet(path, columns=[code])
 
-		return data, meta
+		return data.squeeze().dropna(how='all', axis='index'), meta
 
 	def retrieve_data(
 		self,
