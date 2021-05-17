@@ -12,6 +12,8 @@ from edan.containers import (
 	CompoundStorage
 )
 
+from edan.delims import concat_codes
+
 from edan.data.retrieve import retriever
 
 from edan.nipa.features import Contribution
@@ -90,7 +92,10 @@ class Component(CompoundStorage):
 
 	def __getitem__(self, key: str):
 		if self.elemental:
-			raise TypeError(f"{repr(self)} is an elemental component")
+			raise ValueError(f"{repr(self)} is an elemental component")
+
+		if not isinstance(key, str):
+			raise TypeError(f"'key' must be a string")
 
 		subs = [s.code for s in self.subs]
 		try:
@@ -99,17 +104,16 @@ class Component(CompoundStorage):
 			return self.subs[idx]
 
 		except ValueError:
-			# `key` is a partial code of the subcomponent
+			# `key` is relative to the code of this component
 
-			regex_pattern = '|'.join(map(re.escape, self.edan_delimiters))
-			split_code = re.split(regex_pattern, self.code)
-			split_key = re.split(regex_pattern, key)
-
-			overlap = len(split_key) - 1
-			full_key = ':'.join(split_code[:overlap]) + ':' + key
-
-			idx = subs.index(full_key)
-			return self.subs[idx]
+			full_key = concat_codes(self.code, key)
+			try:
+				idx = subs.index(full_key)
+				return self.subs[idx]
+			except ValueError:
+				raise KeyError(
+					f"{repr(key)} does not match a subcomponent of {repr(self)}"
+				) from None
 
 	@property
 	def elemental(self):
