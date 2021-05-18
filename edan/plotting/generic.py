@@ -11,7 +11,7 @@ from edan.utils.ts import (
 	infer_freq,
 	infer_freq_by_series
 )
-
+from edan.utils.dtypes import iterable_not_string
 
 class GenericPlotAccessor(object):
 
@@ -201,13 +201,39 @@ class PlotDataManager(object):
 			f"unable to interpret plotting dataset from 'start': {repr(start)}, "
 			f"'end': {repr(end)}, 'periods': {repr(periods)}."
 		)
-		raise KeyError(msg)
+		raise ValueError(msg)
 
 
-	def series_names(self, names: Union[str, list], *args):
-		""" """
-		if not names:
-			# using  human-readable names
+	def series_names(self, names: Union[str, list] = '', *args):
+		"""
+		create a list of series name to display in the plot legend. the names
+		are based on information stored in the `containers` or `objs` attribute.
+
+		Parameters
+		----------
+		names : str | list ( = '' )
+			if not provided, the stored human-readable names will be used in
+			the legend. additional identifiers are appended to each legend
+			entry through the `args` parameter. if `names` is a list, that list
+			is returned without alteration. if `names = 'codes'`, the `edan`
+			code is used.
+		args : positional arguments
+			terms to add to each entry of `names` if it's not provided
+
+		Returns
+		-------
+		list
+		"""
+		if names == 'codes':
+			# using `edan` codes of data containers
+			return [c.code for c in self.containers]
+
+		elif iterable_not_string(names):
+			# don't edit any provided names
+			return names
+
+		elif not names:
+			# if `names` is not provided, use the saved human-readable names
 			objs = self.objs
 			name_list = list()
 			for obj in objs:
@@ -223,13 +249,7 @@ class PlotDataManager(object):
 
 			return name_list
 
-		elif names == 'codes':
-			return [c.code for c in self.containers]
-
-		elif isinstance(names, list):
-			return names
-
-		raise TypeError(f"cannot interpret legend entries: {repr(names)}")
+		raise ValueError(f"cannot interpret legend entries: {repr(names)}")
 
 
 	@property
