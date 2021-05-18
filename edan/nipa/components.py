@@ -4,8 +4,6 @@ module for NIPA components
 
 from __future__ import annotations
 
-import re
-
 from edan.accessors import CachedAccessor
 from edan.containers import (
 	CoreSeries,
