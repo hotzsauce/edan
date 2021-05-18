@@ -33,6 +33,7 @@ class NIPAPlotAccessor(GenericPlotAccessor):
 		end: Union[str, bool, Timestamp] = '',
 		periods: Union[int, str] = 0,
 		subs: Union[bool, str, Iterable[str]] = True,
+		level: int = 0,
 		names: Union[str, list] = '',
 		interp: Union[str, dict] = 'linear',
 		*args, **kwargs
@@ -87,13 +88,16 @@ class NIPAPlotAccessor(GenericPlotAccessor):
 			in which case every period will be plotted, regardless of what
 			values of `start` and `end` are provided
 
-		subs : bool | Iterable[str] ( = True )
+		subs : bool | Iterable[str] | str ( = True )
 			the subcomponents to include in the plot. if True (default), all
 			subcomponents, and the top-level component, are plotted. if False,
-			just the top-level component are shown. if an iterable of
-			subcomponent names, only those components (along with the top-level)
-			are displayed. if a string, top-level and chosen subcomponent are
-			shown
+			just the top-level component is shown. if an iterable of subcomponent
+			names, or single name, only those components (along with the top-
+			level component) are displayed.
+
+		level : int ( = 0 )
+			the level, relative to the top-level Component, of subcomponents that
+			are to be plotted.
 
 		names : str | list ( = '' )
 			specifying the names that appear in the axis legend. by default the
@@ -131,12 +135,12 @@ class NIPAPlotAccessor(GenericPlotAccessor):
 
 		objs = [self.obj]
 		if iterable_not_string(subs):
-			subcomponents = self.obj.disaggregate(subs)
+			subcomponents = self.obj.disaggregate(subs, level)
 			objs.extend(list(subcomponents))
 
 		else:
 			if isinstance(subs, str):
-				subcomponent = self.obj.disaggregate([subs])
+				subcomponent = self.obj.disaggregate(subs, level)
 				objs.append(subcomponent)
 
 			elif isinstance(subs, bool):
