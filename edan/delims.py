@@ -16,9 +16,25 @@ delim_pattern = '|'.join(map(re.escape, edan_delimiters))
 class EdanCode(object):
 
 	def __init__(self, code: str):
-		self.code = code
-		self.ids = re.split(delim_pattern, code)
-		self.delims = re.findall(delim_pattern, code)
+		if isinstance(code, EdanCode):
+			self.code = str(code)
+		else:
+			self.code = code
+
+		ids = re.split(delim_pattern, code)
+		delims = re.findall(delim_pattern, code)
+
+		self.elements = [None]*(len(ids) + len(delims))
+		self.elements[::2] = ids
+		self.elements[1::2] = delims
+
+	@property
+	def ids(self):
+		return self.elements[::2]
+
+	@property
+	def delims(self):
+		return self.elements[1::2]
 
 	def __repr__(self):
 		return f"EdanCode({self.code})"
@@ -26,21 +42,55 @@ class EdanCode(object):
 	def __str__(self):
 		return self.code
 
+	def __len__(self):
+		return (len(self.elements) + 1) // 2
+
 	def __getitem__(self, key):
 		if isinstance(key, int):
-			return self.ids[key]
+			if key >= 0:
+				return self.elements[2*key]
+			else:
+				return self.elements[2*key+1]
+
 		elif isinstance(key, slice):
-			ids = self.ids[key]
+			if (key.stop is None) and (key.start is None):
+				elms = self.elements[slice(None, None, key.step)]
 
-			if len(ids) == 1:
-				return ids[0]
-			delims = [self.delims[i] for i, id_ in enumerate(self.ids) if id_ in ids[:-1]]
+			elif key.stop is None:
+				b = 1 if key.start < 0 else 0
+				elms = self.elements[slice(2*key.start+b, None, key.step)]
 
-			spliced_code = [i for pair in zip(ids, delims+['']) for i in pair]
-			return ''.join(spliced_code)
+			elif key.start is None:
+				e = 0 if key.stop <= 0 else -1
+				elms = self.elements[slice(None, 2*key.stop+e, key.step)]
 
-		raise TypeError(repr(key))
+			else:
+				b = 1 if key.start < 0 else 0
+				e = 0 if key.stop <= 0 else -1
+				elms = self.elements[slice(2*key.start+b, 2*key.stop+e, key.step)]
 
+			return ''.join(elms)
+
+		raise TypeError(f"{repr(key)}. EdanCode key can only be `int` or `slice`")
+
+
+def contains(parent: str, child: str):
+	"""
+	boolean function returning True if EdanCode `child` is descended from
+	EdanCode `parent`
+	"""
+
+	parent, child = EdanCode(parent), EdanCode(child)
+
+	base_level, child_level = len(parent), len(child)
+	if base_level > child_level:
+		return False
+	elif base_level == child_level:
+		if str(parent) == str(child):
+			return True
+
+	child_base = child[:base_level]
+	return str(parent) == child_base
 
 
 def concat_codes(code: str, other: str, delim: str = ':'):
@@ -60,6 +110,10 @@ def concat_codes(code: str, other: str, delim: str = ':'):
 	delim : str
 		the delimiter used to join `code` and `other` if there is no overlap
 	"""
+
+	if contains(code, other):
+		return other
+
 	code, other = EdanCode(code), EdanCode(other)
 	n_overlaps = max(len(code.ids), len(other.ids))
 
