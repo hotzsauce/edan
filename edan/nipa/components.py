@@ -10,10 +10,14 @@ from edan.containers import (
 	CompoundStorage
 )
 
-from edan.delims import concat_codes
+from edan.delims import (
+	concat_codes,
+	contains
+)
 
 from edan.data.retrieve import retriever
 
+from edan.nipa.disaggregate import Disaggregator
 from edan.nipa.features import Contribution
 from edan.nipa.modifications import ModificationAccessor
 
@@ -51,8 +55,6 @@ class Component(CompoundStorage):
 	"""
 	a collection of NIPASeries that represents a single Component
 	"""
-
-	edan_delimiters = (':', '+', '-')
 
 	def __init__(
 		self,
@@ -112,6 +114,37 @@ class Component(CompoundStorage):
 				raise KeyError(
 					f"{repr(key)} does not match a subcomponent of {repr(self)}"
 				) from None
+
+	def disaggregate(
+		self,
+		subs: Iterable[str] = [],
+		level: int = 0
+	):
+		"""
+		locate & return a list of subcomponents that can be further down the
+		subcomponent tree than just the Component objects immediately available
+		in the `subs` attribute. functionality for selecting based on `edan` code
+		and level relative to the current Component is provided
+
+		Parameters
+		----------
+		subs : list ( = [] )
+			an iterable of subcomponents to return. the elements of `subs` are
+			assumed to be (relative or absolute) `edan` codes
+		level : int ( = 0 )
+			the level, relative to the current Component, of subcomponents that
+			are to be returned. if a subcomponent has level `l`, with
+			l < level + self.level, and that subcomponent is elemental, it is also
+			included
+
+		Returns
+		-------
+		disaggregate : List[Component]
+		"""
+
+		# should raise Error or return None if this component is elemental
+
+		return Disaggregator(self, subs, level)
 
 	@property
 	def elemental(self):
