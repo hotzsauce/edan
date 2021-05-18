@@ -25,7 +25,6 @@ class Feature(object):
 		raise NotImplementedError(f"'compute' method not defined for {feat} Feature")
 
 	def __init__(self, obj=None, *args, **kwargs):
-		print('initializing Feature: ', type(self).__name__)
 		self.obj = obj
 
 	def __call__(self, *args, **kwargs):
@@ -57,8 +56,13 @@ class Contribution(Feature):
 
 	def _contr_shares(self):
 		"""
-		https://apps.bea.gov/scb/account_articles/national/0795od/maintext.htm
-		https://apps.bea.gov/scb/account_articles/national/0795od/table1.htm
+		the calculation for the contribution shares is described in the footnotes
+		of this table:
+			https://apps.bea.gov/scb/account_articles/national/0795od/table1.htm
+
+		that table is referenced in this old article from the BEA, along with
+		some discussion about other new (in 1995) measures:
+			https://apps.bea.gov/scb/account_articles/national/0795od/maintext.htm
 		"""
 
 		ragg = self.obj.real.data
@@ -67,13 +71,27 @@ class Contribution(Feature):
 
 		# let pandas handle all the joining & nan-creation for observations where
 		#	some series don't have values
-		real = pd.concat([ragg] + [sub.real.data for sub in subs], axis='columns')
-		nominal = pd.concat([nagg] + [sub.nominal.data for sub in subs], axis='columns')
+		real_data, nom_data, sub_names = [ragg], [nagg], []
+		for sub in subs:
+			rsub = sub.real.data
+			nsub = sub.nominal.data
+
+			# if there is no real or nominal data, just exclude it for now
+			if (rsub is None) or (nsub is None):
+				pass
+			else:
+				real_data.append(rsub)
+				nom_data.append(nsub)
+				sub_names.append(sub.code)
+
+		real = pd.concat(real_data, axis='columns')
+		nominal = pd.concat(nom_data, axis='columns')
 		data = pd.concat([real, nominal], axis='columns').dropna(axis='index')
 
 		# re-partition data; each block has the aggregate series in the first col
-		real = data.iloc[:, :len(subs)+1].values
-		nominal = data.iloc[:, len(subs)+1:].values
+		n_series = len(real_data)
+		real = data.iloc[:, :n_series].values
+		nominal = data.iloc[:, n_series:].values
 
 		# implied nominal level as if there were no price changes
 		rgrowth = real[1:, :] / real[:-1, :]
@@ -94,15 +112,46 @@ class Contribution(Feature):
 		nan_row[:] = np.nan
 		shares = np.vstack((nan_row, shares))
 
-		return pd.DataFrame(shares, index=data.index, columns=[s.code for s in subs])
-
+		return pd.DataFrame(shares, index=data.index, columns=sub_names)
 
 	def compute(
 		self,
 		subs: Union[list, str] = '',
+		level : int = 0,
 		method: str = 'difa%',
 		*args, **kwargs
 	):
+		"""
+		compute & return a dataframe of subcomponents' contributions to percent
+		change of an aggregate. the calculations are described in the footnotes
+		of this table:
+			https://apps.bea.gov/scb/account_articles/national/0795od/table1.htm
+
+		by default, the contributions from all direct subcomponents are computed,
+		but this can be changed via the `subs` parameter.
+
+		Parameters
+		----------
+		subs : list | str ( = '' )
+			the subcomponents to include in the calculation. if an empty string,
+			all immediate subcomponents are used (if the other subcomponent
+			selection parameters, for example, `level`, are null). otherwise, the
+			subcomponent selection is done by the Component's `disaggregate()`
+			method
+		level : int ( = 0 )
+			the level of subcomponents to include in the calculation
+		method : str ( = 'difa%' )
+			the growth rate calculation of the aggregate real level. see the
+			Modifications class in edan/nipa/modifications.py for details.
+		args : positional arguments
+			arguments to pass to the `modify()` method of the aggregates's real level
+		kwargs : keyword arguments
+			arguments to pass to the `modify()` method of the aggregates's real level
+
+		Returns
+		-------
+		pandas DataFrame
+		"""
 		if not self.obj.subs:
 			# if component has no subcomponent, return pandas Series of ones
 			return pd.Series(
@@ -120,17 +169,47 @@ class Contribution(Feature):
 
 		# final step is product of aggregate growth rate and computed shares
 		agg = data.iloc[:, 0].values
-		shares = data.iloc[:, 1:].values
-		contr = np.multiply(shares, agg[:, None]) # index allows for broadcast
+		contr_shares = data.iloc[:, 1:].values
+		contr = np.multiply(contr_shares, agg[:, None]) # index allows for broadcast
 
 		return pd.DataFrame(
 			contr,
 			index=data.index,
-			columns=[f"{s.code}_{self.name}" for s in self.obj.subs]
+			columns=shares.columns
 		)
 
 
 def contribution(obj, subs: Union[list, str] = ''):
-	""" """
+	"""
+	compute & return a dataframe of subcomponents' contributions to percent
+	change of an aggregate. the calculations are described in the footnotes
+	of this table:
+		https://apps.bea.gov/scb/account_articles/national/0795od/table1.htm
+
+	by default, the contributions from all direct subcomponents are computed,
+	but this can be changed via the `subs` parameter.
+
+	Parameters
+	----------
+	subs : list | str ( = '' )
+		the subcomponents to include in the calculation. if an empty string,
+		all immediate subcomponents are used (if the other subcomponent
+		selection parameters, for example, `level`, are null). otherwise, the
+		subcomponent selection is done by the Component's `disaggregate()`
+		method
+	level : int ( = 0 )
+		the level of subcomponents to include in the calculation
+	method : str ( = 'difa%' )
+		the growth rate calculation of the aggregate real level. see the
+		Modifications class in edan/nipa/modifications.py for details.
+	args : positional arguments
+		arguments to pass to the `modify()` method of the aggregates's real level
+	kwargs : keyword arguments
+		arguments to pass to the `modify()` method of the aggregates's real level
+
+	Returns
+	-------
+	pandas DataFrame
+	"""
 	contr = Contribution(obj)
 	return contr.compute(subs)
