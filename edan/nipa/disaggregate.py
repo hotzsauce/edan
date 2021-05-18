@@ -9,6 +9,8 @@ from edan.delims import (
 	contains
 )
 
+from edan.utils.dtypes import iterable_not_string
+
 
 
 def recursive_subcomponent(comp: Component, target: str):
@@ -29,7 +31,7 @@ class Disaggregator(object):
 	def __init__(
 		self,
 		component: Component,
-		subcomponents: Iterable[str] = [],
+		subcomponents: Union[str, Iterable[str]] = '',
 		level: int = 0
 	):
 
@@ -41,7 +43,7 @@ class Disaggregator(object):
 
 		Parameters
 		----------
-		subs : str | list ( = [] )
+		subcomponents : str | Iterable[str] ( = '' )
 			an iterable of subcomponents to return. the elements of `subs` are
 			assumed to be (relative or absolute) `edan` codes
 		level : int ( = 0 )
@@ -53,22 +55,43 @@ class Disaggregator(object):
 		self.disaggregates = []
 		self.component = component
 
+		if subcomponents and level:
+			raise ValueError("only one of 'subs' and 'level' can be provided")
+
 		if subcomponents:
 
-			for code in subcomponents:
-				# concatenate later ids if `code` isn't an absolute edan code
-				abs_code = concat_codes(component.code, code)
+			if iterable_not_string(subcomponents):
+
+				for code in subcomponents:
+					# concatenate later ids if `code` isn't an absolute edan code
+					abs_code = concat_codes(component.code, code)
+
+					for sub in component.subs:
+
+						if sub.code == abs_code:
+							# `subcomponents` references an immediate subcomponent
+							self.disaggregates.append(sub)
+
+						elif contains(sub.code, abs_code):
+							# references a subcomponent further down
+							comp = recursive_subcomponent(sub, abs_code)
+							self.disaggregates.append(comp)
+
+			elif isinstance(subcomponents, str):
+
+				abs_code = concat_codes(component.code, subcomponents)
 
 				for sub in component.subs:
 
 					if sub.code == abs_code:
-						# `subcomponents` references an immediate subcomponent
 						self.disaggregates.append(sub)
 
 					elif contains(sub.code, abs_code):
-						# `subcomponents` references a subcomponent further down
 						comp = recursive_subcomponent(sub, abs_code)
 						self.disaggregates.append(comp)
+
+			else:
+				raise TypeError("'subs' must be a str or list of str")
 
 		elif level:
 			abs_level = level + component.level
