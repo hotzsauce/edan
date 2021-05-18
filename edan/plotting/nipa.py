@@ -131,11 +131,14 @@ class NIPAPlotAccessor(GenericPlotAccessor):
 
 		objs = [self.obj]
 		if iterable_not_string(subs):
-			for _sub in subs:
-				objs.append(self.obj[_sub])
+			subcomponents = self.obj.disaggregate(subs)
+			objs.extend(list(subcomponents))
+
 		else:
 			if isinstance(subs, str):
-				objs.append(self.obj[subs])
+				subcomponent = self.obj.disaggregate([subs])
+				objs.append(subcomponent)
+
 			elif isinstance(subs, bool):
 				if subs:
 					for _sub in self.obj.subs:
