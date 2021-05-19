@@ -140,3 +140,17 @@ class NIPATable(object):
 	def __str__(self):
 		printer = TablePrettyPrinter(self)
 		return printer.print()
+
+	# make the table immutable, as they are meant to represent published tables
+	# taken from: 
+	#	https://www.python.org/dev/peps/pep-0351/
+	def _iterable(self, *args, **kwargs):
+		raise TypeError("NIPATable is immutable")
+
+	__setitem__ = _iterable
+	__delitem__ = _iterable
+	clear		= _iterable
+	update		= _iterable
+	setdefault	= _iterable
+	pop			= _iterable
+	popitem		= _iterable
