@@ -41,4 +41,4 @@ retrieve_from_git(gdp)
 
 # create funnels for aliases
 from edan.data.aliases.mappings import aliases_by_source
-alias_maps = {s: aliases_by_source(s) for s in ('fred', 'bea')}
+alias_maps = {s: aliases_by_source(s) for s in ('fred', 'bea', 'bls')}

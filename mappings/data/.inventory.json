@@ -9128,5 +9128,1690 @@
         "code": "pcectpi",
         "source": "fred",
         "freq": "quarterly"
+    },
+    {
+        "code": "cusr0000sa0",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000saf1",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000saf11",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000saf111",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefa",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefa01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefa02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefa03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000ss01031",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefb",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefb01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000ss02011",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000ss02021",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefb02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefb03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss02042",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000ss02041",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefb04",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000ss02063",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss0206a",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss0206b",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000saf112",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000saf1121",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000saf11211",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefc",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefc01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sefc02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefc03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sefc04",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefd",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefd01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss04011",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss04012",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefd02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss04031",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefd03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefd04",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefe",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss05011",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss0501a",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seff",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seff01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss06011",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000ss06021",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seff02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefg",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefg01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefg02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss07011",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss07021",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefh",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefj",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefj01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss09011",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss09021",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefj02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefj03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefj04",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000saf113",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000saf1131",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefk",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefk01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefk02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefk03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss11031",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefk04",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefl",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefl01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefl02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefl03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefl04",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefm",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefm01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss13031",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss14021",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefm02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss14011",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefm03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000ss14022",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000saf114",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefn",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefn01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sefn02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefn03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefp",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefp01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss17031",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000ss17032",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefp02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000saf115",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefr",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefr01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sefr02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefr03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefs",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefs01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss10011",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss16011",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefs02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefs03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000ss16014",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seft",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seft01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seft02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seft03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seft04",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss18041",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000ss18042",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss18043",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss1804b",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000seft05",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seft06",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss18064",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefv",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefv01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sefv02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefv03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ssfv031a",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sefv04",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefv05",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sa0e",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sace",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehe",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehe01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehe02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000setb",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000setb01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss47014",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss47015",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss47016",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000setb02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehf",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehf01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehf02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sa0l1e",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sacl1e",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sah31",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehh",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sehh01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehh02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sehh03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehj",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sehj01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sehj02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehj03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehk",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehk01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss30021",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehk02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehl",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sehl01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehl02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sehl03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehl04",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehm",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sehm01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehm02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehn",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehn01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sehn02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehn03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000saa",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000saa1",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seaa",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seaa01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seaa02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seaa03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seaa04",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seab",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000saa2",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seac",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seac01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seac02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seac03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seac04",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sead",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seae",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seae01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seae02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seae03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seaf",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seag",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seag01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seag02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000satcltb",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seta01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss4501a",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss45011",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss45021",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seta02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000setc",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000setc01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000setc02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000ss48021",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000ss47021",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sam1",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000semf",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000semf01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000semf02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000semg",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sarc",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000serac",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sera01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sera03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sera05",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sera06",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000serb01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss61031",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss61032",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000serc",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000serc01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000serc02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000serd01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss61023",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000serg",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000serg01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000serg02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sere",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sere01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss61011",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sere02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sere03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000saec",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seea",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000ssea011",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seeec",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seee01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000seee02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seee04",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000saf116",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefw",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefw01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefw02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss20021",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss20022",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefw03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sefx",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000ss20051",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000ss20052",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss20053",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sagc",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sega",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sega01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sega02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000segb",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000segb01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000segb02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sege",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss33032",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sasle",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sah1",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sas2rs",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seha",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehb",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehb01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehb02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehc",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehc01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sehd",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehg",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehg01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehg02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sehp",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sehp01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sehp02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sehp03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sehp04",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sam2",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000semc",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000semc01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000semc02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000semc03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000semc04",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000semd",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000semd01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss5702",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss5703",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000semd02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000semd03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000seme",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sas4",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seta03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seta04",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000setd",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000setd01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000setd02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000setd03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sete",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000setf",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000setf01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000setf03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss52051",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000setg",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000setg01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000setg02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss53023",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000setg03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000ss53031",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sars",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seras",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000sera02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sera04",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000ss31022",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000ss62055",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000serb02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss62054",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000serd02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000serf",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000serf01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000serf02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss62031",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss62032",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000serf03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000saes",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seeb",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seeb01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seeb02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seeb03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seeb04",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seec",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seec01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seec02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000seed",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000seed03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000seed04",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000seee03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000sags",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000segc",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000segc01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000segd",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000segd01",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000segd02",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000segd03",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000segd04",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000segd05",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cuur0000ss68021",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "cusr0000ss68023",
+        "source": "bls",
+        "freq": "monthly"
     }
 ]

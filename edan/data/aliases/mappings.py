@@ -53,8 +53,14 @@ def aliases_by_source(source: str) -> FunnelMap:
 	FunnelMap
 	"""
 
-	if source not in {'bea', 'fred', 'av'}:
+	if source not in {'bea', 'fred', 'av', 'bls'}:
 		raise ValueError(f"{repr(source)} not a recognized source API yet")
+
+	# if source == 'bls':
+	# 	raise NotImplementedError('bls')
+
+	# elif source == 'av':
+	# 	raise NotImplementedError('av')
 
 	# only want to use mappings that have ids for 'source' API
 	src_mappings = []
