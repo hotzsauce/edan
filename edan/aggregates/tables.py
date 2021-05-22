@@ -1,6 +1,6 @@
 """
-module for tables of NIPA components. the NIPATable object functions as a
-mapping from series codes (the edan codes) to the components themselves
+module for tables of aggregated data. the Table object functions as a
+mapping from series codes (the `edan` codes) to the Components themselves
 """
 
 from __future__ import annotations
@@ -12,12 +12,12 @@ from copy import deepcopy
 
 class TableIterator(object):
 	"""
-	iterator constructor for the NIPATable class. we split the iterator and the
+	iterator constructor for the Table class. we split the iterator and the
 	data container following mgilson's comment in the thread
 	https://stackoverflow.com/questions/21665485/how-to-make-a-custom-object-iterable
 	which in turn is apparently based on what Python does under the hood
 
-	iterating over a NIPATable returns the names of the series in it
+	iterating over a Table returns the names of the series in it
 	"""
 
 	def __init__(self, names: Iterable):
@@ -36,10 +36,9 @@ class TableIterator(object):
 			raise StopIteration
 
 
-
 class TablePrettyPrinter(object):
 	"""
-	pretty print the contents of a NIPATable to the console
+	pretty print the contents of a Table to the console
 	"""
 	vert = '|'
 	horz = '-'
@@ -71,7 +70,7 @@ class TablePrettyPrinter(object):
 			else:
 				# if this is a top-level component, add a long row of double lines
 				table = table + entry_gap + self.dhorz*(cols-self.lwidth) + '\n'
-				prefix = ''
+				pretix = ''
 
 			row_str = entry_gap + prefix + name
 			if len(row_str) - pad > cols:
@@ -82,16 +81,14 @@ class TablePrettyPrinter(object):
 		return table
 
 
-
-
-class NIPATable(object):
+class Table(object):
 	"""
 	representation of a table of economic data where each row is a variable that
 	is either composed of subcomponents (that lie visually below it in the table),
 	or is an 'elemental' series that has no subcomponents. access the Component
 	object for each variable by indexing into the table:
 
-		>>> tb = NIPATable(pce_components, 'PCE')
+		>>> tb = Table([list of PCE Component objects], 'PCE')
 		>>> tb['pce']
 		Component('pce', 0)
 
@@ -104,15 +101,12 @@ class NIPATable(object):
 		'pce:g'
 		'pce:g:d'
 		...
-
-	each time the table is indexed into, a full deepcopy of the requested component,
-	and all its subcomponents if applicable, is returned.
 	"""
 
 	def __init__(
 		self,
 		aggregates: list,
-		category: str = 'NIPA'
+		category: str = ''
 	):
 		# the top-level series in the table, and a table name
 		self.aggregates = aggregates
@@ -141,16 +135,16 @@ class NIPATable(object):
 		printer = TablePrettyPrinter(self)
 		return printer.print()
 
-	# make the table immutable, as they are meant to represent published tables
-	# taken from: 
-	#	https://www.python.org/dev/peps/pep-0351/
+	# make the table is immutable, as they are meant to represent published tables
+	# taken from
+	#	https://www.python.org/dev/peps/pep-0351
 	def _iterable(self, *args, **kwargs):
-		raise TypeError("NIPATable is immutable")
+		raise TypeError("Tables are immutable")
 
 	__setitem__ = _iterable
 	__delitem__ = _iterable
-	clear		= _iterable
-	update		= _iterable
-	setdefault	= _iterable
-	pop			= _iterable
-	popitem		= _iterable
+	clear = _iterable
+	update = _iterable
+	setdefault = _iterable
+	pop = _iterable
+	popitem = _iterable
