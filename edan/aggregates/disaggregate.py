@@ -113,4 +113,4 @@ class Disaggregator(object):
 			yield sub
 
 	def __str__(self):
-		return f"Disaggregator({repr(self.component)})"
+		return f"Disaggregator({repr(self.disaggregates)})"
