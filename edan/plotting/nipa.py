@@ -134,22 +134,29 @@ class NIPAPlotAccessor(GenericPlotAccessor):
 		"""
 
 		objs = [self.obj]
-		if iterable_not_string(subs):
-			subcomponents = self.obj.disaggregate(subs, level)
+		if level:
+			subcomponents = self.obj.disaggregate(level=level)
 			objs.extend(list(subcomponents))
 
-		else:
-			if isinstance(subs, str):
-				subcomponent = self.obj.disaggregate(subs, level)
-				objs.append(subcomponent)
+		elif subs:
+			if iterable_not_string(subs):
+				subcomponents = self.obj.disaggregate(subs)
+				objs.extend(list(subcomponents))
 
-			elif isinstance(subs, bool):
-				if subs:
-					for _sub in self.obj.subs:
-						objs.append(_sub)
 			else:
-				msg = "'subs' must be of type 'bool', 'str', or iterable of 'str'"
-				raise TypeError(msg)
+				if isinstance(subs, str):
+					subcomponent = self.obj.disaggregate(subs)
+					objs.append(subcomponent)
+
+				elif isinstance(subs, bool):
+					if subs:
+						for _sub in self.obj.subs:
+							objs.append(_sub)
+					else:
+						raise TypeError(
+							"'subs' must be of type 'bool', 'str', or "
+							"iterable of 'str'"
+						)
 
 		# pass the as-yet unaltered data to the manager
 		self.mgr = PlotDataManager(objs)
