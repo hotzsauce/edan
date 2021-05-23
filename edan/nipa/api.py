@@ -1,5 +1,5 @@
 """
-module that prepares the GDP component tree
+module that prepares the GDP component table
 """
 
 from __future__ import annotations
@@ -7,10 +7,9 @@ from __future__ import annotations
 
 from edan.algos import construct_forest
 from edan.aggregates.tables import Table
-# from edan.nipa.tables import NIPATable
 
 from edan.nipa.register import registry
-from edan.nipa.components import NIPAComponent
+from edan.nipa.core import NIPAComponent
 
 
 # from the linear collection of Components - organized first by BEA table, then
