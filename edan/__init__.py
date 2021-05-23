@@ -7,6 +7,7 @@ and other interest rate-related markets
 """
 
 import edan.nipa
+import edan.cpi
 import edan.data
 
-__all__ = ['nipa', 'data']
+__all__ = ['nipa', 'cpi', 'data']
