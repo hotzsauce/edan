@@ -70,7 +70,7 @@ class TablePrettyPrinter(object):
 			else:
 				# if this is a top-level component, add a long row of double lines
 				table = table + entry_gap + self.dhorz*(cols-self.lwidth) + '\n'
-				pretix = ''
+				prefix = ''
 
 			row_str = entry_gap + prefix + name
 			if len(row_str) - pad > cols:
