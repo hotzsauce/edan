@@ -6,11 +6,11 @@ from __future__ import annotations
 
 import pandas as pd
 
-from edan.containers import CoreSeries
+from edan.aggregates.series import Series
 
 def infer_freq(obj):
 	"""
-	infer the frequency string from a CoreSeries, pandas DataFrame or Series, or
+	infer the frequency string from a Series, pandas DataFrame or Series, or
 	pandas Index. the description of pandas' Offset Aliases can be found here:
 		https://pandas.pydata.org/pandas-docs/stable/
 		user_guide/timeseries.html#offset-aliases
@@ -21,7 +21,7 @@ def infer_freq(obj):
 
 	Parameters
 	----------
-	obj : CoreSeries | DataFrame | Series | Index
+	obj : Series | DataFrame | Series | Index
 		the object that we will infer the frequency of
 
 	Returns
@@ -33,7 +33,7 @@ def infer_freq(obj):
 		# assume DataFrame or Series
 		idx = obj.index
 	except AttributeError:
-		if isinstance(obj, CoreSeries):
+		if isinstance(obj, Series):
 			idx = obj.data.index
 		else:
 			# assume pandas index
@@ -71,20 +71,20 @@ def infer_freq(obj):
 def infer_freq_by_series(obj) -> Union[str, List[str]]:
 	"""
 	infer the frequency of a collection of data objects. works on iterables of
-	Series, DataFrames, and CoreSeries (including iterables containing all three
+	Series, DataFrames, and Series (including iterables containing all three
 	types of objects). if a DataFrame has columns that are of different frequencies
 	(for example, PCE Services [monthly] in one column and BFI Equipment [quarterly]
 	in another, those frequencies will be determined separately.)
 
 	Parameters
 	----------
-	obj : Series | DataFrame | CoreSeries | Iterable[Series, DataFrame, CoreSeries]
+	obj : Series | DataFrame | Series | Iterable[Series, DataFrame, Series]
 		the object(s) whose frequency will be infered
 
 	Returns
 	-------
 	str | List[str]
-		if `obj` was a single pandas Series or CoreSeries, a string is returned.
+		if `obj` was a single pandas Series or Series, a string is returned.
 		otherwise, a list of frequency strings is returned
 	"""
 
@@ -98,7 +98,7 @@ def infer_freq_by_series(obj) -> Union[str, List[str]]:
 		"""
 		return infer_freq(obj.dropna())
 
-	elif isinstance(obj, CoreSeries):
+	elif isinstance(obj, Series):
 		# drop data for same reason as we do Series
 		return infer_freq(obj.data.dropna())
 
@@ -119,7 +119,7 @@ def infer_freq_by_series(obj) -> Union[str, List[str]]:
 _periods_per_year_dict = {'A': 1, 'Q': 4, 'M': 12, 'W': 52, 'D': 365}
 def periods_per_year(obj):
 	"""
-	compute the number of times a period occurs per year, given a CoreSeries,
+	compute the number of times a period occurs per year, given a Series,
 	or pandas DataFrame, Series, or Index. these values are hardcoded as
 		'A': 1,
 		'Q': 4,
@@ -129,7 +129,7 @@ def periods_per_year(obj):
 
 	Parameters
 	----------
-	obj: CoreSeries | DataFrame | Series | Index
+	obj: Series | DataFrame | Series | Index
 
 	Returns
 	-------
