@@ -7,8 +7,6 @@ from __future__ import annotations
 import json
 import pathlib
 
-import urllib.request as urequest
-
 
 registry_filename = '.registry.json'
 registry = pathlib.Path(__file__).parent / registry_filename
