@@ -1,4 +1,4 @@
-from edan.nipa.components import (
+from edan.nipa.core import (
 	NIPASeries,
 	NIPAComponent
 )
