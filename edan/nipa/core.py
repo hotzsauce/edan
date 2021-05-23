@@ -33,6 +33,8 @@ class NIPASeries(Series):
 
 class NIPAComponent(Component):
 
+	mtypes = ['quantity', 'price', 'nominal', 'real']
+
 	@property
 	def quantity(self):
 		"""
