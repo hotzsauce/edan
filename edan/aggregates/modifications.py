@@ -1,5 +1,5 @@
 """
-module for functions of time series data of the NIPASeries
+module for functions of time series data of the Series
 """
 
 from __future__ import annotations
