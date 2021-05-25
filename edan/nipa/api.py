@@ -1,16 +1,19 @@
 """
-module that prepares the GDP component table
+module that prepares the GDP & PCE component table
 """
 
-from __future__ import annotations
-
+import pathlib
 
 from edan.algos import construct_forest
 from edan.aggregates.tables import Table
+from edan.aggregates.register import ComponentRegistry
 
-from edan.nipa.register import registry
 from edan.nipa.core import NIPAComponent
 
+# create registry based on JSON in edan/nipa
+registry_filename = '.registry.json'
+nipa_registry = pathlib.Path(__file__).parent / registry_filename
+registry = ComponentRegistry(nipa_registry, 'NIPA')
 
 # from the linear collection of Components - organized first by BEA table, then
 #	by row within that table - construct a list of the top-level components within
