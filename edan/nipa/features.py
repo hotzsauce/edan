@@ -50,11 +50,12 @@ class Contribution(Feature):
 	def __call__(
 		self,
 		subs: Union[list, str] = '',
+		level: int = 0,
 		*args, **kwargs
 	):
-		return self.compute(subs, *args, **kwargs)
+		return self.compute(subs, level, *args, **kwargs)
 
-	def _contr_shares(self):
+	def _contr_shares(self, subs: Disaggregator):
 		"""
 		the calculation for the contribution shares is described in the footnotes
 		of this table:
@@ -67,7 +68,6 @@ class Contribution(Feature):
 
 		ragg = self.obj.real.data
 		nagg = self.obj.nominal.data
-		subs = self.obj.subs
 
 		# let pandas handle all the joining & nan-creation for observations where
 		#	some series don't have values
@@ -160,9 +160,12 @@ class Contribution(Feature):
 				name=self.name
 			)
 
-		# compute the aggregate growth rate and the shares of each subcomponent
+		# compute the aggregate growth rate
 		agg_growth = self.obj.real.modify(method, *args, **kwargs)
-		shares = self._contr_shares()
+
+		# compute the shares of each subcomponent
+		subs = self.obj.disaggregate(subs, level)
+		shares = self._contr_shares(subs)
 
 		# odds are the shares will only have a subset of the observations
 		data = pd.concat((agg_growth, shares), axis='columns').dropna(axis='index')
@@ -179,7 +182,12 @@ class Contribution(Feature):
 		)
 
 
-def contribution(obj, subs: Union[list, str] = ''):
+def contribution(
+	obj,
+	subs: Union[list, str] = '',
+	level: int = 0,
+	*args, **kwargs
+):
 	"""
 	compute & return a dataframe of subcomponents' contributions to percent
 	change of an aggregate. the calculations are described in the footnotes
@@ -212,4 +220,4 @@ def contribution(obj, subs: Union[list, str] = ''):
 	pandas DataFrame
 	"""
 	contr = Contribution(obj)
-	return contr.compute(subs)
+	return contr.compute(subs, level, *args, **kwargs)
