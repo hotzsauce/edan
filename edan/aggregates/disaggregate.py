@@ -63,6 +63,9 @@ class Disaggregator(object):
 			if iterable_not_string(subcomponents):
 
 				for code in subcomponents:
+					# outrageously un-pythonic but can't be bothered to workaround yet
+					not_sub = True
+
 					# concatenate later ids if `code` isn't an absolute edan code
 					abs_code = concat_codes(component.code, code)
 
@@ -70,25 +73,40 @@ class Disaggregator(object):
 
 						if sub.code == abs_code:
 							# `subcomponents` references an immediate subcomponent
+							not_sub = False
 							self.disaggregates.append(sub)
 
 						elif contains(sub.code, abs_code):
 							# references a subcomponent further down
 							comp = recursive_subcomponent(sub, abs_code)
+							not_sub = False
 							self.disaggregates.append(comp)
+
+					if not_sub:
+						raise KeyError(
+							f"{code} is not a subcomponent of {component.code}"
+						)
 
 			elif isinstance(subcomponents, str):
 
+				not_sub = True
 				abs_code = concat_codes(component.code, subcomponents)
 
 				for sub in component.subs:
 
 					if sub.code == abs_code:
+						not_sub = False
 						self.disaggregates.append(sub)
 
 					elif contains(sub.code, abs_code):
 						comp = recursive_subcomponent(sub, abs_code)
+						not_sub = False
 						self.disaggregates.append(comp)
+
+				if not_sub:
+					raise KeyError(
+						f"{subcomponents} is not a subcomponent of {component.code}"
+					)
 
 			else:
 				raise TypeError("'subs' must be a str or list of str")
@@ -113,4 +131,4 @@ class Disaggregator(object):
 			yield sub
 
 	def __str__(self):
-		return f"Disaggregator({repr(self.disaggregates)})"
+		return f"Disaggregator({len(self.disaggregates)} Subs)"
