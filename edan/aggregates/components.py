@@ -27,6 +27,7 @@ class Component(CompoundStorage):
 		long_name: str = '',
 		short_name: str = '',
 		source: str = '',
+		subject: str = '',
 		**codes
 	):
 		# initialize CompoundStorage class with attribute names that hold data
@@ -46,10 +47,13 @@ class Component(CompoundStorage):
 		self.level = level
 		self.subs = []
 
-		# display names & source api
+		# display names source api
 		self.long_name = long_name
 		self.short_name = short_name
+
+		# source api and economic subject this component belongs to
 		self.source = source
+		self.subject = subject
 
 	def __getitem__(self, key: str):
 		if self.elemental:
@@ -128,5 +132,6 @@ class Component(CompoundStorage):
 			dct['long_name'],
 			dct['short_name'],
 			dct['source'],
+			dct['__subject__'],
 			**mtypes
 		)

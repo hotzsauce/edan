@@ -22,9 +22,8 @@ registry = ComponentRegistry(nipa_registry, 'NIPA')
 components = [NIPAComponent.from_registry(v) for v in registry.registry.values()]
 organized_comps = construct_forest(components, level='level', lower='subs')
 
-# need a better way to partition the recorded components
-pce_components = [c for c in components if 'pce' in c.code[:4]]
-gdp_components = [c for c in components if 'gdp' in c.code[:4]]
+pce_components = [c for c in components if c.subject == 'pce']
+gdp_components = [c for c in components if c.subject == 'gdp']
 
 PCETable = Table(pce_components, 'PCE')
 GDPTable = Table(gdp_components, 'GDP')

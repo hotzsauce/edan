@@ -5,7 +5,8 @@
         "price": "cpi",
         "long_name": "All items",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f",
@@ -13,7 +14,8 @@
         "price": "cpi:f",
         "long_name": "Food",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h",
@@ -21,7 +23,8 @@
         "price": "cpi:f:h",
         "long_name": "Food at home",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:b",
@@ -29,7 +32,8 @@
         "price": "cpi:f:h:b",
         "long_name": "Cereals and bakery products",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:b:c",
@@ -37,7 +41,8 @@
         "price": "cpi:f:h:b:c",
         "long_name": "Cereals and cereal products",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:b:c:f",
@@ -45,7 +50,8 @@
         "price": "cpi:f:h:b:c:f",
         "long_name": "Flour and prepared flour mixes",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:b:c:c",
@@ -53,7 +59,8 @@
         "price": "cpi:f:h:b:c:c",
         "long_name": "Breakfast cereal",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:b:c:r",
@@ -61,7 +68,8 @@
         "price": "cpi:f:h:b:c:r",
         "long_name": "Rice, pasta, cornmeal",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:b:c:r:r",
@@ -69,7 +77,8 @@
         "price": "cpi:f:h:b:c:r:r",
         "long_name": "Rice",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:b:c:b",
@@ -77,7 +86,8 @@
         "price": "cpi:f:h:b:c:b",
         "long_name": "Bakery products",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:b:c:b:b",
@@ -85,7 +95,8 @@
         "price": "cpi:f:h:b:c:b:b",
         "long_name": "Bread",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:b:c:b:b:w",
@@ -93,7 +104,8 @@
         "price": "cpi:f:h:b:c:b:b:w",
         "long_name": "White bread",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:b:c:b:b:o",
@@ -101,7 +113,8 @@
         "price": "cpi:f:h:b:c:b:b:o",
         "long_name": "Bread other than white",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:b:c:b:r",
@@ -109,7 +122,8 @@
         "price": "cpi:f:h:b:c:b:r",
         "long_name": "Fresh biscuits, rolls, muffins",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:b:c:b:c",
@@ -117,7 +131,8 @@
         "price": "cpi:f:h:b:c:b:c",
         "long_name": "Cakes, cupcakes, and cookies",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:b:c:b:c:c",
@@ -125,7 +140,8 @@
         "price": "cpi:f:h:b:c:b:c:c",
         "long_name": "Cookies",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:b:c:b:c:p",
@@ -133,7 +149,8 @@
         "price": "cpi:f:h:b:c:b:c:p",
         "long_name": "Fresh cakes and cupcakes",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:b:c:b:o",
@@ -141,7 +158,8 @@
         "price": "cpi:f:h:b:c:b:o",
         "long_name": "Other bakery products",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:b:c:b:o:s",
@@ -149,7 +167,8 @@
         "price": "cpi:f:h:b:c:b:o:s",
         "long_name": "Fresh sweetrolls, coffeecakes, doughnuts",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:b:c:b:o:c",
@@ -157,7 +176,8 @@
         "price": "cpi:f:h:b:c:b:o:c",
         "long_name": "Crackers, bread, and cracker products",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:b:c:b:o:f",
@@ -165,7 +185,8 @@
         "price": "cpi:f:h:b:c:b:o:f",
         "long_name": "Frozen and refrigerated bakery products, pies, tarts, turnovers",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m",
@@ -173,7 +194,8 @@
         "price": "cpi:f:h:m",
         "long_name": "Meats, poultry, fish, and eggs",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m",
@@ -181,7 +203,8 @@
         "price": "cpi:f:h:m:m",
         "long_name": "Meats, poultry, and fish",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m",
@@ -189,7 +212,8 @@
         "price": "cpi:f:h:m:m:m",
         "long_name": "Meats",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:b",
@@ -197,7 +221,8 @@
         "price": "cpi:f:h:m:m:m:b",
         "long_name": "Beef and veal",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:b:g",
@@ -205,7 +230,8 @@
         "price": "cpi:f:h:m:m:m:b:g",
         "long_name": "Uncooked ground beef",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:b:r",
@@ -213,7 +239,8 @@
         "price": "cpi:f:h:m:m:m:b:r",
         "long_name": "Uncooked beef roasts",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:b:s",
@@ -221,7 +248,8 @@
         "price": "cpi:f:h:m:m:m:b:s",
         "long_name": "Uncooked beef steaks",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:b:o",
@@ -229,7 +257,8 @@
         "price": "cpi:f:h:m:m:m:b:o",
         "long_name": "Uncooked other beef and veal",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:p",
@@ -237,7 +266,8 @@
         "price": "cpi:f:h:m:m:m:p",
         "long_name": "Pork",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:p:b",
@@ -245,7 +275,8 @@
         "price": "cpi:f:h:m:m:m:p:b",
         "long_name": "Bacon, breakfast sausage, and related products",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:p:b:b",
@@ -253,7 +284,8 @@
         "price": "cpi:f:h:m:m:m:p:b:b",
         "long_name": "Bacon and related products",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:p:b:s",
@@ -261,7 +293,8 @@
         "price": "cpi:f:h:m:m:m:p:b:s",
         "long_name": "Breakfast sausage and related products",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:p:h",
@@ -269,7 +302,8 @@
         "price": "cpi:f:h:m:m:m:p:h",
         "long_name": "Ham",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:p:h:c",
@@ -277,7 +311,8 @@
         "price": "cpi:f:h:m:m:m:p:h:c",
         "long_name": "Ham, excluding canned",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:p:c",
@@ -285,7 +320,8 @@
         "price": "cpi:f:h:m:m:m:p:c",
         "long_name": "Pork chops",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:p:o",
@@ -293,7 +329,8 @@
         "price": "cpi:f:h:m:m:m:p:o",
         "long_name": "Other pork including roasts, steaks, and ribs",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:o",
@@ -301,7 +338,8 @@
         "price": "cpi:f:h:m:m:m:o",
         "long_name": "Other meats",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:o:f",
@@ -309,7 +347,8 @@
         "price": "cpi:f:h:m:m:m:o:f",
         "long_name": "Frankfurters",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:o:l",
@@ -317,7 +356,8 @@
         "price": "cpi:f:h:m:m:m:o:l",
         "long_name": "Lunchmeats",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:f",
@@ -325,7 +365,8 @@
         "price": "cpi:f:h:m:m:m:f",
         "long_name": "Poultry",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:f:c",
@@ -333,7 +374,8 @@
         "price": "cpi:f:h:m:m:m:f:c",
         "long_name": "Chicken",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:f:c:w",
@@ -341,7 +383,8 @@
         "price": "cpi:f:h:m:m:m:f:c:w",
         "long_name": "Fresh whole chicken",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:f:c:f",
@@ -349,7 +392,8 @@
         "price": "cpi:f:h:m:m:m:f:c:f",
         "long_name": "Fresh and frozen chicken parts",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:f:o",
@@ -357,7 +401,8 @@
         "price": "cpi:f:h:m:m:m:f:o",
         "long_name": "Other uncooked poultry including turkey",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:s",
@@ -365,7 +410,8 @@
         "price": "cpi:f:h:m:m:m:s",
         "long_name": "Fish and seafood",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:s:f",
@@ -373,7 +419,8 @@
         "price": "cpi:f:h:m:m:m:s:f",
         "long_name": "Fresh fish and seafood",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:s:p",
@@ -381,7 +428,8 @@
         "price": "cpi:f:h:m:m:m:s:p",
         "long_name": "Processed fish and seafood",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:s:p:s",
@@ -389,7 +437,8 @@
         "price": "cpi:f:h:m:m:m:s:p:s",
         "long_name": "Shelf stable fish and seafood",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:m:s:p:f",
@@ -397,7 +446,8 @@
         "price": "cpi:f:h:m:m:m:s:p:f",
         "long_name": "Frozen fish and seafood",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:m:m:e",
@@ -405,7 +455,8 @@
         "price": "cpi:f:h:m:m:e",
         "long_name": "Eggs",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:d",
@@ -413,7 +464,8 @@
         "price": "cpi:f:h:d",
         "long_name": "Dairy and related products",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:d:m",
@@ -421,7 +473,8 @@
         "price": "cpi:f:h:d:m",
         "long_name": "Milk",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:d:m:f",
@@ -429,7 +482,8 @@
         "price": "cpi:f:h:d:m:f",
         "long_name": "Fresh whole milk",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:d:m:o",
@@ -437,7 +491,8 @@
         "price": "cpi:f:h:d:m:o",
         "long_name": "Fresh milk other than whole",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:d:c",
@@ -445,7 +500,8 @@
         "price": "cpi:f:h:d:c",
         "long_name": "Cheese and related products",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:d:i",
@@ -453,7 +509,8 @@
         "price": "cpi:f:h:d:i",
         "long_name": "Ice cream and related products",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:d:o",
@@ -461,7 +518,8 @@
         "price": "cpi:f:h:d:o",
         "long_name": "Other dairy and related products",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:v",
@@ -469,7 +527,8 @@
         "price": "cpi:f:h:v",
         "long_name": "Fruits and vegetables",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:v:f",
@@ -477,7 +536,8 @@
         "price": "cpi:f:h:v:f",
         "long_name": "Fresh fruits and vegetables",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:v:f:f",
@@ -485,7 +545,8 @@
         "price": "cpi:f:h:v:f:f",
         "long_name": "Fresh fruits",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:v:f:f:a",
@@ -493,7 +554,8 @@
         "price": "cpi:f:h:v:f:f:a",
         "long_name": "Apples",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:v:f:f:b",
@@ -501,7 +563,8 @@
         "price": "cpi:f:h:v:f:f:b",
         "long_name": "Bananas",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:v:f:f:c",
@@ -509,7 +572,8 @@
         "price": "cpi:f:h:v:f:f:c",
         "long_name": "Citrus fruits",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:v:f:f:c:o",
@@ -517,7 +581,8 @@
         "price": "cpi:f:h:v:f:f:c:o",
         "long_name": "Oranges, including tangerines",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:v:f:f:o",
@@ -525,7 +590,8 @@
         "price": "cpi:f:h:v:f:f:o",
         "long_name": "Other fresh fruits",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:v:f:v",
@@ -533,7 +599,8 @@
         "price": "cpi:f:h:v:f:v",
         "long_name": "Fresh vegetables",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:v:f:v:p",
@@ -541,7 +608,8 @@
         "price": "cpi:f:h:v:f:v:p",
         "long_name": "Potatoes",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:v:f:v:l",
@@ -549,7 +617,8 @@
         "price": "cpi:f:h:v:f:v:l",
         "long_name": "Lettuce",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:v:f:v:t",
@@ -557,7 +626,8 @@
         "price": "cpi:f:h:v:f:v:t",
         "long_name": "Tomatoes",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:v:f:v:o",
@@ -565,7 +635,8 @@
         "price": "cpi:f:h:v:f:v:o",
         "long_name": "Other fresh vegetables",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:v:f:p",
@@ -573,7 +644,8 @@
         "price": "cpi:f:h:v:f:p",
         "long_name": "Processed fruits and vegetables",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:v:f:p:c",
@@ -581,7 +653,8 @@
         "price": "cpi:f:h:v:f:p:c",
         "long_name": "Canned fruits and vegetables",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:v:f:p:c:f",
@@ -589,7 +662,8 @@
         "price": "cpi:f:h:v:f:p:c:f",
         "long_name": "Canned fruits",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:v:f:p:c:v",
@@ -597,7 +671,8 @@
         "price": "cpi:f:h:v:f:p:c:v",
         "long_name": "Canned vegetables",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:v:f:p:f",
@@ -605,7 +680,8 @@
         "price": "cpi:f:h:v:f:p:f",
         "long_name": "Frozen fruits and vegetables",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:v:f:p:f:v",
@@ -613,7 +689,8 @@
         "price": "cpi:f:h:v:f:p:f:v",
         "long_name": "Frozen vegetables",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:v:f:p:o",
@@ -621,7 +698,8 @@
         "price": "cpi:f:h:v:f:p:o",
         "long_name": "Other processed fruits and vegetables including dried",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:v:f:p:o:b",
@@ -629,7 +707,8 @@
         "price": "cpi:f:h:v:f:p:o:b",
         "long_name": "Dried beans, peas, and lentils",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:l",
@@ -637,7 +716,8 @@
         "price": "cpi:f:h:l",
         "long_name": "Nonalcoholic beverages and beverage materials",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:l:j",
@@ -645,7 +725,8 @@
         "price": "cpi:f:h:l:j",
         "long_name": "Juices and nonalcoholic drinks",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:l:j:c",
@@ -653,7 +734,8 @@
         "price": "cpi:f:h:l:j:c",
         "long_name": "Carbonated drinks",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:l:j:f",
@@ -661,7 +743,8 @@
         "price": "cpi:f:h:l:j:f",
         "long_name": "Frozen noncarbonated juices and drinks",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:l:j:n",
@@ -669,7 +752,8 @@
         "price": "cpi:f:h:l:j:n",
         "long_name": "Nonfrozen noncarbonated juices and drinks",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:l:m",
@@ -677,7 +761,8 @@
         "price": "cpi:f:h:l:m",
         "long_name": "Beverage materials including coffee and tea",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:l:m:c",
@@ -685,7 +770,8 @@
         "price": "cpi:f:h:l:m:c",
         "long_name": "Coffee",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:l:m:c:r",
@@ -693,7 +779,8 @@
         "price": "cpi:f:h:l:m:c:r",
         "long_name": "Roasted coffee",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:l:m:c:i",
@@ -701,7 +788,8 @@
         "price": "cpi:f:h:l:m:c:i",
         "long_name": "Instant coffee",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:l:m:o",
@@ -709,7 +797,8 @@
         "price": "cpi:f:h:l:m:o",
         "long_name": "Other beverage materials including tea",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o",
@@ -717,7 +806,8 @@
         "price": "cpi:f:h:o",
         "long_name": "Other food at home",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:s",
@@ -725,7 +815,8 @@
         "price": "cpi:f:h:o:s",
         "long_name": "Sugar and sweets",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:s:s",
@@ -733,7 +824,8 @@
         "price": "cpi:f:h:o:s:s",
         "long_name": "Sugar and sugar substitutes",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:s:c",
@@ -741,7 +833,8 @@
         "price": "cpi:f:h:o:s:c",
         "long_name": "Candy and chewing gum",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:s:o",
@@ -749,7 +842,8 @@
         "price": "cpi:f:h:o:s:o",
         "long_name": "Other sweets",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:f",
@@ -757,7 +851,8 @@
         "price": "cpi:f:h:o:f",
         "long_name": "Fats and oils",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:f:b",
@@ -765,7 +860,8 @@
         "price": "cpi:f:h:o:f:b",
         "long_name": "Butter and margarine",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:f:b:b",
@@ -773,7 +869,8 @@
         "price": "cpi:f:h:o:f:b:b",
         "long_name": "Butter",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:f:b:m",
@@ -781,7 +878,8 @@
         "price": "cpi:f:h:o:f:b:m",
         "long_name": "Margarine",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:f:s",
@@ -789,7 +887,8 @@
         "price": "cpi:f:h:o:f:s",
         "long_name": "Salad dressing",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:f:o",
@@ -797,7 +896,8 @@
         "price": "cpi:f:h:o:f:o",
         "long_name": "Other fats and oils including peanut butter",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:f:o:p",
@@ -805,7 +905,8 @@
         "price": "cpi:f:h:o:f:o:p",
         "long_name": "Peanut butter",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:o",
@@ -813,7 +914,8 @@
         "price": "cpi:f:h:o:o",
         "long_name": "Other foods",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:o:s",
@@ -821,7 +923,8 @@
         "price": "cpi:f:h:o:o:s",
         "long_name": "Soups",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:o:f",
@@ -829,7 +932,8 @@
         "price": "cpi:f:h:o:o:f",
         "long_name": "Frozen and freeze dried prepared foods",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:o:k",
@@ -837,7 +941,8 @@
         "price": "cpi:f:h:o:o:k",
         "long_name": "Snacks",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:o:c",
@@ -845,7 +950,8 @@
         "price": "cpi:f:h:o:o:c",
         "long_name": "Spices, seasonings, condiments, sauces",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:o:c:s",
@@ -853,7 +959,8 @@
         "price": "cpi:f:h:o:o:c:s",
         "long_name": "Salt and other seasonings and spices",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:o:c:p",
@@ -861,7 +968,8 @@
         "price": "cpi:f:h:o:o:c:p",
         "long_name": "Olives, pickles, relishes",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:o:c:g",
@@ -869,7 +977,8 @@
         "price": "cpi:f:h:o:o:c:g",
         "long_name": "Sauces and gravies",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:o:c:o",
@@ -877,7 +986,8 @@
         "price": "cpi:f:h:o:o:c:o",
         "long_name": "Other condiments",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:o:b",
@@ -885,7 +995,8 @@
         "price": "cpi:f:h:o:o:b",
         "long_name": "Baby food",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:o:o",
@@ -893,7 +1004,8 @@
         "price": "cpi:f:h:o:o:o",
         "long_name": "Other miscellaneous foods",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:h:o:o:o:s",
@@ -901,7 +1013,8 @@
         "price": "cpi:f:h:o:o:o:s",
         "long_name": "Prepared salads",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:a",
@@ -909,7 +1022,8 @@
         "price": "cpi:f:a",
         "long_name": "Food away from home",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:a:f",
@@ -917,7 +1031,8 @@
         "price": "cpi:f:a:f",
         "long_name": "Full service meals and snacks",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:a:l",
@@ -925,7 +1040,8 @@
         "price": "cpi:f:a:l",
         "long_name": "Limited service meals and snacks",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:a:e",
@@ -933,7 +1049,8 @@
         "price": "cpi:f:a:e",
         "long_name": "Food at employee sites and schools",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:a:e:s",
@@ -941,7 +1058,8 @@
         "price": "cpi:f:a:e:s",
         "long_name": "Food at elementary and secondary schools",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:a:v",
@@ -949,7 +1067,8 @@
         "price": "cpi:f:a:v",
         "long_name": "Food from vending machines and mobile vendors",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:f:a:v:o",
@@ -957,7 +1076,8 @@
         "price": "cpi:f:a:v:o",
         "long_name": "Other food away from home",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:e",
@@ -965,7 +1085,8 @@
         "price": "cpi:e",
         "long_name": "Energy",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:e:c",
@@ -973,7 +1094,8 @@
         "price": "cpi:e:c",
         "long_name": "Energy commodities",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:e:c:f",
@@ -981,7 +1103,8 @@
         "price": "cpi:e:c:f",
         "long_name": "Fuel oil and other fuels",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:e:c:f:o",
@@ -989,7 +1112,8 @@
         "price": "cpi:e:c:f:o",
         "long_name": "Fuel oil",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:e:c:f:p",
@@ -997,7 +1121,8 @@
         "price": "cpi:e:c:f:p",
         "long_name": "Propane, kerosene, and firewood",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:e:c:m",
@@ -1005,7 +1130,8 @@
         "price": "cpi:e:c:m",
         "long_name": "Motor fuel",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:e:c:m:g",
@@ -1013,7 +1139,8 @@
         "price": "cpi:e:c:m:g",
         "long_name": "Gasoline ",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:e:c:m:g:r",
@@ -1021,7 +1148,8 @@
         "price": "cpi:e:c:m:g:r",
         "long_name": "Gasoline, unleaded regular",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:e:c:m:g:m",
@@ -1029,7 +1157,8 @@
         "price": "cpi:e:c:m:g:m",
         "long_name": "Gasoline, unleaded midgrade",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:e:c:m:g:p",
@@ -1037,7 +1166,8 @@
         "price": "cpi:e:c:m:g:p",
         "long_name": "Gasoline, unleaded premium",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:e:c:o",
@@ -1045,7 +1175,8 @@
         "price": "cpi:e:c:o",
         "long_name": "Other motor fuels",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:e:s",
@@ -1053,7 +1184,8 @@
         "price": "cpi:e:s",
         "long_name": "Energy services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:e:s:e",
@@ -1061,7 +1193,8 @@
         "price": "cpi:e:s:e",
         "long_name": "Electricity",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:e:s:u",
@@ -1069,7 +1202,8 @@
         "price": "cpi:e:s:u",
         "long_name": "Utility ",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i",
@@ -1077,7 +1211,8 @@
         "price": "cpi:i",
         "long_name": "All items less food and energy",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c",
@@ -1085,7 +1220,8 @@
         "price": "cpi:i:c",
         "long_name": "Commodities less food and energy commodities",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h",
@@ -1093,7 +1229,8 @@
         "price": "cpi:i:c:h",
         "long_name": "Household furnishings and supplies",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:w",
@@ -1101,7 +1238,8 @@
         "price": "cpi:i:c:h:w",
         "long_name": "Window and floor coverings and other linens",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:w:f",
@@ -1109,7 +1247,8 @@
         "price": "cpi:i:c:h:w:f",
         "long_name": "Floor coverings",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:w:w",
@@ -1117,7 +1256,8 @@
         "price": "cpi:i:c:h:w:w",
         "long_name": "Window coverings",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:w:o",
@@ -1125,7 +1265,8 @@
         "price": "cpi:i:c:h:w:o",
         "long_name": "Other linens",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:f",
@@ -1133,7 +1274,8 @@
         "price": "cpi:i:c:h:f",
         "long_name": "Furniture and bedding",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:f:b",
@@ -1141,7 +1283,8 @@
         "price": "cpi:i:c:h:f:b",
         "long_name": "Bedroom furniture",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:f:l",
@@ -1149,7 +1292,8 @@
         "price": "cpi:i:c:h:f:l",
         "long_name": "Living room, kitchen, and dining room furniture",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:f:o",
@@ -1157,7 +1301,8 @@
         "price": "cpi:i:c:h:f:o",
         "long_name": "Other furniture",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:a",
@@ -1165,7 +1310,8 @@
         "price": "cpi:i:c:h:a",
         "long_name": "Appliances",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:a:m",
@@ -1173,7 +1319,8 @@
         "price": "cpi:i:c:h:a:m",
         "long_name": "Major appliances",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:a:m:l",
@@ -1181,7 +1328,8 @@
         "price": "cpi:i:c:h:a:m:l",
         "long_name": "Laundry equipment",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:a:o",
@@ -1189,7 +1337,8 @@
         "price": "cpi:i:c:h:a:o",
         "long_name": "Other appliances",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:o",
@@ -1197,7 +1346,8 @@
         "price": "cpi:i:c:h:o",
         "long_name": "Other household equipment and furnishings",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:o:c",
@@ -1205,7 +1355,8 @@
         "price": "cpi:i:c:h:o:c",
         "long_name": "Clocks, lamps, and decorator items",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:o:p",
@@ -1213,7 +1364,8 @@
         "price": "cpi:i:c:h:o:p",
         "long_name": "Indoor plants and flowers",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:o:d",
@@ -1221,7 +1373,8 @@
         "price": "cpi:i:c:h:o:d",
         "long_name": "Dishes and flatware",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:o:t",
@@ -1229,7 +1382,8 @@
         "price": "cpi:i:c:h:o:t",
         "long_name": "Nonelectric cookware and tableware",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:t",
@@ -1237,7 +1391,8 @@
         "price": "cpi:i:c:h:t",
         "long_name": "Tools, hardware, outdoor equipment and supplies",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:t:h",
@@ -1245,7 +1400,8 @@
         "price": "cpi:i:c:h:t:h",
         "long_name": "Tools, hardware and supplies",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:t:o",
@@ -1253,7 +1409,8 @@
         "price": "cpi:i:c:h:t:o",
         "long_name": "Outdoor equipment and supplies",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:k",
@@ -1261,7 +1418,8 @@
         "price": "cpi:i:c:h:k",
         "long_name": "Housekeeping supplies",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:k:c",
@@ -1269,7 +1427,8 @@
         "price": "cpi:i:c:h:k:c",
         "long_name": "Household cleaning products",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:k:p",
@@ -1277,7 +1436,8 @@
         "price": "cpi:i:c:h:k:p",
         "long_name": "Household paper products",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:h:k:m",
@@ -1285,7 +1445,8 @@
         "price": "cpi:i:c:h:k:m",
         "long_name": "Miscellaneous household products",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a",
@@ -1293,7 +1454,8 @@
         "price": "cpi:i:c:a",
         "long_name": "Apparel",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a:m",
@@ -1301,7 +1463,8 @@
         "price": "cpi:i:c:a:m",
         "long_name": "Men's and boys' apparel",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a:m:m",
@@ -1309,7 +1472,8 @@
         "price": "cpi:i:c:a:m:m",
         "long_name": "Men's apparel",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a:m:m:o",
@@ -1317,7 +1481,8 @@
         "price": "cpi:i:c:a:m:m:o",
         "long_name": "Men's suits, sport coats, and outerwear",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a:m:m:u",
@@ -1325,7 +1490,8 @@
         "price": "cpi:i:c:a:m:m:u",
         "long_name": "Men's underwear, nightwear, swimwear, and accessories",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a:m:m:s",
@@ -1333,7 +1499,8 @@
         "price": "cpi:i:c:a:m:m:s",
         "long_name": "Men's shirts and sweaters",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a:m:m:p",
@@ -1341,7 +1508,8 @@
         "price": "cpi:i:c:a:m:m:p",
         "long_name": "Men's pants and shorts",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a:m:b",
@@ -1349,7 +1517,8 @@
         "price": "cpi:i:c:a:m:b",
         "long_name": "Boys' apparel",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a:f",
@@ -1357,7 +1526,8 @@
         "price": "cpi:i:c:a:f",
         "long_name": "Women's and girls' apparel",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a:f:w",
@@ -1365,7 +1535,8 @@
         "price": "cpi:i:c:a:f:w",
         "long_name": "Women's apparel",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a:f:w:o",
@@ -1373,7 +1544,8 @@
         "price": "cpi:i:c:a:f:w:o",
         "long_name": "Women's outerwear",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a:f:w:d",
@@ -1381,7 +1553,8 @@
         "price": "cpi:i:c:a:f:w:d",
         "long_name": "Women's dresses",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a:f:w:s",
@@ -1389,7 +1562,8 @@
         "price": "cpi:i:c:a:f:w:s",
         "long_name": "Women's suits and separates",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a:f:w:u",
@@ -1397,7 +1571,8 @@
         "price": "cpi:i:c:a:f:w:u",
         "long_name": "Women's underwear, nightwear, swimwear, and accessories",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a:f:g",
@@ -1405,7 +1580,8 @@
         "price": "cpi:i:c:a:f:g",
         "long_name": "Girls' apparel",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a:s",
@@ -1413,7 +1589,8 @@
         "price": "cpi:i:c:a:s",
         "long_name": "Footwear",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a:s:m",
@@ -1421,7 +1598,8 @@
         "price": "cpi:i:c:a:s:m",
         "long_name": "Men's footwear",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a:s:c",
@@ -1429,7 +1607,8 @@
         "price": "cpi:i:c:a:s:c",
         "long_name": "Boys' and girls' footwear",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a:s:f",
@@ -1437,7 +1616,8 @@
         "price": "cpi:i:c:a:s:f",
         "long_name": "Women's footwear",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a:b",
@@ -1445,7 +1625,8 @@
         "price": "cpi:i:c:a:b",
         "long_name": "Infants' and toddlers' apparel",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a:j",
@@ -1453,7 +1634,8 @@
         "price": "cpi:i:c:a:j",
         "long_name": "Jewelry and watches",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a:j:w",
@@ -1461,7 +1643,8 @@
         "price": "cpi:i:c:a:j:w",
         "long_name": "Watches",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:a:j:j",
@@ -1469,7 +1652,8 @@
         "price": "cpi:i:c:a:j:j",
         "long_name": "Jewelry",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:t",
@@ -1477,7 +1661,8 @@
         "price": "cpi:i:c:t",
         "long_name": "Transportation commodities less motor fuel",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:t:v",
@@ -1485,7 +1670,8 @@
         "price": "cpi:i:c:t:v",
         "long_name": "New vehicles",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:t:v:n",
@@ -1493,7 +1679,8 @@
         "price": "cpi:i:c:t:v:n",
         "long_name": "New cars and trucks",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:t:v:n:c",
@@ -1501,7 +1688,8 @@
         "price": "cpi:i:c:t:v:n:c",
         "long_name": "New cars",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:t:v:n:t",
@@ -1509,7 +1697,8 @@
         "price": "cpi:i:c:t:v:n:t",
         "long_name": "New trucks",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:t:u",
@@ -1517,7 +1706,8 @@
         "price": "cpi:i:c:t:u",
         "long_name": "Used cars and trucks",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:t:e",
@@ -1525,7 +1715,8 @@
         "price": "cpi:i:c:t:e",
         "long_name": "Motor vehicle parts and equipment",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:t:e:t",
@@ -1533,7 +1724,8 @@
         "price": "cpi:i:c:t:e:t",
         "long_name": "Tires",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:t:e:a",
@@ -1541,7 +1733,8 @@
         "price": "cpi:i:c:t:e:a",
         "long_name": "Vehicle accessories other than tires",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:t:e:a:p",
@@ -1549,7 +1742,8 @@
         "price": "cpi:i:c:t:e:a:p",
         "long_name": "Vehicle parts and equipment other than tires",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:t:e:a:f",
@@ -1557,7 +1751,8 @@
         "price": "cpi:i:c:t:e:a:f",
         "long_name": "Motor oil, coolant, and fluids",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:m",
@@ -1565,7 +1760,8 @@
         "price": "cpi:i:c:m",
         "long_name": "Medical care commodities",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:m:d",
@@ -1573,7 +1769,8 @@
         "price": "cpi:i:c:m:d",
         "long_name": "Medicinal drugs",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:m:d:p",
@@ -1581,7 +1778,8 @@
         "price": "cpi:i:c:m:d:p",
         "long_name": "Prescription drugs",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:m:d:n",
@@ -1589,7 +1787,8 @@
         "price": "cpi:i:c:m:d:n",
         "long_name": "Nonprescription drugs",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:m:e",
@@ -1597,7 +1796,8 @@
         "price": "cpi:i:c:m:e",
         "long_name": "Medical equipment and supplies",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:r",
@@ -1605,7 +1805,8 @@
         "price": "cpi:i:c:r",
         "long_name": "Recreation commodities",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:r:a",
@@ -1613,7 +1814,8 @@
         "price": "cpi:i:c:r:a",
         "long_name": "Video and audio products",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:r:a:t",
@@ -1621,7 +1823,8 @@
         "price": "cpi:i:c:r:a:t",
         "long_name": "Televisions",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:r:a:o",
@@ -1629,7 +1832,8 @@
         "price": "cpi:i:c:r:a:o",
         "long_name": "Other video equipment",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:r:a:a",
@@ -1637,7 +1841,8 @@
         "price": "cpi:i:c:r:a:a",
         "long_name": "Audio equipment",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:r:a:m",
@@ -1645,7 +1850,8 @@
         "price": "cpi:i:c:r:a:m",
         "long_name": "Recorded music and music subscriptions",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:r:p",
@@ -1653,7 +1859,8 @@
         "price": "cpi:i:c:r:p",
         "long_name": "Pets and pet products",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:r:p:f",
@@ -1661,7 +1868,8 @@
         "price": "cpi:i:c:r:p:f",
         "long_name": "Pet food",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:r:p:s",
@@ -1669,7 +1877,8 @@
         "price": "cpi:i:c:r:p:s",
         "long_name": "Purchase of pets, pet supplies, accessories",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:r:s",
@@ -1677,7 +1886,8 @@
         "price": "cpi:i:c:r:s",
         "long_name": "Sporting goods",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:r:s:v",
@@ -1685,7 +1895,8 @@
         "price": "cpi:i:c:r:s:v",
         "long_name": "Sports vehicles including bicycles",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:r:s:e",
@@ -1693,7 +1904,8 @@
         "price": "cpi:i:c:r:s:e",
         "long_name": "Sports equipment",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:r:d",
@@ -1701,7 +1913,8 @@
         "price": "cpi:i:c:r:d",
         "long_name": "Photographic equipment and supplies",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:r:d:e",
@@ -1709,7 +1922,8 @@
         "price": "cpi:i:c:r:d:e",
         "long_name": "Photographic equipment",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:r:r",
@@ -1717,7 +1931,8 @@
         "price": "cpi:i:c:r:r",
         "long_name": "Recreational reading materials",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:r:r:n",
@@ -1725,7 +1940,8 @@
         "price": "cpi:i:c:r:r:n",
         "long_name": "Newspapers and magazines",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:r:r:b",
@@ -1733,7 +1949,8 @@
         "price": "cpi:i:c:r:r:b",
         "long_name": "Recreational books",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:r:o",
@@ -1741,7 +1958,8 @@
         "price": "cpi:i:c:r:o",
         "long_name": "Other recreational goods",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:r:o:t",
@@ -1749,7 +1967,8 @@
         "price": "cpi:i:c:r:o:t",
         "long_name": "Toys",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:r:o:t:g",
@@ -1757,7 +1976,8 @@
         "price": "cpi:i:c:r:o:t:g",
         "long_name": "Toys, games, hobbies and playground equipment",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:r:o:s",
@@ -1765,7 +1985,8 @@
         "price": "cpi:i:c:r:o:s",
         "long_name": "Sewing machines, fabric and supplies",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:r:o:m",
@@ -1773,7 +1994,8 @@
         "price": "cpi:i:c:r:o:m",
         "long_name": "Music instruments and accessories",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:e",
@@ -1781,7 +2003,8 @@
         "price": "cpi:i:c:e",
         "long_name": "Education and communication commodities",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:e:b",
@@ -1789,7 +2012,8 @@
         "price": "cpi:i:c:e:b",
         "long_name": "Educational books and supplies",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:e:b:c",
@@ -1797,7 +2021,8 @@
         "price": "cpi:i:c:e:b:c",
         "long_name": "College textbooks",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:e:i",
@@ -1805,7 +2030,8 @@
         "price": "cpi:i:c:e:i",
         "long_name": "Information technology commodities",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:e:i:c",
@@ -1813,7 +2039,8 @@
         "price": "cpi:i:c:e:i:c",
         "long_name": "Computers, peripherals, and smart home assistants",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:e:i:s",
@@ -1821,7 +2048,8 @@
         "price": "cpi:i:c:e:i:s",
         "long_name": "Computer software and accessories",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:e:i:t",
@@ -1829,7 +2057,8 @@
         "price": "cpi:i:c:e:i:t",
         "long_name": "Telephone hardware, calculators, and other consumer information items",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:d",
@@ -1837,7 +2066,8 @@
         "price": "cpi:i:c:d",
         "long_name": "Alcoholic beverages",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:d:h",
@@ -1845,7 +2075,8 @@
         "price": "cpi:i:c:d:h",
         "long_name": "Alcoholic beverages at home",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:d:h:b",
@@ -1853,7 +2084,8 @@
         "price": "cpi:i:c:d:h:b",
         "long_name": "Beer, ale, and other malt beverages at home",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:d:h:s",
@@ -1861,7 +2093,8 @@
         "price": "cpi:i:c:d:h:s",
         "long_name": "Distilled spirits at home",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:d:h:s:w",
@@ -1869,7 +2102,8 @@
         "price": "cpi:i:c:d:h:s:w",
         "long_name": "Whiskey at home",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:d:h:s:o",
@@ -1877,7 +2111,8 @@
         "price": "cpi:i:c:d:h:s:o",
         "long_name": "Distilled spirits, excluding whiskey, at home",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:d:h:w",
@@ -1885,7 +2120,8 @@
         "price": "cpi:i:c:d:h:w",
         "long_name": "Wine at home",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:d:a",
@@ -1893,7 +2129,8 @@
         "price": "cpi:i:c:d:a",
         "long_name": "Alcoholic beverages away from home",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:d:a:b",
@@ -1901,7 +2138,8 @@
         "price": "cpi:i:c:d:a:b",
         "long_name": "Beer, ale, and other malt beverages away from home",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:d:a:w",
@@ -1909,7 +2147,8 @@
         "price": "cpi:i:c:d:a:w",
         "long_name": "Wine away from home",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:d:a:s",
@@ -1917,7 +2156,8 @@
         "price": "cpi:i:c:d:a:s",
         "long_name": "Distilled spirits away from home",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:o",
@@ -1925,7 +2165,8 @@
         "price": "cpi:i:c:o",
         "long_name": "Other goods",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:o:t",
@@ -1933,7 +2174,8 @@
         "price": "cpi:i:c:o:t",
         "long_name": "Tobacco and smoking products",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:o:t:c",
@@ -1941,7 +2183,8 @@
         "price": "cpi:i:c:o:t:c",
         "long_name": "Cigarettes",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:o:t:o",
@@ -1949,7 +2192,8 @@
         "price": "cpi:i:c:o:t:o",
         "long_name": "Tobacco products other than cigarettes",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:o:p",
@@ -1957,7 +2201,8 @@
         "price": "cpi:i:c:o:p",
         "long_name": "Personal care products",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:o:p:h",
@@ -1965,7 +2210,8 @@
         "price": "cpi:i:c:o:p:h",
         "long_name": "Hair, dental, shaving, and miscellaneous personal care products",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:o:p:c",
@@ -1973,7 +2219,8 @@
         "price": "cpi:i:c:o:p:c",
         "long_name": "Cosmetics, perfume, bath, nail preparations and implements",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:o:o",
@@ -1981,7 +2228,8 @@
         "price": "cpi:i:c:o:o",
         "long_name": "Miscellaneous personal goods",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:c:o:o:s",
@@ -1989,7 +2237,8 @@
         "price": "cpi:i:c:o:o:s",
         "long_name": "Stationery, stationery supplies, gift wrap",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s",
@@ -1997,7 +2246,8 @@
         "price": "cpi:i:s",
         "long_name": "Services less energy services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:s",
@@ -2005,7 +2255,8 @@
         "price": "cpi:i:s:s",
         "long_name": "Shelter",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:s:r",
@@ -2013,7 +2264,8 @@
         "price": "cpi:i:s:s:r",
         "long_name": "Rent of shelter",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:s:r:p",
@@ -2021,7 +2273,8 @@
         "price": "cpi:i:s:s:r:p",
         "long_name": "Rent of primary residence",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:s:r:a",
@@ -2029,7 +2282,8 @@
         "price": "cpi:i:s:s:r:a",
         "long_name": "Lodging away from home",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:s:r:a:s",
@@ -2037,7 +2291,8 @@
         "price": "cpi:i:s:s:r:a:s",
         "long_name": "Housing at school, excluding board",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:s:r:a:o",
@@ -2045,7 +2300,8 @@
         "price": "cpi:i:s:s:r:a:o",
         "long_name": "Other lodging away from home including hotels and motels",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:s:r:r",
@@ -2053,7 +2309,8 @@
         "price": "cpi:i:s:s:r:r",
         "long_name": "Owners' equivalent rent of residences",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:s:r:r:p",
@@ -2061,7 +2318,8 @@
         "price": "cpi:i:s:s:r:r:p",
         "long_name": "Owners' equivalent rent of primary residence",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:s:r:i",
@@ -2069,7 +2327,8 @@
         "price": "cpi:i:s:s:r:i",
         "long_name": "Tenants' and household insurance",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:w",
@@ -2077,7 +2336,8 @@
         "price": "cpi:i:s:w",
         "long_name": "Water and sewer and trash collection services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:w:m",
@@ -2085,7 +2345,8 @@
         "price": "cpi:i:s:w:m",
         "long_name": "Water and sewerage maintenance",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:w:g",
@@ -2093,7 +2354,8 @@
         "price": "cpi:i:s:w:g",
         "long_name": "Garbage and trash collection",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:h",
@@ -2101,7 +2363,8 @@
         "price": "cpi:i:s:h",
         "long_name": "Household operations",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:h:d",
@@ -2109,7 +2372,8 @@
         "price": "cpi:i:s:h:d",
         "long_name": "Domestic services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:h:g",
@@ -2117,7 +2381,8 @@
         "price": "cpi:i:s:h:g",
         "long_name": "Gardening and lawncare services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:h:m",
@@ -2125,7 +2390,8 @@
         "price": "cpi:i:s:h:m",
         "long_name": "Moving, storage, freight expense",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:h:r",
@@ -2133,7 +2399,8 @@
         "price": "cpi:i:s:h:r",
         "long_name": "Repair of household items",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:m",
@@ -2141,7 +2408,8 @@
         "price": "cpi:i:s:m",
         "long_name": "Medical care services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:m:p",
@@ -2149,7 +2417,8 @@
         "price": "cpi:i:s:m:p",
         "long_name": "Professional services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:m:p:p",
@@ -2157,7 +2426,8 @@
         "price": "cpi:i:s:m:p:p",
         "long_name": "Physicians' services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:m:p:d",
@@ -2165,7 +2435,8 @@
         "price": "cpi:i:s:m:p:d",
         "long_name": "Dental services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:m:p:e",
@@ -2173,7 +2444,8 @@
         "price": "cpi:i:s:m:p:e",
         "long_name": "Eyeglasses and eye care",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:m:p:o",
@@ -2181,7 +2453,8 @@
         "price": "cpi:i:s:m:p:o",
         "long_name": "Services by other medical professionals",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:m:h",
@@ -2189,7 +2462,8 @@
         "price": "cpi:i:s:m:h",
         "long_name": "Hospital and related services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:m:h:h",
@@ -2197,7 +2471,8 @@
         "price": "cpi:i:s:m:h:h",
         "long_name": "Hospital services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:m:h:h:i",
@@ -2205,7 +2480,8 @@
         "price": "cpi:i:s:m:h:h:i",
         "long_name": "Inpatient hospital services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:m:h:h:o",
@@ -2213,7 +2489,8 @@
         "price": "cpi:i:s:m:h:h:o",
         "long_name": "Outpatient hospital services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:m:h:n",
@@ -2221,7 +2498,8 @@
         "price": "cpi:i:s:m:h:n",
         "long_name": "Nursing homes and adult day services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:m:h:c",
@@ -2229,7 +2507,8 @@
         "price": "cpi:i:s:m:h:c",
         "long_name": "Care of invalids and elderly at home",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:m:i",
@@ -2237,7 +2516,8 @@
         "price": "cpi:i:s:m:i",
         "long_name": "Health insurance",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:t",
@@ -2245,7 +2525,8 @@
         "price": "cpi:i:s:t",
         "long_name": "Transportation services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:t:l",
@@ -2253,7 +2534,8 @@
         "price": "cpi:i:s:t:l",
         "long_name": "Leased cars and trucks",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:t:l:c",
@@ -2261,7 +2543,8 @@
         "price": "cpi:i:s:t:l:c",
         "long_name": "Car and truck rental",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:t:l:r",
@@ -2269,7 +2552,8 @@
         "price": "cpi:i:s:t:l:r",
         "long_name": "Motor vehicle maintenance and repair",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:t:l:r:b",
@@ -2277,7 +2561,8 @@
         "price": "cpi:i:s:t:l:r:b",
         "long_name": "Motor vehicle body work",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:t:l:r:m",
@@ -2285,7 +2570,8 @@
         "price": "cpi:i:s:t:l:r:m",
         "long_name": "Motor vehicle maintenance and servicing",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:t:l:r:r",
@@ -2293,7 +2579,8 @@
         "price": "cpi:i:s:t:l:r:r",
         "long_name": "Motor vehicle repair",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:t:l:i",
@@ -2301,7 +2588,8 @@
         "price": "cpi:i:s:t:l:i",
         "long_name": "Motor vehicle insurance",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:t:l:f",
@@ -2309,7 +2597,8 @@
         "price": "cpi:i:s:t:l:f",
         "long_name": "Motor vehicle fees",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:t:l:s",
@@ -2317,7 +2606,8 @@
         "price": "cpi:i:s:t:l:s",
         "long_name": "State motor vehicle registration and license fees",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:t:l:p",
@@ -2325,7 +2615,8 @@
         "price": "cpi:i:s:t:l:p",
         "long_name": "Parking and other fees",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:t:l:p:f",
@@ -2333,7 +2624,8 @@
         "price": "cpi:i:s:t:l:p:f",
         "long_name": "Parking fees and tolls",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:t:p",
@@ -2341,7 +2633,8 @@
         "price": "cpi:i:s:t:p",
         "long_name": "Public transportation",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:t:p:a",
@@ -2349,7 +2642,8 @@
         "price": "cpi:i:s:t:p:a",
         "long_name": "Airline fares",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:t:p:o",
@@ -2357,7 +2651,8 @@
         "price": "cpi:i:s:t:p:o",
         "long_name": "Other intercity transportation",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:t:p:o:s",
@@ -2365,7 +2660,8 @@
         "price": "cpi:i:s:t:p:o:s",
         "long_name": "Ship fare",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:t:p:l",
@@ -2373,7 +2669,8 @@
         "price": "cpi:i:s:t:p:l",
         "long_name": "Intracity transportation",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:t:p:l:m",
@@ -2381,7 +2678,8 @@
         "price": "cpi:i:s:t:p:l:m",
         "long_name": "Intracity mass transit",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:r",
@@ -2389,7 +2687,8 @@
         "price": "cpi:i:s:r",
         "long_name": "Recreation services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:r:a",
@@ -2397,7 +2696,8 @@
         "price": "cpi:i:s:r:a",
         "long_name": "Video and audio services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:r:a:c",
@@ -2405,7 +2705,8 @@
         "price": "cpi:i:s:r:a:c",
         "long_name": "Cable and satellite television service",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:r:a:v",
@@ -2413,7 +2714,8 @@
         "price": "cpi:i:s:r:a:v",
         "long_name": "Video discs and other media, including rental of video",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:r:a:v:d",
@@ -2421,7 +2723,8 @@
         "price": "cpi:i:s:r:a:v:d",
         "long_name": "Video discs and other media",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:r:a:v:r",
@@ -2429,7 +2732,8 @@
         "price": "cpi:i:s:r:a:v:r",
         "long_name": "Rental of video discs and other media",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:r:p",
@@ -2437,7 +2741,8 @@
         "price": "cpi:i:s:r:p",
         "long_name": "Pet services including veterinary",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:r:p:v",
@@ -2445,7 +2750,8 @@
         "price": "cpi:i:s:r:p:v",
         "long_name": "Veterinarian services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:r:d",
@@ -2453,7 +2759,8 @@
         "price": "cpi:i:s:r:d",
         "long_name": "Photographers and photo processing",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:r:o",
@@ -2461,7 +2768,8 @@
         "price": "cpi:i:s:r:o",
         "long_name": "Other recreation services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:r:o:c",
@@ -2469,7 +2777,8 @@
         "price": "cpi:i:s:r:o:c",
         "long_name": "Club membership for shopping clubs, fraternal, or other organizations, or participant sports fees",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:r:o:a",
@@ -2477,7 +2786,8 @@
         "price": "cpi:i:s:r:o:a",
         "long_name": "Admissions",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:r:o:a:m",
@@ -2485,7 +2795,8 @@
         "price": "cpi:i:s:r:o:a:m",
         "long_name": "Admission to movies, theaters, and concerts",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:r:o:a:s",
@@ -2493,7 +2804,8 @@
         "price": "cpi:i:s:r:o:a:s",
         "long_name": "Admission to sporting events",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:r:o:a:f",
@@ -2501,7 +2813,8 @@
         "price": "cpi:i:s:r:o:a:f",
         "long_name": "Fees for lessons or instructions",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:e",
@@ -2509,7 +2822,8 @@
         "price": "cpi:i:s:e",
         "long_name": "Education and communication services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:e:t",
@@ -2517,7 +2831,8 @@
         "price": "cpi:i:s:e:t",
         "long_name": "Tuition, other school fees, and childcare",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:e:t:c",
@@ -2525,7 +2840,8 @@
         "price": "cpi:i:s:e:t:c",
         "long_name": "College tuition and fees",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:e:t:e",
@@ -2533,7 +2849,8 @@
         "price": "cpi:i:s:e:t:e",
         "long_name": "Elementary and high school tuition and fees",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:e:t:d",
@@ -2541,7 +2858,8 @@
         "price": "cpi:i:s:e:t:d",
         "long_name": "Day care and preschool",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:e:t:t",
@@ -2549,7 +2867,8 @@
         "price": "cpi:i:s:e:t:t",
         "long_name": "Technical and business school tuition and fees",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:e:d",
@@ -2557,7 +2876,8 @@
         "price": "cpi:i:s:e:d",
         "long_name": "Postage and delivery services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:e:d:p",
@@ -2565,7 +2885,8 @@
         "price": "cpi:i:s:e:d:p",
         "long_name": "Postage",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:e:d:d",
@@ -2573,7 +2894,8 @@
         "price": "cpi:i:s:e:d:d",
         "long_name": "Delivery services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:e:p",
@@ -2581,7 +2903,8 @@
         "price": "cpi:i:s:e:p",
         "long_name": "Telephone services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:e:p:w",
@@ -2589,7 +2912,8 @@
         "price": "cpi:i:s:e:p:w",
         "long_name": "Wireless telephone services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:e:p:l",
@@ -2597,7 +2921,8 @@
         "price": "cpi:i:s:e:p:l",
         "long_name": "Land-line telephone services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:e:i",
@@ -2605,7 +2930,8 @@
         "price": "cpi:i:s:e:i",
         "long_name": "Internet services and electronic information providers",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:o",
@@ -2613,7 +2939,8 @@
         "price": "cpi:i:s:o",
         "long_name": "Other personal services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:o:p",
@@ -2621,7 +2948,8 @@
         "price": "cpi:i:s:o:p",
         "long_name": "Personal care services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:o:p:h",
@@ -2629,7 +2957,8 @@
         "price": "cpi:i:s:o:p:h",
         "long_name": "Haircuts and other personal care services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:o:m",
@@ -2637,7 +2966,8 @@
         "price": "cpi:i:s:o:m",
         "long_name": "Miscellaneous personal services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:o:m:l",
@@ -2645,7 +2975,8 @@
         "price": "cpi:i:s:o:m:l",
         "long_name": "Legal services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:o:m:f",
@@ -2653,7 +2984,8 @@
         "price": "cpi:i:s:o:m:f",
         "long_name": "Funeral expenses",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:o:m:c",
@@ -2661,7 +2993,8 @@
         "price": "cpi:i:s:o:m:c",
         "long_name": "Laundry and dry cleaning services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:o:m:a",
@@ -2669,7 +3002,8 @@
         "price": "cpi:i:s:o:m:a",
         "long_name": "Apparel services other than laundry and dry cleaning",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:o:m:i",
@@ -2677,7 +3011,8 @@
         "price": "cpi:i:s:o:m:i",
         "long_name": "Financial services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:o:m:i:c",
@@ -2685,7 +3020,8 @@
         "price": "cpi:i:s:o:m:i:c",
         "long_name": "Checking account and other bank services",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     },
     {
         "code": "cpi:i:s:o:m:i:t",
@@ -2693,6 +3029,7 @@
         "price": "cpi:i:s:o:m:i:t",
         "long_name": "Tax return preparation and other accounting fees",
         "short_name": "",
-        "source": "bls"
+        "source": "bls",
+        "__subject__": "cpi"
     }
 ]
