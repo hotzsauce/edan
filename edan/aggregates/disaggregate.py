@@ -115,6 +115,9 @@ class Disaggregator(object):
 			abs_level = level + component.level
 			self.recursive_level(component, abs_level)
 
+		elif subcomponents == '':
+			self.disaggregates = component.subs
+
 	def recursive_level(self, comp: Component, level: int):
 		if comp.level < level:
 			if comp.elemental:
