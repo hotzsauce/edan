@@ -43,9 +43,10 @@ class Disaggregator(object):
 
 		Parameters
 		----------
-		subcomponents : str | Iterable[str] ( = '' )
+		subcomponents : str | Iterable[str] | bool ( = '' )
 			an iterable of subcomponents to return. the elements of `subs` are
-			assumed to be (relative or absolute) `edan` codes
+			assumed to be (relative or absolute) `edan` codes. if True, the
+			immediate subcomponents are returned.
 		level : int ( = 0 )
 			the level, relative to the current Component, of subcomponents that
 			are to be returned. if a subcomponent has level `l`, with
@@ -108,8 +109,14 @@ class Disaggregator(object):
 						f"{subcomponents} is not a subcomponent of {component.code}"
 					)
 
+			elif isinstance(subcomponents, bool):
+
+				if subcomponents:
+					for sub in self.component.subs:
+						self.disaggregates.append(sub)
+
 			else:
-				raise TypeError("'subs' must be a str or list of str")
+				raise TypeError("'subs' must be a str, list of str, or bool")
 
 		elif level:
 			abs_level = level + component.level
