@@ -2,28 +2,25 @@
 module that prepares the GDP & PCE component table
 """
 
-import pathlib
-
 from edan.algos import construct_forest
 from edan.aggregates.tables import Table
-from edan.aggregates.register import ComponentRegistry
+from edan.aggregates.register import registry
 
-from edan.nipa.core import NIPAComponent
+from edan.nipa.core import component_type
 
-# create registry based on JSON in edan/nipa
-registry_filename = '.registry.json'
-nipa_registry = pathlib.Path(__file__).parent / registry_filename
-registry = ComponentRegistry(nipa_registry, 'NIPA')
 
-# from the linear collection of Components - organized first by BEA table, then
-#	by row within that table - construct a list of the top-level components within
-#	those tables, with the `subs` attribute filled in with the appropriate
-#	Component objects
-components = [NIPAComponent.from_registry(v) for v in registry.registry.values()]
-organized_comps = construct_forest(components, level='level', lower='subs')
+flat_pce = []
+for entry in registry.by_table('pce'):
+	comp = component_type(entry['__ctype__'])
+	flat_pce.append(comp.from_registry(entry))
 
-pce_components = [c for c in components if c.subject == 'pce']
-gdp_components = [c for c in components if c.subject == 'gdp']
+flat_gdp = []
+for entry in registry.by_table('gdp'):
+	comp = component_type(entry['__ctype__'])
+	flat_gdp.append(comp.from_registry(entry))
 
-PCETable = Table(pce_components, 'PCE')
-GDPTable = Table(gdp_components, 'GDP')
+construct_forest(flat_pce, level='level', lower='subs')
+construct_forest(flat_gdp, level='level', lower='subs')
+
+PCETable = Table(flat_pce, 'PCE')
+GDPTable = Table(flat_gdp, 'GDP')

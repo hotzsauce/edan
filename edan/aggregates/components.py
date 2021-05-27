@@ -1,5 +1,5 @@
 """
-shared base container object for macroeconomic aggregate data
+shared base container objects for macroeconomic aggregate data
 """
 
 from __future__ import annotations
@@ -27,7 +27,7 @@ class Component(CompoundStorage):
 		long_name: str = '',
 		short_name: str = '',
 		source: str = '',
-		subject: str = '',
+		table: str = '',
 		**codes
 	):
 		# initialize CompoundStorage class with attribute names that hold data
@@ -51,9 +51,9 @@ class Component(CompoundStorage):
 		self.long_name = long_name
 		self.short_name = short_name
 
-		# source api and economic subject this component belongs to
+		# source api and economic table this component belongs to
 		self.source = source
-		self.subject = subject
+		self.table = table
 
 	def __getitem__(self, key: str):
 		if self.elemental:
@@ -132,6 +132,22 @@ class Component(CompoundStorage):
 			dct['long_name'],
 			dct['short_name'],
 			dct['source'],
-			dct['__subject__'],
+			dct['__table__'],
 			**mtypes
 		)
+
+
+class FlowComponent(Component):
+	"""
+	a macroeconomic component that represents a flow variable, as opposed
+	to the normal stock ones. for example, changes to PDI
+	"""
+	pass
+
+class BalanceComponent(Component):
+	"""
+	a macroeconomic component that represents an intratemporal difference of two
+	stock components. for example, net exports and gross output of nonprofit
+	institutions
+	"""
+	pass

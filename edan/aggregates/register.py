@@ -5,13 +5,18 @@ module for registering & saving Components
 from __future__ import annotations
 
 import json
+import pathlib
+
+# create registry based on JSON in edan/aggregates/
+registry_filename = '.registry.json'
+registry_file = pathlib.Path(__file__).parent / registry_filename
 
 
 class ComponentRegistry(object):
 
-	def __init__(self, reg_file: Union[str, pathlib.Path], concept=''):
-		self.reg_file = reg_file
-		self.concept = concept
+	reg_file = registry_file
+
+	def __init__(self):
 
 		with open(self.reg_file, 'r') as reg_list:
 			# list of dict with series codes & subcomponents
@@ -22,5 +27,14 @@ class ComponentRegistry(object):
 	def __getitem__(self, key):
 		return self.registry[key]
 
-	def __repr__(self):
-		return f'ComponentRegistry({self.concept})'
+	def by_concept(self, concept: str):
+		return (e for e in self.registry.values() if e['__concept__'] == concept)
+
+	def by_table(self, table: str):
+		return (e for e in self.registry.values() if e['__table__'] == table)
+
+	def by_ctype(self, ctype: str):
+		return (e for e in self.registry.values() if e['__ctype__'] == ctype)
+
+
+registry = ComponentRegistry()

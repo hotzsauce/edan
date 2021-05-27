@@ -7,10 +7,14 @@ from __future__ import annotations
 from edan.accessors import CachedAccessor
 
 from edan.aggregates.series import Series
-from edan.aggregates.components import Component
+from edan.aggregates.components import (
+	Component,
+	FlowComponent,
+	BalanceComponent
+)
+from edan.aggregates.modifications import ModificationAccessor
 
 from edan.nipa.features import Contribution
-from edan.nipa.modifications import ModificationAccessor
 
 from edan.plotting.nipa import NIPAPlotAccessor
 
@@ -92,3 +96,25 @@ class NIPAComponent(Component):
 
 	# add accessors for common features
 	contribution = CachedAccessor('contribution', Contribution)
+
+
+class NIPAFlowComponent(FlowComponent):
+	pass
+
+
+class NIPABalanceComponent(BalanceComponent):
+	pass
+
+
+def component_type(ctype: str):
+	"""
+	used in edan/nipa/api.py when constructing the PCE and GDP tables
+	"""
+	if ctype == 'stock':
+		return NIPAComponent
+	elif ctype == 'flow':
+		return NIPAFlowComponent
+	elif ctype == 'balance':
+		return NIPABalanceComponent
+
+	raise ValueError(ctype)
