@@ -140,5 +140,8 @@ class Disaggregator(object):
 		for sub in self.disaggregates:
 			yield sub
 
+	def __len__(self):
+		return len(self.disaggregates)
+
 	def __str__(self):
-		return f"Disaggregator({len(self.disaggregates)} Subs)"
+		return f"Disaggregator({len(self)} Subs)"
