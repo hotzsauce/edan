@@ -32,7 +32,7 @@ class BeaFetcher(EdanFetcher):
 			tablename=table_name,
 			series_code=series_name,
 			frequency=frequency,
-			year=2020 # X retrieves all years
+			year='X' # X retrieves all years
 		)
 
 		# BEA accepts a `series_name` parameter in their API call, but can only
