@@ -383,13 +383,13 @@
         "quantity": {
             "edan": "qgdp:pdi:c",
             "edan_simple": "qgdppdic",
-            "bea": "nipa!!",
+            "bea": "",
             "fred": ""
         },
         "price": {
             "edan": "pgdp:pdi:c",
             "edan_simple": "pgdppdic",
-            "bea": "nipa!!",
+            "bea": "",
             "fred": ""
         },
         "nominal": {
@@ -412,13 +412,13 @@
         "quantity": {
             "edan": "qgdp:nx",
             "edan_simple": "qgdpnx",
-            "bea": "nipa!!",
+            "bea": "",
             "fred": ""
         },
         "price": {
             "edan": "pgdp:nx",
             "edan_simple": "pgdpnx",
-            "bea": "nipa!!",
+            "bea": "",
             "fred": ""
         },
         "nominal": {
@@ -760,19 +760,19 @@
         "quantity": {
             "edan": "qgdp:res",
             "edan_simple": "qgdpres",
-            "bea": "nipa!!",
+            "bea": "",
             "fred": ""
         },
         "price": {
             "edan": "pgdp:res",
             "edan_simple": "pgdpres",
-            "bea": "nipa!!",
+            "bea": "",
             "fred": ""
         },
         "nominal": {
             "edan": "ngdp:res",
             "edan_simple": "ngdpres",
-            "bea": "nipa!!",
+            "bea": "",
             "fred": ""
         },
         "real": {

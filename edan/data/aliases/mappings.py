@@ -20,8 +20,10 @@ for child in warehouse.iterdir():
 		stored_maps.append(local_mapping)
 
 
-
-measures = ['quantity', 'price', 'nominal', 'real']
+# need separate 'nominal' & 'nominal_level' and 'real' & 'real_level' measures
+#	because of FlowComponents. '*_level' identifiers refer to the level of the
+#	stock of those FlowComponents
+measures = ['quantity', 'price', 'nominal', 'real', 'nominal_level', 'real_level']
 def sniff_sources(mappings: dict):
 	"""
 	read & return the source APIs that have codes stored in this mapping
