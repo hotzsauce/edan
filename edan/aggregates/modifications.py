@@ -193,6 +193,11 @@ class ModificationAccessor(object):
 		pandas DataFrame
 		"""
 
+		# can be called in other `edan` modules, don't want to have to provide
+		#	the same default arg
+		if method == '':
+			method = 'difa%'
+
 		try:
 			# assume `method` is a user-provided function
 			if args and kwargs:
