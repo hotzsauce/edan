@@ -111,7 +111,7 @@ class NIPAComponent(Component):
 	plot = CachedAccessor('plot', NIPAPlotAccessor)
 
 	# add accessors for common features
-	contribution = CachedAccessor('contribution', Contribution)
+	contributions = CachedAccessor('contributions', Contribution)
 
 
 class NIPAFlowComponent(NIPAComponent, FlowComponent):
