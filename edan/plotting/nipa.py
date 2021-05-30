@@ -5,7 +5,8 @@ module for plotting classes and methods of NIPA component data
 from __future__ import annotations
 
 import pandas as pd
-
+import numpy as np
+from cycler import cycler
 
 from edan.utils.dtypes import (
 	iterable_not_string
@@ -15,6 +16,168 @@ from edan.plotting.generic import (
 	GenericPlotAccessor,
 	PlotDataManager
 )
+import edan.plotting.colors as colors
+
+
+class ContributionPlot(object):
+	"""
+	create a chart where the subcomponents are stacked bars and the aggregate
+	growth rate is a line
+	"""
+	def __init__(
+		self,
+		obj: Component,
+		subs: Union[bool, str, Iterable[str]] = None,
+		level: int = 0,
+		method: Union[Callable, str, dict] = ''
+	):
+		self.obj = obj
+		self.method = method
+
+		# 'subs' is true by default in this method signature, so we shouldn't
+		#	use the normal `self.obj.disaggregate(subs, level)`, in case 'level'
+		#	is provided
+		if level:
+			df = self.obj.contributions(level=level, method=method)
+			subcomponents = self.obj.disaggregate(level=level)
+		else:
+			df = self.obj.contributions(subs=subs, method=method)
+			subcomponents = self.obj.disaggregate(subs=subs)
+
+		# pass the aggregate & subcomponents to the manager. the `contributions`
+		#	method above handles all the actual data stuff, but the manager will
+		#	handle names
+		objs = [self.obj] + list(subcomponents)
+		self.mgr = PlotDataManager(objs)
+		self.mgr.merge_print_data(df)
+
+	def cumulate_data(self, data: pd.DataFrame):
+		"""
+		the bottom keyword in ax.bar or plt.bar allows us to set the lower bound
+		of each bar precisely. Apply a 0-neg bottom to negative values, and 0-pos
+		bottom to positive ones.
+
+		https://stackoverflow.com/questions/35979852/stacked-bar-charts-using-
+		python-matplotlib-for-positive-and-negative-values
+		"""
+
+		# take negative & positive data apart and cumulate
+		def get_cumulated_array(arr, **kwargs):
+			cum = arr.clip(**kwargs)
+			cum = np.cumsum(cum, axis=0)
+
+			dat = np.zeros(np.shape(arr))
+			dat[1:] = cum[:-1]
+			return dat
+
+		arr = data.values.transpose()
+		cumulated_data = get_cumulated_array(arr, min=0)
+		cumulated_data_neg = get_cumulated_array(arr, max=0)
+
+		# re-merge positive & negative data
+		row_mask = (arr < 0)
+		cumulated_data[row_mask] = cumulated_data_neg[row_mask]
+
+		return pd.DataFrame(
+			cumulated_data.transpose(),
+			index=data.index,
+			columns=data.columns
+		)
+
+
+	def plot(
+		self,
+		start: Union[str, bool, Timestamp] = '',
+		end: Union[str, bool, Timestamp] = '',
+		periods: Union[int, str] = 0,
+		names: Union[str, list] = '',
+		*args, **kwargs
+	):
+
+		# truncate data as requested
+		df = self.mgr.truncate(start=start, end=end, periods=periods)
+
+		# names for legend entries
+		series_names = self.mgr.series_names(names, self.method)
+		df.columns = series_names
+
+		# create the axes that everything will be shown on
+		ax = df.iloc[:, 0].plot(label=series_names[0])
+
+		# after the main line has been plotted above, we don't want the contr
+		#	bars to have that same color
+		contr_colors = colors.contribution_palette()
+		ax.set_prop_cycle(cycler('color', contr_colors))
+
+		# matplotlib doesn't cumulate negative & positive bars natively, so
+		#	we need to compute the `bottom` for each of the bars
+		data_stack = self.cumulate_data(df.iloc[:, 1:])
+
+		# pandas automatically interprets x-labels on bar charts as categories, so
+		#	we have to directly interact with the axes. see this for more detail:
+		# https://stackoverflow.com/questions/30133280/pandas-bar-plot-changes-date-format
+		for i in range(1, df.shape[1]):
+			ax.bar(
+				df.index, df.iloc[:, i],
+				bottom=data_stack.iloc[:, i-1], label=series_names[i]
+			)
+		ax.legend()
+
+		return ax
+
+
+class SharePlot(object):
+	"""
+	plot a stacked area chart of the shares attributable to each of the chosen
+	subcomponents
+	"""
+
+	def __init__(
+		self,
+		obj: Component,
+		subs: Union[bool, str, Iterable[str]] = True,
+		level: int = 0,
+		mtype: str = 'nominal'
+	):
+		self.obj = obj
+		self.mtype = mtype
+
+		# 'subs' is true by default in this method signature, so we shouldn't
+		#	use the normal `self.obj.disaggregate(subs, level)`, in case 'level'
+		#	is provided
+		if level:
+			df = self.obj.shares(level=level, mtype=mtype)
+			subcomponents = self.obj.disaggregate(level=level)
+		else:
+			df = self.obj.shares(subs=subs, mtype=mtype)
+			subcomponents = self.obj.disaggregate(subs=subs)
+
+		# pass the subcomponents to the manager. the `shares` method above
+		#	handles all the actual data stuff, but the manager will handle names
+		self.mgr = PlotDataManager(subcomponents)
+
+		# remove the first aggregate column b/c it's just a series of ones
+		sub_data = df.iloc[:, 1:]
+		self.mgr.merge_print_data(sub_data)
+
+	def plot(
+		self,
+		start: Union[str, bool, Timestamp] = '',
+		end: Union[str, bool, Timestamp] = '',
+		periods: Union[int, str] = 0,
+		names: Union[str, list] = '',
+		*args, **kwargs
+	):
+
+		# truncate data as requested
+		df = self.mgr.truncate(start=start, end=end, periods=periods)
+
+		# names for legend entries
+		series_names = self.mgr.series_names(names, self.mtype)
+		df.columns = series_names
+
+		return df.plot.area(*args, **kwargs)
+
 
 
 
@@ -27,12 +190,13 @@ class NIPAPlotAccessor(GenericPlotAccessor):
 
 	def __call__(
 		self,
-		gtype: str = 'real',
-		method: Union[Callable, str, dict] = '',
+		mtype: str = '',
+		method: Union[Callable, str, dict] = 'difa%',
+		feature: str = '',
 		start: Union[str, bool, Timestamp] = '',
 		end: Union[str, bool, Timestamp] = '',
 		periods: Union[int, str] = 0,
-		subs: Union[bool, str, Iterable[str]] = True,
+		subs: Union[bool, str, Iterable[str]] = '',
 		level: int = 0,
 		names: Union[str, list] = '',
 		interp: Union[str, dict] = 'linear',
@@ -46,13 +210,13 @@ class NIPAPlotAccessor(GenericPlotAccessor):
 
 		Parameters
 		----------
-		gtype : str ( = 'real' )
+		mtype : str ( = 'real' )
 			the GDP type of data to plot. accepted values are {'quantity', 'price',
 			'nominal', and 'real'}. An AttributeError will be thrown if this
 			Component (and all its subcomponents, if `subs` is True) does not have
-			that `gtype`
+			that `mtype`
 
-		method : Callable | str | dict ( = '' )
+		method : Callable | str | dict ( = 'difa%' )
 			modification of the data before printing. recognized strings are
 			described in docs for `edan.nipa.modifications.ModificationAccessor`.
 			the same goes for callable `methed`.
@@ -61,11 +225,11 @@ class NIPAPlotAccessor(GenericPlotAccessor):
 			to the underlying ModificationAccessor. for example,
 
 				>>> gdp = edan.gdp.GDP
-				>>> gdp.plot(gtype='real', method={'foo': 'diff', 'n'=2})
+				>>> gdp.plot(mtype='real', method={'foo': 'diff', 'n'=2})
 
 			or
 
-				>>> gdp.plot(gtype='price', method={'bar': 'index', 'base'=2009})
+				>>> gdp.plot(mtype='price', method={'bar': 'index', 'base'=2009})
 
 			notice the key of the method doesn't matter. I'm not particularly
 			fond of this implementation but I'm not sure how to get keywords to
@@ -73,7 +237,23 @@ class NIPAPlotAccessor(GenericPlotAccessor):
 			definition.
 				if the first value of dict `method` is a callable, the
 			other (key, value) pairs are interpreted as keyword arguments for
-			the user-defined callable
+			the user-defined callable.
+				if no modification is desired, pass empty string or None
+
+		feature : str ( = '' )
+			the feature of the Component to plot. plotting schemes for each of the
+			features are:
+				'contributions' - the growth rate of the aggregate component is
+					plotted as a line, and the contributions to growth of each of
+					the subcomponents is part of a stacked bar. by default the
+					growth rate is 'difa%', according to the Contribution Feature
+					class, but alterations can be passed through the 'method'
+					parameter here
+				'shares' - the shares of each of the subcomponents are plotted
+					as a stacked area chart, and the aggregate is not displayed.
+					by default the mtype is 'nominal', according to the Share Feature
+					class, but alterations can be passed through the 'mtype'
+					parameter here
 
 		start : str | bool | datetime-like ( = '' )
 			left bound for truncating observations. if `start` = True, it's set
@@ -101,8 +281,8 @@ class NIPAPlotAccessor(GenericPlotAccessor):
 
 		names : str | list ( = '' )
 			specifying the names that appear in the axis legend. by default the
-			components' `short_name` are used. labels for `gtype = 'level'` or
-			`gtype = 'price'`, and any modifications to data will automatically
+			components' `short_name` are used. labels for `mtype = 'real'` or
+			other recognized mtypes, and any modifications to data will automatically
 			be added in this case.
 				if `names = 'codes'`, the series codes from FRED or AlphaVantage
 			will be used.
@@ -133,47 +313,49 @@ class NIPAPlotAccessor(GenericPlotAccessor):
 		matplotlib AxesSubplot
 		"""
 
-		objs = [self.obj]
-		if level:
-			subcomponents = self.obj.disaggregate(level=level)
-			objs.extend(list(subcomponents))
+		if feature:
+			if feature == 'contributions':
+				plotter = ContributionPlot(self.obj, subs, level, method)
 
-		elif subs:
-			if iterable_not_string(subs):
-				subcomponents = self.obj.disaggregate(subs)
-				objs.extend(list(subcomponents))
+			elif feature == 'shares':
+				# we want default mtype for 'SharePlot' to be nominal, but the
+				#	default mtype for other plots to be real, so we need `if`:
+				mtype = mtype if mtype else 'nominal'
+				plotter = SharePlot(self.obj, subs, level, mtype)
 
 			else:
-				if isinstance(subs, str):
-					subcomponent = self.obj.disaggregate(subs)
-					objs.append(subcomponent)
+				raise ValueError(f"{repr(feature)} is unrecognized 'feature'")
 
-				elif isinstance(subs, bool):
-					if subs:
-						for _sub in self.obj.subs:
-							objs.append(_sub)
-					else:
-						raise TypeError(
-							"'subs' must be of type 'bool', 'str', or "
-							"iterable of 'str'"
-						)
+			return plotter.plot(start, end, periods, names, *args, **kwargs)
+
+		# 'subs' is true by default in this method signature, so we shouldn't
+		#	use the normal `self.obj.disaggregate(subs, level)`, in case 'level'
+		#	is provided
+		if level:
+			subcomponents = self.obj.disaggregate(level=level)
+		else:
+			subcomponents = self.obj.disaggregate(subs=subs)
+
+		objs = [self.obj] + list(subcomponents)
 
 		# pass the as-yet unaltered data to the manager
 		self.mgr = PlotDataManager(objs)
 
-		# selecting the GDP type of the component(s)
-		self.mgr.select_containers(gtype)
+		# selecting the GDP type of the component(s). different default mtypes
+		#	for SharePlot & normal plot, hence the `if` below
+		mtype = mtype if mtype else 'real'
+		self.mgr.select_containers(mtype)
 
 		# get the list of NIPASeries and apply any data modifications
-		gseries = self.mgr.containers
-		mod_data = self._apply_modification(gseries, method)
+		mseries = self.mgr.containers
+		mod_data = self._apply_modification(mseries, method)
 
 		# merge list of series/dataframes together, and truncate
 		self.mgr.merge_print_data(mod_data)
 		df = self.mgr.truncate(start=start, end=end, periods=periods)
 
 		# get names for the legend entries
-		series_names = self.mgr.series_names(names, gtype, self.mod_str)
+		series_names = self.mgr.series_names(names, mtype, self.mod_str)
 		df.columns = series_names
 
 		# interpolate, if need be
