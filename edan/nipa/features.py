@@ -1,8 +1,8 @@
 """
-module for computing features of GDP data. 'features' are distinct from the
-'modifications' in `edan.gdp.modifications` because features involve more
+module for computing features of NIPA data. 'features' are distinct from the
+'modifications' in `edan.aggregates.modifications` because features involve more
 than growth rates or moving averages of a single series - sometimes they even
-might involve data from other related GDP compoonents
+might involve data from other related NIPA components
 """
 
 from __future__ import annotations
@@ -10,19 +10,26 @@ from __future__ import annotations
 import pandas as pd
 import numpy as np
 
+from edan.aggregates.components import (
+	FlowComponent,
+	BalanceComponent
+)
+
+from rich import print
+
 
 class Feature(object):
 	"""
-	Features are intented to be CachedAccessors of Components, or used via the
+	Features are intended to be CachedAccessors of Components, or used via the
 	methods of the same name that are defined elsewhere in this module
 	"""
 
 	name = ''
 
 	def compute(self, *args, **kwargs):
-		"""this should be overridden by subclasses"""
+		"""this should be overriden by subclasses"""
 		feat = type(self).__name__
-		raise NotImplementedError(f"'compute' method not defined for {feat} Feature")
+		raise NotImplementedError(f"'compute' method not defined for {feat} feature")
 
 	def __init__(self, obj=None, *args, **kwargs):
 		self.obj = obj
@@ -34,7 +41,7 @@ class Feature(object):
 			>>> gdp = edan.nipa.GDPTable['gdp']
 			>>> gdp.{feature}()
 
-		the subclass' `compute` method is called & returned
+		the subclass' `compute` method is called and returned
 		"""
 		return self.compute(*args, **kwargs)
 
@@ -51,108 +58,19 @@ class Contribution(Feature):
 		self,
 		subs: Union[list, str] = '',
 		level: int = 0,
+		method: Union[str, Callable] = '',
 		*args, **kwargs
 	):
-		return self.compute(subs, level, *args, **kwargs)
-
-	def _contr_shares(self, subs: Disaggregator):
-		"""
-		the calculation for the contribution shares is described in the footnotes
-		of this table:
-			https://apps.bea.gov/scb/account_articles/national/0795od/table1.htm
-
-		that table is referenced in this old article from the BEA, along with
-		some discussion about other new (in 1995) measures:
-			https://apps.bea.gov/scb/account_articles/national/0795od/maintext.htm
-		"""
-
-		ragg = self.obj.real.data
-		nagg = self.obj.nominal.data
-
-		# let pandas handle all the joining & nan-creation for observations where
-		#	some series don't have values
-		real_data, nom_data, sub_names = [ragg], [nagg], []
-		for sub in subs:
-			rsub = sub.real.data
-			nsub = sub.nominal.data
-
-			# if there is no real or nominal data, just exclude it for now
-			if (rsub is None) or (nsub is None):
-				pass
-			else:
-				real_data.append(rsub)
-				nom_data.append(nsub)
-				sub_names.append(sub.code)
-
-		real = pd.concat(real_data, axis='columns')
-		nominal = pd.concat(nom_data, axis='columns')
-		data = pd.concat([real, nominal], axis='columns').dropna(axis='index')
-
-		# re-partition data; each block has the aggregate series in the first col
-		n_series = len(real_data)
-		real = data.iloc[:, :n_series].values
-		nominal = data.iloc[:, n_series:].values
-
-		# implied nominal level as if there were no price changes
-		rgrowth = real[1:, :] / real[:-1, :]
-		nan_row = np.empty((1, rgrowth.shape[1]))
-		nan_row[:] = np.nan
-
-		rgrowth = np.vstack((nan_row, rgrowth))
-		imp_nom = np.multiply(rgrowth, nominal)
-
-		# calculate the shares: (imp_nom - nom)/(imp_agg - agg)
-		agg_chg = imp_nom[1:, 0] - nominal[:-1, 0]
-		sub_chg = imp_nom[1:, 1:] - nominal[:-1, 1:]
-		shares = np.divide(sub_chg, agg_chg[:, None]) # index allows for broadcast
-
-		# add the nans into the first row, format into DataFrame with edan codes
-		#	of components as column names
-		nan_row = np.empty((1, shares.shape[1]))
-		nan_row[:] = np.nan
-		shares = np.vstack((nan_row, shares))
-
-		return pd.DataFrame(shares, index=data.index, columns=sub_names)
+		return self.compute(subs, level, method, *args, **kwargs)
 
 	def compute(
 		self,
 		subs: Union[list, str] = '',
-		level : int = 0,
-		method: str = 'difa%',
+		level: int = 0,
+		method: Union[str, Callable] = '',
 		*args, **kwargs
 	):
-		"""
-		compute & return a dataframe of subcomponents' contributions to percent
-		change of an aggregate. the calculations are described in the footnotes
-		of this table:
-			https://apps.bea.gov/scb/account_articles/national/0795od/table1.htm
-
-		by default, the contributions from all direct subcomponents are computed,
-		but this can be changed via the `subs` parameter.
-
-		Parameters
-		----------
-		subs : list | str ( = '' )
-			the subcomponents to include in the calculation. if an empty string,
-			all immediate subcomponents are used (if the other subcomponent
-			selection parameters, for example, `level`, are null). otherwise, the
-			subcomponent selection is done by the Component's `disaggregate()`
-			method
-		level : int ( = 0 )
-			the level of subcomponents to include in the calculation
-		method : str ( = 'difa%' )
-			the growth rate calculation of the aggregate real level. see the
-			Modifications class in edan/nipa/modifications.py for details.
-		args : positional arguments
-			arguments to pass to the `modify()` method of the aggregates's real level
-		kwargs : keyword arguments
-			arguments to pass to the `modify()` method of the aggregates's real level
-
-		Returns
-		-------
-		pandas DataFrame
-		"""
-		if not self.obj.subs:
+		if self.obj.elemental:
 			# if component has no subcomponent, return pandas Series of ones
 			return pd.Series(
 				data=np.ones(len(self.obj.real.data)),
@@ -163,29 +81,179 @@ class Contribution(Feature):
 		# compute the aggregate growth rate
 		agg_growth = self.obj.real.modify(method, *args, **kwargs)
 
-		# compute the shares of each subcomponent
-		subs = self.obj.disaggregate(subs, level)
-		shares = self._contr_shares(subs)
+		# select the subcomponents whose contributions will be calculated
+		self.subs = self.obj.disaggregate(subs, level)
+		self.comps = [self.obj] + list(self.subs)
 
-		# odds are the shares will only have a subset of the observations
-		data = pd.concat((agg_growth, shares), axis='columns').dropna(axis='index')
+		# set `self.real` & `self.nominal` attributes, and indicators of ctypes
+		self._set_ctypes_and_data()
 
-		# final step is product of aggregate growth rate and computed shares
-		agg = data.iloc[:, 0].values
-		contr_shares = data.iloc[:, 1:].values
-		contr = np.multiply(contr_shares, agg[:, None]) # index allows for broadcast
+		# compute the shares for all the flow and stock components, then aggregate
+		#	the ones that are subcomponents of balance components
+		shares_bal = self._calculate_shares()
+		shares = self._compute_balances(shares_bal)
+
+		# let pandas handle index-matching again
+		growth = agg_growth.loc[self.real.index]
+		contrs = np.multiply(shares, growth.values[:, None])
 
 		return pd.DataFrame(
-			contr,
-			index=data.index,
-			columns=shares.columns
+			contrs,
+			index=growth.index,
+			columns=self.codes
 		)
+
+
+	def _set_ctypes_and_data(self):
+		"""
+		set `self.real` & `self.nominal` attributes of the real and nominal data
+		of both the aggregate & all the chosen subcomponents, and indicators of
+		the ctypes of all components in `self.flows`, `self.balances`, and
+		`self.stocks` attributes
+		"""
+
+		# real & nominal data, and series codes for renaming final dataframe.
+		#	`less` is an indicator for components that should be subtracted
+		#	from the agg
+		rdata, ndata, self.codes, self.less = [], [], [], []
+
+		# column indices of different Component types
+		stocks = []
+		flows = []
+		def add_idx(comp, idx):
+			if isinstance(comp, FlowComponent):
+				flows.append(idx)
+			else:
+				stocks.append(idx)
+
+		# don't use enumerate b/c we don't know if components are Balance
+		#	components beforehand
+		idx = 0
+		for comp in self.comps:
+
+			self.codes.append(comp.code)
+
+			if isinstance(comp, BalanceComponent):
+				for sub in comp.disaggregate():
+					self.less.append(sub.is_less)
+
+					# i don't think there is ever a case where a BalanceComp
+					#	will have a Balance sub but a check here could be good
+					rdata.append(sub.real.data)
+					ndata.append(sub.nominal.data)
+
+					add_idx(sub, idx)
+					idx += 1
+
+			else:
+				self.less.append(comp.is_less)
+
+				if isinstance(comp, FlowComponent):
+					rdata.append(comp.real_level.data)
+					ndata.append(comp.nominal_level.data)
+				else:
+					rdata.append(comp.real.data)
+					ndata.append(comp.nominal.data)
+
+				add_idx(comp, idx)
+				idx += 1
+
+		# let pandas handle joining & nans
+		data = pd.concat(rdata + ndata, axis='columns').dropna(axis='index')
+
+		# re-partition data; each block has the agg. series in the first col
+		n_series = len(rdata)
+		self.real = data.iloc[:, :n_series].round(1)
+		self.nominal = data.iloc[:, n_series:].round(1)
+
+		# construct indicator arrays for ctype now that BalanceComp locs are known
+		self.stocks = np.zeros(n_series, dtype=bool)
+		self.stocks[stocks] = True
+
+		self.flows = np.zeros(n_series, dtype=bool)
+		self.flows[flows] = True
+
+	def _calculate_shares(self):
+		"""
+		calculate the contribution shares of subcomponents that are not
+		BalanceComponents the calculation for the contribution shares is described
+		in the footnotes of this table:
+			https://apps.bea.gov/scb/account_articles/national/0795od/table1.htm
+
+		that table is referenced in this old article from the BEA, along with
+		some discussion about other new (in 1995) measures:
+			https://apps.bea.gov/scb/account_articles/national/0795od/maintext.htm
+		"""
+
+		real, nominal = self.real.values, self.nominal.values
+
+		# change in real level of component
+		real_chg = np.empty(real.shape)
+		real_chg[:] = np.nan
+
+		real_chg[1:, self.stocks] = real[1:, self.stocks] - real[:-1, self.stocks]
+		real_chg[2:, self.flows] = (real[2:, self.flows] - real[1:-1, self.flows]) - \
+			(real[1:-1, self.flows] - real[:-2, self.flows])
+
+		# price deflator implied by real & nominal levels
+		deflator = np.empty(real.shape)
+		deflator[:] = np.nan
+		deflator[1:, :] = np.true_divide(nominal[:-1, :], real[:-1, :])
+
+		# nominal level change
+		nom_chg = np.multiply(deflator, real_chg)
+
+		# fraction of change attributable to each component (first col is agg.)
+		shares = np.empty(self.real.shape)
+		shares[:] = np.nan
+		shares[:, 0] = 1
+		shares[:, 1:] = np.true_divide(nom_chg[:, 1:], nom_chg[:, :1])
+
+		# account for any subtractions
+		shares[:, self.less] = - shares[:, self.less]
+
+		return shares
+
+	def _compute_balances(self, shares_bal):
+		"""
+		after all the shares have been computed, we need to add/subtract the
+		subcomponents of the BalanceComponents
+		"""
+		if any(isinstance(comp, BalanceComponent) for comp in self.comps):
+			n_comps = len(self.comps)
+
+			shares = np.empty((shares_bal.shape[0], n_comps))
+			shares[:] = np.nan
+
+			bal_idx = 0
+			for idx, comp in enumerate(self.comps):
+
+				if isinstance(comp, BalanceComponent):
+
+					subs = comp.disaggregate()
+					sub_contrs = np.zeros((shares.shape[0], len(subs)))
+
+					for i, sub in enumerate(subs):
+						sub_contrs[:, i] = shares_bal[:, bal_idx]
+						bal_idx += 1
+
+					shares[:, idx] = np.sum(sub_contrs, axis=1)
+
+				else:
+					shares[:, idx] = shares_bal[:, bal_idx]
+					bal_idx += 1
+
+			return shares
+
+		else:
+			return shares_bal
 
 
 def contribution(
 	obj,
 	subs: Union[list, str] = '',
 	level: int = 0,
+	method: Union[str, Callable] = 'difa%',
 	*args, **kwargs
 ):
 	"""
@@ -194,30 +262,30 @@ def contribution(
 	of this table:
 		https://apps.bea.gov/scb/account_articles/national/0795od/table1.htm
 
-	by default, the contributions from all direct subcomponents are computed,
-	but this can be changed via the `subs` parameter.
+	by default, the contribution from all direct subcomponents are computed,
+	but this can be changed via the `subs` and `level` parameters
 
 	Parameters
 	----------
 	subs : list | str ( = '' )
 		the subcomponents to include in the calculation. if an empty string,
 		all immediate subcomponents are used (if the other subcomponent
-		selection parameters, for example, `level`, are null). otherwise, the
+		selection parameters, for example, `level`, are null. otherwise, the
 		subcomponent selection is done by the Component's `disaggregate()`
 		method
 	level : int ( = 0 )
 		the level of subcomponents to include in the calculation
 	method : str ( = 'difa%' )
 		the growth rate calculation of the aggregate real level. see the
-		Modifications class in edan/nipa/modifications.py for details.
+		Modifications class in edan/aggregates/modifications.py for details
 	args : positional arguments
-		arguments to pass to the `modify()` method of the aggregates's real level
+		arguments to pass to the `modify()` method of the aggregate's real level
 	kwargs : keyword arguments
-		arguments to pass to the `modify()` method of the aggregates's real level
+		arguments to pass to the `modify()` method of the aggregate's real level
 
 	Returns
 	-------
 	pandas DataFrame
 	"""
 	contr = Contribution(obj)
-	return contr.compute(subs, level, *args, **kwargs)
+	return contr.compute(subs, level, method, *args, **kwargs)
