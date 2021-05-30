@@ -15,7 +15,10 @@ from edan.aggregates.components import (
 )
 from edan.aggregates.modifications import ModificationAccessor
 
-from edan.nipa.features import Contribution
+from edan.nipa.features import (
+	Contribution,
+	Share
+)
 
 from edan.plotting.nipa import NIPAPlotAccessor
 
@@ -112,6 +115,7 @@ class NIPAComponent(Component):
 
 	# add accessors for common features
 	contributions = CachedAccessor('contributions', Contribution)
+	shares = CachedAccessor('shares', Share)
 
 
 class NIPAFlowComponent(NIPAComponent, FlowComponent):

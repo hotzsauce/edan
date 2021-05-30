@@ -15,7 +15,6 @@ from edan.aggregates.components import (
 	BalanceComponent
 )
 
-from rich import print
 
 
 class Feature(object):
@@ -56,16 +55,47 @@ class Contribution(Feature):
 
 	def __call__(
 		self,
-		subs: Union[list, str] = '',
+		subs: Union[list, str, bool] = '',
 		level: int = 0,
 		method: Union[str, Callable] = '',
 		*args, **kwargs
 	):
+		"""
+		compute & return a dataframe of subcomponents' contributions to percent
+		change of an aggregate. the calculations are described in the footnotes
+		of this table:
+			https://apps.bea.gov/scb/account_articles/national/0795od/table1.htm
+
+		by default, the contribution from all direct subcomponents are computed,
+		but this can be changed via the `subs` and `level` parameters
+
+		Parameters
+		----------
+		subs : list | str ( = '' )
+			the subcomponents to include in the calculation. if an empty string,
+			all immediate subcomponents are used (if the other subcomponent
+			selection parameters, for example, `level`, are null. otherwise, the
+			subcomponent selection is done by the Component's `disaggregate()`
+			method
+		level : int ( = 0 )
+			the level of subcomponents to include in the calculation
+		method : str ( = 'difa%' )
+			the growth rate calculation of the aggregate real level. see the
+			Modifications class in edan/aggregates/modifications.py for details
+		args : positional arguments
+			arguments to pass to the `modify()` method of the aggregate's real level
+		kwargs : keyword arguments
+			arguments to pass to the `modify()` method of the aggregate's real level
+
+		Returns
+		-------
+		contribution : pandas DataFrame
+		"""
 		return self.compute(subs, level, method, *args, **kwargs)
 
 	def compute(
 		self,
-		subs: Union[list, str] = '',
+		subs: Union[list, str, bool] = '',
 		level: int = 0,
 		method: Union[str, Callable] = '',
 		*args, **kwargs
@@ -75,7 +105,7 @@ class Contribution(Feature):
 			return pd.Series(
 				data=np.ones(len(self.obj.real.data)),
 				index=self.obj.real.data.index,
-				name=self.name
+				name=self.obj.code
 			)
 
 		# compute the aggregate growth rate
@@ -249,11 +279,93 @@ class Contribution(Feature):
 			return shares_bal
 
 
-def contribution(
+class Share(Feature):
+	"""
+	the fraction of the real/nominal level attributable to each subcomponent.
+	that same ratio for quantity/price indices really don't make sense economically,
+	but no checks are made when it comes to those mtypes
+	"""
+	name = 'share'
+
+	def __call__(
+		self,
+		subs: Union[list, str, bool] = '',
+		level: int = 0,
+		mtype: str = 'nominal'
+	):
+		"""
+		compute and return the ratio of {agg mtype}/{sub mtype} for all the chosen
+		subcomponents. the first column of the returned dataframe is just ones.
+
+		Parameters
+		----------
+		subs : list | str ( = '' )
+			the subcomponents to include in the calculation. if an empty string,
+			all immediate subcomponents are used (if the other subcomponent
+			selection parameters, for example, `level`, are null. otherwise, the
+			subcomponent selection is done by the Component's `disaggregate()`
+			method
+		level : int ( = 0 )
+			the level of subcomponents to include in the calculation
+		mtype : str ( = 'nominal' )
+			the mtype of the components to compute the ratio of. the ratio of the
+			quantity/price indices don't really make sense economically, but no
+			checks are made to prevent it
+
+		Returns
+		-------
+		share : pandas DataFrame
+		"""
+		return self.compute(subs, level, mtype)
+
+	def compute(
+		self,
+		subs: Union[list, str, bool] = '',
+		level: int = 0,
+		mtype: str = 'nominal'
+	):
+		if self.obj.elemental:
+			# if component has no subcomponent, return Series of ones
+			return pd.Series(
+				data=np.ones(len(self.obj.nominal.data)),
+				index=self.obj.nominal.data.index,
+				name=self.obj.code
+			)
+
+		# select the subcomponents
+		self.subs = self.obj.disaggregate(subs, level)
+		self.comps = [self.obj] + list(self.subs)
+
+		# collect data based on mtype
+		frames, self.codes  = [], []
+		for comp in self.comps:
+			series = getattr(comp, mtype)
+
+			frames.append(series.data)
+			self.codes.append(comp.code)
+		data = pd.concat(frames, axis='columns').dropna(axis='index', how='all')
+
+		# after pandas handles matching periods & nans, calculate shares
+		shares = np.empty(data.shape)
+		shares[:] = np.nan
+
+		shares[:, 0] = np.ones(shares.shape[0])
+		shares[:, 1:] = np.true_divide(data.iloc[:, 1:].values, data.iloc[:, :1].values)
+
+		return pd.DataFrame(
+			shares,
+			index=data.index,
+			columns=self.codes
+		)
+
+
+
+
+def contributions(
 	obj,
-	subs: Union[list, str] = '',
+	subs: Union[list, str, bool] = '',
 	level: int = 0,
-	method: Union[str, Callable] = 'difa%',
+	method: Union[str, Callable] = '',
 	*args, **kwargs
 ):
 	"""
@@ -285,7 +397,41 @@ def contribution(
 
 	Returns
 	-------
-	pandas DataFrame
+	contribution : pandas DataFrame
 	"""
 	contr = Contribution(obj)
 	return contr.compute(subs, level, method, *args, **kwargs)
+
+
+def shares(
+	obj,
+	subs: Union[list, str, bool] = '',
+	level: int = 0,
+	mtype: str = 'nominal'
+):
+
+	"""
+	compute and return the ratio of {agg mtype}/{sub mtype} for all the chosen
+	subcomponents. the first column of the returned dataframe is just ones.
+
+	Parameters
+	----------
+	subs : list | str ( = '' )
+		the subcomponents to include in the calculation. if an empty string,
+		all immediate subcomponents are used (if the other subcomponent
+		selection parameters, for example, `level`, are null. otherwise, the
+		subcomponent selection is done by the Component's `disaggregate()`
+		method
+	level : int ( = 0 )
+		the level of subcomponents to include in the calculation
+	mtype : str ( = 'nominal' )
+		the mtype of the components to compute the ratio of. the ratio of the
+		quantity/price indices don't really make sense economically, but no
+		checks are made to prevent it
+
+	Returns
+	-------
+	share : pandas DataFrame
+	"""
+	shr = Share(obj)
+	return shr.compute(subs, level, mtype)
