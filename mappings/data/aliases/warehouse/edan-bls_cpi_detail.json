@@ -1,3371 +1,3371 @@
 {
     "cpi": {
-        "name": "All items",
-        "table_row": 0,
-        "level": 0,
+        "long_name": "All items",
+        "__row__": 0,
+        "__level__": 0,
         "price": {
-            "edan": "cpi",
-            "edan_simple": "cpi",
+            "edan": "pcpi",
+            "edan_simple": "pcpi",
             "bls": "cusr0000sa0"
         }
     },
     "cpi:f": {
-        "name": "Food",
-        "table_row": 1,
-        "level": 1,
+        "long_name": "Food",
+        "__row__": 1,
+        "__level__": 1,
         "price": {
-            "edan": "cpi:f",
-            "edan_simple": "cpif",
+            "edan": "pcpi:f",
+            "edan_simple": "pcpif",
             "bls": "cusr0000saf1"
         }
     },
     "cpi:f:h": {
-        "name": "Food at home",
-        "table_row": 2,
-        "level": 2,
+        "long_name": "Food at home",
+        "__row__": 2,
+        "__level__": 2,
         "price": {
-            "edan": "cpi:f:h",
-            "edan_simple": "cpifh",
+            "edan": "pcpi:f:h",
+            "edan_simple": "pcpifh",
             "bls": "cusr0000saf11"
         }
     },
     "cpi:f:h:b": {
-        "name": "Cereals and bakery products",
-        "table_row": 3,
-        "level": 3,
+        "long_name": "Cereals and bakery products",
+        "__row__": 3,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:f:h:b",
-            "edan_simple": "cpifhb",
+            "edan": "pcpi:f:h:b",
+            "edan_simple": "pcpifhb",
             "bls": "cusr0000saf111"
         }
     },
     "cpi:f:h:b:c": {
-        "name": "Cereals and cereal products",
-        "table_row": 4,
-        "level": 4,
+        "long_name": "Cereals and cereal products",
+        "__row__": 4,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:f:h:b:c",
-            "edan_simple": "cpifhbc",
+            "edan": "pcpi:f:h:b:c",
+            "edan_simple": "pcpifhbc",
             "bls": "cusr0000sefa"
         }
     },
     "cpi:f:h:b:c:f": {
-        "name": "Flour and prepared flour mixes",
-        "table_row": 5,
-        "level": 5,
+        "long_name": "Flour and prepared flour mixes",
+        "__row__": 5,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:b:c:f",
-            "edan_simple": "cpifhbcf",
+            "edan": "pcpi:f:h:b:c:f",
+            "edan_simple": "pcpifhbcf",
             "bls": "cusr0000sefa01"
         }
     },
     "cpi:f:h:b:c:c": {
-        "name": "Breakfast cereal",
-        "table_row": 6,
-        "level": 5,
+        "long_name": "Breakfast cereal",
+        "__row__": 6,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:b:c:c",
-            "edan_simple": "cpifhbcc",
+            "edan": "pcpi:f:h:b:c:c",
+            "edan_simple": "pcpifhbcc",
             "bls": "cusr0000sefa02"
         }
     },
     "cpi:f:h:b:c:r": {
-        "name": "Rice, pasta, cornmeal",
-        "table_row": 7,
-        "level": 5,
+        "long_name": "Rice, pasta, cornmeal",
+        "__row__": 7,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:b:c:r",
-            "edan_simple": "cpifhbcr",
+            "edan": "pcpi:f:h:b:c:r",
+            "edan_simple": "pcpifhbcr",
             "bls": "cusr0000sefa03"
         }
     },
     "cpi:f:h:b:c:r:r": {
-        "name": "Rice",
-        "table_row": 8,
-        "level": 6,
+        "long_name": "Rice",
+        "__row__": 8,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:b:c:r:r",
-            "edan_simple": "cpifhbcrr",
+            "edan": "pcpi:f:h:b:c:r:r",
+            "edan_simple": "pcpifhbcrr",
             "bls": "cuur0000ss01031"
         }
     },
     "cpi:f:h:b:c:b": {
-        "name": "Bakery products",
-        "table_row": 9,
-        "level": 5,
+        "long_name": "Bakery products",
+        "__row__": 9,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:b:c:b",
-            "edan_simple": "cpifhbcb",
+            "edan": "pcpi:f:h:b:c:b",
+            "edan_simple": "pcpifhbcb",
             "bls": "cusr0000sefb"
         }
     },
     "cpi:f:h:b:c:b:b": {
-        "name": "Bread",
-        "table_row": 10,
-        "level": 6,
+        "long_name": "Bread",
+        "__row__": 10,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:b:c:b:b",
-            "edan_simple": "cpifhbcbb",
+            "edan": "pcpi:f:h:b:c:b:b",
+            "edan_simple": "pcpifhbcbb",
             "bls": "cusr0000sefb01"
         }
     },
     "cpi:f:h:b:c:b:b:w": {
-        "name": "White bread",
-        "table_row": 11,
-        "level": 7,
+        "long_name": "White bread",
+        "__row__": 11,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:b:c:b:b:w",
-            "edan_simple": "cpifhbcbbw",
+            "edan": "pcpi:f:h:b:c:b:b:w",
+            "edan_simple": "pcpifhbcbbw",
             "bls": "cuur0000ss02011"
         }
     },
     "cpi:f:h:b:c:b:b:o": {
-        "name": "Bread other than white",
-        "table_row": 12,
-        "level": 7,
+        "long_name": "Bread other than white",
+        "__row__": 12,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:b:c:b:b:o",
-            "edan_simple": "cpifhbcbbo",
+            "edan": "pcpi:f:h:b:c:b:b:o",
+            "edan_simple": "pcpifhbcbbo",
             "bls": "cuur0000ss02021"
         }
     },
     "cpi:f:h:b:c:b:r": {
-        "name": "Fresh biscuits, rolls, muffins",
-        "table_row": 13,
-        "level": 6,
+        "long_name": "Fresh biscuits, rolls, muffins",
+        "__row__": 13,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:b:c:b:r",
-            "edan_simple": "cpifhbcbr",
+            "edan": "pcpi:f:h:b:c:b:r",
+            "edan_simple": "pcpifhbcbr",
             "bls": "cusr0000sefb02"
         }
     },
     "cpi:f:h:b:c:b:c": {
-        "name": "Cakes, cupcakes, and cookies",
-        "table_row": 14,
-        "level": 6,
+        "long_name": "Cakes, cupcakes, and cookies",
+        "__row__": 14,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:b:c:b:c",
-            "edan_simple": "cpifhbcbc",
+            "edan": "pcpi:f:h:b:c:b:c",
+            "edan_simple": "pcpifhbcbc",
             "bls": "cusr0000sefb03"
         }
     },
     "cpi:f:h:b:c:b:c:c": {
-        "name": "Cookies",
-        "table_row": 15,
-        "level": 7,
+        "long_name": "Cookies",
+        "__row__": 15,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:b:c:b:c:c",
-            "edan_simple": "cpifhbcbcc",
+            "edan": "pcpi:f:h:b:c:b:c:c",
+            "edan_simple": "pcpifhbcbcc",
             "bls": "cusr0000ss02042"
         }
     },
     "cpi:f:h:b:c:b:c:p": {
-        "name": "Fresh cakes and cupcakes",
-        "table_row": 16,
-        "level": 7,
+        "long_name": "Fresh cakes and cupcakes",
+        "__row__": 16,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:b:c:b:c:p",
-            "edan_simple": "cpifhbcbcp",
+            "edan": "pcpi:f:h:b:c:b:c:p",
+            "edan_simple": "pcpifhbcbcp",
             "bls": "cuur0000ss02041"
         }
     },
     "cpi:f:h:b:c:b:o": {
-        "name": "Other bakery products",
-        "table_row": 17,
-        "level": 6,
+        "long_name": "Other bakery products",
+        "__row__": 17,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:b:c:b:o",
-            "edan_simple": "cpifhbcbo",
+            "edan": "pcpi:f:h:b:c:b:o",
+            "edan_simple": "pcpifhbcbo",
             "bls": "cusr0000sefb04"
         }
     },
     "cpi:f:h:b:c:b:o:s": {
-        "name": "Fresh sweetrolls, coffeecakes, doughnuts",
-        "table_row": 18,
-        "level": 7,
+        "long_name": "Fresh sweetrolls, coffeecakes, doughnuts",
+        "__row__": 18,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:b:c:b:o:s",
-            "edan_simple": "cpifhbcbos",
+            "edan": "pcpi:f:h:b:c:b:o:s",
+            "edan_simple": "pcpifhbcbos",
             "bls": "cuur0000ss02063"
         }
     },
     "cpi:f:h:b:c:b:o:c": {
-        "name": "Crackers, bread, and cracker products",
-        "table_row": 19,
-        "level": 7,
+        "long_name": "Crackers, bread, and cracker products",
+        "__row__": 19,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:b:c:b:o:c",
-            "edan_simple": "cpifhbcboc",
+            "edan": "pcpi:f:h:b:c:b:o:c",
+            "edan_simple": "pcpifhbcboc",
             "bls": "cusr0000ss0206a"
         }
     },
     "cpi:f:h:b:c:b:o:f": {
-        "name": "Frozen and refrigerated bakery products, pies, tarts, turnovers",
-        "table_row": 20,
-        "level": 7,
+        "long_name": "Frozen and refrigerated bakery products, pies, tarts, turnovers",
+        "__row__": 20,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:b:c:b:o:f",
-            "edan_simple": "cpifhbcbof",
+            "edan": "pcpi:f:h:b:c:b:o:f",
+            "edan_simple": "pcpifhbcbof",
             "bls": "cusr0000ss0206b"
         }
     },
     "cpi:f:h:m": {
-        "name": "Meats, poultry, fish, and eggs",
-        "table_row": 21,
-        "level": 3,
+        "long_name": "Meats, poultry, fish, and eggs",
+        "__row__": 21,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:f:h:m",
-            "edan_simple": "cpifhm",
+            "edan": "pcpi:f:h:m",
+            "edan_simple": "pcpifhm",
             "bls": "cusr0000saf112"
         }
     },
     "cpi:f:h:m:m": {
-        "name": "Meats, poultry, and fish",
-        "table_row": 22,
-        "level": 4,
+        "long_name": "Meats, poultry, and fish",
+        "__row__": 22,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:f:h:m:m",
-            "edan_simple": "cpifhmm",
+            "edan": "pcpi:f:h:m:m",
+            "edan_simple": "pcpifhmm",
             "bls": "cusr0000saf1121"
         }
     },
     "cpi:f:h:m:m:m": {
-        "name": "Meats",
-        "table_row": 23,
-        "level": 5,
+        "long_name": "Meats",
+        "__row__": 23,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:m:m:m",
-            "edan_simple": "cpifhmmm",
+            "edan": "pcpi:f:h:m:m:m",
+            "edan_simple": "pcpifhmmm",
             "bls": "cusr0000saf11211"
         }
     },
     "cpi:f:h:m:m:m:b": {
-        "name": "Beef and veal",
-        "table_row": 24,
-        "level": 6,
+        "long_name": "Beef and veal",
+        "__row__": 24,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:m:m:m:b",
-            "edan_simple": "cpifhmmmb",
+            "edan": "pcpi:f:h:m:m:m:b",
+            "edan_simple": "pcpifhmmmb",
             "bls": "cusr0000sefc"
         }
     },
     "cpi:f:h:m:m:m:b:g": {
-        "name": "Uncooked ground beef",
-        "table_row": 25,
-        "level": 7,
+        "long_name": "Uncooked ground beef",
+        "__row__": 25,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:m:m:m:b:g",
-            "edan_simple": "cpifhmmmbg",
+            "edan": "pcpi:f:h:m:m:m:b:g",
+            "edan_simple": "pcpifhmmmbg",
             "bls": "cusr0000sefc01"
         }
     },
     "cpi:f:h:m:m:m:b:r": {
-        "name": "Uncooked beef roasts",
-        "table_row": 26,
-        "level": 7,
+        "long_name": "Uncooked beef roasts",
+        "__row__": 26,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:m:m:m:b:r",
-            "edan_simple": "cpifhmmmbr",
+            "edan": "pcpi:f:h:m:m:m:b:r",
+            "edan_simple": "pcpifhmmmbr",
             "bls": "cuur0000sefc02"
         }
     },
     "cpi:f:h:m:m:m:b:s": {
-        "name": "Uncooked beef steaks",
-        "table_row": 27,
-        "level": 7,
+        "long_name": "Uncooked beef steaks",
+        "__row__": 27,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:m:m:m:b:s",
-            "edan_simple": "cpifhmmmbs",
+            "edan": "pcpi:f:h:m:m:m:b:s",
+            "edan_simple": "pcpifhmmmbs",
             "bls": "cusr0000sefc03"
         }
     },
     "cpi:f:h:m:m:m:b:o": {
-        "name": "Uncooked other beef and veal",
-        "table_row": 28,
-        "level": 7,
+        "long_name": "Uncooked other beef and veal",
+        "__row__": 28,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:m:m:m:b:o",
-            "edan_simple": "cpifhmmmbo",
+            "edan": "pcpi:f:h:m:m:m:b:o",
+            "edan_simple": "pcpifhmmmbo",
             "bls": "cuur0000sefc04"
         }
     },
     "cpi:f:h:m:m:m:p": {
-        "name": "Pork",
-        "table_row": 29,
-        "level": 6,
+        "long_name": "Pork",
+        "__row__": 29,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:m:m:m:p",
-            "edan_simple": "cpifhmmmp",
+            "edan": "pcpi:f:h:m:m:m:p",
+            "edan_simple": "pcpifhmmmp",
             "bls": "cusr0000sefd"
         }
     },
     "cpi:f:h:m:m:m:p:b": {
-        "name": "Bacon, breakfast sausage, and related products",
-        "table_row": 30,
-        "level": 7,
+        "long_name": "Bacon, breakfast sausage, and related products",
+        "__row__": 30,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:m:m:m:p:b",
-            "edan_simple": "cpifhmmmpb",
+            "edan": "pcpi:f:h:m:m:m:p:b",
+            "edan_simple": "pcpifhmmmpb",
             "bls": "cusr0000sefd01"
         }
     },
     "cpi:f:h:m:m:m:p:b:b": {
-        "name": "Bacon and related products",
-        "table_row": 31,
-        "level": 8,
+        "long_name": "Bacon and related products",
+        "__row__": 31,
+        "__level__": 8,
         "price": {
-            "edan": "cpi:f:h:m:m:m:p:b:b",
-            "edan_simple": "cpifhmmmpbb",
+            "edan": "pcpi:f:h:m:m:m:p:b:b",
+            "edan_simple": "pcpifhmmmpbb",
             "bls": "cusr0000ss04011"
         }
     },
     "cpi:f:h:m:m:m:p:b:s": {
-        "name": "Breakfast sausage and related products",
-        "table_row": 32,
-        "level": 8,
+        "long_name": "Breakfast sausage and related products",
+        "__row__": 32,
+        "__level__": 8,
         "price": {
-            "edan": "cpi:f:h:m:m:m:p:b:s",
-            "edan_simple": "cpifhmmmpbs",
+            "edan": "pcpi:f:h:m:m:m:p:b:s",
+            "edan_simple": "pcpifhmmmpbs",
             "bls": "cusr0000ss04012"
         }
     },
     "cpi:f:h:m:m:m:p:h": {
-        "name": "Ham",
-        "table_row": 33,
-        "level": 7,
+        "long_name": "Ham",
+        "__row__": 33,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:m:m:m:p:h",
-            "edan_simple": "cpifhmmmph",
+            "edan": "pcpi:f:h:m:m:m:p:h",
+            "edan_simple": "pcpifhmmmph",
             "bls": "cusr0000sefd02"
         }
     },
     "cpi:f:h:m:m:m:p:h:c": {
-        "name": "Ham, excluding canned",
-        "table_row": 34,
-        "level": 8,
+        "long_name": "Ham, excluding canned",
+        "__row__": 34,
+        "__level__": 8,
         "price": {
-            "edan": "cpi:f:h:m:m:m:p:h:c",
-            "edan_simple": "cpifhmmmphc",
+            "edan": "pcpi:f:h:m:m:m:p:h:c",
+            "edan_simple": "pcpifhmmmphc",
             "bls": "cusr0000ss04031"
         }
     },
     "cpi:f:h:m:m:m:p:c": {
-        "name": "Pork chops",
-        "table_row": 35,
-        "level": 7,
+        "long_name": "Pork chops",
+        "__row__": 35,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:m:m:m:p:c",
-            "edan_simple": "cpifhmmmpc",
+            "edan": "pcpi:f:h:m:m:m:p:c",
+            "edan_simple": "pcpifhmmmpc",
             "bls": "cusr0000sefd03"
         }
     },
     "cpi:f:h:m:m:m:p:o": {
-        "name": "Other pork including roasts, steaks, and ribs",
-        "table_row": 36,
-        "level": 7,
+        "long_name": "Other pork including roasts, steaks, and ribs",
+        "__row__": 36,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:m:m:m:p:o",
-            "edan_simple": "cpifhmmmpo",
+            "edan": "pcpi:f:h:m:m:m:p:o",
+            "edan_simple": "pcpifhmmmpo",
             "bls": "cusr0000sefd04"
         }
     },
     "cpi:f:h:m:m:m:o": {
-        "name": "Other meats",
-        "table_row": 37,
-        "level": 6,
+        "long_name": "Other meats",
+        "__row__": 37,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:m:m:m:o",
-            "edan_simple": "cpifhmmmo",
+            "edan": "pcpi:f:h:m:m:m:o",
+            "edan_simple": "pcpifhmmmo",
             "bls": "cusr0000sefe"
         }
     },
     "cpi:f:h:m:m:m:o:f": {
-        "name": "Frankfurters",
-        "table_row": 38,
-        "level": 7,
+        "long_name": "Frankfurters",
+        "__row__": 38,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:m:m:m:o:f",
-            "edan_simple": "cpifhmmmof",
+            "edan": "pcpi:f:h:m:m:m:o:f",
+            "edan_simple": "pcpifhmmmof",
             "bls": "cusr0000ss05011"
         }
     },
     "cpi:f:h:m:m:m:o:l": {
-        "name": "Lunchmeats",
-        "table_row": 39,
-        "level": 7,
+        "long_name": "Lunchmeats",
+        "__row__": 39,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:m:m:m:o:l",
-            "edan_simple": "cpifhmmmol",
+            "edan": "pcpi:f:h:m:m:m:o:l",
+            "edan_simple": "pcpifhmmmol",
             "bls": "cusr0000ss0501a"
         }
     },
     "cpi:f:h:m:m:m:f": {
-        "name": "Poultry",
-        "table_row": 40,
-        "level": 6,
+        "long_name": "Poultry",
+        "__row__": 40,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:m:m:m:f",
-            "edan_simple": "cpifhmmmf",
+            "edan": "pcpi:f:h:m:m:m:f",
+            "edan_simple": "pcpifhmmmf",
             "bls": "cusr0000seff"
         }
     },
     "cpi:f:h:m:m:m:f:c": {
-        "name": "Chicken",
-        "table_row": 41,
-        "level": 7,
+        "long_name": "Chicken",
+        "__row__": 41,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:m:m:m:f:c",
-            "edan_simple": "cpifhmmmfc",
+            "edan": "pcpi:f:h:m:m:m:f:c",
+            "edan_simple": "pcpifhmmmfc",
             "bls": "cusr0000seff01"
         }
     },
     "cpi:f:h:m:m:m:f:c:w": {
-        "name": "Fresh whole chicken",
-        "table_row": 42,
-        "level": 8,
+        "long_name": "Fresh whole chicken",
+        "__row__": 42,
+        "__level__": 8,
         "price": {
-            "edan": "cpi:f:h:m:m:m:f:c:w",
-            "edan_simple": "cpifhmmmfcw",
+            "edan": "pcpi:f:h:m:m:m:f:c:w",
+            "edan_simple": "pcpifhmmmfcw",
             "bls": "cusr0000ss06011"
         }
     },
     "cpi:f:h:m:m:m:f:c:f": {
-        "name": "Fresh and frozen chicken parts",
-        "table_row": 43,
-        "level": 8,
+        "long_name": "Fresh and frozen chicken parts",
+        "__row__": 43,
+        "__level__": 8,
         "price": {
-            "edan": "cpi:f:h:m:m:m:f:c:f",
-            "edan_simple": "cpifhmmmfcf",
+            "edan": "pcpi:f:h:m:m:m:f:c:f",
+            "edan_simple": "pcpifhmmmfcf",
             "bls": "cuur0000ss06021"
         }
     },
     "cpi:f:h:m:m:m:f:o": {
-        "name": "Other uncooked poultry including turkey",
-        "table_row": 44,
-        "level": 7,
+        "long_name": "Other uncooked poultry including turkey",
+        "__row__": 44,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:m:m:m:f:o",
-            "edan_simple": "cpifhmmmfo",
+            "edan": "pcpi:f:h:m:m:m:f:o",
+            "edan_simple": "pcpifhmmmfo",
             "bls": "cusr0000seff02"
         }
     },
     "cpi:f:h:m:m:m:s": {
-        "name": "Fish and seafood",
-        "table_row": 45,
-        "level": 6,
+        "long_name": "Fish and seafood",
+        "__row__": 45,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:m:m:m:s",
-            "edan_simple": "cpifhmmms",
+            "edan": "pcpi:f:h:m:m:m:s",
+            "edan_simple": "pcpifhmmms",
             "bls": "cusr0000sefg"
         }
     },
     "cpi:f:h:m:m:m:s:f": {
-        "name": "Fresh fish and seafood",
-        "table_row": 46,
-        "level": 7,
+        "long_name": "Fresh fish and seafood",
+        "__row__": 46,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:m:m:m:s:f",
-            "edan_simple": "cpifhmmmsf",
+            "edan": "pcpi:f:h:m:m:m:s:f",
+            "edan_simple": "pcpifhmmmsf",
             "bls": "cusr0000sefg01"
         }
     },
     "cpi:f:h:m:m:m:s:p": {
-        "name": "Processed fish and seafood",
-        "table_row": 47,
-        "level": 7,
+        "long_name": "Processed fish and seafood",
+        "__row__": 47,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:m:m:m:s:p",
-            "edan_simple": "cpifhmmmsp",
+            "edan": "pcpi:f:h:m:m:m:s:p",
+            "edan_simple": "pcpifhmmmsp",
             "bls": "cusr0000sefg02"
         }
     },
     "cpi:f:h:m:m:m:s:p:s": {
-        "name": "Shelf stable fish and seafood",
-        "table_row": 48,
-        "level": 8,
+        "long_name": "Shelf stable fish and seafood",
+        "__row__": 48,
+        "__level__": 8,
         "price": {
-            "edan": "cpi:f:h:m:m:m:s:p:s",
-            "edan_simple": "cpifhmmmsps",
+            "edan": "pcpi:f:h:m:m:m:s:p:s",
+            "edan_simple": "pcpifhmmmsps",
             "bls": "cusr0000ss07011"
         }
     },
     "cpi:f:h:m:m:m:s:p:f": {
-        "name": "Frozen fish and seafood",
-        "table_row": 49,
-        "level": 8,
+        "long_name": "Frozen fish and seafood",
+        "__row__": 49,
+        "__level__": 8,
         "price": {
-            "edan": "cpi:f:h:m:m:m:s:p:f",
-            "edan_simple": "cpifhmmmspf",
+            "edan": "pcpi:f:h:m:m:m:s:p:f",
+            "edan_simple": "pcpifhmmmspf",
             "bls": "cusr0000ss07021"
         }
     },
     "cpi:f:h:m:m:e": {
-        "name": "Eggs",
-        "table_row": 50,
-        "level": 5,
+        "long_name": "Eggs",
+        "__row__": 50,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:m:m:e",
-            "edan_simple": "cpifhmme",
+            "edan": "pcpi:f:h:m:m:e",
+            "edan_simple": "pcpifhmme",
             "bls": "cusr0000sefh"
         }
     },
     "cpi:f:h:d": {
-        "name": "Dairy and related products",
-        "table_row": 51,
-        "level": 3,
+        "long_name": "Dairy and related products",
+        "__row__": 51,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:f:h:d",
-            "edan_simple": "cpifhd",
+            "edan": "pcpi:f:h:d",
+            "edan_simple": "pcpifhd",
             "bls": "cusr0000sefj"
         }
     },
     "cpi:f:h:d:m": {
-        "name": "Milk",
-        "table_row": 52,
-        "level": 4,
+        "long_name": "Milk",
+        "__row__": 52,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:f:h:d:m",
-            "edan_simple": "cpifhdm",
+            "edan": "pcpi:f:h:d:m",
+            "edan_simple": "pcpifhdm",
             "bls": "cusr0000sefj01"
         }
     },
     "cpi:f:h:d:m:f": {
-        "name": "Fresh whole milk",
-        "table_row": 53,
-        "level": 5,
+        "long_name": "Fresh whole milk",
+        "__row__": 53,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:d:m:f",
-            "edan_simple": "cpifhdmf",
+            "edan": "pcpi:f:h:d:m:f",
+            "edan_simple": "pcpifhdmf",
             "bls": "cusr0000ss09011"
         }
     },
     "cpi:f:h:d:m:o": {
-        "name": "Fresh milk other than whole",
-        "table_row": 54,
-        "level": 5,
+        "long_name": "Fresh milk other than whole",
+        "__row__": 54,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:d:m:o",
-            "edan_simple": "cpifhdmo",
+            "edan": "pcpi:f:h:d:m:o",
+            "edan_simple": "pcpifhdmo",
             "bls": "cusr0000ss09021"
         }
     },
     "cpi:f:h:d:c": {
-        "name": "Cheese and related products",
-        "table_row": 55,
-        "level": 4,
+        "long_name": "Cheese and related products",
+        "__row__": 55,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:f:h:d:c",
-            "edan_simple": "cpifhdc",
+            "edan": "pcpi:f:h:d:c",
+            "edan_simple": "pcpifhdc",
             "bls": "cusr0000sefj02"
         }
     },
     "cpi:f:h:d:i": {
-        "name": "Ice cream and related products",
-        "table_row": 56,
-        "level": 4,
+        "long_name": "Ice cream and related products",
+        "__row__": 56,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:f:h:d:i",
-            "edan_simple": "cpifhdi",
+            "edan": "pcpi:f:h:d:i",
+            "edan_simple": "pcpifhdi",
             "bls": "cusr0000sefj03"
         }
     },
     "cpi:f:h:d:o": {
-        "name": "Other dairy and related products",
-        "table_row": 57,
-        "level": 4,
+        "long_name": "Other dairy and related products",
+        "__row__": 57,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:f:h:d:o",
-            "edan_simple": "cpifhdo",
+            "edan": "pcpi:f:h:d:o",
+            "edan_simple": "pcpifhdo",
             "bls": "cusr0000sefj04"
         }
     },
     "cpi:f:h:v": {
-        "name": "Fruits and vegetables",
-        "table_row": 58,
-        "level": 3,
+        "long_name": "Fruits and vegetables",
+        "__row__": 58,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:f:h:v",
-            "edan_simple": "cpifhv",
+            "edan": "pcpi:f:h:v",
+            "edan_simple": "pcpifhv",
             "bls": "cusr0000saf113"
         }
     },
     "cpi:f:h:v:f": {
-        "name": "Fresh fruits and vegetables",
-        "table_row": 59,
-        "level": 4,
+        "long_name": "Fresh fruits and vegetables",
+        "__row__": 59,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:f:h:v:f",
-            "edan_simple": "cpifhvf",
+            "edan": "pcpi:f:h:v:f",
+            "edan_simple": "pcpifhvf",
             "bls": "cusr0000saf1131"
         }
     },
     "cpi:f:h:v:f:f": {
-        "name": "Fresh fruits",
-        "table_row": 60,
-        "level": 5,
+        "long_name": "Fresh fruits",
+        "__row__": 60,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:v:f:f",
-            "edan_simple": "cpifhvff",
+            "edan": "pcpi:f:h:v:f:f",
+            "edan_simple": "pcpifhvff",
             "bls": "cusr0000sefk"
         }
     },
     "cpi:f:h:v:f:f:a": {
-        "name": "Apples",
-        "table_row": 61,
-        "level": 6,
+        "long_name": "Apples",
+        "__row__": 61,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:v:f:f:a",
-            "edan_simple": "cpifhvffa",
+            "edan": "pcpi:f:h:v:f:f:a",
+            "edan_simple": "pcpifhvffa",
             "bls": "cusr0000sefk01"
         }
     },
     "cpi:f:h:v:f:f:b": {
-        "name": "Bananas",
-        "table_row": 62,
-        "level": 6,
+        "long_name": "Bananas",
+        "__row__": 62,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:v:f:f:b",
-            "edan_simple": "cpifhvffb",
+            "edan": "pcpi:f:h:v:f:f:b",
+            "edan_simple": "pcpifhvffb",
             "bls": "cusr0000sefk02"
         }
     },
     "cpi:f:h:v:f:f:c": {
-        "name": "Citrus fruits",
-        "table_row": 63,
-        "level": 6,
+        "long_name": "Citrus fruits",
+        "__row__": 63,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:v:f:f:c",
-            "edan_simple": "cpifhvffc",
+            "edan": "pcpi:f:h:v:f:f:c",
+            "edan_simple": "pcpifhvffc",
             "bls": "cusr0000sefk03"
         }
     },
     "cpi:f:h:v:f:f:c:o": {
-        "name": "Oranges, including tangerines",
-        "table_row": 64,
-        "level": 7,
+        "long_name": "Oranges, including tangerines",
+        "__row__": 64,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:v:f:f:c:o",
-            "edan_simple": "cpifhvffco",
+            "edan": "pcpi:f:h:v:f:f:c:o",
+            "edan_simple": "pcpifhvffco",
             "bls": "cusr0000ss11031"
         }
     },
     "cpi:f:h:v:f:f:o": {
-        "name": "Other fresh fruits",
-        "table_row": 65,
-        "level": 6,
+        "long_name": "Other fresh fruits",
+        "__row__": 65,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:v:f:f:o",
-            "edan_simple": "cpifhvffo",
+            "edan": "pcpi:f:h:v:f:f:o",
+            "edan_simple": "pcpifhvffo",
             "bls": "cusr0000sefk04"
         }
     },
     "cpi:f:h:v:f:v": {
-        "name": "Fresh vegetables",
-        "table_row": 66,
-        "level": 5,
+        "long_name": "Fresh vegetables",
+        "__row__": 66,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:v:f:v",
-            "edan_simple": "cpifhvfv",
+            "edan": "pcpi:f:h:v:f:v",
+            "edan_simple": "pcpifhvfv",
             "bls": "cusr0000sefl"
         }
     },
     "cpi:f:h:v:f:v:p": {
-        "name": "Potatoes",
-        "table_row": 67,
-        "level": 6,
+        "long_name": "Potatoes",
+        "__row__": 67,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:v:f:v:p",
-            "edan_simple": "cpifhvfvp",
+            "edan": "pcpi:f:h:v:f:v:p",
+            "edan_simple": "pcpifhvfvp",
             "bls": "cusr0000sefl01"
         }
     },
     "cpi:f:h:v:f:v:l": {
-        "name": "Lettuce",
-        "table_row": 68,
-        "level": 6,
+        "long_name": "Lettuce",
+        "__row__": 68,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:v:f:v:l",
-            "edan_simple": "cpifhvfvl",
+            "edan": "pcpi:f:h:v:f:v:l",
+            "edan_simple": "pcpifhvfvl",
             "bls": "cusr0000sefl02"
         }
     },
     "cpi:f:h:v:f:v:t": {
-        "name": "Tomatoes",
-        "table_row": 69,
-        "level": 6,
+        "long_name": "Tomatoes",
+        "__row__": 69,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:v:f:v:t",
-            "edan_simple": "cpifhvfvt",
+            "edan": "pcpi:f:h:v:f:v:t",
+            "edan_simple": "pcpifhvfvt",
             "bls": "cusr0000sefl03"
         }
     },
     "cpi:f:h:v:f:v:o": {
-        "name": "Other fresh vegetables",
-        "table_row": 70,
-        "level": 6,
+        "long_name": "Other fresh vegetables",
+        "__row__": 70,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:v:f:v:o",
-            "edan_simple": "cpifhvfvo",
+            "edan": "pcpi:f:h:v:f:v:o",
+            "edan_simple": "pcpifhvfvo",
             "bls": "cusr0000sefl04"
         }
     },
     "cpi:f:h:v:f:p": {
-        "name": "Processed fruits and vegetables",
-        "table_row": 71,
-        "level": 5,
+        "long_name": "Processed fruits and vegetables",
+        "__row__": 71,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:v:f:p",
-            "edan_simple": "cpifhvfp",
+            "edan": "pcpi:f:h:v:f:p",
+            "edan_simple": "pcpifhvfp",
             "bls": "cusr0000sefm"
         }
     },
     "cpi:f:h:v:f:p:c": {
-        "name": "Canned fruits and vegetables",
-        "table_row": 72,
-        "level": 6,
+        "long_name": "Canned fruits and vegetables",
+        "__row__": 72,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:v:f:p:c",
-            "edan_simple": "cpifhvfpc",
+            "edan": "pcpi:f:h:v:f:p:c",
+            "edan_simple": "pcpifhvfpc",
             "bls": "cusr0000sefm01"
         }
     },
     "cpi:f:h:v:f:p:c:f": {
-        "name": "Canned fruits",
-        "table_row": 73,
-        "level": 7,
+        "long_name": "Canned fruits",
+        "__row__": 73,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:v:f:p:c:f",
-            "edan_simple": "cpifhvfpcf",
+            "edan": "pcpi:f:h:v:f:p:c:f",
+            "edan_simple": "pcpifhvfpcf",
             "bls": "cusr0000ss13031"
         }
     },
     "cpi:f:h:v:f:p:c:v": {
-        "name": "Canned vegetables",
-        "table_row": 74,
-        "level": 7,
+        "long_name": "Canned vegetables",
+        "__row__": 74,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:v:f:p:c:v",
-            "edan_simple": "cpifhvfpcv",
+            "edan": "pcpi:f:h:v:f:p:c:v",
+            "edan_simple": "pcpifhvfpcv",
             "bls": "cusr0000ss14021"
         }
     },
     "cpi:f:h:v:f:p:f": {
-        "name": "Frozen fruits and vegetables",
-        "table_row": 75,
-        "level": 6,
+        "long_name": "Frozen fruits and vegetables",
+        "__row__": 75,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:v:f:p:f",
-            "edan_simple": "cpifhvfpf",
+            "edan": "pcpi:f:h:v:f:p:f",
+            "edan_simple": "pcpifhvfpf",
             "bls": "cusr0000sefm02"
         }
     },
     "cpi:f:h:v:f:p:f:v": {
-        "name": "Frozen vegetables",
-        "table_row": 76,
-        "level": 7,
+        "long_name": "Frozen vegetables",
+        "__row__": 76,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:v:f:p:f:v",
-            "edan_simple": "cpifhvfpfv",
+            "edan": "pcpi:f:h:v:f:p:f:v",
+            "edan_simple": "pcpifhvfpfv",
             "bls": "cusr0000ss14011"
         }
     },
     "cpi:f:h:v:f:p:o": {
-        "name": "Other processed fruits and vegetables including dried",
-        "table_row": 77,
-        "level": 6,
+        "long_name": "Other processed fruits and vegetables including dried",
+        "__row__": 77,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:v:f:p:o",
-            "edan_simple": "cpifhvfpo",
+            "edan": "pcpi:f:h:v:f:p:o",
+            "edan_simple": "pcpifhvfpo",
             "bls": "cusr0000sefm03"
         }
     },
     "cpi:f:h:v:f:p:o:b": {
-        "name": "Dried beans, peas, and lentils",
-        "table_row": 78,
-        "level": 7,
+        "long_name": "Dried beans, peas, and lentils",
+        "__row__": 78,
+        "__level__": 7,
         "price": {
-            "edan": "cpi:f:h:v:f:p:o:b",
-            "edan_simple": "cpifhvfpob",
+            "edan": "pcpi:f:h:v:f:p:o:b",
+            "edan_simple": "pcpifhvfpob",
             "bls": "cuur0000ss14022"
         }
     },
     "cpi:f:h:l": {
-        "name": "Nonalcoholic beverages and beverage materials",
-        "table_row": 79,
-        "level": 3,
+        "long_name": "Nonalcoholic beverages and beverage materials",
+        "__row__": 79,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:f:h:l",
-            "edan_simple": "cpifhl",
+            "edan": "pcpi:f:h:l",
+            "edan_simple": "pcpifhl",
             "bls": "cusr0000saf114"
         }
     },
     "cpi:f:h:l:j": {
-        "name": "Juices and nonalcoholic drinks",
-        "table_row": 80,
-        "level": 4,
+        "long_name": "Juices and nonalcoholic drinks",
+        "__row__": 80,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:f:h:l:j",
-            "edan_simple": "cpifhlj",
+            "edan": "pcpi:f:h:l:j",
+            "edan_simple": "pcpifhlj",
             "bls": "cusr0000sefn"
         }
     },
     "cpi:f:h:l:j:c": {
-        "name": "Carbonated drinks",
-        "table_row": 81,
-        "level": 5,
+        "long_name": "Carbonated drinks",
+        "__row__": 81,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:l:j:c",
-            "edan_simple": "cpifhljc",
+            "edan": "pcpi:f:h:l:j:c",
+            "edan_simple": "pcpifhljc",
             "bls": "cusr0000sefn01"
         }
     },
     "cpi:f:h:l:j:f": {
-        "name": "Frozen noncarbonated juices and drinks",
-        "table_row": 82,
-        "level": 5,
+        "long_name": "Frozen noncarbonated juices and drinks",
+        "__row__": 82,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:l:j:f",
-            "edan_simple": "cpifhljf",
+            "edan": "pcpi:f:h:l:j:f",
+            "edan_simple": "pcpifhljf",
             "bls": "cuur0000sefn02"
         }
     },
     "cpi:f:h:l:j:n": {
-        "name": "Nonfrozen noncarbonated juices and drinks",
-        "table_row": 83,
-        "level": 5,
+        "long_name": "Nonfrozen noncarbonated juices and drinks",
+        "__row__": 83,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:l:j:n",
-            "edan_simple": "cpifhljn",
+            "edan": "pcpi:f:h:l:j:n",
+            "edan_simple": "pcpifhljn",
             "bls": "cusr0000sefn03"
         }
     },
     "cpi:f:h:l:m": {
-        "name": "Beverage materials including coffee and tea",
-        "table_row": 84,
-        "level": 4,
+        "long_name": "Beverage materials including coffee and tea",
+        "__row__": 84,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:f:h:l:m",
-            "edan_simple": "cpifhlm",
+            "edan": "pcpi:f:h:l:m",
+            "edan_simple": "pcpifhlm",
             "bls": "cusr0000sefp"
         }
     },
     "cpi:f:h:l:m:c": {
-        "name": "Coffee",
-        "table_row": 85,
-        "level": 5,
+        "long_name": "Coffee",
+        "__row__": 85,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:l:m:c",
-            "edan_simple": "cpifhlmc",
+            "edan": "pcpi:f:h:l:m:c",
+            "edan_simple": "pcpifhlmc",
             "bls": "cusr0000sefp01"
         }
     },
     "cpi:f:h:l:m:c:r": {
-        "name": "Roasted coffee",
-        "table_row": 86,
-        "level": 6,
+        "long_name": "Roasted coffee",
+        "__row__": 86,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:l:m:c:r",
-            "edan_simple": "cpifhlmcr",
+            "edan": "pcpi:f:h:l:m:c:r",
+            "edan_simple": "pcpifhlmcr",
             "bls": "cusr0000ss17031"
         }
     },
     "cpi:f:h:l:m:c:i": {
-        "name": "Instant coffee",
-        "table_row": 87,
-        "level": 6,
+        "long_name": "Instant coffee",
+        "__row__": 87,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:l:m:c:i",
-            "edan_simple": "cpifhlmci",
+            "edan": "pcpi:f:h:l:m:c:i",
+            "edan_simple": "pcpifhlmci",
             "bls": "cuur0000ss17032"
         }
     },
     "cpi:f:h:l:m:o": {
-        "name": "Other beverage materials including tea",
-        "table_row": 88,
-        "level": 5,
+        "long_name": "Other beverage materials including tea",
+        "__row__": 88,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:l:m:o",
-            "edan_simple": "cpifhlmo",
+            "edan": "pcpi:f:h:l:m:o",
+            "edan_simple": "pcpifhlmo",
             "bls": "cusr0000sefp02"
         }
     },
     "cpi:f:h:o": {
-        "name": "Other food at home",
-        "table_row": 89,
-        "level": 3,
+        "long_name": "Other food at home",
+        "__row__": 89,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:f:h:o",
-            "edan_simple": "cpifho",
+            "edan": "pcpi:f:h:o",
+            "edan_simple": "pcpifho",
             "bls": "cusr0000saf115"
         }
     },
     "cpi:f:h:o:s": {
-        "name": "Sugar and sweets",
-        "table_row": 90,
-        "level": 4,
+        "long_name": "Sugar and sweets",
+        "__row__": 90,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:f:h:o:s",
-            "edan_simple": "cpifhos",
+            "edan": "pcpi:f:h:o:s",
+            "edan_simple": "pcpifhos",
             "bls": "cusr0000sefr"
         }
     },
     "cpi:f:h:o:s:s": {
-        "name": "Sugar and sugar substitutes",
-        "table_row": 91,
-        "level": 5,
+        "long_name": "Sugar and sugar substitutes",
+        "__row__": 91,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:o:s:s",
-            "edan_simple": "cpifhoss",
+            "edan": "pcpi:f:h:o:s:s",
+            "edan_simple": "pcpifhoss",
             "bls": "cusr0000sefr01"
         }
     },
     "cpi:f:h:o:s:c": {
-        "name": "Candy and chewing gum",
-        "table_row": 92,
-        "level": 5,
+        "long_name": "Candy and chewing gum",
+        "__row__": 92,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:o:s:c",
-            "edan_simple": "cpifhosc",
+            "edan": "pcpi:f:h:o:s:c",
+            "edan_simple": "pcpifhosc",
             "bls": "cuur0000sefr02"
         }
     },
     "cpi:f:h:o:s:o": {
-        "name": "Other sweets",
-        "table_row": 93,
-        "level": 5,
+        "long_name": "Other sweets",
+        "__row__": 93,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:o:s:o",
-            "edan_simple": "cpifhoso",
+            "edan": "pcpi:f:h:o:s:o",
+            "edan_simple": "pcpifhoso",
             "bls": "cusr0000sefr03"
         }
     },
     "cpi:f:h:o:f": {
-        "name": "Fats and oils",
-        "table_row": 94,
-        "level": 4,
+        "long_name": "Fats and oils",
+        "__row__": 94,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:f:h:o:f",
-            "edan_simple": "cpifhof",
+            "edan": "pcpi:f:h:o:f",
+            "edan_simple": "pcpifhof",
             "bls": "cusr0000sefs"
         }
     },
     "cpi:f:h:o:f:b": {
-        "name": "Butter and margarine",
-        "table_row": 95,
-        "level": 5,
+        "long_name": "Butter and margarine",
+        "__row__": 95,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:o:f:b",
-            "edan_simple": "cpifhofb",
+            "edan": "pcpi:f:h:o:f:b",
+            "edan_simple": "pcpifhofb",
             "bls": "cusr0000sefs01"
         }
     },
     "cpi:f:h:o:f:b:b": {
-        "name": "Butter",
-        "table_row": 96,
-        "level": 6,
+        "long_name": "Butter",
+        "__row__": 96,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:o:f:b:b",
-            "edan_simple": "cpifhofbb",
+            "edan": "pcpi:f:h:o:f:b:b",
+            "edan_simple": "pcpifhofbb",
             "bls": "cusr0000ss10011"
         }
     },
     "cpi:f:h:o:f:b:m": {
-        "name": "Margarine",
-        "table_row": 97,
-        "level": 6,
+        "long_name": "Margarine",
+        "__row__": 97,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:o:f:b:m",
-            "edan_simple": "cpifhofbm",
+            "edan": "pcpi:f:h:o:f:b:m",
+            "edan_simple": "pcpifhofbm",
             "bls": "cusr0000ss16011"
         }
     },
     "cpi:f:h:o:f:s": {
-        "name": "Salad dressing",
-        "table_row": 98,
-        "level": 5,
+        "long_name": "Salad dressing",
+        "__row__": 98,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:o:f:s",
-            "edan_simple": "cpifhofs",
+            "edan": "pcpi:f:h:o:f:s",
+            "edan_simple": "pcpifhofs",
             "bls": "cusr0000sefs02"
         }
     },
     "cpi:f:h:o:f:o": {
-        "name": "Other fats and oils including peanut butter",
-        "table_row": 99,
-        "level": 5,
+        "long_name": "Other fats and oils including peanut butter",
+        "__row__": 99,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:o:f:o",
-            "edan_simple": "cpifhofo",
+            "edan": "pcpi:f:h:o:f:o",
+            "edan_simple": "pcpifhofo",
             "bls": "cusr0000sefs03"
         }
     },
     "cpi:f:h:o:f:o:p": {
-        "name": "Peanut butter",
-        "table_row": 100,
-        "level": 6,
+        "long_name": "Peanut butter",
+        "__row__": 100,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:o:f:o:p",
-            "edan_simple": "cpifhofop",
+            "edan": "pcpi:f:h:o:f:o:p",
+            "edan_simple": "pcpifhofop",
             "bls": "cuur0000ss16014"
         }
     },
     "cpi:f:h:o:o": {
-        "name": "Other foods",
-        "table_row": 101,
-        "level": 4,
+        "long_name": "Other foods",
+        "__row__": 101,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:f:h:o:o",
-            "edan_simple": "cpifhoo",
+            "edan": "pcpi:f:h:o:o",
+            "edan_simple": "pcpifhoo",
             "bls": "cusr0000seft"
         }
     },
     "cpi:f:h:o:o:s": {
-        "name": "Soups",
-        "table_row": 102,
-        "level": 5,
+        "long_name": "Soups",
+        "__row__": 102,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:o:o:s",
-            "edan_simple": "cpifhoos",
+            "edan": "pcpi:f:h:o:o:s",
+            "edan_simple": "pcpifhoos",
             "bls": "cusr0000seft01"
         }
     },
     "cpi:f:h:o:o:f": {
-        "name": "Frozen and freeze dried prepared foods",
-        "table_row": 103,
-        "level": 5,
+        "long_name": "Frozen and freeze dried prepared foods",
+        "__row__": 103,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:o:o:f",
-            "edan_simple": "cpifhoof",
+            "edan": "pcpi:f:h:o:o:f",
+            "edan_simple": "pcpifhoof",
             "bls": "cusr0000seft02"
         }
     },
     "cpi:f:h:o:o:k": {
-        "name": "Snacks",
-        "table_row": 104,
-        "level": 5,
+        "long_name": "Snacks",
+        "__row__": 104,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:o:o:k",
-            "edan_simple": "cpifhook",
+            "edan": "pcpi:f:h:o:o:k",
+            "edan_simple": "pcpifhook",
             "bls": "cusr0000seft03"
         }
     },
     "cpi:f:h:o:o:c": {
-        "name": "Spices, seasonings, condiments, sauces",
-        "table_row": 105,
-        "level": 5,
+        "long_name": "Spices, seasonings, condiments, sauces",
+        "__row__": 105,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:o:o:c",
-            "edan_simple": "cpifhooc",
+            "edan": "pcpi:f:h:o:o:c",
+            "edan_simple": "pcpifhooc",
             "bls": "cusr0000seft04"
         }
     },
     "cpi:f:h:o:o:c:s": {
-        "name": "Salt and other seasonings and spices",
-        "table_row": 106,
-        "level": 6,
+        "long_name": "Salt and other seasonings and spices",
+        "__row__": 106,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:o:o:c:s",
-            "edan_simple": "cpifhoocs",
+            "edan": "pcpi:f:h:o:o:c:s",
+            "edan_simple": "pcpifhoocs",
             "bls": "cusr0000ss18041"
         }
     },
     "cpi:f:h:o:o:c:p": {
-        "name": "Olives, pickles, relishes",
-        "table_row": 107,
-        "level": 6,
+        "long_name": "Olives, pickles, relishes",
+        "__row__": 107,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:o:o:c:p",
-            "edan_simple": "cpifhoocp",
+            "edan": "pcpi:f:h:o:o:c:p",
+            "edan_simple": "pcpifhoocp",
             "bls": "cuur0000ss18042"
         }
     },
     "cpi:f:h:o:o:c:g": {
-        "name": "Sauces and gravies",
-        "table_row": 108,
-        "level": 6,
+        "long_name": "Sauces and gravies",
+        "__row__": 108,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:o:o:c:g",
-            "edan_simple": "cpifhoocg",
+            "edan": "pcpi:f:h:o:o:c:g",
+            "edan_simple": "pcpifhoocg",
             "bls": "cusr0000ss18043"
         }
     },
     "cpi:f:h:o:o:c:o": {
-        "name": "Other condiments",
-        "table_row": 109,
-        "level": 6,
+        "long_name": "Other condiments",
+        "__row__": 109,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:o:o:c:o",
-            "edan_simple": "cpifhooco",
+            "edan": "pcpi:f:h:o:o:c:o",
+            "edan_simple": "pcpifhooco",
             "bls": "cusr0000ss1804b"
         }
     },
     "cpi:f:h:o:o:b": {
-        "name": "Baby food",
-        "table_row": 110,
-        "level": 5,
+        "long_name": "Baby food",
+        "__row__": 110,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:o:o:b",
-            "edan_simple": "cpifhoob",
+            "edan": "pcpi:f:h:o:o:b",
+            "edan_simple": "pcpifhoob",
             "bls": "cuur0000seft05"
         }
     },
     "cpi:f:h:o:o:o": {
-        "name": "Other miscellaneous foods",
-        "table_row": 111,
-        "level": 5,
+        "long_name": "Other miscellaneous foods",
+        "__row__": 111,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:f:h:o:o:o",
-            "edan_simple": "cpifhooo",
+            "edan": "pcpi:f:h:o:o:o",
+            "edan_simple": "pcpifhooo",
             "bls": "cusr0000seft06"
         }
     },
     "cpi:f:h:o:o:o:s": {
-        "name": "Prepared salads",
-        "table_row": 112,
-        "level": 6,
+        "long_name": "Prepared salads",
+        "__row__": 112,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:f:h:o:o:o:s",
-            "edan_simple": "cpifhooos",
+            "edan": "pcpi:f:h:o:o:o:s",
+            "edan_simple": "pcpifhooos",
             "bls": "cusr0000ss18064"
         }
     },
     "cpi:f:a": {
-        "name": "Food away from home",
-        "table_row": 113,
-        "level": 2,
+        "long_name": "Food away from home",
+        "__row__": 113,
+        "__level__": 2,
         "price": {
-            "edan": "cpi:f:a",
-            "edan_simple": "cpifa",
+            "edan": "pcpi:f:a",
+            "edan_simple": "pcpifa",
             "bls": "cusr0000sefv"
         }
     },
     "cpi:f:a:f": {
-        "name": "Full service meals and snacks",
-        "table_row": 114,
-        "level": 3,
+        "long_name": "Full service meals and snacks",
+        "__row__": 114,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:f:a:f",
-            "edan_simple": "cpifaf",
+            "edan": "pcpi:f:a:f",
+            "edan_simple": "pcpifaf",
             "bls": "cusr0000sefv01"
         }
     },
     "cpi:f:a:l": {
-        "name": "Limited service meals and snacks",
-        "table_row": 115,
-        "level": 3,
+        "long_name": "Limited service meals and snacks",
+        "__row__": 115,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:f:a:l",
-            "edan_simple": "cpifal",
+            "edan": "pcpi:f:a:l",
+            "edan_simple": "pcpifal",
             "bls": "cuur0000sefv02"
         }
     },
     "cpi:f:a:e": {
-        "name": "Food at employee sites and schools",
-        "table_row": 116,
-        "level": 3,
+        "long_name": "Food at employee sites and schools",
+        "__row__": 116,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:f:a:e",
-            "edan_simple": "cpifae",
+            "edan": "pcpi:f:a:e",
+            "edan_simple": "pcpifae",
             "bls": "cusr0000sefv03"
         }
     },
     "cpi:f:a:e:s": {
-        "name": "Food at elementary and secondary schools",
-        "table_row": 117,
-        "level": 4,
+        "long_name": "Food at elementary and secondary schools",
+        "__row__": 117,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:f:a:e:s",
-            "edan_simple": "cpifaes",
+            "edan": "pcpi:f:a:e:s",
+            "edan_simple": "pcpifaes",
             "bls": "cusr0000ssfv031a"
         }
     },
     "cpi:f:a:v": {
-        "name": "Food from vending machines and mobile vendors",
-        "table_row": 118,
-        "level": 3,
+        "long_name": "Food from vending machines and mobile vendors",
+        "__row__": 118,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:f:a:v",
-            "edan_simple": "cpifav",
+            "edan": "pcpi:f:a:v",
+            "edan_simple": "pcpifav",
             "bls": "cuur0000sefv04"
         }
     },
     "cpi:f:a:v:o": {
-        "name": "Other food away from home",
-        "table_row": 119,
-        "level": 3,
+        "long_name": "Other food away from home",
+        "__row__": 119,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:f:a:v:o",
-            "edan_simple": "cpifavo",
+            "edan": "pcpi:f:a:v:o",
+            "edan_simple": "pcpifavo",
             "bls": "cusr0000sefv05"
         }
     },
     "cpi:e": {
-        "name": "Energy",
-        "table_row": 120,
-        "level": 1,
+        "long_name": "Energy",
+        "__row__": 120,
+        "__level__": 1,
         "price": {
-            "edan": "cpi:e",
-            "edan_simple": "cpie",
+            "edan": "pcpi:e",
+            "edan_simple": "pcpie",
             "bls": "cusr0000sa0e"
         }
     },
     "cpi:e:c": {
-        "name": "Energy commodities",
-        "table_row": 121,
-        "level": 2,
+        "long_name": "Energy commodities",
+        "__row__": 121,
+        "__level__": 2,
         "price": {
-            "edan": "cpi:e:c",
-            "edan_simple": "cpiec",
+            "edan": "pcpi:e:c",
+            "edan_simple": "pcpiec",
             "bls": "cusr0000sace"
         }
     },
     "cpi:e:c:f": {
-        "name": "Fuel oil and other fuels",
-        "table_row": 122,
-        "level": 3,
+        "long_name": "Fuel oil and other fuels",
+        "__row__": 122,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:e:c:f",
-            "edan_simple": "cpiecf",
+            "edan": "pcpi:e:c:f",
+            "edan_simple": "pcpiecf",
             "bls": "cusr0000sehe"
         }
     },
     "cpi:e:c:f:o": {
-        "name": "Fuel oil",
-        "table_row": 123,
-        "level": 4,
+        "long_name": "Fuel oil",
+        "__row__": 123,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:e:c:f:o",
-            "edan_simple": "cpiecfo",
+            "edan": "pcpi:e:c:f:o",
+            "edan_simple": "pcpiecfo",
             "bls": "cusr0000sehe01"
         }
     },
     "cpi:e:c:f:p": {
-        "name": "Propane, kerosene, and firewood",
-        "table_row": 124,
-        "level": 4,
+        "long_name": "Propane, kerosene, and firewood",
+        "__row__": 124,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:e:c:f:p",
-            "edan_simple": "cpiecfp",
+            "edan": "pcpi:e:c:f:p",
+            "edan_simple": "pcpiecfp",
             "bls": "cusr0000sehe02"
         }
     },
     "cpi:e:c:m": {
-        "name": "Motor fuel",
-        "table_row": 125,
-        "level": 3,
+        "long_name": "Motor fuel",
+        "__row__": 125,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:e:c:m",
-            "edan_simple": "cpiecm",
+            "edan": "pcpi:e:c:m",
+            "edan_simple": "pcpiecm",
             "bls": "cusr0000setb"
         }
     },
     "cpi:e:c:m:g": {
-        "name": "Gasoline ",
-        "table_row": 126,
-        "level": 4,
+        "long_name": "Gasoline ",
+        "__row__": 126,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:e:c:m:g",
-            "edan_simple": "cpiecmg",
+            "edan": "pcpi:e:c:m:g",
+            "edan_simple": "pcpiecmg",
             "bls": "cusr0000setb01"
         }
     },
     "cpi:e:c:m:g:r": {
-        "name": "Gasoline, unleaded regular",
-        "table_row": 127,
-        "level": 5,
+        "long_name": "Gasoline, unleaded regular",
+        "__row__": 127,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:e:c:m:g:r",
-            "edan_simple": "cpiecmgr",
+            "edan": "pcpi:e:c:m:g:r",
+            "edan_simple": "pcpiecmgr",
             "bls": "cusr0000ss47014"
         }
     },
     "cpi:e:c:m:g:m": {
-        "name": "Gasoline, unleaded midgrade",
-        "table_row": 128,
-        "level": 5,
+        "long_name": "Gasoline, unleaded midgrade",
+        "__row__": 128,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:e:c:m:g:m",
-            "edan_simple": "cpiecmgm",
+            "edan": "pcpi:e:c:m:g:m",
+            "edan_simple": "pcpiecmgm",
             "bls": "cusr0000ss47015"
         }
     },
     "cpi:e:c:m:g:p": {
-        "name": "Gasoline, unleaded premium",
-        "table_row": 129,
-        "level": 5,
+        "long_name": "Gasoline, unleaded premium",
+        "__row__": 129,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:e:c:m:g:p",
-            "edan_simple": "cpiecmgp",
+            "edan": "pcpi:e:c:m:g:p",
+            "edan_simple": "pcpiecmgp",
             "bls": "cusr0000ss47016"
         }
     },
     "cpi:e:c:o": {
-        "name": "Other motor fuels",
-        "table_row": 130,
-        "level": 4,
+        "long_name": "Other motor fuels",
+        "__row__": 130,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:e:c:o",
-            "edan_simple": "cpieco",
+            "edan": "pcpi:e:c:o",
+            "edan_simple": "pcpieco",
             "bls": "cusr0000setb02"
         }
     },
     "cpi:e:s": {
-        "name": "Energy services",
-        "table_row": 131,
-        "level": 2,
+        "long_name": "Energy services",
+        "__row__": 131,
+        "__level__": 2,
         "price": {
-            "edan": "cpi:e:s",
-            "edan_simple": "cpies",
+            "edan": "pcpi:e:s",
+            "edan_simple": "pcpies",
             "bls": "cusr0000sehf"
         }
     },
     "cpi:e:s:e": {
-        "name": "Electricity",
-        "table_row": 132,
-        "level": 3,
+        "long_name": "Electricity",
+        "__row__": 132,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:e:s:e",
-            "edan_simple": "cpiese",
+            "edan": "pcpi:e:s:e",
+            "edan_simple": "pcpiese",
             "bls": "cusr0000sehf01"
         }
     },
     "cpi:e:s:u": {
-        "name": "Utility ",
-        "table_row": 133,
-        "level": 3,
+        "long_name": "Utility ",
+        "__row__": 133,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:e:s:u",
-            "edan_simple": "cpiesu",
+            "edan": "pcpi:e:s:u",
+            "edan_simple": "pcpiesu",
             "bls": "cusr0000sehf02"
         }
     },
     "cpi:i": {
-        "name": "All items less food and energy",
-        "table_row": 134,
-        "level": 1,
+        "long_name": "All items less food and energy",
+        "__row__": 134,
+        "__level__": 1,
         "price": {
-            "edan": "cpi:i",
-            "edan_simple": "cpii",
+            "edan": "pcpi:i",
+            "edan_simple": "pcpii",
             "bls": "cusr0000sa0l1e"
         }
     },
     "cpi:i:c": {
-        "name": "Commodities less food and energy commodities",
-        "table_row": 135,
-        "level": 2,
+        "long_name": "Commodities less food and energy commodities",
+        "__row__": 135,
+        "__level__": 2,
         "price": {
-            "edan": "cpi:i:c",
-            "edan_simple": "cpiic",
+            "edan": "pcpi:i:c",
+            "edan_simple": "pcpiic",
             "bls": "cusr0000sacl1e"
         }
     },
     "cpi:i:c:h": {
-        "name": "Household furnishings and supplies",
-        "table_row": 136,
-        "level": 3,
+        "long_name": "Household furnishings and supplies",
+        "__row__": 136,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:i:c:h",
-            "edan_simple": "cpiich",
+            "edan": "pcpi:i:c:h",
+            "edan_simple": "pcpiich",
             "bls": "cusr0000sah31"
         }
     },
     "cpi:i:c:h:w": {
-        "name": "Window and floor coverings and other linens",
-        "table_row": 137,
-        "level": 4,
+        "long_name": "Window and floor coverings and other linens",
+        "__row__": 137,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:h:w",
-            "edan_simple": "cpiichw",
+            "edan": "pcpi:i:c:h:w",
+            "edan_simple": "pcpiichw",
             "bls": "cusr0000sehh"
         }
     },
     "cpi:i:c:h:w:f": {
-        "name": "Floor coverings",
-        "table_row": 138,
-        "level": 5,
+        "long_name": "Floor coverings",
+        "__row__": 138,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:h:w:f",
-            "edan_simple": "cpiichwf",
+            "edan": "pcpi:i:c:h:w:f",
+            "edan_simple": "pcpiichwf",
             "bls": "cuur0000sehh01"
         }
     },
     "cpi:i:c:h:w:w": {
-        "name": "Window coverings",
-        "table_row": 139,
-        "level": 5,
+        "long_name": "Window coverings",
+        "__row__": 139,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:h:w:w",
-            "edan_simple": "cpiichww",
+            "edan": "pcpi:i:c:h:w:w",
+            "edan_simple": "pcpiichww",
             "bls": "cusr0000sehh02"
         }
     },
     "cpi:i:c:h:w:o": {
-        "name": "Other linens",
-        "table_row": 140,
-        "level": 5,
+        "long_name": "Other linens",
+        "__row__": 140,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:h:w:o",
-            "edan_simple": "cpiichwo",
+            "edan": "pcpi:i:c:h:w:o",
+            "edan_simple": "pcpiichwo",
             "bls": "cuur0000sehh03"
         }
     },
     "cpi:i:c:h:f": {
-        "name": "Furniture and bedding",
-        "table_row": 141,
-        "level": 4,
+        "long_name": "Furniture and bedding",
+        "__row__": 141,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:h:f",
-            "edan_simple": "cpiichf",
+            "edan": "pcpi:i:c:h:f",
+            "edan_simple": "pcpiichf",
             "bls": "cusr0000sehj"
         }
     },
     "cpi:i:c:h:f:b": {
-        "name": "Bedroom furniture",
-        "table_row": 142,
-        "level": 5,
+        "long_name": "Bedroom furniture",
+        "__row__": 142,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:h:f:b",
-            "edan_simple": "cpiichfb",
+            "edan": "pcpi:i:c:h:f:b",
+            "edan_simple": "pcpiichfb",
             "bls": "cuur0000sehj01"
         }
     },
     "cpi:i:c:h:f:l": {
-        "name": "Living room, kitchen, and dining room furniture",
-        "table_row": 143,
-        "level": 5,
+        "long_name": "Living room, kitchen, and dining room furniture",
+        "__row__": 143,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:h:f:l",
-            "edan_simple": "cpiichfl",
+            "edan": "pcpi:i:c:h:f:l",
+            "edan_simple": "pcpiichfl",
             "bls": "cuur0000sehj02"
         }
     },
     "cpi:i:c:h:f:o": {
-        "name": "Other furniture",
-        "table_row": 144,
-        "level": 5,
+        "long_name": "Other furniture",
+        "__row__": 144,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:h:f:o",
-            "edan_simple": "cpiichfo",
+            "edan": "pcpi:i:c:h:f:o",
+            "edan_simple": "pcpiichfo",
             "bls": "cusr0000sehj03"
         }
     },
     "cpi:i:c:h:a": {
-        "name": "Appliances",
-        "table_row": 145,
-        "level": 4,
+        "long_name": "Appliances",
+        "__row__": 145,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:h:a",
-            "edan_simple": "cpiicha",
+            "edan": "pcpi:i:c:h:a",
+            "edan_simple": "pcpiicha",
             "bls": "cusr0000sehk"
         }
     },
     "cpi:i:c:h:a:m": {
-        "name": "Major appliances",
-        "table_row": 146,
-        "level": 5,
+        "long_name": "Major appliances",
+        "__row__": 146,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:h:a:m",
-            "edan_simple": "cpiicham",
+            "edan": "pcpi:i:c:h:a:m",
+            "edan_simple": "pcpiicham",
             "bls": "cusr0000sehk01"
         }
     },
     "cpi:i:c:h:a:m:l": {
-        "name": "Laundry equipment",
-        "table_row": 147,
-        "level": 6,
+        "long_name": "Laundry equipment",
+        "__row__": 147,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:c:h:a:m:l",
-            "edan_simple": "cpiichaml",
+            "edan": "pcpi:i:c:h:a:m:l",
+            "edan_simple": "pcpiichaml",
             "bls": "cusr0000ss30021"
         }
     },
     "cpi:i:c:h:a:o": {
-        "name": "Other appliances",
-        "table_row": 148,
-        "level": 5,
+        "long_name": "Other appliances",
+        "__row__": 148,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:h:a:o",
-            "edan_simple": "cpiichao",
+            "edan": "pcpi:i:c:h:a:o",
+            "edan_simple": "pcpiichao",
             "bls": "cusr0000sehk02"
         }
     },
     "cpi:i:c:h:o": {
-        "name": "Other household equipment and furnishings",
-        "table_row": 149,
-        "level": 4,
+        "long_name": "Other household equipment and furnishings",
+        "__row__": 149,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:h:o",
-            "edan_simple": "cpiicho",
+            "edan": "pcpi:i:c:h:o",
+            "edan_simple": "pcpiicho",
             "bls": "cusr0000sehl"
         }
     },
     "cpi:i:c:h:o:c": {
-        "name": "Clocks, lamps, and decorator items",
-        "table_row": 150,
-        "level": 5,
+        "long_name": "Clocks, lamps, and decorator items",
+        "__row__": 150,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:h:o:c",
-            "edan_simple": "cpiichoc",
+            "edan": "pcpi:i:c:h:o:c",
+            "edan_simple": "pcpiichoc",
             "bls": "cuur0000sehl01"
         }
     },
     "cpi:i:c:h:o:p": {
-        "name": "Indoor plants and flowers",
-        "table_row": 151,
-        "level": 5,
+        "long_name": "Indoor plants and flowers",
+        "__row__": 151,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:h:o:p",
-            "edan_simple": "cpiichop",
+            "edan": "pcpi:i:c:h:o:p",
+            "edan_simple": "pcpiichop",
             "bls": "cusr0000sehl02"
         }
     },
     "cpi:i:c:h:o:d": {
-        "name": "Dishes and flatware",
-        "table_row": 152,
-        "level": 5,
+        "long_name": "Dishes and flatware",
+        "__row__": 152,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:h:o:d",
-            "edan_simple": "cpiichod",
+            "edan": "pcpi:i:c:h:o:d",
+            "edan_simple": "pcpiichod",
             "bls": "cuur0000sehl03"
         }
     },
     "cpi:i:c:h:o:t": {
-        "name": "Nonelectric cookware and tableware",
-        "table_row": 153,
-        "level": 5,
+        "long_name": "Nonelectric cookware and tableware",
+        "__row__": 153,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:h:o:t",
-            "edan_simple": "cpiichot",
+            "edan": "pcpi:i:c:h:o:t",
+            "edan_simple": "pcpiichot",
             "bls": "cusr0000sehl04"
         }
     },
     "cpi:i:c:h:t": {
-        "name": "Tools, hardware, outdoor equipment and supplies",
-        "table_row": 154,
-        "level": 4,
+        "long_name": "Tools, hardware, outdoor equipment and supplies",
+        "__row__": 154,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:h:t",
-            "edan_simple": "cpiicht",
+            "edan": "pcpi:i:c:h:t",
+            "edan_simple": "pcpiicht",
             "bls": "cusr0000sehm"
         }
     },
     "cpi:i:c:h:t:h": {
-        "name": "Tools, hardware and supplies",
-        "table_row": 155,
-        "level": 5,
+        "long_name": "Tools, hardware and supplies",
+        "__row__": 155,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:h:t:h",
-            "edan_simple": "cpiichth",
+            "edan": "pcpi:i:c:h:t:h",
+            "edan_simple": "pcpiichth",
             "bls": "cuur0000sehm01"
         }
     },
     "cpi:i:c:h:t:o": {
-        "name": "Outdoor equipment and supplies",
-        "table_row": 156,
-        "level": 5,
+        "long_name": "Outdoor equipment and supplies",
+        "__row__": 156,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:h:t:o",
-            "edan_simple": "cpiichto",
+            "edan": "pcpi:i:c:h:t:o",
+            "edan_simple": "pcpiichto",
             "bls": "cusr0000sehm02"
         }
     },
     "cpi:i:c:h:k": {
-        "name": "Housekeeping supplies",
-        "table_row": 157,
-        "level": 4,
+        "long_name": "Housekeeping supplies",
+        "__row__": 157,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:h:k",
-            "edan_simple": "cpiichk",
+            "edan": "pcpi:i:c:h:k",
+            "edan_simple": "pcpiichk",
             "bls": "cusr0000sehn"
         }
     },
     "cpi:i:c:h:k:c": {
-        "name": "Household cleaning products",
-        "table_row": 158,
-        "level": 5,
+        "long_name": "Household cleaning products",
+        "__row__": 158,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:h:k:c",
-            "edan_simple": "cpiichkc",
+            "edan": "pcpi:i:c:h:k:c",
+            "edan_simple": "pcpiichkc",
             "bls": "cusr0000sehn01"
         }
     },
     "cpi:i:c:h:k:p": {
-        "name": "Household paper products",
-        "table_row": 159,
-        "level": 5,
+        "long_name": "Household paper products",
+        "__row__": 159,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:h:k:p",
-            "edan_simple": "cpiichkp",
+            "edan": "pcpi:i:c:h:k:p",
+            "edan_simple": "pcpiichkp",
             "bls": "cuur0000sehn02"
         }
     },
     "cpi:i:c:h:k:m": {
-        "name": "Miscellaneous household products",
-        "table_row": 160,
-        "level": 5,
+        "long_name": "Miscellaneous household products",
+        "__row__": 160,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:h:k:m",
-            "edan_simple": "cpiichkm",
+            "edan": "pcpi:i:c:h:k:m",
+            "edan_simple": "pcpiichkm",
             "bls": "cusr0000sehn03"
         }
     },
     "cpi:i:c:a": {
-        "name": "Apparel",
-        "table_row": 161,
-        "level": 3,
+        "long_name": "Apparel",
+        "__row__": 161,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:i:c:a",
-            "edan_simple": "cpiica",
+            "edan": "pcpi:i:c:a",
+            "edan_simple": "pcpiica",
             "bls": "cusr0000saa"
         }
     },
     "cpi:i:c:a:m": {
-        "name": "Men's and boys' apparel",
-        "table_row": 162,
-        "level": 4,
+        "long_name": "Men's and boys' apparel",
+        "__row__": 162,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:a:m",
-            "edan_simple": "cpiicam",
+            "edan": "pcpi:i:c:a:m",
+            "edan_simple": "pcpiicam",
             "bls": "cusr0000saa1"
         }
     },
     "cpi:i:c:a:m:m": {
-        "name": "Men's apparel",
-        "table_row": 163,
-        "level": 5,
+        "long_name": "Men's apparel",
+        "__row__": 163,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:a:m:m",
-            "edan_simple": "cpiicamm",
+            "edan": "pcpi:i:c:a:m:m",
+            "edan_simple": "pcpiicamm",
             "bls": "cusr0000seaa"
         }
     },
     "cpi:i:c:a:m:m:o": {
-        "name": "Men's suits, sport coats, and outerwear",
-        "table_row": 164,
-        "level": 6,
+        "long_name": "Men's suits, sport coats, and outerwear",
+        "__row__": 164,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:c:a:m:m:o",
-            "edan_simple": "cpiicammo",
+            "edan": "pcpi:i:c:a:m:m:o",
+            "edan_simple": "pcpiicammo",
             "bls": "cusr0000seaa01"
         }
     },
     "cpi:i:c:a:m:m:u": {
-        "name": "Men's underwear, nightwear, swimwear, and accessories",
-        "table_row": 165,
-        "level": 6,
+        "long_name": "Men's underwear, nightwear, swimwear, and accessories",
+        "__row__": 165,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:c:a:m:m:u",
-            "edan_simple": "cpiicammu",
+            "edan": "pcpi:i:c:a:m:m:u",
+            "edan_simple": "pcpiicammu",
             "bls": "cusr0000seaa02"
         }
     },
     "cpi:i:c:a:m:m:s": {
-        "name": "Men's shirts and sweaters",
-        "table_row": 166,
-        "level": 6,
+        "long_name": "Men's shirts and sweaters",
+        "__row__": 166,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:c:a:m:m:s",
-            "edan_simple": "cpiicamms",
+            "edan": "pcpi:i:c:a:m:m:s",
+            "edan_simple": "pcpiicamms",
             "bls": "cusr0000seaa03"
         }
     },
     "cpi:i:c:a:m:m:p": {
-        "name": "Men's pants and shorts",
-        "table_row": 167,
-        "level": 6,
+        "long_name": "Men's pants and shorts",
+        "__row__": 167,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:c:a:m:m:p",
-            "edan_simple": "cpiicammp",
+            "edan": "pcpi:i:c:a:m:m:p",
+            "edan_simple": "pcpiicammp",
             "bls": "cusr0000seaa04"
         }
     },
     "cpi:i:c:a:m:b": {
-        "name": "Boys' apparel",
-        "table_row": 168,
-        "level": 5,
+        "long_name": "Boys' apparel",
+        "__row__": 168,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:a:m:b",
-            "edan_simple": "cpiicamb",
+            "edan": "pcpi:i:c:a:m:b",
+            "edan_simple": "pcpiicamb",
             "bls": "cusr0000seab"
         }
     },
     "cpi:i:c:a:f": {
-        "name": "Women's and girls' apparel",
-        "table_row": 169,
-        "level": 4,
+        "long_name": "Women's and girls' apparel",
+        "__row__": 169,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:a:f",
-            "edan_simple": "cpiicaf",
+            "edan": "pcpi:i:c:a:f",
+            "edan_simple": "pcpiicaf",
             "bls": "cusr0000saa2"
         }
     },
     "cpi:i:c:a:f:w": {
-        "name": "Women's apparel",
-        "table_row": 170,
-        "level": 5,
+        "long_name": "Women's apparel",
+        "__row__": 170,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:a:f:w",
-            "edan_simple": "cpiicafw",
+            "edan": "pcpi:i:c:a:f:w",
+            "edan_simple": "pcpiicafw",
             "bls": "cusr0000seac"
         }
     },
     "cpi:i:c:a:f:w:o": {
-        "name": "Women's outerwear",
-        "table_row": 171,
-        "level": 6,
+        "long_name": "Women's outerwear",
+        "__row__": 171,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:c:a:f:w:o",
-            "edan_simple": "cpiicafwo",
+            "edan": "pcpi:i:c:a:f:w:o",
+            "edan_simple": "pcpiicafwo",
             "bls": "cusr0000seac01"
         }
     },
     "cpi:i:c:a:f:w:d": {
-        "name": "Women's dresses",
-        "table_row": 172,
-        "level": 6,
+        "long_name": "Women's dresses",
+        "__row__": 172,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:c:a:f:w:d",
-            "edan_simple": "cpiicafwd",
+            "edan": "pcpi:i:c:a:f:w:d",
+            "edan_simple": "pcpiicafwd",
             "bls": "cusr0000seac02"
         }
     },
     "cpi:i:c:a:f:w:s": {
-        "name": "Women's suits and separates",
-        "table_row": 173,
-        "level": 6,
+        "long_name": "Women's suits and separates",
+        "__row__": 173,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:c:a:f:w:s",
-            "edan_simple": "cpiicafws",
+            "edan": "pcpi:i:c:a:f:w:s",
+            "edan_simple": "pcpiicafws",
             "bls": "cusr0000seac03"
         }
     },
     "cpi:i:c:a:f:w:u": {
-        "name": "Women's underwear, nightwear, swimwear, and accessories",
-        "table_row": 174,
-        "level": 6,
+        "long_name": "Women's underwear, nightwear, swimwear, and accessories",
+        "__row__": 174,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:c:a:f:w:u",
-            "edan_simple": "cpiicafwu",
+            "edan": "pcpi:i:c:a:f:w:u",
+            "edan_simple": "pcpiicafwu",
             "bls": "cusr0000seac04"
         }
     },
     "cpi:i:c:a:f:g": {
-        "name": "Girls' apparel",
-        "table_row": 175,
-        "level": 5,
+        "long_name": "Girls' apparel",
+        "__row__": 175,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:a:f:g",
-            "edan_simple": "cpiicafg",
+            "edan": "pcpi:i:c:a:f:g",
+            "edan_simple": "pcpiicafg",
             "bls": "cusr0000sead"
         }
     },
     "cpi:i:c:a:s": {
-        "name": "Footwear",
-        "table_row": 176,
-        "level": 4,
+        "long_name": "Footwear",
+        "__row__": 176,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:a:s",
-            "edan_simple": "cpiicas",
+            "edan": "pcpi:i:c:a:s",
+            "edan_simple": "pcpiicas",
             "bls": "cusr0000seae"
         }
     },
     "cpi:i:c:a:s:m": {
-        "name": "Men's footwear",
-        "table_row": 177,
-        "level": 5,
+        "long_name": "Men's footwear",
+        "__row__": 177,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:a:s:m",
-            "edan_simple": "cpiicasm",
+            "edan": "pcpi:i:c:a:s:m",
+            "edan_simple": "pcpiicasm",
             "bls": "cusr0000seae01"
         }
     },
     "cpi:i:c:a:s:c": {
-        "name": "Boys' and girls' footwear",
-        "table_row": 178,
-        "level": 5,
+        "long_name": "Boys' and girls' footwear",
+        "__row__": 178,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:a:s:c",
-            "edan_simple": "cpiicasc",
+            "edan": "pcpi:i:c:a:s:c",
+            "edan_simple": "pcpiicasc",
             "bls": "cusr0000seae02"
         }
     },
     "cpi:i:c:a:s:f": {
-        "name": "Women's footwear",
-        "table_row": 179,
-        "level": 5,
+        "long_name": "Women's footwear",
+        "__row__": 179,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:a:s:f",
-            "edan_simple": "cpiicasf",
+            "edan": "pcpi:i:c:a:s:f",
+            "edan_simple": "pcpiicasf",
             "bls": "cusr0000seae03"
         }
     },
     "cpi:i:c:a:b": {
-        "name": "Infants' and toddlers' apparel",
-        "table_row": 180,
-        "level": 4,
+        "long_name": "Infants' and toddlers' apparel",
+        "__row__": 180,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:a:b",
-            "edan_simple": "cpiicab",
+            "edan": "pcpi:i:c:a:b",
+            "edan_simple": "pcpiicab",
             "bls": "cusr0000seaf"
         }
     },
     "cpi:i:c:a:j": {
-        "name": "Jewelry and watches",
-        "table_row": 181,
-        "level": 4,
+        "long_name": "Jewelry and watches",
+        "__row__": 181,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:a:j",
-            "edan_simple": "cpiicaj",
+            "edan": "pcpi:i:c:a:j",
+            "edan_simple": "pcpiicaj",
             "bls": "cusr0000seag"
         }
     },
     "cpi:i:c:a:j:w": {
-        "name": "Watches",
-        "table_row": 182,
-        "level": 5,
+        "long_name": "Watches",
+        "__row__": 182,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:a:j:w",
-            "edan_simple": "cpiicajw",
+            "edan": "pcpi:i:c:a:j:w",
+            "edan_simple": "pcpiicajw",
             "bls": "cusr0000seag01"
         }
     },
     "cpi:i:c:a:j:j": {
-        "name": "Jewelry",
-        "table_row": 183,
-        "level": 5,
+        "long_name": "Jewelry",
+        "__row__": 183,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:a:j:j",
-            "edan_simple": "cpiicajj",
+            "edan": "pcpi:i:c:a:j:j",
+            "edan_simple": "pcpiicajj",
             "bls": "cusr0000seag02"
         }
     },
     "cpi:i:c:t": {
-        "name": "Transportation commodities less motor fuel",
-        "table_row": 184,
-        "level": 3,
+        "long_name": "Transportation commodities less motor fuel",
+        "__row__": 184,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:i:c:t",
-            "edan_simple": "cpiict",
+            "edan": "pcpi:i:c:t",
+            "edan_simple": "pcpiict",
             "bls": "cusr0000satcltb"
         }
     },
     "cpi:i:c:t:v": {
-        "name": "New vehicles",
-        "table_row": 185,
-        "level": 4,
+        "long_name": "New vehicles",
+        "__row__": 185,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:t:v",
-            "edan_simple": "cpiictv",
+            "edan": "pcpi:i:c:t:v",
+            "edan_simple": "pcpiictv",
             "bls": "cusr0000seta01"
         }
     },
     "cpi:i:c:t:v:n": {
-        "name": "New cars and trucks",
-        "table_row": 186,
-        "level": 5,
+        "long_name": "New cars and trucks",
+        "__row__": 186,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:t:v:n",
-            "edan_simple": "cpiictvn",
+            "edan": "pcpi:i:c:t:v:n",
+            "edan_simple": "pcpiictvn",
             "bls": "cusr0000ss4501a"
         }
     },
     "cpi:i:c:t:v:n:c": {
-        "name": "New cars",
-        "table_row": 187,
-        "level": 6,
+        "long_name": "New cars",
+        "__row__": 187,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:c:t:v:n:c",
-            "edan_simple": "cpiictvnc",
+            "edan": "pcpi:i:c:t:v:n:c",
+            "edan_simple": "pcpiictvnc",
             "bls": "cusr0000ss45011"
         }
     },
     "cpi:i:c:t:v:n:t": {
-        "name": "New trucks",
-        "table_row": 188,
-        "level": 6,
+        "long_name": "New trucks",
+        "__row__": 188,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:c:t:v:n:t",
-            "edan_simple": "cpiictvnt",
+            "edan": "pcpi:i:c:t:v:n:t",
+            "edan_simple": "pcpiictvnt",
             "bls": "cusr0000ss45021"
         }
     },
     "cpi:i:c:t:u": {
-        "name": "Used cars and trucks",
-        "table_row": 189,
-        "level": 4,
+        "long_name": "Used cars and trucks",
+        "__row__": 189,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:t:u",
-            "edan_simple": "cpiictu",
+            "edan": "pcpi:i:c:t:u",
+            "edan_simple": "pcpiictu",
             "bls": "cusr0000seta02"
         }
     },
     "cpi:i:c:t:e": {
-        "name": "Motor vehicle parts and equipment",
-        "table_row": 190,
-        "level": 4,
+        "long_name": "Motor vehicle parts and equipment",
+        "__row__": 190,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:t:e",
-            "edan_simple": "cpiicte",
+            "edan": "pcpi:i:c:t:e",
+            "edan_simple": "pcpiicte",
             "bls": "cusr0000setc"
         }
     },
     "cpi:i:c:t:e:t": {
-        "name": "Tires",
-        "table_row": 191,
-        "level": 5,
+        "long_name": "Tires",
+        "__row__": 191,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:t:e:t",
-            "edan_simple": "cpiictet",
+            "edan": "pcpi:i:c:t:e:t",
+            "edan_simple": "pcpiictet",
             "bls": "cusr0000setc01"
         }
     },
     "cpi:i:c:t:e:a": {
-        "name": "Vehicle accessories other than tires",
-        "table_row": 192,
-        "level": 5,
+        "long_name": "Vehicle accessories other than tires",
+        "__row__": 192,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:t:e:a",
-            "edan_simple": "cpiictea",
+            "edan": "pcpi:i:c:t:e:a",
+            "edan_simple": "pcpiictea",
             "bls": "cuur0000setc02"
         }
     },
     "cpi:i:c:t:e:a:p": {
-        "name": "Vehicle parts and equipment other than tires",
-        "table_row": 193,
-        "level": 6,
+        "long_name": "Vehicle parts and equipment other than tires",
+        "__row__": 193,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:c:t:e:a:p",
-            "edan_simple": "cpiicteap",
+            "edan": "pcpi:i:c:t:e:a:p",
+            "edan_simple": "pcpiicteap",
             "bls": "cuur0000ss48021"
         }
     },
     "cpi:i:c:t:e:a:f": {
-        "name": "Motor oil, coolant, and fluids",
-        "table_row": 194,
-        "level": 6,
+        "long_name": "Motor oil, coolant, and fluids",
+        "__row__": 194,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:c:t:e:a:f",
-            "edan_simple": "cpiicteaf",
+            "edan": "pcpi:i:c:t:e:a:f",
+            "edan_simple": "pcpiicteaf",
             "bls": "cuur0000ss47021"
         }
     },
     "cpi:i:c:m": {
-        "name": "Medical care commodities",
-        "table_row": 195,
-        "level": 3,
+        "long_name": "Medical care commodities",
+        "__row__": 195,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:i:c:m",
-            "edan_simple": "cpiicm",
+            "edan": "pcpi:i:c:m",
+            "edan_simple": "pcpiicm",
             "bls": "cusr0000sam1"
         }
     },
     "cpi:i:c:m:d": {
-        "name": "Medicinal drugs",
-        "table_row": 196,
-        "level": 4,
+        "long_name": "Medicinal drugs",
+        "__row__": 196,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:m:d",
-            "edan_simple": "cpiicmd",
+            "edan": "pcpi:i:c:m:d",
+            "edan_simple": "pcpiicmd",
             "bls": "cusr0000semf"
         }
     },
     "cpi:i:c:m:d:p": {
-        "name": "Prescription drugs",
-        "table_row": 197,
-        "level": 5,
+        "long_name": "Prescription drugs",
+        "__row__": 197,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:m:d:p",
-            "edan_simple": "cpiicmdp",
+            "edan": "pcpi:i:c:m:d:p",
+            "edan_simple": "pcpiicmdp",
             "bls": "cusr0000semf01"
         }
     },
     "cpi:i:c:m:d:n": {
-        "name": "Nonprescription drugs",
-        "table_row": 198,
-        "level": 5,
+        "long_name": "Nonprescription drugs",
+        "__row__": 198,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:m:d:n",
-            "edan_simple": "cpiicmdn",
+            "edan": "pcpi:i:c:m:d:n",
+            "edan_simple": "pcpiicmdn",
             "bls": "cuur0000semf02"
         }
     },
     "cpi:i:c:m:e": {
-        "name": "Medical equipment and supplies",
-        "table_row": 199,
-        "level": 4,
+        "long_name": "Medical equipment and supplies",
+        "__row__": 199,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:m:e",
-            "edan_simple": "cpiicme",
+            "edan": "pcpi:i:c:m:e",
+            "edan_simple": "pcpiicme",
             "bls": "cuur0000semg"
         }
     },
     "cpi:i:c:r": {
-        "name": "Recreation commodities",
-        "table_row": 200,
-        "level": 3,
+        "long_name": "Recreation commodities",
+        "__row__": 200,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:i:c:r",
-            "edan_simple": "cpiicr",
+            "edan": "pcpi:i:c:r",
+            "edan_simple": "pcpiicr",
             "bls": "cusr0000sarc"
         }
     },
     "cpi:i:c:r:a": {
-        "name": "Video and audio products",
-        "table_row": 201,
-        "level": 4,
+        "long_name": "Video and audio products",
+        "__row__": 201,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:r:a",
-            "edan_simple": "cpiicra",
+            "edan": "pcpi:i:c:r:a",
+            "edan_simple": "pcpiicra",
             "bls": "cusr0000serac"
         }
     },
     "cpi:i:c:r:a:t": {
-        "name": "Televisions",
-        "table_row": 202,
-        "level": 5,
+        "long_name": "Televisions",
+        "__row__": 202,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:r:a:t",
-            "edan_simple": "cpiicrat",
+            "edan": "pcpi:i:c:r:a:t",
+            "edan_simple": "pcpiicrat",
             "bls": "cusr0000sera01"
         }
     },
     "cpi:i:c:r:a:o": {
-        "name": "Other video equipment",
-        "table_row": 203,
-        "level": 5,
+        "long_name": "Other video equipment",
+        "__row__": 203,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:r:a:o",
-            "edan_simple": "cpiicrao",
+            "edan": "pcpi:i:c:r:a:o",
+            "edan_simple": "pcpiicrao",
             "bls": "cusr0000sera03"
         }
     },
     "cpi:i:c:r:a:a": {
-        "name": "Audio equipment",
-        "table_row": 204,
-        "level": 5,
+        "long_name": "Audio equipment",
+        "__row__": 204,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:r:a:a",
-            "edan_simple": "cpiicraa",
+            "edan": "pcpi:i:c:r:a:a",
+            "edan_simple": "pcpiicraa",
             "bls": "cusr0000sera05"
         }
     },
     "cpi:i:c:r:a:m": {
-        "name": "Recorded music and music subscriptions",
-        "table_row": 205,
-        "level": 5,
+        "long_name": "Recorded music and music subscriptions",
+        "__row__": 205,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:r:a:m",
-            "edan_simple": "cpiicram",
+            "edan": "pcpi:i:c:r:a:m",
+            "edan_simple": "pcpiicram",
             "bls": "cuur0000sera06"
         }
     },
     "cpi:i:c:r:p": {
-        "name": "Pets and pet products",
-        "table_row": 206,
-        "level": 4,
+        "long_name": "Pets and pet products",
+        "__row__": 206,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:r:p",
-            "edan_simple": "cpiicrp",
+            "edan": "pcpi:i:c:r:p",
+            "edan_simple": "pcpiicrp",
             "bls": "cusr0000serb01"
         }
     },
     "cpi:i:c:r:p:f": {
-        "name": "Pet food",
-        "table_row": 207,
-        "level": 5,
+        "long_name": "Pet food",
+        "__row__": 207,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:r:p:f",
-            "edan_simple": "cpiicrpf",
+            "edan": "pcpi:i:c:r:p:f",
+            "edan_simple": "pcpiicrpf",
             "bls": "cusr0000ss61031"
         }
     },
     "cpi:i:c:r:p:s": {
-        "name": "Purchase of pets, pet supplies, accessories",
-        "table_row": 208,
-        "level": 5,
+        "long_name": "Purchase of pets, pet supplies, accessories",
+        "__row__": 208,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:r:p:s",
-            "edan_simple": "cpiicrps",
+            "edan": "pcpi:i:c:r:p:s",
+            "edan_simple": "pcpiicrps",
             "bls": "cusr0000ss61032"
         }
     },
     "cpi:i:c:r:s": {
-        "name": "Sporting goods",
-        "table_row": 209,
-        "level": 4,
+        "long_name": "Sporting goods",
+        "__row__": 209,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:r:s",
-            "edan_simple": "cpiicrs",
+            "edan": "pcpi:i:c:r:s",
+            "edan_simple": "pcpiicrs",
             "bls": "cusr0000serc"
         }
     },
     "cpi:i:c:r:s:v": {
-        "name": "Sports vehicles including bicycles",
-        "table_row": 210,
-        "level": 5,
+        "long_name": "Sports vehicles including bicycles",
+        "__row__": 210,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:r:s:v",
-            "edan_simple": "cpiicrsv",
+            "edan": "pcpi:i:c:r:s:v",
+            "edan_simple": "pcpiicrsv",
             "bls": "cusr0000serc01"
         }
     },
     "cpi:i:c:r:s:e": {
-        "name": "Sports equipment",
-        "table_row": 211,
-        "level": 5,
+        "long_name": "Sports equipment",
+        "__row__": 211,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:r:s:e",
-            "edan_simple": "cpiicrse",
+            "edan": "pcpi:i:c:r:s:e",
+            "edan_simple": "pcpiicrse",
             "bls": "cusr0000serc02"
         }
     },
     "cpi:i:c:r:d": {
-        "name": "Photographic equipment and supplies",
-        "table_row": 212,
-        "level": 4,
+        "long_name": "Photographic equipment and supplies",
+        "__row__": 212,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:r:d",
-            "edan_simple": "cpiicrd",
+            "edan": "pcpi:i:c:r:d",
+            "edan_simple": "pcpiicrd",
             "bls": "cusr0000serd01"
         }
     },
     "cpi:i:c:r:d:e": {
-        "name": "Photographic equipment",
-        "table_row": 213,
-        "level": 5,
+        "long_name": "Photographic equipment",
+        "__row__": 213,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:r:d:e",
-            "edan_simple": "cpiicrde",
+            "edan": "pcpi:i:c:r:d:e",
+            "edan_simple": "pcpiicrde",
             "bls": "cusr0000ss61023"
         }
     },
     "cpi:i:c:r:r": {
-        "name": "Recreational reading materials",
-        "table_row": 214,
-        "level": 4,
+        "long_name": "Recreational reading materials",
+        "__row__": 214,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:r:r",
-            "edan_simple": "cpiicrr",
+            "edan": "pcpi:i:c:r:r",
+            "edan_simple": "pcpiicrr",
             "bls": "cusr0000serg"
         }
     },
     "cpi:i:c:r:r:n": {
-        "name": "Newspapers and magazines",
-        "table_row": 215,
-        "level": 5,
+        "long_name": "Newspapers and magazines",
+        "__row__": 215,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:r:r:n",
-            "edan_simple": "cpiicrrn",
+            "edan": "pcpi:i:c:r:r:n",
+            "edan_simple": "pcpiicrrn",
             "bls": "cuur0000serg01"
         }
     },
     "cpi:i:c:r:r:b": {
-        "name": "Recreational books",
-        "table_row": 216,
-        "level": 5,
+        "long_name": "Recreational books",
+        "__row__": 216,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:r:r:b",
-            "edan_simple": "cpiicrrb",
+            "edan": "pcpi:i:c:r:r:b",
+            "edan_simple": "pcpiicrrb",
             "bls": "cuur0000serg02"
         }
     },
     "cpi:i:c:r:o": {
-        "name": "Other recreational goods",
-        "table_row": 217,
-        "level": 4,
+        "long_name": "Other recreational goods",
+        "__row__": 217,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:r:o",
-            "edan_simple": "cpiicro",
+            "edan": "pcpi:i:c:r:o",
+            "edan_simple": "pcpiicro",
             "bls": "cusr0000sere"
         }
     },
     "cpi:i:c:r:o:t": {
-        "name": "Toys",
-        "table_row": 218,
-        "level": 5,
+        "long_name": "Toys",
+        "__row__": 218,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:r:o:t",
-            "edan_simple": "cpiicrot",
+            "edan": "pcpi:i:c:r:o:t",
+            "edan_simple": "pcpiicrot",
             "bls": "cusr0000sere01"
         }
     },
     "cpi:i:c:r:o:t:g": {
-        "name": "Toys, games, hobbies and playground equipment",
-        "table_row": 219,
-        "level": 6,
+        "long_name": "Toys, games, hobbies and playground equipment",
+        "__row__": 219,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:c:r:o:t:g",
-            "edan_simple": "cpiicrotg",
+            "edan": "pcpi:i:c:r:o:t:g",
+            "edan_simple": "pcpiicrotg",
             "bls": "cusr0000ss61011"
         }
     },
     "cpi:i:c:r:o:s": {
-        "name": "Sewing machines, fabric and supplies",
-        "table_row": 220,
-        "level": 5,
+        "long_name": "Sewing machines, fabric and supplies",
+        "__row__": 220,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:r:o:s",
-            "edan_simple": "cpiicros",
+            "edan": "pcpi:i:c:r:o:s",
+            "edan_simple": "pcpiicros",
             "bls": "cusr0000sere02"
         }
     },
     "cpi:i:c:r:o:m": {
-        "name": "Music instruments and accessories",
-        "table_row": 221,
-        "level": 5,
+        "long_name": "Music instruments and accessories",
+        "__row__": 221,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:r:o:m",
-            "edan_simple": "cpiicrom",
+            "edan": "pcpi:i:c:r:o:m",
+            "edan_simple": "pcpiicrom",
             "bls": "cusr0000sere03"
         }
     },
     "cpi:i:c:e": {
-        "name": "Education and communication commodities",
-        "table_row": 222,
-        "level": 3,
+        "long_name": "Education and communication commodities",
+        "__row__": 222,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:i:c:e",
-            "edan_simple": "cpiice",
+            "edan": "pcpi:i:c:e",
+            "edan_simple": "pcpiice",
             "bls": "cusr0000saec"
         }
     },
     "cpi:i:c:e:b": {
-        "name": "Educational books and supplies",
-        "table_row": 223,
-        "level": 4,
+        "long_name": "Educational books and supplies",
+        "__row__": 223,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:e:b",
-            "edan_simple": "cpiiceb",
+            "edan": "pcpi:i:c:e:b",
+            "edan_simple": "pcpiiceb",
             "bls": "cusr0000seea"
         }
     },
     "cpi:i:c:e:b:c": {
-        "name": "College textbooks",
-        "table_row": 224,
-        "level": 5,
+        "long_name": "College textbooks",
+        "__row__": 224,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:e:b:c",
-            "edan_simple": "cpiicebc",
+            "edan": "pcpi:i:c:e:b:c",
+            "edan_simple": "pcpiicebc",
             "bls": "cuur0000ssea011"
         }
     },
     "cpi:i:c:e:i": {
-        "name": "Information technology commodities",
-        "table_row": 225,
-        "level": 4,
+        "long_name": "Information technology commodities",
+        "__row__": 225,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:e:i",
-            "edan_simple": "cpiicei",
+            "edan": "pcpi:i:c:e:i",
+            "edan_simple": "pcpiicei",
             "bls": "cusr0000seeec"
         }
     },
     "cpi:i:c:e:i:c": {
-        "name": "Computers, peripherals, and smart home assistants",
-        "table_row": 226,
-        "level": 5,
+        "long_name": "Computers, peripherals, and smart home assistants",
+        "__row__": 226,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:e:i:c",
-            "edan_simple": "cpiiceic",
+            "edan": "pcpi:i:c:e:i:c",
+            "edan_simple": "pcpiiceic",
             "bls": "cusr0000seee01"
         }
     },
     "cpi:i:c:e:i:s": {
-        "name": "Computer software and accessories",
-        "table_row": 227,
-        "level": 5,
+        "long_name": "Computer software and accessories",
+        "__row__": 227,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:e:i:s",
-            "edan_simple": "cpiiceis",
+            "edan": "pcpi:i:c:e:i:s",
+            "edan_simple": "pcpiiceis",
             "bls": "cuur0000seee02"
         }
     },
     "cpi:i:c:e:i:t": {
-        "name": "Telephone hardware, calculators, and other consumer information items",
-        "table_row": 228,
-        "level": 5,
+        "long_name": "Telephone hardware, calculators, and other consumer information items",
+        "__row__": 228,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:e:i:t",
-            "edan_simple": "cpiiceit",
+            "edan": "pcpi:i:c:e:i:t",
+            "edan_simple": "pcpiiceit",
             "bls": "cusr0000seee04"
         }
     },
     "cpi:i:c:d": {
-        "name": "Alcoholic beverages",
-        "table_row": 229,
-        "level": 3,
+        "long_name": "Alcoholic beverages",
+        "__row__": 229,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:i:c:d",
-            "edan_simple": "cpiicd",
+            "edan": "pcpi:i:c:d",
+            "edan_simple": "pcpiicd",
             "bls": "cusr0000saf116"
         }
     },
     "cpi:i:c:d:h": {
-        "name": "Alcoholic beverages at home",
-        "table_row": 230,
-        "level": 4,
+        "long_name": "Alcoholic beverages at home",
+        "__row__": 230,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:d:h",
-            "edan_simple": "cpiicdh",
+            "edan": "pcpi:i:c:d:h",
+            "edan_simple": "pcpiicdh",
             "bls": "cusr0000sefw"
         }
     },
     "cpi:i:c:d:h:b": {
-        "name": "Beer, ale, and other malt beverages at home",
-        "table_row": 231,
-        "level": 5,
+        "long_name": "Beer, ale, and other malt beverages at home",
+        "__row__": 231,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:d:h:b",
-            "edan_simple": "cpiicdhb",
+            "edan": "pcpi:i:c:d:h:b",
+            "edan_simple": "pcpiicdhb",
             "bls": "cusr0000sefw01"
         }
     },
     "cpi:i:c:d:h:s": {
-        "name": "Distilled spirits at home",
-        "table_row": 232,
-        "level": 5,
+        "long_name": "Distilled spirits at home",
+        "__row__": 232,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:d:h:s",
-            "edan_simple": "cpiicdhs",
+            "edan": "pcpi:i:c:d:h:s",
+            "edan_simple": "pcpiicdhs",
             "bls": "cusr0000sefw02"
         }
     },
     "cpi:i:c:d:h:s:w": {
-        "name": "Whiskey at home",
-        "table_row": 233,
-        "level": 6,
+        "long_name": "Whiskey at home",
+        "__row__": 233,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:c:d:h:s:w",
-            "edan_simple": "cpiicdhsw",
+            "edan": "pcpi:i:c:d:h:s:w",
+            "edan_simple": "pcpiicdhsw",
             "bls": "cusr0000ss20021"
         }
     },
     "cpi:i:c:d:h:s:o": {
-        "name": "Distilled spirits, excluding whiskey, at home",
-        "table_row": 234,
-        "level": 6,
+        "long_name": "Distilled spirits, excluding whiskey, at home",
+        "__row__": 234,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:c:d:h:s:o",
-            "edan_simple": "cpiicdhso",
+            "edan": "pcpi:i:c:d:h:s:o",
+            "edan_simple": "pcpiicdhso",
             "bls": "cusr0000ss20022"
         }
     },
     "cpi:i:c:d:h:w": {
-        "name": "Wine at home",
-        "table_row": 235,
-        "level": 5,
+        "long_name": "Wine at home",
+        "__row__": 235,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:d:h:w",
-            "edan_simple": "cpiicdhw",
+            "edan": "pcpi:i:c:d:h:w",
+            "edan_simple": "pcpiicdhw",
             "bls": "cusr0000sefw03"
         }
     },
     "cpi:i:c:d:a": {
-        "name": "Alcoholic beverages away from home",
-        "table_row": 236,
-        "level": 4,
+        "long_name": "Alcoholic beverages away from home",
+        "__row__": 236,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:d:a",
-            "edan_simple": "cpiicda",
+            "edan": "pcpi:i:c:d:a",
+            "edan_simple": "pcpiicda",
             "bls": "cusr0000sefx"
         }
     },
     "cpi:i:c:d:a:b": {
-        "name": "Beer, ale, and other malt beverages away from home",
-        "table_row": 237,
-        "level": 5,
+        "long_name": "Beer, ale, and other malt beverages away from home",
+        "__row__": 237,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:d:a:b",
-            "edan_simple": "cpiicdab",
+            "edan": "pcpi:i:c:d:a:b",
+            "edan_simple": "pcpiicdab",
             "bls": "cuur0000ss20051"
         }
     },
     "cpi:i:c:d:a:w": {
-        "name": "Wine away from home",
-        "table_row": 238,
-        "level": 5,
+        "long_name": "Wine away from home",
+        "__row__": 238,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:d:a:w",
-            "edan_simple": "cpiicdaw",
+            "edan": "pcpi:i:c:d:a:w",
+            "edan_simple": "pcpiicdaw",
             "bls": "cuur0000ss20052"
         }
     },
     "cpi:i:c:d:a:s": {
-        "name": "Distilled spirits away from home",
-        "table_row": 239,
-        "level": 5,
+        "long_name": "Distilled spirits away from home",
+        "__row__": 239,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:d:a:s",
-            "edan_simple": "cpiicdas",
+            "edan": "pcpi:i:c:d:a:s",
+            "edan_simple": "pcpiicdas",
             "bls": "cusr0000ss20053"
         }
     },
     "cpi:i:c:o": {
-        "name": "Other goods",
-        "table_row": 240,
-        "level": 3,
+        "long_name": "Other goods",
+        "__row__": 240,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:i:c:o",
-            "edan_simple": "cpiico",
+            "edan": "pcpi:i:c:o",
+            "edan_simple": "pcpiico",
             "bls": "cusr0000sagc"
         }
     },
     "cpi:i:c:o:t": {
-        "name": "Tobacco and smoking products",
-        "table_row": 241,
-        "level": 4,
+        "long_name": "Tobacco and smoking products",
+        "__row__": 241,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:o:t",
-            "edan_simple": "cpiicot",
+            "edan": "pcpi:i:c:o:t",
+            "edan_simple": "pcpiicot",
             "bls": "cusr0000sega"
         }
     },
     "cpi:i:c:o:t:c": {
-        "name": "Cigarettes",
-        "table_row": 242,
-        "level": 5,
+        "long_name": "Cigarettes",
+        "__row__": 242,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:o:t:c",
-            "edan_simple": "cpiicotc",
+            "edan": "pcpi:i:c:o:t:c",
+            "edan_simple": "pcpiicotc",
             "bls": "cusr0000sega01"
         }
     },
     "cpi:i:c:o:t:o": {
-        "name": "Tobacco products other than cigarettes",
-        "table_row": 243,
-        "level": 5,
+        "long_name": "Tobacco products other than cigarettes",
+        "__row__": 243,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:o:t:o",
-            "edan_simple": "cpiicoto",
+            "edan": "pcpi:i:c:o:t:o",
+            "edan_simple": "pcpiicoto",
             "bls": "cuur0000sega02"
         }
     },
     "cpi:i:c:o:p": {
-        "name": "Personal care products",
-        "table_row": 244,
-        "level": 4,
+        "long_name": "Personal care products",
+        "__row__": 244,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:o:p",
-            "edan_simple": "cpiicop",
+            "edan": "pcpi:i:c:o:p",
+            "edan_simple": "pcpiicop",
             "bls": "cuur0000segb"
         }
     },
     "cpi:i:c:o:p:h": {
-        "name": "Hair, dental, shaving, and miscellaneous personal care products",
-        "table_row": 245,
-        "level": 5,
+        "long_name": "Hair, dental, shaving, and miscellaneous personal care products",
+        "__row__": 245,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:o:p:h",
-            "edan_simple": "cpiicoph",
+            "edan": "pcpi:i:c:o:p:h",
+            "edan_simple": "pcpiicoph",
             "bls": "cuur0000segb01"
         }
     },
     "cpi:i:c:o:p:c": {
-        "name": "Cosmetics, perfume, bath, nail preparations and implements",
-        "table_row": 246,
-        "level": 5,
+        "long_name": "Cosmetics, perfume, bath, nail preparations and implements",
+        "__row__": 246,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:o:p:c",
-            "edan_simple": "cpiicopc",
+            "edan": "pcpi:i:c:o:p:c",
+            "edan_simple": "pcpiicopc",
             "bls": "cuur0000segb02"
         }
     },
     "cpi:i:c:o:o": {
-        "name": "Miscellaneous personal goods",
-        "table_row": 247,
-        "level": 4,
+        "long_name": "Miscellaneous personal goods",
+        "__row__": 247,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:c:o:o",
-            "edan_simple": "cpiicoo",
+            "edan": "pcpi:i:c:o:o",
+            "edan_simple": "pcpiicoo",
             "bls": "cusr0000sege"
         }
     },
     "cpi:i:c:o:o:s": {
-        "name": "Stationery, stationery supplies, gift wrap",
-        "table_row": 248,
-        "level": 5,
+        "long_name": "Stationery, stationery supplies, gift wrap",
+        "__row__": 248,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:c:o:o:s",
-            "edan_simple": "cpiicoos",
+            "edan": "pcpi:i:c:o:o:s",
+            "edan_simple": "pcpiicoos",
             "bls": "cusr0000ss33032"
         }
     },
     "cpi:i:s": {
-        "name": "Services less energy services",
-        "table_row": 249,
-        "level": 2,
+        "long_name": "Services less energy services",
+        "__row__": 249,
+        "__level__": 2,
         "price": {
-            "edan": "cpi:i:s",
-            "edan_simple": "cpiis",
+            "edan": "pcpi:i:s",
+            "edan_simple": "pcpiis",
             "bls": "cusr0000sasle"
         }
     },
     "cpi:i:s:s": {
-        "name": "Shelter",
-        "table_row": 250,
-        "level": 3,
+        "long_name": "Shelter",
+        "__row__": 250,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:i:s:s",
-            "edan_simple": "cpiiss",
+            "edan": "pcpi:i:s:s",
+            "edan_simple": "pcpiiss",
             "bls": "cusr0000sah1"
         }
     },
     "cpi:i:s:s:r": {
-        "name": "Rent of shelter",
-        "table_row": 251,
-        "level": 4,
+        "long_name": "Rent of shelter",
+        "__row__": 251,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:s:r",
-            "edan_simple": "cpiissr",
+            "edan": "pcpi:i:s:s:r",
+            "edan_simple": "pcpiissr",
             "bls": "cusr0000sas2rs"
         }
     },
     "cpi:i:s:s:r:p": {
-        "name": "Rent of primary residence",
-        "table_row": 252,
-        "level": 5,
+        "long_name": "Rent of primary residence",
+        "__row__": 252,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:s:r:p",
-            "edan_simple": "cpiissrp",
+            "edan": "pcpi:i:s:s:r:p",
+            "edan_simple": "pcpiissrp",
             "bls": "cusr0000seha"
         }
     },
     "cpi:i:s:s:r:a": {
-        "name": "Lodging away from home",
-        "table_row": 253,
-        "level": 5,
+        "long_name": "Lodging away from home",
+        "__row__": 253,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:s:r:a",
-            "edan_simple": "cpiissra",
+            "edan": "pcpi:i:s:s:r:a",
+            "edan_simple": "pcpiissra",
             "bls": "cusr0000sehb"
         }
     },
     "cpi:i:s:s:r:a:s": {
-        "name": "Housing at school, excluding board",
-        "table_row": 254,
-        "level": 6,
+        "long_name": "Housing at school, excluding board",
+        "__row__": 254,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:s:s:r:a:s",
-            "edan_simple": "cpiissras",
+            "edan": "pcpi:i:s:s:r:a:s",
+            "edan_simple": "pcpiissras",
             "bls": "cusr0000sehb01"
         }
     },
     "cpi:i:s:s:r:a:o": {
-        "name": "Other lodging away from home including hotels and motels",
-        "table_row": 255,
-        "level": 6,
+        "long_name": "Other lodging away from home including hotels and motels",
+        "__row__": 255,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:s:s:r:a:o",
-            "edan_simple": "cpiissrao",
+            "edan": "pcpi:i:s:s:r:a:o",
+            "edan_simple": "pcpiissrao",
             "bls": "cusr0000sehb02"
         }
     },
     "cpi:i:s:s:r:r": {
-        "name": "Owners' equivalent rent of residences",
-        "table_row": 256,
-        "level": 5,
+        "long_name": "Owners' equivalent rent of residences",
+        "__row__": 256,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:s:r:r",
-            "edan_simple": "cpiissrr",
+            "edan": "pcpi:i:s:s:r:r",
+            "edan_simple": "pcpiissrr",
             "bls": "cusr0000sehc"
         }
     },
     "cpi:i:s:s:r:r:p": {
-        "name": "Owners' equivalent rent of primary residence",
-        "table_row": 257,
-        "level": 6,
+        "long_name": "Owners' equivalent rent of primary residence",
+        "__row__": 257,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:s:s:r:r:p",
-            "edan_simple": "cpiissrrp",
+            "edan": "pcpi:i:s:s:r:r:p",
+            "edan_simple": "pcpiissrrp",
             "bls": "cusr0000sehc01"
         }
     },
     "cpi:i:s:s:r:i": {
-        "name": "Tenants' and household insurance",
-        "table_row": 258,
-        "level": 5,
+        "long_name": "Tenants' and household insurance",
+        "__row__": 258,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:s:r:i",
-            "edan_simple": "cpiissri",
+            "edan": "pcpi:i:s:s:r:i",
+            "edan_simple": "pcpiissri",
             "bls": "cuur0000sehd"
         }
     },
     "cpi:i:s:w": {
-        "name": "Water and sewer and trash collection services",
-        "table_row": 259,
-        "level": 3,
+        "long_name": "Water and sewer and trash collection services",
+        "__row__": 259,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:i:s:w",
-            "edan_simple": "cpiisw",
+            "edan": "pcpi:i:s:w",
+            "edan_simple": "pcpiisw",
             "bls": "cusr0000sehg"
         }
     },
     "cpi:i:s:w:m": {
-        "name": "Water and sewerage maintenance",
-        "table_row": 260,
-        "level": 4,
+        "long_name": "Water and sewerage maintenance",
+        "__row__": 260,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:w:m",
-            "edan_simple": "cpiiswm",
+            "edan": "pcpi:i:s:w:m",
+            "edan_simple": "pcpiiswm",
             "bls": "cusr0000sehg01"
         }
     },
     "cpi:i:s:w:g": {
-        "name": "Garbage and trash collection",
-        "table_row": 261,
-        "level": 4,
+        "long_name": "Garbage and trash collection",
+        "__row__": 261,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:w:g",
-            "edan_simple": "cpiiswg",
+            "edan": "pcpi:i:s:w:g",
+            "edan_simple": "pcpiiswg",
             "bls": "cusr0000sehg02"
         }
     },
     "cpi:i:s:h": {
-        "name": "Household operations",
-        "table_row": 262,
-        "level": 3,
+        "long_name": "Household operations",
+        "__row__": 262,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:i:s:h",
-            "edan_simple": "cpiish",
+            "edan": "pcpi:i:s:h",
+            "edan_simple": "pcpiish",
             "bls": "cuur0000sehp"
         }
     },
     "cpi:i:s:h:d": {
-        "name": "Domestic services",
-        "table_row": 263,
-        "level": 4,
+        "long_name": "Domestic services",
+        "__row__": 263,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:h:d",
-            "edan_simple": "cpiishd",
+            "edan": "pcpi:i:s:h:d",
+            "edan_simple": "pcpiishd",
             "bls": "cuur0000sehp01"
         }
     },
     "cpi:i:s:h:g": {
-        "name": "Gardening and lawncare services",
-        "table_row": 264,
-        "level": 4,
+        "long_name": "Gardening and lawncare services",
+        "__row__": 264,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:h:g",
-            "edan_simple": "cpiishg",
+            "edan": "pcpi:i:s:h:g",
+            "edan_simple": "pcpiishg",
             "bls": "cuur0000sehp02"
         }
     },
     "cpi:i:s:h:m": {
-        "name": "Moving, storage, freight expense",
-        "table_row": 265,
-        "level": 4,
+        "long_name": "Moving, storage, freight expense",
+        "__row__": 265,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:h:m",
-            "edan_simple": "cpiishm",
+            "edan": "pcpi:i:s:h:m",
+            "edan_simple": "pcpiishm",
             "bls": "cusr0000sehp03"
         }
     },
     "cpi:i:s:h:r": {
-        "name": "Repair of household items",
-        "table_row": 266,
-        "level": 4,
+        "long_name": "Repair of household items",
+        "__row__": 266,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:h:r",
-            "edan_simple": "cpiishr",
+            "edan": "pcpi:i:s:h:r",
+            "edan_simple": "pcpiishr",
             "bls": "cuur0000sehp04"
         }
     },
     "cpi:i:s:m": {
-        "name": "Medical care services",
-        "table_row": 267,
-        "level": 3,
+        "long_name": "Medical care services",
+        "__row__": 267,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:i:s:m",
-            "edan_simple": "cpiism",
+            "edan": "pcpi:i:s:m",
+            "edan_simple": "pcpiism",
             "bls": "cusr0000sam2"
         }
     },
     "cpi:i:s:m:p": {
-        "name": "Professional services",
-        "table_row": 268,
-        "level": 4,
+        "long_name": "Professional services",
+        "__row__": 268,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:m:p",
-            "edan_simple": "cpiismp",
+            "edan": "pcpi:i:s:m:p",
+            "edan_simple": "pcpiismp",
             "bls": "cusr0000semc"
         }
     },
     "cpi:i:s:m:p:p": {
-        "name": "Physicians' services",
-        "table_row": 269,
-        "level": 5,
+        "long_name": "Physicians' services",
+        "__row__": 269,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:m:p:p",
-            "edan_simple": "cpiismpp",
+            "edan": "pcpi:i:s:m:p:p",
+            "edan_simple": "pcpiismpp",
             "bls": "cusr0000semc01"
         }
     },
     "cpi:i:s:m:p:d": {
-        "name": "Dental services",
-        "table_row": 270,
-        "level": 5,
+        "long_name": "Dental services",
+        "__row__": 270,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:m:p:d",
-            "edan_simple": "cpiismpd",
+            "edan": "pcpi:i:s:m:p:d",
+            "edan_simple": "pcpiismpd",
             "bls": "cusr0000semc02"
         }
     },
     "cpi:i:s:m:p:e": {
-        "name": "Eyeglasses and eye care",
-        "table_row": 271,
-        "level": 5,
+        "long_name": "Eyeglasses and eye care",
+        "__row__": 271,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:m:p:e",
-            "edan_simple": "cpiismpe",
+            "edan": "pcpi:i:s:m:p:e",
+            "edan_simple": "pcpiismpe",
             "bls": "cusr0000semc03"
         }
     },
     "cpi:i:s:m:p:o": {
-        "name": "Services by other medical professionals",
-        "table_row": 272,
-        "level": 5,
+        "long_name": "Services by other medical professionals",
+        "__row__": 272,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:m:p:o",
-            "edan_simple": "cpiismpo",
+            "edan": "pcpi:i:s:m:p:o",
+            "edan_simple": "pcpiismpo",
             "bls": "cusr0000semc04"
         }
     },
     "cpi:i:s:m:h": {
-        "name": "Hospital and related services",
-        "table_row": 273,
-        "level": 4,
+        "long_name": "Hospital and related services",
+        "__row__": 273,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:m:h",
-            "edan_simple": "cpiismh",
+            "edan": "pcpi:i:s:m:h",
+            "edan_simple": "pcpiismh",
             "bls": "cusr0000semd"
         }
     },
     "cpi:i:s:m:h:h": {
-        "name": "Hospital services",
-        "table_row": 274,
-        "level": 5,
+        "long_name": "Hospital services",
+        "__row__": 274,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:m:h:h",
-            "edan_simple": "cpiismhh",
+            "edan": "pcpi:i:s:m:h:h",
+            "edan_simple": "pcpiismhh",
             "bls": "cusr0000semd01"
         }
     },
     "cpi:i:s:m:h:h:i": {
-        "name": "Inpatient hospital services",
-        "table_row": 275,
-        "level": 6,
+        "long_name": "Inpatient hospital services",
+        "__row__": 275,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:s:m:h:h:i",
-            "edan_simple": "cpiismhhi",
+            "edan": "pcpi:i:s:m:h:h:i",
+            "edan_simple": "pcpiismhhi",
             "bls": "cusr0000ss5702"
         }
     },
     "cpi:i:s:m:h:h:o": {
-        "name": "Outpatient hospital services",
-        "table_row": 276,
-        "level": 6,
+        "long_name": "Outpatient hospital services",
+        "__row__": 276,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:s:m:h:h:o",
-            "edan_simple": "cpiismhho",
+            "edan": "pcpi:i:s:m:h:h:o",
+            "edan_simple": "pcpiismhho",
             "bls": "cusr0000ss5703"
         }
     },
     "cpi:i:s:m:h:n": {
-        "name": "Nursing homes and adult day services",
-        "table_row": 277,
-        "level": 5,
+        "long_name": "Nursing homes and adult day services",
+        "__row__": 277,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:m:h:n",
-            "edan_simple": "cpiismhn",
+            "edan": "pcpi:i:s:m:h:n",
+            "edan_simple": "pcpiismhn",
             "bls": "cusr0000semd02"
         }
     },
     "cpi:i:s:m:h:c": {
-        "name": "Care of invalids and elderly at home",
-        "table_row": 278,
-        "level": 5,
+        "long_name": "Care of invalids and elderly at home",
+        "__row__": 278,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:m:h:c",
-            "edan_simple": "cpiismhc",
+            "edan": "pcpi:i:s:m:h:c",
+            "edan_simple": "pcpiismhc",
             "bls": "cuur0000semd03"
         }
     },
     "cpi:i:s:m:i": {
-        "name": "Health insurance",
-        "table_row": 279,
-        "level": 4,
+        "long_name": "Health insurance",
+        "__row__": 279,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:m:i",
-            "edan_simple": "cpiismi",
+            "edan": "pcpi:i:s:m:i",
+            "edan_simple": "pcpiismi",
             "bls": "cuur0000seme"
         }
     },
     "cpi:i:s:t": {
-        "name": "Transportation services",
-        "table_row": 280,
-        "level": 3,
+        "long_name": "Transportation services",
+        "__row__": 280,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:i:s:t",
-            "edan_simple": "cpiist",
+            "edan": "pcpi:i:s:t",
+            "edan_simple": "pcpiist",
             "bls": "cusr0000sas4"
         }
     },
     "cpi:i:s:t:l": {
-        "name": "Leased cars and trucks",
-        "table_row": 281,
-        "level": 4,
+        "long_name": "Leased cars and trucks",
+        "__row__": 281,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:t:l",
-            "edan_simple": "cpiistl",
+            "edan": "pcpi:i:s:t:l",
+            "edan_simple": "pcpiistl",
             "bls": "cusr0000seta03"
         }
     },
     "cpi:i:s:t:l:c": {
-        "name": "Car and truck rental",
-        "table_row": 282,
-        "level": 4,
+        "long_name": "Car and truck rental",
+        "__row__": 282,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:t:l:c",
-            "edan_simple": "cpiistlc",
+            "edan": "pcpi:i:s:t:l:c",
+            "edan_simple": "pcpiistlc",
             "bls": "cusr0000seta04"
         }
     },
     "cpi:i:s:t:l:r": {
-        "name": "Motor vehicle maintenance and repair",
-        "table_row": 283,
-        "level": 4,
+        "long_name": "Motor vehicle maintenance and repair",
+        "__row__": 283,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:t:l:r",
-            "edan_simple": "cpiistlr",
+            "edan": "pcpi:i:s:t:l:r",
+            "edan_simple": "pcpiistlr",
             "bls": "cusr0000setd"
         }
     },
     "cpi:i:s:t:l:r:b": {
-        "name": "Motor vehicle body work",
-        "table_row": 284,
-        "level": 5,
+        "long_name": "Motor vehicle body work",
+        "__row__": 284,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:t:l:r:b",
-            "edan_simple": "cpiistlrb",
+            "edan": "pcpi:i:s:t:l:r:b",
+            "edan_simple": "pcpiistlrb",
             "bls": "cuur0000setd01"
         }
     },
     "cpi:i:s:t:l:r:m": {
-        "name": "Motor vehicle maintenance and servicing",
-        "table_row": 285,
-        "level": 5,
+        "long_name": "Motor vehicle maintenance and servicing",
+        "__row__": 285,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:t:l:r:m",
-            "edan_simple": "cpiistlrm",
+            "edan": "pcpi:i:s:t:l:r:m",
+            "edan_simple": "pcpiistlrm",
             "bls": "cuur0000setd02"
         }
     },
     "cpi:i:s:t:l:r:r": {
-        "name": "Motor vehicle repair",
-        "table_row": 286,
-        "level": 5,
+        "long_name": "Motor vehicle repair",
+        "__row__": 286,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:t:l:r:r",
-            "edan_simple": "cpiistlrr",
+            "edan": "pcpi:i:s:t:l:r:r",
+            "edan_simple": "pcpiistlrr",
             "bls": "cusr0000setd03"
         }
     },
     "cpi:i:s:t:l:i": {
-        "name": "Motor vehicle insurance",
-        "table_row": 287,
-        "level": 4,
+        "long_name": "Motor vehicle insurance",
+        "__row__": 287,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:t:l:i",
-            "edan_simple": "cpiistli",
+            "edan": "pcpi:i:s:t:l:i",
+            "edan_simple": "pcpiistli",
             "bls": "cusr0000sete"
         }
     },
     "cpi:i:s:t:l:f": {
-        "name": "Motor vehicle fees",
-        "table_row": 288,
-        "level": 4,
+        "long_name": "Motor vehicle fees",
+        "__row__": 288,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:t:l:f",
-            "edan_simple": "cpiistlf",
+            "edan": "pcpi:i:s:t:l:f",
+            "edan_simple": "pcpiistlf",
             "bls": "cuur0000setf"
         }
     },
     "cpi:i:s:t:l:s": {
-        "name": "State motor vehicle registration and license fees",
-        "table_row": 289,
-        "level": 5,
+        "long_name": "State motor vehicle registration and license fees",
+        "__row__": 289,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:t:l:s",
-            "edan_simple": "cpiistls",
+            "edan": "pcpi:i:s:t:l:s",
+            "edan_simple": "pcpiistls",
             "bls": "cuur0000setf01"
         }
     },
     "cpi:i:s:t:l:p": {
-        "name": "Parking and other fees",
-        "table_row": 290,
-        "level": 5,
+        "long_name": "Parking and other fees",
+        "__row__": 290,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:t:l:p",
-            "edan_simple": "cpiistlp",
+            "edan": "pcpi:i:s:t:l:p",
+            "edan_simple": "pcpiistlp",
             "bls": "cusr0000setf03"
         }
     },
     "cpi:i:s:t:l:p:f": {
-        "name": "Parking fees and tolls",
-        "table_row": 291,
-        "level": 6,
+        "long_name": "Parking fees and tolls",
+        "__row__": 291,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:s:t:l:p:f",
-            "edan_simple": "cpiistlpf",
+            "edan": "pcpi:i:s:t:l:p:f",
+            "edan_simple": "pcpiistlpf",
             "bls": "cusr0000ss52051"
         }
     },
     "cpi:i:s:t:p": {
-        "name": "Public transportation",
-        "table_row": 292,
-        "level": 4,
+        "long_name": "Public transportation",
+        "__row__": 292,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:t:p",
-            "edan_simple": "cpiistp",
+            "edan": "pcpi:i:s:t:p",
+            "edan_simple": "pcpiistp",
             "bls": "cusr0000setg"
         }
     },
     "cpi:i:s:t:p:a": {
-        "name": "Airline fares",
-        "table_row": 293,
-        "level": 5,
+        "long_name": "Airline fares",
+        "__row__": 293,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:t:p:a",
-            "edan_simple": "cpiistpa",
+            "edan": "pcpi:i:s:t:p:a",
+            "edan_simple": "pcpiistpa",
             "bls": "cusr0000setg01"
         }
     },
     "cpi:i:s:t:p:o": {
-        "name": "Other intercity transportation",
-        "table_row": 294,
-        "level": 5,
+        "long_name": "Other intercity transportation",
+        "__row__": 294,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:t:p:o",
-            "edan_simple": "cpiistpo",
+            "edan": "pcpi:i:s:t:p:o",
+            "edan_simple": "pcpiistpo",
             "bls": "cusr0000setg02"
         }
     },
     "cpi:i:s:t:p:o:s": {
-        "name": "Ship fare",
-        "table_row": 295,
-        "level": 6,
+        "long_name": "Ship fare",
+        "__row__": 295,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:s:t:p:o:s",
-            "edan_simple": "cpiistpos",
+            "edan": "pcpi:i:s:t:p:o:s",
+            "edan_simple": "pcpiistpos",
             "bls": "cusr0000ss53023"
         }
     },
     "cpi:i:s:t:p:l": {
-        "name": "Intracity transportation",
-        "table_row": 296,
-        "level": 5,
+        "long_name": "Intracity transportation",
+        "__row__": 296,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:t:p:l",
-            "edan_simple": "cpiistpl",
+            "edan": "pcpi:i:s:t:p:l",
+            "edan_simple": "pcpiistpl",
             "bls": "cuur0000setg03"
         }
     },
     "cpi:i:s:t:p:l:m": {
-        "name": "Intracity mass transit",
-        "table_row": 297,
-        "level": 6,
+        "long_name": "Intracity mass transit",
+        "__row__": 297,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:s:t:p:l:m",
-            "edan_simple": "cpiistplm",
+            "edan": "pcpi:i:s:t:p:l:m",
+            "edan_simple": "pcpiistplm",
             "bls": "cuur0000ss53031"
         }
     },
     "cpi:i:s:r": {
-        "name": "Recreation services",
-        "table_row": 298,
-        "level": 3,
+        "long_name": "Recreation services",
+        "__row__": 298,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:i:s:r",
-            "edan_simple": "cpiisr",
+            "edan": "pcpi:i:s:r",
+            "edan_simple": "pcpiisr",
             "bls": "cusr0000sars"
         }
     },
     "cpi:i:s:r:a": {
-        "name": "Video and audio services",
-        "table_row": 299,
-        "level": 4,
+        "long_name": "Video and audio services",
+        "__row__": 299,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:r:a",
-            "edan_simple": "cpiisra",
+            "edan": "pcpi:i:s:r:a",
+            "edan_simple": "pcpiisra",
             "bls": "cusr0000seras"
         }
     },
     "cpi:i:s:r:a:c": {
-        "name": "Cable and satellite television service",
-        "table_row": 300,
-        "level": 5,
+        "long_name": "Cable and satellite television service",
+        "__row__": 300,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:r:a:c",
-            "edan_simple": "cpiisrac",
+            "edan": "pcpi:i:s:r:a:c",
+            "edan_simple": "pcpiisrac",
             "bls": "cusr0000sera02"
         }
     },
     "cpi:i:s:r:a:v": {
-        "name": "Video discs and other media, including rental of video",
-        "table_row": 301,
-        "level": 5,
+        "long_name": "Video discs and other media, including rental of video",
+        "__row__": 301,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:r:a:v",
-            "edan_simple": "cpiisrav",
+            "edan": "pcpi:i:s:r:a:v",
+            "edan_simple": "pcpiisrav",
             "bls": "cuur0000sera04"
         }
     },
     "cpi:i:s:r:a:v:d": {
-        "name": "Video discs and other media",
-        "table_row": 302,
-        "level": 6,
+        "long_name": "Video discs and other media",
+        "__row__": 302,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:s:r:a:v:d",
-            "edan_simple": "cpiisravd",
+            "edan": "pcpi:i:s:r:a:v:d",
+            "edan_simple": "pcpiisravd",
             "bls": "cuur0000ss31022"
         }
     },
     "cpi:i:s:r:a:v:r": {
-        "name": "Rental of video discs and other media",
-        "table_row": 303,
-        "level": 6,
+        "long_name": "Rental of video discs and other media",
+        "__row__": 303,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:s:r:a:v:r",
-            "edan_simple": "cpiisravr",
+            "edan": "pcpi:i:s:r:a:v:r",
+            "edan_simple": "pcpiisravr",
             "bls": "cuur0000ss62055"
         }
     },
     "cpi:i:s:r:p": {
-        "name": "Pet services including veterinary",
-        "table_row": 304,
-        "level": 4,
+        "long_name": "Pet services including veterinary",
+        "__row__": 304,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:r:p",
-            "edan_simple": "cpiisrp",
+            "edan": "pcpi:i:s:r:p",
+            "edan_simple": "pcpiisrp",
             "bls": "cusr0000serb02"
         }
     },
     "cpi:i:s:r:p:v": {
-        "name": "Veterinarian services",
-        "table_row": 305,
-        "level": 5,
+        "long_name": "Veterinarian services",
+        "__row__": 305,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:r:p:v",
-            "edan_simple": "cpiisrpv",
+            "edan": "pcpi:i:s:r:p:v",
+            "edan_simple": "pcpiisrpv",
             "bls": "cusr0000ss62054"
         }
     },
     "cpi:i:s:r:d": {
-        "name": "Photographers and photo processing",
-        "table_row": 306,
-        "level": 4,
+        "long_name": "Photographers and photo processing",
+        "__row__": 306,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:r:d",
-            "edan_simple": "cpiisrd",
+            "edan": "pcpi:i:s:r:d",
+            "edan_simple": "pcpiisrd",
             "bls": "cuur0000serd02"
         }
     },
     "cpi:i:s:r:o": {
-        "name": "Other recreation services",
-        "table_row": 307,
-        "level": 4,
+        "long_name": "Other recreation services",
+        "__row__": 307,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:r:o",
-            "edan_simple": "cpiisro",
+            "edan": "pcpi:i:s:r:o",
+            "edan_simple": "pcpiisro",
             "bls": "cusr0000serf"
         }
     },
     "cpi:i:s:r:o:c": {
-        "name": "Club membership for shopping clubs, fraternal, or other organizations, or participant sports fees",
-        "table_row": 308,
-        "level": 5,
+        "long_name": "Club membership for shopping clubs, fraternal, or other organizations, or participant sports fees",
+        "__row__": 308,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:r:o:c",
-            "edan_simple": "cpiisroc",
+            "edan": "pcpi:i:s:r:o:c",
+            "edan_simple": "pcpiisroc",
             "bls": "cusr0000serf01"
         }
     },
     "cpi:i:s:r:o:a": {
-        "name": "Admissions",
-        "table_row": 309,
-        "level": 5,
+        "long_name": "Admissions",
+        "__row__": 309,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:r:o:a",
-            "edan_simple": "cpiisroa",
+            "edan": "pcpi:i:s:r:o:a",
+            "edan_simple": "pcpiisroa",
             "bls": "cusr0000serf02"
         }
     },
     "cpi:i:s:r:o:a:m": {
-        "name": "Admission to movies, theaters, and concerts",
-        "table_row": 310,
-        "level": 6,
+        "long_name": "Admission to movies, theaters, and concerts",
+        "__row__": 310,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:s:r:o:a:m",
-            "edan_simple": "cpiisroam",
+            "edan": "pcpi:i:s:r:o:a:m",
+            "edan_simple": "pcpiisroam",
             "bls": "cusr0000ss62031"
         }
     },
     "cpi:i:s:r:o:a:s": {
-        "name": "Admission to sporting events",
-        "table_row": 311,
-        "level": 6,
+        "long_name": "Admission to sporting events",
+        "__row__": 311,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:s:r:o:a:s",
-            "edan_simple": "cpiisroas",
+            "edan": "pcpi:i:s:r:o:a:s",
+            "edan_simple": "pcpiisroas",
             "bls": "cusr0000ss62032"
         }
     },
     "cpi:i:s:r:o:a:f": {
-        "name": "Fees for lessons or instructions",
-        "table_row": 312,
-        "level": 5,
+        "long_name": "Fees for lessons or instructions",
+        "__row__": 312,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:r:o:a:f",
-            "edan_simple": "cpiisroaf",
+            "edan": "pcpi:i:s:r:o:a:f",
+            "edan_simple": "pcpiisroaf",
             "bls": "cusr0000serf03"
         }
     },
     "cpi:i:s:e": {
-        "name": "Education and communication services",
-        "table_row": 313,
-        "level": 3,
+        "long_name": "Education and communication services",
+        "__row__": 313,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:i:s:e",
-            "edan_simple": "cpiise",
+            "edan": "pcpi:i:s:e",
+            "edan_simple": "pcpiise",
             "bls": "cusr0000saes"
         }
     },
     "cpi:i:s:e:t": {
-        "name": "Tuition, other school fees, and childcare",
-        "table_row": 314,
-        "level": 4,
+        "long_name": "Tuition, other school fees, and childcare",
+        "__row__": 314,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:e:t",
-            "edan_simple": "cpiiset",
+            "edan": "pcpi:i:s:e:t",
+            "edan_simple": "pcpiiset",
             "bls": "cusr0000seeb"
         }
     },
     "cpi:i:s:e:t:c": {
-        "name": "College tuition and fees",
-        "table_row": 315,
-        "level": 5,
+        "long_name": "College tuition and fees",
+        "__row__": 315,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:e:t:c",
-            "edan_simple": "cpiisetc",
+            "edan": "pcpi:i:s:e:t:c",
+            "edan_simple": "pcpiisetc",
             "bls": "cusr0000seeb01"
         }
     },
     "cpi:i:s:e:t:e": {
-        "name": "Elementary and high school tuition and fees",
-        "table_row": 316,
-        "level": 5,
+        "long_name": "Elementary and high school tuition and fees",
+        "__row__": 316,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:e:t:e",
-            "edan_simple": "cpiisete",
+            "edan": "pcpi:i:s:e:t:e",
+            "edan_simple": "pcpiisete",
             "bls": "cusr0000seeb02"
         }
     },
     "cpi:i:s:e:t:d": {
-        "name": "Day care and preschool",
-        "table_row": 317,
-        "level": 5,
+        "long_name": "Day care and preschool",
+        "__row__": 317,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:e:t:d",
-            "edan_simple": "cpiisetd",
+            "edan": "pcpi:i:s:e:t:d",
+            "edan_simple": "pcpiisetd",
             "bls": "cusr0000seeb03"
         }
     },
     "cpi:i:s:e:t:t": {
-        "name": "Technical and business school tuition and fees",
-        "table_row": 318,
-        "level": 5,
+        "long_name": "Technical and business school tuition and fees",
+        "__row__": 318,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:e:t:t",
-            "edan_simple": "cpiisett",
+            "edan": "pcpi:i:s:e:t:t",
+            "edan_simple": "pcpiisett",
             "bls": "cusr0000seeb04"
         }
     },
     "cpi:i:s:e:d": {
-        "name": "Postage and delivery services",
-        "table_row": 319,
-        "level": 4,
+        "long_name": "Postage and delivery services",
+        "__row__": 319,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:e:d",
-            "edan_simple": "cpiised",
+            "edan": "pcpi:i:s:e:d",
+            "edan_simple": "pcpiised",
             "bls": "cusr0000seec"
         }
     },
     "cpi:i:s:e:d:p": {
-        "name": "Postage",
-        "table_row": 320,
-        "level": 5,
+        "long_name": "Postage",
+        "__row__": 320,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:e:d:p",
-            "edan_simple": "cpiisedp",
+            "edan": "pcpi:i:s:e:d:p",
+            "edan_simple": "pcpiisedp",
             "bls": "cusr0000seec01"
         }
     },
     "cpi:i:s:e:d:d": {
-        "name": "Delivery services",
-        "table_row": 321,
-        "level": 5,
+        "long_name": "Delivery services",
+        "__row__": 321,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:e:d:d",
-            "edan_simple": "cpiisedd",
+            "edan": "pcpi:i:s:e:d:d",
+            "edan_simple": "pcpiisedd",
             "bls": "cusr0000seec02"
         }
     },
     "cpi:i:s:e:p": {
-        "name": "Telephone services",
-        "table_row": 322,
-        "level": 4,
+        "long_name": "Telephone services",
+        "__row__": 322,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:e:p",
-            "edan_simple": "cpiisep",
+            "edan": "pcpi:i:s:e:p",
+            "edan_simple": "pcpiisep",
             "bls": "cuur0000seed"
         }
     },
     "cpi:i:s:e:p:w": {
-        "name": "Wireless telephone services",
-        "table_row": 323,
-        "level": 5,
+        "long_name": "Wireless telephone services",
+        "__row__": 323,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:e:p:w",
-            "edan_simple": "cpiisepw",
+            "edan": "pcpi:i:s:e:p:w",
+            "edan_simple": "pcpiisepw",
             "bls": "cuur0000seed03"
         }
     },
     "cpi:i:s:e:p:l": {
-        "name": "Land-line telephone services",
-        "table_row": 324,
-        "level": 5,
+        "long_name": "Land-line telephone services",
+        "__row__": 324,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:e:p:l",
-            "edan_simple": "cpiisepl",
+            "edan": "pcpi:i:s:e:p:l",
+            "edan_simple": "pcpiisepl",
             "bls": "cuur0000seed04"
         }
     },
     "cpi:i:s:e:i": {
-        "name": "Internet services and electronic information providers",
-        "table_row": 325,
-        "level": 4,
+        "long_name": "Internet services and electronic information providers",
+        "__row__": 325,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:e:i",
-            "edan_simple": "cpiisei",
+            "edan": "pcpi:i:s:e:i",
+            "edan_simple": "pcpiisei",
             "bls": "cusr0000seee03"
         }
     },
     "cpi:i:s:o": {
-        "name": "Other personal services",
-        "table_row": 326,
-        "level": 3,
+        "long_name": "Other personal services",
+        "__row__": 326,
+        "__level__": 3,
         "price": {
-            "edan": "cpi:i:s:o",
-            "edan_simple": "cpiiso",
+            "edan": "pcpi:i:s:o",
+            "edan_simple": "pcpiiso",
             "bls": "cuur0000sags"
         }
     },
     "cpi:i:s:o:p": {
-        "name": "Personal care services",
-        "table_row": 327,
-        "level": 4,
+        "long_name": "Personal care services",
+        "__row__": 327,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:o:p",
-            "edan_simple": "cpiisop",
+            "edan": "pcpi:i:s:o:p",
+            "edan_simple": "pcpiisop",
             "bls": "cuur0000segc"
         }
     },
     "cpi:i:s:o:p:h": {
-        "name": "Haircuts and other personal care services",
-        "table_row": 328,
-        "level": 5,
+        "long_name": "Haircuts and other personal care services",
+        "__row__": 328,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:o:p:h",
-            "edan_simple": "cpiisoph",
+            "edan": "pcpi:i:s:o:p:h",
+            "edan_simple": "pcpiisoph",
             "bls": "cuur0000segc01"
         }
     },
     "cpi:i:s:o:m": {
-        "name": "Miscellaneous personal services",
-        "table_row": 329,
-        "level": 4,
+        "long_name": "Miscellaneous personal services",
+        "__row__": 329,
+        "__level__": 4,
         "price": {
-            "edan": "cpi:i:s:o:m",
-            "edan_simple": "cpiisom",
+            "edan": "pcpi:i:s:o:m",
+            "edan_simple": "pcpiisom",
             "bls": "cusr0000segd"
         }
     },
     "cpi:i:s:o:m:l": {
-        "name": "Legal services",
-        "table_row": 330,
-        "level": 5,
+        "long_name": "Legal services",
+        "__row__": 330,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:o:m:l",
-            "edan_simple": "cpiisoml",
+            "edan": "pcpi:i:s:o:m:l",
+            "edan_simple": "pcpiisoml",
             "bls": "cusr0000segd01"
         }
     },
     "cpi:i:s:o:m:f": {
-        "name": "Funeral expenses",
-        "table_row": 331,
-        "level": 5,
+        "long_name": "Funeral expenses",
+        "__row__": 331,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:o:m:f",
-            "edan_simple": "cpiisomf",
+            "edan": "pcpi:i:s:o:m:f",
+            "edan_simple": "pcpiisomf",
             "bls": "cusr0000segd02"
         }
     },
     "cpi:i:s:o:m:c": {
-        "name": "Laundry and dry cleaning services",
-        "table_row": 332,
-        "level": 5,
+        "long_name": "Laundry and dry cleaning services",
+        "__row__": 332,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:o:m:c",
-            "edan_simple": "cpiisomc",
+            "edan": "pcpi:i:s:o:m:c",
+            "edan_simple": "pcpiisomc",
             "bls": "cusr0000segd03"
         }
     },
     "cpi:i:s:o:m:a": {
-        "name": "Apparel services other than laundry and dry cleaning",
-        "table_row": 333,
-        "level": 5,
+        "long_name": "Apparel services other than laundry and dry cleaning",
+        "__row__": 333,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:o:m:a",
-            "edan_simple": "cpiisoma",
+            "edan": "pcpi:i:s:o:m:a",
+            "edan_simple": "pcpiisoma",
             "bls": "cuur0000segd04"
         }
     },
     "cpi:i:s:o:m:i": {
-        "name": "Financial services",
-        "table_row": 334,
-        "level": 5,
+        "long_name": "Financial services",
+        "__row__": 334,
+        "__level__": 5,
         "price": {
-            "edan": "cpi:i:s:o:m:i",
-            "edan_simple": "cpiisomi",
+            "edan": "pcpi:i:s:o:m:i",
+            "edan_simple": "pcpiisomi",
             "bls": "cusr0000segd05"
         }
     },
     "cpi:i:s:o:m:i:c": {
-        "name": "Checking account and other bank services",
-        "table_row": 335,
-        "level": 6,
+        "long_name": "Checking account and other bank services",
+        "__row__": 335,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:s:o:m:i:c",
-            "edan_simple": "cpiisomic",
+            "edan": "pcpi:i:s:o:m:i:c",
+            "edan_simple": "pcpiisomic",
             "bls": "cuur0000ss68021"
         }
     },
     "cpi:i:s:o:m:i:t": {
-        "name": "Tax return preparation and other accounting fees",
-        "table_row": 336,
-        "level": 6,
+        "long_name": "Tax return preparation and other accounting fees",
+        "__row__": 336,
+        "__level__": 6,
         "price": {
-            "edan": "cpi:i:s:o:m:i:t",
-            "edan_simple": "cpiisomit",
+            "edan": "pcpi:i:s:o:m:i:t",
+            "edan_simple": "pcpiisomit",
             "bls": "cusr0000ss68023"
         }
     }

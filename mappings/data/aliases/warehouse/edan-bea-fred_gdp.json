@@ -1,785 +1,1799 @@
 {
     "gdp": {
-        "bea_name": "Gross domestic product",
-        "table_row": 1,
-        "level": 0,
+        "long_name": "Gross domestic product",
+        "__row__": 1,
+        "__level__": 0,
         "quantity": {
             "edan": "qgdp",
             "edan_simple": "qgdp",
-            "bea": "nipa!t10103!a191ra",
+            "bea": "nipa!t10503!a191ra",
             "fred": "a191ra3q086sbea"
         },
         "price": {
             "edan": "pgdp",
             "edan_simple": "pgdp",
-            "bea": "nipa!t10104!a191rg",
+            "bea": "nipa!t10504!a191rg",
             "fred": "gdpctpi"
         },
         "nominal": {
             "edan": "ngdp",
             "edan_simple": "ngdp",
-            "bea": "nipa!t10105!a191rc",
+            "bea": "nipa!t10505!a191rc",
             "fred": "gdp"
         },
         "real": {
             "edan": "rgdp",
             "edan_simple": "rgdp",
-            "bea": "nipa!t10106!a191rx",
+            "bea": "nipa!t10506!a191rx",
             "fred": "gdpc1"
         }
     },
     "gdp:pce": {
-        "bea_name": "Personal consumption expenditures",
-        "table_row": 2,
-        "level": 1,
+        "long_name": "Personal consumption expenditures",
+        "__row__": 2,
+        "__level__": 1,
         "quantity": {
             "edan": "qgdp:pce",
             "edan_simple": "qgdppce",
-            "bea": "nipa!t10103!dpcera",
+            "bea": "nipa!t10503!dpcera",
             "fred": "dpcera3q086sbea"
         },
         "price": {
             "edan": "pgdp:pce",
             "edan_simple": "pgdppce",
-            "bea": "nipa!t10104!dpcerg",
+            "bea": "nipa!t10504!dpcerg",
             "fred": "pcectpi"
         },
         "nominal": {
             "edan": "ngdp:pce",
             "edan_simple": "ngdppce",
-            "bea": "nipa!t10105!dpcerc",
+            "bea": "nipa!t10505!dpcerc",
             "fred": "pcec"
         },
         "real": {
             "edan": "rgdp:pce",
             "edan_simple": "rgdppce",
-            "bea": "nipa!t10106!dpcerx",
+            "bea": "nipa!t10506!dpcerx",
             "fred": "pcecc96"
         }
     },
     "gdp:pce:g": {
-        "bea_name": "Goods",
-        "table_row": 3,
-        "level": 2,
+        "long_name": "Goods",
+        "__row__": 3,
+        "__level__": 2,
         "quantity": {
             "edan": "qgdp:pce:g",
             "edan_simple": "qgdppceg",
-            "bea": "nipa!t10103!dgdsra",
+            "bea": "nipa!t10503!dgdsra",
             "fred": "dgdsra3q086sbea"
         },
         "price": {
             "edan": "pgdp:pce:g",
             "edan_simple": "pgdppceg",
-            "bea": "nipa!t10104!dgdsrg",
+            "bea": "nipa!t10504!dgdsrg",
             "fred": "dgdsrg3q086sbea"
         },
         "nominal": {
             "edan": "ngdp:pce:g",
             "edan_simple": "ngdppceg",
-            "bea": "nipa!t10105!dgdsrc",
+            "bea": "nipa!t10505!dgdsrc",
             "fred": "dgdsrc1q027sbea"
         },
         "real": {
             "edan": "rgdp:pce:g",
             "edan_simple": "rgdppceg",
-            "bea": "nipa!t10106!dgdsrx",
+            "bea": "nipa!t10506!dgdsrx",
             "fred": "dgdsrx1q020sbea"
         }
     },
     "gdp:pce:g:d": {
-        "bea_name": "Durable goods",
-        "table_row": 4,
-        "level": 3,
+        "long_name": "Durable goods",
+        "__row__": 4,
+        "__level__": 3,
         "quantity": {
             "edan": "qgdp:pce:g:d",
             "edan_simple": "qgdppcegd",
-            "bea": "nipa!t10103!ddurra",
+            "bea": "nipa!t10503!ddurra",
             "fred": "ddurra3q086sbea"
         },
         "price": {
             "edan": "pgdp:pce:g:d",
             "edan_simple": "pgdppcegd",
-            "bea": "nipa!t10104!ddurrg",
+            "bea": "nipa!t10504!ddurrg",
             "fred": "ddurrg3q086sbea"
         },
         "nominal": {
             "edan": "ngdp:pce:g:d",
             "edan_simple": "ngdppcegd",
-            "bea": "nipa!t10105!ddurrc",
+            "bea": "nipa!t10505!ddurrc",
             "fred": "pcdg"
         },
         "real": {
             "edan": "rgdp:pce:g:d",
             "edan_simple": "rgdppcegd",
-            "bea": "nipa!t10106!ddurrx",
+            "bea": "nipa!t10506!ddurrx",
             "fred": "pcdgcc96"
         }
     },
+    "gdp:pce:g:d:v": {
+        "long_name": "Motor vehicles and parts",
+        "__row__": 5,
+        "__level__": 4,
+        "quantity": {
+            "edan": "qgdp:pce:g:d:v",
+            "edan_simple": "qgdppcegdv",
+            "bea": "nipa!t10503!dmotra",
+            "fred": "dmotra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pce:g:d:v",
+            "edan_simple": "pgdppcegdv",
+            "bea": "nipa!t10504!dmotrg",
+            "fred": "dmotrg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pce:g:d:v",
+            "edan_simple": "ngdppcegdv",
+            "bea": "nipa!t10505!dmotrc",
+            "fred": "dmotrc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pce:g:d:v",
+            "edan_simple": "rgdppcegdv",
+            "bea": "nipa!t10506!dmotrx",
+            "fred": "dmotrx1q020sbea"
+        }
+    },
+    "gdp:pce:g:d:f": {
+        "long_name": "Furnishings and durable household equipment",
+        "__row__": 6,
+        "__level__": 4,
+        "quantity": {
+            "edan": "qgdp:pce:g:d:f",
+            "edan_simple": "qgdppcegdf",
+            "bea": "nipa!t10503!dfdhra",
+            "fred": "dfdhra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pce:g:d:f",
+            "edan_simple": "pgdppcegdf",
+            "bea": "nipa!t10504!dfdhrg",
+            "fred": "dfdhrg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pce:g:d:f",
+            "edan_simple": "ngdppcegdf",
+            "bea": "nipa!t10505!dfdhrc",
+            "fred": "dfdhrc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pce:g:d:f",
+            "edan_simple": "rgdppcegdf",
+            "bea": "nipa!t10506!dfdhrx",
+            "fred": "dfdhrx1q020sbea"
+        }
+    },
+    "gdp:pce:g:d:r": {
+        "long_name": "Recreational goods and vehicles",
+        "__row__": 7,
+        "__level__": 4,
+        "quantity": {
+            "edan": "qgdp:pce:g:d:r",
+            "edan_simple": "qgdppcegdr",
+            "bea": "nipa!t10503!dreqra",
+            "fred": "dreqra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pce:g:d:r",
+            "edan_simple": "pgdppcegdr",
+            "bea": "nipa!t10504!dreqrg",
+            "fred": "dreqrg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pce:g:d:r",
+            "edan_simple": "ngdppcegdr",
+            "bea": "nipa!t10505!dreqrc",
+            "fred": "dreqrc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pce:g:d:r",
+            "edan_simple": "rgdppcegdr",
+            "bea": "nipa!t10506!dreqrx",
+            "fred": "dreqrx1q020sbea"
+        }
+    },
+    "gdp:pce:g:d:o": {
+        "long_name": "Other durable goods",
+        "__row__": 8,
+        "__level__": 4,
+        "quantity": {
+            "edan": "qgdp:pce:g:d:o",
+            "edan_simple": "qgdppcegdo",
+            "bea": "nipa!t10503!dodgra",
+            "fred": "dodgra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pce:g:d:o",
+            "edan_simple": "pgdppcegdo",
+            "bea": "nipa!t10504!dodgrg",
+            "fred": "dodgrg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pce:g:d:o",
+            "edan_simple": "ngdppcegdo",
+            "bea": "nipa!t10505!dodgrc",
+            "fred": "dodgrc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pce:g:d:o",
+            "edan_simple": "rgdppcegdo",
+            "bea": "nipa!t10506!dodgrx",
+            "fred": "dodgrx1q020sbea"
+        }
+    },
     "gdp:pce:g:n": {
-        "bea_name": "Nondurable goods",
-        "table_row": 5,
-        "level": 3,
+        "long_name": "Nondurable goods",
+        "__row__": 9,
+        "__level__": 3,
         "quantity": {
             "edan": "qgdp:pce:g:n",
             "edan_simple": "qgdppcegn",
-            "bea": "nipa!t10103!dndgra",
+            "bea": "nipa!t10503!dndgra",
             "fred": "dndgra3q086sbea"
         },
         "price": {
             "edan": "pgdp:pce:g:n",
             "edan_simple": "pgdppcegn",
-            "bea": "nipa!t10104!dndgrg",
+            "bea": "nipa!t10504!dndgrg",
             "fred": "dndgrg3q086sbea"
         },
         "nominal": {
             "edan": "ngdp:pce:g:n",
             "edan_simple": "ngdppcegn",
-            "bea": "nipa!t10105!dndgrc",
+            "bea": "nipa!t10505!dndgrc",
             "fred": "pcnd"
         },
         "real": {
             "edan": "rgdp:pce:g:n",
             "edan_simple": "rgdppcegn",
-            "bea": "nipa!t10106!dndgrx",
+            "bea": "nipa!t10506!dndgrx",
             "fred": "pcndgc96"
         }
     },
+    "gdp:pce:g:n:f": {
+        "long_name": "Food and beverages purchased for off-premises consumption",
+        "__row__": 10,
+        "__level__": 4,
+        "quantity": {
+            "edan": "qgdp:pce:g:n:f",
+            "edan_simple": "qgdppcegnf",
+            "bea": "nipa!t10503!dfxara",
+            "fred": "dfxara3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pce:g:n:f",
+            "edan_simple": "pgdppcegnf",
+            "bea": "nipa!t10504!dfxarg",
+            "fred": "dfxarg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pce:g:n:f",
+            "edan_simple": "ngdppcegnf",
+            "bea": "nipa!t10505!dfxarc",
+            "fred": "dfxarc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pce:g:n:f",
+            "edan_simple": "rgdppcegnf",
+            "bea": "nipa!t10506!dfxarx",
+            "fred": "dfxarx1q020sbea"
+        }
+    },
+    "gdp:pce:g:n:c": {
+        "long_name": "Clothing and footwear",
+        "__row__": 11,
+        "__level__": 4,
+        "quantity": {
+            "edan": "qgdp:pce:g:n:c",
+            "edan_simple": "qgdppcegnc",
+            "bea": "nipa!t10503!dclora",
+            "fred": "dclora3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pce:g:n:c",
+            "edan_simple": "pgdppcegnc",
+            "bea": "nipa!t10504!dclorg",
+            "fred": "dclorg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pce:g:n:c",
+            "edan_simple": "ngdppcegnc",
+            "bea": "nipa!t10505!dclorc",
+            "fred": "dclorc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pce:g:n:c",
+            "edan_simple": "rgdppcegnc",
+            "bea": "nipa!t10506!dclorx",
+            "fred": "dclorx1q020sbea"
+        }
+    },
+    "gdp:pce:g:n:g": {
+        "long_name": "Gasoline and other energy goods",
+        "__row__": 12,
+        "__level__": 4,
+        "quantity": {
+            "edan": "qgdp:pce:g:n:g",
+            "edan_simple": "qgdppcegng",
+            "bea": "nipa!t10503!dgoera",
+            "fred": "dgoera3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pce:g:n:g",
+            "edan_simple": "pgdppcegng",
+            "bea": "nipa!t10504!dgoerg",
+            "fred": "dgoerg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pce:g:n:g",
+            "edan_simple": "ngdppcegng",
+            "bea": "nipa!t10505!dgoerc",
+            "fred": "dgoerc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pce:g:n:g",
+            "edan_simple": "rgdppcegng",
+            "bea": "nipa!t10506!dgoerx",
+            "fred": "dgoerx1q020sbea"
+        }
+    },
+    "gdp:pce:g:n:o": {
+        "long_name": "Other nondurable goods",
+        "__row__": 13,
+        "__level__": 4,
+        "quantity": {
+            "edan": "qgdp:pce:g:n:o",
+            "edan_simple": "qgdppcegno",
+            "bea": "nipa!t10503!dongra",
+            "fred": "dongra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pce:g:n:o",
+            "edan_simple": "pgdppcegno",
+            "bea": "nipa!t10504!dongrg",
+            "fred": "dongrg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pce:g:n:o",
+            "edan_simple": "ngdppcegno",
+            "bea": "nipa!t10505!dongrc",
+            "fred": "dongrc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pce:g:n:o",
+            "edan_simple": "rgdppcegno",
+            "bea": "nipa!t10506!dongrx",
+            "fred": "dongrx1q020sbea"
+        }
+    },
     "gdp:pce:s": {
-        "bea_name": "Services",
-        "table_row": 6,
-        "level": 2,
+        "long_name": "Services",
+        "__row__": 14,
+        "__level__": 2,
         "quantity": {
             "edan": "qgdp:pce:s",
             "edan_simple": "qgdppces",
-            "bea": "nipa!t10103!dserra",
+            "bea": "nipa!t10503!dserra",
             "fred": "dserra3q086sbea"
         },
         "price": {
             "edan": "pgdp:pce:s",
             "edan_simple": "pgdppces",
-            "bea": "nipa!t10104!dserrg",
+            "bea": "nipa!t10504!dserrg",
             "fred": "dserrg3q086sbea"
         },
         "nominal": {
             "edan": "ngdp:pce:s",
             "edan_simple": "ngdppces",
-            "bea": "nipa!t10105!dserrc",
+            "bea": "nipa!t10505!dserrc",
             "fred": "pcesv"
         },
         "real": {
             "edan": "rgdp:pce:s",
             "edan_simple": "rgdppces",
-            "bea": "nipa!t10106!dserrx",
+            "bea": "nipa!t10506!dserrx",
             "fred": "pcesvc96"
         }
     },
+    "gdp:pce:s:h": {
+        "long_name": "Household consumption expenditures (for services)",
+        "__row__": 15,
+        "__level__": 3,
+        "quantity": {
+            "edan": "qgdp:pce:s:h",
+            "edan_simple": "qgdppcesh",
+            "bea": "nipa!t10503!dhcera",
+            "fred": "dhcera3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pce:s:h",
+            "edan_simple": "pgdppcesh",
+            "bea": "nipa!t10504!dhcerg",
+            "fred": "dhcerg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pce:s:h",
+            "edan_simple": "ngdppcesh",
+            "bea": "nipa!t10505!dhcerc",
+            "fred": "dhcerc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pce:s:h",
+            "edan_simple": "rgdppcesh",
+            "bea": "nipa!t10506!dhcerx",
+            "fred": "dhcerx1q020sbea"
+        }
+    },
+    "gdp:pce:s:h:h": {
+        "long_name": "Housing and utilities",
+        "__row__": 16,
+        "__level__": 4,
+        "quantity": {
+            "edan": "qgdp:pce:s:h:h",
+            "edan_simple": "qgdppceshh",
+            "bea": "nipa!t10503!dhutra",
+            "fred": "dhutra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pce:s:h:h",
+            "edan_simple": "pgdppceshh",
+            "bea": "nipa!t10504!dhutrg",
+            "fred": "dhutrg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pce:s:h:h",
+            "edan_simple": "ngdppceshh",
+            "bea": "nipa!t10505!dhutrc",
+            "fred": "dhutrc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pce:s:h:h",
+            "edan_simple": "rgdppceshh",
+            "bea": "nipa!t10506!dhutrx",
+            "fred": "dhutrx1q020sbea"
+        }
+    },
+    "gdp:pce:s:h:c": {
+        "long_name": "Health care",
+        "__row__": 17,
+        "__level__": 4,
+        "quantity": {
+            "edan": "qgdp:pce:s:h:c",
+            "edan_simple": "qgdppceshc",
+            "bea": "nipa!t10503!dhlcra",
+            "fred": "dhlcra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pce:s:h:c",
+            "edan_simple": "pgdppceshc",
+            "bea": "nipa!t10504!dhlcrg",
+            "fred": "dhlcrg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pce:s:h:c",
+            "edan_simple": "ngdppceshc",
+            "bea": "nipa!t10505!dhlcrc",
+            "fred": "dhlcrc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pce:s:h:c",
+            "edan_simple": "rgdppceshc",
+            "bea": "nipa!t10506!dhlcrx",
+            "fred": "dhlcrx1q020sbea"
+        }
+    },
+    "gdp:pce:s:h:t": {
+        "long_name": "Transportation services",
+        "__row__": 18,
+        "__level__": 4,
+        "quantity": {
+            "edan": "qgdp:pce:s:h:t",
+            "edan_simple": "qgdppcesht",
+            "bea": "nipa!t10503!dtrsra",
+            "fred": "dtrsra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pce:s:h:t",
+            "edan_simple": "pgdppcesht",
+            "bea": "nipa!t10504!dtrsrg",
+            "fred": "dtrsrg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pce:s:h:t",
+            "edan_simple": "ngdppcesht",
+            "bea": "nipa!t10505!dtrsrc",
+            "fred": "dtrsrc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pce:s:h:t",
+            "edan_simple": "rgdppcesht",
+            "bea": "nipa!t10506!dtrsrx",
+            "fred": "dtrsrx1q020sbea"
+        }
+    },
+    "gdp:pce:s:h:r": {
+        "long_name": "Recreation services",
+        "__row__": 19,
+        "__level__": 4,
+        "quantity": {
+            "edan": "qgdp:pce:s:h:r",
+            "edan_simple": "qgdppceshr",
+            "bea": "nipa!t10503!drcara",
+            "fred": "drcara3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pce:s:h:r",
+            "edan_simple": "pgdppceshr",
+            "bea": "nipa!t10504!drcarg",
+            "fred": "drcarg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pce:s:h:r",
+            "edan_simple": "ngdppceshr",
+            "bea": "nipa!t10505!drcarc",
+            "fred": "drcarc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pce:s:h:r",
+            "edan_simple": "rgdppceshr",
+            "bea": "nipa!t10506!drcarx",
+            "fred": "drcarx1q020sbea"
+        }
+    },
+    "gdp:pce:s:h:f": {
+        "long_name": "Food services and accommodations",
+        "__row__": 20,
+        "__level__": 4,
+        "quantity": {
+            "edan": "qgdp:pce:s:h:f",
+            "edan_simple": "qgdppceshf",
+            "bea": "nipa!t10503!dfsara",
+            "fred": "dfsara3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pce:s:h:f",
+            "edan_simple": "pgdppceshf",
+            "bea": "nipa!t10504!dfsarg",
+            "fred": "dfsarg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pce:s:h:f",
+            "edan_simple": "ngdppceshf",
+            "bea": "nipa!t10505!dfsarc",
+            "fred": "dfsarc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pce:s:h:f",
+            "edan_simple": "rgdppceshf",
+            "bea": "nipa!t10506!dfsarx",
+            "fred": "dfsarx1q020sbea"
+        }
+    },
+    "gdp:pce:s:h:i": {
+        "long_name": "Financial services and insurance",
+        "__row__": 21,
+        "__level__": 4,
+        "quantity": {
+            "edan": "qgdp:pce:s:h:i",
+            "edan_simple": "qgdppceshi",
+            "bea": "nipa!t10503!difsra",
+            "fred": "difsra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pce:s:h:i",
+            "edan_simple": "pgdppceshi",
+            "bea": "nipa!t10504!difsrg",
+            "fred": "difsrg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pce:s:h:i",
+            "edan_simple": "ngdppceshi",
+            "bea": "nipa!t10505!difsrc",
+            "fred": "difsrc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pce:s:h:i",
+            "edan_simple": "rgdppceshi",
+            "bea": "nipa!t10506!difsrx",
+            "fred": "difsrx1q020sbea"
+        }
+    },
+    "gdp:pce:s:h:o": {
+        "long_name": "Other services",
+        "__row__": 22,
+        "__level__": 4,
+        "quantity": {
+            "edan": "qgdp:pce:s:h:o",
+            "edan_simple": "qgdppcesho",
+            "bea": "nipa!t10503!dotsra",
+            "fred": "dotsra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pce:s:h:o",
+            "edan_simple": "pgdppcesho",
+            "bea": "nipa!t10504!dotsrg",
+            "fred": "dotsrg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pce:s:h:o",
+            "edan_simple": "ngdppcesho",
+            "bea": "nipa!t10505!dotsrc",
+            "fred": "dotsrc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pce:s:h:o",
+            "edan_simple": "rgdppcesho",
+            "bea": "nipa!t10506!dotsrx",
+            "fred": "dotsrx1q020sbea"
+        }
+    },
+    "gdp:pce:s:n": {
+        "long_name": "Final consumption expenditures of nonprofit institutions serving households (NPISHs)",
+        "__row__": 23,
+        "__level__": 3,
+        "quantity": {
+            "edan": "qgdp:pce:s:n",
+            "edan_simple": "qgdppcesn",
+            "bea": "nipa!t10503!dnpira",
+            "fred": "dnpira3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pce:s:n",
+            "edan_simple": "pgdppcesn",
+            "bea": "nipa!t10504!dnpirg",
+            "fred": "dnpirg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pce:s:n",
+            "edan_simple": "ngdppcesn",
+            "bea": "nipa!t10505!dnpirc",
+            "fred": "dnpirc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pce:s:n",
+            "edan_simple": "rgdppcesn",
+            "bea": "nipa!t10506!dnpirx",
+            "fred": "dnpirx1q020sbea"
+        }
+    },
+    "gdp:pce:s:n:o": {
+        "long_name": "Gross output of nonprofit institutions",
+        "__row__": 24,
+        "__level__": 4,
+        "quantity": {
+            "edan": "qgdp:pce:s:n:o",
+            "edan_simple": "qgdppcesno",
+            "bea": "nipa!t10503!dnpera",
+            "fred": "dnpera3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pce:s:n:o",
+            "edan_simple": "pgdppcesno",
+            "bea": "nipa!t10504!dnperg",
+            "fred": "dnperg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pce:s:n:o",
+            "edan_simple": "ngdppcesno",
+            "bea": "nipa!t10505!dnperc",
+            "fred": "dnperc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pce:s:n:o",
+            "edan_simple": "rgdppcesno",
+            "bea": "nipa!t10506!dnperx",
+            "fred": "dnperx1q020sbea"
+        }
+    },
+    "gdp:pce:s:n~l": {
+        "long_name": "Less: Receipts from sales of goods and services by nonprofit institutions",
+        "__row__": 25,
+        "__level__": 4,
+        "quantity": {
+            "edan": "qgdp:pce:s:n~l",
+            "edan_simple": "qgdppcesnl",
+            "bea": "nipa!t10503!dnpsra",
+            "fred": "dnpsra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pce:s:n~l",
+            "edan_simple": "pgdppcesnl",
+            "bea": "nipa!t10504!dnpsrg",
+            "fred": "dnpsrg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pce:s:n~l",
+            "edan_simple": "ngdppcesnl",
+            "bea": "nipa!t10505!dnpsrc",
+            "fred": "dnpsrc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pce:s:n~l",
+            "edan_simple": "rgdppcesnl",
+            "bea": "nipa!t10506!dnpsrx",
+            "fred": "dnpsrx1q020sbea"
+        }
+    },
     "gdp:pdi": {
-        "bea_name": "Gross private domestic investment",
-        "table_row": 7,
-        "level": 1,
+        "long_name": "Gross private domestic investment",
+        "__row__": 26,
+        "__level__": 1,
         "quantity": {
             "edan": "qgdp:pdi",
             "edan_simple": "qgdppdi",
-            "bea": "nipa!t10103!a006ra",
+            "bea": "nipa!t10503!a006ra",
             "fred": "a006ra3q086sbea"
         },
         "price": {
             "edan": "pgdp:pdi",
             "edan_simple": "pgdppdi",
-            "bea": "nipa!t10104!b006rg",
+            "bea": "nipa!t10504!b006rg",
             "fred": "gpdictpi"
         },
         "nominal": {
             "edan": "ngdp:pdi",
             "edan_simple": "ngdppdi",
-            "bea": "nipa!t10105!a006rc",
+            "bea": "nipa!t10505!a006rc",
             "fred": "gpdi"
         },
         "real": {
             "edan": "rgdp:pdi",
             "edan_simple": "rgdppdi",
-            "bea": "nipa!t10106!a006rx",
+            "bea": "nipa!t10506!a006rx",
             "fred": "gpdic1"
         }
     },
     "gdp:pdi:f": {
-        "bea_name": "Fixed investment",
-        "table_row": 8,
-        "level": 2,
+        "long_name": "Fixed investment",
+        "__row__": 27,
+        "__level__": 2,
         "quantity": {
             "edan": "qgdp:pdi:f",
             "edan_simple": "qgdppdif",
-            "bea": "nipa!t10103!a007ra",
+            "bea": "nipa!t10503!a007ra",
             "fred": "a007ra3q086sbea"
         },
         "price": {
             "edan": "pgdp:pdi:f",
             "edan_simple": "pgdppdif",
-            "bea": "nipa!t10104!b007rg",
+            "bea": "nipa!t10504!b007rg",
             "fred": "b007rg3q086sbea"
         },
         "nominal": {
             "edan": "ngdp:pdi:f",
             "edan_simple": "ngdppdif",
-            "bea": "nipa!t10105!a007rc",
+            "bea": "nipa!t10505!a007rc",
             "fred": "fpi"
         },
         "real": {
             "edan": "rgdp:pdi:f",
             "edan_simple": "rgdppdif",
-            "bea": "nipa!t10106!a007rx",
+            "bea": "nipa!t10506!a007rx",
             "fred": "fpic1"
         }
     },
     "gdp:pdi:f:n": {
-        "bea_name": "Nonresidential",
-        "table_row": 9,
-        "level": 3,
+        "long_name": "Nonresidential",
+        "__row__": 28,
+        "__level__": 3,
         "quantity": {
             "edan": "qgdp:pdi:f:n",
             "edan_simple": "qgdppdifn",
-            "bea": "nipa!t10103!a008ra",
+            "bea": "nipa!t10503!a008ra",
             "fred": "a008ra3q086sbea"
         },
         "price": {
             "edan": "pgdp:pdi:f:n",
             "edan_simple": "pgdppdifn",
-            "bea": "nipa!t10104!b008rg",
+            "bea": "nipa!t10504!b008rg",
             "fred": "b008rg3q086sbea"
         },
         "nominal": {
             "edan": "ngdp:pdi:f:n",
             "edan_simple": "ngdppdifn",
-            "bea": "nipa!t10105!a008rc",
+            "bea": "nipa!t10505!a008rc",
             "fred": "pnfi"
         },
         "real": {
             "edan": "rgdp:pdi:f:n",
             "edan_simple": "rgdppdifn",
-            "bea": "nipa!t10106!a008rx",
+            "bea": "nipa!t10506!a008rx",
             "fred": "pnfic1"
         }
     },
     "gdp:pdi:f:n:s": {
-        "bea_name": "Structures",
-        "table_row": 10,
-        "level": 4,
+        "long_name": "Structures",
+        "__row__": 29,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pdi:f:n:s",
             "edan_simple": "qgdppdifns",
-            "bea": "nipa!t10103!b009ra",
+            "bea": "nipa!t10503!b009ra",
             "fred": "b009ra3q086sbea"
         },
         "price": {
             "edan": "pgdp:pdi:f:n:s",
             "edan_simple": "pgdppdifns",
-            "bea": "nipa!t10104!b009rg",
+            "bea": "nipa!t10504!b009rg",
             "fred": "b009rg3q086sbea"
         },
         "nominal": {
             "edan": "ngdp:pdi:f:n:s",
             "edan_simple": "ngdppdifns",
-            "bea": "nipa!t10105!b009rc",
+            "bea": "nipa!t10505!b009rc",
             "fred": "b009rc1q027sbea"
         },
         "real": {
             "edan": "rgdp:pdi:f:n:s",
             "edan_simple": "rgdppdifns",
-            "bea": "nipa!t10106!b009rx",
+            "bea": "nipa!t10506!b009rx",
             "fred": "b009rx1q020sbea"
         }
     },
     "gdp:pdi:f:n:e": {
-        "bea_name": "Equipment",
-        "table_row": 11,
-        "level": 4,
+        "long_name": "Equipment",
+        "__row__": 30,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pdi:f:n:e",
             "edan_simple": "qgdppdifne",
-            "bea": "nipa!t10103!y033ra",
+            "bea": "nipa!t10503!y033ra",
             "fred": "y033ra3q086sbea"
         },
         "price": {
             "edan": "pgdp:pdi:f:n:e",
             "edan_simple": "pgdppdifne",
-            "bea": "nipa!t10104!y033rg",
+            "bea": "nipa!t10504!y033rg",
             "fred": "y033rg3q086sbea"
         },
         "nominal": {
             "edan": "ngdp:pdi:f:n:e",
             "edan_simple": "ngdppdifne",
-            "bea": "nipa!t10105!y033rc",
+            "bea": "nipa!t10505!y033rc",
             "fred": "y033rc1q027sbea"
         },
         "real": {
             "edan": "rgdp:pdi:f:n:e",
             "edan_simple": "rgdppdifne",
-            "bea": "nipa!t10106!y033rx",
+            "bea": "nipa!t10506!y033rx",
             "fred": "y033rx1q020sbea"
         }
     },
+    "gdp:pdi:f:n:e:i": {
+        "long_name": "Information processing equipment",
+        "__row__": 31,
+        "__level__": 5,
+        "quantity": {
+            "edan": "qgdp:pdi:f:n:e:i",
+            "edan_simple": "qgdppdifnei",
+            "bea": "nipa!t10503!y034ra",
+            "fred": "y034ra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pdi:f:n:e:i",
+            "edan_simple": "pgdppdifnei",
+            "bea": "nipa!t10504!y034rg",
+            "fred": "y034rg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pdi:f:n:e:i",
+            "edan_simple": "ngdppdifnei",
+            "bea": "nipa!t10505!y034rc",
+            "fred": "y034rc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pdi:f:n:e:i",
+            "edan_simple": "rgdppdifnei",
+            "bea": "nipa!t10506!y034rx",
+            "fred": "y034rx1q020sbea"
+        }
+    },
+    "gdp:pdi:f:n:e:i:c": {
+        "long_name": "Computers and peripheral equipment",
+        "__row__": 32,
+        "__level__": 6,
+        "quantity": {
+            "edan": "qgdp:pdi:f:n:e:i:c",
+            "edan_simple": "qgdppdifneic",
+            "bea": "nipa!t10503!b935ra",
+            "fred": "b935ra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pdi:f:n:e:i:c",
+            "edan_simple": "pgdppdifneic",
+            "bea": "nipa!t10504!b935rg",
+            "fred": "b935rg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pdi:f:n:e:i:c",
+            "edan_simple": "ngdppdifneic",
+            "bea": "nipa!t10505!b935rc",
+            "fred": "b935rc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pdi:f:n:e:i:c",
+            "edan_simple": "rgdppdifneic",
+            "bea": "nipa!t10506!b935rx",
+            "fred": "b935rx1q020sbea"
+        }
+    },
+    "gdp:pdi:f:n:e:i:o": {
+        "long_name": "Other",
+        "__row__": 33,
+        "__level__": 6,
+        "quantity": {
+            "edan": "qgdp:pdi:f:n:e:i:o",
+            "edan_simple": "qgdppdifneio",
+            "bea": "nipa!t10503!a937ra",
+            "fred": "a937ra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pdi:f:n:e:i:o",
+            "edan_simple": "pgdppdifneio",
+            "bea": "nipa!t10504!a937rg",
+            "fred": "a937rg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pdi:f:n:e:i:o",
+            "edan_simple": "ngdppdifneio",
+            "bea": "nipa!t10505!a937rc",
+            "fred": "a937rc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pdi:f:n:e:i:o",
+            "edan_simple": "rgdppdifneio",
+            "bea": "nipa!t10506!a937rx",
+            "fred": "a937rx1q020sbea"
+        }
+    },
+    "gdp:pdi:f:n:e:n": {
+        "long_name": "Industrial equipment",
+        "__row__": 34,
+        "__level__": 5,
+        "quantity": {
+            "edan": "qgdp:pdi:f:n:e:n",
+            "edan_simple": "qgdppdifnen",
+            "bea": "nipa!t10503!a680ra",
+            "fred": "a680ra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pdi:f:n:e:n",
+            "edan_simple": "pgdppdifnen",
+            "bea": "nipa!t10504!a680rg",
+            "fred": "a680rg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pdi:f:n:e:n",
+            "edan_simple": "ngdppdifnen",
+            "bea": "nipa!t10505!a680rc",
+            "fred": "a680rc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pdi:f:n:e:n",
+            "edan_simple": "rgdppdifnen",
+            "bea": "nipa!t10506!a680rx",
+            "fred": "a680rx1q020sbea"
+        }
+    },
+    "gdp:pdi:f:n:e:t": {
+        "long_name": "Transportation equipment",
+        "__row__": 35,
+        "__level__": 5,
+        "quantity": {
+            "edan": "qgdp:pdi:f:n:e:t",
+            "edan_simple": "qgdppdifnet",
+            "bea": "nipa!t10503!a681ra",
+            "fred": "a681ra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pdi:f:n:e:t",
+            "edan_simple": "pgdppdifnet",
+            "bea": "nipa!t10504!a681rg",
+            "fred": "a681rg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pdi:f:n:e:t",
+            "edan_simple": "ngdppdifnet",
+            "bea": "nipa!t10505!a681rc",
+            "fred": "a681rc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pdi:f:n:e:t",
+            "edan_simple": "rgdppdifnet",
+            "bea": "nipa!t10506!a681rx",
+            "fred": "a681rx1q020sbea"
+        }
+    },
+    "gdp:pdi:f:n:e:o": {
+        "long_name": "Other equipment",
+        "__row__": 36,
+        "__level__": 5,
+        "quantity": {
+            "edan": "qgdp:pdi:f:n:e:o",
+            "edan_simple": "qgdppdifneo",
+            "bea": "nipa!t10503!a862ra",
+            "fred": "a862ra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pdi:f:n:e:o",
+            "edan_simple": "pgdppdifneo",
+            "bea": "nipa!t10504!a862rg",
+            "fred": "a862rg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pdi:f:n:e:o",
+            "edan_simple": "ngdppdifneo",
+            "bea": "nipa!t10505!a862rc",
+            "fred": "a862rc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pdi:f:n:e:o",
+            "edan_simple": "rgdppdifneo",
+            "bea": "nipa!t10506!a862rx",
+            "fred": "a862rx1q020sbea"
+        }
+    },
     "gdp:pdi:f:n:i": {
-        "bea_name": "Intellectual property products",
-        "table_row": 12,
-        "level": 4,
+        "long_name": "Intellectual property products",
+        "__row__": 37,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pdi:f:n:i",
             "edan_simple": "qgdppdifni",
-            "bea": "nipa!t10103!y001ra",
+            "bea": "nipa!t10503!y001ra",
             "fred": "y001ra3q086sbea"
         },
         "price": {
             "edan": "pgdp:pdi:f:n:i",
             "edan_simple": "pgdppdifni",
-            "bea": "nipa!t10104!y001rg",
+            "bea": "nipa!t10504!y001rg",
             "fred": "y001rg3q086sbea"
         },
         "nominal": {
             "edan": "ngdp:pdi:f:n:i",
             "edan_simple": "ngdppdifni",
-            "bea": "nipa!t10105!y001rc",
+            "bea": "nipa!t10505!y001rc",
             "fred": "y001rc1q027sbea"
         },
         "real": {
             "edan": "rgdp:pdi:f:n:i",
             "edan_simple": "rgdppdifni",
-            "bea": "nipa!t10106!y001rx",
+            "bea": "nipa!t10506!y001rx",
             "fred": "y001rx1q020sbea"
         }
     },
+    "gdp:pdi:f:n:i:s": {
+        "long_name": "Software",
+        "__row__": 38,
+        "__level__": 5,
+        "quantity": {
+            "edan": "qgdp:pdi:f:n:i:s",
+            "edan_simple": "qgdppdifnis",
+            "bea": "nipa!t10503!b985ra",
+            "fred": "b985ra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pdi:f:n:i:s",
+            "edan_simple": "pgdppdifnis",
+            "bea": "nipa!t10504!b985rg",
+            "fred": "b985rg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pdi:f:n:i:s",
+            "edan_simple": "ngdppdifnis",
+            "bea": "nipa!t10505!b985rc",
+            "fred": "b985rc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pdi:f:n:i:s",
+            "edan_simple": "rgdppdifnis",
+            "bea": "nipa!t10506!b985rx",
+            "fred": "b985rx1q020sbea"
+        }
+    },
+    "gdp:pdi:f:n:i:r": {
+        "long_name": "Research and development",
+        "__row__": 39,
+        "__level__": 5,
+        "quantity": {
+            "edan": "qgdp:pdi:f:n:i:r",
+            "edan_simple": "qgdppdifnir",
+            "bea": "nipa!t10503!y006ra",
+            "fred": "y006ra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pdi:f:n:i:r",
+            "edan_simple": "pgdppdifnir",
+            "bea": "nipa!t10504!y006rg",
+            "fred": "y006rg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pdi:f:n:i:r",
+            "edan_simple": "ngdppdifnir",
+            "bea": "nipa!t10505!y006rc",
+            "fred": "y006rc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pdi:f:n:i:r",
+            "edan_simple": "rgdppdifnir",
+            "bea": "nipa!t10506!y006rx",
+            "fred": "y006rx1q020sbea"
+        }
+    },
+    "gdp:pdi:f:n:i:e": {
+        "long_name": "Entertainment, literary, and artistic originals",
+        "__row__": 40,
+        "__level__": 5,
+        "quantity": {
+            "edan": "qgdp:pdi:f:n:i:e",
+            "edan_simple": "qgdppdifnie",
+            "bea": "nipa!t10503!y020ra",
+            "fred": "y020ra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:pdi:f:n:i:e",
+            "edan_simple": "pgdppdifnie",
+            "bea": "nipa!t10504!y020rg",
+            "fred": "y020rg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:pdi:f:n:i:e",
+            "edan_simple": "ngdppdifnie",
+            "bea": "nipa!t10505!y020rc",
+            "fred": "y020rc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pdi:f:n:i:e",
+            "edan_simple": "rgdppdifnie",
+            "bea": "nipa!t10506!y020rx",
+            "fred": "y020rx1q020sbea"
+        }
+    },
     "gdp:pdi:f:r": {
-        "bea_name": "Residential",
-        "table_row": 13,
-        "level": 3,
+        "long_name": "Residential",
+        "__row__": 41,
+        "__level__": 3,
         "quantity": {
             "edan": "qgdp:pdi:f:r",
             "edan_simple": "qgdppdifr",
-            "bea": "nipa!t10103!a011ra",
+            "bea": "nipa!t10503!a011ra",
             "fred": "a011ra3q086sbea"
         },
         "price": {
             "edan": "pgdp:pdi:f:r",
             "edan_simple": "pgdppdifr",
-            "bea": "nipa!t10104!b011rg",
+            "bea": "nipa!t10504!b011rg",
             "fred": "b011rg3q086sbea"
         },
         "nominal": {
             "edan": "ngdp:pdi:f:r",
             "edan_simple": "ngdppdifr",
-            "bea": "nipa!t10105!a011rc",
+            "bea": "nipa!t10505!a011rc",
             "fred": "prfi"
         },
         "real": {
             "edan": "rgdp:pdi:f:r",
             "edan_simple": "rgdppdifr",
-            "bea": "nipa!t10106!a011rx",
+            "bea": "nipa!t10506!a011rx",
             "fred": "prfic1"
         }
     },
     "gdp:pdi:c": {
-        "bea_name": "Change in private inventories",
-        "table_row": 14,
-        "level": 2,
-        "quantity": {
-            "edan": "qgdp:pdi:c",
-            "edan_simple": "qgdppdic",
-            "bea": "",
-            "fred": ""
-        },
-        "price": {
-            "edan": "pgdp:pdi:c",
-            "edan_simple": "pgdppdic",
-            "bea": "",
-            "fred": ""
-        },
+        "long_name": "Change in private inventories",
+        "__row__": 42,
+        "__level__": 2,
         "nominal": {
             "edan": "ngdp:pdi:c",
             "edan_simple": "ngdppdic",
-            "bea": "nipa!t10105!a014rc",
+            "bea": "nipa!t10505!a014rc",
             "fred": "cbi"
         },
         "real": {
             "edan": "rgdp:pdi:c",
             "edan_simple": "rgdppdic",
-            "bea": "nipa!t10106!a014rx",
+            "bea": "nipa!t10506!a014rx",
             "fred": "cbic1"
+        },
+        "nominal_level": {
+            "edan": "lgdp:pdi:c",
+            "edan_simple": "lgdppdic",
+            "bea": "nipa!t50805b!a371rc",
+            "fred": "a371rc1q027sbea"
+        },
+        "real_level": {
+            "edan": "sgdp:pdi:c",
+            "edan_simple": "sgdppdic",
+            "bea": "nipa!t50806b!a371rx",
+            "fred": "a371rx1q020sbea"
+        }
+    },
+    "gdp:pdi:c:f": {
+        "long_name": "Farm",
+        "__row__": 43,
+        "__level__": 3,
+        "nominal": {
+            "edan": "ngdp:pdi:c:f",
+            "edan_simple": "ngdppdicf",
+            "bea": "nipa!t10505!b018rc",
+            "fred": "b018rc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pdi:c:f",
+            "edan_simple": "rgdppdicf",
+            "bea": "nipa!t10506!b018rx",
+            "fred": "b018rx1q020sbea"
+        },
+        "nominal_level": {
+            "edan": "lgdp:pdi:c:f",
+            "edan_simple": "lgdppdicf",
+            "bea": "nipa!t50805b!b372rc",
+            "fred": "b372rc1q027sbea"
+        },
+        "real_level": {
+            "edan": "sgdp:pdi:c:f",
+            "edan_simple": "sgdppdicf",
+            "bea": "nipa!t50806b!b372rx",
+            "fred": "b372rx1q020sbea"
+        }
+    },
+    "gdp:pdi:c:n": {
+        "long_name": "Nonfarm",
+        "__row__": 44,
+        "__level__": 3,
+        "nominal": {
+            "edan": "ngdp:pdi:c:n",
+            "edan_simple": "ngdppdicn",
+            "bea": "nipa!t10505!a015rc",
+            "fred": "a015rc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:pdi:c:n",
+            "edan_simple": "rgdppdicn",
+            "bea": "nipa!t10506!a015rx",
+            "fred": "a015rx1q020sbea"
+        },
+        "nominal_level": {
+            "edan": "lgdp:pdi:c:n",
+            "edan_simple": "lgdppdicn",
+            "bea": "nipa!t50805b!a373rc",
+            "fred": "a373rc1q027sbea"
+        },
+        "real_level": {
+            "edan": "sgdp:pdi:c:n",
+            "edan_simple": "sgdppdicn",
+            "bea": "nipa!t50806b!a373rx",
+            "fred": "a373rx1q020sbea"
         }
     },
     "gdp:x": {
-        "bea_name": "Net exports of goods and services",
-        "table_row": 15,
-        "level": 1,
-        "quantity": {
-            "edan": "qgdp:x",
-            "edan_simple": "qgdpx",
-            "bea": "",
-            "fred": ""
-        },
-        "price": {
-            "edan": "pgdp:x",
-            "edan_simple": "pgdpx",
-            "bea": "",
-            "fred": ""
-        },
+        "long_name": "Net exports of goods and services",
+        "__row__": 45,
+        "__level__": 1,
         "nominal": {
             "edan": "ngdp:x",
             "edan_simple": "ngdpx",
-            "bea": "nipa!t10105!a019rc",
+            "bea": "nipa!t10505!a019rc",
             "fred": "netexp"
         },
         "real": {
             "edan": "rgdp:x",
             "edan_simple": "rgdpx",
-            "bea": "nipa!t10106!a019rx",
+            "bea": "nipa!t10506!a019rx",
             "fred": "netexc"
         }
     },
-    "gdp:x~x": {
-        "bea_name": "Exports",
-        "table_row": 16,
-        "level": 2,
+    "gdp:x:x": {
+        "long_name": "Exports",
+        "__row__": 46,
+        "__level__": 2,
         "quantity": {
-            "edan": "qgdp:x~x",
+            "edan": "qgdp:x:x",
             "edan_simple": "qgdpxx",
-            "bea": "nipa!t10103!b020ra",
+            "bea": "nipa!t10503!b020ra",
             "fred": "b020ra3q086sbea"
         },
         "price": {
-            "edan": "pgdp:x~x",
+            "edan": "pgdp:x:x",
             "edan_simple": "pgdpxx",
-            "bea": "nipa!t10104!b020rg",
+            "bea": "nipa!t10504!b020rg",
             "fred": "b020rg3q086sbea"
         },
         "nominal": {
-            "edan": "ngdp:x~x",
+            "edan": "ngdp:x:x",
             "edan_simple": "ngdpxx",
-            "bea": "nipa!t10105!b020rc",
+            "bea": "nipa!t10505!b020rc",
             "fred": "expgs"
         },
         "real": {
-            "edan": "rgdp:x~x",
+            "edan": "rgdp:x:x",
             "edan_simple": "rgdpxx",
-            "bea": "nipa!t10106!a020rx",
+            "bea": "nipa!t10506!a020rx",
             "fred": "expgsc1"
         }
     },
-    "gdp:x~x:g": {
-        "bea_name": "Exports: Goods",
-        "table_row": 17,
-        "level": 3,
+    "gdp:x:x:g": {
+        "long_name": "Exports: Goods",
+        "__row__": 47,
+        "__level__": 3,
         "quantity": {
-            "edan": "qgdp:x~x:g",
+            "edan": "qgdp:x:x:g",
             "edan_simple": "qgdpxxg",
-            "bea": "nipa!t10103!b253ra",
+            "bea": "nipa!t10503!b253ra",
             "fred": "b253ra3q086sbea"
         },
         "price": {
-            "edan": "pgdp:x~x:g",
+            "edan": "pgdp:x:x:g",
             "edan_simple": "pgdpxxg",
-            "bea": "nipa!t10104!b253rg",
+            "bea": "nipa!t10504!b253rg",
             "fred": "b253rg3q086sbea"
         },
         "nominal": {
-            "edan": "ngdp:x~x:g",
+            "edan": "ngdp:x:x:g",
             "edan_simple": "ngdpxxg",
-            "bea": "nipa!t10105!a253rc",
+            "bea": "nipa!t10505!a253rc",
             "fred": "a253rc1q027sbea"
         },
         "real": {
-            "edan": "rgdp:x~x:g",
+            "edan": "rgdp:x:x:g",
             "edan_simple": "rgdpxxg",
-            "bea": "nipa!t10106!a253rx",
+            "bea": "nipa!t10506!a253rx",
             "fred": "a253rx1q020sbea"
         }
     },
-    "gdp:x~x:s": {
-        "bea_name": "Exports: Services",
-        "table_row": 18,
-        "level": 3,
+    "gdp:x:x:s": {
+        "long_name": "Exports: Services",
+        "__row__": 48,
+        "__level__": 3,
         "quantity": {
-            "edan": "qgdp:x~x:s",
+            "edan": "qgdp:x:x:s",
             "edan_simple": "qgdpxxs",
-            "bea": "nipa!t10103!b646ra",
+            "bea": "nipa!t10503!b646ra",
             "fred": "b646ra3q086sbea"
         },
         "price": {
-            "edan": "pgdp:x~x:s",
+            "edan": "pgdp:x:x:s",
             "edan_simple": "pgdpxxs",
-            "bea": "nipa!t10104!b646rg",
+            "bea": "nipa!t10504!b646rg",
             "fred": "b646rg3q086sbea"
         },
         "nominal": {
-            "edan": "ngdp:x~x:s",
+            "edan": "ngdp:x:x:s",
             "edan_simple": "ngdpxxs",
-            "bea": "nipa!t10105!a646rc",
+            "bea": "nipa!t10505!a646rc",
             "fred": "a646rc1q027sbea"
         },
         "real": {
-            "edan": "rgdp:x~x:s",
+            "edan": "rgdp:x:x:s",
             "edan_simple": "rgdpxxs",
-            "bea": "nipa!t10106!a646rx",
+            "bea": "nipa!t10506!a646rx",
             "fred": "a646rx1q020sbea"
         }
     },
     "gdp:x~m": {
-        "bea_name": "Imports",
-        "table_row": 19,
-        "level": 2,
+        "long_name": "Imports",
+        "__row__": 49,
+        "__level__": 2,
         "quantity": {
             "edan": "qgdp:x~m",
             "edan_simple": "qgdpxm",
-            "bea": "nipa!t10103!b021ra",
+            "bea": "nipa!t10503!b021ra",
             "fred": "b021ra3q086sbea"
         },
         "price": {
             "edan": "pgdp:x~m",
             "edan_simple": "pgdpxm",
-            "bea": "nipa!t10104!b021rg",
+            "bea": "nipa!t10504!b021rg",
             "fred": "b021rg3q086sbea"
         },
         "nominal": {
             "edan": "ngdp:x~m",
             "edan_simple": "ngdpxm",
-            "bea": "nipa!t10105!b021rc",
+            "bea": "nipa!t10505!b021rc",
             "fred": "impgs"
         },
         "real": {
             "edan": "rgdp:x~m",
             "edan_simple": "rgdpxm",
-            "bea": "nipa!t10106!a021rx",
+            "bea": "nipa!t10506!a021rx",
             "fred": "impgsc1"
         }
     },
     "gdp:x~m:g": {
-        "bea_name": "Imports: Goods",
-        "table_row": 20,
-        "level": 3,
+        "long_name": "Imports: Goods",
+        "__row__": 50,
+        "__level__": 3,
         "quantity": {
             "edan": "qgdp:x~m:g",
             "edan_simple": "qgdpxmg",
-            "bea": "nipa!t10103!b255ra",
+            "bea": "nipa!t10503!b255ra",
             "fred": "b255ra3q086sbea"
         },
         "price": {
             "edan": "pgdp:x~m:g",
             "edan_simple": "pgdpxmg",
-            "bea": "nipa!t10104!b255rg",
+            "bea": "nipa!t10504!b255rg",
             "fred": "b255rg3q086sbea"
         },
         "nominal": {
             "edan": "ngdp:x~m:g",
             "edan_simple": "ngdpxmg",
-            "bea": "nipa!t10105!a255rc",
+            "bea": "nipa!t10505!a255rc",
             "fred": "a255rc1q027sbea"
         },
         "real": {
             "edan": "rgdp:x~m:g",
             "edan_simple": "rgdpxmg",
-            "bea": "nipa!t10106!a255rx",
+            "bea": "nipa!t10506!a255rx",
             "fred": "a255rx1q020sbea"
         }
     },
     "gdp:x~m:s": {
-        "bea_name": "Imports: Services",
-        "table_row": 21,
-        "level": 3,
+        "long_name": "Imports: Services",
+        "__row__": 51,
+        "__level__": 3,
         "quantity": {
             "edan": "qgdp:x~m:s",
             "edan_simple": "qgdpxms",
-            "bea": "nipa!t10103!b656ra",
+            "bea": "nipa!t10503!b656ra",
             "fred": "b656ra3q086sbea"
         },
         "price": {
             "edan": "pgdp:x~m:s",
             "edan_simple": "pgdpxms",
-            "bea": "nipa!t10104!b656rg",
+            "bea": "nipa!t10504!b656rg",
             "fred": "b656rg3q086sbea"
         },
         "nominal": {
             "edan": "ngdp:x~m:s",
             "edan_simple": "ngdpxms",
-            "bea": "nipa!t10105!b656rc",
+            "bea": "nipa!t10505!b656rc",
             "fred": "b656rc1q027sbea"
         },
         "real": {
             "edan": "rgdp:x~m:s",
             "edan_simple": "rgdpxms",
-            "bea": "nipa!t10106!b656rx",
+            "bea": "nipa!t10506!b656rx",
             "fred": "b656rx1q020sbea"
         }
     },
     "gdp:gov": {
-        "bea_name": "Government consumption expenditures and gross investment",
-        "table_row": 22,
-        "level": 1,
+        "long_name": "Government consumption expenditures and gross investment",
+        "__row__": 52,
+        "__level__": 1,
         "quantity": {
             "edan": "qgdp:gov",
             "edan_simple": "qgdpgov",
-            "bea": "nipa!t10103!b822ra",
+            "bea": "nipa!t10503!b822ra",
             "fred": "b822ra3q086sbea"
         },
         "price": {
             "edan": "pgdp:gov",
             "edan_simple": "pgdpgov",
-            "bea": "nipa!t10104!b822rg",
+            "bea": "nipa!t10504!b822rg",
             "fred": "b822rg3q086sbea"
         },
         "nominal": {
             "edan": "ngdp:gov",
             "edan_simple": "ngdpgov",
-            "bea": "nipa!t10105!a822rc",
+            "bea": "nipa!t10505!a822rc",
             "fred": "gce"
         },
         "real": {
             "edan": "rgdp:gov",
             "edan_simple": "rgdpgov",
-            "bea": "nipa!t10106!a822rx",
+            "bea": "nipa!t10506!a822rx",
             "fred": "gcec1"
         }
     },
     "gdp:gov:f": {
-        "bea_name": "Federal",
-        "table_row": 23,
-        "level": 2,
+        "long_name": "Federal",
+        "__row__": 53,
+        "__level__": 2,
         "quantity": {
             "edan": "qgdp:gov:f",
             "edan_simple": "qgdpgovf",
-            "bea": "nipa!t10103!b823ra",
+            "bea": "nipa!t10503!b823ra",
             "fred": "b823ra3q086sbea"
         },
         "price": {
             "edan": "pgdp:gov:f",
             "edan_simple": "pgdpgovf",
-            "bea": "nipa!t10104!b823rg",
+            "bea": "nipa!t10504!b823rg",
             "fred": "b823rg3q086sbea"
         },
         "nominal": {
             "edan": "ngdp:gov:f",
             "edan_simple": "ngdpgovf",
-            "bea": "nipa!t10105!a823rc",
+            "bea": "nipa!t10505!a823rc",
             "fred": "fgce"
         },
         "real": {
             "edan": "rgdp:gov:f",
             "edan_simple": "rgdpgovf",
-            "bea": "nipa!t10106!a823rx",
+            "bea": "nipa!t10506!a823rx",
             "fred": "fgcec1"
         }
     },
     "gdp:gov:f:d": {
-        "bea_name": "National defense",
-        "table_row": 24,
-        "level": 3,
+        "long_name": "National defense",
+        "__row__": 54,
+        "__level__": 3,
         "quantity": {
             "edan": "qgdp:gov:f:d",
             "edan_simple": "qgdpgovfd",
-            "bea": "nipa!t10103!b824ra",
+            "bea": "nipa!t10503!b824ra",
             "fred": "b824ra3q086sbea"
         },
         "price": {
             "edan": "pgdp:gov:f:d",
             "edan_simple": "pgdpgovfd",
-            "bea": "nipa!t10104!b824rg",
+            "bea": "nipa!t10504!b824rg",
             "fred": "b824rg3q086sbea"
         },
         "nominal": {
             "edan": "ngdp:gov:f:d",
             "edan_simple": "ngdpgovfd",
-            "bea": "nipa!t10105!a824rc",
+            "bea": "nipa!t10505!a824rc",
             "fred": "fdefx"
         },
         "real": {
             "edan": "rgdp:gov:f:d",
             "edan_simple": "rgdpgovfd",
-            "bea": "nipa!t10106!a824rx",
+            "bea": "nipa!t10506!a824rx",
             "fred": "a824rx1q020sbea"
         }
     },
+    "gdp:gov:f:d:c": {
+        "long_name": "National defense: Consumption expenditures",
+        "__row__": 55,
+        "__level__": 4,
+        "quantity": {
+            "edan": "qgdp:gov:f:d:c",
+            "edan_simple": "qgdpgovfdc",
+            "bea": "nipa!t10503!a997ra",
+            "fred": "a997ra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:gov:f:d:c",
+            "edan_simple": "pgdpgovfdc",
+            "bea": "nipa!t10504!a997rg",
+            "fred": "a997rg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:gov:f:d:c",
+            "edan_simple": "ngdpgovfdc",
+            "bea": "nipa!t10505!a997rc",
+            "fred": "a997rc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:gov:f:d:c",
+            "edan_simple": "rgdpgovfdc",
+            "bea": "nipa!t10506!a997rx",
+            "fred": "a997rx1q020sbea"
+        }
+    },
+    "gdp:gov:f:d:i": {
+        "long_name": "National defense: Gross investment",
+        "__row__": 56,
+        "__level__": 4,
+        "quantity": {
+            "edan": "qgdp:gov:f:d:i",
+            "edan_simple": "qgdpgovfdi",
+            "bea": "nipa!t10503!b788ra",
+            "fred": "b788ra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:gov:f:d:i",
+            "edan_simple": "pgdpgovfdi",
+            "bea": "nipa!t10504!b788rg",
+            "fred": "b788rg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:gov:f:d:i",
+            "edan_simple": "ngdpgovfdi",
+            "bea": "nipa!t10505!a788rc",
+            "fred": "dgi"
+        },
+        "real": {
+            "edan": "rgdp:gov:f:d:i",
+            "edan_simple": "rgdpgovfdi",
+            "bea": "nipa!t10506!a788rx",
+            "fred": "dgic96"
+        }
+    },
     "gdp:gov:f:n": {
-        "bea_name": "Nondefense",
-        "table_row": 25,
-        "level": 3,
+        "long_name": "Nondefense",
+        "__row__": 57,
+        "__level__": 3,
         "quantity": {
             "edan": "qgdp:gov:f:n",
             "edan_simple": "qgdpgovfn",
-            "bea": "nipa!t10103!b825ra",
+            "bea": "nipa!t10503!b825ra",
             "fred": "b825ra3q086sbea"
         },
         "price": {
             "edan": "pgdp:gov:f:n",
             "edan_simple": "pgdpgovfn",
-            "bea": "nipa!t10104!b825rg",
+            "bea": "nipa!t10504!b825rg",
             "fred": "b825rg3q086sbea"
         },
         "nominal": {
             "edan": "ngdp:gov:f:n",
             "edan_simple": "ngdpgovfn",
-            "bea": "nipa!t10105!a825rc",
+            "bea": "nipa!t10505!a825rc",
             "fred": "fndefx"
         },
         "real": {
             "edan": "rgdp:gov:f:n",
             "edan_simple": "rgdpgovfn",
-            "bea": "nipa!t10106!a825rx",
+            "bea": "nipa!t10506!a825rx",
             "fred": "a825rx1q020sbea"
         }
     },
+    "gdp:gov:f:n:c": {
+        "long_name": "Nondefense: Consumption expenditures",
+        "__row__": 58,
+        "__level__": 4,
+        "quantity": {
+            "edan": "qgdp:gov:f:n:c",
+            "edan_simple": "qgdpgovfnc",
+            "bea": "nipa!t10503!a542ra",
+            "fred": "a542ra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:gov:f:n:c",
+            "edan_simple": "pgdpgovfnc",
+            "bea": "nipa!t10504!a542rg",
+            "fred": "a542rg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:gov:f:n:c",
+            "edan_simple": "ngdpgovfnc",
+            "bea": "nipa!t10505!a542rc",
+            "fred": "a542rc1q027sbea"
+        },
+        "real": {
+            "edan": "rgdp:gov:f:n:c",
+            "edan_simple": "rgdpgovfnc",
+            "bea": "nipa!t10506!a542rx",
+            "fred": "a542rx1q020sbea"
+        }
+    },
+    "gdp:gov:f:n:i": {
+        "long_name": "Nondefense: Gross investment",
+        "__row__": 59,
+        "__level__": 4,
+        "quantity": {
+            "edan": "qgdp:gov:f:n:i",
+            "edan_simple": "qgdpgovfni",
+            "bea": "nipa!t10503!b798ra",
+            "fred": "b798ra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:gov:f:n:i",
+            "edan_simple": "pgdpgovfni",
+            "bea": "nipa!t10504!b798rg",
+            "fred": "b798rg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:gov:f:n:i",
+            "edan_simple": "ngdpgovfni",
+            "bea": "nipa!t10505!a798rc",
+            "fred": "ndgi"
+        },
+        "real": {
+            "edan": "rgdp:gov:f:n:i",
+            "edan_simple": "rgdpgovfni",
+            "bea": "nipa!t10506!a798rx",
+            "fred": "ndgic96"
+        }
+    },
     "gdp:gov:s": {
-        "bea_name": "State and local",
-        "table_row": 26,
-        "level": 2,
+        "long_name": "State and local",
+        "__row__": 60,
+        "__level__": 2,
         "quantity": {
             "edan": "qgdp:gov:s",
             "edan_simple": "qgdpgovs",
-            "bea": "nipa!t10103!b829ra",
+            "bea": "nipa!t10503!b829ra",
             "fred": "b829ra3q086sbea"
         },
         "price": {
             "edan": "pgdp:gov:s",
             "edan_simple": "pgdpgovs",
-            "bea": "nipa!t10104!b829rg",
+            "bea": "nipa!t10504!b829rg",
             "fred": "b829rg3q086sbea"
         },
         "nominal": {
             "edan": "ngdp:gov:s",
             "edan_simple": "ngdpgovs",
-            "bea": "nipa!t10105!a829rc",
+            "bea": "nipa!t10505!a829rc",
             "fred": "slce"
         },
         "real": {
             "edan": "rgdp:gov:s",
             "edan_simple": "rgdpgovs",
-            "bea": "nipa!t10106!a829rx",
+            "bea": "nipa!t10506!a829rx",
             "fred": "slcec1"
         }
     },
-    "gdp:res": {
-        "bea_name": "Residual",
-        "table_row": 27,
-        "level": 1,
+    "gdp:gov:s:c": {
+        "long_name": "State and local: Consumption expenditures",
+        "__row__": 61,
+        "__level__": 3,
         "quantity": {
-            "edan": "qgdp:res",
-            "edan_simple": "qgdpres",
-            "bea": "",
-            "fred": ""
+            "edan": "qgdp:gov:s:c",
+            "edan_simple": "qgdpgovsc",
+            "bea": "nipa!t10503!a991ra",
+            "fred": "a991ra3q086sbea"
         },
         "price": {
-            "edan": "pgdp:res",
-            "edan_simple": "pgdpres",
-            "bea": "",
-            "fred": ""
+            "edan": "pgdp:gov:s:c",
+            "edan_simple": "pgdpgovsc",
+            "bea": "nipa!t10504!a991rg",
+            "fred": "a991rg3q086sbea"
         },
         "nominal": {
-            "edan": "ngdp:res",
-            "edan_simple": "ngdpres",
-            "bea": "",
-            "fred": ""
+            "edan": "ngdp:gov:s:c",
+            "edan_simple": "ngdpgovsc",
+            "bea": "nipa!t10505!a991rc",
+            "fred": "a991rc1q027sbea"
         },
+        "real": {
+            "edan": "rgdp:gov:s:c",
+            "edan_simple": "rgdpgovsc",
+            "bea": "nipa!t10506!a991rx",
+            "fred": "a991rx1q020sbea"
+        }
+    },
+    "gdp:gov:s:i": {
+        "long_name": "State and local: Gross investment",
+        "__row__": 62,
+        "__level__": 3,
+        "quantity": {
+            "edan": "qgdp:gov:s:i",
+            "edan_simple": "qgdpgovsi",
+            "bea": "nipa!t10503!b799ra",
+            "fred": "b799ra3q086sbea"
+        },
+        "price": {
+            "edan": "pgdp:gov:s:i",
+            "edan_simple": "pgdpgovsi",
+            "bea": "nipa!t10504!b799rg",
+            "fred": "b799rg3q086sbea"
+        },
+        "nominal": {
+            "edan": "ngdp:gov:s:i",
+            "edan_simple": "ngdpgovsi",
+            "bea": "nipa!t10505!a799rc",
+            "fred": "slinv"
+        },
+        "real": {
+            "edan": "rgdp:gov:s:i",
+            "edan_simple": "rgdpgovsi",
+            "bea": "nipa!t10506!a799rx",
+            "fred": "slinvc96"
+        }
+    },
+    "gdp:res": {
+        "long_name": "Residual",
+        "__row__": 63,
+        "__level__": 1,
         "real": {
             "edan": "rgdp:res",
             "edan_simple": "rgdpres",
-            "bea": "nipa!t10106!a960rx",
-            "fred": "a960rx1q020sbea"
+            "bea": "nipa!t10506!ar05rx",
+            "fred": "ar05rx1q020sbea"
         }
     }
 }

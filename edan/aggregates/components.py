@@ -150,7 +150,7 @@ class Component(CompoundStorage):
 		mtypes = {g: dct.get(g) for g in cls.mtypes if dct.get(g)}
 		return cls(
 			dct['code'],
-			dct['level'],
+			dct['__level__'],
 			dct['long_name'],
 			dct['short_name'],
 			dct['source'],

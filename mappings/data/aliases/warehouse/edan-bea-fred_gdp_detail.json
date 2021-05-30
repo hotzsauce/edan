@@ -1,8 +1,8 @@
 {
     "gdp": {
-        "bea_name": "Gross domestic product",
-        "table_row": 1,
-        "level": 0,
+        "long_name": "Gross domestic product",
+        "__row__": 1,
+        "__level__": 0,
         "quantity": {
             "edan": "qgdp",
             "edan_simple": "qgdp",
@@ -29,9 +29,9 @@
         }
     },
     "gdp:pce": {
-        "bea_name": "Personal consumption expenditures",
-        "table_row": 2,
-        "level": 1,
+        "long_name": "Personal consumption expenditures",
+        "__row__": 2,
+        "__level__": 1,
         "quantity": {
             "edan": "qgdp:pce",
             "edan_simple": "qgdppce",
@@ -58,9 +58,9 @@
         }
     },
     "gdp:pce:g": {
-        "bea_name": "Goods",
-        "table_row": 3,
-        "level": 2,
+        "long_name": "Goods",
+        "__row__": 3,
+        "__level__": 2,
         "quantity": {
             "edan": "qgdp:pce:g",
             "edan_simple": "qgdppceg",
@@ -87,9 +87,9 @@
         }
     },
     "gdp:pce:g:d": {
-        "bea_name": "Durable goods",
-        "table_row": 4,
-        "level": 3,
+        "long_name": "Durable goods",
+        "__row__": 4,
+        "__level__": 3,
         "quantity": {
             "edan": "qgdp:pce:g:d",
             "edan_simple": "qgdppcegd",
@@ -116,9 +116,9 @@
         }
     },
     "gdp:pce:g:d:v": {
-        "bea_name": "Motor vehicles and parts",
-        "table_row": 5,
-        "level": 4,
+        "long_name": "Motor vehicles and parts",
+        "__row__": 5,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pce:g:d:v",
             "edan_simple": "qgdppcegdv",
@@ -145,9 +145,9 @@
         }
     },
     "gdp:pce:g:d:f": {
-        "bea_name": "Furnishings and durable household equipment",
-        "table_row": 6,
-        "level": 4,
+        "long_name": "Furnishings and durable household equipment",
+        "__row__": 6,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pce:g:d:f",
             "edan_simple": "qgdppcegdf",
@@ -174,9 +174,9 @@
         }
     },
     "gdp:pce:g:d:r": {
-        "bea_name": "Recreational goods and vehicles",
-        "table_row": 7,
-        "level": 4,
+        "long_name": "Recreational goods and vehicles",
+        "__row__": 7,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pce:g:d:r",
             "edan_simple": "qgdppcegdr",
@@ -203,9 +203,9 @@
         }
     },
     "gdp:pce:g:d:o": {
-        "bea_name": "Other durable goods",
-        "table_row": 8,
-        "level": 4,
+        "long_name": "Other durable goods",
+        "__row__": 8,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pce:g:d:o",
             "edan_simple": "qgdppcegdo",
@@ -232,9 +232,9 @@
         }
     },
     "gdp:pce:g:n": {
-        "bea_name": "Nondurable goods",
-        "table_row": 9,
-        "level": 3,
+        "long_name": "Nondurable goods",
+        "__row__": 9,
+        "__level__": 3,
         "quantity": {
             "edan": "qgdp:pce:g:n",
             "edan_simple": "qgdppcegn",
@@ -261,9 +261,9 @@
         }
     },
     "gdp:pce:g:n:f": {
-        "bea_name": "Food and beverages purchased for off-premises consumption",
-        "table_row": 10,
-        "level": 4,
+        "long_name": "Food and beverages purchased for off-premises consumption",
+        "__row__": 10,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pce:g:n:f",
             "edan_simple": "qgdppcegnf",
@@ -290,9 +290,9 @@
         }
     },
     "gdp:pce:g:n:c": {
-        "bea_name": "Clothing and footwear",
-        "table_row": 11,
-        "level": 4,
+        "long_name": "Clothing and footwear",
+        "__row__": 11,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pce:g:n:c",
             "edan_simple": "qgdppcegnc",
@@ -319,9 +319,9 @@
         }
     },
     "gdp:pce:g:n:g": {
-        "bea_name": "Gasoline and other energy goods",
-        "table_row": 12,
-        "level": 4,
+        "long_name": "Gasoline and other energy goods",
+        "__row__": 12,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pce:g:n:g",
             "edan_simple": "qgdppcegng",
@@ -348,9 +348,9 @@
         }
     },
     "gdp:pce:g:n:o": {
-        "bea_name": "Other nondurable goods",
-        "table_row": 13,
-        "level": 4,
+        "long_name": "Other nondurable goods",
+        "__row__": 13,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pce:g:n:o",
             "edan_simple": "qgdppcegno",
@@ -377,9 +377,9 @@
         }
     },
     "gdp:pce:s": {
-        "bea_name": "Services",
-        "table_row": 14,
-        "level": 2,
+        "long_name": "Services",
+        "__row__": 14,
+        "__level__": 2,
         "quantity": {
             "edan": "qgdp:pce:s",
             "edan_simple": "qgdppces",
@@ -406,9 +406,9 @@
         }
     },
     "gdp:pce:s:h": {
-        "bea_name": "Household consumption expenditures (for services)",
-        "table_row": 15,
-        "level": 3,
+        "long_name": "Household consumption expenditures (for services)",
+        "__row__": 15,
+        "__level__": 3,
         "quantity": {
             "edan": "qgdp:pce:s:h",
             "edan_simple": "qgdppcesh",
@@ -435,9 +435,9 @@
         }
     },
     "gdp:pce:s:h:h": {
-        "bea_name": "Housing and utilities",
-        "table_row": 16,
-        "level": 4,
+        "long_name": "Housing and utilities",
+        "__row__": 16,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pce:s:h:h",
             "edan_simple": "qgdppceshh",
@@ -464,9 +464,9 @@
         }
     },
     "gdp:pce:s:h:c": {
-        "bea_name": "Health care",
-        "table_row": 17,
-        "level": 4,
+        "long_name": "Health care",
+        "__row__": 17,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pce:s:h:c",
             "edan_simple": "qgdppceshc",
@@ -493,9 +493,9 @@
         }
     },
     "gdp:pce:s:h:t": {
-        "bea_name": "Transportation services",
-        "table_row": 18,
-        "level": 4,
+        "long_name": "Transportation services",
+        "__row__": 18,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pce:s:h:t",
             "edan_simple": "qgdppcesht",
@@ -522,9 +522,9 @@
         }
     },
     "gdp:pce:s:h:r": {
-        "bea_name": "Recreation services",
-        "table_row": 19,
-        "level": 4,
+        "long_name": "Recreation services",
+        "__row__": 19,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pce:s:h:r",
             "edan_simple": "qgdppceshr",
@@ -551,9 +551,9 @@
         }
     },
     "gdp:pce:s:h:f": {
-        "bea_name": "Food services and accommodations",
-        "table_row": 20,
-        "level": 4,
+        "long_name": "Food services and accommodations",
+        "__row__": 20,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pce:s:h:f",
             "edan_simple": "qgdppceshf",
@@ -580,9 +580,9 @@
         }
     },
     "gdp:pce:s:h:i": {
-        "bea_name": "Financial services and insurance",
-        "table_row": 21,
-        "level": 4,
+        "long_name": "Financial services and insurance",
+        "__row__": 21,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pce:s:h:i",
             "edan_simple": "qgdppceshi",
@@ -609,9 +609,9 @@
         }
     },
     "gdp:pce:s:h:o": {
-        "bea_name": "Other services",
-        "table_row": 22,
-        "level": 4,
+        "long_name": "Other services",
+        "__row__": 22,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pce:s:h:o",
             "edan_simple": "qgdppcesho",
@@ -638,9 +638,9 @@
         }
     },
     "gdp:pce:s:n": {
-        "bea_name": "Final consumption expenditures of nonprofit institutions serving households (NPISHs)",
-        "table_row": 23,
-        "level": 3,
+        "long_name": "Final consumption expenditures of nonprofit institutions serving households (NPISHs)",
+        "__row__": 23,
+        "__level__": 3,
         "quantity": {
             "edan": "qgdp:pce:s:n",
             "edan_simple": "qgdppcesn",
@@ -667,9 +667,9 @@
         }
     },
     "gdp:pce:s:n:o": {
-        "bea_name": "Gross output of nonprofit institutions",
-        "table_row": 24,
-        "level": 4,
+        "long_name": "Gross output of nonprofit institutions",
+        "__row__": 24,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pce:s:n:o",
             "edan_simple": "qgdppcesno",
@@ -696,9 +696,9 @@
         }
     },
     "gdp:pce:s:n~l": {
-        "bea_name": "Less: Receipts from sales of goods and services by nonprofit institutions",
-        "table_row": 25,
-        "level": 4,
+        "long_name": "Less: Receipts from sales of goods and services by nonprofit institutions",
+        "__row__": 25,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pce:s:n~l",
             "edan_simple": "qgdppcesnl",
@@ -725,9 +725,9 @@
         }
     },
     "gdp:pdi": {
-        "bea_name": "Gross private domestic investment",
-        "table_row": 26,
-        "level": 1,
+        "long_name": "Gross private domestic investment",
+        "__row__": 26,
+        "__level__": 1,
         "quantity": {
             "edan": "qgdp:pdi",
             "edan_simple": "qgdppdi",
@@ -754,9 +754,9 @@
         }
     },
     "gdp:pdi:f": {
-        "bea_name": "Fixed investment",
-        "table_row": 27,
-        "level": 2,
+        "long_name": "Fixed investment",
+        "__row__": 27,
+        "__level__": 2,
         "quantity": {
             "edan": "qgdp:pdi:f",
             "edan_simple": "qgdppdif",
@@ -783,9 +783,9 @@
         }
     },
     "gdp:pdi:f:n": {
-        "bea_name": "Nonresidential",
-        "table_row": 28,
-        "level": 3,
+        "long_name": "Nonresidential",
+        "__row__": 28,
+        "__level__": 3,
         "quantity": {
             "edan": "qgdp:pdi:f:n",
             "edan_simple": "qgdppdifn",
@@ -812,9 +812,9 @@
         }
     },
     "gdp:pdi:f:n:s": {
-        "bea_name": "Structures",
-        "table_row": 29,
-        "level": 4,
+        "long_name": "Structures",
+        "__row__": 29,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pdi:f:n:s",
             "edan_simple": "qgdppdifns",
@@ -841,9 +841,9 @@
         }
     },
     "gdp:pdi:f:n:e": {
-        "bea_name": "Equipment",
-        "table_row": 30,
-        "level": 4,
+        "long_name": "Equipment",
+        "__row__": 30,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pdi:f:n:e",
             "edan_simple": "qgdppdifne",
@@ -870,9 +870,9 @@
         }
     },
     "gdp:pdi:f:n:e:i": {
-        "bea_name": "Information processing equipment",
-        "table_row": 31,
-        "level": 5,
+        "long_name": "Information processing equipment",
+        "__row__": 31,
+        "__level__": 5,
         "quantity": {
             "edan": "qgdp:pdi:f:n:e:i",
             "edan_simple": "qgdppdifnei",
@@ -899,9 +899,9 @@
         }
     },
     "gdp:pdi:f:n:e:i:c": {
-        "bea_name": "Computers and peripheral equipment",
-        "table_row": 32,
-        "level": 6,
+        "long_name": "Computers and peripheral equipment",
+        "__row__": 32,
+        "__level__": 6,
         "quantity": {
             "edan": "qgdp:pdi:f:n:e:i:c",
             "edan_simple": "qgdppdifneic",
@@ -928,9 +928,9 @@
         }
     },
     "gdp:pdi:f:n:e:i:o": {
-        "bea_name": "Other",
-        "table_row": 33,
-        "level": 6,
+        "long_name": "Other",
+        "__row__": 33,
+        "__level__": 6,
         "quantity": {
             "edan": "qgdp:pdi:f:n:e:i:o",
             "edan_simple": "qgdppdifneio",
@@ -957,9 +957,9 @@
         }
     },
     "gdp:pdi:f:n:e:n": {
-        "bea_name": "Industrial equipment",
-        "table_row": 34,
-        "level": 5,
+        "long_name": "Industrial equipment",
+        "__row__": 34,
+        "__level__": 5,
         "quantity": {
             "edan": "qgdp:pdi:f:n:e:n",
             "edan_simple": "qgdppdifnen",
@@ -986,9 +986,9 @@
         }
     },
     "gdp:pdi:f:n:e:t": {
-        "bea_name": "Transportation equipment",
-        "table_row": 35,
-        "level": 5,
+        "long_name": "Transportation equipment",
+        "__row__": 35,
+        "__level__": 5,
         "quantity": {
             "edan": "qgdp:pdi:f:n:e:t",
             "edan_simple": "qgdppdifnet",
@@ -1015,9 +1015,9 @@
         }
     },
     "gdp:pdi:f:n:e:o": {
-        "bea_name": "Other equipment",
-        "table_row": 36,
-        "level": 5,
+        "long_name": "Other equipment",
+        "__row__": 36,
+        "__level__": 5,
         "quantity": {
             "edan": "qgdp:pdi:f:n:e:o",
             "edan_simple": "qgdppdifneo",
@@ -1044,9 +1044,9 @@
         }
     },
     "gdp:pdi:f:n:i": {
-        "bea_name": "Intellectual property products",
-        "table_row": 37,
-        "level": 4,
+        "long_name": "Intellectual property products",
+        "__row__": 37,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:pdi:f:n:i",
             "edan_simple": "qgdppdifni",
@@ -1073,9 +1073,9 @@
         }
     },
     "gdp:pdi:f:n:i:s": {
-        "bea_name": "Software",
-        "table_row": 38,
-        "level": 5,
+        "long_name": "Software",
+        "__row__": 38,
+        "__level__": 5,
         "quantity": {
             "edan": "qgdp:pdi:f:n:i:s",
             "edan_simple": "qgdppdifnis",
@@ -1102,9 +1102,9 @@
         }
     },
     "gdp:pdi:f:n:i:r": {
-        "bea_name": "Research and development",
-        "table_row": 39,
-        "level": 5,
+        "long_name": "Research and development",
+        "__row__": 39,
+        "__level__": 5,
         "quantity": {
             "edan": "qgdp:pdi:f:n:i:r",
             "edan_simple": "qgdppdifnir",
@@ -1131,9 +1131,9 @@
         }
     },
     "gdp:pdi:f:n:i:e": {
-        "bea_name": "Entertainment, literary, and artistic originals",
-        "table_row": 40,
-        "level": 5,
+        "long_name": "Entertainment, literary, and artistic originals",
+        "__row__": 40,
+        "__level__": 5,
         "quantity": {
             "edan": "qgdp:pdi:f:n:i:e",
             "edan_simple": "qgdppdifnie",
@@ -1160,9 +1160,9 @@
         }
     },
     "gdp:pdi:f:r": {
-        "bea_name": "Residential",
-        "table_row": 41,
-        "level": 3,
+        "long_name": "Residential",
+        "__row__": 41,
+        "__level__": 3,
         "quantity": {
             "edan": "qgdp:pdi:f:r",
             "edan_simple": "qgdppdifr",
@@ -1189,21 +1189,9 @@
         }
     },
     "gdp:pdi:c": {
-        "bea_name": "Change in private inventories",
-        "table_row": 42,
-        "level": 2,
-        "quantity": {
-            "edan": "qgdp:pdi:c",
-            "edan_simple": "qgdppdic",
-            "bea": "",
-            "fred": ""
-        },
-        "price": {
-            "edan": "pgdp:pdi:c",
-            "edan_simple": "pgdppdic",
-            "bea": "",
-            "fred": ""
-        },
+        "long_name": "Change in private inventories",
+        "__row__": 42,
+        "__level__": 2,
         "nominal": {
             "edan": "ngdp:pdi:c",
             "edan_simple": "ngdppdic",
@@ -1216,35 +1204,23 @@
             "bea": "nipa!t10506!a014rx",
             "fred": "cbic1"
         },
-        "real_level": {
-            "edan": "sgdp:pdi:c",
-            "edan_simple": "sgdppdic",
-            "bea": "nipa!t50806b!a371rx",
-            "fred": "a371rx1q020sbea"
-        },
         "nominal_level": {
             "edan": "lgdp:pdi:c",
             "edan_simple": "lgdppdic",
             "bea": "nipa!t50805b!a371rc",
             "fred": "a371rc1q027sbea"
+        },
+        "real_level": {
+            "edan": "sgdp:pdi:c",
+            "edan_simple": "sgdppdic",
+            "bea": "nipa!t50806b!a371rx",
+            "fred": "a371rx1q020sbea"
         }
     },
     "gdp:pdi:c:f": {
-        "bea_name": "Farm",
-        "table_row": 43,
-        "level": 3,
-        "quantity": {
-            "edan": "qgdp:pdi:c:f",
-            "edan_simple": "qgdppdicf",
-            "bea": "",
-            "fred": ""
-        },
-        "price": {
-            "edan": "pgdp:pdi:c:f",
-            "edan_simple": "pgdppdicf",
-            "bea": "",
-            "fred": ""
-        },
+        "long_name": "Farm",
+        "__row__": 43,
+        "__level__": 3,
         "nominal": {
             "edan": "ngdp:pdi:c:f",
             "edan_simple": "ngdppdicf",
@@ -1257,35 +1233,23 @@
             "bea": "nipa!t10506!b018rx",
             "fred": "b018rx1q020sbea"
         },
-        "real_level": {
-            "edan": "sgdp:pdi:c:f",
-            "edan_simple": "sgdppdicf",
-            "bea": "nipa!t50806b!b372rx",
-            "fred": "b372rx1q020sbea"
-        },
         "nominal_level": {
             "edan": "lgdp:pdi:c:f",
             "edan_simple": "lgdppdicf",
             "bea": "nipa!t50805b!b372rc",
             "fred": "b372rc1q027sbea"
+        },
+        "real_level": {
+            "edan": "sgdp:pdi:c:f",
+            "edan_simple": "sgdppdicf",
+            "bea": "nipa!t50806b!b372rx",
+            "fred": "b372rx1q020sbea"
         }
     },
     "gdp:pdi:c:n": {
-        "bea_name": "Nonfarm",
-        "table_row": 44,
-        "level": 3,
-        "quantity": {
-            "edan": "qgdp:pdi:c:n",
-            "edan_simple": "qgdppdicn",
-            "bea": "",
-            "fred": ""
-        },
-        "price": {
-            "edan": "pgdp:pdi:c:n",
-            "edan_simple": "pgdppdicn",
-            "bea": "",
-            "fred": ""
-        },
+        "long_name": "Nonfarm",
+        "__row__": 44,
+        "__level__": 3,
         "nominal": {
             "edan": "ngdp:pdi:c:n",
             "edan_simple": "ngdppdicn",
@@ -1298,35 +1262,23 @@
             "bea": "nipa!t10506!a015rx",
             "fred": "a015rx1q020sbea"
         },
-        "real_level": {
-            "edan": "sgdp:pdi:c:n",
-            "edan_simple": "sgdppdicn",
-            "bea": "nipa!t50806b!a373rx",
-            "fred": "a373rx1q020sbea"
-        },
         "nominal_level": {
             "edan": "lgdp:pdi:c:n",
             "edan_simple": "lgdppdicn",
             "bea": "nipa!t50805b!a373rc",
             "fred": "a373rc1q027sbea"
+        },
+        "real_level": {
+            "edan": "sgdp:pdi:c:n",
+            "edan_simple": "sgdppdicn",
+            "bea": "nipa!t50806b!a373rx",
+            "fred": "a373rx1q020sbea"
         }
     },
     "gdp:x": {
-        "bea_name": "Net exports of goods and services",
-        "table_row": 45,
-        "level": 1,
-        "quantity": {
-            "edan": "qgdp:x",
-            "edan_simple": "qgdpx",
-            "bea": "",
-            "fred": ""
-        },
-        "price": {
-            "edan": "pgdp:x",
-            "edan_simple": "pgdpx",
-            "bea": "",
-            "fred": ""
-        },
+        "long_name": "Net exports of goods and services",
+        "__row__": 45,
+        "__level__": 1,
         "nominal": {
             "edan": "ngdp:x",
             "edan_simple": "ngdpx",
@@ -1341,9 +1293,9 @@
         }
     },
     "gdp:x:x": {
-        "bea_name": "Exports",
-        "table_row": 46,
-        "level": 2,
+        "long_name": "Exports",
+        "__row__": 46,
+        "__level__": 2,
         "quantity": {
             "edan": "qgdp:x:x",
             "edan_simple": "qgdpxx",
@@ -1370,9 +1322,9 @@
         }
     },
     "gdp:x:x:g": {
-        "bea_name": "Exports: Goods",
-        "table_row": 47,
-        "level": 3,
+        "long_name": "Exports: Goods",
+        "__row__": 47,
+        "__level__": 3,
         "quantity": {
             "edan": "qgdp:x:x:g",
             "edan_simple": "qgdpxxg",
@@ -1399,9 +1351,9 @@
         }
     },
     "gdp:x:x:s": {
-        "bea_name": "Exports: Services",
-        "table_row": 48,
-        "level": 3,
+        "long_name": "Exports: Services",
+        "__row__": 48,
+        "__level__": 3,
         "quantity": {
             "edan": "qgdp:x:x:s",
             "edan_simple": "qgdpxxs",
@@ -1428,9 +1380,9 @@
         }
     },
     "gdp:x~m": {
-        "bea_name": "Imports",
-        "table_row": 49,
-        "level": 2,
+        "long_name": "Imports",
+        "__row__": 49,
+        "__level__": 2,
         "quantity": {
             "edan": "qgdp:x~m",
             "edan_simple": "qgdpxm",
@@ -1457,9 +1409,9 @@
         }
     },
     "gdp:x~m:g": {
-        "bea_name": "Imports: Goods",
-        "table_row": 50,
-        "level": 3,
+        "long_name": "Imports: Goods",
+        "__row__": 50,
+        "__level__": 3,
         "quantity": {
             "edan": "qgdp:x~m:g",
             "edan_simple": "qgdpxmg",
@@ -1486,9 +1438,9 @@
         }
     },
     "gdp:x~m:s": {
-        "bea_name": "Imports: Services",
-        "table_row": 51,
-        "level": 3,
+        "long_name": "Imports: Services",
+        "__row__": 51,
+        "__level__": 3,
         "quantity": {
             "edan": "qgdp:x~m:s",
             "edan_simple": "qgdpxms",
@@ -1515,9 +1467,9 @@
         }
     },
     "gdp:gov": {
-        "bea_name": "Government consumption expenditures and gross investment",
-        "table_row": 52,
-        "level": 1,
+        "long_name": "Government consumption expenditures and gross investment",
+        "__row__": 52,
+        "__level__": 1,
         "quantity": {
             "edan": "qgdp:gov",
             "edan_simple": "qgdpgov",
@@ -1544,9 +1496,9 @@
         }
     },
     "gdp:gov:f": {
-        "bea_name": "Federal",
-        "table_row": 53,
-        "level": 2,
+        "long_name": "Federal",
+        "__row__": 53,
+        "__level__": 2,
         "quantity": {
             "edan": "qgdp:gov:f",
             "edan_simple": "qgdpgovf",
@@ -1573,9 +1525,9 @@
         }
     },
     "gdp:gov:f:d": {
-        "bea_name": "National defense",
-        "table_row": 54,
-        "level": 3,
+        "long_name": "National defense",
+        "__row__": 54,
+        "__level__": 3,
         "quantity": {
             "edan": "qgdp:gov:f:d",
             "edan_simple": "qgdpgovfd",
@@ -1602,9 +1554,9 @@
         }
     },
     "gdp:gov:f:d:c": {
-        "bea_name": "National defense: Consumption expenditures",
-        "table_row": 55,
-        "level": 4,
+        "long_name": "National defense: Consumption expenditures",
+        "__row__": 55,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:gov:f:d:c",
             "edan_simple": "qgdpgovfdc",
@@ -1631,9 +1583,9 @@
         }
     },
     "gdp:gov:f:d:i": {
-        "bea_name": "National defense: Gross investment",
-        "table_row": 56,
-        "level": 4,
+        "long_name": "National defense: Gross investment",
+        "__row__": 56,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:gov:f:d:i",
             "edan_simple": "qgdpgovfdi",
@@ -1660,9 +1612,9 @@
         }
     },
     "gdp:gov:f:n": {
-        "bea_name": "Nondefense",
-        "table_row": 57,
-        "level": 3,
+        "long_name": "Nondefense",
+        "__row__": 57,
+        "__level__": 3,
         "quantity": {
             "edan": "qgdp:gov:f:n",
             "edan_simple": "qgdpgovfn",
@@ -1689,9 +1641,9 @@
         }
     },
     "gdp:gov:f:n:c": {
-        "bea_name": "Nondefense: Consumption expenditures",
-        "table_row": 58,
-        "level": 4,
+        "long_name": "Nondefense: Consumption expenditures",
+        "__row__": 58,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:gov:f:n:c",
             "edan_simple": "qgdpgovfnc",
@@ -1718,9 +1670,9 @@
         }
     },
     "gdp:gov:f:n:i": {
-        "bea_name": "Nondefense: Gross investment",
-        "table_row": 59,
-        "level": 4,
+        "long_name": "Nondefense: Gross investment",
+        "__row__": 59,
+        "__level__": 4,
         "quantity": {
             "edan": "qgdp:gov:f:n:i",
             "edan_simple": "qgdpgovfni",
@@ -1747,9 +1699,9 @@
         }
     },
     "gdp:gov:s": {
-        "bea_name": "State and local",
-        "table_row": 60,
-        "level": 2,
+        "long_name": "State and local",
+        "__row__": 60,
+        "__level__": 2,
         "quantity": {
             "edan": "qgdp:gov:s",
             "edan_simple": "qgdpgovs",
@@ -1776,9 +1728,9 @@
         }
     },
     "gdp:gov:s:c": {
-        "bea_name": "State and local: Consumption expenditures",
-        "table_row": 61,
-        "level": 3,
+        "long_name": "State and local: Consumption expenditures",
+        "__row__": 61,
+        "__level__": 3,
         "quantity": {
             "edan": "qgdp:gov:s:c",
             "edan_simple": "qgdpgovsc",
@@ -1805,9 +1757,9 @@
         }
     },
     "gdp:gov:s:i": {
-        "bea_name": "State and local: Gross investment",
-        "table_row": 62,
-        "level": 3,
+        "long_name": "State and local: Gross investment",
+        "__row__": 62,
+        "__level__": 3,
         "quantity": {
             "edan": "qgdp:gov:s:i",
             "edan_simple": "qgdpgovsi",
@@ -1834,27 +1786,9 @@
         }
     },
     "gdp:res": {
-        "bea_name": "Residual",
-        "table_row": 63,
-        "level": 1,
-        "quantity": {
-            "edan": "qgdp:res",
-            "edan_simple": "qgdpres",
-            "bea": "",
-            "fred": ""
-        },
-        "price": {
-            "edan": "pgdp:res",
-            "edan_simple": "pgdpres",
-            "bea": "",
-            "fred": ""
-        },
-        "nominal": {
-            "edan": "ngdp:res",
-            "edan_simple": "ngdpres",
-            "bea": "",
-            "fred": ""
-        },
+        "long_name": "Residual",
+        "__row__": 63,
+        "__level__": 1,
         "real": {
             "edan": "rgdp:res",
             "edan_simple": "rgdpres",

@@ -1,8 +1,8 @@
 {
     "pce": {
-        "bea_name": "Personal consumption expenditures",
-        "table_row": 1,
-        "level": 0,
+        "long_name": "Personal consumption expenditures",
+        "__row__": 1,
+        "__level__": 0,
         "quantity": {
             "edan": "qpce",
             "edan_simple": "qpce",
@@ -25,9 +25,9 @@
         }
     },
     "pce:g": {
-        "bea_name": "Goods",
-        "table_row": 2,
-        "level": 1,
+        "long_name": "Goods",
+        "__row__": 2,
+        "__level__": 1,
         "quantity": {
             "edan": "qpce:g",
             "edan_simple": "qpceg",
@@ -50,9 +50,9 @@
         }
     },
     "pce:g:d": {
-        "bea_name": "Durable goods",
-        "table_row": 3,
-        "level": 2,
+        "long_name": "Durable goods",
+        "__row__": 3,
+        "__level__": 2,
         "quantity": {
             "edan": "qpce:g:d",
             "edan_simple": "qpcegd",
@@ -75,9 +75,9 @@
         }
     },
     "pce:g:d:v": {
-        "bea_name": "Motor vehicles and parts",
-        "table_row": 4,
-        "level": 3,
+        "long_name": "Motor vehicles and parts",
+        "__row__": 4,
+        "__level__": 3,
         "quantity": {
             "edan": "qpce:g:d:v",
             "edan_simple": "qpcegdv",
@@ -100,9 +100,9 @@
         }
     },
     "pce:g:d:v:n": {
-        "bea_name": "New motor vehicles (55)",
-        "table_row": 5,
-        "level": 4,
+        "long_name": "New motor vehicles (55)",
+        "__row__": 5,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:d:v:n",
             "edan_simple": "qpcegdvn",
@@ -125,9 +125,9 @@
         }
     },
     "pce:g:d:v:n:a": {
-        "bea_name": "New autos",
-        "table_row": 6,
-        "level": 5,
+        "long_name": "New autos",
+        "__row__": 6,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:v:n:a",
             "edan_simple": "qpcegdvna",
@@ -150,9 +150,9 @@
         }
     },
     "pce:g:d:v:n:a:d": {
-        "bea_name": "New domestic autos",
-        "table_row": 7,
-        "level": 6,
+        "long_name": "New domestic autos",
+        "__row__": 7,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:d:v:n:a:d",
             "edan_simple": "qpcegdvnad",
@@ -175,9 +175,9 @@
         }
     },
     "pce:g:d:v:n:a:f": {
-        "bea_name": "New foreign autos",
-        "table_row": 8,
-        "level": 6,
+        "long_name": "New foreign autos",
+        "__row__": 8,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:d:v:n:a:f",
             "edan_simple": "qpcegdvnaf",
@@ -200,9 +200,9 @@
         }
     },
     "pce:g:d:v:n:t": {
-        "bea_name": "New light trucks",
-        "table_row": 9,
-        "level": 5,
+        "long_name": "New light trucks",
+        "__row__": 9,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:v:n:t",
             "edan_simple": "qpcegdvnt",
@@ -225,9 +225,9 @@
         }
     },
     "pce:g:d:v:u": {
-        "bea_name": "Net purchases of used motor vehicles (56)",
-        "table_row": 10,
-        "level": 4,
+        "long_name": "Net purchases of used motor vehicles (56)",
+        "__row__": 10,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:d:v:u",
             "edan_simple": "qpcegdvu",
@@ -250,9 +250,9 @@
         }
     },
     "pce:g:d:v:u:a": {
-        "bea_name": "Used autos",
-        "table_row": 11,
-        "level": 5,
+        "long_name": "Used autos",
+        "__row__": 11,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:v:u:a",
             "edan_simple": "qpcegdvua",
@@ -275,9 +275,9 @@
         }
     },
     "pce:g:d:v:u:a:n": {
-        "bea_name": "Net transactions in used autos",
-        "table_row": 12,
-        "level": 6,
+        "long_name": "Net transactions in used autos",
+        "__row__": 12,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:d:v:u:a:n",
             "edan_simple": "qpcegdvuan",
@@ -300,9 +300,9 @@
         }
     },
     "pce:g:d:v:u:a:m": {
-        "bea_name": "Used auto margin",
-        "table_row": 13,
-        "level": 6,
+        "long_name": "Used auto margin",
+        "__row__": 13,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:d:v:u:a:m",
             "edan_simple": "qpcegdvuam",
@@ -325,9 +325,9 @@
         }
     },
     "pce:g:d:v:u:a:e": {
-        "bea_name": "Employee reimbursement",
-        "table_row": 14,
-        "level": 6,
+        "long_name": "Employee reimbursement",
+        "__row__": 14,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:d:v:u:a:e",
             "edan_simple": "qpcegdvuae",
@@ -350,9 +350,9 @@
         }
     },
     "pce:g:d:v:u:t": {
-        "bea_name": "Used light trucks",
-        "table_row": 15,
-        "level": 5,
+        "long_name": "Used light trucks",
+        "__row__": 15,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:v:u:t",
             "edan_simple": "qpcegdvut",
@@ -375,9 +375,9 @@
         }
     },
     "pce:g:d:v:u:t:n": {
-        "bea_name": "Net transactions in used trucks",
-        "table_row": 16,
-        "level": 6,
+        "long_name": "Net transactions in used trucks",
+        "__row__": 16,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:d:v:u:t:n",
             "edan_simple": "qpcegdvutn",
@@ -400,9 +400,9 @@
         }
     },
     "pce:g:d:v:u:t:m": {
-        "bea_name": "Used truck margin",
-        "table_row": 17,
-        "level": 6,
+        "long_name": "Used truck margin",
+        "__row__": 17,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:d:v:u:t:m",
             "edan_simple": "qpcegdvutm",
@@ -425,9 +425,9 @@
         }
     },
     "pce:g:d:v:p": {
-        "bea_name": "Motor vehicle parts and accessories (58)",
-        "table_row": 18,
-        "level": 4,
+        "long_name": "Motor vehicle parts and accessories (58)",
+        "__row__": 18,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:d:v:p",
             "edan_simple": "qpcegdvp",
@@ -450,9 +450,9 @@
         }
     },
     "pce:g:d:v:p:t": {
-        "bea_name": "Tires",
-        "table_row": 19,
-        "level": 5,
+        "long_name": "Tires",
+        "__row__": 19,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:v:p:t",
             "edan_simple": "qpcegdvpt",
@@ -475,9 +475,9 @@
         }
     },
     "pce:g:d:v:p:a": {
-        "bea_name": "Accessories and parts",
-        "table_row": 20,
-        "level": 5,
+        "long_name": "Accessories and parts",
+        "__row__": 20,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:v:p:a",
             "edan_simple": "qpcegdvpa",
@@ -500,9 +500,9 @@
         }
     },
     "pce:g:d:f": {
-        "bea_name": "Furnishings and durable household equipment",
-        "table_row": 21,
-        "level": 3,
+        "long_name": "Furnishings and durable household equipment",
+        "__row__": 21,
+        "__level__": 3,
         "quantity": {
             "edan": "qpce:g:d:f",
             "edan_simple": "qpcegdf",
@@ -525,9 +525,9 @@
         }
     },
     "pce:g:d:f:f": {
-        "bea_name": "Furniture and furnishings (parts of 31 and 32)",
-        "table_row": 22,
-        "level": 4,
+        "long_name": "Furniture and furnishings (parts of 31 and 32)",
+        "__row__": 22,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:d:f:f",
             "edan_simple": "qpcegdff",
@@ -550,9 +550,9 @@
         }
     },
     "pce:g:d:f:f:f": {
-        "bea_name": "Furniture",
-        "table_row": 23,
-        "level": 5,
+        "long_name": "Furniture",
+        "__row__": 23,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:f:f:f",
             "edan_simple": "qpcegdfff",
@@ -575,9 +575,9 @@
         }
     },
     "pce:g:d:f:f:d": {
-        "bea_name": "Clocks, lamps, lighting fixtures, and other household decorative items",
-        "table_row": 24,
-        "level": 5,
+        "long_name": "Clocks, lamps, lighting fixtures, and other household decorative items",
+        "__row__": 24,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:f:f:d",
             "edan_simple": "qpcegdffd",
@@ -600,9 +600,9 @@
         }
     },
     "pce:g:d:f:f:c": {
-        "bea_name": "Carpets and other floor coverings",
-        "table_row": 25,
-        "level": 5,
+        "long_name": "Carpets and other floor coverings",
+        "__row__": 25,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:f:f:c",
             "edan_simple": "qpcegdffc",
@@ -625,9 +625,9 @@
         }
     },
     "pce:g:d:f:f:w": {
-        "bea_name": "Window coverings",
-        "table_row": 26,
-        "level": 5,
+        "long_name": "Window coverings",
+        "__row__": 26,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:f:f:w",
             "edan_simple": "qpcegdffw",
@@ -650,9 +650,9 @@
         }
     },
     "pce:g:d:f:a": {
-        "bea_name": "Household appliances (part of 33)",
-        "table_row": 27,
-        "level": 4,
+        "long_name": "Household appliances (part of 33)",
+        "__row__": 27,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:d:f:a",
             "edan_simple": "qpcegdfa",
@@ -675,9 +675,9 @@
         }
     },
     "pce:g:d:f:a:m": {
-        "bea_name": "Major household appliances",
-        "table_row": 28,
-        "level": 5,
+        "long_name": "Major household appliances",
+        "__row__": 28,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:f:a:m",
             "edan_simple": "qpcegdfam",
@@ -700,9 +700,9 @@
         }
     },
     "pce:g:d:f:a:s": {
-        "bea_name": "Small electric household appliances",
-        "table_row": 29,
-        "level": 5,
+        "long_name": "Small electric household appliances",
+        "__row__": 29,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:f:a:s",
             "edan_simple": "qpcegdfas",
@@ -725,9 +725,9 @@
         }
     },
     "pce:g:d:f:u": {
-        "bea_name": "Glassware, tableware, and household utensils (34)",
-        "table_row": 30,
-        "level": 4,
+        "long_name": "Glassware, tableware, and household utensils (34)",
+        "__row__": 30,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:d:f:u",
             "edan_simple": "qpcegdfu",
@@ -750,9 +750,9 @@
         }
     },
     "pce:g:d:f:u:d": {
-        "bea_name": "Dishes and flatware",
-        "table_row": 31,
-        "level": 5,
+        "long_name": "Dishes and flatware",
+        "__row__": 31,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:f:u:d",
             "edan_simple": "qpcegdfud",
@@ -775,9 +775,9 @@
         }
     },
     "pce:g:d:f:u:c": {
-        "bea_name": "Nonelectric cookware and tableware",
-        "table_row": 32,
-        "level": 5,
+        "long_name": "Nonelectric cookware and tableware",
+        "__row__": 32,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:f:u:c",
             "edan_simple": "qpcegdfuc",
@@ -800,9 +800,9 @@
         }
     },
     "pce:g:d:f:t": {
-        "bea_name": "Tools and equipment for house and garden (35)",
-        "table_row": 33,
-        "level": 4,
+        "long_name": "Tools and equipment for house and garden (35)",
+        "__row__": 33,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:d:f:t",
             "edan_simple": "qpcegdft",
@@ -825,9 +825,9 @@
         }
     },
     "pce:g:d:f:t:t": {
-        "bea_name": "Tools, hardware, and supplies",
-        "table_row": 34,
-        "level": 5,
+        "long_name": "Tools, hardware, and supplies",
+        "__row__": 34,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:f:t:t",
             "edan_simple": "qpcegdftt",
@@ -850,9 +850,9 @@
         }
     },
     "pce:g:d:f:t:o": {
-        "bea_name": "Outdoor equipment and supplies",
-        "table_row": 35,
-        "level": 5,
+        "long_name": "Outdoor equipment and supplies",
+        "__row__": 35,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:f:t:o",
             "edan_simple": "qpcegdfto",
@@ -875,9 +875,9 @@
         }
     },
     "pce:g:d:r": {
-        "bea_name": "Recreational goods and vehicles",
-        "table_row": 36,
-        "level": 3,
+        "long_name": "Recreational goods and vehicles",
+        "__row__": 36,
+        "__level__": 3,
         "quantity": {
             "edan": "qpce:g:d:r",
             "edan_simple": "qpcegdr",
@@ -900,9 +900,9 @@
         }
     },
     "pce:g:d:r:t": {
-        "bea_name": "Video, audio, photographic, and information processing equipment and media (75, 76, and part of 93)",
-        "table_row": 37,
-        "level": 4,
+        "long_name": "Video, audio, photographic, and information processing equipment and media (75, 76, and part of 93)",
+        "__row__": 37,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:d:r:t",
             "edan_simple": "qpcegdrt",
@@ -925,9 +925,9 @@
         }
     },
     "pce:g:d:r:t:v": {
-        "bea_name": "Video and audio equipment",
-        "table_row": 38,
-        "level": 5,
+        "long_name": "Video and audio equipment",
+        "__row__": 38,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:r:t:v",
             "edan_simple": "qpcegdrtv",
@@ -950,9 +950,9 @@
         }
     },
     "pce:g:d:r:t:v:t": {
-        "bea_name": "Televisions",
-        "table_row": 39,
-        "level": 6,
+        "long_name": "Televisions",
+        "__row__": 39,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:d:r:t:v:t",
             "edan_simple": "qpcegdrtvt",
@@ -975,9 +975,9 @@
         }
     },
     "pce:g:d:r:t:v:o": {
-        "bea_name": "Other video equipment",
-        "table_row": 40,
-        "level": 6,
+        "long_name": "Other video equipment",
+        "__row__": 40,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:d:r:t:v:o",
             "edan_simple": "qpcegdrtvo",
@@ -1000,9 +1000,9 @@
         }
     },
     "pce:g:d:r:t:v:a": {
-        "bea_name": "Audio equipment",
-        "table_row": 41,
-        "level": 6,
+        "long_name": "Audio equipment",
+        "__row__": 41,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:d:r:t:v:a",
             "edan_simple": "qpcegdrtva",
@@ -1025,9 +1025,9 @@
         }
     },
     "pce:g:d:r:t:v:r": {
-        "bea_name": "Recording media",
-        "table_row": 42,
-        "level": 6,
+        "long_name": "Recording media",
+        "__row__": 42,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:d:r:t:v:r",
             "edan_simple": "qpcegdrtvr",
@@ -1050,9 +1050,9 @@
         }
     },
     "pce:g:d:r:t:v:r:a": {
-        "bea_name": "Audio discs, tapes, vinyl, and permanent digital downloads",
-        "table_row": 43,
-        "level": 7,
+        "long_name": "Audio discs, tapes, vinyl, and permanent digital downloads",
+        "__row__": 43,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:g:d:r:t:v:r:a",
             "edan_simple": "qpcegdrtvra",
@@ -1075,9 +1075,9 @@
         }
     },
     "pce:g:d:r:t:v:r:v": {
-        "bea_name": "Video discs, tapes, and permanent digital downloads",
-        "table_row": 44,
-        "level": 7,
+        "long_name": "Video discs, tapes, and permanent digital downloads",
+        "__row__": 44,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:g:d:r:t:v:r:v",
             "edan_simple": "qpcegdrtvrv",
@@ -1100,9 +1100,9 @@
         }
     },
     "pce:g:d:r:t:p": {
-        "bea_name": "Photographic equipment",
-        "table_row": 45,
-        "level": 5,
+        "long_name": "Photographic equipment",
+        "__row__": 45,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:r:t:p",
             "edan_simple": "qpcegdrtp",
@@ -1125,9 +1125,9 @@
         }
     },
     "pce:g:d:r:t:i": {
-        "bea_name": "Information processing equipment",
-        "table_row": 46,
-        "level": 5,
+        "long_name": "Information processing equipment",
+        "__row__": 46,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:r:t:i",
             "edan_simple": "qpcegdrti",
@@ -1150,9 +1150,9 @@
         }
     },
     "pce:g:d:r:t:i:p": {
-        "bea_name": "Personal computers/tablets and peripheral equipment",
-        "table_row": 47,
-        "level": 6,
+        "long_name": "Personal computers/tablets and peripheral equipment",
+        "__row__": 47,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:d:r:t:i:p",
             "edan_simple": "qpcegdrtip",
@@ -1175,9 +1175,9 @@
         }
     },
     "pce:g:d:r:t:i:c": {
-        "bea_name": "Computer software and accessories",
-        "table_row": 48,
-        "level": 6,
+        "long_name": "Computer software and accessories",
+        "__row__": 48,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:d:r:t:i:c",
             "edan_simple": "qpcegdrtic",
@@ -1200,9 +1200,9 @@
         }
     },
     "pce:g:d:r:t:i:t": {
-        "bea_name": "Calculators, typewriters, and other information processing equipment",
-        "table_row": 49,
-        "level": 6,
+        "long_name": "Calculators, typewriters, and other information processing equipment",
+        "__row__": 49,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:d:r:t:i:t",
             "edan_simple": "qpcegdrtit",
@@ -1225,9 +1225,9 @@
         }
     },
     "pce:g:d:r:s": {
-        "bea_name": "Sporting equipment, supplies, guns, and ammunition (part of 80)",
-        "table_row": 50,
-        "level": 4,
+        "long_name": "Sporting equipment, supplies, guns, and ammunition (part of 80)",
+        "__row__": 50,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:d:r:s",
             "edan_simple": "qpcegdrs",
@@ -1250,9 +1250,9 @@
         }
     },
     "pce:g:d:r:v": {
-        "bea_name": "Sports and recreational vehicles (79)",
-        "table_row": 51,
-        "level": 4,
+        "long_name": "Sports and recreational vehicles (79)",
+        "__row__": 51,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:d:r:v",
             "edan_simple": "qpcegdrv",
@@ -1275,9 +1275,9 @@
         }
     },
     "pce:g:d:r:v:m": {
-        "bea_name": "Motorcycles",
-        "table_row": 52,
-        "level": 5,
+        "long_name": "Motorcycles",
+        "__row__": 52,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:r:v:m",
             "edan_simple": "qpcegdrvm",
@@ -1300,9 +1300,9 @@
         }
     },
     "pce:g:d:r:v:b": {
-        "bea_name": "Bicycles and accessories",
-        "table_row": 53,
-        "level": 5,
+        "long_name": "Bicycles and accessories",
+        "__row__": 53,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:r:v:b",
             "edan_simple": "qpcegdrvb",
@@ -1325,9 +1325,9 @@
         }
     },
     "pce:g:d:r:v:p": {
-        "bea_name": "Pleasure boats, aircraft, and other recreational vehicles",
-        "table_row": 54,
-        "level": 5,
+        "long_name": "Pleasure boats, aircraft, and other recreational vehicles",
+        "__row__": 54,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:r:v:p",
             "edan_simple": "qpcegdrvp",
@@ -1350,9 +1350,9 @@
         }
     },
     "pce:g:d:r:v:p:b": {
-        "bea_name": "Pleasure boats",
-        "table_row": 55,
-        "level": 6,
+        "long_name": "Pleasure boats",
+        "__row__": 55,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:d:r:v:p:b",
             "edan_simple": "qpcegdrvpb",
@@ -1375,9 +1375,9 @@
         }
     },
     "pce:g:d:r:v:p:a": {
-        "bea_name": "Pleasure aircraft",
-        "table_row": 56,
-        "level": 6,
+        "long_name": "Pleasure aircraft",
+        "__row__": 56,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:d:r:v:p:a",
             "edan_simple": "qpcegdrvpa",
@@ -1400,9 +1400,9 @@
         }
     },
     "pce:g:d:r:v:p:o": {
-        "bea_name": "Other recreational vehicles",
-        "table_row": 57,
-        "level": 6,
+        "long_name": "Other recreational vehicles",
+        "__row__": 57,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:d:r:v:p:o",
             "edan_simple": "qpcegdrvpo",
@@ -1425,9 +1425,9 @@
         }
     },
     "pce:g:d:r:b": {
-        "bea_name": "Recreational books (part of 90)",
-        "table_row": 58,
-        "level": 4,
+        "long_name": "Recreational books (part of 90)",
+        "__row__": 58,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:d:r:b",
             "edan_simple": "qpcegdrb",
@@ -1450,9 +1450,9 @@
         }
     },
     "pce:g:d:r:m": {
-        "bea_name": "Musical instruments (part of 80)",
-        "table_row": 59,
-        "level": 4,
+        "long_name": "Musical instruments (part of 80)",
+        "__row__": 59,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:d:r:m",
             "edan_simple": "qpcegdrm",
@@ -1475,9 +1475,9 @@
         }
     },
     "pce:g:d:o": {
-        "bea_name": "Other durable goods",
-        "table_row": 60,
-        "level": 3,
+        "long_name": "Other durable goods",
+        "__row__": 60,
+        "__level__": 3,
         "quantity": {
             "edan": "qpce:g:d:o",
             "edan_simple": "qpcegdo",
@@ -1500,9 +1500,9 @@
         }
     },
     "pce:g:d:o:j": {
-        "bea_name": "Jewelry and watches (part of 119)",
-        "table_row": 61,
-        "level": 4,
+        "long_name": "Jewelry and watches (part of 119)",
+        "__row__": 61,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:d:o:j",
             "edan_simple": "qpcegdoj",
@@ -1525,9 +1525,9 @@
         }
     },
     "pce:g:d:o:j:j": {
-        "bea_name": "Jewelry",
-        "table_row": 62,
-        "level": 5,
+        "long_name": "Jewelry",
+        "__row__": 62,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:o:j:j",
             "edan_simple": "qpcegdojj",
@@ -1550,9 +1550,9 @@
         }
     },
     "pce:g:d:o:j:w": {
-        "bea_name": "Watches",
-        "table_row": 63,
-        "level": 5,
+        "long_name": "Watches",
+        "__row__": 63,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:o:j:w",
             "edan_simple": "qpcegdojw",
@@ -1575,9 +1575,9 @@
         }
     },
     "pce:g:d:o:t": {
-        "bea_name": "Therapeutic appliances and equipment (42)",
-        "table_row": 64,
-        "level": 4,
+        "long_name": "Therapeutic appliances and equipment (42)",
+        "__row__": 64,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:d:o:t",
             "edan_simple": "qpcegdot",
@@ -1600,9 +1600,9 @@
         }
     },
     "pce:g:d:o:t:m": {
-        "bea_name": "Therapeutic medical equipment",
-        "table_row": 65,
-        "level": 5,
+        "long_name": "Therapeutic medical equipment",
+        "__row__": 65,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:o:t:m",
             "edan_simple": "qpcegdotm",
@@ -1625,9 +1625,9 @@
         }
     },
     "pce:g:d:o:t:e": {
-        "bea_name": "Corrective eyeglasses and contact lenses",
-        "table_row": 66,
-        "level": 5,
+        "long_name": "Corrective eyeglasses and contact lenses",
+        "__row__": 66,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:d:o:t:e",
             "edan_simple": "qpcegdote",
@@ -1650,9 +1650,9 @@
         }
     },
     "pce:g:d:o:b": {
-        "bea_name": "Educational books (96)",
-        "table_row": 67,
-        "level": 4,
+        "long_name": "Educational books (96)",
+        "__row__": 67,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:d:o:b",
             "edan_simple": "qpcegdob",
@@ -1675,9 +1675,9 @@
         }
     },
     "pce:g:d:o:l": {
-        "bea_name": "Luggage and similar personal items (part of 119)",
-        "table_row": 68,
-        "level": 4,
+        "long_name": "Luggage and similar personal items (part of 119)",
+        "__row__": 68,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:d:o:l",
             "edan_simple": "qpcegdol",
@@ -1700,9 +1700,9 @@
         }
     },
     "pce:g:d:o:c": {
-        "bea_name": "Telephone and related communication equipment",
-        "table_row": 69,
-        "level": 4,
+        "long_name": "Telephone and related communication equipment",
+        "__row__": 69,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:d:o:c",
             "edan_simple": "qpcegdoc",
@@ -1725,9 +1725,9 @@
         }
     },
     "pce:g:n": {
-        "bea_name": "Nondurable goods",
-        "table_row": 70,
-        "level": 2,
+        "long_name": "Nondurable goods",
+        "__row__": 70,
+        "__level__": 2,
         "quantity": {
             "edan": "qpce:g:n",
             "edan_simple": "qpcegn",
@@ -1750,9 +1750,9 @@
         }
     },
     "pce:g:n:f": {
-        "bea_name": "Food and beverages purchased for off-premises consumption",
-        "table_row": 71,
-        "level": 3,
+        "long_name": "Food and beverages purchased for off-premises consumption",
+        "__row__": 71,
+        "__level__": 3,
         "quantity": {
             "edan": "qpce:g:n:f",
             "edan_simple": "qpcegnf",
@@ -1775,9 +1775,9 @@
         }
     },
     "pce:g:n:f:f": {
-        "bea_name": "Food and nonalcoholic beverages purchased for off-premises consumption (4)",
-        "table_row": 72,
-        "level": 4,
+        "long_name": "Food and nonalcoholic beverages purchased for off-premises consumption (4)",
+        "__row__": 72,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:n:f:f",
             "edan_simple": "qpcegnff",
@@ -1800,9 +1800,9 @@
         }
     },
     "pce:g:n:f:f:f": {
-        "bea_name": "Food purchased for off-premises consumption",
-        "table_row": 73,
-        "level": 5,
+        "long_name": "Food purchased for off-premises consumption",
+        "__row__": 73,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:f:f:f",
             "edan_simple": "qpcegnfff",
@@ -1825,9 +1825,9 @@
         }
     },
     "pce:g:n:f:f:f:c": {
-        "bea_name": "Cereals and bakery products",
-        "table_row": 74,
-        "level": 6,
+        "long_name": "Cereals and bakery products",
+        "__row__": 74,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:n:f:f:f:c",
             "edan_simple": "qpcegnfffc",
@@ -1850,9 +1850,9 @@
         }
     },
     "pce:g:n:f:f:f:c:c": {
-        "bea_name": "Cereals",
-        "table_row": 75,
-        "level": 7,
+        "long_name": "Cereals",
+        "__row__": 75,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:g:n:f:f:f:c:c",
             "edan_simple": "qpcegnfffcc",
@@ -1875,9 +1875,9 @@
         }
     },
     "pce:g:n:f:f:f:c:b": {
-        "bea_name": "Bakery products",
-        "table_row": 76,
-        "level": 7,
+        "long_name": "Bakery products",
+        "__row__": 76,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:g:n:f:f:f:c:b",
             "edan_simple": "qpcegnfffcb",
@@ -1900,9 +1900,9 @@
         }
     },
     "pce:g:n:f:f:f:m": {
-        "bea_name": "Meats and poultry",
-        "table_row": 77,
-        "level": 6,
+        "long_name": "Meats and poultry",
+        "__row__": 77,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:n:f:f:f:m",
             "edan_simple": "qpcegnfffm",
@@ -1925,9 +1925,9 @@
         }
     },
     "pce:g:n:f:f:f:m:b": {
-        "bea_name": "Beef and veal",
-        "table_row": 78,
-        "level": 7,
+        "long_name": "Beef and veal",
+        "__row__": 78,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:g:n:f:f:f:m:b",
             "edan_simple": "qpcegnfffmb",
@@ -1950,9 +1950,9 @@
         }
     },
     "pce:g:n:f:f:f:m:p": {
-        "bea_name": "Pork",
-        "table_row": 79,
-        "level": 7,
+        "long_name": "Pork",
+        "__row__": 79,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:g:n:f:f:f:m:p",
             "edan_simple": "qpcegnfffmp",
@@ -1975,9 +1975,9 @@
         }
     },
     "pce:g:n:f:f:f:m:o": {
-        "bea_name": "Other meats",
-        "table_row": 80,
-        "level": 7,
+        "long_name": "Other meats",
+        "__row__": 80,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:g:n:f:f:f:m:o",
             "edan_simple": "qpcegnfffmo",
@@ -2000,9 +2000,9 @@
         }
     },
     "pce:g:n:f:f:f:m:a": {
-        "bea_name": "Poultry",
-        "table_row": 81,
-        "level": 7,
+        "long_name": "Poultry",
+        "__row__": 81,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:g:n:f:f:f:m:a",
             "edan_simple": "qpcegnfffma",
@@ -2025,9 +2025,9 @@
         }
     },
     "pce:g:n:f:f:f:f": {
-        "bea_name": "Fish and seafood",
-        "table_row": 82,
-        "level": 6,
+        "long_name": "Fish and seafood",
+        "__row__": 82,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:n:f:f:f:f",
             "edan_simple": "qpcegnffff",
@@ -2050,9 +2050,9 @@
         }
     },
     "pce:g:n:f:f:f:d": {
-        "bea_name": "Milk, dairy products, and eggs",
-        "table_row": 83,
-        "level": 6,
+        "long_name": "Milk, dairy products, and eggs",
+        "__row__": 83,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:n:f:f:f:d",
             "edan_simple": "qpcegnfffd",
@@ -2075,9 +2075,9 @@
         }
     },
     "pce:g:n:f:f:f:d:m": {
-        "bea_name": "Fresh milk",
-        "table_row": 84,
-        "level": 7,
+        "long_name": "Fresh milk",
+        "__row__": 84,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:g:n:f:f:f:d:m",
             "edan_simple": "qpcegnfffdm",
@@ -2100,9 +2100,9 @@
         }
     },
     "pce:g:n:f:f:f:d:p": {
-        "bea_name": "Processed dairy products",
-        "table_row": 85,
-        "level": 7,
+        "long_name": "Processed dairy products",
+        "__row__": 85,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:g:n:f:f:f:d:p",
             "edan_simple": "qpcegnfffdp",
@@ -2125,9 +2125,9 @@
         }
     },
     "pce:g:n:f:f:f:d:e": {
-        "bea_name": "Eggs",
-        "table_row": 86,
-        "level": 7,
+        "long_name": "Eggs",
+        "__row__": 86,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:g:n:f:f:f:d:e",
             "edan_simple": "qpcegnfffde",
@@ -2150,9 +2150,9 @@
         }
     },
     "pce:g:n:f:f:f:t": {
-        "bea_name": "Fats and oils",
-        "table_row": 87,
-        "level": 6,
+        "long_name": "Fats and oils",
+        "__row__": 87,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:n:f:f:f:t",
             "edan_simple": "qpcegnffft",
@@ -2175,9 +2175,9 @@
         }
     },
     "pce:g:n:f:f:f:v": {
-        "bea_name": "Fresh fruits and vegetables",
-        "table_row": 88,
-        "level": 6,
+        "long_name": "Fresh fruits and vegetables",
+        "__row__": 88,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:n:f:f:f:v",
             "edan_simple": "qpcegnfffv",
@@ -2200,9 +2200,9 @@
         }
     },
     "pce:g:n:f:f:f:v:f": {
-        "bea_name": "Fruit (fresh)",
-        "table_row": 89,
-        "level": 7,
+        "long_name": "Fruit (fresh)",
+        "__row__": 89,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:g:n:f:f:f:v:f",
             "edan_simple": "qpcegnfffvf",
@@ -2225,9 +2225,9 @@
         }
     },
     "pce:g:n:f:f:f:v:v": {
-        "bea_name": "Vegetables (fresh)",
-        "table_row": 90,
-        "level": 7,
+        "long_name": "Vegetables (fresh)",
+        "__row__": 90,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:g:n:f:f:f:v:v",
             "edan_simple": "qpcegnfffvv",
@@ -2250,9 +2250,9 @@
         }
     },
     "pce:g:n:f:f:f:p": {
-        "bea_name": "Processed fruits and vegetables",
-        "table_row": 91,
-        "level": 6,
+        "long_name": "Processed fruits and vegetables",
+        "__row__": 91,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:n:f:f:f:p",
             "edan_simple": "qpcegnfffp",
@@ -2275,9 +2275,9 @@
         }
     },
     "pce:g:n:f:f:f:s": {
-        "bea_name": "Sugar and sweets",
-        "table_row": 92,
-        "level": 6,
+        "long_name": "Sugar and sweets",
+        "__row__": 92,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:n:f:f:f:s",
             "edan_simple": "qpcegnfffs",
@@ -2300,9 +2300,9 @@
         }
     },
     "pce:g:n:f:f:f:o": {
-        "bea_name": "Food products, not elsewhere classified",
-        "table_row": 93,
-        "level": 6,
+        "long_name": "Food products, not elsewhere classified",
+        "__row__": 93,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:n:f:f:f:o",
             "edan_simple": "qpcegnfffo",
@@ -2325,9 +2325,9 @@
         }
     },
     "pce:g:n:f:f:b": {
-        "bea_name": "Nonalcoholic beverages purchased for off-premises consumption",
-        "table_row": 94,
-        "level": 5,
+        "long_name": "Nonalcoholic beverages purchased for off-premises consumption",
+        "__row__": 94,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:f:f:b",
             "edan_simple": "qpcegnffb",
@@ -2350,9 +2350,9 @@
         }
     },
     "pce:g:n:f:f:b:c": {
-        "bea_name": "Coffee, tea, and other beverage materials",
-        "table_row": 95,
-        "level": 6,
+        "long_name": "Coffee, tea, and other beverage materials",
+        "__row__": 95,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:n:f:f:b:c",
             "edan_simple": "qpcegnffbc",
@@ -2375,9 +2375,9 @@
         }
     },
     "pce:g:n:f:f:b:m": {
-        "bea_name": "Mineral waters, soft drinks, and vegetable juices",
-        "table_row": 96,
-        "level": 6,
+        "long_name": "Mineral waters, soft drinks, and vegetable juices",
+        "__row__": 96,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:n:f:f:b:m",
             "edan_simple": "qpcegnffbm",
@@ -2400,9 +2400,9 @@
         }
     },
     "pce:g:n:f:e": {
-        "bea_name": "Alcoholic beverages purchased for off-premises consumption (5)",
-        "table_row": 97,
-        "level": 4,
+        "long_name": "Alcoholic beverages purchased for off-premises consumption (5)",
+        "__row__": 97,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:n:f:e",
             "edan_simple": "qpcegnfe",
@@ -2425,9 +2425,9 @@
         }
     },
     "pce:g:n:f:e:s": {
-        "bea_name": "Spirits",
-        "table_row": 98,
-        "level": 5,
+        "long_name": "Spirits",
+        "__row__": 98,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:f:e:s",
             "edan_simple": "qpcegnfes",
@@ -2450,9 +2450,9 @@
         }
     },
     "pce:g:n:f:e:w": {
-        "bea_name": "Wine",
-        "table_row": 99,
-        "level": 5,
+        "long_name": "Wine",
+        "__row__": 99,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:f:e:w",
             "edan_simple": "qpcegnfew",
@@ -2475,9 +2475,9 @@
         }
     },
     "pce:g:n:f:e:b": {
-        "bea_name": "Beer",
-        "table_row": 100,
-        "level": 5,
+        "long_name": "Beer",
+        "__row__": 100,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:f:e:b",
             "edan_simple": "qpcegnfeb",
@@ -2500,9 +2500,9 @@
         }
     },
     "pce:g:n:f:a": {
-        "bea_name": "Food produced and consumed on farms (6)",
-        "table_row": 101,
-        "level": 4,
+        "long_name": "Food produced and consumed on farms (6)",
+        "__row__": 101,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:n:f:a",
             "edan_simple": "qpcegnfa",
@@ -2525,9 +2525,9 @@
         }
     },
     "pce:g:n:c": {
-        "bea_name": "Clothing and footwear",
-        "table_row": 102,
-        "level": 3,
+        "long_name": "Clothing and footwear",
+        "__row__": 102,
+        "__level__": 3,
         "quantity": {
             "edan": "qpce:g:n:c",
             "edan_simple": "qpcegnc",
@@ -2550,9 +2550,9 @@
         }
     },
     "pce:g:n:c:g": {
-        "bea_name": "Garments",
-        "table_row": 103,
-        "level": 4,
+        "long_name": "Garments",
+        "__row__": 103,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:n:c:g",
             "edan_simple": "qpcegncg",
@@ -2575,9 +2575,9 @@
         }
     },
     "pce:g:n:c:g:w": {
-        "bea_name": "Women's and girls' clothing (10)",
-        "table_row": 104,
-        "level": 5,
+        "long_name": "Women's and girls' clothing (10)",
+        "__row__": 104,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:c:g:w",
             "edan_simple": "qpcegncgw",
@@ -2600,9 +2600,9 @@
         }
     },
     "pce:g:n:c:g:m": {
-        "bea_name": "Men's and boys' clothing (11)",
-        "table_row": 105,
-        "level": 5,
+        "long_name": "Men's and boys' clothing (11)",
+        "__row__": 105,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:c:g:m",
             "edan_simple": "qpcegncgm",
@@ -2625,9 +2625,9 @@
         }
     },
     "pce:g:n:c:g:c": {
-        "bea_name": "Children's and infants' clothing (12)",
-        "table_row": 106,
-        "level": 5,
+        "long_name": "Children's and infants' clothing (12)",
+        "__row__": 106,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:c:g:c",
             "edan_simple": "qpcegncgc",
@@ -2650,9 +2650,9 @@
         }
     },
     "pce:g:n:c:o": {
-        "bea_name": "Other clothing materials and footwear (13 and 17)",
-        "table_row": 107,
-        "level": 4,
+        "long_name": "Other clothing materials and footwear (13 and 17)",
+        "__row__": 107,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:n:c:o",
             "edan_simple": "qpcegnco",
@@ -2675,9 +2675,9 @@
         }
     },
     "pce:g:n:c:o:r": {
-        "bea_name": "Clothing materials",
-        "table_row": 108,
-        "level": 5,
+        "long_name": "Clothing materials",
+        "__row__": 108,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:c:o:r",
             "edan_simple": "qpcegncor",
@@ -2700,9 +2700,9 @@
         }
     },
     "pce:g:n:c:o:m": {
-        "bea_name": "Standard clothing issued to military personnel",
-        "table_row": 109,
-        "level": 5,
+        "long_name": "Standard clothing issued to military personnel",
+        "__row__": 109,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:c:o:m",
             "edan_simple": "qpcegncom",
@@ -2725,9 +2725,9 @@
         }
     },
     "pce:g:n:c:o:s": {
-        "bea_name": "Shoes and other footwear",
-        "table_row": 110,
-        "level": 5,
+        "long_name": "Shoes and other footwear",
+        "__row__": 110,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:c:o:s",
             "edan_simple": "qpcegncos",
@@ -2750,9 +2750,9 @@
         }
     },
     "pce:g:n:g": {
-        "bea_name": "Gasoline and other energy goods",
-        "table_row": 111,
-        "level": 3,
+        "long_name": "Gasoline and other energy goods",
+        "__row__": 111,
+        "__level__": 3,
         "quantity": {
             "edan": "qpce:g:n:g",
             "edan_simple": "qpcegng",
@@ -2775,9 +2775,9 @@
         }
     },
     "pce:g:n:g:v": {
-        "bea_name": "Motor vehicle fuels, lubricants, and fluids (59)",
-        "table_row": 112,
-        "level": 4,
+        "long_name": "Motor vehicle fuels, lubricants, and fluids (59)",
+        "__row__": 112,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:n:g:v",
             "edan_simple": "qpcegngv",
@@ -2800,9 +2800,9 @@
         }
     },
     "pce:g:n:g:v:g": {
-        "bea_name": "Gasoline and other motor fuel",
-        "table_row": 113,
-        "level": 5,
+        "long_name": "Gasoline and other motor fuel",
+        "__row__": 113,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:g:v:g",
             "edan_simple": "qpcegngvg",
@@ -2825,9 +2825,9 @@
         }
     },
     "pce:g:n:g:v:l": {
-        "bea_name": "Lubricants and fluids",
-        "table_row": 114,
-        "level": 5,
+        "long_name": "Lubricants and fluids",
+        "__row__": 114,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:g:v:l",
             "edan_simple": "qpcegngvl",
@@ -2850,9 +2850,9 @@
         }
     },
     "pce:g:n:g:f": {
-        "bea_name": "Fuel oil and other fuels (29)",
-        "table_row": 115,
-        "level": 4,
+        "long_name": "Fuel oil and other fuels (29)",
+        "__row__": 115,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:n:g:f",
             "edan_simple": "qpcegngf",
@@ -2875,9 +2875,9 @@
         }
     },
     "pce:g:n:g:f:f": {
-        "bea_name": "Fuel oil",
-        "table_row": 116,
-        "level": 5,
+        "long_name": "Fuel oil",
+        "__row__": 116,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:g:f:f",
             "edan_simple": "qpcegngff",
@@ -2900,9 +2900,9 @@
         }
     },
     "pce:g:n:g:f:o": {
-        "bea_name": "Other fuels",
-        "table_row": 117,
-        "level": 5,
+        "long_name": "Other fuels",
+        "__row__": 117,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:g:f:o",
             "edan_simple": "qpcegngfo",
@@ -2925,9 +2925,9 @@
         }
     },
     "pce:g:n:o": {
-        "bea_name": "Other nondurable goods",
-        "table_row": 118,
-        "level": 3,
+        "long_name": "Other nondurable goods",
+        "__row__": 118,
+        "__level__": 3,
         "quantity": {
             "edan": "qpce:g:n:o",
             "edan_simple": "qpcegno",
@@ -2950,9 +2950,9 @@
         }
     },
     "pce:g:n:o:m": {
-        "bea_name": "Pharmaceutical and other medical products (40 and 41)",
-        "table_row": 119,
-        "level": 4,
+        "long_name": "Pharmaceutical and other medical products (40 and 41)",
+        "__row__": 119,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:n:o:m",
             "edan_simple": "qpcegnom",
@@ -2975,9 +2975,9 @@
         }
     },
     "pce:g:n:o:m:p": {
-        "bea_name": "Pharmaceutical products",
-        "table_row": 120,
-        "level": 5,
+        "long_name": "Pharmaceutical products",
+        "__row__": 120,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:o:m:p",
             "edan_simple": "qpcegnomp",
@@ -3000,9 +3000,9 @@
         }
     },
     "pce:g:n:o:m:p:p": {
-        "bea_name": "Prescription drugs",
-        "table_row": 121,
-        "level": 6,
+        "long_name": "Prescription drugs",
+        "__row__": 121,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:n:o:m:p:p",
             "edan_simple": "qpcegnompp",
@@ -3025,9 +3025,9 @@
         }
     },
     "pce:g:n:o:m:p:n": {
-        "bea_name": "Nonprescription drugs",
-        "table_row": 122,
-        "level": 6,
+        "long_name": "Nonprescription drugs",
+        "__row__": 122,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:g:n:o:m:p:n",
             "edan_simple": "qpcegnompn",
@@ -3050,9 +3050,9 @@
         }
     },
     "pce:g:n:o:m:o": {
-        "bea_name": "Other medical products",
-        "table_row": 123,
-        "level": 5,
+        "long_name": "Other medical products",
+        "__row__": 123,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:o:m:o",
             "edan_simple": "qpcegnomo",
@@ -3075,9 +3075,9 @@
         }
     },
     "pce:g:n:o:r": {
-        "bea_name": "Recreational items (parts of 80, 92, and 93)",
-        "table_row": 124,
-        "level": 4,
+        "long_name": "Recreational items (parts of 80, 92, and 93)",
+        "__row__": 124,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:n:o:r",
             "edan_simple": "qpcegnor",
@@ -3100,9 +3100,9 @@
         }
     },
     "pce:g:n:o:r:g": {
-        "bea_name": "Games, toys, and hobbies",
-        "table_row": 125,
-        "level": 5,
+        "long_name": "Games, toys, and hobbies",
+        "__row__": 125,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:o:r:g",
             "edan_simple": "qpcegnorg",
@@ -3125,9 +3125,9 @@
         }
     },
     "pce:g:n:o:r:p": {
-        "bea_name": "Pets and related products",
-        "table_row": 126,
-        "level": 5,
+        "long_name": "Pets and related products",
+        "__row__": 126,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:o:r:p",
             "edan_simple": "qpcegnorp",
@@ -3150,9 +3150,9 @@
         }
     },
     "pce:g:n:o:r:f": {
-        "bea_name": "Flowers, seeds, and potted plants",
-        "table_row": 127,
-        "level": 5,
+        "long_name": "Flowers, seeds, and potted plants",
+        "__row__": 127,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:o:r:f",
             "edan_simple": "qpcegnorf",
@@ -3175,9 +3175,9 @@
         }
     },
     "pce:g:n:o:r:v": {
-        "bea_name": "Film and photographic supplies",
-        "table_row": 128,
-        "level": 5,
+        "long_name": "Film and photographic supplies",
+        "__row__": 128,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:o:r:v",
             "edan_simple": "qpcegnorv",
@@ -3200,9 +3200,9 @@
         }
     },
     "pce:g:n:o:h": {
-        "bea_name": "Household supplies (parts of 32 and 36)",
-        "table_row": 129,
-        "level": 4,
+        "long_name": "Household supplies (parts of 32 and 36)",
+        "__row__": 129,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:n:o:h",
             "edan_simple": "qpcegnoh",
@@ -3225,9 +3225,9 @@
         }
     },
     "pce:g:n:o:h:c": {
-        "bea_name": "Household cleaning products",
-        "table_row": 130,
-        "level": 5,
+        "long_name": "Household cleaning products",
+        "__row__": 130,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:o:h:c",
             "edan_simple": "qpcegnohc",
@@ -3250,9 +3250,9 @@
         }
     },
     "pce:g:n:o:h:p": {
-        "bea_name": "Household paper products",
-        "table_row": 131,
-        "level": 5,
+        "long_name": "Household paper products",
+        "__row__": 131,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:o:h:p",
             "edan_simple": "qpcegnohp",
@@ -3275,9 +3275,9 @@
         }
     },
     "pce:g:n:o:h:l": {
-        "bea_name": "Household linens",
-        "table_row": 132,
-        "level": 5,
+        "long_name": "Household linens",
+        "__row__": 132,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:o:h:l",
             "edan_simple": "qpcegnohl",
@@ -3300,9 +3300,9 @@
         }
     },
     "pce:g:n:o:h:s": {
-        "bea_name": "Sewing items",
-        "table_row": 133,
-        "level": 5,
+        "long_name": "Sewing items",
+        "__row__": 133,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:o:h:s",
             "edan_simple": "qpcegnohs",
@@ -3325,9 +3325,9 @@
         }
     },
     "pce:g:n:o:h:o": {
-        "bea_name": "Miscellaneous household products",
-        "table_row": 134,
-        "level": 5,
+        "long_name": "Miscellaneous household products",
+        "__row__": 134,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:o:h:o",
             "edan_simple": "qpcegnoho",
@@ -3350,9 +3350,9 @@
         }
     },
     "pce:g:n:o:c": {
-        "bea_name": "Personal care products (part of 118)",
-        "table_row": 135,
-        "level": 4,
+        "long_name": "Personal care products (part of 118)",
+        "__row__": 135,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:n:o:c",
             "edan_simple": "qpcegnoc",
@@ -3375,9 +3375,9 @@
         }
     },
     "pce:g:n:o:c:o": {
-        "bea_name": "Hair, dental, shaving, and miscellaneous personal care products except electrical products",
-        "table_row": 136,
-        "level": 5,
+        "long_name": "Hair, dental, shaving, and miscellaneous personal care products except electrical products",
+        "__row__": 136,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:o:c:o",
             "edan_simple": "qpcegnoco",
@@ -3400,9 +3400,9 @@
         }
     },
     "pce:g:n:o:c:c": {
-        "bea_name": "Cosmetic / perfumes / bath / nail preparations and implements",
-        "table_row": 137,
-        "level": 5,
+        "long_name": "Cosmetic / perfumes / bath / nail preparations and implements",
+        "__row__": 137,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:o:c:c",
             "edan_simple": "qpcegnocc",
@@ -3425,9 +3425,9 @@
         }
     },
     "pce:g:n:o:c:e": {
-        "bea_name": "Electric appliances for personal care",
-        "table_row": 138,
-        "level": 5,
+        "long_name": "Electric appliances for personal care",
+        "__row__": 138,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:o:c:e",
             "edan_simple": "qpcegnoce",
@@ -3450,9 +3450,9 @@
         }
     },
     "pce:g:n:o:t": {
-        "bea_name": "Tobacco (127)",
-        "table_row": 139,
-        "level": 4,
+        "long_name": "Tobacco (127)",
+        "__row__": 139,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:n:o:t",
             "edan_simple": "qpcegnot",
@@ -3475,9 +3475,9 @@
         }
     },
     "pce:g:n:o:s": {
-        "bea_name": "Magazines, newspapers, and stationery (part of 90)",
-        "table_row": 140,
-        "level": 4,
+        "long_name": "Magazines, newspapers, and stationery (part of 90)",
+        "__row__": 140,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:g:n:o:s",
             "edan_simple": "qpcegnos",
@@ -3500,9 +3500,9 @@
         }
     },
     "pce:g:n:o:s:n": {
-        "bea_name": "Newspapers and periodicals",
-        "table_row": 141,
-        "level": 5,
+        "long_name": "Newspapers and periodicals",
+        "__row__": 141,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:o:s:n",
             "edan_simple": "qpcegnosn",
@@ -3525,9 +3525,9 @@
         }
     },
     "pce:g:n:o:s:o": {
-        "bea_name": "Stationery and miscellaneous printed materials",
-        "table_row": 142,
-        "level": 5,
+        "long_name": "Stationery and miscellaneous printed materials",
+        "__row__": 142,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:o:s:o",
             "edan_simple": "qpcegnoso",
@@ -3550,9 +3550,9 @@
         }
     },
     "pce:g:n:o:a": {
-        "bea_name": "Net expenditures abroad by U.S. residents (131)",
-        "table_row": 143,
-        "level": 4,
+        "long_name": "Net expenditures abroad by U.S. residents (131)",
+        "__row__": 143,
+        "__level__": 4,
         "nominal": {
             "edan": "npce:g:n:o:a",
             "edan_simple": "npcegnoa",
@@ -3564,85 +3564,85 @@
             "bea": "niunderlyingdetail!u20406!dnfrrx"
         }
     },
-    "pce:g:n:o:a+r": {
-        "bea_name": "Expenditures abroad by U.S. residents",
-        "table_row": 144,
-        "level": 5,
+    "pce:g:n:o:a:r": {
+        "long_name": "Expenditures abroad by U.S. residents",
+        "__row__": 144,
+        "__level__": 5,
         "quantity": {
-            "edan": "qpce:g:n:o:a+r",
+            "edan": "qpce:g:n:o:a:r",
             "edan_simple": "qpcegnoar",
             "bea": "niunderlyingdetail!u20403!dabdra"
         },
         "price": {
-            "edan": "ppce:g:n:o:a+r",
+            "edan": "ppce:g:n:o:a:r",
             "edan_simple": "ppcegnoar",
             "bea": "niunderlyingdetail!u20404!dabdrg"
         },
         "nominal": {
-            "edan": "npce:g:n:o:a+r",
+            "edan": "npce:g:n:o:a:r",
             "edan_simple": "npcegnoar",
             "bea": "niunderlyingdetail!u20405!dabdrc"
         },
         "real": {
-            "edan": "rpce:g:n:o:a+r",
+            "edan": "rpce:g:n:o:a:r",
             "edan_simple": "rpcegnoar",
             "bea": "niunderlyingdetail!u20406!dabdrx"
         }
     },
-    "pce:g:n:o:a+r:g": {
-        "bea_name": "Government employees' expenditures abroad",
-        "table_row": 145,
-        "level": 6,
+    "pce:g:n:o:a:r:g": {
+        "long_name": "Government employees' expenditures abroad",
+        "__row__": 145,
+        "__level__": 6,
         "quantity": {
-            "edan": "qpce:g:n:o:a+r:g",
+            "edan": "qpce:g:n:o:a:r:g",
             "edan_simple": "qpcegnoarg",
             "bea": "niunderlyingdetail!u20403!dartra"
         },
         "price": {
-            "edan": "ppce:g:n:o:a+r:g",
+            "edan": "ppce:g:n:o:a:r:g",
             "edan_simple": "ppcegnoarg",
             "bea": "niunderlyingdetail!u20404!dartrg"
         },
         "nominal": {
-            "edan": "npce:g:n:o:a+r:g",
+            "edan": "npce:g:n:o:a:r:g",
             "edan_simple": "npcegnoarg",
             "bea": "niunderlyingdetail!u20405!dartrc"
         },
         "real": {
-            "edan": "rpce:g:n:o:a+r:g",
+            "edan": "rpce:g:n:o:a:r:g",
             "edan_simple": "rpcegnoarg",
             "bea": "niunderlyingdetail!u20406!dartrx"
         }
     },
-    "pce:g:n:o:a+r:p": {
-        "bea_name": "Private employees' expenditures abroad",
-        "table_row": 146,
-        "level": 6,
+    "pce:g:n:o:a:r:p": {
+        "long_name": "Private employees' expenditures abroad",
+        "__row__": 146,
+        "__level__": 6,
         "quantity": {
-            "edan": "qpce:g:n:o:a+r:p",
+            "edan": "qpce:g:n:o:a:r:p",
             "edan_simple": "qpcegnoarp",
             "bea": "niunderlyingdetail!u20403!darsra"
         },
         "price": {
-            "edan": "ppce:g:n:o:a+r:p",
+            "edan": "ppce:g:n:o:a:r:p",
             "edan_simple": "ppcegnoarp",
             "bea": "niunderlyingdetail!u20404!darsrg"
         },
         "nominal": {
-            "edan": "npce:g:n:o:a+r:p",
+            "edan": "npce:g:n:o:a:r:p",
             "edan_simple": "npcegnoarp",
             "bea": "niunderlyingdetail!u20405!darsrc"
         },
         "real": {
-            "edan": "rpce:g:n:o:a+r:p",
+            "edan": "rpce:g:n:o:a:r:p",
             "edan_simple": "rpcegnoarp",
             "bea": "niunderlyingdetail!u20406!darsrx"
         }
     },
     "pce:g:n:o:a~l": {
-        "bea_name": "Less: Personal remittances in kind to nonresidents",
-        "table_row": 147,
-        "level": 5,
+        "long_name": "Less: Personal remittances in kind to nonresidents",
+        "__row__": 147,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:g:n:o:a~l",
             "edan_simple": "qpcegnoal",
@@ -3665,9 +3665,9 @@
         }
     },
     "pce:s": {
-        "bea_name": "Services",
-        "table_row": 148,
-        "level": 1,
+        "long_name": "Services",
+        "__row__": 148,
+        "__level__": 1,
         "quantity": {
             "edan": "qpce:s",
             "edan_simple": "qpces",
@@ -3690,9 +3690,9 @@
         }
     },
     "pce:s:h": {
-        "bea_name": "Household consumption expenditures (for services)",
-        "table_row": 149,
-        "level": 2,
+        "long_name": "Household consumption expenditures (for services)",
+        "__row__": 149,
+        "__level__": 2,
         "quantity": {
             "edan": "qpce:s:h",
             "edan_simple": "qpcesh",
@@ -3715,9 +3715,9 @@
         }
     },
     "pce:s:h:h": {
-        "bea_name": "Housing and utilities",
-        "table_row": 150,
-        "level": 3,
+        "long_name": "Housing and utilities",
+        "__row__": 150,
+        "__level__": 3,
         "quantity": {
             "edan": "qpce:s:h:h",
             "edan_simple": "qpceshh",
@@ -3740,9 +3740,9 @@
         }
     },
     "pce:s:h:h:h": {
-        "bea_name": "Housing",
-        "table_row": 151,
-        "level": 4,
+        "long_name": "Housing",
+        "__row__": 151,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:h:h:h",
             "edan_simple": "qpceshhh",
@@ -3765,9 +3765,9 @@
         }
     },
     "pce:s:h:h:h:r": {
-        "bea_name": "Rental of tenant-occupied nonfarm housing (20)",
-        "table_row": 152,
-        "level": 5,
+        "long_name": "Rental of tenant-occupied nonfarm housing (20)",
+        "__row__": 152,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:h:h:r",
             "edan_simple": "qpceshhhr",
@@ -3790,9 +3790,9 @@
         }
     },
     "pce:s:h:h:h:r:m": {
-        "bea_name": "Tenant-occupied mobile homes",
-        "table_row": 153,
-        "level": 6,
+        "long_name": "Tenant-occupied mobile homes",
+        "__row__": 153,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:h:h:r:m",
             "edan_simple": "qpceshhhrm",
@@ -3815,9 +3815,9 @@
         }
     },
     "pce:s:h:h:h:r:s": {
-        "bea_name": "Tenant-occupied stationary homes",
-        "table_row": 154,
-        "level": 6,
+        "long_name": "Tenant-occupied stationary homes",
+        "__row__": 154,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:h:h:r:s",
             "edan_simple": "qpceshhhrs",
@@ -3840,9 +3840,9 @@
         }
     },
     "pce:s:h:h:h:r:d": {
-        "bea_name": "Tenant landlord durables",
-        "table_row": 155,
-        "level": 6,
+        "long_name": "Tenant landlord durables",
+        "__row__": 155,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:h:h:r:d",
             "edan_simple": "qpceshhhrd",
@@ -3865,9 +3865,9 @@
         }
     },
     "pce:s:h:h:h:o": {
-        "bea_name": "Imputed rental of owner-occupied nonfarm housing (21)",
-        "table_row": 156,
-        "level": 5,
+        "long_name": "Imputed rental of owner-occupied nonfarm housing (21)",
+        "__row__": 156,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:h:h:o",
             "edan_simple": "qpceshhho",
@@ -3890,9 +3890,9 @@
         }
     },
     "pce:s:h:h:h:o:m": {
-        "bea_name": "Owner-occupied mobile homes",
-        "table_row": 157,
-        "level": 6,
+        "long_name": "Owner-occupied mobile homes",
+        "__row__": 157,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:h:h:o:m",
             "edan_simple": "qpceshhhom",
@@ -3915,9 +3915,9 @@
         }
     },
     "pce:s:h:h:h:o:s": {
-        "bea_name": "Owner-occupied stationary homes",
-        "table_row": 158,
-        "level": 6,
+        "long_name": "Owner-occupied stationary homes",
+        "__row__": 158,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:h:h:o:s",
             "edan_simple": "qpceshhhos",
@@ -3940,9 +3940,9 @@
         }
     },
     "pce:s:h:h:h:f": {
-        "bea_name": "Rental value of farm dwellings (22)",
-        "table_row": 159,
-        "level": 5,
+        "long_name": "Rental value of farm dwellings (22)",
+        "__row__": 159,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:h:h:f",
             "edan_simple": "qpceshhhf",
@@ -3965,9 +3965,9 @@
         }
     },
     "pce:s:h:h:h:g": {
-        "bea_name": "Group housing (23)",
-        "table_row": 160,
-        "level": 5,
+        "long_name": "Group housing (23)",
+        "__row__": 160,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:h:h:g",
             "edan_simple": "qpceshhhg",
@@ -3990,9 +3990,9 @@
         }
     },
     "pce:s:h:h:u": {
-        "bea_name": "Household utilities",
-        "table_row": 161,
-        "level": 4,
+        "long_name": "Household utilities",
+        "__row__": 161,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:h:h:u",
             "edan_simple": "qpceshhu",
@@ -4015,9 +4015,9 @@
         }
     },
     "pce:s:h:h:u:w": {
-        "bea_name": "Water supply and sanitation (25)",
-        "table_row": 162,
-        "level": 5,
+        "long_name": "Water supply and sanitation (25)",
+        "__row__": 162,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:h:u:w",
             "edan_simple": "qpceshhuw",
@@ -4040,9 +4040,9 @@
         }
     },
     "pce:s:h:h:u:w:s": {
-        "bea_name": "Water supply and sewage maintenance",
-        "table_row": 163,
-        "level": 6,
+        "long_name": "Water supply and sewage maintenance",
+        "__row__": 163,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:h:u:w:s",
             "edan_simple": "qpceshhuws",
@@ -4065,9 +4065,9 @@
         }
     },
     "pce:s:h:h:u:w:g": {
-        "bea_name": "Garbage and trash collection",
-        "table_row": 164,
-        "level": 6,
+        "long_name": "Garbage and trash collection",
+        "__row__": 164,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:h:u:w:g",
             "edan_simple": "qpceshhuwg",
@@ -4090,9 +4090,9 @@
         }
     },
     "pce:s:h:h:u:e": {
-        "bea_name": "Electricity and gas",
-        "table_row": 165,
-        "level": 5,
+        "long_name": "Electricity and gas",
+        "__row__": 165,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:h:u:e",
             "edan_simple": "qpceshhue",
@@ -4115,9 +4115,9 @@
         }
     },
     "pce:s:h:h:u:e:e": {
-        "bea_name": "Electricity (27)",
-        "table_row": 166,
-        "level": 6,
+        "long_name": "Electricity (27)",
+        "__row__": 166,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:h:u:e:e",
             "edan_simple": "qpceshhuee",
@@ -4140,9 +4140,9 @@
         }
     },
     "pce:s:h:h:u:e:g": {
-        "bea_name": "Natural gas (28)",
-        "table_row": 167,
-        "level": 6,
+        "long_name": "Natural gas (28)",
+        "__row__": 167,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:h:u:e:g",
             "edan_simple": "qpceshhueg",
@@ -4165,9 +4165,9 @@
         }
     },
     "pce:s:h:c": {
-        "bea_name": "Health care",
-        "table_row": 168,
-        "level": 3,
+        "long_name": "Health care",
+        "__row__": 168,
+        "__level__": 3,
         "quantity": {
             "edan": "qpce:s:h:c",
             "edan_simple": "qpceshc",
@@ -4190,9 +4190,9 @@
         }
     },
     "pce:s:h:c:o": {
-        "bea_name": "Outpatient services",
-        "table_row": 169,
-        "level": 4,
+        "long_name": "Outpatient services",
+        "__row__": 169,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:h:c:o",
             "edan_simple": "qpceshco",
@@ -4215,9 +4215,9 @@
         }
     },
     "pce:s:h:c:o:d": {
-        "bea_name": "Physician services (44)",
-        "table_row": 170,
-        "level": 5,
+        "long_name": "Physician services (44)",
+        "__row__": 170,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:c:o:d",
             "edan_simple": "qpceshcod",
@@ -4240,9 +4240,9 @@
         }
     },
     "pce:s:h:c:o:t": {
-        "bea_name": "Dental services (45)",
-        "table_row": 171,
-        "level": 5,
+        "long_name": "Dental services (45)",
+        "__row__": 171,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:c:o:t",
             "edan_simple": "qpceshcot",
@@ -4265,9 +4265,9 @@
         }
     },
     "pce:s:h:c:o:p": {
-        "bea_name": "Paramedical services (46)",
-        "table_row": 172,
-        "level": 5,
+        "long_name": "Paramedical services (46)",
+        "__row__": 172,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:c:o:p",
             "edan_simple": "qpceshcop",
@@ -4290,9 +4290,9 @@
         }
     },
     "pce:s:h:c:o:p:h": {
-        "bea_name": "Home health care",
-        "table_row": 173,
-        "level": 6,
+        "long_name": "Home health care",
+        "__row__": 173,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:c:o:p:h",
             "edan_simple": "qpceshcoph",
@@ -4315,9 +4315,9 @@
         }
     },
     "pce:s:h:c:o:p:l": {
-        "bea_name": "Medical laboratories",
-        "table_row": 174,
-        "level": 6,
+        "long_name": "Medical laboratories",
+        "__row__": 174,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:c:o:p:l",
             "edan_simple": "qpceshcopl",
@@ -4340,9 +4340,9 @@
         }
     },
     "pce:s:h:c:o:p:o": {
-        "bea_name": "Other professional medical services",
-        "table_row": 175,
-        "level": 6,
+        "long_name": "Other professional medical services",
+        "__row__": 175,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:c:o:p:o",
             "edan_simple": "qpceshcopo",
@@ -4365,9 +4365,9 @@
         }
     },
     "pce:s:h:c:o:p:o:s": {
-        "bea_name": "Specialty outpatient care facilities and health and allied services",
-        "table_row": 176,
-        "level": 7,
+        "long_name": "Specialty outpatient care facilities and health and allied services",
+        "__row__": 176,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:s:h:c:o:p:o:s",
             "edan_simple": "qpceshcopos",
@@ -4390,9 +4390,9 @@
         }
     },
     "pce:s:h:c:o:p:o:o": {
-        "bea_name": "All other professional medical services",
-        "table_row": 177,
-        "level": 7,
+        "long_name": "All other professional medical services",
+        "__row__": 177,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:s:h:c:o:p:o:o",
             "edan_simple": "qpceshcopoo",
@@ -4415,9 +4415,9 @@
         }
     },
     "pce:s:h:c:h": {
-        "bea_name": "Hospital and nursing home services",
-        "table_row": 178,
-        "level": 4,
+        "long_name": "Hospital and nursing home services",
+        "__row__": 178,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:h:c:h",
             "edan_simple": "qpceshch",
@@ -4440,9 +4440,9 @@
         }
     },
     "pce:s:h:c:h:h": {
-        "bea_name": "Hospitals (51)",
-        "table_row": 179,
-        "level": 5,
+        "long_name": "Hospitals (51)",
+        "__row__": 179,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:c:h:h",
             "edan_simple": "qpceshchh",
@@ -4465,9 +4465,9 @@
         }
     },
     "pce:s:h:c:h:h:n": {
-        "bea_name": "Nonprofit hospitals' services to households",
-        "table_row": 180,
-        "level": 6,
+        "long_name": "Nonprofit hospitals' services to households",
+        "__row__": 180,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:c:h:h:n",
             "edan_simple": "qpceshchhn",
@@ -4490,9 +4490,9 @@
         }
     },
     "pce:s:h:c:h:h:p": {
-        "bea_name": "Proprietary hospitals",
-        "table_row": 181,
-        "level": 6,
+        "long_name": "Proprietary hospitals",
+        "__row__": 181,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:c:h:h:p",
             "edan_simple": "qpceshchhp",
@@ -4515,9 +4515,9 @@
         }
     },
     "pce:s:h:c:h:h:g": {
-        "bea_name": "Government hospitals",
-        "table_row": 182,
-        "level": 6,
+        "long_name": "Government hospitals",
+        "__row__": 182,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:c:h:h:g",
             "edan_simple": "qpceshchhg",
@@ -4540,9 +4540,9 @@
         }
     },
     "pce:s:h:c:h:n": {
-        "bea_name": "Nursing homes (52)",
-        "table_row": 183,
-        "level": 5,
+        "long_name": "Nursing homes (52)",
+        "__row__": 183,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:c:h:n",
             "edan_simple": "qpceshchn",
@@ -4565,9 +4565,9 @@
         }
     },
     "pce:s:h:c:h:n:n": {
-        "bea_name": "Nonprofit nursing homes' services to households",
-        "table_row": 184,
-        "level": 6,
+        "long_name": "Nonprofit nursing homes' services to households",
+        "__row__": 184,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:c:h:n:n",
             "edan_simple": "qpceshchnn",
@@ -4590,9 +4590,9 @@
         }
     },
     "pce:s:h:c:h:n:p": {
-        "bea_name": "Proprietary and government nursing homes",
-        "table_row": 185,
-        "level": 6,
+        "long_name": "Proprietary and government nursing homes",
+        "__row__": 185,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:c:h:n:p",
             "edan_simple": "qpceshchnp",
@@ -4615,9 +4615,9 @@
         }
     },
     "pce:s:h:t": {
-        "bea_name": "Transportation services",
-        "table_row": 186,
-        "level": 3,
+        "long_name": "Transportation services",
+        "__row__": 186,
+        "__level__": 3,
         "quantity": {
             "edan": "qpce:s:h:t",
             "edan_simple": "qpcesht",
@@ -4640,9 +4640,9 @@
         }
     },
     "pce:s:h:t:v": {
-        "bea_name": "Motor vehicle services",
-        "table_row": 187,
-        "level": 4,
+        "long_name": "Motor vehicle services",
+        "__row__": 187,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:h:t:v",
             "edan_simple": "qpceshtv",
@@ -4665,9 +4665,9 @@
         }
     },
     "pce:s:h:t:v:m": {
-        "bea_name": "Motor vehicle maintenance and repair (60)",
-        "table_row": 188,
-        "level": 5,
+        "long_name": "Motor vehicle maintenance and repair (60)",
+        "__row__": 188,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:t:v:m",
             "edan_simple": "qpceshtvm",
@@ -4690,9 +4690,9 @@
         }
     },
     "pce:s:h:t:v:o": {
-        "bea_name": "Other motor vehicle services (61)",
-        "table_row": 189,
-        "level": 5,
+        "long_name": "Other motor vehicle services (61)",
+        "__row__": 189,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:t:v:o",
             "edan_simple": "qpceshtvo",
@@ -4715,9 +4715,9 @@
         }
     },
     "pce:s:h:t:v:o:l": {
-        "bea_name": "Motor vehicle leasing",
-        "table_row": 190,
-        "level": 6,
+        "long_name": "Motor vehicle leasing",
+        "__row__": 190,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:t:v:o:l",
             "edan_simple": "qpceshtvol",
@@ -4740,9 +4740,9 @@
         }
     },
     "pce:s:h:t:v:o:l:a": {
-        "bea_name": "Auto leasing",
-        "table_row": 191,
-        "level": 7,
+        "long_name": "Auto leasing",
+        "__row__": 191,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:s:h:t:v:o:l:a",
             "edan_simple": "qpceshtvola",
@@ -4765,9 +4765,9 @@
         }
     },
     "pce:s:h:t:v:o:l:t": {
-        "bea_name": "Truck leasing",
-        "table_row": 192,
-        "level": 7,
+        "long_name": "Truck leasing",
+        "__row__": 192,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:s:h:t:v:o:l:t",
             "edan_simple": "qpceshtvolt",
@@ -4790,9 +4790,9 @@
         }
     },
     "pce:s:h:t:v:o:r": {
-        "bea_name": "Motor vehicle rental",
-        "table_row": 193,
-        "level": 6,
+        "long_name": "Motor vehicle rental",
+        "__row__": 193,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:t:v:o:r",
             "edan_simple": "qpceshtvor",
@@ -4815,9 +4815,9 @@
         }
     },
     "pce:s:h:t:v:o:f": {
-        "bea_name": "Parking fees and tolls",
-        "table_row": 194,
-        "level": 6,
+        "long_name": "Parking fees and tolls",
+        "__row__": 194,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:t:v:o:f",
             "edan_simple": "qpceshtvof",
@@ -4840,9 +4840,9 @@
         }
     },
     "pce:s:h:t:p": {
-        "bea_name": "Public transportation",
-        "table_row": 195,
-        "level": 4,
+        "long_name": "Public transportation",
+        "__row__": 195,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:h:t:p",
             "edan_simple": "qpceshtp",
@@ -4865,9 +4865,9 @@
         }
     },
     "pce:s:h:t:p:g": {
-        "bea_name": "Ground transportation (63)",
-        "table_row": 196,
-        "level": 5,
+        "long_name": "Ground transportation (63)",
+        "__row__": 196,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:t:p:g",
             "edan_simple": "qpceshtpg",
@@ -4890,9 +4890,9 @@
         }
     },
     "pce:s:h:t:p:g:t": {
-        "bea_name": "Railway transportation",
-        "table_row": 197,
-        "level": 6,
+        "long_name": "Railway transportation",
+        "__row__": 197,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:t:p:g:t",
             "edan_simple": "qpceshtpgt",
@@ -4915,9 +4915,9 @@
         }
     },
     "pce:s:h:t:p:g:r": {
-        "bea_name": "Road transportation",
-        "table_row": 198,
-        "level": 6,
+        "long_name": "Road transportation",
+        "__row__": 198,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:t:p:g:r",
             "edan_simple": "qpceshtpgr",
@@ -4940,9 +4940,9 @@
         }
     },
     "pce:s:h:t:p:g:r:b": {
-        "bea_name": "Intercity buses",
-        "table_row": 199,
-        "level": 7,
+        "long_name": "Intercity buses",
+        "__row__": 199,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:s:h:t:p:g:r:b",
             "edan_simple": "qpceshtpgrb",
@@ -4965,9 +4965,9 @@
         }
     },
     "pce:s:h:t:p:g:r:t": {
-        "bea_name": "Taxicabs and ride sharing services",
-        "table_row": 200,
-        "level": 7,
+        "long_name": "Taxicabs and ride sharing services",
+        "__row__": 200,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:s:h:t:p:g:r:t",
             "edan_simple": "qpceshtpgrt",
@@ -4990,9 +4990,9 @@
         }
     },
     "pce:s:h:t:p:g:r:m": {
-        "bea_name": "Intracity mass transit",
-        "table_row": 201,
-        "level": 7,
+        "long_name": "Intracity mass transit",
+        "__row__": 201,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:s:h:t:p:g:r:m",
             "edan_simple": "qpceshtpgrm",
@@ -5015,9 +5015,9 @@
         }
     },
     "pce:s:h:t:p:g:r:o": {
-        "bea_name": "Other road transportation service",
-        "table_row": 202,
-        "level": 7,
+        "long_name": "Other road transportation service",
+        "__row__": 202,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:s:h:t:p:g:r:o",
             "edan_simple": "qpceshtpgro",
@@ -5040,9 +5040,9 @@
         }
     },
     "pce:s:h:t:p:a": {
-        "bea_name": "Air transportation (64)",
-        "table_row": 203,
-        "level": 5,
+        "long_name": "Air transportation (64)",
+        "__row__": 203,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:t:p:a",
             "edan_simple": "qpceshtpa",
@@ -5065,9 +5065,9 @@
         }
     },
     "pce:s:h:t:p:w": {
-        "bea_name": "Water transportation (65)",
-        "table_row": 204,
-        "level": 5,
+        "long_name": "Water transportation (65)",
+        "__row__": 204,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:t:p:w",
             "edan_simple": "qpceshtpw",
@@ -5090,9 +5090,9 @@
         }
     },
     "pce:s:h:r": {
-        "bea_name": "Recreation services",
-        "table_row": 205,
-        "level": 3,
+        "long_name": "Recreation services",
+        "__row__": 205,
+        "__level__": 3,
         "quantity": {
             "edan": "qpce:s:h:r",
             "edan_simple": "qpceshr",
@@ -5115,9 +5115,9 @@
         }
     },
     "pce:s:h:r:c": {
-        "bea_name": "Membership clubs, sports centers, parks, theaters, and museums (82)",
-        "table_row": 206,
-        "level": 4,
+        "long_name": "Membership clubs, sports centers, parks, theaters, and museums (82)",
+        "__row__": 206,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:h:r:c",
             "edan_simple": "qpceshrc",
@@ -5140,9 +5140,9 @@
         }
     },
     "pce:s:h:r:c:m": {
-        "bea_name": "Membership clubs and participant sports centers",
-        "table_row": 207,
-        "level": 5,
+        "long_name": "Membership clubs and participant sports centers",
+        "__row__": 207,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:r:c:m",
             "edan_simple": "qpceshrcm",
@@ -5165,9 +5165,9 @@
         }
     },
     "pce:s:h:r:c:p": {
-        "bea_name": "Amusement parks, campgrounds, and related recreational services",
-        "table_row": 208,
-        "level": 5,
+        "long_name": "Amusement parks, campgrounds, and related recreational services",
+        "__row__": 208,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:r:c:p",
             "edan_simple": "qpceshrcp",
@@ -5190,9 +5190,9 @@
         }
     },
     "pce:s:h:r:c:a": {
-        "bea_name": "Admissions to specified spectator amusements",
-        "table_row": 209,
-        "level": 5,
+        "long_name": "Admissions to specified spectator amusements",
+        "__row__": 209,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:r:c:a",
             "edan_simple": "qpceshrca",
@@ -5215,9 +5215,9 @@
         }
     },
     "pce:s:h:r:c:a:t": {
-        "bea_name": "Motion picture theaters",
-        "table_row": 210,
-        "level": 6,
+        "long_name": "Motion picture theaters",
+        "__row__": 210,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:r:c:a:t",
             "edan_simple": "qpceshrcat",
@@ -5240,9 +5240,9 @@
         }
     },
     "pce:s:h:r:c:a:l": {
-        "bea_name": "Live entertainment, excluding sports",
-        "table_row": 211,
-        "level": 6,
+        "long_name": "Live entertainment, excluding sports",
+        "__row__": 211,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:r:c:a:l",
             "edan_simple": "qpceshrcal",
@@ -5265,9 +5265,9 @@
         }
     },
     "pce:s:h:r:c:a:s": {
-        "bea_name": "Spectator sports",
-        "table_row": 212,
-        "level": 6,
+        "long_name": "Spectator sports",
+        "__row__": 212,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:r:c:a:s",
             "edan_simple": "qpceshrcas",
@@ -5290,9 +5290,9 @@
         }
     },
     "pce:s:h:r:c:l": {
-        "bea_name": "Museums and libraries",
-        "table_row": 213,
-        "level": 5,
+        "long_name": "Museums and libraries",
+        "__row__": 213,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:r:c:l",
             "edan_simple": "qpceshrcl",
@@ -5315,9 +5315,9 @@
         }
     },
     "pce:s:h:r:v": {
-        "bea_name": "Audio-video, photographic, and information processing equipment services (parts of 77 and 93)",
-        "table_row": 214,
-        "level": 4,
+        "long_name": "Audio-video, photographic, and information processing equipment services (parts of 77 and 93)",
+        "__row__": 214,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:h:r:v",
             "edan_simple": "qpceshrv",
@@ -5340,9 +5340,9 @@
         }
     },
     "pce:s:h:r:v:t": {
-        "bea_name": "Cable, satellite, and other live television services",
-        "table_row": 215,
-        "level": 5,
+        "long_name": "Cable, satellite, and other live television services",
+        "__row__": 215,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:r:v:t",
             "edan_simple": "qpceshrvt",
@@ -5365,9 +5365,9 @@
         }
     },
     "pce:s:h:r:v:p": {
-        "bea_name": "Photo processing",
-        "table_row": 216,
-        "level": 5,
+        "long_name": "Photo processing",
+        "__row__": 216,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:r:v:p",
             "edan_simple": "qpceshrvp",
@@ -5390,9 +5390,9 @@
         }
     },
     "pce:s:h:r:v:s": {
-        "bea_name": "Photo studios",
-        "table_row": 217,
-        "level": 5,
+        "long_name": "Photo studios",
+        "__row__": 217,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:r:v:s",
             "edan_simple": "qpceshrvs",
@@ -5415,9 +5415,9 @@
         }
     },
     "pce:s:h:r:v:r": {
-        "bea_name": "Repair and rental of audio-visual, photographic, and information processing equipment",
-        "table_row": 218,
-        "level": 5,
+        "long_name": "Repair and rental of audio-visual, photographic, and information processing equipment",
+        "__row__": 218,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:r:v:r",
             "edan_simple": "qpceshrvr",
@@ -5440,9 +5440,9 @@
         }
     },
     "pce:s:h:r:v:v": {
-        "bea_name": "Video and audio streaming and rental",
-        "table_row": 219,
-        "level": 5,
+        "long_name": "Video and audio streaming and rental",
+        "__row__": 219,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:r:v:v",
             "edan_simple": "qpceshrvv",
@@ -5465,9 +5465,9 @@
         }
     },
     "pce:s:h:r:v:v:v": {
-        "bea_name": "Video streaming and rental",
-        "table_row": 220,
-        "level": 6,
+        "long_name": "Video streaming and rental",
+        "__row__": 220,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:r:v:v:v",
             "edan_simple": "qpceshrvvv",
@@ -5490,9 +5490,9 @@
         }
     },
     "pce:s:h:r:v:v:a": {
-        "bea_name": "Audio streaming and radio services (including satellite radio)",
-        "table_row": 221,
-        "level": 6,
+        "long_name": "Audio streaming and radio services (including satellite radio)",
+        "__row__": 221,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:r:v:v:a",
             "edan_simple": "qpceshrvva",
@@ -5515,9 +5515,9 @@
         }
     },
     "pce:s:h:r:g": {
-        "bea_name": "Gambling (91)",
-        "table_row": 222,
-        "level": 4,
+        "long_name": "Gambling (91)",
+        "__row__": 222,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:h:r:g",
             "edan_simple": "qpceshrg",
@@ -5540,9 +5540,9 @@
         }
     },
     "pce:s:h:r:g:c": {
-        "bea_name": "Casino gambling",
-        "table_row": 223,
-        "level": 5,
+        "long_name": "Casino gambling",
+        "__row__": 223,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:r:g:c",
             "edan_simple": "qpceshrgc",
@@ -5565,9 +5565,9 @@
         }
     },
     "pce:s:h:r:g:l": {
-        "bea_name": "Lotteries",
-        "table_row": 224,
-        "level": 5,
+        "long_name": "Lotteries",
+        "__row__": 224,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:r:g:l",
             "edan_simple": "qpceshrgl",
@@ -5590,9 +5590,9 @@
         }
     },
     "pce:s:h:r:g:p": {
-        "bea_name": "Pari-mutuel net receipts",
-        "table_row": 225,
-        "level": 5,
+        "long_name": "Pari-mutuel net receipts",
+        "__row__": 225,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:r:g:p",
             "edan_simple": "qpceshrgp",
@@ -5615,9 +5615,9 @@
         }
     },
     "pce:s:h:r:o": {
-        "bea_name": "Other recreational services (81, 94, and part of 92)",
-        "table_row": 226,
-        "level": 4,
+        "long_name": "Other recreational services (81, 94, and part of 92)",
+        "__row__": 226,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:h:r:o",
             "edan_simple": "qpceshro",
@@ -5640,9 +5640,9 @@
         }
     },
     "pce:s:h:r:o:p": {
-        "bea_name": "Veterinary and other services for pets",
-        "table_row": 227,
-        "level": 5,
+        "long_name": "Veterinary and other services for pets",
+        "__row__": 227,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:r:o:p",
             "edan_simple": "qpceshrop",
@@ -5665,9 +5665,9 @@
         }
     },
     "pce:s:h:r:o:t": {
-        "bea_name": "Package tours",
-        "table_row": 228,
-        "level": 5,
+        "long_name": "Package tours",
+        "__row__": 228,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:r:o:t",
             "edan_simple": "qpceshrot",
@@ -5690,9 +5690,9 @@
         }
     },
     "pce:s:h:r:o:v": {
-        "bea_name": "Maintenance and repair of recreational vehicles and sports equipment",
-        "table_row": 229,
-        "level": 5,
+        "long_name": "Maintenance and repair of recreational vehicles and sports equipment",
+        "__row__": 229,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:r:o:v",
             "edan_simple": "qpceshrov",
@@ -5715,9 +5715,9 @@
         }
     },
     "pce:s:h:f": {
-        "bea_name": "Food services and accommodations",
-        "table_row": 230,
-        "level": 3,
+        "long_name": "Food services and accommodations",
+        "__row__": 230,
+        "__level__": 3,
         "quantity": {
             "edan": "qpce:s:h:f",
             "edan_simple": "qpceshf",
@@ -5740,9 +5740,9 @@
         }
     },
     "pce:s:h:f:f": {
-        "bea_name": "Food services",
-        "table_row": 231,
-        "level": 4,
+        "long_name": "Food services",
+        "__row__": 231,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:h:f:f",
             "edan_simple": "qpceshff",
@@ -5765,9 +5765,9 @@
         }
     },
     "pce:s:h:f:f:p": {
-        "bea_name": "Purchased meals and beverages (102)",
-        "table_row": 232,
-        "level": 5,
+        "long_name": "Purchased meals and beverages (102)",
+        "__row__": 232,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:f:f:p",
             "edan_simple": "qpceshffp",
@@ -5790,9 +5790,9 @@
         }
     },
     "pce:s:h:f:f:p:m": {
-        "bea_name": "Meals and nonalcoholic beverages",
-        "table_row": 233,
-        "level": 6,
+        "long_name": "Meals and nonalcoholic beverages",
+        "__row__": 233,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:f:f:p:m",
             "edan_simple": "qpceshffpm",
@@ -5815,9 +5815,9 @@
         }
     },
     "pce:s:h:f:f:p:m:s": {
-        "bea_name": "Meals at schools",
-        "table_row": 234,
-        "level": 7,
+        "long_name": "Meals at schools",
+        "__row__": 234,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:s:h:f:f:p:m:s",
             "edan_simple": "qpceshffpms",
@@ -5840,9 +5840,9 @@
         }
     },
     "pce:s:h:f:f:p:m:s:e": {
-        "bea_name": "Elementary and secondary school lunches",
-        "table_row": 235,
-        "level": 8,
+        "long_name": "Elementary and secondary school lunches",
+        "__row__": 235,
+        "__level__": 8,
         "quantity": {
             "edan": "qpce:s:h:f:f:p:m:s:e",
             "edan_simple": "qpceshffpmse",
@@ -5865,9 +5865,9 @@
         }
     },
     "pce:s:h:f:f:p:m:s:h": {
-        "bea_name": "Higher education school lunches",
-        "table_row": 236,
-        "level": 8,
+        "long_name": "Higher education school lunches",
+        "__row__": 236,
+        "__level__": 8,
         "quantity": {
             "edan": "qpce:s:h:f:f:p:m:s:h",
             "edan_simple": "qpceshffpmsh",
@@ -5890,9 +5890,9 @@
         }
     },
     "pce:s:h:f:f:p:m:o": {
-        "bea_name": "Other purchased meals",
-        "table_row": 237,
-        "level": 7,
+        "long_name": "Other purchased meals",
+        "__row__": 237,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:s:h:f:f:p:m:o",
             "edan_simple": "qpceshffpmo",
@@ -5915,9 +5915,9 @@
         }
     },
     "pce:s:h:f:f:p:m:o:l": {
-        "bea_name": "Meals at limited service eating places",
-        "table_row": 238,
-        "level": 8,
+        "long_name": "Meals at limited service eating places",
+        "__row__": 238,
+        "__level__": 8,
         "quantity": {
             "edan": "qpce:s:h:f:f:p:m:o:l",
             "edan_simple": "qpceshffpmol",
@@ -5940,9 +5940,9 @@
         }
     },
     "pce:s:h:f:f:p:m:o:o": {
-        "bea_name": "Meals at other eating places",
-        "table_row": 239,
-        "level": 8,
+        "long_name": "Meals at other eating places",
+        "__row__": 239,
+        "__level__": 8,
         "quantity": {
             "edan": "qpce:s:h:f:f:p:m:o:o",
             "edan_simple": "qpceshffpmoo",
@@ -5965,9 +5965,9 @@
         }
     },
     "pce:s:h:f:f:p:m:o:d": {
-        "bea_name": "Meals at drinking places",
-        "table_row": 240,
-        "level": 8,
+        "long_name": "Meals at drinking places",
+        "__row__": 240,
+        "__level__": 8,
         "quantity": {
             "edan": "qpce:s:h:f:f:p:m:o:d",
             "edan_simple": "qpceshffpmod",
@@ -5990,9 +5990,9 @@
         }
     },
     "pce:s:h:f:f:p:a": {
-        "bea_name": "Alcohol in purchased meals",
-        "table_row": 241,
-        "level": 6,
+        "long_name": "Alcohol in purchased meals",
+        "__row__": 241,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:f:f:p:a",
             "edan_simple": "qpceshffpa",
@@ -6015,9 +6015,9 @@
         }
     },
     "pce:s:h:f:f:e": {
-        "bea_name": "Food furnished to employees (including military) (103)",
-        "table_row": 242,
-        "level": 5,
+        "long_name": "Food furnished to employees (including military) (103)",
+        "__row__": 242,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:f:f:e",
             "edan_simple": "qpceshffe",
@@ -6040,9 +6040,9 @@
         }
     },
     "pce:s:h:f:f:e:c": {
-        "bea_name": "Food supplied to civilians",
-        "table_row": 243,
-        "level": 6,
+        "long_name": "Food supplied to civilians",
+        "__row__": 243,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:f:f:e:c",
             "edan_simple": "qpceshffec",
@@ -6065,9 +6065,9 @@
         }
     },
     "pce:s:h:f:f:e:m": {
-        "bea_name": "Food supplied to military",
-        "table_row": 244,
-        "level": 6,
+        "long_name": "Food supplied to military",
+        "__row__": 244,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:f:f:e:m",
             "edan_simple": "qpceshffem",
@@ -6090,9 +6090,9 @@
         }
     },
     "pce:s:h:f:a": {
-        "bea_name": "Accommodations (104)",
-        "table_row": 245,
-        "level": 4,
+        "long_name": "Accommodations (104)",
+        "__row__": 245,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:h:f:a",
             "edan_simple": "qpceshfa",
@@ -6115,9 +6115,9 @@
         }
     },
     "pce:s:h:f:a:h": {
-        "bea_name": "Hotels and motels",
-        "table_row": 246,
-        "level": 5,
+        "long_name": "Hotels and motels",
+        "__row__": 246,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:f:a:h",
             "edan_simple": "qpceshfah",
@@ -6140,9 +6140,9 @@
         }
     },
     "pce:s:h:f:a:s": {
-        "bea_name": "Housing at schools",
-        "table_row": 247,
-        "level": 5,
+        "long_name": "Housing at schools",
+        "__row__": 247,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:f:a:s",
             "edan_simple": "qpceshfas",
@@ -6165,9 +6165,9 @@
         }
     },
     "pce:s:h:i": {
-        "bea_name": "Financial services and insurance",
-        "table_row": 248,
-        "level": 3,
+        "long_name": "Financial services and insurance",
+        "__row__": 248,
+        "__level__": 3,
         "quantity": {
             "edan": "qpce:s:h:i",
             "edan_simple": "qpceshi",
@@ -6190,9 +6190,9 @@
         }
     },
     "pce:s:h:i:f": {
-        "bea_name": "Financial services",
-        "table_row": 249,
-        "level": 4,
+        "long_name": "Financial services",
+        "__row__": 249,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:h:i:f",
             "edan_simple": "qpceshif",
@@ -6215,9 +6215,9 @@
         }
     },
     "pce:s:h:i:f:n": {
-        "bea_name": "Financial services furnished without payment (107)",
-        "table_row": 250,
-        "level": 5,
+        "long_name": "Financial services furnished without payment (107)",
+        "__row__": 250,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:i:f:n",
             "edan_simple": "qpceshifn",
@@ -6240,9 +6240,9 @@
         }
     },
     "pce:s:h:i:f:n:b": {
-        "bea_name": "Commercial banks",
-        "table_row": 251,
-        "level": 6,
+        "long_name": "Commercial banks",
+        "__row__": 251,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:i:f:n:b",
             "edan_simple": "qpceshifnb",
@@ -6265,9 +6265,9 @@
         }
     },
     "pce:s:h:i:f:n:o": {
-        "bea_name": "Other depository institutions and regulated investment companies",
-        "table_row": 252,
-        "level": 6,
+        "long_name": "Other depository institutions and regulated investment companies",
+        "__row__": 252,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:i:f:n:o",
             "edan_simple": "qpceshifno",
@@ -6290,9 +6290,9 @@
         }
     },
     "pce:s:h:i:f:n:p": {
-        "bea_name": "Pension funds",
-        "table_row": 253,
-        "level": 6,
+        "long_name": "Pension funds",
+        "__row__": 253,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:i:f:n:p",
             "edan_simple": "qpceshifnp",
@@ -6315,9 +6315,9 @@
         }
     },
     "pce:s:h:i:f:c": {
-        "bea_name": "Financial service charges, fees, and commissions (108)",
-        "table_row": 254,
-        "level": 5,
+        "long_name": "Financial service charges, fees, and commissions (108)",
+        "__row__": 254,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:i:f:c",
             "edan_simple": "qpceshifc",
@@ -6340,9 +6340,9 @@
         }
     },
     "pce:s:h:i:f:c:c": {
-        "bea_name": "Financial service charges and fees",
-        "table_row": 255,
-        "level": 6,
+        "long_name": "Financial service charges and fees",
+        "__row__": 255,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:i:f:c:c",
             "edan_simple": "qpceshifcc",
@@ -6365,9 +6365,9 @@
         }
     },
     "pce:s:h:i:f:c:s": {
-        "bea_name": "Securities commissions",
-        "table_row": 256,
-        "level": 6,
+        "long_name": "Securities commissions",
+        "__row__": 256,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:i:f:c:s",
             "edan_simple": "qpceshifcs",
@@ -6390,9 +6390,9 @@
         }
     },
     "pce:s:h:i:f:c:s:d": {
-        "bea_name": "Direct commissions",
-        "table_row": 257,
-        "level": 7,
+        "long_name": "Direct commissions",
+        "__row__": 257,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:s:h:i:f:c:s:d",
             "edan_simple": "qpceshifcsd",
@@ -6415,9 +6415,9 @@
         }
     },
     "pce:s:h:i:f:c:s:d:e": {
-        "bea_name": "Exchange-listed equities",
-        "table_row": 258,
-        "level": 8,
+        "long_name": "Exchange-listed equities",
+        "__row__": 258,
+        "__level__": 8,
         "quantity": {
             "edan": "qpce:s:h:i:f:c:s:d:e",
             "edan_simple": "qpceshifcsde",
@@ -6440,9 +6440,9 @@
         }
     },
     "pce:s:h:i:f:c:s:d:o": {
-        "bea_name": "Other direct commissions",
-        "table_row": 259,
-        "level": 8,
+        "long_name": "Other direct commissions",
+        "__row__": 259,
+        "__level__": 8,
         "quantity": {
             "edan": "qpce:s:h:i:f:c:s:d:o",
             "edan_simple": "qpceshifcsdo",
@@ -6465,9 +6465,9 @@
         }
     },
     "pce:s:h:i:f:c:s:i": {
-        "bea_name": "Indirect commissions",
-        "table_row": 260,
-        "level": 7,
+        "long_name": "Indirect commissions",
+        "__row__": 260,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:s:h:i:f:c:s:i",
             "edan_simple": "qpceshifcsi",
@@ -6490,9 +6490,9 @@
         }
     },
     "pce:s:h:i:f:c:s:i:c": {
-        "bea_name": "Over-the-counter equity securities",
-        "table_row": 261,
-        "level": 8,
+        "long_name": "Over-the-counter equity securities",
+        "__row__": 261,
+        "__level__": 8,
         "quantity": {
             "edan": "qpce:s:h:i:f:c:s:i:c",
             "edan_simple": "qpceshifcsic",
@@ -6515,9 +6515,9 @@
         }
     },
     "pce:s:h:i:f:c:s:i:o": {
-        "bea_name": "Other imputed commissions",
-        "table_row": 262,
-        "level": 8,
+        "long_name": "Other imputed commissions",
+        "__row__": 262,
+        "__level__": 8,
         "quantity": {
             "edan": "qpce:s:h:i:f:c:s:i:o",
             "edan_simple": "qpceshifcsio",
@@ -6540,9 +6540,9 @@
         }
     },
     "pce:s:h:i:f:c:s:m": {
-        "bea_name": "Mutual fund sales charges",
-        "table_row": 263,
-        "level": 7,
+        "long_name": "Mutual fund sales charges",
+        "__row__": 263,
+        "__level__": 7,
         "quantity": {
             "edan": "qpce:s:h:i:f:c:s:m",
             "edan_simple": "qpceshifcsm",
@@ -6565,9 +6565,9 @@
         }
     },
     "pce:s:h:i:f:c:m": {
-        "bea_name": "Portfolio management and investment advice services",
-        "table_row": 264,
-        "level": 6,
+        "long_name": "Portfolio management and investment advice services",
+        "__row__": 264,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:i:f:c:m",
             "edan_simple": "qpceshifcm",
@@ -6590,9 +6590,9 @@
         }
     },
     "pce:s:h:i:f:c:t": {
-        "bea_name": "Trust, fiduciary, and custody activities",
-        "table_row": 265,
-        "level": 6,
+        "long_name": "Trust, fiduciary, and custody activities",
+        "__row__": 265,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:i:f:c:t",
             "edan_simple": "qpceshifct",
@@ -6615,9 +6615,9 @@
         }
     },
     "pce:s:h:i:i": {
-        "bea_name": "Insurance",
-        "table_row": 266,
-        "level": 4,
+        "long_name": "Insurance",
+        "__row__": 266,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:h:i:i",
             "edan_simple": "qpceshii",
@@ -6640,9 +6640,9 @@
         }
     },
     "pce:s:h:i:i:l": {
-        "bea_name": "Life insurance (110)",
-        "table_row": 267,
-        "level": 5,
+        "long_name": "Life insurance (110)",
+        "__row__": 267,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:i:i:l",
             "edan_simple": "qpceshiil",
@@ -6665,9 +6665,9 @@
         }
     },
     "pce:s:h:i:i:h": {
-        "bea_name": "Net household insurance (111)",
-        "table_row": 268,
-        "level": 5,
+        "long_name": "Net household insurance (111)",
+        "__row__": 268,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:i:i:h",
             "edan_simple": "qpceshiih",
@@ -6689,35 +6689,35 @@
             "bea": "niunderlyingdetail!u20406!dfinrx"
         }
     },
-    "pce:s:h:i:i:h+p": {
-        "bea_name": "Household insurance premiums and premium supplements",
-        "table_row": 269,
-        "level": 6,
+    "pce:s:h:i:i:h:p": {
+        "long_name": "Household insurance premiums and premium supplements",
+        "__row__": 269,
+        "__level__": 6,
         "quantity": {
-            "edan": "qpce:s:h:i:i:h+p",
+            "edan": "qpce:s:h:i:i:h:p",
             "edan_simple": "qpceshiihp",
             "bea": "niunderlyingdetail!u20403!dfipra"
         },
         "price": {
-            "edan": "ppce:s:h:i:i:h+p",
+            "edan": "ppce:s:h:i:i:h:p",
             "edan_simple": "ppceshiihp",
             "bea": "niunderlyingdetail!u20404!dfiprg"
         },
         "nominal": {
-            "edan": "npce:s:h:i:i:h+p",
+            "edan": "npce:s:h:i:i:h:p",
             "edan_simple": "npceshiihp",
             "bea": "niunderlyingdetail!u20405!dfiprc"
         },
         "real": {
-            "edan": "rpce:s:h:i:i:h+p",
+            "edan": "rpce:s:h:i:i:h:p",
             "edan_simple": "rpceshiihp",
             "bea": "niunderlyingdetail!u20406!dfiprx"
         }
     },
     "pce:s:h:i:i:h~l": {
-        "bea_name": "Less: Household insurance normal losses",
-        "table_row": 270,
-        "level": 6,
+        "long_name": "Less: Household insurance normal losses",
+        "__row__": 270,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:i:i:h~l",
             "edan_simple": "qpceshiihl",
@@ -6740,9 +6740,9 @@
         }
     },
     "pce:s:h:i:i:c": {
-        "bea_name": "Net health insurance (112)",
-        "table_row": 271,
-        "level": 5,
+        "long_name": "Net health insurance (112)",
+        "__row__": 271,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:i:i:c",
             "edan_simple": "qpceshiic",
@@ -6764,35 +6764,35 @@
             "bea": "niunderlyingdetail!u20406!dhinrx"
         }
     },
-    "pce:s:h:i:i:c+m": {
-        "bea_name": "Medical care and hospitalization",
-        "table_row": 272,
-        "level": 6,
+    "pce:s:h:i:i:c:m": {
+        "long_name": "Medical care and hospitalization",
+        "__row__": 272,
+        "__level__": 6,
         "quantity": {
-            "edan": "qpce:s:h:i:i:c+m",
+            "edan": "qpce:s:h:i:i:c:m",
             "edan_simple": "qpceshiicm",
             "bea": "niunderlyingdetail!u20403!dminra"
         },
         "price": {
-            "edan": "ppce:s:h:i:i:c+m",
+            "edan": "ppce:s:h:i:i:c:m",
             "edan_simple": "ppceshiicm",
             "bea": "niunderlyingdetail!u20404!dminrg"
         },
         "nominal": {
-            "edan": "npce:s:h:i:i:c+m",
+            "edan": "npce:s:h:i:i:c:m",
             "edan_simple": "npceshiicm",
             "bea": "niunderlyingdetail!u20405!dminrc"
         },
         "real": {
-            "edan": "rpce:s:h:i:i:c+m",
+            "edan": "rpce:s:h:i:i:c:m",
             "edan_simple": "rpceshiicm",
             "bea": "niunderlyingdetail!u20406!dminrx"
         }
     },
     "pce:s:h:i:i:c~l": {
-        "bea_name": "Income loss",
-        "table_row": 273,
-        "level": 6,
+        "long_name": "Income loss",
+        "__row__": 273,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:i:i:c~l",
             "edan_simple": "qpceshiicl",
@@ -6814,35 +6814,35 @@
             "bea": "niunderlyingdetail!u20406!diinrx"
         }
     },
-    "pce:s:h:i:i:c+w": {
-        "bea_name": "Workers' compensation",
-        "table_row": 274,
-        "level": 6,
+    "pce:s:h:i:i:c:w": {
+        "long_name": "Workers' compensation",
+        "__row__": 274,
+        "__level__": 6,
         "quantity": {
-            "edan": "qpce:s:h:i:i:c+w",
+            "edan": "qpce:s:h:i:i:c:w",
             "edan_simple": "qpceshiicw",
             "bea": "niunderlyingdetail!u20403!dpwcra"
         },
         "price": {
-            "edan": "ppce:s:h:i:i:c+w",
+            "edan": "ppce:s:h:i:i:c:w",
             "edan_simple": "ppceshiicw",
             "bea": "niunderlyingdetail!u20404!dpwcrg"
         },
         "nominal": {
-            "edan": "npce:s:h:i:i:c+w",
+            "edan": "npce:s:h:i:i:c:w",
             "edan_simple": "npceshiicw",
             "bea": "niunderlyingdetail!u20405!dpwcrc"
         },
         "real": {
-            "edan": "rpce:s:h:i:i:c+w",
+            "edan": "rpce:s:h:i:i:c:w",
             "edan_simple": "rpceshiicw",
             "bea": "niunderlyingdetail!u20406!dpwcrx"
         }
     },
     "pce:s:h:i:i:v": {
-        "bea_name": "Net motor vehicle and other transportation insurance (116)",
-        "table_row": 275,
-        "level": 5,
+        "long_name": "Net motor vehicle and other transportation insurance (116)",
+        "__row__": 275,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:i:i:v",
             "edan_simple": "qpceshiiv",
@@ -6865,9 +6865,9 @@
         }
     },
     "pce:s:h:o": {
-        "bea_name": "Other services",
-        "table_row": 276,
-        "level": 3,
+        "long_name": "Other services",
+        "__row__": 276,
+        "__level__": 3,
         "quantity": {
             "edan": "qpce:s:h:o",
             "edan_simple": "qpcesho",
@@ -6890,9 +6890,9 @@
         }
     },
     "pce:s:h:o:c": {
-        "bea_name": "Communication",
-        "table_row": 277,
-        "level": 4,
+        "long_name": "Communication",
+        "__row__": 277,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:h:o:c",
             "edan_simple": "qpceshoc",
@@ -6915,9 +6915,9 @@
         }
     },
     "pce:s:h:o:c:t": {
-        "bea_name": "Telecommunication services (71)",
-        "table_row": 278,
-        "level": 5,
+        "long_name": "Telecommunication services (71)",
+        "__row__": 278,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:c:t",
             "edan_simple": "qpceshoct",
@@ -6940,9 +6940,9 @@
         }
     },
     "pce:s:h:o:c:t:l": {
-        "bea_name": "Land-line telephone services, local charges",
-        "table_row": 279,
-        "level": 6,
+        "long_name": "Land-line telephone services, local charges",
+        "__row__": 279,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:c:t:l",
             "edan_simple": "qpceshoctl",
@@ -6965,9 +6965,9 @@
         }
     },
     "pce:s:h:o:c:t:d": {
-        "bea_name": "Land-line telephone services, long-distance charges",
-        "table_row": 280,
-        "level": 6,
+        "long_name": "Land-line telephone services, long-distance charges",
+        "__row__": 280,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:c:t:d",
             "edan_simple": "qpceshoctd",
@@ -6990,9 +6990,9 @@
         }
     },
     "pce:s:h:o:c:t:c": {
-        "bea_name": "Cellular telephone services",
-        "table_row": 281,
-        "level": 6,
+        "long_name": "Cellular telephone services",
+        "__row__": 281,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:c:t:c",
             "edan_simple": "qpceshoctc",
@@ -7015,9 +7015,9 @@
         }
     },
     "pce:s:h:o:c:p": {
-        "bea_name": "Postal and delivery services (68)",
-        "table_row": 282,
-        "level": 5,
+        "long_name": "Postal and delivery services (68)",
+        "__row__": 282,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:c:p",
             "edan_simple": "qpceshocp",
@@ -7040,9 +7040,9 @@
         }
     },
     "pce:s:h:o:c:p:f": {
-        "bea_name": "First-class postal service (by U.S. Postal Service)",
-        "table_row": 283,
-        "level": 6,
+        "long_name": "First-class postal service (by U.S. Postal Service)",
+        "__row__": 283,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:c:p:f",
             "edan_simple": "qpceshocpf",
@@ -7065,9 +7065,9 @@
         }
     },
     "pce:s:h:o:c:p:o": {
-        "bea_name": "Other delivery services (by non-U.S. postal facilities)",
-        "table_row": 284,
-        "level": 6,
+        "long_name": "Other delivery services (by non-U.S. postal facilities)",
+        "__row__": 284,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:c:p:o",
             "edan_simple": "qpceshocpo",
@@ -7090,9 +7090,9 @@
         }
     },
     "pce:s:h:o:c:i": {
-        "bea_name": "Internet access (72)",
-        "table_row": 285,
-        "level": 5,
+        "long_name": "Internet access (72)",
+        "__row__": 285,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:c:i",
             "edan_simple": "qpceshoci",
@@ -7115,9 +7115,9 @@
         }
     },
     "pce:s:h:o:e": {
-        "bea_name": "Education services",
-        "table_row": 286,
-        "level": 4,
+        "long_name": "Education services",
+        "__row__": 286,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:h:o:e",
             "edan_simple": "qpceshoe",
@@ -7140,9 +7140,9 @@
         }
     },
     "pce:s:h:o:e:h": {
-        "bea_name": "Higher education (97)",
-        "table_row": 287,
-        "level": 5,
+        "long_name": "Higher education (97)",
+        "__row__": 287,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:e:h",
             "edan_simple": "qpceshoeh",
@@ -7165,9 +7165,9 @@
         }
     },
     "pce:s:h:o:e:h:p": {
-        "bea_name": "Proprietary and public higher education",
-        "table_row": 288,
-        "level": 6,
+        "long_name": "Proprietary and public higher education",
+        "__row__": 288,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:e:h:p",
             "edan_simple": "qpceshoehp",
@@ -7190,9 +7190,9 @@
         }
     },
     "pce:s:h:o:e:h:n": {
-        "bea_name": "Nonprofit private higher education services to households",
-        "table_row": 289,
-        "level": 6,
+        "long_name": "Nonprofit private higher education services to households",
+        "__row__": 289,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:e:h:n",
             "edan_simple": "qpceshoehn",
@@ -7215,9 +7215,9 @@
         }
     },
     "pce:s:h:o:e:k": {
-        "bea_name": "Nursery, elementary, and secondary schools (98)",
-        "table_row": 290,
-        "level": 5,
+        "long_name": "Nursery, elementary, and secondary schools (98)",
+        "__row__": 290,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:e:k",
             "edan_simple": "qpceshoek",
@@ -7240,9 +7240,9 @@
         }
     },
     "pce:s:h:o:e:k:s": {
-        "bea_name": "Elementary and secondary schools",
-        "table_row": 291,
-        "level": 6,
+        "long_name": "Elementary and secondary schools",
+        "__row__": 291,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:e:k:s",
             "edan_simple": "qpceshoeks",
@@ -7265,9 +7265,9 @@
         }
     },
     "pce:s:h:o:e:k:c": {
-        "bea_name": "Day care and nursery schools",
-        "table_row": 292,
-        "level": 6,
+        "long_name": "Day care and nursery schools",
+        "__row__": 292,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:e:k:c",
             "edan_simple": "qpceshoekc",
@@ -7290,9 +7290,9 @@
         }
     },
     "pce:s:h:o:e:v": {
-        "bea_name": "Commercial and vocational schools (99)",
-        "table_row": 293,
-        "level": 5,
+        "long_name": "Commercial and vocational schools (99)",
+        "__row__": 293,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:e:v",
             "edan_simple": "qpceshoev",
@@ -7315,9 +7315,9 @@
         }
     },
     "pce:s:h:o:p": {
-        "bea_name": "Professional and other services (121)",
-        "table_row": 294,
-        "level": 4,
+        "long_name": "Professional and other services (121)",
+        "__row__": 294,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:h:o:p",
             "edan_simple": "qpceshop",
@@ -7340,9 +7340,9 @@
         }
     },
     "pce:s:h:o:p:l": {
-        "bea_name": "Legal services",
-        "table_row": 295,
-        "level": 5,
+        "long_name": "Legal services",
+        "__row__": 295,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:p:l",
             "edan_simple": "qpceshopl",
@@ -7365,9 +7365,9 @@
         }
     },
     "pce:s:h:o:p:b": {
-        "bea_name": "Accounting and other business services",
-        "table_row": 296,
-        "level": 5,
+        "long_name": "Accounting and other business services",
+        "__row__": 296,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:p:b",
             "edan_simple": "qpceshopb",
@@ -7390,9 +7390,9 @@
         }
     },
     "pce:s:h:o:p:b:t": {
-        "bea_name": "Tax preparation and other related services",
-        "table_row": 297,
-        "level": 6,
+        "long_name": "Tax preparation and other related services",
+        "__row__": 297,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:p:b:t",
             "edan_simple": "qpceshopbt",
@@ -7415,9 +7415,9 @@
         }
     },
     "pce:s:h:o:p:b:e": {
-        "bea_name": "Employment agency services",
-        "table_row": 298,
-        "level": 6,
+        "long_name": "Employment agency services",
+        "__row__": 298,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:p:b:e",
             "edan_simple": "qpceshopbe",
@@ -7440,9 +7440,9 @@
         }
     },
     "pce:s:h:o:p:b:o": {
-        "bea_name": "Other personal business services",
-        "table_row": 299,
-        "level": 6,
+        "long_name": "Other personal business services",
+        "__row__": 299,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:p:b:o",
             "edan_simple": "qpceshopbo",
@@ -7465,9 +7465,9 @@
         }
     },
     "pce:s:h:o:p:u": {
-        "bea_name": "Labor organization dues",
-        "table_row": 300,
-        "level": 5,
+        "long_name": "Labor organization dues",
+        "__row__": 300,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:p:u",
             "edan_simple": "qpceshopu",
@@ -7490,9 +7490,9 @@
         }
     },
     "pce:s:h:o:p:d": {
-        "bea_name": "Professional association dues",
-        "table_row": 301,
-        "level": 5,
+        "long_name": "Professional association dues",
+        "__row__": 301,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:p:d",
             "edan_simple": "qpceshopd",
@@ -7515,9 +7515,9 @@
         }
     },
     "pce:s:h:o:p:f": {
-        "bea_name": "Funeral and burial services",
-        "table_row": 302,
-        "level": 5,
+        "long_name": "Funeral and burial services",
+        "__row__": 302,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:p:f",
             "edan_simple": "qpceshopf",
@@ -7540,9 +7540,9 @@
         }
     },
     "pce:s:h:o:b": {
-        "bea_name": "Personal care and clothing services (14 and parts of 17 and 118)",
-        "table_row": 303,
-        "level": 4,
+        "long_name": "Personal care and clothing services (14 and parts of 17 and 118)",
+        "__row__": 303,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:h:o:b",
             "edan_simple": "qpceshob",
@@ -7565,9 +7565,9 @@
         }
     },
     "pce:s:h:o:b:p": {
-        "bea_name": "Personal care services",
-        "table_row": 304,
-        "level": 5,
+        "long_name": "Personal care services",
+        "__row__": 304,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:b:p",
             "edan_simple": "qpceshobp",
@@ -7590,9 +7590,9 @@
         }
     },
     "pce:s:h:o:b:p:s": {
-        "bea_name": "Hairdressing salons and personal grooming establishments",
-        "table_row": 305,
-        "level": 6,
+        "long_name": "Hairdressing salons and personal grooming establishments",
+        "__row__": 305,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:b:p:s",
             "edan_simple": "qpceshobps",
@@ -7615,9 +7615,9 @@
         }
     },
     "pce:s:h:o:b:p:o": {
-        "bea_name": "Miscellaneous personal care services",
-        "table_row": 306,
-        "level": 6,
+        "long_name": "Miscellaneous personal care services",
+        "__row__": 306,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:b:p:o",
             "edan_simple": "qpceshobpo",
@@ -7640,9 +7640,9 @@
         }
     },
     "pce:s:h:o:b:c": {
-        "bea_name": "Clothing and footwear services",
-        "table_row": 307,
-        "level": 5,
+        "long_name": "Clothing and footwear services",
+        "__row__": 307,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:b:c",
             "edan_simple": "qpceshobc",
@@ -7665,9 +7665,9 @@
         }
     },
     "pce:s:h:o:b:c:l": {
-        "bea_name": "Laundry and drycleaning services",
-        "table_row": 308,
-        "level": 6,
+        "long_name": "Laundry and drycleaning services",
+        "__row__": 308,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:b:c:l",
             "edan_simple": "qpceshobcl",
@@ -7690,9 +7690,9 @@
         }
     },
     "pce:s:h:o:b:c:c": {
-        "bea_name": "Clothing repair, rental, and alterations",
-        "table_row": 309,
-        "level": 6,
+        "long_name": "Clothing repair, rental, and alterations",
+        "__row__": 309,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:b:c:c",
             "edan_simple": "qpceshobcc",
@@ -7715,9 +7715,9 @@
         }
     },
     "pce:s:h:o:b:c:f": {
-        "bea_name": "Repair and hire of footwear",
-        "table_row": 310,
-        "level": 6,
+        "long_name": "Repair and hire of footwear",
+        "__row__": 310,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:b:c:f",
             "edan_simple": "qpceshobcf",
@@ -7740,9 +7740,9 @@
         }
     },
     "pce:s:h:o:s": {
-        "bea_name": "Social services and religious activities (120)",
-        "table_row": 311,
-        "level": 4,
+        "long_name": "Social services and religious activities (120)",
+        "__row__": 311,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:h:o:s",
             "edan_simple": "qpceshos",
@@ -7765,9 +7765,9 @@
         }
     },
     "pce:s:h:o:s:c": {
-        "bea_name": "Child care",
-        "table_row": 312,
-        "level": 5,
+        "long_name": "Child care",
+        "__row__": 312,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:s:c",
             "edan_simple": "qpceshosc",
@@ -7790,9 +7790,9 @@
         }
     },
     "pce:s:h:o:s:a": {
-        "bea_name": "Social assistance",
-        "table_row": 313,
-        "level": 5,
+        "long_name": "Social assistance",
+        "__row__": 313,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:s:a",
             "edan_simple": "qpceshosa",
@@ -7815,9 +7815,9 @@
         }
     },
     "pce:s:h:o:s:a:e": {
-        "bea_name": "Homes for the elderly",
-        "table_row": 314,
-        "level": 6,
+        "long_name": "Homes for the elderly",
+        "__row__": 314,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:s:a:e",
             "edan_simple": "qpceshosae",
@@ -7840,9 +7840,9 @@
         }
     },
     "pce:s:h:o:s:a:m": {
-        "bea_name": "Residential mental health and substance abuse",
-        "table_row": 315,
-        "level": 6,
+        "long_name": "Residential mental health and substance abuse",
+        "__row__": 315,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:s:a:m",
             "edan_simple": "qpceshosam",
@@ -7865,9 +7865,9 @@
         }
     },
     "pce:s:h:o:s:a:f": {
-        "bea_name": "Individual and family services",
-        "table_row": 316,
-        "level": 6,
+        "long_name": "Individual and family services",
+        "__row__": 316,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:s:a:f",
             "edan_simple": "qpceshosaf",
@@ -7890,9 +7890,9 @@
         }
     },
     "pce:s:h:o:s:a:v": {
-        "bea_name": "Vocational rehabilitation services",
-        "table_row": 317,
-        "level": 6,
+        "long_name": "Vocational rehabilitation services",
+        "__row__": 317,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:s:a:v",
             "edan_simple": "qpceshosav",
@@ -7915,9 +7915,9 @@
         }
     },
     "pce:s:h:o:s:a:c": {
-        "bea_name": "Community food and housing / emergency / other relief services",
-        "table_row": 318,
-        "level": 6,
+        "long_name": "Community food and housing / emergency / other relief services",
+        "__row__": 318,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:s:a:c",
             "edan_simple": "qpceshosac",
@@ -7940,9 +7940,9 @@
         }
     },
     "pce:s:h:o:s:a:o": {
-        "bea_name": "Other social assistance, not elsewere classified",
-        "table_row": 319,
-        "level": 6,
+        "long_name": "Other social assistance, not elsewere classified",
+        "__row__": 319,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:s:a:o",
             "edan_simple": "qpceshosao",
@@ -7965,9 +7965,9 @@
         }
     },
     "pce:s:h:o:s:o": {
-        "bea_name": "Social advocacy and civic and social organizations",
-        "table_row": 320,
-        "level": 5,
+        "long_name": "Social advocacy and civic and social organizations",
+        "__row__": 320,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:s:o",
             "edan_simple": "qpceshoso",
@@ -7990,9 +7990,9 @@
         }
     },
     "pce:s:h:o:s:r": {
-        "bea_name": "Religious organizations' services to households",
-        "table_row": 321,
-        "level": 5,
+        "long_name": "Religious organizations' services to households",
+        "__row__": 321,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:s:r",
             "edan_simple": "qpceshosr",
@@ -8015,9 +8015,9 @@
         }
     },
     "pce:s:h:o:s:f": {
-        "bea_name": "Foundations and grantmaking and giving services to households",
-        "table_row": 322,
-        "level": 5,
+        "long_name": "Foundations and grantmaking and giving services to households",
+        "__row__": 322,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:s:f",
             "edan_simple": "qpceshosf",
@@ -8040,9 +8040,9 @@
         }
     },
     "pce:s:h:o:h": {
-        "bea_name": "Household maintenance (parts of 31, 33, and 36)",
-        "table_row": 323,
-        "level": 4,
+        "long_name": "Household maintenance (parts of 31, 33, and 36)",
+        "__row__": 323,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:h:o:h",
             "edan_simple": "qpceshoh",
@@ -8065,9 +8065,9 @@
         }
     },
     "pce:s:h:o:h:d": {
-        "bea_name": "Domestic services",
-        "table_row": 324,
-        "level": 5,
+        "long_name": "Domestic services",
+        "__row__": 324,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:h:d",
             "edan_simple": "qpceshohd",
@@ -8090,9 +8090,9 @@
         }
     },
     "pce:s:h:o:h:m": {
-        "bea_name": "Moving, storage, and freight services",
-        "table_row": 325,
-        "level": 5,
+        "long_name": "Moving, storage, and freight services",
+        "__row__": 325,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:h:m",
             "edan_simple": "qpceshohm",
@@ -8115,9 +8115,9 @@
         }
     },
     "pce:s:h:o:h:f": {
-        "bea_name": "Repair of furniture, furnishings, and floor coverings",
-        "table_row": 326,
-        "level": 5,
+        "long_name": "Repair of furniture, furnishings, and floor coverings",
+        "__row__": 326,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:h:f",
             "edan_simple": "qpceshohf",
@@ -8140,9 +8140,9 @@
         }
     },
     "pce:s:h:o:h:a": {
-        "bea_name": "Repair of household appliances",
-        "table_row": 327,
-        "level": 5,
+        "long_name": "Repair of household appliances",
+        "__row__": 327,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:h:a",
             "edan_simple": "qpceshoha",
@@ -8165,9 +8165,9 @@
         }
     },
     "pce:s:h:o:h:o": {
-        "bea_name": "Other household services",
-        "table_row": 328,
-        "level": 5,
+        "long_name": "Other household services",
+        "__row__": 328,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:h:o",
             "edan_simple": "qpceshoho",
@@ -8190,9 +8190,9 @@
         }
     },
     "pce:s:h:o:f": {
-        "bea_name": "Net foreign travel",
-        "table_row": 329,
-        "level": 4,
+        "long_name": "Net foreign travel",
+        "__row__": 329,
+        "__level__": 4,
         "nominal": {
             "edan": "npce:s:h:o:f",
             "edan_simple": "npceshof",
@@ -8204,110 +8204,110 @@
             "bea": "niunderlyingdetail!u20406!dforrx"
         }
     },
-    "pce:s:h:o:f+r": {
-        "bea_name": "Foreign travel by U.S. residents (129)",
-        "table_row": 330,
-        "level": 5,
+    "pce:s:h:o:f:r": {
+        "long_name": "Foreign travel by U.S. residents (129)",
+        "__row__": 330,
+        "__level__": 5,
         "quantity": {
-            "edan": "qpce:s:h:o:f+r",
+            "edan": "qpce:s:h:o:f:r",
             "edan_simple": "qpceshofr",
             "bea": "niunderlyingdetail!u20403!dftrra"
         },
         "price": {
-            "edan": "ppce:s:h:o:f+r",
+            "edan": "ppce:s:h:o:f:r",
             "edan_simple": "ppceshofr",
             "bea": "niunderlyingdetail!u20404!dftrrg"
         },
         "nominal": {
-            "edan": "npce:s:h:o:f+r",
+            "edan": "npce:s:h:o:f:r",
             "edan_simple": "npceshofr",
             "bea": "niunderlyingdetail!u20405!dftrrc"
         },
         "real": {
-            "edan": "rpce:s:h:o:f+r",
+            "edan": "rpce:s:h:o:f:r",
             "edan_simple": "rpceshofr",
             "bea": "niunderlyingdetail!u20406!dftrrx"
         }
     },
-    "pce:s:h:o:f+r:f": {
-        "bea_name": "Passenger fares for foreign travel",
-        "table_row": 331,
-        "level": 6,
+    "pce:s:h:o:f:r:f": {
+        "long_name": "Passenger fares for foreign travel",
+        "__row__": 331,
+        "__level__": 6,
         "quantity": {
-            "edan": "qpce:s:h:o:f+r:f",
+            "edan": "qpce:s:h:o:f:r:f",
             "edan_simple": "qpceshofrf",
             "bea": "niunderlyingdetail!u20403!daftra"
         },
         "price": {
-            "edan": "ppce:s:h:o:f+r:f",
+            "edan": "ppce:s:h:o:f:r:f",
             "edan_simple": "ppceshofrf",
             "bea": "niunderlyingdetail!u20404!daftrg"
         },
         "nominal": {
-            "edan": "npce:s:h:o:f+r:f",
+            "edan": "npce:s:h:o:f:r:f",
             "edan_simple": "npceshofrf",
             "bea": "niunderlyingdetail!u20405!daftrc"
         },
         "real": {
-            "edan": "rpce:s:h:o:f+r:f",
+            "edan": "rpce:s:h:o:f:r:f",
             "edan_simple": "rpceshofrf",
             "bea": "niunderlyingdetail!u20406!daftrx"
         }
     },
-    "pce:s:h:o:f+r:t": {
-        "bea_name": "U.S. travel outside the United States",
-        "table_row": 332,
-        "level": 6,
+    "pce:s:h:o:f:r:t": {
+        "long_name": "U.S. travel outside the United States",
+        "__row__": 332,
+        "__level__": 6,
         "quantity": {
-            "edan": "qpce:s:h:o:f+r:t",
+            "edan": "qpce:s:h:o:f:r:t",
             "edan_simple": "qpceshofrt",
             "bea": "niunderlyingdetail!u20403!dustra"
         },
         "price": {
-            "edan": "ppce:s:h:o:f+r:t",
+            "edan": "ppce:s:h:o:f:r:t",
             "edan_simple": "ppceshofrt",
             "bea": "niunderlyingdetail!u20404!dustrg"
         },
         "nominal": {
-            "edan": "npce:s:h:o:f+r:t",
+            "edan": "npce:s:h:o:f:r:t",
             "edan_simple": "npceshofrt",
             "bea": "niunderlyingdetail!u20405!dustrc"
         },
         "real": {
-            "edan": "rpce:s:h:o:f+r:t",
+            "edan": "rpce:s:h:o:f:r:t",
             "edan_simple": "rpceshofrt",
             "bea": "niunderlyingdetail!u20406!dustrx"
         }
     },
-    "pce:s:h:o:f+r:s": {
-        "bea_name": "U.S. student expenditures",
-        "table_row": 333,
-        "level": 6,
+    "pce:s:h:o:f:r:s": {
+        "long_name": "U.S. student expenditures",
+        "__row__": 333,
+        "__level__": 6,
         "quantity": {
-            "edan": "qpce:s:h:o:f+r:s",
+            "edan": "qpce:s:h:o:f:r:s",
             "edan_simple": "qpceshofrs",
             "bea": "niunderlyingdetail!u20403!dussra"
         },
         "price": {
-            "edan": "ppce:s:h:o:f+r:s",
+            "edan": "ppce:s:h:o:f:r:s",
             "edan_simple": "ppceshofrs",
             "bea": "niunderlyingdetail!u20404!dussrg"
         },
         "nominal": {
-            "edan": "npce:s:h:o:f+r:s",
+            "edan": "npce:s:h:o:f:r:s",
             "edan_simple": "npceshofrs",
             "bea": "niunderlyingdetail!u20405!dussrc"
         },
         "real": {
-            "edan": "rpce:s:h:o:f+r:s",
+            "edan": "rpce:s:h:o:f:r:s",
             "edan_simple": "rpceshofrs",
             "bea": "niunderlyingdetail!u20406!dussrx"
         }
     },
     "pce:s:h:o:f~l": {
-        "bea_name": "Less: Expenditures in the United States by nonresidents (130)",
-        "table_row": 334,
-        "level": 5,
+        "long_name": "Less: Expenditures in the United States by nonresidents (130)",
+        "__row__": 334,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:h:o:f~l",
             "edan_simple": "qpceshofl",
@@ -8330,9 +8330,9 @@
         }
     },
     "pce:s:h:o:f~l:t": {
-        "bea_name": "Foreign travel in the United States",
-        "table_row": 335,
-        "level": 6,
+        "long_name": "Foreign travel in the United States",
+        "__row__": 335,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:f~l:t",
             "edan_simple": "qpceshoflt",
@@ -8355,9 +8355,9 @@
         }
     },
     "pce:s:h:o:f~l:m": {
-        "bea_name": "Medical expenditures of foreigners",
-        "table_row": 336,
-        "level": 6,
+        "long_name": "Medical expenditures of foreigners",
+        "__row__": 336,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:f~l:m",
             "edan_simple": "qpceshoflm",
@@ -8380,9 +8380,9 @@
         }
     },
     "pce:s:h:o:f~l:s": {
-        "bea_name": "Expenditures of foreign students in the United States",
-        "table_row": 337,
-        "level": 6,
+        "long_name": "Expenditures of foreign students in the United States",
+        "__row__": 337,
+        "__level__": 6,
         "quantity": {
             "edan": "qpce:s:h:o:f~l:s",
             "edan_simple": "qpceshofls",
@@ -8405,9 +8405,9 @@
         }
     },
     "pce:s:n": {
-        "bea_name": "Final consumption expenditures of nonprofit institutions serving households (NPISHs) (132)",
-        "table_row": 338,
-        "level": 2,
+        "long_name": "Final consumption expenditures of nonprofit institutions serving households (NPISHs) (132)",
+        "__row__": 338,
+        "__level__": 2,
         "quantity": {
             "edan": "qpce:s:n",
             "edan_simple": "qpcesn",
@@ -8429,335 +8429,335 @@
             "bea": "niunderlyingdetail!u20406!dnpirx"
         }
     },
-    "pce:s:n+o": {
-        "bea_name": "Gross output of nonprofit institutions (133)",
-        "table_row": 339,
-        "level": 3,
+    "pce:s:n:o": {
+        "long_name": "Gross output of nonprofit institutions (133)",
+        "__row__": 339,
+        "__level__": 3,
         "quantity": {
-            "edan": "qpce:s:n+o",
+            "edan": "qpce:s:n:o",
             "edan_simple": "qpcesno",
             "bea": "niunderlyingdetail!u20403!dnpera"
         },
         "price": {
-            "edan": "ppce:s:n+o",
+            "edan": "ppce:s:n:o",
             "edan_simple": "ppcesno",
             "bea": "niunderlyingdetail!u20404!dnperg"
         },
         "nominal": {
-            "edan": "npce:s:n+o",
+            "edan": "npce:s:n:o",
             "edan_simple": "npcesno",
             "bea": "niunderlyingdetail!u20405!dnperc"
         },
         "real": {
-            "edan": "rpce:s:n+o",
+            "edan": "rpce:s:n:o",
             "edan_simple": "rpcesno",
             "bea": "niunderlyingdetail!u20406!dnperx"
         }
     },
-    "pce:s:n+o:h": {
-        "bea_name": "Health, gross output",
-        "table_row": 340,
-        "level": 4,
+    "pce:s:n:o:h": {
+        "long_name": "Health, gross output",
+        "__row__": 340,
+        "__level__": 4,
         "quantity": {
-            "edan": "qpce:s:n+o:h",
+            "edan": "qpce:s:n:o:h",
             "edan_simple": "qpcesnoh",
             "bea": "niunderlyingdetail!u20403!dhlgra"
         },
         "price": {
-            "edan": "ppce:s:n+o:h",
+            "edan": "ppce:s:n:o:h",
             "edan_simple": "ppcesnoh",
             "bea": "niunderlyingdetail!u20404!dhlgrg"
         },
         "nominal": {
-            "edan": "npce:s:n+o:h",
+            "edan": "npce:s:n:o:h",
             "edan_simple": "npcesnoh",
             "bea": "niunderlyingdetail!u20405!dhlgrc"
         },
         "real": {
-            "edan": "rpce:s:n+o:h",
+            "edan": "rpce:s:n:o:h",
             "edan_simple": "rpcesnoh",
             "bea": "niunderlyingdetail!u20406!dhlgrx"
         }
     },
-    "pce:s:n+o:h:o": {
-        "bea_name": "Outpatient services, gross output",
-        "table_row": 341,
-        "level": 5,
+    "pce:s:n:o:h:o": {
+        "long_name": "Outpatient services, gross output",
+        "__row__": 341,
+        "__level__": 5,
         "quantity": {
-            "edan": "qpce:s:n+o:h:o",
+            "edan": "qpce:s:n:o:h:o",
             "edan_simple": "qpcesnoho",
             "bea": "niunderlyingdetail!u20403!dougra"
         },
         "price": {
-            "edan": "ppce:s:n+o:h:o",
+            "edan": "ppce:s:n:o:h:o",
             "edan_simple": "ppcesnoho",
             "bea": "niunderlyingdetail!u20404!dougrg"
         },
         "nominal": {
-            "edan": "npce:s:n+o:h:o",
+            "edan": "npce:s:n:o:h:o",
             "edan_simple": "npcesnoho",
             "bea": "niunderlyingdetail!u20405!dougrc"
         },
         "real": {
-            "edan": "rpce:s:n+o:h:o",
+            "edan": "rpce:s:n:o:h:o",
             "edan_simple": "rpcesnoho",
             "bea": "niunderlyingdetail!u20406!dougrx"
         }
     },
-    "pce:s:n+o:h:h": {
-        "bea_name": "Nonprofit hospitals, gross output",
-        "table_row": 342,
-        "level": 5,
+    "pce:s:n:o:h:h": {
+        "long_name": "Nonprofit hospitals, gross output",
+        "__row__": 342,
+        "__level__": 5,
         "quantity": {
-            "edan": "qpce:s:n+o:h:h",
+            "edan": "qpce:s:n:o:h:h",
             "edan_simple": "qpcesnohh",
             "bea": "niunderlyingdetail!u20403!dhsora"
         },
         "price": {
-            "edan": "ppce:s:n+o:h:h",
+            "edan": "ppce:s:n:o:h:h",
             "edan_simple": "ppcesnohh",
             "bea": "niunderlyingdetail!u20404!dhsorg"
         },
         "nominal": {
-            "edan": "npce:s:n+o:h:h",
+            "edan": "npce:s:n:o:h:h",
             "edan_simple": "npcesnohh",
             "bea": "niunderlyingdetail!u20405!dhsorc"
         },
         "real": {
-            "edan": "rpce:s:n+o:h:h",
+            "edan": "rpce:s:n:o:h:h",
             "edan_simple": "rpcesnohh",
             "bea": "niunderlyingdetail!u20406!dhsorx"
         }
     },
-    "pce:s:n+o:h:n": {
-        "bea_name": "Nonprofit nursing homes, gross output",
-        "table_row": 343,
-        "level": 5,
+    "pce:s:n:o:h:n": {
+        "long_name": "Nonprofit nursing homes, gross output",
+        "__row__": 343,
+        "__level__": 5,
         "quantity": {
-            "edan": "qpce:s:n+o:h:n",
+            "edan": "qpce:s:n:o:h:n",
             "edan_simple": "qpcesnohn",
             "bea": "niunderlyingdetail!u20403!dnxora"
         },
         "price": {
-            "edan": "ppce:s:n+o:h:n",
+            "edan": "ppce:s:n:o:h:n",
             "edan_simple": "ppcesnohn",
             "bea": "niunderlyingdetail!u20404!dnxorg"
         },
         "nominal": {
-            "edan": "npce:s:n+o:h:n",
+            "edan": "npce:s:n:o:h:n",
             "edan_simple": "npcesnohn",
             "bea": "niunderlyingdetail!u20405!dnxorc"
         },
         "real": {
-            "edan": "rpce:s:n+o:h:n",
+            "edan": "rpce:s:n:o:h:n",
             "edan_simple": "rpcesnohn",
             "bea": "niunderlyingdetail!u20406!dnxorx"
         }
     },
-    "pce:s:n+o:r": {
-        "bea_name": "Recreation services, gross output",
-        "table_row": 344,
-        "level": 4,
+    "pce:s:n:o:r": {
+        "long_name": "Recreation services, gross output",
+        "__row__": 344,
+        "__level__": 4,
         "quantity": {
-            "edan": "qpce:s:n+o:r",
+            "edan": "qpce:s:n:o:r",
             "edan_simple": "qpcesnor",
             "bea": "niunderlyingdetail!u20403!drcgra"
         },
         "price": {
-            "edan": "ppce:s:n+o:r",
+            "edan": "ppce:s:n:o:r",
             "edan_simple": "ppcesnor",
             "bea": "niunderlyingdetail!u20404!drcgrg"
         },
         "nominal": {
-            "edan": "npce:s:n+o:r",
+            "edan": "npce:s:n:o:r",
             "edan_simple": "npcesnor",
             "bea": "niunderlyingdetail!u20405!drcgrc"
         },
         "real": {
-            "edan": "rpce:s:n+o:r",
+            "edan": "rpce:s:n:o:r",
             "edan_simple": "rpcesnor",
             "bea": "niunderlyingdetail!u20406!drcgrx"
         }
     },
-    "pce:s:n+o:e": {
-        "bea_name": "Education services, gross output",
-        "table_row": 345,
-        "level": 4,
+    "pce:s:n:o:e": {
+        "long_name": "Education services, gross output",
+        "__row__": 345,
+        "__level__": 4,
         "quantity": {
-            "edan": "qpce:s:n+o:e",
+            "edan": "qpce:s:n:o:e",
             "edan_simple": "qpcesnoe",
             "bea": "niunderlyingdetail!u20403!dedgra"
         },
         "price": {
-            "edan": "ppce:s:n+o:e",
+            "edan": "ppce:s:n:o:e",
             "edan_simple": "ppcesnoe",
             "bea": "niunderlyingdetail!u20404!dedgrg"
         },
         "nominal": {
-            "edan": "npce:s:n+o:e",
+            "edan": "npce:s:n:o:e",
             "edan_simple": "npcesnoe",
             "bea": "niunderlyingdetail!u20405!dedgrc"
         },
         "real": {
-            "edan": "rpce:s:n+o:e",
+            "edan": "rpce:s:n:o:e",
             "edan_simple": "rpcesnoe",
             "bea": "niunderlyingdetail!u20406!dedgrx"
         }
     },
-    "pce:s:n+o:s": {
-        "bea_name": "Social services, gross output",
-        "table_row": 346,
-        "level": 4,
+    "pce:s:n:o:s": {
+        "long_name": "Social services, gross output",
+        "__row__": 346,
+        "__level__": 4,
         "quantity": {
-            "edan": "qpce:s:n+o:s",
+            "edan": "qpce:s:n:o:s",
             "edan_simple": "qpcesnos",
             "bea": "niunderlyingdetail!u20403!dssgra"
         },
         "price": {
-            "edan": "ppce:s:n+o:s",
+            "edan": "ppce:s:n:o:s",
             "edan_simple": "ppcesnos",
             "bea": "niunderlyingdetail!u20404!dssgrg"
         },
         "nominal": {
-            "edan": "npce:s:n+o:s",
+            "edan": "npce:s:n:o:s",
             "edan_simple": "npcesnos",
             "bea": "niunderlyingdetail!u20405!dssgrc"
         },
         "real": {
-            "edan": "rpce:s:n+o:s",
+            "edan": "rpce:s:n:o:s",
             "edan_simple": "rpcesnos",
             "bea": "niunderlyingdetail!u20406!dssgrx"
         }
     },
-    "pce:s:n+o:b": {
-        "bea_name": "Religious organizations, gross output",
-        "table_row": 347,
-        "level": 4,
+    "pce:s:n:o:b": {
+        "long_name": "Religious organizations, gross output",
+        "__row__": 347,
+        "__level__": 4,
         "quantity": {
-            "edan": "qpce:s:n+o:b",
+            "edan": "qpce:s:n:o:b",
             "edan_simple": "qpcesnob",
             "bea": "niunderlyingdetail!u20403!dreora"
         },
         "price": {
-            "edan": "ppce:s:n+o:b",
+            "edan": "ppce:s:n:o:b",
             "edan_simple": "ppcesnob",
             "bea": "niunderlyingdetail!u20404!dreorg"
         },
         "nominal": {
-            "edan": "npce:s:n+o:b",
+            "edan": "npce:s:n:o:b",
             "edan_simple": "npcesnob",
             "bea": "niunderlyingdetail!u20405!dreorc"
         },
         "real": {
-            "edan": "rpce:s:n+o:b",
+            "edan": "rpce:s:n:o:b",
             "edan_simple": "rpcesnob",
             "bea": "niunderlyingdetail!u20406!dreorx"
         }
     },
-    "pce:s:n+o:f": {
-        "bea_name": "Foundations and grantmaking and giving establishments, gross output",
-        "table_row": 348,
-        "level": 4,
+    "pce:s:n:o:f": {
+        "long_name": "Foundations and grantmaking and giving establishments, gross output",
+        "__row__": 348,
+        "__level__": 4,
         "quantity": {
-            "edan": "qpce:s:n+o:f",
+            "edan": "qpce:s:n:o:f",
             "edan_simple": "qpcesnof",
             "bea": "niunderlyingdetail!u20403!dfxora"
         },
         "price": {
-            "edan": "ppce:s:n+o:f",
+            "edan": "ppce:s:n:o:f",
             "edan_simple": "ppcesnof",
             "bea": "niunderlyingdetail!u20404!dfxorg"
         },
         "nominal": {
-            "edan": "npce:s:n+o:f",
+            "edan": "npce:s:n:o:f",
             "edan_simple": "npcesnof",
             "bea": "niunderlyingdetail!u20405!dfxorc"
         },
         "real": {
-            "edan": "rpce:s:n+o:f",
+            "edan": "rpce:s:n:o:f",
             "edan_simple": "rpcesnof",
             "bea": "niunderlyingdetail!u20406!dfxorx"
         }
     },
-    "pce:s:n+o:a": {
-        "bea_name": "Social advocacy establishments, gross output",
-        "table_row": 349,
-        "level": 4,
+    "pce:s:n:o:a": {
+        "long_name": "Social advocacy establishments, gross output",
+        "__row__": 349,
+        "__level__": 4,
         "quantity": {
-            "edan": "qpce:s:n+o:a",
+            "edan": "qpce:s:n:o:a",
             "edan_simple": "qpcesnoa",
             "bea": "niunderlyingdetail!u20403!dsaora"
         },
         "price": {
-            "edan": "ppce:s:n+o:a",
+            "edan": "ppce:s:n:o:a",
             "edan_simple": "ppcesnoa",
             "bea": "niunderlyingdetail!u20404!dsaorg"
         },
         "nominal": {
-            "edan": "npce:s:n+o:a",
+            "edan": "npce:s:n:o:a",
             "edan_simple": "npcesnoa",
             "bea": "niunderlyingdetail!u20405!dsaorc"
         },
         "real": {
-            "edan": "rpce:s:n+o:a",
+            "edan": "rpce:s:n:o:a",
             "edan_simple": "rpcesnoa",
             "bea": "niunderlyingdetail!u20406!dsaorx"
         }
     },
-    "pce:s:n+o:c": {
-        "bea_name": "Civic and social organizations, gross output",
-        "table_row": 350,
-        "level": 4,
+    "pce:s:n:o:c": {
+        "long_name": "Civic and social organizations, gross output",
+        "__row__": 350,
+        "__level__": 4,
         "quantity": {
-            "edan": "qpce:s:n+o:c",
+            "edan": "qpce:s:n:o:c",
             "edan_simple": "qpcesnoc",
             "bea": "niunderlyingdetail!u20403!dciora"
         },
         "price": {
-            "edan": "ppce:s:n+o:c",
+            "edan": "ppce:s:n:o:c",
             "edan_simple": "ppcesnoc",
             "bea": "niunderlyingdetail!u20404!dciorg"
         },
         "nominal": {
-            "edan": "npce:s:n+o:c",
+            "edan": "npce:s:n:o:c",
             "edan_simple": "npcesnoc",
             "bea": "niunderlyingdetail!u20405!dciorc"
         },
         "real": {
-            "edan": "rpce:s:n+o:c",
+            "edan": "rpce:s:n:o:c",
             "edan_simple": "rpcesnoc",
             "bea": "niunderlyingdetail!u20406!dciorx"
         }
     },
-    "pce:s:n+o:p": {
-        "bea_name": "Professional advocacy, gross output",
-        "table_row": 351,
-        "level": 4,
+    "pce:s:n:o:p": {
+        "long_name": "Professional advocacy, gross output",
+        "__row__": 351,
+        "__level__": 4,
         "quantity": {
-            "edan": "qpce:s:n+o:p",
+            "edan": "qpce:s:n:o:p",
             "edan_simple": "qpcesnop",
             "bea": "niunderlyingdetail!u20403!dsngra"
         },
         "price": {
-            "edan": "ppce:s:n+o:p",
+            "edan": "ppce:s:n:o:p",
             "edan_simple": "ppcesnop",
             "bea": "niunderlyingdetail!u20404!dsngrg"
         },
         "nominal": {
-            "edan": "npce:s:n+o:p",
+            "edan": "npce:s:n:o:p",
             "edan_simple": "npcesnop",
             "bea": "niunderlyingdetail!u20405!dsngrc"
         },
         "real": {
-            "edan": "rpce:s:n+o:p",
+            "edan": "rpce:s:n:o:p",
             "edan_simple": "rpcesnop",
             "bea": "niunderlyingdetail!u20406!dsngrx"
         }
     },
     "pce:s:n~l": {
-        "bea_name": "Less: Receipts from sales of goods and services by nonprofit institutions (134)",
-        "table_row": 352,
-        "level": 3,
+        "long_name": "Less: Receipts from sales of goods and services by nonprofit institutions (134)",
+        "__row__": 352,
+        "__level__": 3,
         "quantity": {
             "edan": "qpce:s:n~l",
             "edan_simple": "qpcesnl",
@@ -8780,9 +8780,9 @@
         }
     },
     "pce:s:n~l:h": {
-        "bea_name": "Health services to households",
-        "table_row": 353,
-        "level": 4,
+        "long_name": "Health services to households",
+        "__row__": 353,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:n~l:h",
             "edan_simple": "qpcesnlh",
@@ -8805,9 +8805,9 @@
         }
     },
     "pce:s:n~l:h:o": {
-        "bea_name": "Outpatient services to households",
-        "table_row": 354,
-        "level": 5,
+        "long_name": "Outpatient services to households",
+        "__row__": 354,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:n~l:h:o",
             "edan_simple": "qpcesnlho",
@@ -8830,9 +8830,9 @@
         }
     },
     "pce:s:n~l:h:h": {
-        "bea_name": "Nonprofit hospitals services to households",
-        "table_row": 355,
-        "level": 5,
+        "long_name": "Nonprofit hospitals services to households",
+        "__row__": 355,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:n~l:h:h",
             "edan_simple": "qpcesnlhh",
@@ -8855,9 +8855,9 @@
         }
     },
     "pce:s:n~l:h:n": {
-        "bea_name": "Nonprofit nursing homes services to households",
-        "table_row": 356,
-        "level": 5,
+        "long_name": "Nonprofit nursing homes services to households",
+        "__row__": 356,
+        "__level__": 5,
         "quantity": {
             "edan": "qpce:s:n~l:h:n",
             "edan_simple": "qpcesnlhn",
@@ -8880,9 +8880,9 @@
         }
     },
     "pce:s:n~l:r": {
-        "bea_name": "Recreation services to households",
-        "table_row": 357,
-        "level": 4,
+        "long_name": "Recreation services to households",
+        "__row__": 357,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:n~l:r",
             "edan_simple": "qpcesnlr",
@@ -8905,9 +8905,9 @@
         }
     },
     "pce:s:n~l:e": {
-        "bea_name": "Education services to households",
-        "table_row": 358,
-        "level": 4,
+        "long_name": "Education services to households",
+        "__row__": 358,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:n~l:e",
             "edan_simple": "qpcesnle",
@@ -8930,9 +8930,9 @@
         }
     },
     "pce:s:n~l:s": {
-        "bea_name": "Social services to households",
-        "table_row": 359,
-        "level": 4,
+        "long_name": "Social services to households",
+        "__row__": 359,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:n~l:s",
             "edan_simple": "qpcesnls",
@@ -8955,9 +8955,9 @@
         }
     },
     "pce:s:n~l:b": {
-        "bea_name": "Religious organizations' services to households",
-        "table_row": 360,
-        "level": 4,
+        "long_name": "Religious organizations' services to households",
+        "__row__": 360,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:n~l:b",
             "edan_simple": "qpcesnlb",
@@ -8980,9 +8980,9 @@
         }
     },
     "pce:s:n~l:f": {
-        "bea_name": "Foundations and grantmaking and giving services to households",
-        "table_row": 361,
-        "level": 4,
+        "long_name": "Foundations and grantmaking and giving services to households",
+        "__row__": 361,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:n~l:f",
             "edan_simple": "qpcesnlf",
@@ -9005,9 +9005,9 @@
         }
     },
     "pce:s:n~l:a": {
-        "bea_name": "Services of social advocacy establishments to households",
-        "table_row": 362,
-        "level": 4,
+        "long_name": "Services of social advocacy establishments to households",
+        "__row__": 362,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:n~l:a",
             "edan_simple": "qpcesnla",
@@ -9030,9 +9030,9 @@
         }
     },
     "pce:s:n~l:c": {
-        "bea_name": "Civic and social organizations' services to households",
-        "table_row": 363,
-        "level": 4,
+        "long_name": "Civic and social organizations' services to households",
+        "__row__": 363,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:n~l:c",
             "edan_simple": "qpcesnlc",
@@ -9055,9 +9055,9 @@
         }
     },
     "pce:s:n~l:p": {
-        "bea_name": "Professional advocacy services to households",
-        "table_row": 364,
-        "level": 4,
+        "long_name": "Professional advocacy services to households",
+        "__row__": 364,
+        "__level__": 4,
         "quantity": {
             "edan": "qpce:s:n~l:p",
             "edan_simple": "qpcesnlp",
@@ -9080,9 +9080,9 @@
         }
     },
     "cpce": {
-        "bea_name": "Control group",
-        "table_row": 365,
-        "level": 0,
+        "long_name": "Control group",
+        "__row__": 365,
+        "__level__": 0,
         "quantity": {
             "edan": "qcpce",
             "edan_simple": "qcpce",
@@ -9105,9 +9105,9 @@
         }
     },
     "cpcev": {
-        "bea_name": "PCE food and energy",
-        "table_row": 366,
-        "level": 0,
+        "long_name": "PCE food and energy",
+        "__row__": 366,
+        "__level__": 0,
         "quantity": {
             "edan": "qcpcev",
             "edan_simple": "qcpcev",
@@ -9130,9 +9130,9 @@
         }
     },
     "cpcee": {
-        "bea_name": "PCE energy goods and services",
-        "table_row": 367,
-        "level": 0,
+        "long_name": "PCE energy goods and services",
+        "__row__": 367,
+        "__level__": 0,
         "quantity": {
             "edan": "qcpcee",
             "edan_simple": "qcpcee",
@@ -9155,9 +9155,9 @@
         }
     },
     "cpcef": {
-        "bea_name": "PCE excluding food",
-        "table_row": 368,
-        "level": 0,
+        "long_name": "PCE excluding food",
+        "__row__": 368,
+        "__level__": 0,
         "quantity": {
             "edan": "qcpcef",
             "edan_simple": "qcpcef",
@@ -9180,9 +9180,9 @@
         }
     },
     "cpecg": {
-        "bea_name": "PCE excluding energy",
-        "table_row": 369,
-        "level": 0,
+        "long_name": "PCE excluding energy",
+        "__row__": 369,
+        "__level__": 0,
         "quantity": {
             "edan": "qcpecg",
             "edan_simple": "qcpecg",
@@ -9205,9 +9205,9 @@
         }
     },
     "cpcec": {
-        "bea_name": "PCE excluding food and energy",
-        "table_row": 370,
-        "level": 0,
+        "long_name": "PCE excluding food and energy",
+        "__row__": 370,
+        "__level__": 0,
         "quantity": {
             "edan": "qcpcec",
             "edan_simple": "qcpcec",
@@ -9230,9 +9230,9 @@
         }
     },
     "cpcegv": {
-        "bea_name": "PCE goods excluding food and energy",
-        "table_row": 371,
-        "level": 0,
+        "long_name": "PCE goods excluding food and energy",
+        "__row__": 371,
+        "__level__": 0,
         "quantity": {
             "edan": "qcpcegv",
             "edan_simple": "qcpcegv",
@@ -9255,9 +9255,9 @@
         }
     },
     "cpcese": {
-        "bea_name": "PCE services excluding energy",
-        "table_row": 372,
-        "level": 0,
+        "long_name": "PCE services excluding energy",
+        "__row__": 372,
+        "__level__": 0,
         "quantity": {
             "edan": "qcpcese",
             "edan_simple": "qcpcese",
@@ -9280,9 +9280,9 @@
         }
     },
     "mpce": {
-        "bea_name": "Market-based PCE",
-        "table_row": 373,
-        "level": 0,
+        "long_name": "Market-based PCE",
+        "__row__": 373,
+        "__level__": 0,
         "quantity": {
             "edan": "qmpce",
             "edan_simple": "qmpce",
@@ -9305,9 +9305,9 @@
         }
     },
     "mpce:v": {
-        "bea_name": "Market-based PCE motor vehicles and parts",
-        "table_row": 374,
-        "level": 1,
+        "long_name": "Market-based PCE motor vehicles and parts",
+        "__row__": 374,
+        "__level__": 1,
         "quantity": {
             "edan": "qmpce:v",
             "edan_simple": "qmpcev",
@@ -9330,9 +9330,9 @@
         }
     },
     "mpce:d": {
-        "bea_name": "Market-based PCE durable goods other than motor vehicles and parts",
-        "table_row": 375,
-        "level": 1,
+        "long_name": "Market-based PCE durable goods other than motor vehicles and parts",
+        "__row__": 375,
+        "__level__": 1,
         "quantity": {
             "edan": "qmpce:d",
             "edan_simple": "qmpced",
@@ -9355,9 +9355,9 @@
         }
     },
     "mpce:f": {
-        "bea_name": "Market-based PCE food and beverages purchased for off-premises consumption",
-        "table_row": 376,
-        "level": 1,
+        "long_name": "Market-based PCE food and beverages purchased for off-premises consumption",
+        "__row__": 376,
+        "__level__": 1,
         "quantity": {
             "edan": "qmpce:f",
             "edan_simple": "qmpcef",
@@ -9380,9 +9380,9 @@
         }
     },
     "mpce:c": {
-        "bea_name": "Market-based PCE clothing and footwear",
-        "table_row": 377,
-        "level": 1,
+        "long_name": "Market-based PCE clothing and footwear",
+        "__row__": 377,
+        "__level__": 1,
         "quantity": {
             "edan": "qmpce:c",
             "edan_simple": "qmpcec",
@@ -9405,9 +9405,9 @@
         }
     },
     "mpce:g": {
-        "bea_name": "Market-based PCE gasoline and other energy goods",
-        "table_row": 378,
-        "level": 1,
+        "long_name": "Market-based PCE gasoline and other energy goods",
+        "__row__": 378,
+        "__level__": 1,
         "quantity": {
             "edan": "qmpce:g",
             "edan_simple": "qmpceg",
@@ -9430,9 +9430,9 @@
         }
     },
     "mpce:n": {
-        "bea_name": "Market-based PCE other nondurable goods",
-        "table_row": 379,
-        "level": 1,
+        "long_name": "Market-based PCE other nondurable goods",
+        "__row__": 379,
+        "__level__": 1,
         "quantity": {
             "edan": "qmpce:n",
             "edan_simple": "qmpcen",
@@ -9455,9 +9455,9 @@
         }
     },
     "mpce:s": {
-        "bea_name": "Market-based PCE services",
-        "table_row": 380,
-        "level": 1,
+        "long_name": "Market-based PCE services",
+        "__row__": 380,
+        "__level__": 1,
         "quantity": {
             "edan": "qmpce:s",
             "edan_simple": "qmpces",
@@ -9480,9 +9480,9 @@
         }
     },
     "mpce:s:h": {
-        "bea_name": "Market-based PCE housing services",
-        "table_row": 381,
-        "level": 2,
+        "long_name": "Market-based PCE housing services",
+        "__row__": 381,
+        "__level__": 2,
         "quantity": {
             "edan": "qmpce:s:h",
             "edan_simple": "qmpcesh",
@@ -9505,9 +9505,9 @@
         }
     },
     "mpce:s:u": {
-        "bea_name": "Market-based PCE household utilities",
-        "table_row": 382,
-        "level": 2,
+        "long_name": "Market-based PCE household utilities",
+        "__row__": 382,
+        "__level__": 2,
         "quantity": {
             "edan": "qmpce:s:u",
             "edan_simple": "qmpcesu",
@@ -9530,9 +9530,9 @@
         }
     },
     "mpce:s:c": {
-        "bea_name": "Market-based PCE health care",
-        "table_row": 383,
-        "level": 2,
+        "long_name": "Market-based PCE health care",
+        "__row__": 383,
+        "__level__": 2,
         "quantity": {
             "edan": "qmpce:s:c",
             "edan_simple": "qmpcesc",
@@ -9555,9 +9555,9 @@
         }
     },
     "mpce:s:t": {
-        "bea_name": "Market-based PCE transportation services",
-        "table_row": 384,
-        "level": 2,
+        "long_name": "Market-based PCE transportation services",
+        "__row__": 384,
+        "__level__": 2,
         "quantity": {
             "edan": "qmpce:s:t",
             "edan_simple": "qmpcest",
@@ -9580,9 +9580,9 @@
         }
     },
     "mpce:s:r": {
-        "bea_name": "Market-based PCE recreation services",
-        "table_row": 385,
-        "level": 2,
+        "long_name": "Market-based PCE recreation services",
+        "__row__": 385,
+        "__level__": 2,
         "quantity": {
             "edan": "qmpce:s:r",
             "edan_simple": "qmpcesr",
@@ -9605,9 +9605,9 @@
         }
     },
     "mpce:s:f": {
-        "bea_name": "Market-based PCE food services and accommodations",
-        "table_row": 386,
-        "level": 2,
+        "long_name": "Market-based PCE food services and accommodations",
+        "__row__": 386,
+        "__level__": 2,
         "quantity": {
             "edan": "qmpce:s:f",
             "edan_simple": "qmpcesf",
@@ -9630,9 +9630,9 @@
         }
     },
     "mpce:s:i": {
-        "bea_name": "Market-based PCE financial services and insurance",
-        "table_row": 387,
-        "level": 2,
+        "long_name": "Market-based PCE financial services and insurance",
+        "__row__": 387,
+        "__level__": 2,
         "quantity": {
             "edan": "qmpce:s:i",
             "edan_simple": "qmpcesi",
@@ -9655,9 +9655,9 @@
         }
     },
     "mpce:s:o": {
-        "bea_name": "Market-based PCE other services",
-        "table_row": 388,
-        "level": 2,
+        "long_name": "Market-based PCE other services",
+        "__row__": 388,
+        "__level__": 2,
         "quantity": {
             "edan": "qmpce:s:o",
             "edan_simple": "qmpceso",
@@ -9680,9 +9680,9 @@
         }
     },
     "mpce:s:o:c": {
-        "bea_name": "Market-based PCE communication services",
-        "table_row": 389,
-        "level": 3,
+        "long_name": "Market-based PCE communication services",
+        "__row__": 389,
+        "__level__": 3,
         "quantity": {
             "edan": "qmpce:s:o:c",
             "edan_simple": "qmpcesoc",
@@ -9705,9 +9705,9 @@
         }
     },
     "mpce:s:o:e": {
-        "bea_name": "Market-based PCE education",
-        "table_row": 390,
-        "level": 3,
+        "long_name": "Market-based PCE education",
+        "__row__": 390,
+        "__level__": 3,
         "quantity": {
             "edan": "qmpce:s:o:e",
             "edan_simple": "qmpcesoe",
@@ -9730,9 +9730,9 @@
         }
     },
     "mpce:s:o:p": {
-        "bea_name": "Market-based PCE professional services",
-        "table_row": 391,
-        "level": 3,
+        "long_name": "Market-based PCE professional services",
+        "__row__": 391,
+        "__level__": 3,
         "quantity": {
             "edan": "qmpce:s:o:p",
             "edan_simple": "qmpcesop",
@@ -9755,9 +9755,9 @@
         }
     },
     "mpce:s:o:a": {
-        "bea_name": "Market-based PCE personal care and clothing services",
-        "table_row": 392,
-        "level": 3,
+        "long_name": "Market-based PCE personal care and clothing services",
+        "__row__": 392,
+        "__level__": 3,
         "quantity": {
             "edan": "qmpce:s:o:a",
             "edan_simple": "qmpcesoa",
@@ -9780,9 +9780,9 @@
         }
     },
     "mpce:s:o:k": {
-        "bea_name": "Market-based PCE child care",
-        "table_row": 393,
-        "level": 3,
+        "long_name": "Market-based PCE child care",
+        "__row__": 393,
+        "__level__": 3,
         "quantity": {
             "edan": "qmpce:s:o:k",
             "edan_simple": "qmpcesok",
@@ -9805,9 +9805,9 @@
         }
     },
     "mpce:s:o:h": {
-        "bea_name": "Market-based PCE household maintenance",
-        "table_row": 394,
-        "level": 3,
+        "long_name": "Market-based PCE household maintenance",
+        "__row__": 394,
+        "__level__": 3,
         "quantity": {
             "edan": "qmpce:s:o:h",
             "edan_simple": "qmpcesoh",
@@ -9830,9 +9830,9 @@
         }
     },
     "mpcej": {
-        "bea_name": "Market-based PCE food and energy",
-        "table_row": 395,
-        "level": 0,
+        "long_name": "Market-based PCE food and energy",
+        "__row__": 395,
+        "__level__": 0,
         "quantity": {
             "edan": "qmpcej",
             "edan_simple": "qmpcej",
@@ -9855,9 +9855,9 @@
         }
     },
     "mpcem": {
-        "bea_name": "Market-based PCE excluding food",
-        "table_row": 396,
-        "level": 0,
+        "long_name": "Market-based PCE excluding food",
+        "__row__": 396,
+        "__level__": 0,
         "quantity": {
             "edan": "qmpcem",
             "edan_simple": "qmpcem",
@@ -9880,9 +9880,9 @@
         }
     },
     "mpcep": {
-        "bea_name": "Market-based PCE excluding energy",
-        "table_row": 397,
-        "level": 0,
+        "long_name": "Market-based PCE excluding energy",
+        "__row__": 397,
+        "__level__": 0,
         "quantity": {
             "edan": "qmpcep",
             "edan_simple": "qmpcep",
@@ -9905,9 +9905,9 @@
         }
     },
     "mpcex": {
-        "bea_name": "Market-based PCE excluding food and energy",
-        "table_row": 398,
-        "level": 0,
+        "long_name": "Market-based PCE excluding food and energy",
+        "__row__": 398,
+        "__level__": 0,
         "quantity": {
             "edan": "qmpcex",
             "edan_simple": "qmpcex",
