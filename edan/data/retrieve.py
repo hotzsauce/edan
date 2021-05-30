@@ -13,8 +13,12 @@ from edan.data.fetchers import (
 	EdanFetcher,
 	fetchers_by_source
 )
-
 from edan.data.aliases import alias_maps
+from edan.data.parsing import (
+	is_expression,
+	parse_and_extract_series,
+	evaluate_expr
+)
 
 
 warehouse = pathlib.Path(__file__).parent / 'warehouse'
@@ -26,6 +30,60 @@ class EdanDataRetriever(object):
 		pass
 
 	def retrieve(
+		self,
+		code: str,
+		source: str = '',
+		*init_args, **init_kwargs
+	):
+		"""
+		retrieve and return both economic data and metadata for data series
+		corresponding to `code`. `code` can be an expression with series codes
+
+		Parameters
+		----------
+		code : str
+			the code referencing the desired series. the alias maps are checked
+			in case the provided `code` is an alias
+		source : str ( = '' )
+			the source api that hosts the series' data & metadata. built-in
+			sources are FRED (mortadata/fredapi), BEA (hotzsauce/beapy), and
+			AlphaVantage (RomelTorres/alpha_vantage). although this parameter
+			is not required as per the method definition, doing a blind retrieval
+			on all the saved fetchers is not implemented yet
+		*init_args : positional arguments
+			initialization arguments in case the source API key is not saved
+		*init_kwargs : keyword arguments
+			initialization arguments in case the source API key is not saved
+
+		TODO
+		----
+			- blind retrieval when `source` is not provided
+			- AlphaVantage API
+
+		Returns
+		-------
+		2-tuple of pandas DataFrame
+			data, metadata
+		"""
+		if is_expression(code):
+			tree, code_list = parse_and_extract_series(code)
+
+			# collect data & metadata before evaluating
+			series, frames = {}, []
+			for c in code_list:
+				data, meta = self.retrieve_series(c, source, *init_args, **init_kwargs)
+
+				series[data.name] = data
+				frames.append(meta)
+
+			df = evaluate_expr(tree, series)
+			metadata = pd.concat(frames, axis='columns')
+			return df.squeeze().dropna(how='all', axis='index'), metadata.squeeze()
+
+		else:
+			return self.retrieve_series(code, source, *init_args, **init_kwargs)
+
+	def retrieve_series(
 		self,
 		code: str,
 		source: str = '',
