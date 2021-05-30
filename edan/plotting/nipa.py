@@ -6,7 +6,9 @@ from __future__ import annotations
 
 import pandas as pd
 import numpy as np
+
 from cycler import cycler
+import matplotlib.pyplot as plt
 
 from edan.utils.dtypes import (
 	iterable_not_string
@@ -83,7 +85,6 @@ class ContributionPlot(object):
 			index=data.index,
 			columns=data.columns
 		)
-
 
 	def plot(
 		self,
@@ -176,7 +177,29 @@ class SharePlot(object):
 		series_names = self.mgr.series_names(names, self.mtype)
 		df.columns = series_names
 
-		return df.plot.area(*args, **kwargs)
+		# default to area plot but allow for stacked bars
+		kind = kwargs.pop('kind', 'area')
+
+		if kind == 'bar':
+			_, ax = plt.subplots()
+
+			# pandas automatically interprets x-labels on bar charts as categories, 
+			#	so we have to directly interact with the axes. see this for 
+			#	more detail:
+			# https://stackoverflow.com/questions/30133280/pandas-bar-plot-
+			# changes-date-format
+			for i in range(df.shape[1]):
+				if i:
+					ax.bar(
+						df.index, df.iloc[:, i],
+						bottom=df.iloc[:, i-1], label=series_names[i]
+					)
+				else:
+					ax.bar(df.index, df.iloc[:, i], label=series_names[i])
+			ax.legend()
+			return ax
+
+		return df.plot(kind=kind, *args, **kwargs)
 
 
 
@@ -383,8 +406,8 @@ class NIPAPlotAccessor(GenericPlotAccessor):
 			specification of how to modify data. for now, all NIPASeries in `data`
 			will have the same method applied to them. for documentation of how
 			the different method types are interpreted, see __call__ method of
-			GDPPlotAccessor. for documentation of the built-in recognized
-			`method` string identifiers, see `edan.gdp.ModificationAccessor`
+			NIPAPlotAccessor. for documentation of the built-in recognized
+			`method` string identifiers, see `edan.aggregates.modifications`
 
 		Returns
 		-------

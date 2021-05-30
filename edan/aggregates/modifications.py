@@ -16,6 +16,8 @@ from edan.utils.ts import (
 	periods_per_year
 )
 
+from edan.utils.dtypes import iterable_not_string
+
 
 series_mods = dict()
 def add_mod(key, func):
@@ -29,7 +31,7 @@ add_mod('difa%',	lambda s, n, h: 100 * ( s.divide(s.shift(n)) ** (h/n) - 1))
 add_mod('difal',	lambda s, n, h: 100 * (h/n) * np.log(s.divide(s.shift(n))))
 add_mod('difv',		lambda s, n, h: s.diff(n)/n)
 add_mod('difv%',	lambda s, n, h: 100 * (s.divide(s.shift(n)) ** (h/n) - 1))
-add_mod('difvl',	lambda s, n, h: (100/n) * np.log(s.divide(s.shift)))
+add_mod('difvl',	lambda s, n, h: (100/n) * np.log(s.divide(s.shift(n))))
 add_mod('movv',		lambda s, n, h: s.rolling(n).mean())
 add_mod('mova',		lambda s, n, h: h * s.rolling(n).mean())
 add_mod('movt',		lambda s, n, h: s.rolling(n).sum())
@@ -129,15 +131,20 @@ class ModificationAccessor(object):
 	def __init__(self, obj, *args, **kwargs):
 		self.data = obj.data
 
-	def __call__(self,
-		method: Union[str, Callable] = 'difa%',
+	def __call__(
+		self,
+		method: Union[str, Callable, Iterable[str, dict]] = 'difa%',
+		*args,
 		n: int = 1,
 		h: int = 0,
-		base: Union[str, TimeStamp] = '',
-		*args, **kwargs
+		base: Union[str, int, TimeStamp] = '',
+		**kwargs
 	):
 		"""
-		modify the data according to parameter `method`
+		modify the data according to parameter `method`. a Series or DataFrame
+		is returned depending on if `method` is a non-string, non-dict iterable
+		or not. the column labels/Series name are set to the `method` strings.
+		the 'n', 'h', and 'base' parameters must be passed as keywords
 
 		throughout these comments/docs, the conventions are:
 			x(t)	: observation of time series x at time t
@@ -146,7 +153,7 @@ class ModificationAccessor(object):
 
 		Parameters
 		----------
-		method : str | callable
+		method : str | Callable | dict
 			specification of how data will be modified. recognized string values
 			are:
 				'diff'	: period-to-period difference
@@ -180,6 +187,32 @@ class ModificationAccessor(object):
 				'yryrl' : year-over-year log change
 							100 * ln[ x(t)/x(t-h) ]
 				'index'	: reindex the series according to the parameter `base`
+
+			if a Callable, `self.data` will be passed as the first argument, with
+			positional and keyword arguments passed if provided here. if dict,
+			the first value is assumed to be the method name, and the other entries
+			will be passed to `n`, `h`, `base`, or `kwargs`, as appropriate.
+			for example,
+
+				>>> gdp = edan.nipa.GDPTable['gdp']
+				>>> gdp.modify(mtype='real', method={'foo': 'diff', 'n'=2})
+
+			or
+
+				>>> gdp.modify(mtype='price', method={'bar': 'index', 'base'=2009})
+
+			the key of the method doesn't matter in terms of functionality - it
+			doesn't affect the calculations - but it is used as the name of the
+			column
+				note: if any of the entries of the dict beyond the first have key
+			values of `n`, `h`, or `base`, those are popped & passed to those
+			arguments in the __modify__ signature, as opposed to going through the
+			general **kwargs arg. the only consequence of this is that if the first
+			entry of the dict is a callable, its keyword arguments should not be
+			any of {`n`, `h`, `base`}
+				if `method` is an iterable of the above, the same logic is
+			applied to each entry
+
 		n : int
 			the period offset used in  the built-in method functions
 		h : int
@@ -197,11 +230,106 @@ class ModificationAccessor(object):
 		pandas DataFrame
 		"""
 
+		def get_name_safe(method):
+			if isinstance(method, str):
+				return method
+			elif isinstance(method, dict):
+				return list(method.keys())[0]
+
+		if isinstance(method, str):
+
+			df = self.__modify__(method, n, h, base, *args, **kwargs)
+			df.name = method
+			return df
+
+		elif isinstance(method, dict):
+			name = get_name_safe(method) # method's values get popped
+			df = self.__modify__(method, n, h, base, *args, **kwargs)
+			df.name = name
+			return df
+
+		elif callable(method):
+
+			df = self.__modify__(method, n, h, base, *args, **kwargs)
+			df.name = 'custom'
+			return df
+
+		elif iterable_not_string(method):
+
+			frames = []
+			for meth in method:
+				df = self.__modify__(meth, n, h, base, *args, **kwargs)
+				df.name = get_name_safe(meth)
+				frames.append(df)
+
+			df = pd.concat(frames, axis='columns').dropna(axis='index', how='all')
+			return df
+
+		else:
+			raise TypeError(method)
+
+
+
+	def __modify__(self,
+		method: Union[str, dict, Callable] = 'difa%',
+		n: int = 1,
+		h: int = 0,
+		base: Union[str, TimeStamp] = '',
+		*args, **kwargs
+	):
+
 		# can be called in other `edan` modules, don't want to have to provide
 		#	the same default arg
 		if method == '':
 			method = 'difa%'
 
+		try:
+			# assume `method` is a dict
+			keys = list(method.keys())
+
+			maybe_callable = method.pop(keys[0])
+			n_ = method.pop('n', n)
+			h_ = method.pop('h', h)
+			base_ = method.pop('base', base)
+
+			kwargs.update(method)
+			df = self.__modify__(maybe_callable, n_, h_, base_, *args, **kwargs)
+
+		except AttributeError:
+			# assume `method` is a user-provided function
+
+			if callable(method):
+				if args and kwargs:
+					df = method(self.data, *args, **kwargs)
+				elif args:
+					df = method(self.data, *args)
+				elif kwargs:
+					df = method(self.data, **kwargs)
+				else:
+					df = method(self.data)
+
+			else:
+				# now assume `method` is a string identifier of registered functions
+				if method == 'index':
+					rix = ReIndexer(base)
+					return rix(self.data)
+
+				else:
+					# one of the time-series functions
+					try:
+						modifier = series_mods[method]
+					except KeyError:
+						raise KeyError(
+							f"{repr(method)} is an unrecognized modification"
+						) from None
+
+					if not h:
+						h = periods_per_year(self.data)
+					df = modifier(self.data, n, h)
+
+		return df
+
+		"""
 		try:
 			# assume `method` is a user-provided function
 			if args and kwargs:
@@ -214,25 +342,39 @@ class ModificationAccessor(object):
 				df = method(self.data)
 
 		except TypeError:
-			# now assume `method` is a string identifier of registered functions
-			if method == 'index':
-				rix = ReIndexer(base)
-				return rix(self.data)
+			# assume `method is a dict
+			try:
+				keys = list(method.keys())
 
-			else:
-				# one of the time-series functions
-				try:
-					modifier = series_mods[method]
-				except KeyError:
-					raise KeyError(
-						f"{repr(method)} is an unrecognized modification"
-					) from None
+				maybe_callable = method.pop(keys[0])
+				n_ = method.pop('n', n)
+				h_ = method.pop('h', h)
+				base_ = method.pop('base', base)
 
-				if not h:
-					h = periods_per_year(self.data)
-				df = modifier(self.data, n, h)
+				kwargs.update(method)
+				df = self.__modify__(maybe_callable, n_, h_, base_, *args, **kwargs)
+
+			except AttributeError:
+				# now assume `method` is a string identifier of registered functions
+				if method == 'index':
+					rix = ReIndexer(base)
+					return rix(self.data)
+
+				else:
+					# one of the time-series functions
+					try:
+						modifier = series_mods[method]
+					except KeyError:
+						raise KeyError(
+							f"{repr(method)} is an unrecognized modification"
+						) from None
+
+					if not h:
+						h = periods_per_year(self.data)
+					df = modifier(self.data, n, h)
 
 		return df
+		"""
 
 
 
