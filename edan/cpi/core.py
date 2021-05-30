@@ -6,7 +6,7 @@ from edan.accessors import CachedAccessor
 
 from edan.aggregates.series import Series
 from edan.aggregates.components import Component
-from edan.aggregates.modifications import ModificationAccessor
+from edan.aggregates.transformations import TransformationAccessor
 
 from edan.plotting.cpi import CPIPlotAccessor
 
@@ -25,7 +25,7 @@ class CPISeries(Series):
 		self.obj = obj
 
 	# add accessor for functions of data
-	modify = CachedAccessor('modify', ModificationAccessor)
+	transform = CachedAccessor('transform', TransformationAccessor)
 
 class CPIComponent(Component):
 

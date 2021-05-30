@@ -50,12 +50,12 @@ class CPIPlotAccessor(GenericPlotAccessor):
 			data.
 
 		method : Callable | str | dict ( = 'difa%' )
-			modification of the data before printing. recognized strings are
-			described in docs for `edan.nipa.modifications.ModificationAccessor`.
+			transformation of the data before printing. recognized strings are
+			described in docs for `edan.nipa.transformation.TransformationAccessor`.
 			the same goes for callable `methed`.
-				if `method` is a dict, the first value is the modification method,
+				if `method` is a dict, the first value is the transformation method,
 			and the following values are the keyword arguments that will be passed
-			to the underlying ModificationAccessor. for example,
+			to the underlying TransformationAccessor. for example,
 
 				>>> gdp = edan.gdp.GDP
 				>>> gdp.plot(mtype='real', method={'foo': 'diff', 'n'=2})
@@ -66,12 +66,12 @@ class CPIPlotAccessor(GenericPlotAccessor):
 
 			notice the key of the method doesn't matter. I'm not particularly
 			fond of this implementation but I'm not sure how to get keywords to
-			the ModificationAccessor without putting them all into the __call__
+			the TransformationAccessor without putting them all into the __call__
 			definition.
 				if the first value of dict `method` is a callable, the
 			other (key, value) pairs are interpreted as keyword arguments for
 			the user-defined callable.
-				if no modification is desired, pass empty string or None
+				if no transformation is desired, pass empty string or None
 
 		start : str | bool | datetime-like ( = '' )
 			left bound for truncating observations. if `start` = True, it's set
@@ -100,7 +100,7 @@ class CPIPlotAccessor(GenericPlotAccessor):
 		names : str | list ( = '' )
 			specifying the names that appear in the axis legend. by default the
 			components' `short_name` are used. labels for `mtype = 'real'` or
-			other recognized mtypes, and any modifications to data will automatically
+			other recognized mtypes, and any transforms to data will automatically
 			be added in this case.
 				if `names = 'codes'`, the series codes from FRED or AlphaVantage
 			will be used.
@@ -147,16 +147,16 @@ class CPIPlotAccessor(GenericPlotAccessor):
 		# selecting the GDP type of the component(s)
 		self.mgr.select_containers(mtype)
 
-		# get the list of NIPASeries and apply any data modifications
+		# get the list of NIPASeries and apply any data transformations
 		mseries = self.mgr.containers
-		mod_data = self._apply_modification(mseries, method)
+		trans_data = self._apply_transformation(mseries, method)
 
 		# merge list of series/dataframes together, and truncate
-		self.mgr.merge_print_data(mod_data)
+		self.mgr.merge_print_data(trans_data)
 		df = self.mgr.truncate(start=start, end=end, periods=periods)
 
 		# get names for the legend entries
-		series_names = self.mgr.series_names(names, mtype, self.mod_str)
+		series_names = self.mgr.series_names(names, mtype, self.trans_str)
 		df.columns = series_names
 
 		# interpolate, if need be
@@ -164,13 +164,13 @@ class CPIPlotAccessor(GenericPlotAccessor):
 		return df.plot(*args, **kwargs)
 
 
-	def _apply_modification(
+	def _apply_transformation(
 		self,
 		data: Iterable[CoreSeries],
 		method
 	):
 		"""
-		modify the underlying data of the NIPASeries as specified by `method`
+		transform the underlying data of the NIPASeries as specified by `method`
 		prior to plotting.
 
 		Parameters
@@ -181,11 +181,11 @@ class CPIPlotAccessor(GenericPlotAccessor):
 			`containers` attribute
 
 		method : Callable | str | dict
-			specification of how to modify data. for now, all NIPASeries in `data`
+			specification of how to transform data. for now, all NIPASeries in `data`
 			will have the same method applied to them. for documentation of how
 			the different method types are interpreted, see __call__ method of
 			GDPPlotAccessor. for documentation of the built-in recognized
-			`method` string identifiers, see `edan.gdp.ModificationAccessor`
+			`method` string identifiers, see `edan.aggregates.transformations`
 
 		Returns
 		-------
@@ -195,30 +195,30 @@ class CPIPlotAccessor(GenericPlotAccessor):
 			try:
 				# `method` is a dict
 				keys = list(method.keys())
-				mod_method = method.pop(keys[0])
+				trans_method = method.pop(keys[0])
 
-				# saving the modification method string for labeling legend entries
-				if isinstance(mod_method, str):
-					self.mod_str = '(' + mod_method + ')'
-					if mod_method == 'index':
-						self.mod_str = '(index=' + str(method['base']) + ')'
+				# saving the transformation method string for labeling legend entries
+				if isinstance(trans_method, str):
+					self.trans_str = '(' + trans_method + ')'
+					if trans_method == 'index':
+						self.trans_str = '(index=' + str(method['base']) + ')'
 				else:
-					self.mod_str = '(custom mod)'
-				return [s.modify(mod_method, **method) for s in data]
+					self.trans_str = '(custom trans)'
+				return [s.transform(trans_method, **method) for s in data]
 
 			except AttributeError:
 				# `method` is string or Callable
 
-				# saving the modification method string for labeling legend entries
+				# saving the transformation method string for labeling legend entries
 				if isinstance(method, str):
-					self.mod_str = '(' + method + ')'
+					self.trans_str = '(' + method + ')'
 				else:
-					self.mod_str = '(custom mod)'
-				return  [s.modify(method) for s in data]
+					self.trans_str = '(custom trans)'
+				return  [s.transform(method) for s in data]
 
 		else:
-			# no modification method
-			self.mod_str = ''
+			# no transformation method
+			self.trans_str = ''
 
 			# return the pandas Series, not the NIPASeries
 			try:

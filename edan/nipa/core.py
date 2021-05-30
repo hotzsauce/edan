@@ -12,7 +12,7 @@ from edan.aggregates.components import (
 	FlowComponent,
 	BalanceComponent
 )
-from edan.aggregates.modifications import ModificationAccessor
+from edan.aggregates.transformations import TransformationAccessor
 
 from edan.nipa.features import (
 	Contribution,
@@ -35,7 +35,7 @@ class NIPASeries(Series):
 		self.obj = obj
 
 	# add accessor for functions of data
-	modify = CachedAccessor('modify', ModificationAccessor)
+	transform = CachedAccessor('transform', TransformationAccessor)
 
 
 class NIPAComponent(Component):

@@ -1,6 +1,6 @@
 """
 module for functions of time series data of the Series containers, and for
-Features of aggregate-able data. 'Features' are distinct from the 'modifications'
+Features of aggregate-able data. 'Features' are distinct from the 'transformations'
 here because Features involve more than just a growth rate or moving average of
 a single series - sometimes they even might involve data from other, related
 aggregate components
@@ -19,25 +19,25 @@ from edan.utils.ts import (
 from edan.utils.dtypes import iterable_not_string
 
 
-series_mods = dict()
-def add_mod(key, func):
-	series_mods[key] = func
+series_transforms = dict()
+def add_transform(key, func):
+	series_transforms[key] = func
 
-add_mod('diff',		lambda s, n, h: s.diff(n))
-add_mod('diff%',	lambda s, n, h: 100 * (s.divide(s.shift(n)) - 1))
-add_mod('diffl',	lambda s, n, h: 100 * np.log(s.divide(s.shift(n))))
-add_mod('difa',		lambda s, n, h: (h/n) * s.diff(n))
-add_mod('difa%',	lambda s, n, h: 100 * ( s.divide(s.shift(n)) ** (h/n) - 1))
-add_mod('difal',	lambda s, n, h: 100 * (h/n) * np.log(s.divide(s.shift(n))))
-add_mod('difv',		lambda s, n, h: s.diff(n)/n)
-add_mod('difv%',	lambda s, n, h: 100 * (s.divide(s.shift(n)) ** (h/n) - 1))
-add_mod('difvl',	lambda s, n, h: (100/n) * np.log(s.divide(s.shift(n))))
-add_mod('movv',		lambda s, n, h: s.rolling(n).mean())
-add_mod('mova',		lambda s, n, h: h * s.rolling(n).mean())
-add_mod('movt',		lambda s, n, h: s.rolling(n).sum())
-add_mod('yryr',		lambda s, n, h: s.diff(h))
-add_mod('yryr%',	lambda s, n, h: 100 * (s.divide(s.shift(h)) - 1) )
-add_mod('yryrl',	lambda s, n, h: 100 * np.log(s.divide(s.shift(h))))
+add_transform('diff',	lambda s, n, h: s.diff(n))
+add_transform('diff%',	lambda s, n, h: 100 * (s.divide(s.shift(n)) - 1))
+add_transform('diffl',	lambda s, n, h: 100 * np.log(s.divide(s.shift(n))))
+add_transform('difa',	lambda s, n, h: (h/n) * s.diff(n))
+add_transform('difa%',	lambda s, n, h: 100 * ( s.divide(s.shift(n)) ** (h/n) - 1))
+add_transform('difal',	lambda s, n, h: 100 * (h/n) * np.log(s.divide(s.shift(n))))
+add_transform('difv',	lambda s, n, h: s.diff(n)/n)
+add_transform('difv%',	lambda s, n, h: 100 * (s.divide(s.shift(n)) ** (h/n) - 1))
+add_transform('difvl',	lambda s, n, h: (100/n) * np.log(s.divide(s.shift(n))))
+add_transform('movv',	lambda s, n, h: s.rolling(n).mean())
+add_transform('mova',	lambda s, n, h: h * s.rolling(n).mean())
+add_transform('movt',	lambda s, n, h: s.rolling(n).sum())
+add_transform('yryr',	lambda s, n, h: s.diff(h))
+add_transform('yryr%',	lambda s, n, h: 100 * (s.divide(s.shift(h)) - 1) )
+add_transform('yryrl',	lambda s, n, h: 100 * np.log(s.divide(s.shift(h))))
 
 
 class ReIndexer(object):
@@ -126,7 +126,7 @@ class ReIndexer(object):
 		return 100 * self.data / base_value
 
 
-class ModificationAccessor(object):
+class TransformationAccessor(object):
 
 	def __init__(self, obj, *args, **kwargs):
 		self.data = obj.data
@@ -141,7 +141,7 @@ class ModificationAccessor(object):
 		**kwargs
 	):
 		"""
-		modify the data according to parameter `method`. a Series or DataFrame
+		transform the data according to parameter `method`. a Series or DataFrame
 		is returned depending on if `method` is a non-string, non-dict iterable
 		or not. the column labels/Series name are set to the `method` strings.
 		the 'n', 'h', and 'base' parameters must be passed as keywords
@@ -154,7 +154,7 @@ class ModificationAccessor(object):
 		Parameters
 		----------
 		method : str | Callable | dict
-			specification of how data will be modified. recognized string values
+			specification of how data will be transformed. recognized string values
 			are:
 				'diff'	: period-to-period difference
 							x(t) - x(t-n)
@@ -195,18 +195,18 @@ class ModificationAccessor(object):
 			for example,
 
 				>>> gdp = edan.nipa.GDPTable['gdp']
-				>>> gdp.modify(mtype='real', method={'foo': 'diff', 'n'=2})
+				>>> gdp.transform(mtype='real', method={'foo': 'diff', 'n'=2})
 
 			or
 
-				>>> gdp.modify(mtype='price', method={'bar': 'index', 'base'=2009})
+				>>> gdp.transform(mtype='price', method={'bar': 'index', 'base'=2009})
 
 			the key of the method doesn't matter in terms of functionality - it
 			doesn't affect the calculations - but it is used as the name of the
 			column
 				note: if any of the entries of the dict beyond the first have key
 			values of `n`, `h`, or `base`, those are popped & passed to those
-			arguments in the __modify__ signature, as opposed to going through the
+			arguments in the __transform__ signature, as opposed to going through the
 			general **kwargs arg. the only consequence of this is that if the first
 			entry of the dict is a callable, its keyword arguments should not be
 			any of {`n`, `h`, `base`}
@@ -238,19 +238,19 @@ class ModificationAccessor(object):
 
 		if isinstance(method, str):
 
-			df = self.__modify__(method, n, h, base, *args, **kwargs)
+			df = self.__transform__(method, n, h, base, *args, **kwargs)
 			df.name = method
 			return df
 
 		elif isinstance(method, dict):
 			name = get_name_safe(method) # method's values get popped
-			df = self.__modify__(method, n, h, base, *args, **kwargs)
+			df = self.__transform__(method, n, h, base, *args, **kwargs)
 			df.name = name
 			return df
 
 		elif callable(method):
 
-			df = self.__modify__(method, n, h, base, *args, **kwargs)
+			df = self.__transform__(method, n, h, base, *args, **kwargs)
 			df.name = 'custom'
 			return df
 
@@ -258,7 +258,7 @@ class ModificationAccessor(object):
 
 			frames = []
 			for meth in method:
-				df = self.__modify__(meth, n, h, base, *args, **kwargs)
+				df = self.__transform__(meth, n, h, base, *args, **kwargs)
 				df.name = get_name_safe(meth)
 				frames.append(df)
 
@@ -270,7 +270,7 @@ class ModificationAccessor(object):
 
 
 
-	def __modify__(self,
+	def __transform__(self,
 		method: Union[str, dict, Callable] = 'difa%',
 		n: int = 1,
 		h: int = 0,
@@ -293,7 +293,7 @@ class ModificationAccessor(object):
 			base_ = method.pop('base', base)
 
 			kwargs.update(method)
-			df = self.__modify__(maybe_callable, n_, h_, base_, *args, **kwargs)
+			df = self.__transform__(maybe_callable, n_, h_, base_, *args, **kwargs)
 
 		except AttributeError:
 			# assume `method` is a user-provided function
@@ -317,64 +317,17 @@ class ModificationAccessor(object):
 				else:
 					# one of the time-series functions
 					try:
-						modifier = series_mods[method]
+						transformer = series_transforms[method]
 					except KeyError:
 						raise KeyError(
-							f"{repr(method)} is an unrecognized modification"
+							f"{repr(method)} is an unrecognized transformation"
 						) from None
 
 					if not h:
 						h = periods_per_year(self.data)
-					df = modifier(self.data, n, h)
+					df = transformer(self.data, n, h)
 
 		return df
-
-		"""
-		try:
-			# assume `method` is a user-provided function
-			if args and kwargs:
-				df = method(self.data, *args, **kwargs)
-			elif args:
-				df = method(self.data, *args)
-			elif kwargs:
-				df = method(self.data, **kwargs)
-			else:
-				df = method(self.data)
-
-		except TypeError:
-			# assume `method is a dict
-			try:
-				keys = list(method.keys())
-
-				maybe_callable = method.pop(keys[0])
-				n_ = method.pop('n', n)
-				h_ = method.pop('h', h)
-				base_ = method.pop('base', base)
-
-				kwargs.update(method)
-				df = self.__modify__(maybe_callable, n_, h_, base_, *args, **kwargs)
-
-			except AttributeError:
-				# now assume `method` is a string identifier of registered functions
-				if method == 'index':
-					rix = ReIndexer(base)
-					return rix(self.data)
-
-				else:
-					# one of the time-series functions
-					try:
-						modifier = series_mods[method]
-					except KeyError:
-						raise KeyError(
-							f"{repr(method)} is an unrecognized modification"
-						) from None
-
-					if not h:
-						h = periods_per_year(self.data)
-					df = modifier(self.data, n, h)
-
-		return df
-		"""
 
 
 

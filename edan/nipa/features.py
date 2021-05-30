@@ -1,8 +1,8 @@
 """
 module for computing features of NIPA data. 'features' are distinct from the
-'modifications' in `edan.aggregates.modifications` because features involve more
-than growth rates or moving averages of a single series - sometimes they even
-might involve data from other related NIPA components
+'transformations' in `edan.aggregates.transformations` because features involve
+more than growth rates or moving averages of a single series - sometimes they
+even might involve data from other related NIPA components
 """
 
 from __future__ import annotations
@@ -15,7 +15,7 @@ from edan.aggregates.components import (
 	BalanceComponent
 )
 
-from edan.aggregates.modifications import Feature
+from edan.aggregates.transformations import Feature
 
 
 
@@ -55,11 +55,12 @@ class Contribution(Feature):
 			the level of subcomponents to include in the calculation
 		method : str ( = 'difa%' )
 			the growth rate calculation of the aggregate real level. see the
-			Modifications class in edan/aggregates/modifications.py for details
+			TransformationAccessor class in edan/aggregates/transformations.py
+			for details
 		args : positional arguments
-			arguments to pass to the `modify()` method of the aggregate's real level
+			arguments to pass to the `transform()` method of the aggregate's real level
 		kwargs : keyword arguments
-			arguments to pass to the `modify()` method of the aggregate's real level
+			arguments to pass to the `transform()` method of the aggregate's real level
 
 		Returns
 		-------
@@ -83,7 +84,7 @@ class Contribution(Feature):
 			)
 
 		# compute the aggregate growth rate
-		agg_growth = self.obj.real.modify(method, *args, **kwargs)
+		agg_growth = self.obj.real.transform(method, *args, **kwargs)
 
 		# select the subcomponents whose contributions will be calculated
 		self.subs = self.obj.disaggregate(subs, level)
@@ -363,11 +364,12 @@ def contributions(
 		the level of subcomponents to include in the calculation
 	method : str ( = 'difa%' )
 		the growth rate calculation of the aggregate real level. see the
-		Modifications class in edan/aggregates/modifications.py for details
+		TransformationAccessor class in edan.aggregates.transformations.py
+		for details
 	args : positional arguments
-		arguments to pass to the `modify()` method of the aggregate's real level
+		arguments to pass to the `transform()` method of the aggregate's real level
 	kwargs : keyword arguments
-		arguments to pass to the `modify()` method of the aggregate's real level
+		arguments to pass to the `transform()` method of the aggregate's real level
 
 	Returns
 	-------
