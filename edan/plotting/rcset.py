@@ -28,9 +28,6 @@ _style_params = [
 	'ytick.direction',
 	'lines.solid_capstyle', # handling outer corners when lines change directions
 
-	'patch.edgecolor', # edge color of areas
-	'patch.force_edgecolor',
-
 	'image.cmap', # unsure
 	'font.family', # {'sans-serif', 'serif', 'cursive', 'fantasy', 'monospace'}
 	'font.sans-serif',
@@ -108,8 +105,6 @@ def set_style(style=None):
 			'font.sans-serif': ['Tahoma', 'sans-serif'],
 
 			'lines.solid_capstyle': 'round',
-			'patch.edgecolor': 'white',
-			'patch.force_edgecolor': True,
 
 			'image.cmap': 'magma',
 
