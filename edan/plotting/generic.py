@@ -95,9 +95,12 @@ class PlotDataManager(object):
 		-------
 		None
 		"""
-		self.print_data = pd.\
-			concat(objs, axis='columns', join='outer').\
-			dropna(axis='index', how='all')
+		if isinstance(objs, (pd.Series, pd.DataFrame)):
+			self.print_data = objs.dropna(axis='index', how='all')
+		else:
+			self.print_data = pd.\
+				concat(objs, axis='columns', join='outer').\
+				dropna(axis='index', how='all')
 
 
 	def truncate(
