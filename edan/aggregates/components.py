@@ -4,7 +4,7 @@ shared base container objects for macroeconomic aggregate data
 
 from __future__ import annotations
 
-from edan.delims import concat_codes
+import edan.delims as dlm
 
 from edan.containers import CompoundStorage
 
@@ -71,7 +71,7 @@ class Component(CompoundStorage):
 		except ValueError:
 			# `key` is relative to the code of this component
 
-			full_key = concat_codes(self.code, key)
+			full_key = dlm.concat_codes(self.code, key)
 			try:
 				idx = subs.index(full_key)
 				return self.subs[idx]
@@ -111,6 +111,28 @@ class Component(CompoundStorage):
 			raise TypeError(f"{repr(self)} is elemental & cannot be disaggregated")
 
 		return Disaggregator(self, subs, level)
+
+	def is_less(self, rel=''):
+		"""
+		boolean for if this component should be subtracted from super-component
+		when summing nominal levels or computing contributions
+		"""
+		if rel:
+			if '~' not in self.code:
+				return False
+			if dlm.contains(rel, self.code):
+				return '~' not in rel
+			else:
+				return False
+		else:
+			code = dlm.EdanCode(self.code)
+			try:
+				last_delim = code.delims[-1]
+				if last_delim == '~':
+					return True
+				return False
+			except IndexError:
+				return False
 
 	def __repr__(self):
 		klass = self.__class__.__name__

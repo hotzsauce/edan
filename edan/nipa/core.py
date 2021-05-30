@@ -4,7 +4,7 @@ module for NIPA components
 
 from __future__ import annotations
 
-from edan.delims import EdanCode
+from edan.delims import EdanCode, contains
 from edan.accessors import CachedAccessor
 
 from edan.aggregates.series import Series
@@ -42,21 +42,6 @@ class NIPASeries(Series):
 class NIPAComponent(Component):
 
 	mtypes = ['quantity', 'price', 'nominal', 'real']
-
-	@property
-	def is_less(self):
-		"""
-		boolean for if this component should be subtracted from super-component
-		when summing nominal levels or computing contributions
-		"""
-		code = EdanCode(self.code)
-		try:
-			last_delim = code.delims[-1]
-			if last_delim == '~':
-				return True
-			return False
-		except IndexError:
-			return False
 
 	@property
 	def quantity(self):

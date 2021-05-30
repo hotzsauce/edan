@@ -1,5 +1,9 @@
 """
-module for functions of time series data of the Series
+module for functions of time series data of the Series containers, and for
+Features of aggregate-able data. 'Features' are distinct from the 'modifications'
+here because Features involve more than just a growth rate or moving average of
+a single series - sometimes they even might involve data from other, related
+aggregate components
 """
 
 from __future__ import annotations
@@ -229,3 +233,32 @@ class ModificationAccessor(object):
 				df = modifier(self.data, n, h)
 
 		return df
+
+
+
+class Feature(object):
+	"""
+	Features are intended to be CachedAccessors of Components, or used via the
+	methods of the same name that are defined elsewhere in that concept's module
+	"""
+
+	name = ''
+
+	def compute(self, *args, **kwargs):
+		"""this should be overriden by subclasses"""
+		feat = type(self).__name__
+		raise NotImplementedError(f"'compute' method not defined for {feat} feature")
+
+	def __init__(self, obj=None, *args, **kwargs):
+		self.obj = obj
+
+	def __call__(self, *args, **kwargs):
+		"""
+		when called as a method of a Component, i.e.
+
+			>>> gdp = edan.nipa.GDPTable['gdp']
+			>>> gdp.{feature}()
+
+		the subclass' `compute` method is called and returned
+		"""
+		return self.compute(*args, **kwargs)

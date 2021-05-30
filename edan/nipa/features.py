@@ -15,34 +15,8 @@ from edan.aggregates.components import (
 	BalanceComponent
 )
 
+from edan.aggregates.modifications import Feature
 
-
-class Feature(object):
-	"""
-	Features are intended to be CachedAccessors of Components, or used via the
-	methods of the same name that are defined elsewhere in this module
-	"""
-
-	name = ''
-
-	def compute(self, *args, **kwargs):
-		"""this should be overriden by subclasses"""
-		feat = type(self).__name__
-		raise NotImplementedError(f"'compute' method not defined for {feat} feature")
-
-	def __init__(self, obj=None, *args, **kwargs):
-		self.obj = obj
-
-	def __call__(self, *args, **kwargs):
-		"""
-		when called as a method of a Component, i.e.
-
-			>>> gdp = edan.nipa.GDPTable['gdp']
-			>>> gdp.{feature}()
-
-		the subclass' `compute` method is called and returned
-		"""
-		return self.compute(*args, **kwargs)
 
 
 class Contribution(Feature):
@@ -165,7 +139,7 @@ class Contribution(Feature):
 
 			if isinstance(comp, BalanceComponent):
 				for sub in comp.disaggregate():
-					self.less.append(sub.is_less)
+					self.less.append(sub.is_less(self.obj.code))
 
 					# i don't think there is ever a case where a BalanceComp
 					#	will have a Balance sub but a check here could be good
@@ -176,7 +150,7 @@ class Contribution(Feature):
 					idx += 1
 
 			else:
-				self.less.append(comp.is_less)
+				self.less.append(comp.is_less(self.obj.code))
 
 				if isinstance(comp, FlowComponent):
 					rdata.append(comp.real_level.data)
