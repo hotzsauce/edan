@@ -34,7 +34,7 @@ add_mod('movv',		lambda s, n, h: s.rolling(n).mean())
 add_mod('mova',		lambda s, n, h: h * s.rolling(n).mean())
 add_mod('movt',		lambda s, n, h: s.rolling(n).sum())
 add_mod('yryr',		lambda s, n, h: s.diff(h))
-add_mod('yryr%',	lambda s, n, h: s.divide(s.shift(h)) - 1)
+add_mod('yryr%',	lambda s, n, h: 100 * (s.divide(s.shift(h)) - 1) )
 add_mod('yryrl',	lambda s, n, h: 100 * np.log(s.divide(s.shift(h))))
 
 
@@ -176,7 +176,7 @@ class ModificationAccessor(object):
 				'yryr'	: year-over-year change
 							x(t) - x(t-h)
 				'yryr%'	: year-over-year percent change
-							[ x(t)/x(t-h) ] - 1
+							100 *[ x(t)/x(t-h) ] - 1
 				'yryrl' : year-over-year log change
 							100 * ln[ x(t)/x(t-h) ]
 				'index'	: reindex the series according to the parameter `base`
