@@ -4,7 +4,6 @@ module for NIPA components
 
 from __future__ import annotations
 
-from edan.delims import EdanCode, contains
 from edan.accessors import CachedAccessor
 
 from edan.aggregates.series import Series
