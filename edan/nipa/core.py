@@ -49,7 +49,7 @@ class NIPAComponent(Component):
 		code = EdanCode(self.code)
 		try:
 			last_delim = code.delims[-1]
-			if last_delim == '-':
+			if last_delim == '~':
 				return True
 			return False
 		except IndexError:
@@ -116,12 +116,40 @@ class NIPAComponent(Component):
 
 class NIPAFlowComponent(NIPAComponent, FlowComponent):
 
-	mtypes = ['nominal', 'real']
+	mtypes = ['nominal', 'real', 'nominal_level', 'real_level']
+
+	@property
+	def nominal_level(self):
+		"""
+		access the NIPASeries corresponding to the nominal level of this Component.
+		It's implemented this way, and not with @cached_property, because I don't
+		think the decorator could tell if attributes of the NIPASeries were changed
+		"""
+		if hasattr(self, '_nominal_level'):
+			return self._nominal_level
+		else:
+			code = self.nominal_level_code
+			self._nominal_level = NIPASeries(code, 'nominal_level', self)
+			return self._nominal_level
+
+	@property
+	def real_level(self):
+		"""
+		access the NIPASeries corresponding to the real level of this Component.
+		It's implemented this way, and not with @cached_property, because I don't
+		think the decorator could tell if attributes of the NIPASeries were changed
+		"""
+		if hasattr(self, '_real_level'):
+			return self._real_level
+		else:
+			code = self.real_level_code
+			self._real_level = NIPASeries(code, 'real_level', self)
+			return self._real_level
 
 
 class NIPABalanceComponent(NIPAComponent, BalanceComponent):
 
-	mtypes = ['quantity', 'price', 'nominal', 'real']
+	mtypes = ['nominal', 'real']
 
 
 def component_type(ctype: str):
