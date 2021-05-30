@@ -2,8 +2,14 @@
 module for CPI components
 """
 
+from edan.accessors import CachedAccessor
+
 from edan.aggregates.series import Series
 from edan.aggregates.components import Component
+from edan.aggregates.modifications import ModificationAccessor
+
+from edan.plotting.cpi import CPIPlotAccessor
+
 
 
 class CPISeries(Series):
@@ -18,6 +24,8 @@ class CPISeries(Series):
 		self.mtype = mtype
 		self.obj = obj
 
+	# add accessor for functions of data
+	modify = CachedAccessor('modify', ModificationAccessor)
 
 class CPIComponent(Component):
 
@@ -35,3 +43,6 @@ class CPIComponent(Component):
 		else:
 			self._price = CPISeries(self.price_code, 'price', self)
 			return self._price
+
+	# add accessor for plotting
+	plot = CachedAccessor('plot', CPIPlotAccessor)
