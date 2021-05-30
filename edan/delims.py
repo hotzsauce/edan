@@ -9,7 +9,7 @@ from itertools import cycle
 
 from rich import print
 
-edan_delimiters = (':', '-', '+')
+edan_delimiters = (':', '~')
 delim_pattern = '|'.join(map(re.escape, edan_delimiters))
 
 

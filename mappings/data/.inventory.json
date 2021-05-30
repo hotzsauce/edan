@@ -10813,5 +10813,50 @@
         "code": "cusr0000ss68023",
         "source": "bls",
         "freq": "monthly"
+    },
+    {
+        "code": "cbic1",
+        "source": "fred",
+        "freq": "quarterly"
+    },
+    {
+        "code": "cbi",
+        "source": "fred",
+        "freq": "quarterly"
+    },
+    {
+        "code": "dpcera3q086sbea",
+        "source": "fred",
+        "freq": "quarterly"
+    },
+    {
+        "code": "a371rx1q020sbea",
+        "source": "fred",
+        "freq": "quarterly"
+    },
+    {
+        "code": "a371rc1q027sbea",
+        "source": "fred",
+        "freq": "quarterly"
+    },
+    {
+        "code": "b372rx1q020sbea",
+        "source": "fred",
+        "freq": "quarterly"
+    },
+    {
+        "code": "b372rc1q027sbea",
+        "source": "fred",
+        "freq": "quarterly"
+    },
+    {
+        "code": "a373rx1q020sbea",
+        "source": "fred",
+        "freq": "quarterly"
+    },
+    {
+        "code": "a373rc1q027sbea",
+        "source": "fred",
+        "freq": "quarterly"
     }
 ]

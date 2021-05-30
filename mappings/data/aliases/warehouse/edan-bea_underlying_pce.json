@@ -3639,27 +3639,27 @@
             "bea": "niunderlyingdetail!u20406!darsrx"
         }
     },
-    "pce:g:n:o:a-l": {
+    "pce:g:n:o:a~l": {
         "bea_name": "Less: Personal remittances in kind to nonresidents",
         "table_row": 147,
         "level": 5,
         "quantity": {
-            "edan": "qpce:g:n:o:a-l",
+            "edan": "qpce:g:n:o:a~l",
             "edan_simple": "qpcegnoal",
             "bea": "niunderlyingdetail!u20403!dremra"
         },
         "price": {
-            "edan": "ppce:g:n:o:a-l",
+            "edan": "ppce:g:n:o:a~l",
             "edan_simple": "ppcegnoal",
             "bea": "niunderlyingdetail!u20404!dremrg"
         },
         "nominal": {
-            "edan": "npce:g:n:o:a-l",
+            "edan": "npce:g:n:o:a~l",
             "edan_simple": "npcegnoal",
             "bea": "niunderlyingdetail!u20405!dremrc"
         },
         "real": {
-            "edan": "rpce:g:n:o:a-l",
+            "edan": "rpce:g:n:o:a~l",
             "edan_simple": "rpcegnoal",
             "bea": "niunderlyingdetail!u20406!dremrx"
         }
@@ -6714,27 +6714,27 @@
             "bea": "niunderlyingdetail!u20406!dfiprx"
         }
     },
-    "pce:s:h:i:i:h-l": {
+    "pce:s:h:i:i:h~l": {
         "bea_name": "Less: Household insurance normal losses",
         "table_row": 270,
         "level": 6,
         "quantity": {
-            "edan": "qpce:s:h:i:i:h-l",
+            "edan": "qpce:s:h:i:i:h~l",
             "edan_simple": "qpceshiihl",
             "bea": "niunderlyingdetail!u20403!dfibra"
         },
         "price": {
-            "edan": "ppce:s:h:i:i:h-l",
+            "edan": "ppce:s:h:i:i:h~l",
             "edan_simple": "ppceshiihl",
             "bea": "niunderlyingdetail!u20404!dfibrg"
         },
         "nominal": {
-            "edan": "npce:s:h:i:i:h-l",
+            "edan": "npce:s:h:i:i:h~l",
             "edan_simple": "npceshiihl",
             "bea": "niunderlyingdetail!u20405!dfibrc"
         },
         "real": {
-            "edan": "rpce:s:h:i:i:h-l",
+            "edan": "rpce:s:h:i:i:h~l",
             "edan_simple": "rpceshiihl",
             "bea": "niunderlyingdetail!u20406!dfibrx"
         }
@@ -6789,27 +6789,27 @@
             "bea": "niunderlyingdetail!u20406!dminrx"
         }
     },
-    "pce:s:h:i:i:c-l": {
+    "pce:s:h:i:i:c~l": {
         "bea_name": "Income loss",
         "table_row": 273,
         "level": 6,
         "quantity": {
-            "edan": "qpce:s:h:i:i:c-l",
+            "edan": "qpce:s:h:i:i:c~l",
             "edan_simple": "qpceshiicl",
             "bea": "niunderlyingdetail!u20403!diinra"
         },
         "price": {
-            "edan": "ppce:s:h:i:i:c-l",
+            "edan": "ppce:s:h:i:i:c~l",
             "edan_simple": "ppceshiicl",
             "bea": "niunderlyingdetail!u20404!diinrg"
         },
         "nominal": {
-            "edan": "npce:s:h:i:i:c-l",
+            "edan": "npce:s:h:i:i:c~l",
             "edan_simple": "npceshiicl",
             "bea": "niunderlyingdetail!u20405!diinrc"
         },
         "real": {
-            "edan": "rpce:s:h:i:i:c-l",
+            "edan": "rpce:s:h:i:i:c~l",
             "edan_simple": "rpceshiicl",
             "bea": "niunderlyingdetail!u20406!diinrx"
         }
@@ -8304,102 +8304,102 @@
             "bea": "niunderlyingdetail!u20406!dussrx"
         }
     },
-    "pce:s:h:o:f-l": {
+    "pce:s:h:o:f~l": {
         "bea_name": "Less: Expenditures in the United States by nonresidents (130)",
         "table_row": 334,
         "level": 5,
         "quantity": {
-            "edan": "qpce:s:h:o:f-l",
+            "edan": "qpce:s:h:o:f~l",
             "edan_simple": "qpceshofl",
             "bea": "niunderlyingdetail!u20403!dexfra"
         },
         "price": {
-            "edan": "ppce:s:h:o:f-l",
+            "edan": "ppce:s:h:o:f~l",
             "edan_simple": "ppceshofl",
             "bea": "niunderlyingdetail!u20404!dexfrg"
         },
         "nominal": {
-            "edan": "npce:s:h:o:f-l",
+            "edan": "npce:s:h:o:f~l",
             "edan_simple": "npceshofl",
             "bea": "niunderlyingdetail!u20405!dexfrc"
         },
         "real": {
-            "edan": "rpce:s:h:o:f-l",
+            "edan": "rpce:s:h:o:f~l",
             "edan_simple": "rpceshofl",
             "bea": "niunderlyingdetail!u20406!dexfrx"
         }
     },
-    "pce:s:h:o:f-l:t": {
+    "pce:s:h:o:f~l:t": {
         "bea_name": "Foreign travel in the United States",
         "table_row": 335,
         "level": 6,
         "quantity": {
-            "edan": "qpce:s:h:o:f-l:t",
+            "edan": "qpce:s:h:o:f~l:t",
             "edan_simple": "qpceshoflt",
             "bea": "niunderlyingdetail!u20403!dftura"
         },
         "price": {
-            "edan": "ppce:s:h:o:f-l:t",
+            "edan": "ppce:s:h:o:f~l:t",
             "edan_simple": "ppceshoflt",
             "bea": "niunderlyingdetail!u20404!dfturg"
         },
         "nominal": {
-            "edan": "npce:s:h:o:f-l:t",
+            "edan": "npce:s:h:o:f-~:t",
             "edan_simple": "npceshoflt",
             "bea": "niunderlyingdetail!u20405!dfturc"
         },
         "real": {
-            "edan": "rpce:s:h:o:f-l:t",
+            "edan": "rpce:s:h:o:f~l:t",
             "edan_simple": "rpceshoflt",
             "bea": "niunderlyingdetail!u20406!dfturx"
         }
     },
-    "pce:s:h:o:f-l:m": {
+    "pce:s:h:o:f~l:m": {
         "bea_name": "Medical expenditures of foreigners",
         "table_row": 336,
         "level": 6,
         "quantity": {
-            "edan": "qpce:s:h:o:f-l:m",
+            "edan": "qpce:s:h:o:f~l:m",
             "edan_simple": "qpceshoflm",
             "bea": "niunderlyingdetail!u20403!dmefra"
         },
         "price": {
-            "edan": "ppce:s:h:o:f-l:m",
+            "edan": "ppce:s:h:o:f~l:m",
             "edan_simple": "ppceshoflm",
             "bea": "niunderlyingdetail!u20404!dmefrg"
         },
         "nominal": {
-            "edan": "npce:s:h:o:f-l:m",
+            "edan": "npce:s:h:o:f~l:m",
             "edan_simple": "npceshoflm",
             "bea": "niunderlyingdetail!u20405!dmefrc"
         },
         "real": {
-            "edan": "rpce:s:h:o:f-l:m",
+            "edan": "rpce:s:h:o:f~l:m",
             "edan_simple": "rpceshoflm",
             "bea": "niunderlyingdetail!u20406!dmefrx"
         }
     },
-    "pce:s:h:o:f-l:s": {
+    "pce:s:h:o:f~l:s": {
         "bea_name": "Expenditures of foreign students in the United States",
         "table_row": 337,
         "level": 6,
         "quantity": {
-            "edan": "qpce:s:h:o:f-l:s",
+            "edan": "qpce:s:h:o:f~l:s",
             "edan_simple": "qpceshofls",
             "bea": "niunderlyingdetail!u20403!defsra"
         },
         "price": {
-            "edan": "ppce:s:h:o:f-l:s",
+            "edan": "ppce:s:h:o:f~l:s",
             "edan_simple": "ppceshofls",
             "bea": "niunderlyingdetail!u20404!defsrg"
         },
         "nominal": {
-            "edan": "npce:s:h:o:f-l:s",
+            "edan": "npce:s:h:o:f~l:s",
             "edan_simple": "npceshofls",
             "bea": "niunderlyingdetail!u20405!defsrc"
         },
         "real": {
-            "edan": "rpce:s:h:o:f-l:s",
+            "edan": "rpce:s:h:o:f~l:s",
             "edan_simple": "rpceshofls",
             "bea": "niunderlyingdetail!u20406!defsrx"
         }
@@ -8754,327 +8754,327 @@
             "bea": "niunderlyingdetail!u20406!dsngrx"
         }
     },
-    "pce:s:n-l": {
+    "pce:s:n~l": {
         "bea_name": "Less: Receipts from sales of goods and services by nonprofit institutions (134)",
         "table_row": 352,
         "level": 3,
         "quantity": {
-            "edan": "qpce:s:n-l",
+            "edan": "qpce:s:n~l",
             "edan_simple": "qpcesnl",
             "bea": "niunderlyingdetail!u20403!dnpsra"
         },
         "price": {
-            "edan": "ppce:s:n-l",
+            "edan": "ppce:s:n~l",
             "edan_simple": "ppcesnl",
             "bea": "niunderlyingdetail!u20404!dnpsrg"
         },
         "nominal": {
-            "edan": "npce:s:n-l",
+            "edan": "npce:s:n~l",
             "edan_simple": "npcesnl",
             "bea": "niunderlyingdetail!u20405!dnpsrc"
         },
         "real": {
-            "edan": "rpce:s:n-l",
+            "edan": "rpce:s:n~l",
             "edan_simple": "rpcesnl",
             "bea": "niunderlyingdetail!u20406!dnpsrx"
         }
     },
-    "pce:s:n-l:h": {
+    "pce:s:n~l:h": {
         "bea_name": "Health services to households",
         "table_row": 353,
         "level": 4,
         "quantity": {
-            "edan": "qpce:s:n-l:h",
+            "edan": "qpce:s:n~l:h",
             "edan_simple": "qpcesnlh",
             "bea": "niunderlyingdetail!u20403!dhlrra"
         },
         "price": {
-            "edan": "ppce:s:n-l:h",
+            "edan": "ppce:s:n~l:h",
             "edan_simple": "ppcesnlh",
             "bea": "niunderlyingdetail!u20404!dhlrrg"
         },
         "nominal": {
-            "edan": "npce:s:n-l:h",
+            "edan": "npce:s:n~l:h",
             "edan_simple": "npcesnlh",
             "bea": "niunderlyingdetail!u20405!dhlrrc"
         },
         "real": {
-            "edan": "rpce:s:n-l:h",
+            "edan": "rpce:s:n~l:h",
             "edan_simple": "rpcesnlh",
             "bea": "niunderlyingdetail!u20406!dhlrrx"
         }
     },
-    "pce:s:n-l:h:o": {
+    "pce:s:n~l:h:o": {
         "bea_name": "Outpatient services to households",
         "table_row": 354,
         "level": 5,
         "quantity": {
-            "edan": "qpce:s:n-l:h:o",
+            "edan": "qpce:s:n~l:h:o",
             "edan_simple": "qpcesnlho",
             "bea": "niunderlyingdetail!u20403!dousra"
         },
         "price": {
-            "edan": "ppce:s:n-l:h:o",
+            "edan": "ppce:s:n~l:h:o",
             "edan_simple": "ppcesnlho",
             "bea": "niunderlyingdetail!u20404!dousrg"
         },
         "nominal": {
-            "edan": "npce:s:n-l:h:o",
+            "edan": "npce:s:n~l:h:o",
             "edan_simple": "npcesnlho",
             "bea": "niunderlyingdetail!u20405!dousrc"
         },
         "real": {
-            "edan": "rpce:s:n-l:h:o",
+            "edan": "rpce:s:n~l:h:o",
             "edan_simple": "rpcesnlho",
             "bea": "niunderlyingdetail!u20406!dousrx"
         }
     },
-    "pce:s:n-l:h:h": {
+    "pce:s:n~l:h:h": {
         "bea_name": "Nonprofit hospitals services to households",
         "table_row": 355,
         "level": 5,
         "quantity": {
-            "edan": "qpce:s:n-l:h:h",
+            "edan": "qpce:s:n~l:h:h",
             "edan_simple": "qpcesnlhh",
             "bea": "niunderlyingdetail!u20403!dnphra"
         },
         "price": {
-            "edan": "ppce:s:n-l:h:h",
+            "edan": "ppce:s:n~l:h:h",
             "edan_simple": "ppcesnlhh",
             "bea": "niunderlyingdetail!u20404!dnphrg"
         },
         "nominal": {
-            "edan": "npce:s:n-l:h:h",
+            "edan": "npce:s:n~l:h:h",
             "edan_simple": "npcesnlhh",
             "bea": "niunderlyingdetail!u20405!dnphrc"
         },
         "real": {
-            "edan": "rpce:s:n-l:h:h",
+            "edan": "rpce:s:n~l:h:h",
             "edan_simple": "rpcesnlhh",
             "bea": "niunderlyingdetail!u20406!dnphrx"
         }
     },
-    "pce:s:n-l:h:n": {
+    "pce:s:n~l:h:n": {
         "bea_name": "Nonprofit nursing homes services to households",
         "table_row": 356,
         "level": 5,
         "quantity": {
-            "edan": "qpce:s:n-l:h:n",
+            "edan": "qpce:s:n~l:h:n",
             "edan_simple": "qpcesnlhn",
             "bea": "niunderlyingdetail!u20403!dnpnra"
         },
         "price": {
-            "edan": "ppce:s:n-l:h:n",
+            "edan": "ppce:s:n~l:h:n",
             "edan_simple": "ppcesnlhn",
             "bea": "niunderlyingdetail!u20404!dnpnrg"
         },
         "nominal": {
-            "edan": "npce:s:n-l:h:n",
+            "edan": "npce:s:n~l:h:n",
             "edan_simple": "npcesnlhn",
             "bea": "niunderlyingdetail!u20405!dnpnrc"
         },
         "real": {
-            "edan": "rpce:s:n-l:h:n",
+            "edan": "rpce:s:n~l:h:n",
             "edan_simple": "rpcesnlhn",
             "bea": "niunderlyingdetail!u20406!dnpnrx"
         }
     },
-    "pce:s:n-l:r": {
+    "pce:s:n~l:r": {
         "bea_name": "Recreation services to households",
         "table_row": 357,
         "level": 4,
         "quantity": {
-            "edan": "qpce:s:n-l:r",
+            "edan": "qpce:s:n~l:r",
             "edan_simple": "qpcesnlr",
             "bea": "niunderlyingdetail!u20403!drcrra"
         },
         "price": {
-            "edan": "ppce:s:n-l:r",
+            "edan": "ppce:s:n~l:r",
             "edan_simple": "ppcesnlr",
             "bea": "niunderlyingdetail!u20404!drcrrg"
         },
         "nominal": {
-            "edan": "npce:s:n-l:r",
+            "edan": "npce:s:n~l:r",
             "edan_simple": "npcesnlr",
             "bea": "niunderlyingdetail!u20405!drcrrc"
         },
         "real": {
-            "edan": "rpce:s:n-l:r",
+            "edan": "rpce:s:n~l:r",
             "edan_simple": "rpcesnlr",
             "bea": "niunderlyingdetail!u20406!drcrrx"
         }
     },
-    "pce:s:n-l:e": {
+    "pce:s:n~l:e": {
         "bea_name": "Education services to households",
         "table_row": 358,
         "level": 4,
         "quantity": {
-            "edan": "qpce:s:n-l:e",
+            "edan": "qpce:s:n~l:e",
             "edan_simple": "qpcesnle",
             "bea": "niunderlyingdetail!u20403!dedrra"
         },
         "price": {
-            "edan": "ppce:s:n-l:e",
+            "edan": "ppce:s:n~l:e",
             "edan_simple": "ppcesnle",
             "bea": "niunderlyingdetail!u20404!dedrrg"
         },
         "nominal": {
-            "edan": "npce:s:n-l:e",
+            "edan": "npce:s:n~l:e",
             "edan_simple": "npcesnle",
             "bea": "niunderlyingdetail!u20405!dedrrc"
         },
         "real": {
-            "edan": "rpce:s:n-l:e",
+            "edan": "rpce:s:n~l:e",
             "edan_simple": "rpcesnle",
             "bea": "niunderlyingdetail!u20406!dedrrx"
         }
     },
-    "pce:s:n-l:s": {
+    "pce:s:n~l:s": {
         "bea_name": "Social services to households",
         "table_row": 359,
         "level": 4,
         "quantity": {
-            "edan": "qpce:s:n-l:s",
+            "edan": "qpce:s:n~l:s",
             "edan_simple": "qpcesnls",
             "bea": "niunderlyingdetail!u20403!dssrra"
         },
         "price": {
-            "edan": "ppce:s:n-l:s",
+            "edan": "ppce:s:n~l:s",
             "edan_simple": "ppcesnls",
             "bea": "niunderlyingdetail!u20404!dssrrg"
         },
         "nominal": {
-            "edan": "npce:s:n-l:s",
+            "edan": "npce:s:n~l:s",
             "edan_simple": "npcesnls",
             "bea": "niunderlyingdetail!u20405!dssrrc"
         },
         "real": {
-            "edan": "rpce:s:n-l:s",
+            "edan": "rpce:s:n~l:s",
             "edan_simple": "rpcesnls",
             "bea": "niunderlyingdetail!u20406!dssrrx"
         }
     },
-    "pce:s:n-l:b": {
+    "pce:s:n~l:b": {
         "bea_name": "Religious organizations' services to households",
         "table_row": 360,
         "level": 4,
         "quantity": {
-            "edan": "qpce:s:n-l:b",
+            "edan": "qpce:s:n~l:b",
             "edan_simple": "qpcesnlb",
             "bea": "niunderlyingdetail!u20403!drelra"
         },
         "price": {
-            "edan": "ppce:s:n-l:b",
+            "edan": "ppce:s:n~l:b",
             "edan_simple": "ppcesnlb",
             "bea": "niunderlyingdetail!u20404!drelrg"
         },
         "nominal": {
-            "edan": "npce:s:n-l:b",
+            "edan": "npce:s:n~l:b",
             "edan_simple": "npcesnlb",
             "bea": "niunderlyingdetail!u20405!drelrc"
         },
         "real": {
-            "edan": "rpce:s:n-l:b",
+            "edan": "rpce:s:n~l:b",
             "edan_simple": "rpcesnlb",
             "bea": "niunderlyingdetail!u20406!drelrx"
         }
     },
-    "pce:s:n-l:f": {
+    "pce:s:n~l:f": {
         "bea_name": "Foundations and grantmaking and giving services to households",
         "table_row": 361,
         "level": 4,
         "quantity": {
-            "edan": "qpce:s:n-l:f",
+            "edan": "qpce:s:n~l:f",
             "edan_simple": "qpcesnlf",
             "bea": "niunderlyingdetail!u20403!dgivra"
         },
         "price": {
-            "edan": "ppce:s:n-l:f",
+            "edan": "ppce:s:n~l:f",
             "edan_simple": "ppcesnlf",
             "bea": "niunderlyingdetail!u20404!dgivrg"
         },
         "nominal": {
-            "edan": "npce:s:n-l:f",
+            "edan": "npce:s:n~l:f",
             "edan_simple": "npcesnlf",
             "bea": "niunderlyingdetail!u20405!dgivrc"
         },
         "real": {
-            "edan": "rpce:s:n-l:f",
+            "edan": "rpce:s:n~l:f",
             "edan_simple": "rpcesnlf",
             "bea": "niunderlyingdetail!u20406!dgivrx"
         }
     },
-    "pce:s:n-l:a": {
+    "pce:s:n~l:a": {
         "bea_name": "Services of social advocacy establishments to households",
         "table_row": 362,
         "level": 4,
         "quantity": {
-            "edan": "qpce:s:n-l:a",
+            "edan": "qpce:s:n~l:a",
             "edan_simple": "qpcesnla",
             "bea": "niunderlyingdetail!u20403!dsasra"
         },
         "price": {
-            "edan": "ppce:s:n-l:a",
+            "edan": "ppce:s:n~l:a",
             "edan_simple": "ppcesnla",
             "bea": "niunderlyingdetail!u20404!dsasrg"
         },
         "nominal": {
-            "edan": "npce:s:n-l:a",
+            "edan": "npce:s:n~l:a",
             "edan_simple": "npcesnla",
             "bea": "niunderlyingdetail!u20405!dsasrc"
         },
         "real": {
-            "edan": "rpce:s:n-l:a",
+            "edan": "rpce:s:n~l:a",
             "edan_simple": "rpcesnla",
             "bea": "niunderlyingdetail!u20406!dsasrx"
         }
     },
-    "pce:s:n-l:c": {
+    "pce:s:n~l:c": {
         "bea_name": "Civic and social organizations' services to households",
         "table_row": 363,
         "level": 4,
         "quantity": {
-            "edan": "qpce:s:n-l:c",
+            "edan": "qpce:s:n~l:c",
             "edan_simple": "qpcesnlc",
             "bea": "niunderlyingdetail!u20403!dcisra"
         },
         "price": {
-            "edan": "ppce:s:n-l:c",
+            "edan": "ppce:s:n~l:c",
             "edan_simple": "ppcesnlc",
             "bea": "niunderlyingdetail!u20404!dcisrg"
         },
         "nominal": {
-            "edan": "npce:s:n-l:c",
+            "edan": "npce:s:n~l:c",
             "edan_simple": "npcesnlc",
             "bea": "niunderlyingdetail!u20405!dcisrc"
         },
         "real": {
-            "edan": "rpce:s:n-l:c",
+            "edan": "rpce:s:n~l:c",
             "edan_simple": "rpcesnlc",
             "bea": "niunderlyingdetail!u20406!dcisrx"
         }
     },
-    "pce:s:n-l:p": {
+    "pce:s:n~l:p": {
         "bea_name": "Professional advocacy services to households",
         "table_row": 364,
         "level": 4,
         "quantity": {
-            "edan": "qpce:s:n-l:p",
+            "edan": "qpce:s:n~l:p",
             "edan_simple": "qpcesnlp",
             "bea": "niunderlyingdetail!u20403!dsnrra"
         },
         "price": {
-            "edan": "ppce:s:n-l:p",
+            "edan": "ppce:s:n~l:p",
             "edan_simple": "ppcesnlp",
             "bea": "niunderlyingdetail!u20404!dsnrrg"
         },
         "nominal": {
-            "edan": "npce:s:n-l:p",
+            "edan": "npce:s:n~l:p",
             "edan_simple": "npcesnlp",
             "bea": "niunderlyingdetail!u20405!dsnrrc"
         },
         "real": {
-            "edan": "rpce:s:n-l:p",
+            "edan": "rpce:s:n~l:p",
             "edan_simple": "rpcesnlp",
             "bea": "niunderlyingdetail!u20406!dsnrrx"
         }

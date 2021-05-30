@@ -405,205 +405,205 @@
             "fred": "cbic1"
         }
     },
-    "gdp:nx": {
+    "gdp:x": {
         "bea_name": "Net exports of goods and services",
         "table_row": 15,
         "level": 1,
         "quantity": {
-            "edan": "qgdp:nx",
-            "edan_simple": "qgdpnx",
+            "edan": "qgdp:x",
+            "edan_simple": "qgdpx",
             "bea": "",
             "fred": ""
         },
         "price": {
-            "edan": "pgdp:nx",
-            "edan_simple": "pgdpnx",
+            "edan": "pgdp:x",
+            "edan_simple": "pgdpx",
             "bea": "",
             "fred": ""
         },
         "nominal": {
-            "edan": "ngdp:nx",
-            "edan_simple": "ngdpnx",
+            "edan": "ngdp:x",
+            "edan_simple": "ngdpx",
             "bea": "nipa!t10105!a019rc",
             "fred": "netexp"
         },
         "real": {
-            "edan": "rgdp:nx",
-            "edan_simple": "rgdpnx",
+            "edan": "rgdp:x",
+            "edan_simple": "rgdpx",
             "bea": "nipa!t10106!a019rx",
             "fred": "netexc"
         }
     },
-    "gdp:nx+x": {
+    "gdp:x~x": {
         "bea_name": "Exports",
         "table_row": 16,
         "level": 2,
         "quantity": {
-            "edan": "qgdp:nx+x",
-            "edan_simple": "qgdpnxx",
+            "edan": "qgdp:x~x",
+            "edan_simple": "qgdpxx",
             "bea": "nipa!t10103!b020ra",
             "fred": "b020ra3q086sbea"
         },
         "price": {
-            "edan": "pgdp:nx+x",
-            "edan_simple": "pgdpnxx",
+            "edan": "pgdp:x~x",
+            "edan_simple": "pgdpxx",
             "bea": "nipa!t10104!b020rg",
             "fred": "b020rg3q086sbea"
         },
         "nominal": {
-            "edan": "ngdp:nx+x",
-            "edan_simple": "ngdpnxx",
+            "edan": "ngdp:x~x",
+            "edan_simple": "ngdpxx",
             "bea": "nipa!t10105!b020rc",
             "fred": "expgs"
         },
         "real": {
-            "edan": "rgdp:nx+x",
-            "edan_simple": "rgdpnxx",
+            "edan": "rgdp:x~x",
+            "edan_simple": "rgdpxx",
             "bea": "nipa!t10106!a020rx",
             "fred": "expgsc1"
         }
     },
-    "gdp:nx+x:g": {
+    "gdp:x~x:g": {
         "bea_name": "Exports: Goods",
         "table_row": 17,
         "level": 3,
         "quantity": {
-            "edan": "qgdp:nx+x:g",
-            "edan_simple": "qgdpnxxg",
+            "edan": "qgdp:x~x:g",
+            "edan_simple": "qgdpxxg",
             "bea": "nipa!t10103!b253ra",
             "fred": "b253ra3q086sbea"
         },
         "price": {
-            "edan": "pgdp:nx+x:g",
-            "edan_simple": "pgdpnxxg",
+            "edan": "pgdp:x~x:g",
+            "edan_simple": "pgdpxxg",
             "bea": "nipa!t10104!b253rg",
             "fred": "b253rg3q086sbea"
         },
         "nominal": {
-            "edan": "ngdp:nx+x:g",
-            "edan_simple": "ngdpnxxg",
+            "edan": "ngdp:x~x:g",
+            "edan_simple": "ngdpxxg",
             "bea": "nipa!t10105!a253rc",
             "fred": "a253rc1q027sbea"
         },
         "real": {
-            "edan": "rgdp:nx+x:g",
-            "edan_simple": "rgdpnxxg",
+            "edan": "rgdp:x~x:g",
+            "edan_simple": "rgdpxxg",
             "bea": "nipa!t10106!a253rx",
             "fred": "a253rx1q020sbea"
         }
     },
-    "gdp:nx+x:s": {
+    "gdp:x~x:s": {
         "bea_name": "Exports: Services",
         "table_row": 18,
         "level": 3,
         "quantity": {
-            "edan": "qgdp:nx+x:s",
-            "edan_simple": "qgdpnxxs",
+            "edan": "qgdp:x~x:s",
+            "edan_simple": "qgdpxxs",
             "bea": "nipa!t10103!b646ra",
             "fred": "b646ra3q086sbea"
         },
         "price": {
-            "edan": "pgdp:nx+x:s",
-            "edan_simple": "pgdpnxxs",
+            "edan": "pgdp:x~x:s",
+            "edan_simple": "pgdpxxs",
             "bea": "nipa!t10104!b646rg",
             "fred": "b646rg3q086sbea"
         },
         "nominal": {
-            "edan": "ngdp:nx+x:s",
-            "edan_simple": "ngdpnxxs",
+            "edan": "ngdp:x~x:s",
+            "edan_simple": "ngdpxxs",
             "bea": "nipa!t10105!a646rc",
             "fred": "a646rc1q027sbea"
         },
         "real": {
-            "edan": "rgdp:nx+x:s",
-            "edan_simple": "rgdpnxxs",
+            "edan": "rgdp:x~x:s",
+            "edan_simple": "rgdpxxs",
             "bea": "nipa!t10106!a646rx",
             "fred": "a646rx1q020sbea"
         }
     },
-    "gdp:nx-m": {
+    "gdp:x~m": {
         "bea_name": "Imports",
         "table_row": 19,
         "level": 2,
         "quantity": {
-            "edan": "qgdp:nx-m",
-            "edan_simple": "qgdpnxm",
+            "edan": "qgdp:x~m",
+            "edan_simple": "qgdpxm",
             "bea": "nipa!t10103!b021ra",
             "fred": "b021ra3q086sbea"
         },
         "price": {
-            "edan": "pgdp:nx-m",
-            "edan_simple": "pgdpnxm",
+            "edan": "pgdp:x~m",
+            "edan_simple": "pgdpxm",
             "bea": "nipa!t10104!b021rg",
             "fred": "b021rg3q086sbea"
         },
         "nominal": {
-            "edan": "ngdp:nx-m",
-            "edan_simple": "ngdpnxm",
+            "edan": "ngdp:x~m",
+            "edan_simple": "ngdpxm",
             "bea": "nipa!t10105!b021rc",
             "fred": "impgs"
         },
         "real": {
-            "edan": "rgdp:nx-m",
-            "edan_simple": "rgdpnxm",
+            "edan": "rgdp:x~m",
+            "edan_simple": "rgdpxm",
             "bea": "nipa!t10106!a021rx",
             "fred": "impgsc1"
         }
     },
-    "gdp:nx-m:g": {
+    "gdp:x~m:g": {
         "bea_name": "Imports: Goods",
         "table_row": 20,
         "level": 3,
         "quantity": {
-            "edan": "qgdp:nx-m:g",
-            "edan_simple": "qgdpnxmg",
+            "edan": "qgdp:x~m:g",
+            "edan_simple": "qgdpxmg",
             "bea": "nipa!t10103!b255ra",
             "fred": "b255ra3q086sbea"
         },
         "price": {
-            "edan": "pgdp:nx-m:g",
-            "edan_simple": "pgdpnxmg",
+            "edan": "pgdp:x~m:g",
+            "edan_simple": "pgdpxmg",
             "bea": "nipa!t10104!b255rg",
             "fred": "b255rg3q086sbea"
         },
         "nominal": {
-            "edan": "ngdp:nx-m:g",
-            "edan_simple": "ngdpnxmg",
+            "edan": "ngdp:x~m:g",
+            "edan_simple": "ngdpxmg",
             "bea": "nipa!t10105!a255rc",
             "fred": "a255rc1q027sbea"
         },
         "real": {
-            "edan": "rgdp:nx-m:g",
-            "edan_simple": "rgdpnxmg",
+            "edan": "rgdp:x~m:g",
+            "edan_simple": "rgdpxmg",
             "bea": "nipa!t10106!a255rx",
             "fred": "a255rx1q020sbea"
         }
     },
-    "gdp:nx-m:s": {
+    "gdp:x~m:s": {
         "bea_name": "Imports: Services",
         "table_row": 21,
         "level": 3,
         "quantity": {
-            "edan": "qgdp:nx-m:s",
-            "edan_simple": "qgdpnxms",
+            "edan": "qgdp:x~m:s",
+            "edan_simple": "qgdpxms",
             "bea": "nipa!t10103!b656ra",
             "fred": "b656ra3q086sbea"
         },
         "price": {
-            "edan": "pgdp:nx-m:s",
-            "edan_simple": "pgdpnxms",
+            "edan": "pgdp:x~m:s",
+            "edan_simple": "pgdpxms",
             "bea": "nipa!t10104!b656rg",
             "fred": "b656rg3q086sbea"
         },
         "nominal": {
-            "edan": "ngdp:nx-m:s",
-            "edan_simple": "ngdpnxms",
+            "edan": "ngdp:x~m:s",
+            "edan_simple": "ngdpxms",
             "bea": "nipa!t10105!b656rc",
             "fred": "b656rc1q027sbea"
         },
         "real": {
-            "edan": "rgdp:nx-m:s",
-            "edan_simple": "rgdpnxms",
+            "edan": "rgdp:x~m:s",
+            "edan_simple": "rgdpxms",
             "bea": "nipa!t10106!b656rx",
             "fred": "b656rx1q020sbea"
         }
