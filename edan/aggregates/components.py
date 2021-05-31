@@ -6,8 +6,11 @@ from __future__ import annotations
 
 import edan.delims as dlm
 
+from edan.errors import MeasureTypeError
+
 from edan.containers import CompoundStorage
 
+from edan.aggregates.series import Series
 from edan.aggregates.disaggregate import Disaggregator
 
 
@@ -19,6 +22,7 @@ class Component(CompoundStorage):
 	"""
 
 	mtypes = []
+	_series_obj = Series
 
 	def __init__(
 		self,
@@ -79,6 +83,37 @@ class Component(CompoundStorage):
 				raise KeyError(
 					f"{repr(key)} does not match a subcomponent of {repr(self)}"
 				) from None
+
+	def __getattr__(self, attr):
+		"""
+		created to address Issue #9. this basically gets around needing to have
+		large blocks of code in every subclass of Component dedicated to just
+		returning the Series corresponding to the requested mtype. python calls
+		the `__getattr__` method after `__getattribute__`, which checks to see if
+		the parameter is an attribute of the class, and if it is, returns immediately.
+		if it's not, `__getattr__` will be called.
+		"""
+		if attr in self.mtypes:
+			code = f"{attr}_code"
+
+			try:
+				series_code = self.__getattribute__(code)
+				hidden_series_name = f"_{attr}"
+
+				try:
+					return self.__getattribute__(hidden_series_name)
+				except AttributeError:
+					series_code = self.__getattribute__(code)
+					series = self._series_obj(series_code, attr, self)
+
+					setattr(self, hidden_series_name, series)
+					return series
+
+			except AttributeError:
+				raise MeasureTypeError(measure=attr, comp=self)
+
+		raise AttributeError(attr)
+
 
 	def disaggregate(
 		self,

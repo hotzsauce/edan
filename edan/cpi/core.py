@@ -30,19 +30,7 @@ class CPISeries(Series):
 class CPIComponent(Component):
 
 	mtypes = ['price']
-
-	@property
-	def price(self):
-		"""
-		access the CPISeries corresponding to the price index of this Component.
-		It's implemented this way, and not with @cached_property, because I don't
-		think the decorator could tell if attributes of the CPISeries were changed
-		"""
-		if hasattr(self, '_price'):
-			return self._price
-		else:
-			self._price = CPISeries(self.price_code, 'price', self)
-			return self._price
+	_series_obj = CPISeries
 
 	# add accessor for plotting
 	plot = CachedAccessor('plot', CPIPlotAccessor)

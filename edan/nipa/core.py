@@ -41,59 +41,8 @@ class NIPASeries(Series):
 
 class NIPAComponent(Component):
 
-	mtypes = ['quantity', 'price', 'nominal', 'real']
-
-	@property
-	def quantity(self):
-		"""
-		access the NIPASeries corresponding to the quantity index of this Component.
-		It's implemented this way, and not with @cached_property, because I don't
-		think the decorator could tell if attributes of the NIPASeries were changed
-		"""
-		if hasattr(self, '_quantity'):
-			return self._quantity
-		else:
-			self._quantity = NIPASeries(self.quantity_code, 'quantity', self)
-			return self._quantity
-
-	@property
-	def price(self):
-		"""
-		access the NIPASeries corresponding to the price index of this Component.
-		It's implemented this way, and not with @cached_property, because I don't
-		think the decorator could tell if attributes of the NIPASeries were changed
-		"""
-		if hasattr(self, '_price'):
-			return self._price
-		else:
-			self._price = NIPASeries(self.price_code, 'price', self)
-			return self._price
-
-	@property
-	def nominal(self):
-		"""
-		access the NIPASeries corresponding to the nominal level of this Component.
-		It's implemented this way, and not with @cached_property, because I don't
-		think the decorator could tell if attributes of the NIPASeries were changed
-		"""
-		if hasattr(self, '_nominal'):
-			return self._nominal
-		else:
-			self._nominal = NIPASeries(self.nominal_code, 'nominal', self)
-			return self._nominal
-
-	@property
-	def real(self):
-		"""
-		access the NIPASeries corresponding to the real level of this Component.
-		It's implemented this way, and not with @cached_property, because I don't
-		think the decorator could tell if attributes of the NIPASeries were changed
-		"""
-		if hasattr(self, '_real'):
-			return self._real
-		else:
-			self._real = NIPASeries(self.real_code, 'real', self)
-			return self._real
+	mtypes = ['quantity', 'price', 'nominal', 'real', 'nominal_level', 'real_level']
+	_series_obj = NIPASeries
 
 	# add accessor for plotting
 	plot = CachedAccessor('plot', NIPAPlotAccessor)
@@ -105,42 +54,10 @@ class NIPAComponent(Component):
 
 
 class NIPAFlowComponent(NIPAComponent, FlowComponent):
-
-	mtypes = ['nominal', 'real', 'nominal_level', 'real_level']
-
-	@property
-	def nominal_level(self):
-		"""
-		access the NIPASeries corresponding to the nominal level of this Component.
-		It's implemented this way, and not with @cached_property, because I don't
-		think the decorator could tell if attributes of the NIPASeries were changed
-		"""
-		if hasattr(self, '_nominal_level'):
-			return self._nominal_level
-		else:
-			code = self.nominal_level_code
-			self._nominal_level = NIPASeries(code, 'nominal_level', self)
-			return self._nominal_level
-
-	@property
-	def real_level(self):
-		"""
-		access the NIPASeries corresponding to the real level of this Component.
-		It's implemented this way, and not with @cached_property, because I don't
-		think the decorator could tell if attributes of the NIPASeries were changed
-		"""
-		if hasattr(self, '_real_level'):
-			return self._real_level
-		else:
-			code = self.real_level_code
-			self._real_level = NIPASeries(code, 'real_level', self)
-			return self._real_level
-
+	pass
 
 class NIPABalanceComponent(NIPAComponent, BalanceComponent):
-
-	mtypes = ['nominal', 'real']
-
+	pass
 
 def component_type(ctype: str):
 	"""
