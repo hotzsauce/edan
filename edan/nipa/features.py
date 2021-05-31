@@ -15,10 +15,7 @@ from edan.aggregates.components import (
 	BalanceComponent
 )
 
-from edan.aggregates.transformations import (
-	Feature,
-	ReIndexer
-)
+from edan.aggregates.transformations import Feature
 
 
 class Contribution(Feature):
@@ -393,7 +390,7 @@ class Chain(Feature):
 		# set `self.real` & `self.price` attributes, and indicators of ctypes
 		self._set_ctypes_and_data()
 
-		# chained-weight indices of the selected subcomponents 
+		# chained-weight indices of the selected subcomponents
 		weights = self._compute_chained_weights()
 
 		# after weights are computed, use them to find the whole chain series
