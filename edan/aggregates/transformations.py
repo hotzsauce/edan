@@ -85,8 +85,7 @@ class ReIndexer(object):
 		rebase = self.data[self.data.index.year == self.base]
 
 		if rebase.empty:
-			name = self.data.name
-			raise KeyError(f"'{name}' has no data in the year {self.base}")
+			raise IndexError(f"no data in the year {self.base}")
 
 		return rebase
 
@@ -109,19 +108,29 @@ class ReIndexer(object):
 			df = self.data
 			rebase = df.loc[(df.index >= self.base) & (df.index <= self.base)]
 
+		if rebase.empty:
+			raise IndexError(f"no data in the rebase period {self.base}")
+
 		return rebase
+
+
+	@property
+	def base_data(self):
+		"""
+		return the data that will be used to re-base the index
+		"""
+		if isinstance(self.base, int):
+			return self.base_data_from_integer()
+		return self.base_data_from_datetime()
 
 
 	def __call__(self, data):
 
 		self.data = data
 
-		if isinstance(self.base, int):
-			rebase = self.base_data_from_integer()
-		else:
-			rebase = self.base_data_from_datetime()
-
-		base_value = rebase.mean()
+		rebase = self.base_data
+		print(rebase)
+		base_value = rebase.mean(axis='index')
 
 		return 100 * self.data / base_value
 
@@ -267,8 +276,6 @@ class TransformationAccessor(object):
 
 		else:
 			raise TypeError(method)
-
-
 
 	def __transform__(self,
 		method: Union[str, dict, Callable] = 'difa%',
