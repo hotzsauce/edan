@@ -15,8 +15,10 @@ from edan.aggregates.components import (
 	BalanceComponent
 )
 
-from edan.aggregates.transformations import Feature
-
+from edan.aggregates.transformations import (
+	Feature,
+	ReIndexer
+)
 
 
 class Contribution(Feature):
@@ -168,8 +170,8 @@ class Contribution(Feature):
 
 		# re-partition data; each block has the agg. series in the first col
 		n_series = len(rdata)
-		self.real = data.iloc[:, :n_series].round(1)
-		self.nominal = data.iloc[:, n_series:].round(1)
+		self.real = data.iloc[:, :n_series]
+		self.nominal = data.iloc[:, n_series:]
 
 		# construct indicator arrays for ctype now that BalanceComp locs are known
 		self.stocks = np.zeros(n_series, dtype=bool)
@@ -260,6 +262,7 @@ class Share(Feature):
 	that same ratio for quantity/price indices really don't make sense economically,
 	but no checks are made when it comes to those mtypes
 	"""
+
 	name = 'share'
 
 	def __call__(
@@ -333,6 +336,166 @@ class Share(Feature):
 			columns=self.codes
 		)
 
+
+class Chain(Feature):
+	"""
+	compute the chain-weighted real level of the Component
+	"""
+
+	name = 'chain'
+
+	def __call__(
+		self,
+		subs: Union[list, str, bool] = '',
+		level: int = 0
+	):
+		"""
+		using the subcomponents selected by the parameters `subs` or `level`,
+		perform the standard chain-weighting computation. at the moment it isn't
+		very accurate with respect to the actual real level because of the final
+		computation: start with the first observation of the real aggregate level,
+		multiply the entire time series of chained-weights.
+			this could be made more accurate by locating the base periods that
+		were used to construct the real level, then working forward & backward
+		from the outside base periods. I'm not quite sure how to do that just
+		yet - the metadata probably has the base year somewhere, but I don't have
+		a clear idea of how to grab that information in a consistent way across
+		the FRED and BEA metadata structures.
+
+		Parameters
+		----------
+		subs : list | str ( = '' )
+			the subcomponents to include in the calculation. if an empty string,
+			all immediate subcomponents are used (if the other subcomponent
+			selection parameters, for example, `level`, are null. otherwise, the
+			subcomponent selection is done by the Component's `disaggregate()`
+			method
+		level : int ( = 0 )
+			the level of subcomponents to include in the calculation
+		"""
+		return self.compute(subs, level, base, *args, **kwargs)
+
+	def compute(
+		self,
+		subs: Union[list, str, bool] = '',
+		level: int = 0
+	):
+		if self.obj.elemental:
+			# if component has no subcomponent, return pandas Series of the
+			#	(possibly re-indexed) real level
+			real = self.obj.real.transform('index', base=base)
+			real.name = self.obj.code
+			return real
+
+		# select the subcomponents that will be used to chain-weight
+		self.subs = self.obj.disaggregate(subs, level)
+
+		# set `self.real` & `self.price` attributes, and indicators of ctypes
+		self._set_ctypes_and_data()
+
+		# chained-weight indices of the selected subcomponents 
+		weights = self._compute_chained_weights()
+
+		# after weights are computed, use them to find the whole chain series
+		return self._chain(weights)
+
+	def _set_ctypes_and_data(self):
+		"""
+		set `self.real` and `self.price` attributes of the real level and price
+		index data of both the aggregate & all the chosen subcomponents, and
+		indicators of the ctypes of all components in `self.flows`, `self.balances`,
+		and `self.stocks` attributes
+		"""
+
+		# real & price data, and sereies codes for renaming final dataframe.
+		#	`less` is an indicator for components that should be subtracted
+		#	from the agg
+		rdata, pdata, self.codes, self.less = [], [], [], []
+
+		# column indices of different Component types
+		stocks, flows = [], []
+		def add_idx(comp, idx):
+			if isinstance(comp, FlowComponent):
+				flows.append(idx)
+			else:
+				stocks.append(idx)
+
+		# don't use enumerate b/c we don't know if components are Balance
+		#	components beforehand
+		idx = 0
+		for comp in self.subs:
+
+			self.codes.append(comp.code)
+
+			if isinstance(comp, BalanceComponent):
+				for sub in comp.disaggregate():
+					self.less.append(sub.is_less(self.obj.code))
+
+					# i don't think there is ever a case where a BalanceComponent
+					#	will have a Balance sub but a check here could be good
+					rdata.append(sub.real.data)
+					pdata.append(sub.price.data)
+
+					add_idx(sub, idx)
+					idx += 1
+
+			else:
+				self.less.append(comp.is_less(self.obj.code))
+
+				rdata.append(comp.real.data)
+				pdata.append(comp.price.data)
+
+				add_idx(comp, idx)
+				idx += 1
+
+		# let pandas handle joining & nans
+		data = pd.concat(rdata + pdata, axis='columns').dropna(axis='index')
+
+		# re-partition data; each block has the agg. series in the first col
+		n_series = len(rdata)
+		self.real = data.iloc[:, :n_series].round(1)
+		self.price = data.iloc[:, n_series:].round(3)
+
+		# construct indicator arrays for ctype now that BalanceComp locs are known
+		self.stocks = np.zeros(n_series, dtype=bool)
+		self.stocks[stocks] = True
+
+		self.flows = np.zeros(n_series, dtype=bool)
+		self.flows[flows] = True
+
+	def _maybe_reindex_subcomponents(self):
+		if self._bases_match:
+			pass
+		else:
+			raise NotImplementedError()
+
+	def _compute_chained_weights(self):
+		""" """
+		real, price = self.real.values, self.price.values
+
+		# time period t & time period t-1 of quantity & prices
+		qt_pt = np.sum(np.multiply(real[1:, :], price[1:, :]), axis=1)
+		qt_ptm1 = np.sum(np.multiply(real[1:, :], price[:-1, :]), axis=1)
+		qtm1_pt = np.sum(np.multiply(real[:-1, :], price[1:, :]), axis=1)
+		qtm1_ptm1 = np.sum(np.multiply(real[:-1, :], price[:-1, :]), axis=1)
+
+		# shoutout to the germans
+		paasche = np.true_divide(qt_pt, qt_ptm1)
+		laspeyres = np.true_divide(qtm1_pt, qtm1_ptm1)
+
+		# pre-allocate chain weights
+		weights = np.empty(real.shape[0])
+		weights[:] = 1.0
+		weights[1:] = np.sqrt(np.multiply(paasche, laspeyres))
+		return weights
+
+	def _chain(self, weights):
+		agg = self.obj.real.data.loc[self.real.index]
+		return pd.Series(
+			np.multiply(agg.iloc[0], np.cumprod(weights)),
+			index=agg.index,
+			name=self.obj.code
+		)
 
 
 
@@ -411,3 +574,37 @@ def shares(
 	"""
 	shr = Share(obj)
 	return shr.compute(subs, level, mtype)
+
+
+def chain(
+	obj,
+	subs: Union[list, str, bool] = '',
+	level: int = 0
+):
+	"""
+	using the subcomponents selected by the parameters `subs` or `level`,
+	perform the standard chain-weighting computation. at the moment it isn't
+	very accurate with respect to the actual real level because of the final
+	computation: start with the first observation of the real aggregate level,
+	multiply the entire time series of chained-weights.
+		this could be made more accurate by locating the base periods that
+	were used to construct the real level, then working forward & backward
+	from the outside base periods. I'm not quite sure how to do that just
+	yet - the metadata probably has the base year somewhere, but I don't have
+	a clear idea of how to grab that information in a consistent way across
+	the FRED and BEA metadata structures.
+
+	Parameters
+	----------
+	subs : list | str ( = '' )
+		the subcomponents to include in the calculation. if an empty string,
+		all immediate subcomponents are used (if the other subcomponent
+		selection parameters, for example, `level`, are null. otherwise, the
+		subcomponent selection is done by the Component's `disaggregate()`
+		method
+	level : int ( = 0 )
+		the level of subcomponents to include in the calculation
+	"""
+
+	chain = Chain(obj)
+	return chain.compute(subs, level)
