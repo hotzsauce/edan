@@ -180,6 +180,13 @@ class Component(CompoundStorage):
 			return False
 		return True
 
+	@property
+	def display_name(self):
+		"""name to use in any plots with this component"""
+		if self.short_name:
+			return self.short_name
+		return self.long_name
+
 	@classmethod
 	def from_registry(cls, dct: dict):
 		mtypes = {g: dct.get(g) for g in cls.mtypes if dct.get(g)}

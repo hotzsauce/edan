@@ -241,9 +241,7 @@ class PlotDataManager(object):
 			name_list = list()
 			for obj in objs:
 
-				entry = obj.short_name
-				if entry == '':
-					entry = obj.long_name
+				entry = obj.display_name
 
 				for arg in args:
 					entry += f" {arg.capitalize()}"
