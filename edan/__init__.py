@@ -10,4 +10,8 @@ import edan.nipa
 import edan.cpi
 import edan.data
 
-__all__ = ['nipa', 'cpi', 'data']
+import edan.plotting
+
+from edan.aggregates.transformations import transform
+
+__all__ = ['nipa', 'cpi', 'data', 'plotting']

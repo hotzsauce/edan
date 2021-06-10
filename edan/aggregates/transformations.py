@@ -11,6 +11,8 @@ from __future__ import annotations
 import pandas as pd
 import numpy as np
 
+from edan.aggregates.components import Component
+
 from edan.utils.ts import (
 	infer_freq,
 	periods_per_year
@@ -19,25 +21,47 @@ from edan.utils.ts import (
 from edan.utils.dtypes import iterable_not_string
 
 
-series_transforms = dict()
-def add_transform(key, func):
-	series_transforms[key] = func
+class DataTransform(object):
+	__slots__ = ['method', 'func', '_unit']
+	def __init__(self, method, func, unit):
+		self.method = method
+		self.func = func
+		self._unit = unit
 
-add_transform('diff',	lambda s, n, h: s.diff(n))
-add_transform('diff%',	lambda s, n, h: 100 * (s.divide(s.shift(n)) - 1))
-add_transform('diffl',	lambda s, n, h: 100 * np.log(s.divide(s.shift(n))))
-add_transform('difa',	lambda s, n, h: (h/n) * s.diff(n))
-add_transform('difa%',	lambda s, n, h: 100 * ( s.divide(s.shift(n)) ** (h/n) - 1))
-add_transform('difal',	lambda s, n, h: 100 * (h/n) * np.log(s.divide(s.shift(n))))
-add_transform('difv',	lambda s, n, h: s.diff(n)/n)
-add_transform('difv%',	lambda s, n, h: 100 * (s.divide(s.shift(n)) ** (h/n) - 1))
-add_transform('difvl',	lambda s, n, h: (100/n) * np.log(s.divide(s.shift(n))))
-add_transform('movv',	lambda s, n, h: s.rolling(n).mean())
-add_transform('mova',	lambda s, n, h: h * s.rolling(n).mean())
-add_transform('movt',	lambda s, n, h: s.rolling(n).sum())
-add_transform('yryr',	lambda s, n, h: s.diff(h))
-add_transform('yryr%',	lambda s, n, h: 100 * (s.divide(s.shift(h)) - 1) )
-add_transform('yryrl',	lambda s, n, h: 100 * np.log(s.divide(s.shift(h))))
+	def fmt_unit(self, **kwargs):
+		n, h, f = kwargs.get('n', 1), kwargs.get('h', 0), kwargs.get('freq', '')
+		if n == 1 and h == 0:
+			return self._unit
+		elif n != 1:
+			if f:
+				return f"{n}-{f} {self._unit}"
+			else:
+				return f"{n}-prd. {self._unit}"
+		return self._unit
+
+	def __call__(self, data, n, h):
+		return self.func(data, n, h)
+
+series_transforms = dict()
+def deft(key, func, unit=''):
+	"""define transform"""
+	series_transforms[key] = DataTransform(key, func, unit)
+
+deft('diff',	lambda s, n, h: s.diff(n), 'chg.')
+deft('diff%',	lambda s, n, h: 100 * (s.divide(s.shift(n)) - 1), '% chg.')
+deft('diffl',	lambda s, n, h: 100 * np.log(s.divide(s.shift(n))), 'log chg.')
+deft('difa',	lambda s, n, h: (h/n) * s.diff(n), 'ann. chg.')
+deft('difa%',	lambda s, n, h: 100 * ( s.divide(s.shift(n)) ** (h/n) - 1), 'ann. % chg.')
+deft('difal',	lambda s, n, h: 100 * (h/n) * np.log(s.divide(s.shift(n))), 'ann. log chg.')
+deft('difv',	lambda s, n, h: s.diff(n)/n, 'avg. chg.')
+deft('difv%',	lambda s, n, h: 100 * (s.divide(s.shift(n)) ** (h/n) - 1), 'avg. % chg.')
+deft('difvl',	lambda s, n, h: (100/n) * np.log(s.divide(s.shift(n))), 'avg. log chg.')
+deft('movv',	lambda s, n, h: s.rolling(n).mean(), 'moving avg.')
+deft('mova',	lambda s, n, h: h * s.rolling(n).mean(), 'ann. moving avg.')
+deft('movt',	lambda s, n, h: s.rolling(n).sum(), 'moving sum')
+deft('yryr',	lambda s, n, h: s.diff(h), 'yr/yr chg.')
+deft('yryr%',	lambda s, n, h: 100 * (s.divide(s.shift(h)) - 1), 'yr/yr % chg.')
+deft('yryrl',	lambda s, n, h: 100 * np.log(s.divide(s.shift(h))), 'yr/yr log chg.')
 
 
 class ReIndexer(object):
@@ -129,7 +153,6 @@ class ReIndexer(object):
 		self.data = data
 
 		rebase = self.base_data
-		print(rebase)
 		base_value = rebase.mean(axis='index')
 
 		return 100 * self.data / base_value
@@ -138,12 +161,14 @@ class ReIndexer(object):
 class TransformationAccessor(object):
 
 	def __init__(self, obj, *args, **kwargs):
-		self.data = obj.data
+		if isinstance(obj, (pd.Series, pd.DataFrame)):
+			self.data = obj
+		else:
+			self.data = obj.data
 
 	def __call__(
 		self,
 		method: Union[str, Callable, Iterable[str, dict]] = 'difa%',
-		*args,
 		n: int = 1,
 		h: int = 0,
 		base: Union[str, int, TimeStamp] = '',
@@ -204,11 +229,11 @@ class TransformationAccessor(object):
 			for example,
 
 				>>> gdp = edan.nipa.GDPTable['gdp']
-				>>> gdp.transform(mtype='real', method={'foo': 'diff', 'n'=2})
+				>>> gdp.transform(mtype='real', method={'foo': 'diff', 'n':2})
 
 			or
 
-				>>> gdp.transform(mtype='price', method={'bar': 'index', 'base'=2009})
+				>>> gdp.transform(mtype='price', method={'bar': 'index', 'base':2009})
 
 			the key of the method doesn't matter in terms of functionality - it
 			doesn't affect the calculations - but it is used as the name of the
@@ -229,46 +254,22 @@ class TransformationAccessor(object):
 		base : str | datetime-like
 			if `method` is 'index', `base` is the base year/period from which
 			the series will be reindexed
-		args : positional arguments
-			arguments to pass to callable `method`
 		kwargs : keyword arguments
 			keyword arguments to pass to callable `method`
 
 		Returns
 		-------
-		pandas DataFrame
+		transform : pandas DataFrame or Series
 		"""
 
-		def get_name_safe(method):
-			if isinstance(method, str):
-				return method
-			elif isinstance(method, dict):
-				return list(method.keys())[0]
-
-		if isinstance(method, str):
-
-			df = self.__transform__(method, n, h, base, *args, **kwargs)
-			df.name = method
-			return df
-
-		elif isinstance(method, dict):
-			name = get_name_safe(method) # method's values get popped
-			df = self.__transform__(method, n, h, base, *args, **kwargs)
-			df.name = name
-			return df
-
-		elif callable(method):
-
-			df = self.__transform__(method, n, h, base, *args, **kwargs)
-			df.name = 'custom'
-			return df
+		if isinstance(method, (str, dict)) or callable(method):
+			return self.__transform__(method, n, h, base, **kwargs)
 
 		elif iterable_not_string(method):
 
 			frames = []
 			for meth in method:
-				df = self.__transform__(meth, n, h, base, *args, **kwargs)
-				df.name = get_name_safe(meth)
+				df = self.__transform__(meth, n, h, base, **kwargs)
 				frames.append(df)
 
 			df = pd.concat(frames, axis='columns').dropna(axis='index', how='all')
@@ -282,35 +283,33 @@ class TransformationAccessor(object):
 		n: int = 1,
 		h: int = 0,
 		base: Union[str, TimeStamp] = '',
-		*args, **kwargs
+		**kwargs
 	):
-
-		# can be called in other `edan` modules, don't want to have to provide
-		#	the same default arg
-		if method == '':
-			method = 'difa%'
 
 		try:
 			# assume `method` is a dict
 			keys = list(method.keys())
 
-			maybe_callable = method.pop(keys[0])
-			n_ = method.pop('n', n)
-			h_ = method.pop('h', h)
-			base_ = method.pop('base', base)
+			method_copy = method.copy()
+			first_key = keys[0]
+			maybe_callable = method[first_key]
 
-			kwargs.update(method)
-			df = self.__transform__(maybe_callable, n_, h_, base_, *args, **kwargs)
+			if callable(maybe_callable):
+				_ = method_copy.pop(first_key)
+				kwargs.update(method_copy)
+				df = self.__transform__(maybe_callable, **kwargs)
+
+			else:
+				n_ = method_copy.pop('n', n)
+				h_ = method_copy.pop('h', h)
+				base_ = method_copy.pop('base', base)
+				df = self.__transform__(maybe_callable, n_, h_, base_)
 
 		except AttributeError:
 			# assume `method` is a user-provided function
 
 			if callable(method):
-				if args and kwargs:
-					df = method(self.data, *args, **kwargs)
-				elif args:
-					df = method(self.data, *args)
-				elif kwargs:
+				if kwargs:
 					df = method(self.data, **kwargs)
 				else:
 					df = method(self.data)
@@ -336,6 +335,30 @@ class TransformationAccessor(object):
 
 		return df
 
+
+def transform(
+	obj: Union[Component, Series, DataFrame],
+	method: Union[str, Iterable[str]] = '',
+	n: int = 1,
+	h: int = 0,
+	base: Union[int, str] = '',
+	mtype: str = '',
+	**kwargs
+):
+	"""
+	top-level function for built-in transforms. parameters are the same as those
+	in the `__call__` method of the TransformationAccessor
+	"""
+	if isinstance(obj, Component):
+		if mtype:
+			series = obj.__getattr__(mtype)
+		else:
+			series = obj.default_mtype
+		transformer = TransformationAccessor(series)
+		return transformer(method, n, h, base, **kwargs)
+
+	transformer = TransformationAccessor(obj)
+	return transformer(method, n, h, base, **kwargs)
 
 
 class Feature(object):
