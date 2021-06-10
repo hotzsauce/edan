@@ -6,8 +6,7 @@ from __future__ import annotations
 from copy import deepcopy
 
 import pandas as pd
-# import matplotlib.pyplot as plt
-import edan.plotting._matplotlib as plt
+import matplotlib.pyplot as plt
 
 from edan.aggregates.transformations import (
 	transform,
@@ -369,9 +368,15 @@ class ComponentPlotter(object):
 
 	@property
 	def n_legend_cols(self):
-		# number of columns is determined by number of series & transforms
-		nm = len(self.method) if iterable_not_string(self.method) else 1
-		return self.data.shape[1] // nm
+		if isinstance(self.data, pd.DataFrame):
+			# number of columns is determined by number of series & transforms
+			nm = len(self.method) if iterable_not_string(self.method) else 1
+			return self.data.shape[1] // nm
+
+		elif isinstance(self.data, pd.Series):
+			return 1
+
+		raise TypeError("data must be a pandas Series or DataFrame")
 
 	@property
 	def unit(self):
