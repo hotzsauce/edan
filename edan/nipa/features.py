@@ -30,7 +30,7 @@ class Contribution(Feature):
 		self,
 		subs: Union[list, str, bool] = '',
 		level: int = 0,
-		method: Union[str, Callable] = '',
+		method: Union[str, Callable] = 'difa%',
 		*args, **kwargs
 	):
 		"""
@@ -98,8 +98,12 @@ class Contribution(Feature):
 		shares = self._compute_balances(shares_bal)
 
 		# let pandas handle index-matching again
-		growth = agg_growth.loc[self.real.index]
-		contrs = np.multiply(shares, growth.values[:, None])
+		shares_df = pd.DataFrame(shares, index=self.real.index)
+		idx = agg_growth.index.intersection(shares_df.index)
+
+		growth = agg_growth.loc[idx]
+		shares = shares_df.loc[idx]
+		contrs = np.multiply(shares.values, growth.values[:, None])
 
 		return pd.DataFrame(
 			contrs,
@@ -450,8 +454,8 @@ class Chain(Feature):
 
 		# re-partition data; each block has the agg. series in the first col
 		n_series = len(rdata)
-		self.real = data.iloc[:, :n_series].round(1)
-		self.price = data.iloc[:, n_series:].round(3)
+		self.real = data.iloc[:, :n_series]
+		self.price = data.iloc[:, n_series:]
 
 		# construct indicator arrays for ctype now that BalanceComp locs are known
 		self.stocks = np.zeros(n_series, dtype=bool)
@@ -487,7 +491,8 @@ class Chain(Feature):
 		return weights
 
 	def _chain(self, weights):
-		agg = self.obj.real.data.loc[self.real.index]
+		idx = self.obj.real.data.index.intersection(self.real.index)
+		agg = self.obj.real.data.loc[idx]
 		return pd.Series(
 			np.multiply(agg.iloc[0], np.cumprod(weights)),
 			index=agg.index,
@@ -500,7 +505,7 @@ def contributions(
 	obj,
 	subs: Union[list, str, bool] = '',
 	level: int = 0,
-	method: Union[str, Callable] = '',
+	method: Union[str, Callable] = 'difa%',
 	*args, **kwargs
 ):
 	"""
