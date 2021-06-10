@@ -23,6 +23,7 @@ class Component(CompoundStorage):
 
 	mtypes = []
 	_series_obj = Series
+	_default_mtype = ''
 
 	def __init__(
 		self,
@@ -112,7 +113,7 @@ class Component(CompoundStorage):
 			except AttributeError:
 				raise MeasureTypeError(measure=attr, comp=self)
 
-		raise AttributeError(attr)
+		raise AttributeError(f"Component class does not have {attr} attribute")
 
 
 	def disaggregate(
@@ -172,6 +173,13 @@ class Component(CompoundStorage):
 	def __repr__(self):
 		klass = self.__class__.__name__
 		return f"{klass}({self.code}, {self.level})"
+
+	@property
+	def default_mtype(self):
+		"""return the Series object representing the default mtype"""
+		if self._default_mtype:
+			return self.__getattr__(self._default_mtype)
+		raise TypeError(f"{repr(self)} has no default mtype")
 
 	@property
 	def elemental(self):
