@@ -12,7 +12,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Gross domestic product",
-        "short_name": "",
+        "short_name": "GDP",
         "source": "fred"
     },
     {
@@ -28,7 +28,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Personal consumption expenditures",
-        "short_name": "",
+        "short_name": "PCE",
         "source": "fred"
     },
     {
@@ -44,7 +44,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Goods",
-        "short_name": "",
+        "short_name": "Goods",
         "source": "fred"
     },
     {
@@ -60,7 +60,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Durable goods",
-        "short_name": "",
+        "short_name": "Durables",
         "source": "fred"
     },
     {
@@ -76,7 +76,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Motor vehicles and parts",
-        "short_name": "",
+        "short_name": "Motor vehicles & parts",
         "source": "fred"
     },
     {
@@ -92,7 +92,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Furnishings and durable household equipment",
-        "short_name": "",
+        "short_name": "Furnishings & household durables",
         "source": "fred"
     },
     {
@@ -108,7 +108,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Recreational goods and vehicles",
-        "short_name": "",
+        "short_name": "Rec. goods & vehicles",
         "source": "fred"
     },
     {
@@ -124,7 +124,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other durable goods",
-        "short_name": "",
+        "short_name": "Other durables",
         "source": "fred"
     },
     {
@@ -140,7 +140,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Nondurable goods",
-        "short_name": "",
+        "short_name": "Nondurables",
         "source": "fred"
     },
     {
@@ -156,7 +156,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Food and beverages purchased for off-premises consumption",
-        "short_name": "",
+        "short_name": "Food & drinks at home",
         "source": "fred"
     },
     {
@@ -172,7 +172,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Clothing and footwear",
-        "short_name": "",
+        "short_name": "Clothes & shoes",
         "source": "fred"
     },
     {
@@ -188,7 +188,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Gasoline and other energy goods",
-        "short_name": "",
+        "short_name": "Gas & energy goods",
         "source": "fred"
     },
     {
@@ -204,7 +204,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other nondurable goods",
-        "short_name": "",
+        "short_name": "Other nondurables",
         "source": "fred"
     },
     {
@@ -220,7 +220,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Services",
-        "short_name": "",
+        "short_name": "Services",
         "source": "fred"
     },
     {
@@ -236,7 +236,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Household consumption expenditures (for services)",
-        "short_name": "",
+        "short_name": "Household services",
         "source": "fred"
     },
     {
@@ -252,7 +252,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Housing and utilities",
-        "short_name": "",
+        "short_name": "Housing & utilities",
         "source": "fred"
     },
     {
@@ -268,7 +268,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Health care",
-        "short_name": "",
+        "short_name": "Health care",
         "source": "fred"
     },
     {
@@ -284,7 +284,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Transportation services",
-        "short_name": "",
+        "short_name": "Trans. services",
         "source": "fred"
     },
     {
@@ -300,7 +300,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Recreation services",
-        "short_name": "",
+        "short_name": "Rec. services",
         "source": "fred"
     },
     {
@@ -316,7 +316,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Food services and accommodations",
-        "short_name": "",
+        "short_name": "Food & accomodations",
         "source": "fred"
     },
     {
@@ -332,7 +332,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Financial services and insurance",
-        "short_name": "",
+        "short_name": "Finance & insurance",
         "source": "fred"
     },
     {
@@ -348,7 +348,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other services",
-        "short_name": "",
+        "short_name": "Other services",
         "source": "fred"
     },
     {
@@ -364,7 +364,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Final consumption expenditures of nonprofit institutions serving households (NPISHs)",
-        "short_name": "",
+        "short_name": "Nonprofit services",
         "source": "fred"
     },
     {
@@ -380,7 +380,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Gross output of nonprofit institutions",
-        "short_name": "",
+        "short_name": "Nonprofit gross output",
         "source": "fred"
     },
     {
@@ -396,7 +396,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Less: Receipts from sales of goods and services by nonprofit institutions",
-        "short_name": "",
+        "short_name": "Less: nonprofit receipts",
         "source": "fred"
     },
     {
@@ -412,7 +412,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Gross private domestic investment",
-        "short_name": "",
+        "short_name": "Gross PDI",
         "source": "fred"
     },
     {
@@ -428,7 +428,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Fixed investment",
-        "short_name": "",
+        "short_name": "Fixed investment",
         "source": "fred"
     },
     {
@@ -444,7 +444,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Nonresidential",
-        "short_name": "",
+        "short_name": "Nonres.",
         "source": "fred"
     },
     {
@@ -460,7 +460,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Structures",
-        "short_name": "",
+        "short_name": "Structures",
         "source": "fred"
     },
     {
@@ -476,7 +476,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Equipment",
-        "short_name": "",
+        "short_name": "Equipment",
         "source": "fred"
     },
     {
@@ -492,7 +492,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Information processing equipment",
-        "short_name": "",
+        "short_name": "IP Equipment",
         "source": "fred"
     },
     {
@@ -508,7 +508,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Computers and peripheral equipment",
-        "short_name": "",
+        "short_name": "Computer equipment",
         "source": "fred"
     },
     {
@@ -524,7 +524,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other",
-        "short_name": "",
+        "short_name": "Other equip.",
         "source": "fred"
     },
     {
@@ -540,7 +540,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Industrial equipment",
-        "short_name": "",
+        "short_name": "Industrial equipment",
         "source": "fred"
     },
     {
@@ -556,7 +556,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Transportation equipment",
-        "short_name": "",
+        "short_name": "Trans. equip.",
         "source": "fred"
     },
     {
@@ -572,7 +572,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other equipment",
-        "short_name": "",
+        "short_name": "Other equip.",
         "source": "fred"
     },
     {
@@ -588,7 +588,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Intellectual property products",
-        "short_name": "",
+        "short_name": "IPP",
         "source": "fred"
     },
     {
@@ -604,7 +604,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Software",
-        "short_name": "",
+        "short_name": "Software",
         "source": "fred"
     },
     {
@@ -620,7 +620,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Research and development",
-        "short_name": "",
+        "short_name": "R&D",
         "source": "fred"
     },
     {
@@ -636,7 +636,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Entertainment, literary, and artistic originals",
-        "short_name": "",
+        "short_name": "IPP: Art",
         "source": "fred"
     },
     {
@@ -652,7 +652,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Residential",
-        "short_name": "",
+        "short_name": "Residential",
         "source": "fred"
     },
     {
@@ -668,7 +668,7 @@
         "nominal_level": "lgdp:pdi:c",
         "real_level": "sgdp:pdi:c",
         "long_name": "Change in private inventories",
-        "short_name": "",
+        "short_name": "Invt. Change",
         "source": "fred"
     },
     {
@@ -684,7 +684,7 @@
         "nominal_level": "lgdp:pdi:c:f",
         "real_level": "sgdp:pdi:c:f",
         "long_name": "Farm",
-        "short_name": "",
+        "short_name": "Farm Invt.",
         "source": "fred"
     },
     {
@@ -700,7 +700,7 @@
         "nominal_level": "lgdp:pdi:c:n",
         "real_level": "sgdp:pdi:c:n",
         "long_name": "Nonfarm",
-        "short_name": "",
+        "short_name": "Nonfarm Invt.",
         "source": "fred"
     },
     {
@@ -716,7 +716,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Net exports of goods and services",
-        "short_name": "",
+        "short_name": "Net exports",
         "source": "fred"
     },
     {
@@ -732,7 +732,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Exports",
-        "short_name": "",
+        "short_name": "Exports",
         "source": "fred"
     },
     {
@@ -748,7 +748,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Exports: Goods",
-        "short_name": "",
+        "short_name": "Goods exports",
         "source": "fred"
     },
     {
@@ -764,7 +764,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Exports: Services",
-        "short_name": "",
+        "short_name": "Services exports",
         "source": "fred"
     },
     {
@@ -780,7 +780,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Imports",
-        "short_name": "",
+        "short_name": "Imports",
         "source": "fred"
     },
     {
@@ -796,7 +796,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Imports: Goods",
-        "short_name": "",
+        "short_name": "Goods imports",
         "source": "fred"
     },
     {
@@ -812,7 +812,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Imports: Services",
-        "short_name": "",
+        "short_name": "Services imports",
         "source": "fred"
     },
     {
@@ -828,7 +828,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Government consumption expenditures and gross investment",
-        "short_name": "",
+        "short_name": "Govt.",
         "source": "fred"
     },
     {
@@ -844,7 +844,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Federal",
-        "short_name": "",
+        "short_name": "Federal",
         "source": "fred"
     },
     {
@@ -860,7 +860,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "National defense",
-        "short_name": "",
+        "short_name": "Defense",
         "source": "fred"
     },
     {
@@ -876,7 +876,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "National defense: Consumption expenditures",
-        "short_name": "",
+        "short_name": "Defense cons.",
         "source": "fred"
     },
     {
@@ -892,7 +892,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "National defense: Gross investment",
-        "short_name": "",
+        "short_name": "Defense investment",
         "source": "fred"
     },
     {
@@ -908,7 +908,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Nondefense",
-        "short_name": "",
+        "short_name": "Nondefense",
         "source": "fred"
     },
     {
@@ -924,7 +924,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Nondefense: Consumption expenditures",
-        "short_name": "",
+        "short_name": "Nondefense cons.",
         "source": "fred"
     },
     {
@@ -940,7 +940,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Nondefense: Gross investment",
-        "short_name": "",
+        "short_name": "Nondefense investment",
         "source": "fred"
     },
     {
@@ -956,7 +956,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "State and local",
-        "short_name": "",
+        "short_name": "State & local",
         "source": "fred"
     },
     {
@@ -972,7 +972,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "State and local: Consumption expenditures",
-        "short_name": "",
+        "short_name": "State & local cons.",
         "source": "fred"
     },
     {
@@ -988,7 +988,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "State and local: Gross investment",
-        "short_name": "",
+        "short_name": "State & local investment",
         "source": "fred"
     },
     {
@@ -1004,7 +1004,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Residual",
-        "short_name": "",
+        "short_name": "Residual",
         "source": "fred"
     },
     {
