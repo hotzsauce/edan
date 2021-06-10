@@ -12,6 +12,7 @@ _style_params = [
 	'axes.facecolor', # color of the plotting area
 	'axes.edgecolor',
 	'axes.grid', # True or False
+	'axes.grid.axis', # horizontal and/or vertical grid lines
 	'axes.axisbelow', # paint axes below patches, lines, etc.
 	'axes.labelcolor', # color of x- and y-axis labels
 
@@ -81,7 +82,7 @@ def set_style(style=None):
 		style_dict = {k: mpl.rcParams[k] for k in _style_params}
 
 	else:
-		styles = ['light', 'lightgrid']
+		styles = ['light', 'lightgrid', 'ft', 'econ']
 		if style not in styles:
 			raise ValueError(f"style must be one of {', '.join(styles)}")
 
@@ -115,7 +116,6 @@ def set_style(style=None):
 		if 'grid' in style:
 			style_dict.update({
 				'axes.grid': True,
-				'grid.linestyle': ':',
 
 				'axes.spines.left': False,
 				'axes.spines.bottom': False,
@@ -135,12 +135,77 @@ def set_style(style=None):
 		if style.startswith('light'):
 			style_dict.update({
 				'grid.color': 'white',
+				'grid.linestyle': ':',
+				'axes.grid.axis': 'both',
 
 				'axes.facecolor': '#e5f1ff',
 				'axes.edgecolor': 'white'
 			})
 
+		elif style == 'ft':
+			ft_light_grey = '#c7c7c7'
+			ft_dark_grey = '#66605c'
+			ft_paper = '#f2dfce'
 
+			style_dict.update({
+				'lines.linewidth': 2.5,
+
+				'axes.grid.axis': 'y',
+				'axes.grid': True,
+
+				'axes.spines.left': False,
+				'axes.spines.top': False,
+				'axes.spines.right': False,
+
+				'axes.edgecolor': ft_dark_grey,
+
+				'grid.linestyle': '-',
+				'grid.color': ft_light_grey,
+
+				'axes.facecolor': ft_paper,
+				'figure.facecolor': ft_paper,
+
+				'ytick.left': False,
+				'ytick.labelcolor': ft_dark_grey,
+
+				'xtick.color': ft_dark_grey,
+				'xtick.labelcolor': ft_dark_grey,
+
+				'text.color': '#000000',
+			})
+
+		elif style == 'econ':
+			econ_light_blue = '#d7e6ef'
+			econ_red = '#e3210b'
+
+			econ_dark_grey = '#121317'
+			econ_light_grey = '#b2c0c9'
+
+			style_dict.update({
+				'lines.linewidth': 2,
+
+				'axes.grid.axis': 'y',
+				'axes.grid': True,
+
+				'axes.spines.left': False,
+				'axes.spines.top': False,
+				'axes.spines.right': False,
+
+				'axes.edgecolor': econ_dark_grey,
+
+				'grid.linestyle': '-',
+				'grid.color': econ_light_grey,
+
+				'axes.facecolor': econ_light_blue,
+
+				'ytick.left': False,
+				'ytick.labelcolor': econ_dark_grey,
+
+				'xtick.color': econ_dark_grey,
+				'xtick.labelcolor': econ_dark_grey,
+
+				'text.color': '#000000'
+			})
 
 	mpl.rcParams.update(style_dict)
 

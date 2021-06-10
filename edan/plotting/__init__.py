@@ -1,3 +1,3 @@
 from edan.plotting.mpl_wrapper import *
 
-import edan.plotting.rcset
+from edan.plotting.rcset import set_theme

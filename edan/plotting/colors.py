@@ -1,12 +1,16 @@
 import matplotlib.pyplot as plt
 
 edan_palettes = {
+	# default plot colors
 	'edan': ['#003f5c', '#ff7c43', '#429c55', '#e34d50',
 			'#a05195', '#dec64e', '#f95d6a', '#4195d3'],
-	'edan_contr': ['#ff7c43', '#429c55', '#e34d50',
-			'#a05195', '#dec64e', '#f95d6a', '#4195d3']
+	# financial times colors
+	'ft': ['#0f5499', '#990f3d', '#9ce5f0', '#f14c5a',
+			'#96cc28', '#593380', '#ff7faa', '#ccc5b8'],
+	# economist colors
+	'econ': ['#066fa1', '#2ec1d3', '#ab8a94', '#993e4f',
+			'#90bbcf', '#03959f', '#e2b465', '#f97a1f']
 }
-
 
 def color_palette(
 	palette: str = 'edan'
