@@ -182,15 +182,34 @@ class ComponentPlotter(object):
 
 	@property
 	def n_legend_cols(self):
+		"""number of columns is determined by number of series & transforms"""
 		if isinstance(self.data, pd.DataFrame):
-			# number of columns is determined by number of series & transforms
-			nm = len(self.method) if iterable_not_string(self.method) else 1
+			# if no methods, each data series will have their own legend col
+			nm = self.n_methods
+			if nm == 0:
+				return self.data.shape[1]
+
+			# if all the series are just different methods of a single time series,
+			#	the legend entries will all be in a single row
+			if nm == self.data.shape[1]:
+				return nm
 			return self.data.shape[1] // nm
 
 		elif isinstance(self.data, pd.Series):
 			return 1
 
 		raise TypeError("data must be a pandas Series or DataFrame")
+
+	@property
+	def n_methods(self):
+		"""the number of transformations applied to the plotting data"""
+		if iterable_not_string(self.method):
+			return len(self.method)
+
+		elif isinstance(self.method, str):
+			if self.method == '':
+				return 0
+			return 1
 
 	@property
 	def unit(self):
@@ -231,8 +250,6 @@ freq_abbrevs = {
 	'W': 'wkly.',
 	'D': 'daily'
 }
-
-
 
 class EdanCanvas(object):
 	"""
@@ -335,13 +352,23 @@ class EdanCanvas(object):
 		except AttributeError:
 			ncols = len(self.plotter.entries)
 
-		# shrink axis vertically by 10%
+		# number of series in the plotter's data
+		_, ns = self.plotter.data.shape
+		nrows = ns // ncols
+
+		# scaling factor is determined by number of rows
+		if nrows > 2:
+			scale = 0.90 - 0.05*(nrows - 2)
+		else:
+			scale = 0.90
+
+		# shrink axis vertically according to number of legend rows
 		box = self.ax.get_position()
-		self.ax.set_position([box.x0, box.y0, box.width, box.height*0.90])
+		self.ax.set_position([box.x0, box.y0, box.width, box.height*scale])
 
 		# need the figure scale so we can left-align left side of legend with title
 		trans = self.fig.transFigure
-		x, y = self._unit_x, box.y0 + 0.90*box.height
+		x, y = self._unit_x, box.y0 + scale*box.height
 
 		# put a legend above current axis
 		self.ax.legend(

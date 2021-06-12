@@ -331,7 +331,7 @@ def apply_transformations(
 		nm = len(method)
 		ns = data.shape[1] // nm
 
-		idx = [i + nm*j for i in range(nm) for j in range(ns)]
+		idx = [s + ns*m for s in range(ns) for m in range(nm)]
 		data = data.iloc[:, idx]
 
 	return data
