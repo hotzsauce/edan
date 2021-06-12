@@ -1,14 +1,28 @@
 """
 plot style & scaling
+
+a near-carbon copy of seaborn.rcmod; basically the only alterations are the
+default settings for the RCParams. classes & functions here are identical
+to seaborn's. many thanks to the developers there
 """
+import warnings
+import functools
 import matplotlib as mpl
 from cycler import cycler
 
 import edan.plotting.colors as colors
 
-__all__ = ['set_theme']
+__all__ = [
+	'set_theme',
+	'reset_defaults',
+	'axes_style',
+	'set_style',
+	'plotting_context',
+	'set_context',
+	'set_palette'
+]
 
-_style_params = [
+_style_keys = [
 	'axes.facecolor', # color of the plotting area
 	'axes.edgecolor',
 	'axes.grid', # True or False
@@ -27,7 +41,13 @@ _style_params = [
 	'ytick.color',
 	'xtick.direction', # one of {'out', 'in', 'inout'}
 	'ytick.direction',
+
 	'lines.solid_capstyle', # handling outer corners when lines change directions
+	'lines.linewidth', # linewidth & markerize are in seaborn's context keys
+	'lines.markersize',
+
+	'patch.edgecolor',
+	'patch.force_edgecolor',
 
 	'image.cmap', # unsure
 	'font.family', # {'sans-serif', 'serif', 'cursive', 'fantasy', 'monospace'}
@@ -38,13 +58,13 @@ _style_params = [
 	'ytick.left',
 	'ytick.right',
 
-	'axes.spines.left' # borders around each axis
-	'axes.spine.bottom',
-	'axes.spine.right',
-	'axes.spine.top'
+	'axes.spines.left', # borders around each axis
+	'axes.spines.bottom',
+	'axes.spines.right',
+	'axes.spines.top'
 ]
 
-_axes_params = [
+_context_keys = [
 	'font.size',
 	'axes.labelsize',
 	'axes.titlesize',
@@ -55,8 +75,6 @@ _axes_params = [
 
 	'axes.linewidth',
 	'grid.linewidth',
-	'lines.linewidth',
-	'lines.markersize',
 	'patch.linewidth',
 
 	'xtick.major.width',
@@ -71,85 +89,138 @@ _axes_params = [
 ]
 
 
-def set_palette(palette=None):
-	color = colors.color_palette(palette)
-	cycle = cycler('color', color)
-	mpl.rcParams['axes.prop_cycle'] = cycle
+def set_theme(
+	context='notebook',
+	style='edan',
+	palette='edan',
+	font='sans-serif',
+	font_scale=1,
+	color_codes=False,
+	rc=None
+):
+	"""
+	set aspects of the visual theme for all matplotlib and edan plots
+
+	this function changes the global defaults for all plots using the matplotlib
+	rcParams system. the themeing is decomposed into several distinct sets of
+	parameter values
+
+	Parameters
+	----------
+	context : str | dict ( = 'notebook' )
+		scaling parameters
+	style : str | dict ( = 'edan' )
+		axes style parameters
+	palette : str | sequence ( = 'edan' )
+		color palette
+	font : str ( = 'sans-serif' )
+		font family, see matplotlib font manager
+	font_scale : float | int ( = 1 )
+		separate scaling factor to independently scale the size of the font elements
+	color_codes : bool ( = True )
+		if `True` and `palette` is an edan palette remap the shorthand color codes
+		(e.g. 'b', 'g', 'r', etc.) to the colors from this palette
+	rc : dict | None ( = None )
+		dictionary of rc parameters to override the above
+	"""
+	set_context(context, font_scale)
+	set_style(style, rc={'font.family': font})
+	set_palette(palette, color_codes=color_codes)
+	if rc is not None:
+		mpl.rcParams.update(rc)
 
 
-def set_style(style=None):
+def reset_defaults():
+	"""restore all rc params to default settings"""
+	mpl.rcParams.update(mpl.rcParamsDefault)
+
+
+def axes_style(
+	style=None,
+	rc=None
+):
+	"""
+	get the parameters that control the general style of the plots.
+
+	the style parameters control properties like the color of the background and
+	whether a grid is enable by default. this is accomplished using the rcParams
+	system
+
+	this function can also be used as a context manager to temporarily alter the
+	global defaults.
+
+	Parameters
+	----------
+	style : None, dict, or one of {'edan', 'ft', 'econ'} ( = None )
+		a dictionary of parameters or the name of a preconfigured style
+	rc : dict ( = None )
+		parameter mappings to override the values in the preset edan style
+		dictionaries. this only updates parameters that are considered part
+		of the style definition
+	"""
+
 	if style is None:
-		style_dict = {k: mpl.rcParams[k] for k in _style_params}
+		style_dict = {k: mpl.rcParams[k] for k in _style_keys}
+
+	elif isinstance(style, dict):
+		style_dict = style
 
 	else:
-		styles = ['light', 'lightgrid', 'ft', 'econ']
+		styles = ('edan', 'ft', 'econ')
 		if style not in styles:
 			raise ValueError(f"style must be one of {', '.join(styles)}")
 
-		light_grey = '#85929e'
-		dark_grey = '#212f3c'
+		edan_palette = colors.color_palette('edan')
 
 		# shared style params
 		style_dict = {
-			'figure.facecolor': 'white',
-			'axes.labelcolor': dark_grey,
+			'figure.facecolor': edan_palette.fig_color,
+			'axes.labelcolor': edan_palette.dark_grey,
 
 			'xtick.direction': 'out',
 			'ytick.direction': 'out',
-			'xtick.color': dark_grey,
-			'ytick.color': dark_grey,
+			'xtick.color': edan_palette.dark_grey,
+			'ytick.color': edan_palette.dark_grey,
 
 			'axes.axisbelow': True,
 
-			'text.color': dark_grey,
+			'axes.grid': True,
+			'axes.spines.left': False,
+			'axes.spines.bottom': False,
+			'axes.spines.right': False,
+			'axes.spines.top': False,
+
+			'lines.linewidth': 1.5,
+			'lines.markersize': 6,
+
+			'text.color': edan_palette.dark_grey,
 			'font.family': ['sans-serif'],
 			'font.sans-serif': ['Tahoma', 'sans-serif'],
 
 			'lines.solid_capstyle': 'round',
 
-			'image.cmap': 'magma',
-
 			'xtick.top': False,
 			'ytick.right': False,
 		}
 
-		if 'grid' in style:
+		if style == 'edan':
 			style_dict.update({
-				'axes.grid': True,
-
-				'axes.spines.left': False,
-				'axes.spines.bottom': False,
-				'axes.spines.right': False,
-				'axes.spines.top': False,
-			})
-		else:
-			style_dict.update({
-				'axes.grid': False,
-
-				'axes.spines.left': True,
-				'axes.spines.bottom': True,
-				'axes.spines.right': True,
-				'axes.spines.top': True,
-			})
-
-		if style.startswith('light'):
-			style_dict.update({
-				'grid.color': 'white',
+				'grid.color': edan_palette.grid_color,
 				'grid.linestyle': ':',
 				'axes.grid.axis': 'both',
 
-				'axes.facecolor': '#e5f1ff',
-				'axes.edgecolor': 'white'
+				'axes.facecolor': edan_palette.axes_color,
+				'axes.edgecolor': edan_palette.fig_color
 			})
+			set_palette('edan')
 
 		elif style == 'ft':
-			ft_light_grey = '#c7c7c7'
-			ft_dark_grey = '#66605c'
-			ft_paper = '#f2dfce'
-
+			palette = colors.color_palette('ft')
 			style_dict.update({
 				'lines.linewidth': 2.5,
+				'lines.markersize': 9,
 
+				# pandas issue 17725
 				'axes.grid.axis': 'y',
 				'axes.grid': True,
 
@@ -157,33 +228,31 @@ def set_style(style=None):
 				'axes.spines.top': False,
 				'axes.spines.right': False,
 
-				'axes.edgecolor': ft_dark_grey,
+				'axes.edgecolor': palette.dark_grey,
 
 				'grid.linestyle': '-',
-				'grid.color': ft_light_grey,
+				'grid.color': palette.grid_color,
 
-				'axes.facecolor': ft_paper,
-				'figure.facecolor': ft_paper,
+				'axes.facecolor': palette.axes_color,
+				'figure.facecolor': palette.axes_color,
 
 				'ytick.left': False,
-				'ytick.labelcolor': ft_dark_grey,
+				'ytick.labelcolor': palette.dark_grey,
 
-				'xtick.color': ft_dark_grey,
-				'xtick.labelcolor': ft_dark_grey,
+				'xtick.color': palette.dark_grey,
+				'xtick.labelcolor': palette.dark_grey,
 
-				'text.color': '#000000',
+				'text.color': palette.text_color,
 			})
+			set_palette('ft')
 
 		elif style == 'econ':
-			econ_light_blue = '#d7e6ef'
-			econ_red = '#e3210b'
-
-			econ_dark_grey = '#121317'
-			econ_light_grey = '#b2c0c9'
-
+			palette = colors.color_palette('econ')
 			style_dict.update({
 				'lines.linewidth': 2,
+				'lines.markersize': 8,
 
+				# pandas issue 17725
 				'axes.grid.axis': 'y',
 				'axes.grid': True,
 
@@ -191,26 +260,237 @@ def set_style(style=None):
 				'axes.spines.top': False,
 				'axes.spines.right': False,
 
-				'axes.edgecolor': econ_dark_grey,
+				'axes.edgecolor': palette.dark_grey,
 
 				'grid.linestyle': '-',
-				'grid.color': econ_light_grey,
+				'grid.color': palette.grid_color,
 
-				'axes.facecolor': econ_light_blue,
+				'axes.facecolor': palette.axes_color,
 
 				'ytick.left': False,
-				'ytick.labelcolor': econ_dark_grey,
+				'ytick.labelcolor': palette.dark_grey,
 
-				'xtick.color': econ_dark_grey,
-				'xtick.labelcolor': econ_dark_grey,
+				'xtick.color': palette.dark_grey,
+				'xtick.labelcolor': palette.dark_grey,
 
-				'text.color': '#000000'
+				'text.color': palette.text_color
 			})
+			set_palette('econ')
 
-	mpl.rcParams.update(style_dict)
+	if rc is not None:
+		style_dict.update(rc)
 
-def set_theme(style='lightgrid', palette='edan', *args, **kwargs):
-	set_style(style)
-	set_palette(palette)
+	# wrap in an _AxesStyle object so this can be used in a `with` statement
+	style_object = _AxesStyle(style_dict)
 
-set_theme()
+	return style_object
+
+
+def set_style(
+	style=None,
+	rc=None
+):
+	"""
+	get the parameters that control the general style of the plots.
+
+	the style parameters control properties like the color of the background and
+	whether a grid is enable by default. this is accomplished using the rcParams
+	system
+
+	this function can also be used as a context manager to temporarily alter the
+	global defaults.
+
+	Parameters
+	----------
+	style : None, dict, or one of {'edan', 'ft', 'econ'} ( = None )
+		a dictionary of parameters or the name of a preconfigured style
+	rc : dict ( = None )
+		parameter mappings to override the values in the preset edan style
+		dictionaries. this only updates parameters that are considered part
+		of the style definition
+	"""
+	style_object = axes_style(style, rc)
+	mpl.rcParams.update(style_object)
+
+
+def plotting_context(context=None, font_scale=1, rc=None):
+	"""
+	get the parameters that control the scaling of plot elements
+
+	this affects things like the size of the labels, lines, and other elements of
+	the plot, but not the overall style. this is accomplished using the rcParams
+	system
+
+	the base context is 'notebook', and the other contexts are 'paper', 'talk',
+	and 'poster', which are versions of the notebook parameters scaled by different
+	values. font elements can also be scaled independently of (but relative to)
+	the other values
+
+	this function can also be used as a context manager to temporarily alter the
+	global defaults.
+
+	Parameters
+	----------
+	context : None | dict | {paper, notebook, talk, poster}
+		a dictionary of parameters or the name of a preconfigured set
+	font_scale : float ( = 1 )
+		separate scaling factor to independently scale the size of the the font
+		elements
+	rc : dict ( = None )
+		parameter mappings to override the values in the present seaborn context
+		dictionaries. this only updates parameters that are considered part of
+		the context definition
+	"""
+	if context is None:
+		context_dict = {k: mpl.rcParams[k] for k in _context_keys}
+
+	elif isinstance(context, dict):
+		context_dict = context
+
+	else:
+
+		contexts = ('paper', 'notebook', 'talk', 'poster')
+		if context not in contexts:
+			raise ValueError(f"context must be in {', '.join(contexts)}")
+
+		# set up dictionary of default parameters
+		texts_base_context = {
+			'font.size': 10,
+			'axes.labelsize': 12,
+			'axes.titlesize': 12,
+			'xtick.labelsize': 11,
+			'ytick.labelsize': 11,
+			'legend.fontsize': 11,
+			'legend.title_fontsize': 12
+		}
+
+		base_context = {
+			'axes.linewidth': 1.25,
+			'grid.linewidth': 1,
+			'lines.linewidth': 1.5,
+			'lines.markersize': 6,
+			'patch.linewidth': 1,
+
+			'xtick.major.width': 1.25,
+			'ytick.major.width': 1.25,
+			'xtick.minor.width': 1,
+			'ytick.minor.width': 1,
+
+			'xtick.major.size': 6,
+			'ytick.major.size': 6,
+			'xtick.minor.size': 4,
+			'ytick.minor.size': 4
+		}
+		base_context.update(texts_base_context)
+
+		# scale all the parameters by the same factor depnding on the context
+		scaling = dict(paper=0.8, notebook=1, talk=1.5, poster=2)[context]
+		context_dict = {k: v * scaling for k, v in base_context.items()}
+
+		# independently scale the fonts
+		font_keys = texts_base_context.keys()
+		font_dict = {k: context_dict[k] * font_scale for k in font_keys}
+		context_dict.update(font_dict)
+
+	# override these settings with the provided rc dictionary
+	if rc is not None:
+		context_dict.update(rc)
+
+	# wrap in a _PlottingContext object so this can be used in a with statement
+	context_object = _PlottingContext(context_dict)
+
+	return context_object
+
+
+def set_context(context=None, font_scale=1, rc=None):
+	"""
+	set the parameters that control the scaling of plot elements
+
+	this affects things like the size of the labels, lines, and other elements of
+	the plot, but not the overall style. this is accomplished using the rcParams
+	system
+
+	the base context is 'notebook', and the other contexts are 'paper', 'talk',
+	and 'poster', which are versions of the notebook parameters scaled by different
+	values. font elements can also be scaled independently of (but relative to)
+	the other values
+
+	this function can also be used as a context manager to temporarily alter the
+	global defaults.
+
+	Parameters
+	----------
+	context : None | dict | {paper, notebook, talk, poster}
+		a dictionary of parameters or the name of a preconfigured set
+	font_scale : float ( = 1 )
+		separate scaling factor to independently scale the size of the the font
+		elements
+	rc : dict ( = None )
+		parameter mappings to override the values in the present seaborn context
+		dictionaries. this only updates parameters that are considered part of
+		the context definition
+	"""
+
+	context_object = plotting_context(context, font_scale, rc)
+	mpl.rcParams.update(context_object)
+
+
+class _RCAesthetics(dict):
+
+	def __enter__(self):
+		rc = mpl.rcParams
+		self._orig = {k: rc[k] for k in self._keys}
+		self._set(self)
+
+	def __exit__(self, exc_type, exc_value, exc_tb):
+		print('self._orig', self._orig)
+		self._set(self._orig)
+
+	def __call__(self, func):
+		@functools.wraps(func)
+		def wrapper(*args, **kwargs):
+			with self:
+				return func(*args, **kwargs)
+		return wrapper
+
+
+class _AxesStyle(_RCAesthetics):
+	"""light wrapper on a dict to set style temporarily"""
+	_keys = _style_keys
+	_set = staticmethod(set_style)
+
+
+class _PlottingContext(_RCAesthetics):
+	"""light wrapper on a dict to set context temporarily"""
+	_keys = _context_keys
+	_set = staticmethod(set_context)
+
+
+def set_palette(
+	palette,
+	n_colors=None,
+	desat=None,
+	color_codes=False
+):
+	"""
+	set the matplotlib color cycle using an edan palette
+
+	Parameters
+	----------
+	palette : edan color palette | matplotlib color map
+		palette definition. should be something that `color_palette` can process
+	n_colors : int ( = None )
+		number of colors in the cycle. the default number depends on the format
+		of `palette`
+	desat : float ( = None )
+		proportion to desaturate each color by
+	color_codes : bool ( = False )
+		if `True` and `palette` is an edan palette, remap the shorthand color
+		codes (e.g. 'b', 'g', 'r', etc.) to the colors from this palette
+	"""
+	if color_codes:
+		raise NotImplementedError('color_codes')
+	palette = colors.color_palette(palette, n_colors, desat)
+	cyl = cycler('color', palette)
+	mpl.rcParams['axes.prop_cycle'] = cyl
+	mpl.rcParams['patch.facecolor'] = palette[0]
