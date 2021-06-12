@@ -4,15 +4,13 @@ classes for plotting Features of Components in particular ways
 
 from __future__ import annotations
 
-from cycler import cycler
-
+import edan.plotting as plt
+import edan.plotting.colors as colors
 from edan.plotting.utils import (
 	cumulate_data,
 	truncate,
 	collect_legend_entries
 )
-import edan.plotting.colors as colors
-
 
 
 class ContributionPlotter(object):
@@ -24,54 +22,48 @@ class ContributionPlotter(object):
 	def __init__(
 		self,
 		comp: Component,
-		canvas: EdanCanvas,
-		method: str = 'difa%',
-		start: Union[str, bool, TimeStamp] = '',
-		end: Union[str, bool, TimeStamp] = '',
-		periods: Union[int, str] = 0,
 		subs: Union[bool, str, Iterable[str]] = '',
 		level: int = 0,
+		method: str = 'difa%',
 		**kwargs
 	):
 		self.comp = comp
-		self.canvas = canvas
-		self.canvas._pair_plotter(self)
-
-		self.ax = self.canvas.ax
-		self.fig = self.canvas.fig
-
-		self.method = method
-
-		self.start = start
-		self.end = end
-		self.periods = periods
+		self.method = method if method else 'difa%'
 
 		self.subcomponents = self.comp.disaggregate(subs=subs, level=level)
-		self.data = self.comp.contributions(subs=subs, level=level, method=method)
+		self.data = self.comp.contributions(subs=subs, level=level, method=self.method)
 
-	def plot(self):
-		self.data = truncate(self.data, self.start, self.end, self.periods)
+	def plot(
+		self,
+		start: Union[str, bool, Timestamp] = '',
+		end: Union[str, bool, Timestamp] = '',
+		periods: Union[int, str] = 0
+	):
+		self.data = truncate(self.data, start, end, periods)
 
-		# plot the aggregate component as a line. use pandas' PlotAccessor to
-		#	set the widths of the bars
-		self.data.iloc[:, 0].plot(ax=self.ax)
+		# for some very odd reason, if there was a figure created before this
+		#	Plotter was created, the Contributions plot is drawn on the previous
+		#	figure. this doesn't happen with the SharesPlot, or the general
+		#	ComponentPlotter. create a dummy figure and axes as a buffer
+		_, _ = plt.subplots()
+
+		# plot the aggregate component as a line
+		ax = self.data.iloc[:, 0].plot()
 
 		# after the main line has been plotted, remove the aggregate color
-		contr_colors = colors.contribution_palette()
-		self.ax.set_prop_cycle(cycler('color', contr_colors))
+		palette = colors.color_palette()
+		ax.set_prop_cycle(palette.contribution_cycler())
 
-		# matplotlib doesn't cumulate negative & positive bars natively, so
-		#	the bottom for each of the bars is computed here
+		# plot each of the component bars, stacked
 		data_stack = cumulate_data(self.data.iloc[:, 1:])
-
 		for i in range(1, self.data.shape[1]):
-			self.ax.bar(
-				self.data.index, self.data.iloc[:, i],
-				bottom=data_stack.iloc[:, i-1],
+			ax.bar(
+				self.data.index,
+				self.data.iloc[:, i].values,
+				bottom=data_stack.iloc[:, i-1].values
 			)
 
-		self.canvas._arrange()
-		return self.ax
+		return ax
 
 	@property
 	def title(self):
@@ -101,48 +93,29 @@ class SharePlotter(object):
 	def __init__(
 		self,
 		comp: Component,
-		canvas: EdanCanvas,
-		mtype: str = 'nominal',
-		start: Union[str, bool, TimeStamp] = '',
-		end: Union[str, bool, TimeStamp] = '',
-		periods: Union[int, str] = 0,
 		subs: Union[bool, str, Iterable[str]] = '',
 		level: int = 0,
+		mtype: str = '',
 		**kwargs
 	):
 		self.comp = comp
-		self.canvas = canvas
-		self.canvas._pair_plotter(self)
-
-		self.ax = self.canvas.ax
-		self.fig = self.canvas.fig
-
-		self.kwargs = kwargs
-		self.mtype = mtype
-
-		self.start = start
-		self.end = end
-		self.periods = periods
-
-		if mtype:
-			self.mtype = mtype
-		else:
-			self.mtype = self.comp._default_mtype
+		self.mtype = mtype if mtype else 'nominal'
 
 		self.subcomponents = self.comp.disaggregate(subs=subs, level=level)
 
-		# remove first column (the aggregate component)
+		# remove the first column - the aggregate columns of ones
 		data = self.comp.shares(subs=subs, level=level, mtype=self.mtype)
 		self.data = data.iloc[:, 1:]
 
-	def plot(self):
-		self.data = truncate(self.data, self.start, self.end, self.periods)
-		self.ax.stackplot(
-			self.data.index,
-			self.data.values.transpose()
-		)
-		self.canvas._arrange()
-		return self.ax
+	def plot(
+		self,
+		start: Union[str, bool, Timestamp] = '',
+		end: Union[str, bool, Timestamp] = '',
+		periods: Union[int, str] = 0
+	):
+		self.data = truncate(self.data, start, end, periods)
+
+		return self.data.plot.area(stacked=True)
 
 	@property
 	def title(self):
@@ -160,6 +133,7 @@ class SharePlotter(object):
 	@property
 	def unit(self):
 		return 'shares'
+
 
 
 feature_maps = {

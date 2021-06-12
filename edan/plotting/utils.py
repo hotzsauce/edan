@@ -9,6 +9,7 @@ import numpy as np
 
 from edan.aggregates.series import Series
 from edan.aggregates.components import Component
+from edan.aggregates.transformations import transform
 
 from edan.utils.ts import (
 	infer_freq,
@@ -204,22 +205,28 @@ def cumulate_data(df: pd.DataFrame):
 	# take negative & positive data apart and cumulate
 	def get_cumulated_array(arr, **kwargs):
 		cum = arr.clip(**kwargs)
-		cum = np.cumsum(cum, axis=0)
+		cum = np.cumsum(cum, axis=1)
 
 		dat = np.zeros(np.shape(arr))
-		dat[1:] = cum[:-1]
+		dat[:, 1:] = cum[:, :-1]
 		return dat
 
-	arr = df.values.transpose()
+	arr = df.values
 	cumulated_data = get_cumulated_array(arr, min=0)
 	cumulated_data_neg = get_cumulated_array(arr, max=0)
 
 	# re-merge positive & negative data
-	row_mask = (arr < 0)
+	row_mask = arr < 0
 	cumulated_data[row_mask] = cumulated_data_neg[row_mask]
 
+	# if a nan is in the first entry of a column, that entire column will not be
+	#	shown in the stacked bar chart. if a nan is in a later row, that stacked
+	#	bar will not be shown, but that columns' other entries will be. address
+	#	that here by replacing with nan
+	cumulated_data = np.nan_to_num(cumulated_data, nan=0.0)
+
 	return pd.DataFrame(
-		cumulated_data.transpose(),
+		cumulated_data,
 		index=df.index,
 		columns=df.columns
 	)
@@ -293,3 +300,38 @@ def collect_legend_entries(
 			return c.display_name
 
 	raise ValueError(f"'comp': {comp} and 'method': {method}")
+
+
+def apply_transformations(
+	df: DataFrame,
+	method: Union[Callable, str, dict]
+):
+	"""
+	apply a recognized or custom transform to a pandas DataFrame or Series
+	before displaying on a chart. this uses the usual `transform` method, but
+	if more than one of method is provided, the columns will need to be reorded.
+	this is done to ensure all the methods applied to a data series are in the
+	same column of the legend
+
+	Pararmeters
+	----------
+	df : pandas DataFrame | pandas Series
+		the data to transform
+	method : Callable | str | dict
+		the method to apply to the data
+
+	Returns
+	-------
+	transformed : pandas DataFrame | pandas Series
+	"""
+	data = transform(df, method)
+
+	if iterable_not_string(method) and len(method) > 1:
+
+		nm = len(method)
+		ns = data.shape[1] // nm
+
+		idx = [i + nm*j for i in range(nm) for j in range(ns)]
+		data = data.iloc[:, idx]
+
+	return data
