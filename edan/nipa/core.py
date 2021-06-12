@@ -20,7 +20,7 @@ from edan.nipa.features import (
 	Chain
 )
 
-from edan.plotting.generic import ComponentPlotAccessor
+from edan.plotting.generic import PlotAccessor
 
 
 class NIPASeries(Series):
@@ -46,7 +46,7 @@ class NIPAComponent(Component):
 	_default_mtype = 'real'
 
 	# add accessor for plotting
-	plot = CachedAccessor('plot', ComponentPlotAccessor)
+	plot = CachedAccessor('plot', PlotAccessor)
 
 	# add accessors for common features
 	contributions = CachedAccessor('contributions', Contribution)
