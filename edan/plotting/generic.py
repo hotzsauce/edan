@@ -20,6 +20,10 @@ from edan.plotting.utils import (
 	apply_transformations
 )
 
+import edan.plotting.colors as colors
+
+
+
 class PlotAccessor(object):
 
 	def __init__(self, obj):
@@ -137,6 +141,20 @@ class ComponentPlotter(object):
 			self.data = apply_transformations(self.data, self.method)
 
 		self.data = truncate(self.data, start, end, periods)
+
+		# if more than one series is plotted, and more than one transforms are
+		#	being computed, use sequential colors
+		if self.n_methods > 1:
+			if self.data.shape[1] == self.n_methods:
+				return self.data.plot()
+			else:
+				fig, ax = plt.subplots()
+
+				palette = colors.color_palette()
+				ax.set_prop_cycle(palette.sequential_cycler(self.n_methods))
+
+				return self.data.plot(ax=ax)
+
 		return self.data.plot()
 
 	def _collect_data(self):
