@@ -71,6 +71,31 @@ _edan_palettes = {
 			['#e2b465', '#ecc68b', '#f4d9b1', '#fbecd8'], # tangerine
 			['#f97a1f', '#ff9e5e', '#ffc096', '#ffe0cb']  # orange
 		]
+	},
+	# bloomberg terminal colors
+	'bb': {
+		'orange': '#f9a003',
+		'red': '#90a11a',
+		'light_grey': '#b9b6ae',
+		'dark_grey': '#5c5b57',
+		'text_color': '#f6f3e8',
+		'grid_color': '#7b7974',
+		'axes_color': '#000000',
+		'fig_color': '#000000',
+		'cycle': [
+			'#ffffff', '#00aeff', '#ff008c', '#ffc400',
+			'#ef3d56', '#b3d334', '#b579b3', '#f36532'
+		],
+		'sequence': [
+			['#ffffff', '#c4c4c4', '#8b8b8b', '#575757'], # greys
+			['#00aeff', '#76c2ff', '#abd6ff', '#d7eaff'], # light blue
+			['#ff008c', '#ff71aa', '#ffa6c7', '#ffd4e3'], # pinks
+			['#ffc400', '#ffd466', '#ffe39e', '#fff1d0'], # yellows
+			['#ef3d56', '#fb777d', '#ffa7a8', '#ffd4d3'], # reds
+			['#b3d334', '#c9de6e', '#dde99f', '#eff4cf'], # limes
+			['#b579b3', '#c89ac6', '#dbbbd9', '#edddec'], # purples
+			['#f36532', '#fe8d64', '#ffb699', '#ffdbcc']  # oranges
+		]
 	}
 }
 
@@ -87,6 +112,9 @@ class Palette(object):
 
 		if not hasattr(self, 'cycle'):
 			raise TypeError("palette must be initialized with a 'cycle' attribute")
+
+		if not hasattr(self, 'sequence'):
+			raise TypeError("palette must be initialized with a 'sequence' attribute")
 
 		if n_colors is not None:
 			self.cycle = self.cycle[:n_colors]
@@ -151,7 +179,7 @@ class Palette(object):
 		return cycler('color', partial_seqs)
 
 
-
+palette_cache = [Palette(_edan_palettes['edan'])]
 def color_palette(
 	palette: str = None,
 	n_colors: int = None,
@@ -163,10 +191,10 @@ def color_palette(
 
 	Parameters
 	----------
-	palette : str | None
-		preconfigured palette name, or None. if None, a palette with the current
-		cycle & the other default `edan` colors is returned. if string, must be
-		one of `edan`, `ft`, or `econ`
+	palette : str | dict | Palette | None
+		preconfigured palette name, palette specification,  or None. if None, the
+		most recently chosen Palette is returned. if string, must be on of `edan`,
+		`ft`, `econ`, or `bb`. if a dict or Palette, construct a new Palette
 	n_colors : int ( = None )
 		number of colors in the cycle. the default number depends on the format of
 		`palette`
@@ -181,22 +209,34 @@ def color_palette(
 		raise NotImplementedError("as_cmap")
 
 	if palette is None:
-		edan_colors = _edan_palettes['edan'].copy()
-
-		cycler = mpl.rcParams['axes.prop_cycle']
-		edan_colors['cycle'] = cycler.by_key()['color']
-		return Palette(edan_colors, n_colors)
+		last_palette = palette_cache[-1]
+		return last_palette
 
 	elif isinstance(palette, Palette):
-		return Palette(palette.colors, n_colors)
+		pal = Palette(palette.colors, n_colors)
+
+		_ = palette_cache.pop()
+		palette_cache.append(pal)
+		return pal
 
 	elif isinstance(palette, str):
-		palettes = ('edan', 'ft', 'econ')
+		palettes = ('edan', 'ft', 'econ', 'bb')
 		if palette not in palettes:
 			raise ValueError(f"palette must be one of {', '.join(palettes)}")
 
 		palette_spec = _edan_palettes[palette]
-		return Palette(palette_spec, n_colors)
+		pal = Palette(palette_spec, n_colors)
 
-	valid_types = ('None', 'Palette', 'str')
+		_ = palette_cache.pop()
+		palette_cache.append(pal)
+		return pal
+
+	elif isinstance(palette, dict):
+		pal = Palette(palette, n_colors)
+
+		_ = palette_cache.pop()
+		palette_cache.append(pal)
+		return pal
+
+	valid_types = ('None', 'Palette', 'str', 'dict')
 	raise TypeError(f"palette must be one of {', '.join(valid_types)}")

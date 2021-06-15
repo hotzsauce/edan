@@ -39,11 +39,18 @@ _style_keys = [
 
 	'xtick.color', # color of tick marks on axes
 	'ytick.color',
+	'xtick.labelcolor', # color of text on axes
+	'ytick.labelcolor',
 	'xtick.direction', # one of {'out', 'in', 'inout'}
 	'ytick.direction',
 
+	'xtick.bottom', # draw ticks on each spine
+	'xtick.top',
+	'ytick.left',
+	'ytick.right',
+
 	'lines.solid_capstyle', # handling outer corners when lines change directions
-	'lines.linewidth', # linewidth & markerize are in seaborn's context keys
+	'lines.linewidth', # linewidth & marker are in seaborn's context keys
 	'lines.markersize',
 
 	'patch.edgecolor',
@@ -52,11 +59,6 @@ _style_keys = [
 	'image.cmap', # unsure
 	'font.family', # {'sans-serif', 'serif', 'cursive', 'fantasy', 'monospace'}
 	'font.sans-serif',
-
-	'xtick.bottom', # draw ticks on each spline
-	'xtick.top',
-	'ytick.left',
-	'ytick.right',
 
 	'axes.spines.left', # borders around each axis
 	'axes.spines.bottom',
@@ -92,7 +94,7 @@ _context_keys = [
 def set_theme(
 	context='notebook',
 	style='edan',
-	palette='edan',
+	palette='',
 	font='sans-serif',
 	font_scale=1,
 	color_codes=False,
@@ -111,8 +113,8 @@ def set_theme(
 		scaling parameters
 	style : str | dict ( = 'edan' )
 		axes style parameters
-	palette : str | sequence ( = 'edan' )
-		color palette
+	palette : str | sequence ( = '' )
+		color palette. if not provided, use `style`'s palette
 	font : str ( = 'sans-serif' )
 		font family, see matplotlib font manager
 	font_scale : float | int ( = 1 )
@@ -125,7 +127,10 @@ def set_theme(
 	"""
 	set_context(context, font_scale)
 	set_style(style, rc={'font.family': font})
-	set_palette(palette, color_codes=color_codes)
+	if palette:
+		set_palette(palette, color_codes=color_codes)
+	else:
+		set_palette(style, color_codes=color_codes)
 	if rc is not None:
 		mpl.rcParams.update(rc)
 
@@ -166,7 +171,7 @@ def axes_style(
 		style_dict = style
 
 	else:
-		styles = ('edan', 'ft', 'econ')
+		styles = ('edan', 'ft', 'econ', 'bb')
 		if style not in styles:
 			raise ValueError(f"style must be one of {', '.join(styles)}")
 
@@ -174,108 +179,133 @@ def axes_style(
 
 		# shared style params
 		style_dict = {
-			'figure.facecolor': edan_palette.fig_color,
-			'axes.labelcolor': edan_palette.dark_grey,
+			'axes.grid': True,
+			'axes.axisbelow': True,
 
 			'xtick.direction': 'out',
 			'ytick.direction': 'out',
-			'xtick.color': edan_palette.dark_grey,
-			'ytick.color': edan_palette.dark_grey,
 
-			'axes.axisbelow': True,
+			'xtick.bottom': True,
+			'xtick.top': False,
+			'ytick.right': False,
 
-			'axes.grid': True,
-			'axes.spines.left': False,
-			'axes.spines.bottom': False,
-			'axes.spines.right': False,
-			'axes.spines.top': False,
-
-			'lines.linewidth': 1.5,
-			'lines.markersize': 6,
-
-			'text.color': edan_palette.dark_grey,
 			'font.family': ['sans-serif'],
 			'font.sans-serif': ['Tahoma', 'sans-serif'],
 
-			'lines.solid_capstyle': 'round',
-
-			'xtick.top': False,
-			'ytick.right': False,
+			'axes.spines.left': False,
+			'axes.spines.bottom': False,
+			'axes.spines.right': False,
+			'axes.spines.top': False
 		}
 
 		if style == 'edan':
+			palette = colors.color_palette('edan')
 			style_dict.update({
-				'grid.color': edan_palette.grid_color,
-				'grid.linestyle': ':',
-				'axes.grid.axis': 'both',
+				'axes.facecolor': palette.axes_color,
+				'axes.labelcolor': palette.dark_grey,
 
-				'axes.facecolor': edan_palette.axes_color,
-				'axes.edgecolor': edan_palette.fig_color
+				'axes.grid.axis': 'both',
+				'grid.color': palette.grid_color,
+				'grid.linestyle': ':',
+
+				'figure.facecolor': palette.fig_color,
+
+				'text.color': palette.text_color,
+
+				'xtick.color': palette.dark_grey,
+				'ytick.color': palette.dark_grey,
+				'xtick.labelcolor': palette.dark_grey,
+				'ytick.labelcolor': palette.dark_grey,
+
+				'ytick.left': True,
+
+				'lines.linewidth': 1.5,
+				'lines.markersize': 6
 			})
 			set_palette('edan')
 
 		elif style == 'ft':
 			palette = colors.color_palette('ft')
 			style_dict.update({
-				'lines.linewidth': 2.5,
-				'lines.markersize': 9,
+				'axes.facecolor': palette.axes_color,
+				# 'axes.edgecolor': palette.dark_grey,
+				'axes.labelcolor': palette.dark_grey,
 
 				# pandas issue 17725
 				'axes.grid.axis': 'y',
-				'axes.grid': True,
-
-				'axes.spines.left': False,
-				'axes.spines.top': False,
-				'axes.spines.right': False,
-
-				'axes.edgecolor': palette.dark_grey,
-
-				'grid.linestyle': '-',
 				'grid.color': palette.grid_color,
+				'grid.linestyle': '-',
 
-				'axes.facecolor': palette.axes_color,
-				'figure.facecolor': palette.axes_color,
-
-				'ytick.left': False,
-				'ytick.labelcolor': palette.dark_grey,
-
-				'xtick.color': palette.dark_grey,
-				'xtick.labelcolor': palette.dark_grey,
+				'figure.facecolor': palette.fig_color,
 
 				'text.color': palette.text_color,
+
+				'xtick.color': palette.dark_grey,
+				'ytick.color': palette.dark_grey,
+				'xtick.labelcolor': palette.dark_grey,
+				'ytick.labelcolor': palette.dark_grey,
+
+				'ytick.left': True,
+
+				'lines.linewidth': 2.5,
+				'lines.markersize': 9
 			})
 			set_palette('ft')
 
 		elif style == 'econ':
 			palette = colors.color_palette('econ')
 			style_dict.update({
-				'lines.linewidth': 2,
-				'lines.markersize': 8,
+				'axes.facecolor': palette.axes_color,
+				# 'axes.edgecolor': palette.dark_grey,
+				'axes.labelcolor': palette.dark_grey,
 
 				# pandas issue 17725
 				'axes.grid.axis': 'y',
-				'axes.grid': True,
-
-				'axes.spines.left': False,
-				'axes.spines.top': False,
-				'axes.spines.right': False,
-
-				'axes.edgecolor': palette.dark_grey,
-
-				'grid.linestyle': '-',
 				'grid.color': palette.grid_color,
+				'grid.linestyle': '-',
 
-				'axes.facecolor': palette.axes_color,
+				'figure.facecolor': palette.fig_color,
 
-				'ytick.left': False,
-				'ytick.labelcolor': palette.dark_grey,
+				'text.color': palette.text_color,
 
 				'xtick.color': palette.dark_grey,
+				'ytick.color': palette.dark_grey,
 				'xtick.labelcolor': palette.dark_grey,
+				'ytick.labelcolor': palette.dark_grey,
 
-				'text.color': palette.text_color
+				'ytick.left': False,
+
+				'lines.linewidth': 2,
+				'lines.markersize': 8
 			})
 			set_palette('econ')
+
+		elif style == 'bb':
+			palette = colors.color_palette('bb')
+			style_dict.update({
+				'axes.facecolor': palette.axes_color,
+				# 'axes.edgecolor': palette.dark_grey,
+				'axes.labelcolor': palette.light_grey,
+
+				'axes.grid.axis': 'both',
+				'grid.color': palette.grid_color,
+				'grid.linestyle': ':',
+
+				'figure.facecolor': palette.fig_color,
+
+				'text.color': palette.text_color,
+
+				'xtick.color': palette.light_grey,
+				'ytick.color': palette.light_grey,
+				'xtick.labelcolor': palette.light_grey,
+				'ytick.labelcolor': palette.light_grey,
+
+				'ytick.left': True,
+
+				'lines.linewidth': 1.5,
+				'lines.markersize': 6
+			})
+			set_palette('bb')
 
 	if rc is not None:
 		style_dict.update(rc)
@@ -443,7 +473,6 @@ class _RCAesthetics(dict):
 		self._set(self)
 
 	def __exit__(self, exc_type, exc_value, exc_tb):
-		print('self._orig', self._orig)
 		self._set(self._orig)
 
 	def __call__(self, func):
@@ -490,7 +519,7 @@ def set_palette(
 	"""
 	if color_codes:
 		raise NotImplementedError('color_codes')
+
 	palette = colors.color_palette(palette, n_colors, desat)
-	cyl = cycler('color', palette)
-	mpl.rcParams['axes.prop_cycle'] = cyl
+	mpl.rcParams['axes.prop_cycle'] = palette.cycler()
 	mpl.rcParams['patch.facecolor'] = palette[0]

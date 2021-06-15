@@ -150,6 +150,7 @@ class ComponentPlotter(object):
 			else:
 				fig, ax = plt.subplots()
 
+				# use current palette to set sequential colors
 				palette = colors.color_palette()
 				ax.set_prop_cycle(palette.sequential_cycler(self.n_methods))
 
