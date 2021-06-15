@@ -11,7 +11,7 @@ from __future__ import annotations
 import pandas as pd
 import numpy as np
 
-from edan.aggregates.components import Component
+from edan.aggregates.base import BaseComponent
 
 from edan.utils.ts import (
 	infer_freq,
@@ -349,7 +349,7 @@ def transform(
 	top-level function for built-in transforms. parameters are the same as those
 	in the `__call__` method of the TransformationAccessor
 	"""
-	if isinstance(obj, Component):
+	if isinstance(obj, BaseComponent):
 		if mtype:
 			series = obj.__getattr__(mtype)
 		else:

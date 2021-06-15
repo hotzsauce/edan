@@ -8,13 +8,16 @@ import edan.delims as dlm
 
 from edan.errors import MeasureTypeError
 
-from edan.containers import CompoundStorage
+from edan.aggregates.base import BaseComponent
 
 from edan.aggregates.series import Series
 from edan.aggregates.disaggregate import Disaggregator
 
+from edan.accessors import CachedAccessor
+from edan.plotting.generic import PlotAccessor
 
-class Component(CompoundStorage):
+
+class Component(BaseComponent):
 	"""
 	an economic aggregate. the key feature of these data series is they have
 	(and/or are) subcomponents whose construction is based on partitions of
@@ -207,6 +210,9 @@ class Component(CompoundStorage):
 			dct['__table__'],
 			**mtypes
 		)
+
+	# add accessor for plotting
+	plot = CachedAccessor('plot', PlotAccessor)
 
 
 class FlowComponent(Component):

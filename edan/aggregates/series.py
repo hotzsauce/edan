@@ -6,11 +6,11 @@ from __future__ import annotations
 
 import pandas as pd
 
-from edan.base import EdanObject
+from edan.aggregates.base import BaseSeries
 from edan.data.retrieve import retriever
 
 
-class Series(EdanObject):
+class Series(BaseSeries):
 
 	def __init__(self, code: str = '', source: str = ''):
 		if code:

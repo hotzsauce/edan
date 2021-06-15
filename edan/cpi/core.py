@@ -8,8 +8,6 @@ from edan.aggregates.series import Series
 from edan.aggregates.components import Component
 from edan.aggregates.transformations import TransformationAccessor
 
-from edan.plotting.generic import PlotAccessor
-
 
 class CPISeries(Series):
 
@@ -31,6 +29,3 @@ class CPIComponent(Component):
 	mtypes = ['price']
 	_series_obj = CPISeries
 	_default_mtype = 'price'
-
-	# add accessor for plotting
-	plot = CachedAccessor('plot', PlotAccessor)

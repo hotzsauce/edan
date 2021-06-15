@@ -7,8 +7,10 @@ from __future__ import annotations
 import pandas as pd
 import numpy as np
 
-from edan.aggregates.series import Series
-from edan.aggregates.components import Component
+from edan.aggregates.base import (
+	BaseSeries,
+	BaseComponent
+)
 from edan.aggregates.transformations import transform
 
 from edan.utils.ts import (
@@ -44,9 +46,9 @@ def get_print_data(
 	"""
 	if isinstance(obj, (pd.Series, pd.DataFrame)):
 		return obj
-	elif isinstance(obj, Series):
+	elif isinstance(obj, BaseSeries):
 		return obj.data
-	elif isinstance(obj, Component):
+	elif isinstance(obj, BaseComponent):
 		if mtype:
 			mtype_series = getattr(obj, mtype)
 			return mtype_series.data

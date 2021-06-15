@@ -4,8 +4,10 @@ from __future__ import annotations
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from edan.aggregates.series import Series
-from edan.aggregates.components import Component
+from edan.aggregates.base import (
+	BaseSeries,
+	BaseComponent
+)
 from edan.aggregates.transformations import series_transforms
 
 from edan.utils.ts import infer_freq
@@ -57,10 +59,10 @@ def plot(
 	"""
 	central plotting method
 	"""
-	if isinstance(obj, (Series, pd.Series, pd.DataFrame)):
+	if isinstance(obj, (BaseSeries, pd.Series, pd.DataFrame)):
 		raise NotImplementedError(f"cannot plot {type(obj).__name__} yet")
 
-	if isinstance(obj, Component):
+	if isinstance(obj, BaseComponent):
 
 		# by default we want to include the subcomponents on any time series
 		#	plot with a Component, which is why `subs` default is `True`. in
