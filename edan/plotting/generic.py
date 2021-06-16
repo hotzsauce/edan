@@ -10,6 +10,8 @@ from edan.aggregates.base import (
 )
 from edan.aggregates.transformations import series_transforms
 
+from edan.errors import FeatureError
+
 from edan.utils.ts import infer_freq
 from edan.utils.dtypes import iterable_not_string
 
@@ -75,7 +77,14 @@ def plot(
 
 		# feature plotters have pre-configured plotting schemes
 		if feature:
+			if not isinstance(feature, str):
+				raise TypeError("'feature' must be a string")
+
+			if not hasattr(obj, feature):
+				raise FeatureError(feature, obj)
+
 			plotter_obj = get_feature(feature)
+
 		else:
 			plotter_obj = ComponentPlotter
 
@@ -144,21 +153,23 @@ class ComponentPlotter(object):
 
 		self.data = truncate(self.data, start, end, periods)
 
+		# pandas plots consecutive `comp.plot()` calls on the same axes? this
+		#	doesn't happen with features though
+		fig, ax = plt.subplots()
+
 		# if more than one series is plotted, and more than one transforms are
 		#	being computed, use sequential colors
 		if self.n_methods > 1:
 			if self.data.shape[1] == self.n_methods:
-				return self.data.plot()
+				return self.data.plot(ax=ax)
 			else:
-				fig, ax = plt.subplots()
-
 				# use current palette to set sequential colors
 				palette = colors.color_palette()
 				ax.set_prop_cycle(palette.sequential_cycler(self.n_methods))
 
 				return self.data.plot(ax=ax)
 
-		return self.data.plot()
+		return self.data.plot(ax=ax)
 
 	def _collect_data(self):
 		"""
@@ -374,7 +385,12 @@ class EdanCanvas(object):
 			ncols = len(self.plotter.entries)
 
 		# number of series in the plotter's data
-		_, ns = self.plotter.data.shape
+		try:
+			_, ns = self.plotter.data.shape
+		except ValueError:
+			# self.plotter.data is pandas Series
+			ns = 1
+
 		nrows = ns // ncols
 
 		# scaling factor is determined by number of rows

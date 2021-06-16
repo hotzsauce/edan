@@ -28,3 +28,14 @@ class MeasureTypeError(EdanError, TypeError):
 		else:
 			super().__init__(repr(measure))
 
+
+class FeatureError(EdanError, TypeError):
+	"""
+	raise when a Component doesn't have the desired feature
+	"""
+	def __init__(self, feature: str, comp: Component = None):
+		if comp:
+			msg = f"{repr(comp)} does not have feature {repr(feature)}"
+			super().__init__(msg)
+		else:
+			super().__init__(repr(feature))
