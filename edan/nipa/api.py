@@ -3,8 +3,8 @@ module that prepares the GDP & PCE component table
 """
 
 from edan.algos import construct_forest
-from edan.aggregates.tables import Table
-from edan.aggregates.register import registry
+from edan.core.tables import Table
+from edan.core.register import registry
 
 from edan.nipa.core import component_type
 

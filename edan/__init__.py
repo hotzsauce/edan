@@ -9,9 +9,14 @@ and other interest rate-related markets
 import edan.nipa
 import edan.cpi
 import edan.data
-
 import edan.plotting
 
-from edan.aggregates.transformations import transform
+from edan.core.transformations import transform
 
-__all__ = ['nipa', 'cpi', 'data', 'plotting']
+__all__ = [
+	'nipa',
+	'cpi',
+	'data',
+	'plotting',
+	'transform'
+]

@@ -7,7 +7,7 @@ from __future__ import annotations
 import json
 import pathlib
 
-# create registry based on JSON in edan/aggregates/
+# create registry based on JSON in edan/core/
 registry_filename = '.registry.json'
 registry_file = pathlib.Path(__file__).parent / registry_filename
 

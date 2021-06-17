@@ -7,11 +7,11 @@ from __future__ import annotations
 import pandas as pd
 import numpy as np
 
-from edan.aggregates.base import (
+from edan.core.base import (
 	BaseSeries,
 	BaseComponent
 )
-from edan.aggregates.transformations import transform
+from edan.core.transformations import transform
 
 from edan.utils.ts import (
 	infer_freq,

@@ -4,9 +4,9 @@ module for CPI components
 
 from edan.accessors import CachedAccessor
 
-from edan.aggregates.series import Series
-from edan.aggregates.components import Component
-from edan.aggregates.transformations import TransformationAccessor
+from edan.core.series import Series
+from edan.core.components import Component
+from edan.core.transformations import TransformationAccessor
 
 
 class CPISeries(Series):

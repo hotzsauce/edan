@@ -1,6 +1,6 @@
 """
 module for computing features of NIPA data. 'features' are distinct from the
-'transformations' in `edan.aggregates.transformations` because features involve
+'transformations' in `edan.core.transformations` because features involve
 more than growth rates or moving averages of a single series - sometimes they
 even might involve data from other related NIPA components
 """
@@ -10,12 +10,12 @@ from __future__ import annotations
 import pandas as pd
 import numpy as np
 
-from edan.aggregates.components import (
+from edan.core.components import (
 	FlowComponent,
 	BalanceComponent
 )
 
-from edan.aggregates.transformations import Feature
+from edan.core.transformations import Feature
 
 
 class Contribution(Feature):
@@ -54,7 +54,7 @@ class Contribution(Feature):
 			the level of subcomponents to include in the calculation
 		method : str ( = 'difa%' )
 			the growth rate calculation of the aggregate real level. see the
-			TransformationAccessor class in edan/aggregates/transformations.py
+			TransformationAccessor class in edan/core/transformations.py
 			for details
 		args : positional arguments
 			arguments to pass to the `transform()` method of the aggregate's real level
@@ -529,7 +529,7 @@ def contributions(
 		the level of subcomponents to include in the calculation
 	method : str ( = 'difa%' )
 		the growth rate calculation of the aggregate real level. see the
-		TransformationAccessor class in edan.aggregates.transformations.py
+		TransformationAccessor class in edan.core.transformations.py
 		for details
 	args : positional arguments
 		arguments to pass to the `transform()` method of the aggregate's real level

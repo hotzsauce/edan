@@ -6,13 +6,13 @@ from __future__ import annotations
 
 from edan.accessors import CachedAccessor
 
-from edan.aggregates.series import Series
-from edan.aggregates.components import (
+from edan.core.series import Series
+from edan.core.components import (
 	Component,
 	FlowComponent,
 	BalanceComponent
 )
-from edan.aggregates.transformations import TransformationAccessor
+from edan.core.transformations import TransformationAccessor
 
 from edan.nipa.features import (
 	Contribution,

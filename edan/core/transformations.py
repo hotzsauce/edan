@@ -11,7 +11,7 @@ from __future__ import annotations
 import pandas as pd
 import numpy as np
 
-from edan.aggregates.base import BaseComponent
+from edan.core.base import BaseComponent
 
 from edan.utils.ts import (
 	infer_freq,

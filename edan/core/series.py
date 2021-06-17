@@ -6,7 +6,7 @@ from __future__ import annotations
 
 import pandas as pd
 
-from edan.aggregates.base import BaseSeries
+from edan.core.base import BaseSeries
 from edan.data.retrieve import retriever
 
 

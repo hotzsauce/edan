@@ -8,10 +8,10 @@ import edan.delims as dlm
 
 from edan.errors import MeasureTypeError
 
-from edan.aggregates.base import BaseComponent
+from edan.core.base import BaseComponent
 
-from edan.aggregates.series import Series
-from edan.aggregates.disaggregate import Disaggregator
+from edan.core.series import Series
+from edan.core.disaggregate import Disaggregator
 
 from edan.accessors import CachedAccessor
 from edan.plotting.generic import PlotAccessor
