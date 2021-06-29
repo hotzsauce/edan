@@ -6,7 +6,8 @@ from __future__ import annotations
 
 import pandas as pd
 
-from edan.aggregates.series import Series
+from edan.core.base import BaseSeries, BaseComponent
+
 
 def infer_freq(obj):
 	"""
@@ -33,8 +34,10 @@ def infer_freq(obj):
 		# assume DataFrame or Series
 		idx = obj.index
 	except AttributeError:
-		if isinstance(obj, Series):
+		if isinstance(obj, BaseSeries):
 			idx = obj.data.index
+		elif isinstance(obj, BaseComponent):
+			idx = obj.default_mtype.data.index
 		else:
 			# assume pandas index
 			idx = obj
@@ -98,7 +101,7 @@ def infer_freq_by_series(obj) -> Union[str, List[str]]:
 		"""
 		return infer_freq(obj.dropna())
 
-	elif isinstance(obj, Series):
+	elif isinstance(obj, BaseSeries):
 		# drop data for same reason as we do Series
 		return infer_freq(obj.data.dropna())
 
