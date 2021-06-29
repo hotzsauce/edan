@@ -138,13 +138,13 @@ class Table(object):
 	# make the table is immutable, as they are meant to represent published tables
 	# taken from
 	#	https://www.python.org/dev/peps/pep-0351
-	def _iterable(self, *args, **kwargs):
+	def _immutable(self, *args, **kwargs):
 		raise TypeError("Tables are immutable")
 
-	__setitem__ = _iterable
-	__delitem__ = _iterable
-	clear = _iterable
-	update = _iterable
-	setdefault = _iterable
-	pop = _iterable
-	popitem = _iterable
+	__setitem__ = _immutable
+	__delitem__ = _immutable
+	clear = _immutable
+	update = _immutable
+	setdefault = _immutable
+	pop = _immutable
+	popitem = _immutable
