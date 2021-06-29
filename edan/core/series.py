@@ -12,7 +12,16 @@ from edan.data.retrieve import retriever
 
 class Series(BaseSeries):
 
-	def __init__(self, code: str = '', source: str = ''):
+	def __init__(
+		self,
+		code: str = '',
+		mtype: str = '',
+		source: str = '',
+		comp: Component = None
+	):
+		self.mtype = mtype
+		self.comp = comp
+
 		if code:
 			data, meta = retriever.retrieve(code, source=source)
 		else:

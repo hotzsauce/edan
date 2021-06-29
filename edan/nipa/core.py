@@ -25,13 +25,10 @@ class NIPASeries(Series):
 
 	def __init__(
 		self,
-		code: str, mtype: str, obj: Component,
+		code: str, mtype: str, comp: Component,
 		*args, **kwargs
 	):
-		super().__init__(code, source=obj.source)
-
-		self.mtype = mtype
-		self.obj = obj
+		super().__init__(code, mtype=mtype, source=comp.source, comp=comp)
 
 	# add accessor for functions of data
 	transform = CachedAccessor('transform', TransformationAccessor)
