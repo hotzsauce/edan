@@ -13,10 +13,20 @@ import edan.plotting
 
 from edan.core.transformations import transform
 
+from edan.scenarios.forecasts import (
+	forecast,
+	Forecast,
+	Forecaster
+)
+
+
 __all__ = [
 	'nipa',
 	'cpi',
 	'data',
 	'plotting',
-	'transform'
+	'transform',
+	'forecast',
+	'Forecast',
+	'Forecaster'
 ]
