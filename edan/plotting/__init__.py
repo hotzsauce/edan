@@ -5,3 +5,4 @@ from edan.plotting.rcset import *
 set_theme()
 
 from edan.plotting.colors import color_palette
+from edan.plotting.api import plot
