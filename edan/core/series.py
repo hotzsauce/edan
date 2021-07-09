@@ -19,9 +19,6 @@ class Series(BaseSeries):
 		source: str = '',
 		comp: Component = None
 	):
-		self.mtype = mtype
-		self.comp = comp
-
 		if code:
 			data, meta = retriever.retrieve(code, source=source)
 		else:
@@ -30,6 +27,15 @@ class Series(BaseSeries):
 		self.code = code
 		self.data = data
 		self.meta = meta
+
+
+		self.mtype = mtype
+		self.comp = comp
+		if self.comp:
+			self.long_name = self.comp.long_name
+			self.short_name = self.comp.short_name
+		else:
+			self.long_name, self.short_name = '', ''
 
 	def __repr__(self):
 		klass = self.__class__.__name__
