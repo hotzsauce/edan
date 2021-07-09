@@ -135,9 +135,9 @@ def truncate(
 			f"{repr(data)}. data must have an `index` property in order to truncate"
 		) from None
 
+	freqstr = infer_freq(data)
 	if not periods:
 		# if periods is 0, use the default value according to frequency
-		freqstr = infer_freq(data)
 		if freqstr:
 			periods = default_periods[freqstr]
 		else:
@@ -159,6 +159,36 @@ def truncate(
 	if not start and not end:
 		end = data.last_valid_index()
 		return data.loc[:end].iloc[-periods:]
+
+	# filling in periods before and after `data` observations if `start`
+	#	and/or `end` fall outside the observation period
+	if start and not isinstance(start, bool):
+		start_stamp = pd.Timestamp(start)
+
+		if start_stamp < data.first_valid_index():
+			extended_periods = pd.date_range(
+				start=start_stamp,
+				end=data.last_valid_index(),
+				# don't use edan's `infer_freq` method b/c that strips off EOM
+				#	and EOQ information
+				freq=pd.infer_freq(data.index)
+			)
+
+			data = data.reindex(index=extended_periods)
+			start = start_stamp
+
+	if end and not isinstance(end, bool):
+		end_stamp = pd.Timestamp(end)
+
+		if data.last_valid_index() < end_stamp:
+			extended_periods = pd.date_range(
+				start=data.first_valid_index(),
+				end=end_stamp,
+				freq=pd.infer_freq(data.index)
+			)
+
+			data = data.reindex(index=extended_periods)
+			end = end_stamp
 
 	if start and end:
 		if isinstance(start, bool):
