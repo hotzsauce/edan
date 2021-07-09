@@ -204,18 +204,21 @@ class Contribution(Feature):
 			(real[1:-1, self.flows] - real[:-2, self.flows])
 
 		# price deflator implied by real & nominal levels
-		deflator = np.empty(real.shape)
-		deflator[:] = np.nan
+		deflator = np.full(real.shape, np.nan)
 		deflator[1:, :] = np.true_divide(nominal[:-1, :], real[:-1, :])
 
-		# nominal level change
+		# nominal level change. we will eventually divide by `nom_chg`, so to suppress
+		#	numpy RuntimeWarnings, we set any zeros to nans
 		nom_chg = np.multiply(deflator, real_chg)
+		nom_chg[nom_chg == 0] = np.nan
 
 		# fraction of change attributable to each component (first col is agg.)
-		shares = np.empty(self.real.shape)
-		shares[:] = np.nan
+		shares = np.full(self.real.shape, np.nan)
 		shares[:, 0] = 1
 		shares[:, 1:] = np.true_divide(nom_chg[:, 1:], nom_chg[:, :1])
+
+		# if any of the nominal changes were zero, set their share to zero
+		shares[np.isnan(shares)] = 0
 
 		# account for any subtractions
 		shares[:, self.less] = - shares[:, self.less]
@@ -273,7 +276,7 @@ class Share(Feature):
 		mtype: str = 'nominal'
 	):
 		"""
-		compute and return the ratio of {agg mtype}/{sub mtype} for all the chosen
+		compute and return the ratio of {sub mtype}/{agg mtype} for all the chosen
 		subcomponents. the first column of the returned dataframe is just ones.
 
 		Parameters
