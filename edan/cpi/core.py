@@ -16,7 +16,7 @@ class CPISeries(Series):
 		code: str, mtype: str, comp: Component,
 		*args, **kwargs
 	):
-		super().__init__(code, mtype=mtype, source=core.source, comp=comp)
+		super().__init__(code, mtype=mtype, source=comp.source, comp=comp)
 
 	# add accessor for functions of data
 	transform = CachedAccessor('transform', TransformationAccessor)
