@@ -10,7 +10,10 @@ import functools
 import matplotlib as mpl
 from cycler import cycler
 
-import edan.plotting.colors as colors
+from edan.plotting.colors import (
+	color_palette,
+	palette_names
+)
 
 __all__ = [
 	'set_theme',
@@ -156,7 +159,7 @@ def axes_style(
 
 	Parameters
 	----------
-	style : None, dict, or one of {'edan', 'ft', 'econ'} ( = None )
+	style : None, dict, or one of {'edan', 'ft', 'econ', 'bb', 'imf'} ( = None )
 		a dictionary of parameters or the name of a preconfigured style
 	rc : dict ( = None )
 		parameter mappings to override the values in the preset edan style
@@ -171,11 +174,8 @@ def axes_style(
 		style_dict = style
 
 	else:
-		styles = ('edan', 'ft', 'econ', 'bb')
-		if style not in styles:
-			raise ValueError(f"style must be one of {', '.join(styles)}")
-
-		edan_palette = colors.color_palette('edan')
+		if style not in palette_names:
+			raise ValueError(f"style must be one of {', '.join(palette_names)}")
 
 		# shared style params
 		style_dict = {
@@ -199,7 +199,7 @@ def axes_style(
 		}
 
 		if style == 'edan':
-			palette = colors.color_palette('edan')
+			palette = color_palette('edan')
 			style_dict.update({
 				'axes.facecolor': palette.axes_color,
 				'axes.labelcolor': palette.dark_grey,
@@ -225,7 +225,7 @@ def axes_style(
 			set_palette('edan')
 
 		elif style == 'ft':
-			palette = colors.color_palette('ft')
+			palette = color_palette('ft')
 			style_dict.update({
 				'axes.facecolor': palette.axes_color,
 				# 'axes.edgecolor': palette.dark_grey,
@@ -253,7 +253,7 @@ def axes_style(
 			set_palette('ft')
 
 		elif style == 'econ':
-			palette = colors.color_palette('econ')
+			palette = color_palette('econ')
 			style_dict.update({
 				'axes.facecolor': palette.axes_color,
 				# 'axes.edgecolor': palette.dark_grey,
@@ -281,7 +281,7 @@ def axes_style(
 			set_palette('econ')
 
 		elif style == 'bb':
-			palette = colors.color_palette('bb')
+			palette = color_palette('bb')
 			style_dict.update({
 				'axes.facecolor': palette.axes_color,
 				# 'axes.edgecolor': palette.dark_grey,
@@ -306,6 +306,32 @@ def axes_style(
 				'lines.markersize': 6
 			})
 			set_palette('bb')
+
+		elif style == 'imf':
+			palette = color_palette('imf')
+			style_dict.update({
+				'axes.facecolor': palette.axes_color,
+				'axes.labelcolor': palette.text_color,
+
+				'axes.grid': False,
+
+				'figure.facecolor': palette.fig_color,
+
+				'text.color': palette.text_color,
+
+				'xtick.color': palette.dark_grey,
+				'ytick.color': palette.dark_grey,
+				'xtick.labelcolor': palette.dark_grey,
+				'ytick.labelcolor': palette.dark_grey,
+
+				'ytick.left': True,
+				'ytick.right': True,
+
+				'lines.linewidth': 1.5,
+				'lines.markersize': 6
+			})
+			set_palette('imf')
+
 
 	if rc is not None:
 		style_dict.update(rc)
@@ -520,6 +546,6 @@ def set_palette(
 	if color_codes:
 		raise NotImplementedError('color_codes')
 
-	palette = colors.color_palette(palette, n_colors, desat)
+	palette = color_palette(palette, n_colors, desat)
 	mpl.rcParams['axes.prop_cycle'] = palette.cycler()
 	mpl.rcParams['patch.facecolor'] = palette[0]

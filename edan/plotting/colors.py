@@ -15,14 +15,14 @@ _edan_palettes = {
 			'#a05195', '#dec64e', '#f95d6a', '#4195d3'
 		],
 		'sequence': [
-			['#003f5c', '#4c6a82', '#8699aa', '#c1cbd4'], # blues
-			['#ff7c43', '#ffa176', '#ffc2a5', '#ffe1d2'], # oranges
-			['#429c55', '#75b57e', '#a4cea7', '#d1e6d2'], # greens
-			['#e34d50', '#f17e78', '#fbaaa3', '#ffd5d1'], # reds
-			['#a05195', '#b97caf', '#d1a7c9', '#e8d3e4'], # purples
-			['#dec64e', '#ead47c', '#f3e2a8', '#faf0d3'], # yellows
-			['#f95d6a', '#ff8b8e', '#ffb5b4', '#ffdbd9'], # pinks
-			['#4195d3', '#7caede', '#abc8e9', '#d5e3f4']  # light blues
+			['#003f5c', '#007a9b', '#00bad3', '#1cffff'], # blues
+			['#ff7c43', '#fea05a', '#fec07a', '#ffdca1'], # oranges
+			['#429c55', '#62bc74', '#82dd94', '#a2ffb5'], # greens
+			['#e34d50', '#f07c74', '#f9a69c', '#ffcfc7'], # reds
+			['#a05195', '#bf7db8', '#dfa9db', '#ffd6ff'], # purples
+			['#dec64e', '#e9d95d', '#f4ec6c', '#ffff7c'], # yellows
+			['#f95d6a', '#ff858e', '#ffaab1', '#ffcdd2'], # pinks
+			['#4195d3', '#27b9eb', '#32ddf9', '#64ffff']  # light blues
 		]
 	},
 	# financial times colors
@@ -62,14 +62,14 @@ _edan_palettes = {
 			'#90bbcf', '#03959f', '#e2b465', '#f97a1f'
 		],
 		'sequence': [
-			['#066fa1', '#6091b8', '#97b4d0', '#cbd9e7'], # dark blue
-			['#2ec1d3', '#78d1de', '#aae0e9', '#d5f0f4'], # cyan
-			['#ab8a94', '#c0a6ae', '#d5c3c8', '#eae1e3'], # pale maroon
-			['#993e4f', '#b66e77', '#d09da2', '#e9cdd0'], # dark maroon
-			['#90bbcf', '#acccdb', '#c8dde7', '#e4eef3'], # sky blue
-			['#03959f', '#63afb6', '#9ac9ce', '#cde4e6'], # ocean blue
-			['#e2b465', '#ecc68b', '#f4d9b1', '#fbecd8'], # tangerine
-			['#f97a1f', '#ff9e5e', '#ffc096', '#ffe0cb']  # orange
+			['#066fa1', '#009bff', '#00c6ff', '#8ee9ff'], # dark blue
+			['#2ec1d3', '#6fd6e0', '#9ceaef', '#c6ffff'], # cyan
+			['#ab8a94', '#c7a9b7', '#e3c9db', '#ffebff'], # pale maroon
+			['#993e4f', '#bd687f', '#de94b1', '#ffc1e2'], # dark maroon
+			['#90bbcf', '#91d1e3', '#92e8f4', '#97ffff'], # sky blue
+			['#03959f', '#4db7be', '#7adbde', '#a5ffff'], # ocean blue
+			['#e2b465', '#ebcc81', '#f4e3a0', '#fffac0'], # tangerine
+			['#f97a1f', '#f8a851', '#f9cf8a', '#fff1ca']  # orange
 		]
 	},
 	# bloomberg terminal colors
@@ -87,17 +87,42 @@ _edan_palettes = {
 			'#ef3d56', '#b3d334', '#b579b3', '#f36532'
 		],
 		'sequence': [
-			['#ffffff', '#c4c4c4', '#8b8b8b', '#575757'], # greys
-			['#00aeff', '#76c2ff', '#abd6ff', '#d7eaff'], # light blue
-			['#ff008c', '#ff71aa', '#ffa6c7', '#ffd4e3'], # pinks
-			['#ffc400', '#ffd466', '#ffe39e', '#fff1d0'], # yellows
-			['#ef3d56', '#fb777d', '#ffa7a8', '#ffd4d3'], # reds
-			['#b3d334', '#c9de6e', '#dde99f', '#eff4cf'], # limes
-			['#b579b3', '#c89ac6', '#dbbbd9', '#edddec'], # purples
-			['#f36532', '#fe8d64', '#ffb699', '#ffdbcc']  # oranges
+			['#ffffff', '#c4c4c4', '#b8b8b8', '#575757'], # greys
+			['#00aeff', '#1eccff', '#63e7ff', '#9effff'], # light blue
+			['#ff008c', '#ff65bc', '#ff98e3', '#ffc4ff'], # pinks
+			['#ffc400', '#fcd850', '#fcea81', '#fffaaf'], # yellows
+			['#ef3d56', '#fa7781', '#ffa7ac', '#ffd5d7'], # reds
+			['#b3d334', '#cde116', '#e5f091', '#fbffbc'], # limes
+			['#b579b3', '#cd9bcc', '#e6bee5', '#ffe2ff'], # purples
+			['#f36532', '#f69553', '#fabe82', '#ffe3b9']  # oranges
+		]
+	},
+	# international monetary fund colors
+	'imf': {
+		'light_grey': '#cfd4dd',
+		'dark_grey': '#939598',
+		'text_color': '#0f0f0f',
+		'grid_color': '#ffffff', # no grid on IMF plots
+		'axes_color': '#ffffff',
+		'fig_color': '#ffffff',
+		'cycle': [
+			'#0062af', '#c41230', '#387c2b', '#fdbd57',
+			'#9b31d0', '#ff8a00', '#19b6d5', '#d378c7'
+		],
+		'sequence': [
+			['#0062af', '#0098d4', '#37ccec', '#8effff'], # blues
+			['#c41230', '#dc5c5b', '#f08f8a', '#ffc1bc'], # reds
+			['#387c2b', '#5da64b', '#83d26c', '#aaff83'], # greens
+			['#fdbd57', '#ffce58', '#ffdf5c', '#fff062'], # yellows
+			['#9b31d0', '#c36cde', '#e4a2ed', '#ffd8ff'], # purples
+			['#ff8a00', '#feaa2a', '#fec64e', '#ffe173'], # oranges
+			['#19b6d5', '#68cfel', '#9be7ee', '#c9ffff'], # light blues
+			['#d378c7', '#e19edb', '#f0c3ee', '#ffe7ff']  # pinks
 		]
 	}
 }
+palette_names = list(_edan_palettes.keys())
+
 
 
 class Palette(object):
@@ -220,9 +245,8 @@ def color_palette(
 		return pal
 
 	elif isinstance(palette, str):
-		palettes = ('edan', 'ft', 'econ', 'bb')
-		if palette not in palettes:
-			raise ValueError(f"palette must be one of {', '.join(palettes)}")
+		if palette not in palette_names:
+			raise ValueError(f"palette must be one of {', '.join(palette_names)}")
 
 		palette_spec = _edan_palettes[palette]
 		pal = Palette(palette_spec, n_colors)
