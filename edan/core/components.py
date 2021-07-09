@@ -14,7 +14,7 @@ from edan.core.series import Series
 from edan.core.disaggregate import Disaggregator
 
 from edan.accessors import CachedAccessor
-from edan.plotting.generic import PlotAccessor
+from edan.plotting.core import ComponentPlotAccessor
 
 
 class Component(BaseComponent):
@@ -212,7 +212,7 @@ class Component(BaseComponent):
 		)
 
 	# add accessor for plotting
-	plot = CachedAccessor('plot', PlotAccessor)
+	plot = CachedAccessor('plot', ComponentPlotAccessor)
 
 
 class FlowComponent(Component):
