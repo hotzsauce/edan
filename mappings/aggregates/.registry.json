@@ -316,7 +316,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Food services and accommodations",
-        "short_name": "Food & accomodations",
+        "short_name": "Food & accommodations",
         "source": "fred"
     },
     {
@@ -1020,7 +1020,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Personal consumption expenditures",
-        "short_name": "",
+        "short_name": "PCE",
         "source": "bea"
     },
     {
@@ -1036,7 +1036,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Goods",
-        "short_name": "",
+        "short_name": "Goods",
         "source": "bea"
     },
     {
@@ -1052,7 +1052,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Durable goods",
-        "short_name": "",
+        "short_name": "Durables",
         "source": "bea"
     },
     {
@@ -1068,7 +1068,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Motor vehicles and parts",
-        "short_name": "",
+        "short_name": "Vehicles & parts",
         "source": "bea"
     },
     {
@@ -1084,7 +1084,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "New motor vehicles (55)",
-        "short_name": "",
+        "short_name": "New vehicles",
         "source": "bea"
     },
     {
@@ -1100,7 +1100,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "New autos",
-        "short_name": "",
+        "short_name": "New cars",
         "source": "bea"
     },
     {
@@ -1116,7 +1116,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "New domestic autos",
-        "short_name": "",
+        "short_name": "New domestic cars",
         "source": "bea"
     },
     {
@@ -1132,7 +1132,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "New foreign autos",
-        "short_name": "",
+        "short_name": "New foreign cars",
         "source": "bea"
     },
     {
@@ -1148,7 +1148,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "New light trucks",
-        "short_name": "",
+        "short_name": "New light trucks",
         "source": "bea"
     },
     {
@@ -1164,7 +1164,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Net purchases of used motor vehicles (56)",
-        "short_name": "",
+        "short_name": "Used vehicles",
         "source": "bea"
     },
     {
@@ -1180,7 +1180,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Used autos",
-        "short_name": "",
+        "short_name": "Used cars",
         "source": "bea"
     },
     {
@@ -1196,7 +1196,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Net transactions in used autos",
-        "short_name": "",
+        "short_name": "Net trans. in used cars",
         "source": "bea"
     },
     {
@@ -1212,7 +1212,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Used auto margin",
-        "short_name": "",
+        "short_name": "Used car margin",
         "source": "bea"
     },
     {
@@ -1228,7 +1228,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Employee reimbursement",
-        "short_name": "",
+        "short_name": "Used car employee pay",
         "source": "bea"
     },
     {
@@ -1244,7 +1244,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Used light trucks",
-        "short_name": "",
+        "short_name": "Used light trucks",
         "source": "bea"
     },
     {
@@ -1260,7 +1260,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Net transactions in used trucks",
-        "short_name": "",
+        "short_name": "Net trans. in used trucks",
         "source": "bea"
     },
     {
@@ -1276,7 +1276,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Used truck margin",
-        "short_name": "",
+        "short_name": "Used truck margin",
         "source": "bea"
     },
     {
@@ -1292,7 +1292,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Motor vehicle parts and accessories (58)",
-        "short_name": "",
+        "short_name": "Vehicles parts",
         "source": "bea"
     },
     {
@@ -1308,7 +1308,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Tires",
-        "short_name": "",
+        "short_name": "Tires",
         "source": "bea"
     },
     {
@@ -1324,7 +1324,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Accessories and parts",
-        "short_name": "",
+        "short_name": "Acc. & parts",
         "source": "bea"
     },
     {
@@ -1340,7 +1340,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Furnishings and durable household equipment",
-        "short_name": "",
+        "short_name": "Furnishings & HH equip.",
         "source": "bea"
     },
     {
@@ -1356,7 +1356,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Furniture and furnishings (parts of 31 and 32)",
-        "short_name": "",
+        "short_name": "Furniture & furnishings",
         "source": "bea"
     },
     {
@@ -1372,7 +1372,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Furniture",
-        "short_name": "",
+        "short_name": "Furniture",
         "source": "bea"
     },
     {
@@ -1388,7 +1388,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Clocks, lamps, lighting fixtures, and other household decorative items",
-        "short_name": "",
+        "short_name": "Decorative HH items",
         "source": "bea"
     },
     {
@@ -1404,7 +1404,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Carpets and other floor coverings",
-        "short_name": "",
+        "short_name": "Carpets, etc.",
         "source": "bea"
     },
     {
@@ -1420,7 +1420,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Window coverings",
-        "short_name": "",
+        "short_name": "Blinds",
         "source": "bea"
     },
     {
@@ -1436,7 +1436,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Household appliances (part of 33)",
-        "short_name": "",
+        "short_name": "HH appliances",
         "source": "bea"
     },
     {
@@ -1452,7 +1452,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Major household appliances",
-        "short_name": "",
+        "short_name": "Major HH appliances",
         "source": "bea"
     },
     {
@@ -1468,7 +1468,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Small electric household appliances",
-        "short_name": "",
+        "short_name": "Small HH appliances",
         "source": "bea"
     },
     {
@@ -1484,7 +1484,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Glassware, tableware, and household utensils (34)",
-        "short_name": "",
+        "short_name": "Tableware & utensils",
         "source": "bea"
     },
     {
@@ -1500,7 +1500,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Dishes and flatware",
-        "short_name": "",
+        "short_name": "Flatware",
         "source": "bea"
     },
     {
@@ -1516,7 +1516,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Nonelectric cookware and tableware",
-        "short_name": "",
+        "short_name": "Cookware, etc.",
         "source": "bea"
     },
     {
@@ -1532,7 +1532,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Tools and equipment for house and garden (35)",
-        "short_name": "",
+        "short_name": "HH tools & equip.",
         "source": "bea"
     },
     {
@@ -1548,7 +1548,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Tools, hardware, and supplies",
-        "short_name": "",
+        "short_name": "HH tools",
         "source": "bea"
     },
     {
@@ -1564,7 +1564,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Outdoor equipment and supplies",
-        "short_name": "",
+        "short_name": "HH outdoor equip.",
         "source": "bea"
     },
     {
@@ -1580,7 +1580,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Recreational goods and vehicles",
-        "short_name": "",
+        "short_name": "Rec. goods & vehicles",
         "source": "bea"
     },
     {
@@ -1596,7 +1596,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Video, audio, photographic, and information processing equipment and media (75, 76, and part of 93)",
-        "short_name": "",
+        "short_name": "Rec. Audiovisual",
         "source": "bea"
     },
     {
@@ -1612,7 +1612,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Video and audio equipment",
-        "short_name": "",
+        "short_name": "AV equip.",
         "source": "bea"
     },
     {
@@ -1628,7 +1628,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Televisions",
-        "short_name": "",
+        "short_name": "TVs",
         "source": "bea"
     },
     {
@@ -1644,7 +1644,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other video equipment",
-        "short_name": "",
+        "short_name": "Misc. video equip.",
         "source": "bea"
     },
     {
@@ -1660,7 +1660,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Audio equipment",
-        "short_name": "",
+        "short_name": "Audio equip.",
         "source": "bea"
     },
     {
@@ -1676,7 +1676,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Recording media",
-        "short_name": "",
+        "short_name": "AV media",
         "source": "bea"
     },
     {
@@ -1692,7 +1692,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Audio discs, tapes, vinyl, and permanent digital downloads",
-        "short_name": "",
+        "short_name": "Audio media",
         "source": "bea"
     },
     {
@@ -1708,7 +1708,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Video discs, tapes, and permanent digital downloads",
-        "short_name": "",
+        "short_name": "Video media",
         "source": "bea"
     },
     {
@@ -1724,7 +1724,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Photographic equipment",
-        "short_name": "",
+        "short_name": "Photo equip.",
         "source": "bea"
     },
     {
@@ -1740,7 +1740,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Information processing equipment",
-        "short_name": "",
+        "short_name": "Info equip.",
         "source": "bea"
     },
     {
@@ -1756,7 +1756,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Personal computers/tablets and peripheral equipment",
-        "short_name": "",
+        "short_name": "PCs",
         "source": "bea"
     },
     {
@@ -1772,7 +1772,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Computer software and accessories",
-        "short_name": "",
+        "short_name": "Rec. software",
         "source": "bea"
     },
     {
@@ -1788,7 +1788,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Calculators, typewriters, and other information processing equipment",
-        "short_name": "",
+        "short_name": "Misc. info equip.",
         "source": "bea"
     },
     {
@@ -1804,7 +1804,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Sporting equipment, supplies, guns, and ammunition (part of 80)",
-        "short_name": "",
+        "short_name": "Sport equip.",
         "source": "bea"
     },
     {
@@ -1820,7 +1820,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Sports and recreational vehicles (79)",
-        "short_name": "",
+        "short_name": "Sport vehicles",
         "source": "bea"
     },
     {
@@ -1836,7 +1836,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Motorcycles",
-        "short_name": "",
+        "short_name": "Motorcycles",
         "source": "bea"
     },
     {
@@ -1852,7 +1852,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Bicycles and accessories",
-        "short_name": "",
+        "short_name": "Bikes",
         "source": "bea"
     },
     {
@@ -1868,7 +1868,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Pleasure boats, aircraft, and other recreational vehicles",
-        "short_name": "",
+        "short_name": "Rec. vehicles",
         "source": "bea"
     },
     {
@@ -1884,7 +1884,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Pleasure boats",
-        "short_name": "",
+        "short_name": "Rec. boats",
         "source": "bea"
     },
     {
@@ -1900,7 +1900,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Pleasure aircraft",
-        "short_name": "",
+        "short_name": "Rec. aircraft",
         "source": "bea"
     },
     {
@@ -1916,7 +1916,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other recreational vehicles",
-        "short_name": "",
+        "short_name": "Misc. rec. vehicles",
         "source": "bea"
     },
     {
@@ -1932,7 +1932,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Recreational books (part of 90)",
-        "short_name": "",
+        "short_name": "Rec. books",
         "source": "bea"
     },
     {
@@ -1948,7 +1948,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Musical instruments (part of 80)",
-        "short_name": "",
+        "short_name": "Musical instruments",
         "source": "bea"
     },
     {
@@ -1964,7 +1964,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other durable goods",
-        "short_name": "",
+        "short_name": "Misc. durables",
         "source": "bea"
     },
     {
@@ -1980,7 +1980,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Jewelry and watches (part of 119)",
-        "short_name": "",
+        "short_name": "Jewelry & watches",
         "source": "bea"
     },
     {
@@ -1996,7 +1996,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Jewelry",
-        "short_name": "",
+        "short_name": "Jewelry",
         "source": "bea"
     },
     {
@@ -2012,7 +2012,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Watches",
-        "short_name": "",
+        "short_name": "Watches",
         "source": "bea"
     },
     {
@@ -2028,7 +2028,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Therapeutic appliances and equipment (42)",
-        "short_name": "",
+        "short_name": "Therapy equip.",
         "source": "bea"
     },
     {
@@ -2044,7 +2044,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Therapeutic medical equipment",
-        "short_name": "",
+        "short_name": "Medical therapy equip.",
         "source": "bea"
     },
     {
@@ -2060,7 +2060,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Corrective eyeglasses and contact lenses",
-        "short_name": "",
+        "short_name": "Glasses & contacts",
         "source": "bea"
     },
     {
@@ -2076,7 +2076,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Educational books (96)",
-        "short_name": "",
+        "short_name": "Educational books",
         "source": "bea"
     },
     {
@@ -2092,7 +2092,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Luggage and similar personal items (part of 119)",
-        "short_name": "",
+        "short_name": "Luggage",
         "source": "bea"
     },
     {
@@ -2108,7 +2108,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Telephone and related communication equipment",
-        "short_name": "",
+        "short_name": "Phones",
         "source": "bea"
     },
     {
@@ -2124,7 +2124,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Nondurable goods",
-        "short_name": "",
+        "short_name": "Nondurables",
         "source": "bea"
     },
     {
@@ -2140,7 +2140,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Food and beverages purchased for off-premises consumption",
-        "short_name": "",
+        "short_name": "Food & drinks at home",
         "source": "bea"
     },
     {
@@ -2156,7 +2156,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Food and nonalcoholic beverages purchased for off-premises consumption (4)",
-        "short_name": "",
+        "short_name": "Food & nonalcoholic drinks at home",
         "source": "bea"
     },
     {
@@ -2172,7 +2172,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Food purchased for off-premises consumption",
-        "short_name": "",
+        "short_name": "Food at home",
         "source": "bea"
     },
     {
@@ -2188,7 +2188,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Cereals and bakery products",
-        "short_name": "",
+        "short_name": "Cereal & baked goods",
         "source": "bea"
     },
     {
@@ -2204,7 +2204,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Cereals",
-        "short_name": "",
+        "short_name": "Cereals",
         "source": "bea"
     },
     {
@@ -2220,7 +2220,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Bakery products",
-        "short_name": "",
+        "short_name": "Bakery products",
         "source": "bea"
     },
     {
@@ -2236,7 +2236,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Meats and poultry",
-        "short_name": "",
+        "short_name": "Meats",
         "source": "bea"
     },
     {
@@ -2252,7 +2252,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Beef and veal",
-        "short_name": "",
+        "short_name": "Beef & veal",
         "source": "bea"
     },
     {
@@ -2268,7 +2268,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Pork",
-        "short_name": "",
+        "short_name": "Pork",
         "source": "bea"
     },
     {
@@ -2284,7 +2284,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other meats",
-        "short_name": "",
+        "short_name": "Misc. meats",
         "source": "bea"
     },
     {
@@ -2300,7 +2300,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Poultry",
-        "short_name": "",
+        "short_name": "Poultry",
         "source": "bea"
     },
     {
@@ -2316,7 +2316,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Fish and seafood",
-        "short_name": "",
+        "short_name": "Fish & seafood",
         "source": "bea"
     },
     {
@@ -2332,7 +2332,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Milk, dairy products, and eggs",
-        "short_name": "",
+        "short_name": "Dairy products",
         "source": "bea"
     },
     {
@@ -2348,7 +2348,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Fresh milk",
-        "short_name": "",
+        "short_name": "Fresh milk",
         "source": "bea"
     },
     {
@@ -2364,7 +2364,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Processed dairy products",
-        "short_name": "",
+        "short_name": "Processed dairy",
         "source": "bea"
     },
     {
@@ -2380,7 +2380,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Eggs",
-        "short_name": "",
+        "short_name": "Eggs",
         "source": "bea"
     },
     {
@@ -2396,7 +2396,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Fats and oils",
-        "short_name": "",
+        "short_name": "Fats & oils",
         "source": "bea"
     },
     {
@@ -2412,7 +2412,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Fresh fruits and vegetables",
-        "short_name": "",
+        "short_name": "Fresh fruits & vegetables",
         "source": "bea"
     },
     {
@@ -2428,7 +2428,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Fruit (fresh)",
-        "short_name": "",
+        "short_name": "Fresh fruits",
         "source": "bea"
     },
     {
@@ -2444,7 +2444,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Vegetables (fresh)",
-        "short_name": "",
+        "short_name": "Fresh vegetables",
         "source": "bea"
     },
     {
@@ -2460,7 +2460,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Processed fruits and vegetables",
-        "short_name": "",
+        "short_name": "Processed fruits & vegetables",
         "source": "bea"
     },
     {
@@ -2476,7 +2476,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Sugar and sweets",
-        "short_name": "",
+        "short_name": "Sugars",
         "source": "bea"
     },
     {
@@ -2492,7 +2492,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Food products, not elsewhere classified",
-        "short_name": "",
+        "short_name": "Misc. foods",
         "source": "bea"
     },
     {
@@ -2508,7 +2508,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Nonalcoholic beverages purchased for off-premises consumption",
-        "short_name": "",
+        "short_name": "Nonalcoholic drinks at home",
         "source": "bea"
     },
     {
@@ -2524,7 +2524,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Coffee, tea, and other beverage materials",
-        "short_name": "",
+        "short_name": "Coffee & tea",
         "source": "bea"
     },
     {
@@ -2540,7 +2540,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Mineral waters, soft drinks, and vegetable juices",
-        "short_name": "",
+        "short_name": "Drinks & juices",
         "source": "bea"
     },
     {
@@ -2556,7 +2556,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Alcoholic beverages purchased for off-premises consumption (5)",
-        "short_name": "",
+        "short_name": "Alcoholic drinks at home",
         "source": "bea"
     },
     {
@@ -2572,7 +2572,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Spirits",
-        "short_name": "",
+        "short_name": "Spirits",
         "source": "bea"
     },
     {
@@ -2588,7 +2588,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Wine",
-        "short_name": "",
+        "short_name": "Wine",
         "source": "bea"
     },
     {
@@ -2604,7 +2604,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Beer",
-        "short_name": "",
+        "short_name": "Beer",
         "source": "bea"
     },
     {
@@ -2620,7 +2620,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Food produced and consumed on farms (6)",
-        "short_name": "",
+        "short_name": "Food on farms",
         "source": "bea"
     },
     {
@@ -2636,7 +2636,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Clothing and footwear",
-        "short_name": "",
+        "short_name": "Clothes & shoes",
         "source": "bea"
     },
     {
@@ -2652,7 +2652,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Garments",
-        "short_name": "",
+        "short_name": "Clothing",
         "source": "bea"
     },
     {
@@ -2668,7 +2668,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Women's and girls' clothing (10)",
-        "short_name": "",
+        "short_name": "Women\u2019s & girls\u2019 clothing",
         "source": "bea"
     },
     {
@@ -2684,7 +2684,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Men's and boys' clothing (11)",
-        "short_name": "",
+        "short_name": "Men\u2019s & boys\u2019 clothing",
         "source": "bea"
     },
     {
@@ -2700,7 +2700,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Children's and infants' clothing (12)",
-        "short_name": "",
+        "short_name": "Children\u2019s clothing",
         "source": "bea"
     },
     {
@@ -2716,7 +2716,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other clothing materials and footwear (13 and 17)",
-        "short_name": "",
+        "short_name": "Misc. clothes & shoes",
         "source": "bea"
     },
     {
@@ -2732,7 +2732,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Clothing materials",
-        "short_name": "",
+        "short_name": "Clothing materials",
         "source": "bea"
     },
     {
@@ -2748,7 +2748,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Standard clothing issued to military personnel",
-        "short_name": "",
+        "short_name": "Military clothing",
         "source": "bea"
     },
     {
@@ -2764,7 +2764,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Shoes and other footwear",
-        "short_name": "",
+        "short_name": "Shoes",
         "source": "bea"
     },
     {
@@ -2780,7 +2780,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Gasoline and other energy goods",
-        "short_name": "",
+        "short_name": "Gas & energy goods",
         "source": "bea"
     },
     {
@@ -2796,7 +2796,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Motor vehicle fuels, lubricants, and fluids (59)",
-        "short_name": "",
+        "short_name": "Vehicle fuels & fluids",
         "source": "bea"
     },
     {
@@ -2812,7 +2812,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Gasoline and other motor fuel",
-        "short_name": "",
+        "short_name": "Gas",
         "source": "bea"
     },
     {
@@ -2828,7 +2828,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Lubricants and fluids",
-        "short_name": "",
+        "short_name": "Vehicle fluids",
         "source": "bea"
     },
     {
@@ -2844,7 +2844,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Fuel oil and other fuels (29)",
-        "short_name": "",
+        "short_name": "Fuel oil & other fuels",
         "source": "bea"
     },
     {
@@ -2860,7 +2860,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Fuel oil",
-        "short_name": "",
+        "short_name": "Fuel oil",
         "source": "bea"
     },
     {
@@ -2876,7 +2876,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other fuels",
-        "short_name": "",
+        "short_name": "Misc. fuels",
         "source": "bea"
     },
     {
@@ -2892,7 +2892,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other nondurable goods",
-        "short_name": "",
+        "short_name": "Other nondurables",
         "source": "bea"
     },
     {
@@ -2908,7 +2908,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Pharmaceutical and other medical products (40 and 41)",
-        "short_name": "",
+        "short_name": "Medical products",
         "source": "bea"
     },
     {
@@ -2924,7 +2924,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Pharmaceutical products",
-        "short_name": "",
+        "short_name": "Pharmaceuticals",
         "source": "bea"
     },
     {
@@ -2940,7 +2940,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Prescription drugs",
-        "short_name": "",
+        "short_name": "Prescription drugs",
         "source": "bea"
     },
     {
@@ -2956,7 +2956,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Nonprescription drugs",
-        "short_name": "",
+        "short_name": "Nonprescription drugs",
         "source": "bea"
     },
     {
@@ -2972,7 +2972,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other medical products",
-        "short_name": "",
+        "short_name": "Other medical products",
         "source": "bea"
     },
     {
@@ -2988,7 +2988,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Recreational items (parts of 80, 92, and 93)",
-        "short_name": "",
+        "short_name": "Rec. nondurables",
         "source": "bea"
     },
     {
@@ -3004,7 +3004,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Games, toys, and hobbies",
-        "short_name": "",
+        "short_name": "Games & toys",
         "source": "bea"
     },
     {
@@ -3020,7 +3020,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Pets and related products",
-        "short_name": "",
+        "short_name": "Pets",
         "source": "bea"
     },
     {
@@ -3036,7 +3036,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Flowers, seeds, and potted plants",
-        "short_name": "",
+        "short_name": "Plant goods",
         "source": "bea"
     },
     {
@@ -3052,7 +3052,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Film and photographic supplies",
-        "short_name": "",
+        "short_name": "Film supplies",
         "source": "bea"
     },
     {
@@ -3068,7 +3068,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Household supplies (parts of 32 and 36)",
-        "short_name": "",
+        "short_name": "HH nondurable supplies",
         "source": "bea"
     },
     {
@@ -3084,7 +3084,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Household cleaning products",
-        "short_name": "",
+        "short_name": "HH cleaning",
         "source": "bea"
     },
     {
@@ -3100,7 +3100,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Household paper products",
-        "short_name": "",
+        "short_name": "HH paper",
         "source": "bea"
     },
     {
@@ -3116,7 +3116,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Household linens",
-        "short_name": "",
+        "short_name": "HH linens",
         "source": "bea"
     },
     {
@@ -3132,7 +3132,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Sewing items",
-        "short_name": "",
+        "short_name": "Sewing items",
         "source": "bea"
     },
     {
@@ -3148,7 +3148,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Miscellaneous household products",
-        "short_name": "",
+        "short_name": "Misc. HH products",
         "source": "bea"
     },
     {
@@ -3164,7 +3164,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Personal care products (part of 118)",
-        "short_name": "",
+        "short_name": "Pers. care products",
         "source": "bea"
     },
     {
@@ -3180,7 +3180,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Hair, dental, shaving, and miscellaneous personal care products except electrical products",
-        "short_name": "",
+        "short_name": "Hair, dental, etc. products",
         "source": "bea"
     },
     {
@@ -3196,7 +3196,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Cosmetic / perfumes / bath / nail preparations and implements",
-        "short_name": "",
+        "short_name": "Cosmetic products",
         "source": "bea"
     },
     {
@@ -3212,7 +3212,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Electric appliances for personal care",
-        "short_name": "",
+        "short_name": "Pers. care appliances",
         "source": "bea"
     },
     {
@@ -3228,7 +3228,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Tobacco (127)",
-        "short_name": "",
+        "short_name": "Tobacco",
         "source": "bea"
     },
     {
@@ -3244,7 +3244,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Magazines, newspapers, and stationery (part of 90)",
-        "short_name": "",
+        "short_name": "Magazines & stationary",
         "source": "bea"
     },
     {
@@ -3260,7 +3260,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Newspapers and periodicals",
-        "short_name": "",
+        "short_name": "Newspapers",
         "source": "bea"
     },
     {
@@ -3276,7 +3276,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Stationery and miscellaneous printed materials",
-        "short_name": "",
+        "short_name": "Stationary",
         "source": "bea"
     },
     {
@@ -3292,7 +3292,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Net expenditures abroad by U.S. residents (131)",
-        "short_name": "",
+        "short_name": "Net spending abroad",
         "source": "bea"
     },
     {
@@ -3308,7 +3308,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Expenditures abroad by U.S. residents",
-        "short_name": "",
+        "short_name": "Spending abroad",
         "source": "bea"
     },
     {
@@ -3324,7 +3324,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Government employees' expenditures abroad",
-        "short_name": "",
+        "short_name": "Govt. spending abroad",
         "source": "bea"
     },
     {
@@ -3340,7 +3340,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Private employees' expenditures abroad",
-        "short_name": "",
+        "short_name": "Private spending abroad",
         "source": "bea"
     },
     {
@@ -3356,7 +3356,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Less: Personal remittances in kind to nonresidents",
-        "short_name": "",
+        "short_name": "Remittances to nonresidents",
         "source": "bea"
     },
     {
@@ -3372,7 +3372,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Services",
-        "short_name": "",
+        "short_name": "Services",
         "source": "bea"
     },
     {
@@ -3388,7 +3388,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Household consumption expenditures (for services)",
-        "short_name": "",
+        "short_name": "HH services",
         "source": "bea"
     },
     {
@@ -3404,7 +3404,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Housing and utilities",
-        "short_name": "",
+        "short_name": "Housing & utilities",
         "source": "bea"
     },
     {
@@ -3420,7 +3420,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Housing",
-        "short_name": "",
+        "short_name": "Housing",
         "source": "bea"
     },
     {
@@ -3436,7 +3436,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Rental of tenant-occupied nonfarm housing (20)",
-        "short_name": "",
+        "short_name": "Tenant rents",
         "source": "bea"
     },
     {
@@ -3452,7 +3452,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Tenant-occupied mobile homes",
-        "short_name": "",
+        "short_name": "Mobile home rents (tenant)",
         "source": "bea"
     },
     {
@@ -3468,7 +3468,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Tenant-occupied stationary homes",
-        "short_name": "",
+        "short_name": "Stationary home rents (tenant)",
         "source": "bea"
     },
     {
@@ -3484,7 +3484,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Tenant landlord durables",
-        "short_name": "",
+        "short_name": "Tenant appliances",
         "source": "bea"
     },
     {
@@ -3500,7 +3500,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Imputed rental of owner-occupied nonfarm housing (21)",
-        "short_name": "",
+        "short_name": "Owner-occupied rents",
         "source": "bea"
     },
     {
@@ -3516,7 +3516,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Owner-occupied mobile homes",
-        "short_name": "",
+        "short_name": "Mobile home rents (owner)",
         "source": "bea"
     },
     {
@@ -3532,7 +3532,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Owner-occupied stationary homes",
-        "short_name": "",
+        "short_name": "Stationary home rents (owner)",
         "source": "bea"
     },
     {
@@ -3548,7 +3548,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Rental value of farm dwellings (22)",
-        "short_name": "",
+        "short_name": "Farm rents",
         "source": "bea"
     },
     {
@@ -3564,7 +3564,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Group housing (23)",
-        "short_name": "",
+        "short_name": "Group housing",
         "source": "bea"
     },
     {
@@ -3580,7 +3580,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Household utilities",
-        "short_name": "",
+        "short_name": "HH utilities",
         "source": "bea"
     },
     {
@@ -3596,7 +3596,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Water supply and sanitation (25)",
-        "short_name": "",
+        "short_name": "Water & sanitation",
         "source": "bea"
     },
     {
@@ -3612,7 +3612,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Water supply and sewage maintenance",
-        "short_name": "",
+        "short_name": "Water & sewage maintenance",
         "source": "bea"
     },
     {
@@ -3628,7 +3628,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Garbage and trash collection",
-        "short_name": "",
+        "short_name": "Garbage collection",
         "source": "bea"
     },
     {
@@ -3644,7 +3644,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Electricity and gas",
-        "short_name": "",
+        "short_name": "Electricity & gas",
         "source": "bea"
     },
     {
@@ -3660,7 +3660,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Electricity (27)",
-        "short_name": "",
+        "short_name": "Electricity",
         "source": "bea"
     },
     {
@@ -3676,7 +3676,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Natural gas (28)",
-        "short_name": "",
+        "short_name": "Natural gas",
         "source": "bea"
     },
     {
@@ -3692,7 +3692,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Health care",
-        "short_name": "",
+        "short_name": "Health care",
         "source": "bea"
     },
     {
@@ -3708,7 +3708,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Outpatient services",
-        "short_name": "",
+        "short_name": "Outpatient services",
         "source": "bea"
     },
     {
@@ -3724,7 +3724,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Physician services (44)",
-        "short_name": "",
+        "short_name": "Physician",
         "source": "bea"
     },
     {
@@ -3740,7 +3740,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Dental services (45)",
-        "short_name": "",
+        "short_name": "Dental",
         "source": "bea"
     },
     {
@@ -3756,7 +3756,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Paramedical services (46)",
-        "short_name": "",
+        "short_name": "Paramedical",
         "source": "bea"
     },
     {
@@ -3772,7 +3772,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Home health care",
-        "short_name": "",
+        "short_name": "Home health care",
         "source": "bea"
     },
     {
@@ -3788,7 +3788,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Medical laboratories",
-        "short_name": "",
+        "short_name": "Medical labs",
         "source": "bea"
     },
     {
@@ -3804,7 +3804,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other professional medical services",
-        "short_name": "",
+        "short_name": "Misc. medical services",
         "source": "bea"
     },
     {
@@ -3820,7 +3820,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Specialty outpatient care facilities and health and allied services",
-        "short_name": "",
+        "short_name": "Specialty outpatient",
         "source": "bea"
     },
     {
@@ -3836,7 +3836,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "All other professional medical services",
-        "short_name": "",
+        "short_name": "All other medical services",
         "source": "bea"
     },
     {
@@ -3852,7 +3852,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Hospital and nursing home services",
-        "short_name": "",
+        "short_name": "Hospital & nursing homes",
         "source": "bea"
     },
     {
@@ -3868,7 +3868,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Hospitals (51)",
-        "short_name": "",
+        "short_name": "Hospitals",
         "source": "bea"
     },
     {
@@ -3884,7 +3884,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Nonprofit hospitals' services to households",
-        "short_name": "",
+        "short_name": "Nonprofit hospitals\u2019",
         "source": "bea"
     },
     {
@@ -3900,7 +3900,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Proprietary hospitals",
-        "short_name": "",
+        "short_name": "Proprietary hospitals",
         "source": "bea"
     },
     {
@@ -3916,7 +3916,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Government hospitals",
-        "short_name": "",
+        "short_name": "Govt. hospitals",
         "source": "bea"
     },
     {
@@ -3932,7 +3932,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Nursing homes (52)",
-        "short_name": "",
+        "short_name": "Nursing homes",
         "source": "bea"
     },
     {
@@ -3948,7 +3948,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Nonprofit nursing homes' services to households",
-        "short_name": "",
+        "short_name": "Nonprofit nursing homes",
         "source": "bea"
     },
     {
@@ -3964,7 +3964,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Proprietary and government nursing homes",
-        "short_name": "",
+        "short_name": "Proprietary & govt. nursing homes",
         "source": "bea"
     },
     {
@@ -3980,7 +3980,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Transportation services",
-        "short_name": "",
+        "short_name": "Trans. Services",
         "source": "bea"
     },
     {
@@ -3996,7 +3996,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Motor vehicle services",
-        "short_name": "",
+        "short_name": "Vehicle services",
         "source": "bea"
     },
     {
@@ -4012,7 +4012,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Motor vehicle maintenance and repair (60)",
-        "short_name": "",
+        "short_name": "Vehicle repair",
         "source": "bea"
     },
     {
@@ -4028,7 +4028,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other motor vehicle services (61)",
-        "short_name": "",
+        "short_name": "Misc. vehicle services",
         "source": "bea"
     },
     {
@@ -4044,7 +4044,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Motor vehicle leasing",
-        "short_name": "",
+        "short_name": "Vehicle leasing",
         "source": "bea"
     },
     {
@@ -4060,7 +4060,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Auto leasing",
-        "short_name": "",
+        "short_name": "Auto leasing",
         "source": "bea"
     },
     {
@@ -4076,7 +4076,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Truck leasing",
-        "short_name": "",
+        "short_name": "Truck leasing",
         "source": "bea"
     },
     {
@@ -4092,7 +4092,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Motor vehicle rental",
-        "short_name": "",
+        "short_name": "Vehicle rentals",
         "source": "bea"
     },
     {
@@ -4108,7 +4108,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Parking fees and tolls",
-        "short_name": "",
+        "short_name": "Parking fees",
         "source": "bea"
     },
     {
@@ -4124,7 +4124,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Public transportation",
-        "short_name": "",
+        "short_name": "Public transport",
         "source": "bea"
     },
     {
@@ -4140,7 +4140,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Ground transportation (63)",
-        "short_name": "",
+        "short_name": "Ground transport",
         "source": "bea"
     },
     {
@@ -4156,7 +4156,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Railway transportation",
-        "short_name": "",
+        "short_name": "Railway transport",
         "source": "bea"
     },
     {
@@ -4172,7 +4172,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Road transportation",
-        "short_name": "",
+        "short_name": "Road transport",
         "source": "bea"
     },
     {
@@ -4188,7 +4188,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Intercity buses",
-        "short_name": "",
+        "short_name": "Buses",
         "source": "bea"
     },
     {
@@ -4204,7 +4204,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Taxicabs and ride sharing services",
-        "short_name": "",
+        "short_name": "Taxis & ride-sharing",
         "source": "bea"
     },
     {
@@ -4220,7 +4220,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Intracity mass transit",
-        "short_name": "",
+        "short_name": "Intracity mass transit",
         "source": "bea"
     },
     {
@@ -4236,7 +4236,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other road transportation service",
-        "short_name": "",
+        "short_name": "Misc. ground transport",
         "source": "bea"
     },
     {
@@ -4252,7 +4252,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Air transportation (64)",
-        "short_name": "",
+        "short_name": "Air transport",
         "source": "bea"
     },
     {
@@ -4268,7 +4268,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Water transportation (65)",
-        "short_name": "",
+        "short_name": "Water transport",
         "source": "bea"
     },
     {
@@ -4284,7 +4284,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Recreation services",
-        "short_name": "",
+        "short_name": "Rec. services",
         "source": "bea"
     },
     {
@@ -4300,7 +4300,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Membership clubs, sports centers, parks, theaters, and museums (82)",
-        "short_name": "",
+        "short_name": "Clubs, parks, & entertainment",
         "source": "bea"
     },
     {
@@ -4316,7 +4316,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Membership clubs and participant sports centers",
-        "short_name": "",
+        "short_name": "Clubs & sport centers",
         "source": "bea"
     },
     {
@@ -4332,7 +4332,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Amusement parks, campgrounds, and related recreational services",
-        "short_name": "",
+        "short_name": "Parks & campgrounds",
         "source": "bea"
     },
     {
@@ -4348,7 +4348,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Admissions to specified spectator amusements",
-        "short_name": "",
+        "short_name": "Spectator amusement",
         "source": "bea"
     },
     {
@@ -4364,7 +4364,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Motion picture theaters",
-        "short_name": "",
+        "short_name": "Movie theaters",
         "source": "bea"
     },
     {
@@ -4380,7 +4380,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Live entertainment, excluding sports",
-        "short_name": "",
+        "short_name": "Live entertainment ex. sports",
         "source": "bea"
     },
     {
@@ -4396,7 +4396,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Spectator sports",
-        "short_name": "",
+        "short_name": "Spectator sports",
         "source": "bea"
     },
     {
@@ -4412,7 +4412,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Museums and libraries",
-        "short_name": "",
+        "short_name": "Museums & libraries",
         "source": "bea"
     },
     {
@@ -4428,7 +4428,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Audio-video, photographic, and information processing equipment services (parts of 77 and 93)",
-        "short_name": "",
+        "short_name": "AV services",
         "source": "bea"
     },
     {
@@ -4444,7 +4444,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Cable, satellite, and other live television services",
-        "short_name": "",
+        "short_name": "Live TV services",
         "source": "bea"
     },
     {
@@ -4460,7 +4460,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Photo processing",
-        "short_name": "",
+        "short_name": "Photo processing",
         "source": "bea"
     },
     {
@@ -4476,7 +4476,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Photo studios",
-        "short_name": "",
+        "short_name": "Photo studios",
         "source": "bea"
     },
     {
@@ -4492,7 +4492,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Repair and rental of audio-visual, photographic, and information processing equipment",
-        "short_name": "",
+        "short_name": "AV equip. repairs",
         "source": "bea"
     },
     {
@@ -4508,7 +4508,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Video and audio streaming and rental",
-        "short_name": "",
+        "short_name": "AV streaming & rental",
         "source": "bea"
     },
     {
@@ -4524,7 +4524,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Video streaming and rental",
-        "short_name": "",
+        "short_name": "Video streaming & rental",
         "source": "bea"
     },
     {
@@ -4540,7 +4540,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Audio streaming and radio services (including satellite radio)",
-        "short_name": "",
+        "short_name": "Audio streaming & radio",
         "source": "bea"
     },
     {
@@ -4556,7 +4556,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Gambling (91)",
-        "short_name": "",
+        "short_name": "Gambling",
         "source": "bea"
     },
     {
@@ -4572,7 +4572,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Casino gambling",
-        "short_name": "",
+        "short_name": "Casinos",
         "source": "bea"
     },
     {
@@ -4588,7 +4588,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Lotteries",
-        "short_name": "",
+        "short_name": "Lotteries",
         "source": "bea"
     },
     {
@@ -4604,7 +4604,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Pari-mutuel net receipts",
-        "short_name": "",
+        "short_name": "Pari-mutuel net receipts",
         "source": "bea"
     },
     {
@@ -4620,7 +4620,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other recreational services (81, 94, and part of 92)",
-        "short_name": "",
+        "short_name": "Misc. rec. services",
         "source": "bea"
     },
     {
@@ -4636,7 +4636,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Veterinary and other services for pets",
-        "short_name": "",
+        "short_name": "Vet. services",
         "source": "bea"
     },
     {
@@ -4652,7 +4652,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Package tours",
-        "short_name": "",
+        "short_name": "Package tours",
         "source": "bea"
     },
     {
@@ -4668,7 +4668,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Maintenance and repair of recreational vehicles and sports equipment",
-        "short_name": "",
+        "short_name": "Rec. vehicle repairs",
         "source": "bea"
     },
     {
@@ -4684,7 +4684,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Food services and accommodations",
-        "short_name": "",
+        "short_name": "Food & accommodations",
         "source": "bea"
     },
     {
@@ -4700,7 +4700,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Food services",
-        "short_name": "",
+        "short_name": "Food services",
         "source": "bea"
     },
     {
@@ -4716,7 +4716,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Purchased meals and beverages (102)",
-        "short_name": "",
+        "short_name": "Meals & drinks",
         "source": "bea"
     },
     {
@@ -4732,7 +4732,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Meals and nonalcoholic beverages",
-        "short_name": "",
+        "short_name": "Meals & non-alc. drinks",
         "source": "bea"
     },
     {
@@ -4748,7 +4748,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Meals at schools",
-        "short_name": "",
+        "short_name": "School meals",
         "source": "bea"
     },
     {
@@ -4764,7 +4764,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Elementary and secondary school lunches",
-        "short_name": "",
+        "short_name": "K-12 meals",
         "source": "bea"
     },
     {
@@ -4780,7 +4780,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Higher education school lunches",
-        "short_name": "",
+        "short_name": "Higher ed. meals",
         "source": "bea"
     },
     {
@@ -4796,7 +4796,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other purchased meals",
-        "short_name": "",
+        "short_name": "Other meals",
         "source": "bea"
     },
     {
@@ -4812,7 +4812,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Meals at limited service eating places",
-        "short_name": "",
+        "short_name": "Fast food meals",
         "source": "bea"
     },
     {
@@ -4828,7 +4828,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Meals at other eating places",
-        "short_name": "",
+        "short_name": "Full-service meals",
         "source": "bea"
     },
     {
@@ -4844,7 +4844,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Meals at drinking places",
-        "short_name": "",
+        "short_name": "Meals at bars",
         "source": "bea"
     },
     {
@@ -4860,7 +4860,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Alcohol in purchased meals",
-        "short_name": "",
+        "short_name": "Alcoholic drinks",
         "source": "bea"
     },
     {
@@ -4876,7 +4876,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Food furnished to employees (including military) (103)",
-        "short_name": "",
+        "short_name": "Food for employees",
         "source": "bea"
     },
     {
@@ -4892,7 +4892,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Food supplied to civilians",
-        "short_name": "",
+        "short_name": "Food for civilians",
         "source": "bea"
     },
     {
@@ -4908,7 +4908,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Food supplied to military",
-        "short_name": "",
+        "short_name": "Food for military",
         "source": "bea"
     },
     {
@@ -4924,7 +4924,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Accommodations (104)",
-        "short_name": "",
+        "short_name": "Accommodations",
         "source": "bea"
     },
     {
@@ -4940,7 +4940,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Hotels and motels",
-        "short_name": "",
+        "short_name": "Hotels & motels",
         "source": "bea"
     },
     {
@@ -4956,7 +4956,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Housing at schools",
-        "short_name": "",
+        "short_name": "Dorms",
         "source": "bea"
     },
     {
@@ -4972,7 +4972,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Financial services and insurance",
-        "short_name": "",
+        "short_name": "Finance & insurance",
         "source": "bea"
     },
     {
@@ -4988,7 +4988,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Financial services",
-        "short_name": "",
+        "short_name": "Finance",
         "source": "bea"
     },
     {
@@ -5004,7 +5004,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Financial services furnished without payment (107)",
-        "short_name": "",
+        "short_name": "Finance without payment",
         "source": "bea"
     },
     {
@@ -5020,7 +5020,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Commercial banks",
-        "short_name": "",
+        "short_name": "Commercial banks",
         "source": "bea"
     },
     {
@@ -5036,7 +5036,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other depository institutions and regulated investment companies",
-        "short_name": "",
+        "short_name": "Other depository institutions",
         "source": "bea"
     },
     {
@@ -5052,7 +5052,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Pension funds",
-        "short_name": "",
+        "short_name": "Pension funds",
         "source": "bea"
     },
     {
@@ -5068,7 +5068,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Financial service charges, fees, and commissions (108)",
-        "short_name": "",
+        "short_name": "Finance charges, fees, & commissions",
         "source": "bea"
     },
     {
@@ -5084,7 +5084,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Financial service charges and fees",
-        "short_name": "",
+        "short_name": "Finance charges & fees",
         "source": "bea"
     },
     {
@@ -5100,7 +5100,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Securities commissions",
-        "short_name": "",
+        "short_name": "Securities commissions",
         "source": "bea"
     },
     {
@@ -5116,7 +5116,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Direct commissions",
-        "short_name": "",
+        "short_name": "Direct commissions",
         "source": "bea"
     },
     {
@@ -5132,7 +5132,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Exchange-listed equities",
-        "short_name": "",
+        "short_name": "Exchange-listed equities",
         "source": "bea"
     },
     {
@@ -5148,7 +5148,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other direct commissions",
-        "short_name": "",
+        "short_name": "Other direct commissions",
         "source": "bea"
     },
     {
@@ -5164,7 +5164,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Indirect commissions",
-        "short_name": "",
+        "short_name": "Indirect commissions",
         "source": "bea"
     },
     {
@@ -5180,7 +5180,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Over-the-counter equity securities",
-        "short_name": "",
+        "short_name": "OTC equity securities",
         "source": "bea"
     },
     {
@@ -5196,7 +5196,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other imputed commissions",
-        "short_name": "",
+        "short_name": "Other imputed commissions",
         "source": "bea"
     },
     {
@@ -5212,7 +5212,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Mutual fund sales charges",
-        "short_name": "",
+        "short_name": "Mutual fund sales charges",
         "source": "bea"
     },
     {
@@ -5228,7 +5228,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Portfolio management and investment advice services",
-        "short_name": "",
+        "short_name": "Portfolio mgmt.",
         "source": "bea"
     },
     {
@@ -5244,7 +5244,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Trust, fiduciary, and custody activities",
-        "short_name": "",
+        "short_name": "Trust & fiduciary activities",
         "source": "bea"
     },
     {
@@ -5260,7 +5260,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Insurance",
-        "short_name": "",
+        "short_name": "Insurance",
         "source": "bea"
     },
     {
@@ -5276,7 +5276,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Life insurance (110)",
-        "short_name": "",
+        "short_name": "Life insurance",
         "source": "bea"
     },
     {
@@ -5292,7 +5292,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Net household insurance (111)",
-        "short_name": "",
+        "short_name": "Net HH insurance",
         "source": "bea"
     },
     {
@@ -5308,7 +5308,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Household insurance premiums and premium supplements",
-        "short_name": "",
+        "short_name": "HH insurance premiums",
         "source": "bea"
     },
     {
@@ -5324,7 +5324,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Less: Household insurance normal losses",
-        "short_name": "",
+        "short_name": "Less: HH insurance losses",
         "source": "bea"
     },
     {
@@ -5340,7 +5340,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Net health insurance (112)",
-        "short_name": "",
+        "short_name": "Net health insurance",
         "source": "bea"
     },
     {
@@ -5356,7 +5356,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Medical care and hospitalization",
-        "short_name": "",
+        "short_name": "Medical care & hospitalization",
         "source": "bea"
     },
     {
@@ -5372,7 +5372,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Income loss",
-        "short_name": "",
+        "short_name": "Income loss",
         "source": "bea"
     },
     {
@@ -5388,7 +5388,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Workers' compensation",
-        "short_name": "",
+        "short_name": "Workers\u2019 comp.",
         "source": "bea"
     },
     {
@@ -5404,7 +5404,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Net motor vehicle and other transportation insurance (116)",
-        "short_name": "",
+        "short_name": "Net vehicle insurance",
         "source": "bea"
     },
     {
@@ -5420,7 +5420,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other services",
-        "short_name": "",
+        "short_name": "Other services",
         "source": "bea"
     },
     {
@@ -5436,7 +5436,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Communication",
-        "short_name": "",
+        "short_name": "Comm. services",
         "source": "bea"
     },
     {
@@ -5452,7 +5452,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Telecommunication services (71)",
-        "short_name": "",
+        "short_name": "Telecomm. services",
         "source": "bea"
     },
     {
@@ -5468,7 +5468,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Land-line telephone services, local charges",
-        "short_name": "",
+        "short_name": "Local land-line phone",
         "source": "bea"
     },
     {
@@ -5484,7 +5484,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Land-line telephone services, long-distance charges",
-        "short_name": "",
+        "short_name": "Long-distance land-line phone",
         "source": "bea"
     },
     {
@@ -5500,7 +5500,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Cellular telephone services",
-        "short_name": "",
+        "short_name": "Cellphone services",
         "source": "bea"
     },
     {
@@ -5516,7 +5516,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Postal and delivery services (68)",
-        "short_name": "",
+        "short_name": "Delivery services",
         "source": "bea"
     },
     {
@@ -5532,7 +5532,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "First-class postal service (by U.S. Postal Service)",
-        "short_name": "",
+        "short_name": "USPS",
         "source": "bea"
     },
     {
@@ -5548,7 +5548,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other delivery services (by non-U.S. postal facilities)",
-        "short_name": "",
+        "short_name": "Non-USPS delivery",
         "source": "bea"
     },
     {
@@ -5564,7 +5564,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Internet access (72)",
-        "short_name": "",
+        "short_name": "Internet access",
         "source": "bea"
     },
     {
@@ -5580,7 +5580,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Education services",
-        "short_name": "",
+        "short_name": "Edu. services",
         "source": "bea"
     },
     {
@@ -5596,7 +5596,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Higher education (97)",
-        "short_name": "",
+        "short_name": "Higher ed. services",
         "source": "bea"
     },
     {
@@ -5612,7 +5612,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Proprietary and public higher education",
-        "short_name": "",
+        "short_name": "Proprietary & public higher ed.",
         "source": "bea"
     },
     {
@@ -5628,7 +5628,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Nonprofit private higher education services to households",
-        "short_name": "",
+        "short_name": "Nonprofit private higher ed.",
         "source": "bea"
     },
     {
@@ -5644,7 +5644,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Nursery, elementary, and secondary schools (98)",
-        "short_name": "",
+        "short_name": "Nursery & K-12 school",
         "source": "bea"
     },
     {
@@ -5660,7 +5660,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Elementary and secondary schools",
-        "short_name": "",
+        "short_name": "K-12 schools",
         "source": "bea"
     },
     {
@@ -5676,7 +5676,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Day care and nursery schools",
-        "short_name": "",
+        "short_name": "Day care & nursery",
         "source": "bea"
     },
     {
@@ -5692,7 +5692,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Commercial and vocational schools (99)",
-        "short_name": "",
+        "short_name": "Vocational schools",
         "source": "bea"
     },
     {
@@ -5708,7 +5708,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Professional and other services (121)",
-        "short_name": "",
+        "short_name": "Professional & other services",
         "source": "bea"
     },
     {
@@ -5724,7 +5724,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Legal services",
-        "short_name": "",
+        "short_name": "Legal services",
         "source": "bea"
     },
     {
@@ -5740,7 +5740,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Accounting and other business services",
-        "short_name": "",
+        "short_name": "Accounting & bus. services",
         "source": "bea"
     },
     {
@@ -5756,7 +5756,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Tax preparation and other related services",
-        "short_name": "",
+        "short_name": "Tax prep.",
         "source": "bea"
     },
     {
@@ -5772,7 +5772,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Employment agency services",
-        "short_name": "",
+        "short_name": "Empl. agency",
         "source": "bea"
     },
     {
@@ -5788,7 +5788,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other personal business services",
-        "short_name": "",
+        "short_name": "Other bus. Services",
         "source": "bea"
     },
     {
@@ -5804,7 +5804,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Labor organization dues",
-        "short_name": "",
+        "short_name": "Union dues",
         "source": "bea"
     },
     {
@@ -5820,7 +5820,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Professional association dues",
-        "short_name": "",
+        "short_name": "Professional org. dues",
         "source": "bea"
     },
     {
@@ -5836,7 +5836,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Funeral and burial services",
-        "short_name": "",
+        "short_name": "Funeral services",
         "source": "bea"
     },
     {
@@ -5852,7 +5852,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Personal care and clothing services (14 and parts of 17 and 118)",
-        "short_name": "",
+        "short_name": "Pers. care & clothing services",
         "source": "bea"
     },
     {
@@ -5868,7 +5868,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Personal care services",
-        "short_name": "",
+        "short_name": "Pers. care services",
         "source": "bea"
     },
     {
@@ -5884,7 +5884,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Hairdressing salons and personal grooming establishments",
-        "short_name": "",
+        "short_name": "Salons",
         "source": "bea"
     },
     {
@@ -5900,7 +5900,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Miscellaneous personal care services",
-        "short_name": "",
+        "short_name": "Misc. care services",
         "source": "bea"
     },
     {
@@ -5916,7 +5916,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Clothing and footwear services",
-        "short_name": "",
+        "short_name": "Clothing services",
         "source": "bea"
     },
     {
@@ -5932,7 +5932,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Laundry and drycleaning services",
-        "short_name": "",
+        "short_name": "Laundry",
         "source": "bea"
     },
     {
@@ -5948,7 +5948,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Clothing repair, rental, and alterations",
-        "short_name": "",
+        "short_name": "Clothing repair & rental",
         "source": "bea"
     },
     {
@@ -5964,7 +5964,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Repair and hire of footwear",
-        "short_name": "",
+        "short_name": "Shoe repair",
         "source": "bea"
     },
     {
@@ -5980,7 +5980,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Social services and religious activities (120)",
-        "short_name": "",
+        "short_name": "Social services & religious acts.",
         "source": "bea"
     },
     {
@@ -5996,7 +5996,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Child care",
-        "short_name": "",
+        "short_name": "Child care",
         "source": "bea"
     },
     {
@@ -6012,7 +6012,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Social assistance",
-        "short_name": "",
+        "short_name": "Social assistance",
         "source": "bea"
     },
     {
@@ -6028,7 +6028,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Homes for the elderly",
-        "short_name": "",
+        "short_name": "Homes for the elderly",
         "source": "bea"
     },
     {
@@ -6044,7 +6044,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Residential mental health and substance abuse",
-        "short_name": "",
+        "short_name": "Mental health residential",
         "source": "bea"
     },
     {
@@ -6060,7 +6060,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Individual and family services",
-        "short_name": "",
+        "short_name": "Individual & fam. services",
         "source": "bea"
     },
     {
@@ -6076,7 +6076,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Vocational rehabilitation services",
-        "short_name": "",
+        "short_name": "Vocational rehab. services",
         "source": "bea"
     },
     {
@@ -6092,7 +6092,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Community food and housing / emergency / other relief services",
-        "short_name": "",
+        "short_name": "Community food & other relief",
         "source": "bea"
     },
     {
@@ -6108,7 +6108,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other social assistance, not elsewere classified",
-        "short_name": "",
+        "short_name": "Misc. social assistance",
         "source": "bea"
     },
     {
@@ -6124,7 +6124,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Social advocacy and civic and social organizations",
-        "short_name": "",
+        "short_name": "Social advocacy",
         "source": "bea"
     },
     {
@@ -6140,7 +6140,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Religious organizations' services to households",
-        "short_name": "",
+        "short_name": "Religious org. Services",
         "source": "bea"
     },
     {
@@ -6156,7 +6156,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Foundations and grantmaking and giving services to households",
-        "short_name": "",
+        "short_name": "Foundation services",
         "source": "bea"
     },
     {
@@ -6172,7 +6172,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Household maintenance (parts of 31, 33, and 36)",
-        "short_name": "",
+        "short_name": "HH maintenance",
         "source": "bea"
     },
     {
@@ -6188,7 +6188,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Domestic services",
-        "short_name": "",
+        "short_name": "Domestic services",
         "source": "bea"
     },
     {
@@ -6204,7 +6204,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Moving, storage, and freight services",
-        "short_name": "",
+        "short_name": "Moving services",
         "source": "bea"
     },
     {
@@ -6220,7 +6220,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Repair of furniture, furnishings, and floor coverings",
-        "short_name": "",
+        "short_name": "Furniture repair",
         "source": "bea"
     },
     {
@@ -6236,7 +6236,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Repair of household appliances",
-        "short_name": "",
+        "short_name": "Appliance repair",
         "source": "bea"
     },
     {
@@ -6252,7 +6252,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Other household services",
-        "short_name": "",
+        "short_name": "Misc. HH maintenance",
         "source": "bea"
     },
     {
@@ -6268,7 +6268,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Net foreign travel",
-        "short_name": "",
+        "short_name": "Net foreign travel",
         "source": "bea"
     },
     {
@@ -6284,7 +6284,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Foreign travel by U.S. residents (129)",
-        "short_name": "",
+        "short_name": "US foreign travel",
         "source": "bea"
     },
     {
@@ -6300,7 +6300,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Passenger fares for foreign travel",
-        "short_name": "",
+        "short_name": "Intl. travel fares",
         "source": "bea"
     },
     {
@@ -6316,7 +6316,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "U.S. travel outside the United States",
-        "short_name": "",
+        "short_name": "Travel outside US",
         "source": "bea"
     },
     {
@@ -6332,7 +6332,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "U.S. student expenditures",
-        "short_name": "",
+        "short_name": "US student spending",
         "source": "bea"
     },
     {
@@ -6348,7 +6348,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Less: Expenditures in the United States by nonresidents (130)",
-        "short_name": "",
+        "short_name": "Less: nonres. spending",
         "source": "bea"
     },
     {
@@ -6364,7 +6364,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Foreign travel in the United States",
-        "short_name": "",
+        "short_name": "Foreign travel in US",
         "source": "bea"
     },
     {
@@ -6380,7 +6380,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Medical expenditures of foreigners",
-        "short_name": "",
+        "short_name": "Medical spending of foreigners",
         "source": "bea"
     },
     {
@@ -6396,7 +6396,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Expenditures of foreign students in the United States",
-        "short_name": "",
+        "short_name": "Foreign student spending",
         "source": "bea"
     },
     {
@@ -6412,7 +6412,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Final consumption expenditures of nonprofit institutions serving households (NPISHs) (132)",
-        "short_name": "",
+        "short_name": "Nonprofit services",
         "source": "bea"
     },
     {
@@ -6428,7 +6428,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Gross output of nonprofit institutions (133)",
-        "short_name": "",
+        "short_name": "Nonprofit gross output",
         "source": "bea"
     },
     {
@@ -6444,7 +6444,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Health, gross output",
-        "short_name": "",
+        "short_name": "Nonprofit health",
         "source": "bea"
     },
     {
@@ -6460,7 +6460,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Outpatient services, gross output",
-        "short_name": "",
+        "short_name": "Nonprofit outpatient",
         "source": "bea"
     },
     {
@@ -6476,7 +6476,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Nonprofit hospitals, gross output",
-        "short_name": "",
+        "short_name": "Nonprofit hospitals",
         "source": "bea"
     },
     {
@@ -6492,7 +6492,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Nonprofit nursing homes, gross output",
-        "short_name": "",
+        "short_name": "Nonprofit nursing homes",
         "source": "bea"
     },
     {
@@ -6508,7 +6508,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Recreation services, gross output",
-        "short_name": "",
+        "short_name": "Nonprofit rec.",
         "source": "bea"
     },
     {
@@ -6524,7 +6524,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Education services, gross output",
-        "short_name": "",
+        "short_name": "Nonprofit edu.",
         "source": "bea"
     },
     {
@@ -6540,7 +6540,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Social services, gross output",
-        "short_name": "",
+        "short_name": "Nonprofit social services",
         "source": "bea"
     },
     {
@@ -6556,7 +6556,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Religious organizations, gross output",
-        "short_name": "",
+        "short_name": "Nonprofit religious orgs.",
         "source": "bea"
     },
     {
@@ -6572,7 +6572,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Foundations and grantmaking and giving establishments, gross output",
-        "short_name": "",
+        "short_name": "Nonprofit foundations",
         "source": "bea"
     },
     {
@@ -6588,7 +6588,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Social advocacy establishments, gross output",
-        "short_name": "",
+        "short_name": "Nonprofit advocacy",
         "source": "bea"
     },
     {
@@ -6604,7 +6604,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Civic and social organizations, gross output",
-        "short_name": "",
+        "short_name": "Nonprofit civic orgs.",
         "source": "bea"
     },
     {
@@ -6620,7 +6620,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Professional advocacy, gross output",
-        "short_name": "",
+        "short_name": "Nonprofit professional advocacy",
         "source": "bea"
     },
     {
@@ -6636,7 +6636,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Less: Receipts from sales of goods and services by nonprofit institutions (134)",
-        "short_name": "",
+        "short_name": "Less: nonprofit receipts",
         "source": "bea"
     },
     {
@@ -6652,7 +6652,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Health services to households",
-        "short_name": "",
+        "short_name": "Less: nonprofit health",
         "source": "bea"
     },
     {
@@ -6668,7 +6668,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Outpatient services to households",
-        "short_name": "",
+        "short_name": "Less: nonprofit outpatient",
         "source": "bea"
     },
     {
@@ -6684,7 +6684,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Nonprofit hospitals services to households",
-        "short_name": "",
+        "short_name": "Less: nonprofit hospitals",
         "source": "bea"
     },
     {
@@ -6700,7 +6700,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Nonprofit nursing homes services to households",
-        "short_name": "",
+        "short_name": "Less: nonprofit nursing homes",
         "source": "bea"
     },
     {
@@ -6716,7 +6716,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Recreation services to households",
-        "short_name": "",
+        "short_name": "Less: nonprofit rec.",
         "source": "bea"
     },
     {
@@ -6732,7 +6732,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Education services to households",
-        "short_name": "",
+        "short_name": "Less: nonprofit edu.",
         "source": "bea"
     },
     {
@@ -6748,7 +6748,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Social services to households",
-        "short_name": "",
+        "short_name": "Less: nonprofit social services",
         "source": "bea"
     },
     {
@@ -6764,7 +6764,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Religious organizations' services to households",
-        "short_name": "",
+        "short_name": "Less: nonprofit religious orgs.",
         "source": "bea"
     },
     {
@@ -6780,7 +6780,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Foundations and grantmaking and giving services to households",
-        "short_name": "",
+        "short_name": "Less: nonprofit foundations",
         "source": "bea"
     },
     {
@@ -6796,7 +6796,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Services of social advocacy establishments to households",
-        "short_name": "",
+        "short_name": "Less: nonprofit advocacy",
         "source": "bea"
     },
     {
@@ -6812,7 +6812,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Civic and social organizations' services to households",
-        "short_name": "",
+        "short_name": "Less: nonprofit civic orgs.",
         "source": "bea"
     },
     {
@@ -6828,7 +6828,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Professional advocacy services to households",
-        "short_name": "",
+        "short_name": "Less: nonprofit prof. Advocacy",
         "source": "bea"
     },
     {
@@ -6844,7 +6844,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Control group",
-        "short_name": "",
+        "short_name": "Control group",
         "source": "bea"
     },
     {
@@ -6860,7 +6860,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "PCE food and energy",
-        "short_name": "",
+        "short_name": "Food & energy",
         "source": "bea"
     },
     {
@@ -6876,7 +6876,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "PCE energy goods and services",
-        "short_name": "",
+        "short_name": "Energy",
         "source": "bea"
     },
     {
@@ -6892,7 +6892,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "PCE excluding food",
-        "short_name": "",
+        "short_name": "PCE ex. food",
         "source": "bea"
     },
     {
@@ -6908,7 +6908,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "PCE excluding energy",
-        "short_name": "",
+        "short_name": "PCE ex. energy",
         "source": "bea"
     },
     {
@@ -6924,7 +6924,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "PCE excluding food and energy",
-        "short_name": "",
+        "short_name": "Core PCE",
         "source": "bea"
     },
     {
@@ -6940,7 +6940,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "PCE goods excluding food and energy",
-        "short_name": "",
+        "short_name": "Core PCE Goods",
         "source": "bea"
     },
     {
@@ -6956,7 +6956,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "PCE services excluding energy",
-        "short_name": "",
+        "short_name": "Core PCE Services",
         "source": "bea"
     },
     {
@@ -6972,7 +6972,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE",
-        "short_name": "",
+        "short_name": "PCE (mkt)",
         "source": "bea"
     },
     {
@@ -6988,7 +6988,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE motor vehicles and parts",
-        "short_name": "",
+        "short_name": "Vehicles (mkt)",
         "source": "bea"
     },
     {
@@ -7004,7 +7004,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE durable goods other than motor vehicles and parts",
-        "short_name": "",
+        "short_name": "Durables ex. veh. (mkt)",
         "source": "bea"
     },
     {
@@ -7020,7 +7020,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE food and beverages purchased for off-premises consumption",
-        "short_name": "",
+        "short_name": "Food & drinks at home (mkt)",
         "source": "bea"
     },
     {
@@ -7036,7 +7036,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE clothing and footwear",
-        "short_name": "",
+        "short_name": "Clothing (mkt)",
         "source": "bea"
     },
     {
@@ -7052,7 +7052,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE gasoline and other energy goods",
-        "short_name": "",
+        "short_name": "Energy goods (mkt)",
         "source": "bea"
     },
     {
@@ -7068,7 +7068,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE other nondurable goods",
-        "short_name": "",
+        "short_name": "Nondurables (mkt)",
         "source": "bea"
     },
     {
@@ -7084,7 +7084,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE services",
-        "short_name": "",
+        "short_name": "Services (mkt)",
         "source": "bea"
     },
     {
@@ -7100,7 +7100,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE housing services",
-        "short_name": "",
+        "short_name": "Housing (mkt)",
         "source": "bea"
     },
     {
@@ -7116,7 +7116,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE household utilities",
-        "short_name": "",
+        "short_name": "Utilities (mkt)",
         "source": "bea"
     },
     {
@@ -7132,7 +7132,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE health care",
-        "short_name": "",
+        "short_name": "Health care (mkt)",
         "source": "bea"
     },
     {
@@ -7148,7 +7148,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE transportation services",
-        "short_name": "",
+        "short_name": "Transport (mkt)",
         "source": "bea"
     },
     {
@@ -7164,7 +7164,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE recreation services",
-        "short_name": "",
+        "short_name": "Recreation (mkt)",
         "source": "bea"
     },
     {
@@ -7180,7 +7180,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE food services and accommodations",
-        "short_name": "",
+        "short_name": "Food & accommodations (mkt)",
         "source": "bea"
     },
     {
@@ -7196,7 +7196,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE financial services and insurance",
-        "short_name": "",
+        "short_name": "Finance & insurance (mkt)",
         "source": "bea"
     },
     {
@@ -7212,7 +7212,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE other services",
-        "short_name": "",
+        "short_name": "Other services (mkt)",
         "source": "bea"
     },
     {
@@ -7228,7 +7228,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE communication services",
-        "short_name": "",
+        "short_name": "Communication (mkt)",
         "source": "bea"
     },
     {
@@ -7244,7 +7244,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE education",
-        "short_name": "",
+        "short_name": "Education (mkt)",
         "source": "bea"
     },
     {
@@ -7260,7 +7260,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE professional services",
-        "short_name": "",
+        "short_name": "Professional serv. (mkt)",
         "source": "bea"
     },
     {
@@ -7276,7 +7276,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE personal care and clothing services",
-        "short_name": "",
+        "short_name": "Personal care (mkt)",
         "source": "bea"
     },
     {
@@ -7292,7 +7292,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE child care",
-        "short_name": "",
+        "short_name": "Child care (mkt)",
         "source": "bea"
     },
     {
@@ -7308,7 +7308,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE household maintenance",
-        "short_name": "",
+        "short_name": "HH maintenance (mkt)",
         "source": "bea"
     },
     {
@@ -7324,7 +7324,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE food and energy",
-        "short_name": "",
+        "short_name": "Food & energy (mkt)",
         "source": "bea"
     },
     {
@@ -7340,7 +7340,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE excluding food",
-        "short_name": "",
+        "short_name": "PCE ex. food (mkt)",
         "source": "bea"
     },
     {
@@ -7356,7 +7356,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE excluding energy",
-        "short_name": "",
+        "short_name": "PCE ex. energy (mkt)",
         "source": "bea"
     },
     {
@@ -7372,7 +7372,7 @@
         "nominal_level": "",
         "real_level": "",
         "long_name": "Market-based PCE excluding food and energy",
-        "short_name": "",
+        "short_name": "Core PCE (mkt)",
         "source": "bea"
     },
     {
