@@ -10858,5 +10858,8715 @@
         "code": "a373rc1q027sbea",
         "source": "fred",
         "freq": "quarterly"
+    },
+    {
+        "code": "ces0000000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu0000000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces0500000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu0500000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces0600000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu0600000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces1000000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu1000000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces1011330001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu1011330001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces1021000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu1021000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces1021100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu1021100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces1021200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu1021200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces1021210001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu1021210001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces1021211101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu1021211101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces1021211301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu1021211301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces1021220001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu1021220001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces1021230001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu1021230001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces1021231001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu1021231001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces1021231201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu1021231201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces1021231901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu1021231901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces1021232001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu1021232001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces1021232101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu1021232101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces1021239001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu1021239001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces1021300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu1021300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces1021311201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu1021311201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2000000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2000000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023600001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023600001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023610001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023610001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023611501",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023611501",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023611601",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023611601",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023611701",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023611701",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023611801",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023611801",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023620001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023620001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023621001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023621001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023622001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023622001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023700001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023700001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023710001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023710001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023711001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023711001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023712001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023712001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023713001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023713001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023720001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023720001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023730001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023730001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023790001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023790001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023800001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023800001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023800101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023800101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023800201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023800201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023810001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023810001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023811001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023811001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023812001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023812001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023813001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023813001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023814001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023814001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023815001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023815001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023816001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023816001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023817001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023817001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023819001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023819001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023820001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023820001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023821001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023821001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023822001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023822001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023829001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023829001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023830001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023830001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023831001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023831001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023832001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023832001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023833001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023833001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023834001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023834001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023835001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023835001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023839001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023839001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023890001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023890001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023891001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023891001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces2023899001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu2023899001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3000000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3000000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3100000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3100000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3132100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3132100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3132110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3132110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3132120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3132120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3132190001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3132190001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3132191001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3132191001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3132191101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3132191101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3132191801",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3132191801",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3132192001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3132192001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3132199001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3132199001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3132700001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3132700001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3132710001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3132710001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3132720001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3132720001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3132721201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3132721201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3132721501",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3132721501",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3132730001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3132730001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3132732001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3132732001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3132739001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3132739001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3132790001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3132790001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133130001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133130001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133140001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133140001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133150001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133150001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133151001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133151001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133152001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133152001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133210001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133210001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133220001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133220001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133230001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133230001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133231001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133231001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133231201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133231201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133231301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133231301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133232001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133232001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133232101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133232101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133232201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133232201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133232301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133232301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133240001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133240001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133260001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133260001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133270001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133270001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133271001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133271001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133272001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133272001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133280001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133280001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133281201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133281201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133281301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133281301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133290001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133290001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133291001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133291001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133291201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133291201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133291901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133291901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133299001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133299001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133299401",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133299401",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133299901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133299901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133310001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133310001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133311001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133311001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133312001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133312001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133313001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133313001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133320001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133320001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133330001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133330001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133340001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133340001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133341501",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133341501",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133350001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133350001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133351101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133351101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133351401",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133351401",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133351701",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133351701",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133351901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133351901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133360001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133360001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133390001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133390001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133391001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133391001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133392001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133392001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133399001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133399001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133400001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133400001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133410001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133410001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133420001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133420001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133422001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133422001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133440001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133440001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133441201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133441201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133441301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133441301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133441801",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133441801",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133441901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133441901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133450001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133450001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133451001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133451001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133451101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133451101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133451301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133451301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133451501",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133451501",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133451901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133451901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133460001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133460001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133500001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133500001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133510001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133510001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133520001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133520001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133530001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133530001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133531101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133531101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133531401",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133531401",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133590001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133590001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133591001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133591001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133593001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133593001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133599001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133599001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133600001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133600001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133600101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133600101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133610001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133610001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133611101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133611101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133620001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133620001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133621101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133621101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133621401",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133621401",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133630001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133630001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133631001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133631001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133632001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133632001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133633001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133633001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133635001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133635001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133636001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133636001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133637001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133637001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133639001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133639001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133640001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133640001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133641101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133641101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133641201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133641201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133641301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133641301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133641901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133641901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133660001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133660001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133661101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133661101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133661201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133661201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133690001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133690001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133700001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133700001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133710001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133710001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133711001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133711001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133712001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133712001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133712101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133712101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133712201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133712201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133712701",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133712701",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133720001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133720001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133721401",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133721401",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133721501",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133721501",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133790001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133790001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133900001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133900001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133910001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133910001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133911201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133911201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133911301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133911301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133911601",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133911601",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133990001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133990001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133991001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133991001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133992001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133992001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133995001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133995001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3133999001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3133999001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3200000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3200000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231122001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231122001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231123001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231123001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231130001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231130001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231135001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231135001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231140001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231140001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231141001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231141001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231141101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231141101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231141201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231141201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231142001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231142001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231150001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231150001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231151101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231151101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231160001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231160001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231161101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231161101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231161301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231161301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231161501",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231161501",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231170001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231170001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231180001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231180001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231181001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231181001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231181101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231181101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231181301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231181301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231183001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231183001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231190001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231190001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231191001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231191001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231199001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231199001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231320001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231320001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231400001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231400001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231410001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231410001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231490001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231490001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231491001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231491001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231499001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231499001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231500001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231500001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3231528001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3231528001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232210001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232210001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232212001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232212001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232213001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232213001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232220001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232220001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232221001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232221001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232221101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232221101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232221901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232221901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232222001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232222001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232229001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232229001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232311701",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232311701",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232400001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232400001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232411001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232411001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232419001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232419001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232500001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232500001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232510001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232510001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232513001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232513001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232518001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232518001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232519001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232519001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232520001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232520001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232521101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232521101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232530001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232530001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232540001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232540001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232541201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232541201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232541401",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232541401",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232550001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232550001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232560001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232560001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232561001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232561001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232562001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232562001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232590001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232590001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232600001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232600001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232610001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232610001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232611001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232611001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232611301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232611301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232612001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232612001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232615001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232615001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232616001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232616001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232619001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232619001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232620001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232620001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232621001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232621001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232629001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232629001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232900001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232900001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232910001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232910001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232911001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232911001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232911101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232911101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232914001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232914001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces3232990001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu3232990001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces0800000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu0800000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4000000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4000000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142310001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142310001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142311001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142311001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142312001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142312001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142320001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142320001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142321001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142321001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142322001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142322001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142330001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142330001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142331001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142331001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142332001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142332001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142339001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142339001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142340001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142340001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142342001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142342001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142343001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142343001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142345001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142345001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142349001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142349001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142350001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142350001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142360001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142360001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142361001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142361001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142369001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142369001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142370001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142370001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142371001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142371001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142372001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142372001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142374001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142374001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142380001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142380001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142381001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142381001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142382001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142382001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142383001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142383001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142384001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142384001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142385001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142385001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142386001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142386001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142390001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142390001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142391001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142391001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142393001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142393001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142394001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142394001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142399001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142399001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142400001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142400001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142410001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142410001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142412001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142412001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142413001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142413001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142420001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142420001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142430001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142430001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142433001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142433001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142440001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142440001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142441001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142441001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142448001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142448001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142450001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142450001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142451001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142451001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142460001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142460001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142470001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142470001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142480001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142480001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142481001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142481001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142482001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142482001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142490001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142490001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142491001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142491001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142492001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142492001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142493001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142493001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142499001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142499001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142500001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142500001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142511001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142511001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4142512001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4142512001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4200000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4200000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244111001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244111001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244112001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244112001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244121001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244121001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244122001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244122001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244130001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244130001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244131001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244131001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244132001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244132001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244210001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244210001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244220001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244220001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244221001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244221001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244229001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244229001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244314101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244314101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244314201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244314201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244400001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244400001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244410001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244410001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244411001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244411001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244412001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244412001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244413001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244413001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244419001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244419001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244420001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244420001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244421001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244421001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244422001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244422001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244500001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244500001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244510001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244510001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244511001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244511001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244512001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244512001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244520001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244520001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244522001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244522001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244523001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244523001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244529001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244529001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244530001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244530001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244600001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244600001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244611001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244611001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244612001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244612001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244613001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244613001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244619001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244619001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244619101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244619101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244619901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244619901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244700001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244700001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244711001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244711001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244719001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244719001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244800001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244800001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244810001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244810001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244811001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244811001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244812001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244812001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244813001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244813001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244814001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244814001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244815001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244815001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244819001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244819001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244820001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244820001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4244830001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4244830001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245111001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245111001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245112001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245112001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245113001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245113001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245114001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245114001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245220001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245220001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245230001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245230001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245231101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245231101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245231901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245231901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245310001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245310001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245320001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245320001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245321001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245321001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245322001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245322001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245330001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245330001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245390001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245390001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245391001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245391001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245392001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245392001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245399001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245399001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245400001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245400001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245410001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245410001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245420001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245420001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245430001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245430001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245431001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245431001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4245439001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4245439001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4300000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4300000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348400001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348400001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348410001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348410001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348411001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348411001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348412001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348412001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348412101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348412101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348412201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348412201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348420001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348420001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348421001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348421001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348422001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348422001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348423001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348423001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348500001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348500001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348530001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348530001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348531001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348531001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348532001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348532001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348540001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348540001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348550001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348550001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348590001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348590001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348600001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348600001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348700001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348700001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348800001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348800001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348810001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348810001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348811001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348811001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348830001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348830001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348832001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348832001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348839001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348839001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348840001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348840001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348850001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348850001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4348890001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4348890001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4349200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4349200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4349210001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4349210001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4349220001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4349220001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4349300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4349300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4349311001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4349311001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4349312001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4349312001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4349319001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4349319001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4422000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4422000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4422110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4422110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4422111001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4422111001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4422111201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4422111201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4422111801",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4422111801",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4422112001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4422112001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4422112101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4422112101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4422112201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4422112201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4422120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4422120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces4422130001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu4422130001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5000000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5000000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051111001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051111001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051112001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051112001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051113001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051113001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051119001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051119001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051211001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051211001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051213001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051213001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051500001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051500001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051510001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051510001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051511001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051511001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051512001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051512001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051520001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051520001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051700001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051700001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051730001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051730001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051731101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051731101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051731201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051731201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051790001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051790001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051791101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051791101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051800001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051800001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051900001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051900001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051913001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051913001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5051919001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5051919001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5500000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5500000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552210001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552210001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552211001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552211001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552212001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552212001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552219001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552219001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552220001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552220001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552221001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552221001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552222001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552222001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552229001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552229001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552229101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552229101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552229201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552229201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552229801",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552229801",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552230001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552230001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552231001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552231001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552232001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552232001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552239001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552239001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552312001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552312001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552320001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552320001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552390001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552390001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552391001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552391001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552392001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552392001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552393001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552393001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552399001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552399001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552400001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552400001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552410001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552410001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552411001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552411001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552412001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552412001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552412601",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552412601",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552412801",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552412801",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552413001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552413001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552420001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552420001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552421001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552421001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552429001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552429001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552429101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552429101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552429201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552429201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5552429801",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5552429801",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553111001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553111001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553112001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553112001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553113001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553113001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553119001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553119001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553130001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553130001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553131001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553131001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553131101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553131101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553131201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553131201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553132001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553132001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553139001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553139001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553210001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553210001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553211001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553211001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553212001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553212001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553220001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553220001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553228301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553228301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553230001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553230001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553240001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553240001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553241001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553241001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553249001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553249001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces5553300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu5553300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6000000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6000000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054111001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054111001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054119001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054119001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054121101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054121101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054121301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054121301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054121401",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054121401",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054121901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054121901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054130001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054130001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054131001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054131001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054132001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054132001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054134001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054134001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054137001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054137001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054138001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054138001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054140001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054140001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054141001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054141001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054143001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054143001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054150001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054150001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054151101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054151101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054151201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054151201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054151301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054151301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054151901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054151901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054160001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054160001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054161001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054161001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054161101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054161101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054161201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054161201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054161301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054161301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054161401",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054161401",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054161801",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054161801",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054162001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054162001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054169001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054169001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054170001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054170001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054171001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054171001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054171301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054171301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054171401",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054171401",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054171501",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054171501",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054172001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054172001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054180001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054180001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054181001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054181001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054182001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054182001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054184001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054184001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054185001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054185001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054186001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054186001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054189001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054189001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054190001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054190001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054191001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054191001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054192001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054192001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054194001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054194001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6054199001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6054199001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6055000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6055000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6055111201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6055111201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6055111401",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6055111401",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056130001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056130001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056131001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056131001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056131101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056131101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056131201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056131201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056132001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056132001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056133001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056133001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056140001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056140001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056141001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056141001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056142001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056142001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056142101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056142101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056142201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056142201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056143001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056143001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056144001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056144001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056149001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056149001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056150001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056150001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056151001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056151001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056152001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056152001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056159001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056159001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056160001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056160001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056161001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056161001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056161101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056161101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056161301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056161301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056162001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056162001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056170001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056170001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056171001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056171001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056172001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056172001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056173001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056173001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056174001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056174001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056179001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056179001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056190001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056190001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056191001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056191001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056192001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056192001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056199001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056199001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056210001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056210001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056220001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056220001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056221101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056221101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056221901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056221901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056290001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056290001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056291001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056291001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6056299001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6056299001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6500000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6500000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6561000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6561000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6561110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6561110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6561120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6561120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6561130001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6561130001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6561140001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6561140001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6561142001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6561142001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6561143001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6561143001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6561150001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6561150001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6561160001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6561160001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6561161001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6561161001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6561162001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6561162001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6561169001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6561169001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6561170001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6561170001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562000101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562000101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562111101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562111101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562111201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562111201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562130001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562130001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562131001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562131001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562132001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562132001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562133001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562133001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562134001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562134001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562139001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562139001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562139101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562139101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562139901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562139901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562140001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562140001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562142001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562142001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562149001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562149001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562149101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562149101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562149201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562149201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562149301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562149301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562149801",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562149801",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562150001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562150001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562151101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562151101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562151201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562151201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562160001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562160001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562190001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562190001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562191001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562191001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562199001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562199001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562199101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562199101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562199901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562199901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562210001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562210001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562220001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562220001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562230001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562230001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562310001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562310001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562320001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562320001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562321001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562321001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562322001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562322001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562330001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562330001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562331101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562331101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562331201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562331201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562390001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562390001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562400001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562400001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562410001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562410001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562411001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562411001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562412001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562412001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562419001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562419001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562420001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562420001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562421001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562421001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562423001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562423001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562430001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562430001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces6562440001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu6562440001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7000000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7000000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071113001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071113001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071119001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071119001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071121101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071121101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071121201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071121201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071121901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071121901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071130001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071130001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071150001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071150001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071211001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071211001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071219001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071219001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071310001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071310001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071320001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071320001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071321001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071321001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071329001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071329001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071390001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071390001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071391001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071391001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071392001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071392001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071393001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071393001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071394001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071394001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071395001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071395001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7071399001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7071399001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7072000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7072000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7072100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7072100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7072110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7072110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7072111001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7072111001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7072112001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7072112001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7072119001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7072119001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7072119101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7072119101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7072119901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7072119901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7072120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7072120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7072200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7072200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7072230001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7072230001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7072231001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7072231001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7072233001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7072233001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7072240001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7072240001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7072250001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7072250001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7072251101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7072251101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7072251301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7072251301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7072251401",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7072251401",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces7072251501",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu7072251501",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8000000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8000000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081110001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081111001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081111001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081111101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081111101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081111301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081111301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081111801",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081111801",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081112001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081112001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081112101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081112101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081112201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081112201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081119001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081119001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081119201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081119201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081119801",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081119801",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081120001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081121201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081121201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081121901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081121901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081130001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081130001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081140001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081140001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081210001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081210001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081211001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081211001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081211201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081211201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081211301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081211301",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081219001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081219001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081220001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081220001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081221001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081221001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081222001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081222001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081230001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081230001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081231001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081231001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081232001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081232001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081233001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081233001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081233101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081233101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081233201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081233201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081290001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081290001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081291001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081291001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081293001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081293001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081299001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081299001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081300001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081320001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081320001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081321101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081321101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081321201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081321201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081321901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081321901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081330001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081330001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081331101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081331101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081331901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081331901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081340001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081340001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081390001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081390001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081391001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081391001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081392001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081392001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081393001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081393001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces8081399001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu8081399001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces9000000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu9000000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces9091000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu9091000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces9091100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu9091100001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces9091622001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu9091622001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces9091911001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu9091911001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces9091912001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu9091912001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces9091999901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu9091999901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces9092000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu9092000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces9092161101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu9092161101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces9092200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu9092200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces9092262201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu9092262201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces9092292001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu9092292001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces9092299901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu9092299901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces9093000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu9093000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces9093161101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu9093161101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces9093200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu9093200001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces9093222101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu9093222101",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces9093248001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu9093248001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces9093262201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu9093262201",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces9093292001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu9093292001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces9093299901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu9093299901",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ces0700000001",
+        "source": "bls",
+        "freq": "monthly"
+    },
+    {
+        "code": "ceu0700000001",
+        "source": "bls",
+        "freq": "monthly"
     }
 ]

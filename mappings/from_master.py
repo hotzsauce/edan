@@ -7,7 +7,6 @@ import json
 with open('master_registry.json', 'r') as json_file:
 	master = json.load(json_file)
 
-
 def create_registry(file_name='.registry.json'):
 
 	registry = []
@@ -71,3 +70,4 @@ if __name__ == '__main__':
 	create_alias_mapping('edan-bea-fred_gdp.json', ['bea', 'fred'], 'nipa', 'gdp')
 	create_alias_mapping('edan-bea-fred_gdp_detail.json', ['bea', 'fred'], 'nipa', 'gdp')
 	create_alias_mapping('edan-bls_cpi_detail.json', ['bls'], 'cpi', 'cpi')
+	create_alias_mapping('edan-bls_ces_detail.json', ['bls'], 'ces', 'ces')
