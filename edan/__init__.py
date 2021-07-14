@@ -8,6 +8,7 @@ and other interest rate-related markets
 
 import edan.nipa
 import edan.cpi
+import edan.ces
 import edan.data
 import edan.plotting
 
@@ -23,6 +24,7 @@ from edan.scenarios.forecasts import (
 __all__ = [
 	'nipa',
 	'cpi',
+	'ces',
 	'data',
 	'plotting',
 	'transform',
