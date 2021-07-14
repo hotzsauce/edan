@@ -23,6 +23,8 @@ def create_registry(file_name='.registry.json'):
 			'real': entry['real'],
 			'nominal_level': entry['nominal_level'],
 			'real_level': entry['real_level'],
+			'empl_level': entry['empl_level'],
+			'empl_level_nsa': entry['empl_level_nsa'],
 			'long_name': entry['long_name'],
 			'short_name': entry['short_name'],
 			'source': entry['source'],
