@@ -6,8 +6,10 @@ mapping from series codes (the `edan` codes) to the Components themselves
 from __future__ import annotations
 
 import os
+import functools
 from copy import deepcopy
 
+from edan.utils.dtypes import iterable_not_string
 
 
 class TableIterator(object):
@@ -30,7 +32,7 @@ class TableIterator(object):
 	def __next__(self):
 		self.idx += 1
 		try:
-			return self.data[self.idx+1]
+			return self.data[self.idx-1]
 		except IndexError:
 			self.idx = 0
 			raise StopIteration
@@ -122,11 +124,61 @@ class Table(object):
 		for agg in self.aggregates:
 			add_series(agg)
 
-	def __getitem__(self, key):
-		return self.rows[key]
+	def __getitem__(self, key: Union[str, int, Iterable[str, int]]):
+		if iterable_not_string(key):
+			comps = []
+			for k in key:
+				if isinstance(k, str):
+					comps.append(self.rows[k])
+				elif isinstance(k, int):
+					comps.append(self.rows[self._codes[k]])
+				else:
+					self._error(k)
+
+			return tuple(comps)
+
+		elif isinstance(key, str):
+			try:
+				return self.rows[key]
+			except:
+				self._error(key)
+
+		elif isinstance(key, int):
+			try:
+				return self.rows[self._codes[key]]
+			except:
+				self._error(key)
+
+		elif isinstance(key, slice):
+
+			def _get_idx(k):
+				try:
+					return self._codes.index(k)
+				except ValueError:
+					self._error(k)
+
+			start, stop = key.start, key.stop
+			start = _get_idx(start) if isinstance(start, str) else start
+			stop = _get_idx(stop) if isinstance(stop, str) else stop
+
+			comps = []
+			for k in range(start, stop):
+				try:
+					code = self._codes[k]
+				except IndexError:
+					raise self._error(k)
+				comps.append(self.rows[code])
+
+			return tuple(comps)
+
+		else:
+			raise TypeError(
+				f"{type(key)}. table keys can be str, int, slice,  or an iterable "
+				"of those str and int"
+			) from None
 
 	def __iter__(self):
-		return TableIterator(list(self.rows.keys()))
+		return TableIterator(self._codes)
 
 	def __repr__(self):
 		return f"{self.category} Table"
@@ -134,6 +186,22 @@ class Table(object):
 	def __str__(self):
 		printer = TablePrettyPrinter(self)
 		return printer.print()
+
+	def __len__(self):
+		return len(self.rows)
+
+	@functools.cached_property
+	def _codes(self):
+		return list(self.rows.keys())
+
+	def _error(self, key):
+		cat = self.category if self.category else 'this'
+		if isinstance(key, str):
+			raise KeyError(f"{key} is not a component of {cat} table") from None
+		elif isinstance(key, int):
+			raise IndexError(f"{key}. {cat} table has {len(self)} rows") from None
+		else:
+			raise TypeError(f"{type(key)}. can only be str or int")
 
 	# make the table is immutable, as they are meant to represent published tables
 	# taken from
