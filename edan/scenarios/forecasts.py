@@ -545,7 +545,6 @@ def yryrp(data, fore, periods):
 
 	return rates
 
-
 def yryrl(data, fore, periods):
 	"""
 	year-over-year log change

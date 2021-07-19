@@ -107,7 +107,6 @@ class ComponentPlotter(BasePlotter):
 
 		self.subcomponents = self.comp.disaggregate(subs=subs, level=level)
 
-
 	def plot(
 		self,
 		start: Union[str, bool, Timestamp] = '',

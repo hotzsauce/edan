@@ -411,7 +411,7 @@ class Chain(Feature):
 		and `self.stocks` attributes
 		"""
 
-		# real & price data, and sereies codes for renaming final dataframe.
+		# real & price data, and series codes for renaming final dataframe.
 		#	`less` is an indicator for components that should be subtracted
 		#	from the agg
 		rdata, pdata, self.codes, self.less = [], [], [], []
