@@ -16,18 +16,23 @@ class Series(BaseSeries):
 		self,
 		code: str = '',
 		mtype: str = '',
-		source: str = '',
+		data: pd.Series = None,
+		meta: pd.Series = None,
 		comp: Component = None
 	):
-		if code:
-			data, meta = retriever.retrieve(code, source=source)
+		if (data is not None) or (meta is not None):
+			if data is None:
+				data = pd.Series()
+			elif meta is None:
+				meta = pd.Series()
 		else:
-			data, meta = pd.Series(), pd.Series()
+			# if no data or meta is provided, assume data needs to be retrieved
+			#	based on value of `code`
+			data, meta = retriever.retrieve(code, source=comp.source)
 
 		self.code = code
 		self.data = data
 		self.meta = meta
-
 
 		self.mtype = mtype
 		self.comp = comp

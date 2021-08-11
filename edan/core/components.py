@@ -108,7 +108,11 @@ class Component(BaseComponent):
 					return self.__getattribute__(hidden_series_name)
 				except AttributeError:
 					series_code = self.__getattribute__(code)
-					series = self._series_obj(series_code, attr, self)
+					series = self._series_obj(
+						code=series_code,
+						mtype=attr,
+						comp=self
+					)
 
 					setattr(self, hidden_series_name, series)
 					return series
@@ -202,12 +206,12 @@ class Component(BaseComponent):
 	def from_registry(cls, dct: dict):
 		mtypes = {g: dct.get(g) for g in cls.mtypes if dct.get(g)}
 		return cls(
-			dct['code'],
-			dct['__level__'],
-			dct['long_name'],
-			dct['short_name'],
-			dct['source'],
-			dct['__table__'],
+			code=dct['code'],
+			level=dct['__level__'],
+			long_name=dct['long_name'],
+			short_name=dct['short_name'],
+			source=dct['source'],
+			table=dct['__table__'],
 			**mtypes
 		)
 

@@ -23,12 +23,8 @@ from edan.nipa.features import (
 
 class NIPASeries(Series):
 
-	def __init__(
-		self,
-		code: str, mtype: str, comp: Component,
-		*args, **kwargs
-	):
-		super().__init__(code, mtype=mtype, source=comp.source, comp=comp)
+	def __init__(self, *args, **kwargs):
+		super().__init__(*args, **kwargs)
 
 	# add accessor for functions of data
 	transform = CachedAccessor('transform', TransformationAccessor)
