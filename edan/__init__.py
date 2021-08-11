@@ -12,6 +12,8 @@ import edan.ces
 import edan.data
 import edan.plotting
 
+from edan.aggr import aggregate
+
 from edan.core.transformations import transform
 
 from edan.scenarios.forecasts import (
