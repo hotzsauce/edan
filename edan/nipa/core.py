@@ -16,8 +16,7 @@ from edan.core.transformations import TransformationAccessor
 
 from edan.nipa.features import (
 	Contribution,
-	Share,
-	Chain
+	Share
 )
 
 
@@ -39,7 +38,6 @@ class NIPAComponent(Component):
 	# add accessors for common features
 	contributions = CachedAccessor('contributions', Contribution)
 	shares = CachedAccessor('shares', Share)
-	chain = CachedAccessor('chain', Chain)
 
 
 class NIPAFlowComponent(NIPAComponent, FlowComponent):

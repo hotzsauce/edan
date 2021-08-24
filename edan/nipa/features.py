@@ -6,16 +6,346 @@ even might involve data from other related NIPA components
 """
 
 from __future__ import annotations
+from functools import cached_property
 
 import pandas as pd
 import numpy as np
+
 
 from edan.core.components import (
 	FlowComponent,
 	BalanceComponent
 )
 
-from edan.core.transformations import Feature
+from edan.core.transformations import (
+	Feature,
+	transform
+)
+
+
+
+class _Contribution(object):
+	"""
+	calculates the percent contribution to real change or percent contribution
+	to inflation of subcomponents to the same change of the aggregate
+	"""
+
+	mtype = ''
+
+	def __init__(self, agg, subs, level):
+		self.agg = agg
+		self._subs = subs
+		self._level = level
+
+		# set `flow`, `bals`, `stocks` indicator series for the various kinds
+		#	of Component types (calculations vary by ctype) and create a list
+		#	of the NIPASeries objects
+		self._subcomponents = self._gather_subs_collect_ctypes()
+
+	@cached_property
+	def subs(self):
+		return self.agg.disaggregate(self._subs, self._level)
+
+	@cached_property
+	def comps(self):
+		return [self.agg] + list(self.subs)
+
+	@property
+	def codes(self):
+		return [c.code for c in self.comps]
+
+	def _gather_subs_collect_ctypes(self):
+		"""
+
+		"""
+		# list of Flow, Stock, and subs of Balance components
+		components = []
+
+		# indicators for Flow and Stock components, and subcomponents of Balance
+		#	components. in this last indicator array, '+1' refers to a sub that
+		#	contributes positively to the Balance, '-1' negatively so, and '0'
+		#	means that Component is either Flow or Stock
+		flows, stocks, bals = [], [], []
+
+		def add_idx(comp, idx, relative=None):
+			if isinstance(comp, FlowComponent):
+				flows.append(idx)
+			else:
+				stocks.append(idx)
+
+		def add_bal(comp, non_less):
+			if comp.is_less(self.agg.code):
+				bals.append(-1)
+			else:
+				bals.append(non_less)
+
+		# don't use enumerate b/c we don't know which comps are Balance beforehand
+		idx = 0
+		for comp in self.comps:
+
+			if isinstance(comp, BalanceComponent):
+				for sub in comp.disaggregate():
+					add_idx(sub, idx)
+					add_bal(sub, 1)
+
+					components.append(sub)
+					idx += 1
+
+			else:
+				add_idx(comp, idx)
+				add_bal(comp, 0)
+
+				components.append(comp)
+				idx += 1
+
+		# construct indicator arrays for ctype now that BalanceComponent
+		#	locations are known
+		n_series = len(components)
+		self.stocks = np.zeros(n_series, dtype=bool)
+		self.stocks[stocks] = True
+
+		self.flows = np.zeros(n_series, dtype=bool)
+		self.flows[flows] = True
+
+		# balance indicators from list to np.ndarray
+		self.bals = np.array(bals, dtype=int)
+		return components
+
+	def _data(self, mtype, flow_type=None):
+		"""
+		retrieve data of the input subcomponents of the desired `mtype`
+		"""
+
+		_flow_type = mtype+'_level' if flow_type == None else flow_type
+		def _get_data(comp):
+			if isinstance(comp, FlowComponent):
+				series_obj = getattr(comp, _flow_type)
+			else:
+				series_obj = getattr(comp, mtype)
+			return series_obj.data
+
+		frames = [_get_data(comp) for comp in self._subcomponents]
+		return pd.concat(frames, axis='columns').dropna(axis='index', how='all')
+
+	def _apply_balances(self, arr, aggr=None):
+		"""
+		aggregate the additive and subtractive subcomponents of Balance
+		subcomponents.
+
+		Parameters
+		----------
+		arr : numpy ndarray
+			an array with len(self.bals) columns that corresponds to the data of
+			subcomponents
+		aggr : callable ( = None )
+			an aggregating method that accepts one parameter: the additive and
+			subtractive data for a single balance component. if not provided,
+			the data are simply added together using np.nansum, with `axis=1`
+
+		Returns
+		-------
+		balanced : numpy ndarray
+			an array with shape (arr.shape[0], len(stock & balance components).
+			the columns corresponding to stock variables are unchanged from the
+			analagous columns in `arr`. the balance-related columns are aggregated
+			using `aggr`
+		"""
+
+		if np.all(self.bals == 0):
+			return arr
+
+		if aggr == None:
+			aggr = lambda x: np.sum(x, axis=1)
+
+		# indexes of stock and balance components in the input `arr` and the
+		#	eventual, aggregated array
+		outs, outb, ins, inb = _create_stock_balance_indices(self.bals)
+		bal_grps = _create_balance_groups(self.bals)
+
+		# pre-allocate output array & immediately fill the stock data
+		output = np.zeros((arr.shape[0], len(outs)+len(outb)), dtype=float)
+		output[:, outs] = arr[:, ins]
+
+		# aggregate each of the groups
+		for ob, grp in zip(outb, bal_grps):
+			output[:, ob] = aggr(arr[:, grp[0]:grp[1]])
+
+		return output
+
+
+
+class _RealContribution(_Contribution):
+	"""
+	calculates the percent contribution to real change of subcomponents with respect
+	to the change in the aggregate
+	"""
+
+	mtype = 'real'
+
+	def compute(self, method, *args, **kwargs):
+		if self.agg.elemental:
+			# if component has no subcomponent, return pandas Series of ones
+			real_series = self.agg.real.data
+			return pd.Series(
+				data=np.ones(len(real_series)),
+				index=real_series.index,
+				name=self.agg.code
+			)
+
+		# compute the aggregate growth rate
+		agg_growth = self.agg.real.transform(method, *args, **kwargs)
+
+		# compute shares and their contribution rates
+		shares = self.shares
+		contrs = np.multiply(shares, agg_growth.to_numpy()[:, np.newaxis])
+
+		return pd.DataFrame(
+			contrs,
+			index=agg_growth.index,
+			columns=self.codes
+		)
+
+	@property
+	def shares(self):
+		"""
+		calculate the contribution shares of subcomponents that are not
+		BalanceComponents the calculation for the contribution shares is described
+		in the footnotes of this table:
+			https://apps.bea.gov/scb/account_articles/national/0795od/table1.htm
+
+		that table is referenced in this old article from the BEA, along with
+		some discussion about other new (in 1995) measures:
+			https://apps.bea.gov/scb/account_articles/national/0795od/maintext.htm
+		"""
+
+		# collect real and nominal data into numpy arrays, and set various indicators
+		rdf, ndf = self._data('real'), self._data('nominal')
+		real, nominal = rdf.values, ndf.values
+
+		# change in real level of component
+		real_chg = np.full(real.shape, np.nan)
+		real_chg[1:, self.stocks] = real[1:, self.stocks] - real[:-1, self.stocks]
+		real_chg[2:, self.flows] = (real[2:, self.flows] - real[1:-1, self.flows]) - \
+			(real[1:-1, self.flows] - real[:-2, self.flows])
+
+		# price deflator implied by real & nominal levels
+		deflator = np.full(real.shape, np.nan)
+		deflator[1:, :] = np.true_divide(nominal[:-1, :], real[:-1, :])
+
+		# nomiinal level change. we will eventually divide by `nom_chg`, so to suppress
+		#	numpy RuntimeWarnings, we set any zeros to NaNs
+		nom_chg = np.multiply(deflator, real_chg)
+		nom_chg[nom_chg == 0] = np.nan
+
+		# fraction of change attributable to each component (first column is agg.)
+		shares = np.full(rdf.shape, np.nan)
+		shares[:, 0] = 1
+		shares[:, 1:] = np.true_divide(nom_chg[:, 1:], nom_chg[:, :1])
+
+		# if any of the nominal changes were NaN, set their share to zero
+		shares[np.isnan(shares)] = 0
+
+		# reverse sign of subtractive Balance subs, then aggregate
+		shares[:, self.bals == -1] = -shares[:, self.bals == -1]
+		balanced = self._apply_balances(shares)
+		return balanced
+
+
+
+class _PriceContribution(_Contribution):
+	"""
+	calculates the percent contribution to inflation of subcomponents with respect
+	to the change in the aggregate
+	"""
+
+	mtype = 'price'
+
+	def compute(self, method, *args, **kwargs):
+		if self.agg.elemental:
+			# if component has no subcomponent, return pandas Series of ones
+			return pd.Series(
+				data=np.ones(len(self.agg.price.data)),
+				index=self.agg.price.data.index,
+				name=self.obj.code
+			)
+
+		# weight subcomponents' inflation rates by their nominal shares, and access
+		#	the price indices
+		rates = self.weighted_inflation
+		init_price = self.initial_price_index
+
+		# the first row of `rates` is just nan. replace them with ones, then create a
+		#	contribution-aware rate path
+		rates[0, :] = 1
+		rpath = np.cumprod(1 + rates / 100, axis=0)
+
+		# add datetime index and codes
+		prices = np.multiply(rpath, init_price)
+		contr_df = pd.DataFrame(
+			prices,
+			index=self.agg.price.data.index,
+			columns=self.codes
+		)
+		return transform(contr_df, method, *args, **kwargs)
+
+	@property
+	def weighted_inflation(self):
+		"""
+		calculate the weighted inflation rates of the aggregate (not actually
+		weighted) and the subcomponents
+		"""
+
+		# collect price and nominal data into numpy arrays, and set various indicators
+		# pdf, ndf = self._gather_data_set_ctypes()
+		pdf, ndf = self._data('price'), self._data('nominal')
+		price, nominal = pdf.to_numpy(), ndf.to_numpy()
+
+		# period-to-period inflation & nominal shares
+		infl = 100 * (np.true_divide(price[1:], price[:-1]) - 1)
+		nom_shares = np.true_divide(nominal[1:], nominal[1:, 0][:, np.newaxis])
+
+		# weight the inflation rates by their nominal shares of the aggregate
+		weighted = np.multiply(infl, nom_shares)
+
+		# reverse sign of any subcomponents of BalanceComponents that need to be
+		#	subtracted, then compute the BalanceComp's contribution
+		weighted[:, self.bals == -1] = -weighted[:, self.bals == -1]
+
+		# for consistency with other _Contribution subclasses, add a row for the
+		#	first period. then add growth rates according to Balance sub locs
+		weighted = np.insert(weighted, 0, np.nan, axis=0)
+		return self._apply_balances(weighted)
+
+	@property
+	def initial_price_index(self):
+		"""
+		the inital price index values are partitioned into two groups:
+			1) stock components. the initial values are just the subcomponent's
+				first price index observation
+			2) balance components. the initial values are the weighted sum of the
+				price indices of the subcomponents of the Balance component, with
+				the weight of the j-th subcomponent being equal to
+					nominal_j / sum(nominal)
+		"""
+		outs, outb, ins, inb = _create_stock_balance_indices(self.bals)
+		bal_grps = _create_balance_groups(self.bals)
+
+		# get the first observation of nominal level and price indices
+		nom = self._data('nominal').to_numpy()[0, :]
+		price = self._data('price').to_numpy()[0, :]
+
+		# preallocate output array
+		init = np.zeros(len(outs) + len(outb), dtype=float)
+		init[outs] = price[ins]
+		for ob, grp in zip(outb, bal_grps):
+
+			nom_grp = nom[grp[0]:grp[1]]
+			price_grp = price[grp[0]:grp[1]]
+
+			init[ob] = np.dot(nom_grp, price_grp) / np.sum(nom_grp)
+
+		return init
+
 
 
 class Contribution(Feature):
@@ -30,7 +360,8 @@ class Contribution(Feature):
 		self,
 		subs: Union[list, str, bool] = '',
 		level: int = 0,
-		method: Union[str, Callable] = 'difa%',
+		mtype: str = 'real',
+		method: Union[str, Callable] = '',
 		*args, **kwargs
 	):
 		"""
@@ -52,10 +383,14 @@ class Contribution(Feature):
 			method
 		level : int ( = 0 )
 			the level of subcomponents to include in the calculation
-		method : str ( = 'difa%' )
-			the growth rate calculation of the aggregate real level. see the
-			TransformationAccessor class in edan/core/transformations.py
-			for details
+		mtype : str ( = 'real' )
+			the mtype of contributions to compute. only 'real' and 'price' are
+			accepted
+		method : str ( = '' )
+			the growth rate calculation of aggregate growth. if `mtype = 'real'`,
+			default is 'difa%', and if `mtype = 'price'`, the default value of
+			`method` is 'yryr%'. see the TransformationAccessor class in
+			edan/core/transformations.py for details
 		args : positional arguments
 			arguments to pass to the `transform()` method of the aggregate's real level
 		kwargs : keyword arguments
@@ -65,199 +400,25 @@ class Contribution(Feature):
 		-------
 		contribution : pandas DataFrame
 		"""
-		return self.compute(subs, level, method, *args, **kwargs)
 
-	def compute(
-		self,
-		subs: Union[list, str, bool] = '',
-		level: int = 0,
-		method: Union[str, Callable] = '',
-		*args, **kwargs
-	):
-		if self.obj.elemental:
-			# if component has no subcomponent, return pandas Series of ones
-			return pd.Series(
-				data=np.ones(len(self.obj.real.data)),
-				index=self.obj.real.data.index,
-				name=self.obj.code
-			)
+		if mtype == 'real':
+			_contr = _RealContribution(self.obj, subs, level)
+			if method == '':
+				method = 'difa%'
 
-		# compute the aggregate growth rate
-		agg_growth = self.obj.real.transform(method, *args, **kwargs)
-
-		# select the subcomponents whose contributions will be calculated
-		self.subs = self.obj.disaggregate(subs, level)
-		self.comps = [self.obj] + list(self.subs)
-
-		# set `self.real` & `self.nominal` attributes, and indicators of ctypes
-		self._set_ctypes_and_data()
-
-		# compute the shares for all the flow and stock components, then aggregate
-		#	the ones that are subcomponents of balance components
-		shares_bal = self._calculate_shares()
-		shares = self._compute_balances(shares_bal)
-
-		# let pandas handle index-matching again
-		shares_df = pd.DataFrame(shares, index=self.real.index)
-		idx = agg_growth.index.intersection(shares_df.index)
-
-		growth = agg_growth.loc[idx]
-		shares = shares_df.loc[idx]
-		contrs = np.multiply(shares.values, growth.values[:, None])
-
-		return pd.DataFrame(
-			contrs,
-			index=growth.index,
-			columns=self.codes
-		)
-
-
-	def _set_ctypes_and_data(self):
-		"""
-		set `self.real` & `self.nominal` attributes of the real and nominal data
-		of both the aggregate & all the chosen subcomponents, and indicators of
-		the ctypes of all components in `self.flows`, `self.balances`, and
-		`self.stocks` attributes
-		"""
-
-		# real & nominal data, and series codes for renaming final dataframe.
-		#	`less` is an indicator for components that should be subtracted
-		#	from the agg
-		rdata, ndata, self.codes, self.less = [], [], [], []
-
-		# column indices of different Component types
-		stocks = []
-		flows = []
-		def add_idx(comp, idx):
-			if isinstance(comp, FlowComponent):
-				flows.append(idx)
-			else:
-				stocks.append(idx)
-
-		# don't use enumerate b/c we don't know if components are Balance
-		#	components beforehand
-		idx = 0
-		for comp in self.comps:
-
-			self.codes.append(comp.code)
-
-			if isinstance(comp, BalanceComponent):
-				for sub in comp.disaggregate():
-					self.less.append(sub.is_less(self.obj.code))
-
-					# i don't think there is ever a case where a BalanceComp
-					#	will have a Balance sub but a check here could be good
-					rdata.append(sub.real.data)
-					ndata.append(sub.nominal.data)
-
-					add_idx(sub, idx)
-					idx += 1
-
-			else:
-				self.less.append(comp.is_less(self.obj.code))
-
-				if isinstance(comp, FlowComponent):
-					rdata.append(comp.real_level.data)
-					ndata.append(comp.nominal_level.data)
-				else:
-					rdata.append(comp.real.data)
-					ndata.append(comp.nominal.data)
-
-				add_idx(comp, idx)
-				idx += 1
-
-		# let pandas handle joining & nans
-		data = pd.concat(rdata + ndata, axis='columns').dropna(axis='index')
-
-		# re-partition data; each block has the agg. series in the first col
-		n_series = len(rdata)
-		self.real = data.iloc[:, :n_series]
-		self.nominal = data.iloc[:, n_series:]
-
-		# construct indicator arrays for ctype now that BalanceComp locs are known
-		self.stocks = np.zeros(n_series, dtype=bool)
-		self.stocks[stocks] = True
-
-		self.flows = np.zeros(n_series, dtype=bool)
-		self.flows[flows] = True
-
-	def _calculate_shares(self):
-		"""
-		calculate the contribution shares of subcomponents that are not
-		BalanceComponents the calculation for the contribution shares is described
-		in the footnotes of this table:
-			https://apps.bea.gov/scb/account_articles/national/0795od/table1.htm
-
-		that table is referenced in this old article from the BEA, along with
-		some discussion about other new (in 1995) measures:
-			https://apps.bea.gov/scb/account_articles/national/0795od/maintext.htm
-		"""
-
-		real, nominal = self.real.values, self.nominal.values
-
-		# change in real level of component
-		real_chg = np.empty(real.shape)
-		real_chg[:] = np.nan
-
-		real_chg[1:, self.stocks] = real[1:, self.stocks] - real[:-1, self.stocks]
-		real_chg[2:, self.flows] = (real[2:, self.flows] - real[1:-1, self.flows]) - \
-			(real[1:-1, self.flows] - real[:-2, self.flows])
-
-		# price deflator implied by real & nominal levels
-		deflator = np.full(real.shape, np.nan)
-		deflator[1:, :] = np.true_divide(nominal[:-1, :], real[:-1, :])
-
-		# nominal level change. we will eventually divide by `nom_chg`, so to suppress
-		#	numpy RuntimeWarnings, we set any zeros to nans
-		nom_chg = np.multiply(deflator, real_chg)
-		nom_chg[nom_chg == 0] = np.nan
-
-		# fraction of change attributable to each component (first col is agg.)
-		shares = np.full(self.real.shape, np.nan)
-		shares[:, 0] = 1
-		shares[:, 1:] = np.true_divide(nom_chg[:, 1:], nom_chg[:, :1])
-
-		# if any of the nominal changes were zero, set their share to zero
-		shares[np.isnan(shares)] = 0
-
-		# account for any subtractions
-		shares[:, self.less] = - shares[:, self.less]
-
-		return shares
-
-	def _compute_balances(self, shares_bal):
-		"""
-		after all the shares have been computed, we need to add/subtract the
-		subcomponents of the BalanceComponents
-		"""
-		if any(isinstance(comp, BalanceComponent) for comp in self.comps):
-			n_comps = len(self.comps)
-
-			shares = np.empty((shares_bal.shape[0], n_comps))
-			shares[:] = np.nan
-
-			bal_idx = 0
-			for idx, comp in enumerate(self.comps):
-
-				if isinstance(comp, BalanceComponent):
-
-					subs = comp.disaggregate()
-					sub_contrs = np.zeros((shares.shape[0], len(subs)))
-
-					for i, sub in enumerate(subs):
-						sub_contrs[:, i] = shares_bal[:, bal_idx]
-						bal_idx += 1
-
-					shares[:, idx] = np.sum(sub_contrs, axis=1)
-
-				else:
-					shares[:, idx] = shares_bal[:, bal_idx]
-					bal_idx += 1
-
-			return shares
+		elif mtype == 'price':
+			_contr = _PriceContribution(self.obj, subs, level)
+			if method == '':
+				method = 'yryr%'
 
 		else:
-			return shares_bal
+			if isinstance(mtype, str):
+				raise ValueError(f"cannot compute contributions of mtype '{mtype}'")
+			else:
+				raise TypeError("'mtype' must be a string")
+
+		return _contr.compute(method, *args, **kwargs)
+
 
 
 class Share(Feature):
@@ -341,173 +502,12 @@ class Share(Feature):
 		)
 
 
-class Chain(Feature):
-	"""
-	compute the chain-weighted real level of the Component
-	"""
-
-	name = 'chain'
-
-	def __call__(
-		self,
-		subs: Union[list, str, bool] = '',
-		level: int = 0
-	):
-		"""
-		using the subcomponents selected by the parameters `subs` or `level`,
-		perform the standard chain-weighting computation. at the moment it isn't
-		very accurate with respect to the actual real level because of the final
-		computation: start with the first observation of the real aggregate level,
-		multiply the entire time series of chained-weights.
-			this could be made more accurate by locating the base periods that
-		were used to construct the real level, then working forward & backward
-		from the outside base periods. I'm not quite sure how to do that just
-		yet - the metadata probably has the base year somewhere, but I don't have
-		a clear idea of how to grab that information in a consistent way across
-		the FRED and BEA metadata structures.
-
-		Parameters
-		----------
-		subs : list | str ( = '' )
-			the subcomponents to include in the calculation. if an empty string,
-			all immediate subcomponents are used (if the other subcomponent
-			selection parameters, for example, `level`, are null. otherwise, the
-			subcomponent selection is done by the Component's `disaggregate()`
-			method
-		level : int ( = 0 )
-			the level of subcomponents to include in the calculation
-		"""
-		return self.compute(subs, level, base, *args, **kwargs)
-
-	def compute(
-		self,
-		subs: Union[list, str, bool] = '',
-		level: int = 0
-	):
-		if self.obj.elemental:
-			# if component has no subcomponent, return pandas Series of the
-			#	(possibly re-indexed) real level
-			real = self.obj.real.transform('index', base=base)
-			real.name = self.obj.code
-			return real
-
-		# select the subcomponents that will be used to chain-weight
-		self.subs = self.obj.disaggregate(subs, level)
-
-		# set `self.real` & `self.price` attributes, and indicators of ctypes
-		self._set_ctypes_and_data()
-
-		# chained-weight indices of the selected subcomponents
-		weights = self._compute_chained_weights()
-
-		# after weights are computed, use them to find the whole chain series
-		return self._chain(weights)
-
-	def _set_ctypes_and_data(self):
-		"""
-		set `self.real` and `self.price` attributes of the real level and price
-		index data of both the aggregate & all the chosen subcomponents, and
-		indicators of the ctypes of all components in `self.flows`, `self.balances`,
-		and `self.stocks` attributes
-		"""
-
-		# real & price data, and series codes for renaming final dataframe.
-		#	`less` is an indicator for components that should be subtracted
-		#	from the agg
-		rdata, pdata, self.codes, self.less = [], [], [], []
-
-		# column indices of different Component types
-		stocks, flows = [], []
-		def add_idx(comp, idx):
-			if isinstance(comp, FlowComponent):
-				flows.append(idx)
-			else:
-				stocks.append(idx)
-
-		# don't use enumerate b/c we don't know if components are Balance
-		#	components beforehand
-		idx = 0
-		for comp in self.subs:
-
-			self.codes.append(comp.code)
-
-			if isinstance(comp, BalanceComponent):
-				for sub in comp.disaggregate():
-					self.less.append(sub.is_less(self.obj.code))
-
-					# i don't think there is ever a case where a BalanceComponent
-					#	will have a Balance sub but a check here could be good
-					rdata.append(sub.real.data)
-					pdata.append(sub.price.data)
-
-					add_idx(sub, idx)
-					idx += 1
-
-			else:
-				self.less.append(comp.is_less(self.obj.code))
-
-				rdata.append(comp.real.data)
-				pdata.append(comp.price.data)
-
-				add_idx(comp, idx)
-				idx += 1
-
-		# let pandas handle joining & nans
-		data = pd.concat(rdata + pdata, axis='columns').dropna(axis='index')
-
-		# re-partition data; each block has the agg. series in the first col
-		n_series = len(rdata)
-		self.real = data.iloc[:, :n_series]
-		self.price = data.iloc[:, n_series:]
-
-		# construct indicator arrays for ctype now that BalanceComp locs are known
-		self.stocks = np.zeros(n_series, dtype=bool)
-		self.stocks[stocks] = True
-
-		self.flows = np.zeros(n_series, dtype=bool)
-		self.flows[flows] = True
-
-	def _maybe_reindex_subcomponents(self):
-		if self._bases_match:
-			pass
-		else:
-			raise NotImplementedError()
-
-	def _compute_chained_weights(self):
-		""" """
-		real, price = self.real.values, self.price.values
-
-		# time period t & time period t-1 of quantity & prices
-		qt_pt = np.sum(np.multiply(real[1:, :], price[1:, :]), axis=1)
-		qt_ptm1 = np.sum(np.multiply(real[1:, :], price[:-1, :]), axis=1)
-		qtm1_pt = np.sum(np.multiply(real[:-1, :], price[1:, :]), axis=1)
-		qtm1_ptm1 = np.sum(np.multiply(real[:-1, :], price[:-1, :]), axis=1)
-
-		# shoutout to the germans
-		paasche = np.true_divide(qt_pt, qt_ptm1)
-		laspeyres = np.true_divide(qtm1_pt, qtm1_ptm1)
-
-		# pre-allocate chain weights
-		weights = np.empty(real.shape[0])
-		weights[:] = 1.0
-		weights[1:] = np.sqrt(np.multiply(paasche, laspeyres))
-		return weights
-
-	def _chain(self, weights):
-		idx = self.obj.real.data.index.intersection(self.real.index)
-		agg = self.obj.real.data.loc[idx]
-		return pd.Series(
-			np.multiply(agg.iloc[0], np.cumprod(weights)),
-			index=agg.index,
-			name=self.obj.code
-		)
-
-
 
 def contributions(
 	obj,
 	subs: Union[list, str, bool] = '',
 	level: int = 0,
+	mtype: str = 'real',
 	method: Union[str, Callable] = 'difa%',
 	*args, **kwargs
 ):
@@ -530,6 +530,9 @@ def contributions(
 		method
 	level : int ( = 0 )
 		the level of subcomponents to include in the calculation
+	mtype : str ( = 'real' )
+		the mtype of contributions to compute. only 'real' and 'price' are
+		accepted
 	method : str ( = 'difa%' )
 		the growth rate calculation of the aggregate real level. see the
 		TransformationAccessor class in edan.core.transformations.py
@@ -544,7 +547,7 @@ def contributions(
 	contribution : pandas DataFrame
 	"""
 	contr = Contribution(obj)
-	return contr.compute(subs, level, method, *args, **kwargs)
+	return contr(subs, level, mtype, method, *args, **kwargs)
 
 
 def shares(
@@ -581,35 +584,59 @@ def shares(
 	return shr.compute(subs, level, mtype)
 
 
-def chain(
-	obj,
-	subs: Union[list, str, bool] = '',
-	level: int = 0
-):
+"""
+a couple methods for dealing with the locations of the subcomponents of Balance
+components in arrays of those sub's data.
+"""
+def _create_stock_balance_indices(bal):
 	"""
-	using the subcomponents selected by the parameters `subs` or `level`,
-	perform the standard chain-weighting computation. at the moment it isn't
-	very accurate with respect to the actual real level because of the final
-	computation: start with the first observation of the real aggregate level,
-	multiply the entire time series of chained-weights.
-		this could be made more accurate by locating the base periods that
-	were used to construct the real level, then working forward & backward
-	from the outside base periods. I'm not quite sure how to do that just
-	yet - the metadata probably has the base year somewhere, but I don't have
-	a clear idea of how to grab that information in a consistent way across
-	the FRED and BEA metadata structures.
-
-	Parameters
-	----------
-	subs : list | str ( = '' )
-		the subcomponents to include in the calculation. if an empty string,
-		all immediate subcomponents are used (if the other subcomponent
-		selection parameters, for example, `level`, are null. otherwise, the
-		subcomponent selection is done by the Component's `disaggregate()`
-		method
-	level : int ( = 0 )
-		the level of subcomponents to include in the calculation
+	from an array of indicators recording the location of Stock components
+	(denoted by a zero), additive subs of Balance comps (denoted by a positive
+	one), and subtractive subs of Balance comps (a negative one), calculate the
+	index locations of Stock components and the first additive Balance sub.
+		these index locations are computed both in terms of the input data,
+	and the output data, which will merge the additive and subtractive
+	subcomponents in some way (usually just simple adding)
 	"""
 
-	chain = Chain(obj)
-	return chain.compute(subs, level)
+	# balance and stock indices in the input data
+	bal_offset = np.hstack((0, bal[:-1]))
+	in_bal = np.flatnonzero(np.logical_and(bal == 1, bal_offset != 1))
+	in_stock = np.flatnonzero(bal == 0)
+
+	# combine the two input indices (sort in place to avoid copies)
+	all_outs = np.concatenate((in_stock, in_bal))
+	all_outs.sort()
+
+	# find locations of the stock and balance components in output array
+	out_bal = np.searchsorted(all_outs, in_bal)
+	out_stock = np.searchsorted(all_outs, in_stock)
+
+	return out_stock, out_bal, in_stock, in_bal
+
+
+def _create_balance_groups(bal):
+	"""
+	from an array of indicators recording the location of Stock components
+	(denoted by a zero), additive subs of Balance comps (denoted by a positive
+	one), and subtractive subs of Balance comps (a negative one), record the
+	locations of the additive and subtractive subcomponents.
+		specifically, a list of tuples of indices is returned. each tuple has
+	two elements: the first element of the n-th tuple is the index of the n-th
+	leading-additive subcomponent, and the second element is the index of the
+	last subcomponent of the n-th balance component
+	"""
+	outs, outb, ins, inb = _create_stock_balance_indices(bal)
+
+	# combine the two input indices & sort. add a ceiling element in case the
+	#	last output component is a balance component
+	in_indices = np.hstack((ins, inb, len(bal)))
+	in_indices.sort()
+
+	# find the right-border indices of the boundary groups. the left-border indices
+	#	is `inb`; the location of the first positive sub of balance components
+	blk = np.tile(in_indices, (len(inb), 1)).transpose()
+	rborders = np.amin(np.where(blk-inb>0, blk, np.inf), axis=0).astype(int)
+
+	borders = np.vstack((inb, rborders))
+	return [tuple(borders[:, i]) for i in range(len(inb))]

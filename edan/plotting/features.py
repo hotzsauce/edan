@@ -24,14 +24,21 @@ class ContributionPlotter(object):
 		comp: Component,
 		subs: Union[bool, str, Iterable[str]] = '',
 		level: int = 0,
+		mtype: str = '',
 		method: str = 'difa%',
 		**kwargs
 	):
 		self.comp = comp
+		self.mtype = mtype if mtype else 'real'
 		self.method = method if method else 'difa%'
 
 		self.subcomponents = self.comp.disaggregate(subs=subs, level=level)
-		self.data = self.comp.contributions(subs=subs, level=level, method=self.method)
+		self.data = self.comp.contributions(
+			subs=subs,
+			level=level,
+			mtype=self.mtype,
+			method=self.method
+		)
 
 	def plot(
 		self,
@@ -115,7 +122,8 @@ class SharePlotter(object):
 	):
 		self.data = truncate(self.data, start, end, periods)
 
-		return self.data.plot.area(stacked=True)
+		ax = self.data.plot.area(stacked=True)
+		return ax
 
 	@property
 	def title(self):
