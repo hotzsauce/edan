@@ -12,9 +12,6 @@ from edan.core.components import FlowComponent, BalanceComponent
 
 
 
-from rich import print
-
-
 def aggregate_nipa(
 	objs: Iterable[NIPAComponent],
 	code: str = '',
