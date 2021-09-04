@@ -22,15 +22,45 @@ from edan.scenarios.forecasts import (
 	Forecaster
 )
 
+from edan.indices import (
+	paasche,
+	laspeyres,
+	fisher,
+	tornqvist,
+	walsh,
+	geometric
+)
+
+
 
 __all__ = [
+	# modules
 	'nipa',
 	'cpi',
 	'ces',
 	'data',
 	'plotting',
+
+	# modifications
 	'transform',
+
+	# counterfactuals & foreasts
 	'forecast',
 	'Forecast',
-	'Forecaster'
+	'Forecaster',
+
+	# indices
+	'paasche',
+	'laspeyres',
+	'fisher',
+	'tornqvist',
+	'walsh',
+	'geometric',
+	'marshall_edgeworth',
+	'carli',
+	'dutot',
+	'jevons',
+	'harmonic_mean',
+	'cswd_index',
+	'harmonic_ratio'
 ]
