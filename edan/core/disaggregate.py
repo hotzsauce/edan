@@ -12,7 +12,6 @@ from edan.delims import (
 from edan.utils.dtypes import iterable_not_string
 
 
-
 def recursive_subcomponent(comp: Component, target: str):
 	"""
 	recursively search for subcomponent with code `target`
@@ -24,6 +23,48 @@ def recursive_subcomponent(comp: Component, target: str):
 	for sub in comp.subs:
 		if contains(sub.code, target):
 			return recursive_subcomponent(sub, target)
+
+
+def collect_elemental(comp: Component):
+	"""
+	search for and compile all the elemental subcomponents of `comp`
+	"""
+
+	if comp.elemental:
+		return []
+
+	elements = []
+	def _disagg_to_elements(obj):
+		if obj.elemental:
+			elements.append(obj)
+		else:
+			for sub in obj.subs:
+				_disagg_to_elements(sub)
+	for sub in comp.subs:
+		_disagg_to_elements(sub)
+
+	return elements
+
+
+def collect_all_subcomponents(comp: Component):
+	"""
+	gather every subcomponent of `comp`
+	"""
+
+	if comp.elemental:
+		return []
+
+	subcomponents = []
+	def _disagg_all(obj):
+		if obj.elemental:
+			pass
+		else:
+			for sub in obj.subs:
+				subcomponents.append(sub)
+				_disagg_all(sub)
+
+	_disagg_all(comp)
+	return subcomponents
 
 
 class Disaggregator(object):
@@ -90,24 +131,31 @@ class Disaggregator(object):
 
 			elif isinstance(subcomponents, str):
 
-				not_sub = True
-				abs_code = concat_codes(component.code, subcomponents)
+				if subcomponents == 'all':
+					self.disaggregates = collect_all_subcomponents(component)
 
-				for sub in component.subs:
+				elif subcomponents == 'elements':
+					self.disaggregates = collect_elemental(component)
 
-					if sub.code == abs_code:
-						not_sub = False
-						self.disaggregates.append(sub)
+				else:
+					not_sub = True
+					abs_code = concat_codes(component.code, subcomponents)
 
-					elif contains(sub.code, abs_code):
-						comp = recursive_subcomponent(sub, abs_code)
-						not_sub = False
-						self.disaggregates.append(comp)
+					for sub in component.subs:
 
-				if not_sub:
-					raise KeyError(
-						f"{subcomponents} is not a subcomponent of {component.code}"
-					)
+						if sub.code == abs_code:
+							not_sub = False
+							self.disaggregates.append(sub)
+
+						elif contains(sub.code, abs_code):
+							comp = recursive_subcomponent(sub, abs_code)
+							not_sub = False
+							self.disaggregates.append(comp)
+
+					if not_sub:
+						raise KeyError(
+							f"{subcomponents} is not a subcomponent of {component.code}"
+						)
 
 			elif isinstance(subcomponents, bool):
 
