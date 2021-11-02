@@ -111,7 +111,7 @@ gdp.plot(
 	end='12/31/2008'
 )
 ```
-![GDP Levels](https://github.com/hotzsauce/edan/blob/readme_figs/gdp_level.png?raw=true)
+![GDP Levels](https://github.com/hotzsauce/edan/blob/main/readme_figs/gdp_level.png?raw=true)
 
 
 ```python
@@ -126,7 +126,7 @@ serv.plot(
 	end='12/1/2019',
 )
 ```
-![Employment Change](https://github.com/hotzsauce/edan/blob/readme_figs/empl_change.png?raw=true)
+![Employment Change](https://github.com/hotzsauce/edan/blob/main/readme_figs/empl_change.png?raw=true)
 
 
 The next two plots utilize so-called `feature`s of the NIPA components: the contributions to real growth and the nominal share of subcomponents:
@@ -141,7 +141,7 @@ goods.plot(
 	end='12/1/1989'
 )
 ```
-![PCE Contributions](https://github.com/hotzsauce/edan/blob/readme_figs/pce_contr.png?raw=true)
+![PCE Contributions](https://github.com/hotzsauce/edan/blob/main/readme_figs/pce_contr.png?raw=true)
 
 ```python
 plt.set_style('econ')
@@ -151,4 +151,4 @@ pce.plot(
 	subs=['pce:g:d', 'pce:g:n', 'pce:s'],
 )
 ```
-![PCE Shares](https://github.com/hotzsauce/edan/blob/readme_figs/pce_shares.png?raw=true)
+![PCE Shares](https://github.com/hotzsauce/edan/blob/main/readme_figs/pce_shares.png?raw=true)
