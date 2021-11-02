@@ -1,0 +1,64 @@
+,level,short_name,long_name
+gdp,0,GDP,Gross domestic product
+gdp:pce,1,PCE,Personal consumption expenditures
+gdp:pce:g,2,Goods,Goods
+gdp:pce:g:d,3,Durables,Durable goods
+gdp:pce:g:d:v,4,Motor vehicles & parts,Motor vehicles and parts
+gdp:pce:g:d:f,4,Furnishings & household durables,Furnishings and durable household equipment
+gdp:pce:g:d:r,4,Rec. goods & vehicles,Recreational goods and vehicles
+gdp:pce:g:d:o,4,Other durables,Other durable goods
+gdp:pce:g:n,3,Nondurables,Nondurable goods
+gdp:pce:g:n:f,4,Food & drinks at home,Food and beverages purchased for off-premises consumption
+gdp:pce:g:n:c,4,Clothes & shoes,Clothing and footwear
+gdp:pce:g:n:g,4,Gas & energy goods,Gasoline and other energy goods
+gdp:pce:g:n:o,4,Other nondurables,Other nondurable goods
+gdp:pce:s,2,Services,Services
+gdp:pce:s:h,3,Household services,Household consumption expenditures (for services)
+gdp:pce:s:h:h,4,Housing & utilities,Housing and utilities
+gdp:pce:s:h:c,4,Health care,Health care
+gdp:pce:s:h:t,4,Trans. services,Transportation services
+gdp:pce:s:h:r,4,Rec. services,Recreation services
+gdp:pce:s:h:f,4,Food & accommodations,Food services and accommodations
+gdp:pce:s:h:i,4,Finance & insurance,Financial services and insurance
+gdp:pce:s:h:o,4,Other services,Other services
+gdp:pce:s:n,3,Nonprofit services,Final consumption expenditures of nonprofit institutions serving households (NPISHs)
+gdp:pce:s:n:o,4,Nonprofit gross output,Gross output of nonprofit institutions
+gdp:pce:s:n~l,4,Less: nonprofit receipts,Less: Receipts from sales of goods and services by nonprofit institutions
+gdp:pdi,1,Gross PDI,Gross private domestic investment
+gdp:pdi:f,2,Fixed investment,Fixed investment
+gdp:pdi:f:n,3,Nonres.,Nonresidential
+gdp:pdi:f:n:s,4,Structures,Structures
+gdp:pdi:f:n:e,4,Equipment,Equipment
+gdp:pdi:f:n:e:i,5,IP Equipment,Information processing equipment
+gdp:pdi:f:n:e:i:c,6,Computer equipment,Computers and peripheral equipment
+gdp:pdi:f:n:e:i:o,6,Other equip.,Other
+gdp:pdi:f:n:e:n,5,Industrial equipment,Industrial equipment
+gdp:pdi:f:n:e:t,5,Trans. equip.,Transportation equipment
+gdp:pdi:f:n:e:o,5,Other equip.,Other equipment
+gdp:pdi:f:n:i,4,IPP,Intellectual property products
+gdp:pdi:f:n:i:s,5,Software,Software
+gdp:pdi:f:n:i:r,5,R&D,Research and development
+gdp:pdi:f:n:i:e,5,IPP: Art,"Entertainment, literary, and artistic originals"
+gdp:pdi:f:r,3,Residential,Residential
+gdp:pdi:c,2,Invt. Change,Change in private inventories
+gdp:pdi:c:f,3,Farm Invt.,Farm
+gdp:pdi:c:n,3,Nonfarm Invt.,Nonfarm
+gdp:x,1,Net exports,Net exports of goods and services
+gdp:x:x,2,Exports,Exports
+gdp:x:x:g,3,Goods exports,Exports: Goods
+gdp:x:x:s,3,Services exports,Exports: Services
+gdp:x~m,2,Imports,Imports
+gdp:x~m:g,3,Goods imports,Imports: Goods
+gdp:x~m:s,3,Services imports,Imports: Services
+gdp:gov,1,Govt.,Government consumption expenditures and gross investment
+gdp:gov:f,2,Federal,Federal
+gdp:gov:f:d,3,Defense,National defense
+gdp:gov:f:d:c,4,Defense cons.,National defense: Consumption expenditures
+gdp:gov:f:d:i,4,Defense investment,National defense: Gross investment
+gdp:gov:f:n,3,Nondefense,Nondefense
+gdp:gov:f:n:c,4,Nondefense cons.,Nondefense: Consumption expenditures
+gdp:gov:f:n:i,4,Nondefense investment,Nondefense: Gross investment
+gdp:gov:s,2,State & local,State and local
+gdp:gov:s:c,3,State & local cons.,State and local: Consumption expenditures
+gdp:gov:s:i,3,State & local investment,State and local: Gross investment
+gdp:res,1,Residual,Residual

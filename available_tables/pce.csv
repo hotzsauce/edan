@@ -1,0 +1,399 @@
+,level,short_name,long_name
+pce,0,PCE,Personal consumption expenditures
+pce:g,1,Goods,Goods
+pce:g:d,2,Durables,Durable goods
+pce:g:d:v,3,Vehicles & parts,Motor vehicles and parts
+pce:g:d:v:n,4,New vehicles,New motor vehicles (55)
+pce:g:d:v:n:a,5,New cars,New autos
+pce:g:d:v:n:a:d,6,New domestic cars,New domestic autos
+pce:g:d:v:n:a:f,6,New foreign cars,New foreign autos
+pce:g:d:v:n:t,5,New light trucks,New light trucks
+pce:g:d:v:u,4,Used vehicles,Net purchases of used motor vehicles (56)
+pce:g:d:v:u:a,5,Used cars,Used autos
+pce:g:d:v:u:a:n,6,Net trans. in used cars,Net transactions in used autos
+pce:g:d:v:u:a:m,6,Used car margin,Used auto margin
+pce:g:d:v:u:a:e,6,Used car employee pay,Employee reimbursement
+pce:g:d:v:u:t,5,Used light trucks,Used light trucks
+pce:g:d:v:u:t:n,6,Net trans. in used trucks,Net transactions in used trucks
+pce:g:d:v:u:t:m,6,Used truck margin,Used truck margin
+pce:g:d:v:p,4,Vehicles parts,Motor vehicle parts and accessories (58)
+pce:g:d:v:p:t,5,Tires,Tires
+pce:g:d:v:p:a,5,Acc. & parts,Accessories and parts
+pce:g:d:f,3,Furnishings & HH equip.,Furnishings and durable household equipment
+pce:g:d:f:f,4,Furniture & furnishings,Furniture and furnishings (parts of 31 and 32)
+pce:g:d:f:f:f,5,Furniture,Furniture
+pce:g:d:f:f:d,5,Decorative HH items,"Clocks, lamps, lighting fixtures, and other household decorative items"
+pce:g:d:f:f:c,5,"Carpets, etc.",Carpets and other floor coverings
+pce:g:d:f:f:w,5,Blinds,Window coverings
+pce:g:d:f:a,4,HH appliances,Household appliances (part of 33)
+pce:g:d:f:a:m,5,Major HH appliances,Major household appliances
+pce:g:d:f:a:s,5,Small HH appliances,Small electric household appliances
+pce:g:d:f:u,4,Tableware & utensils,"Glassware, tableware, and household utensils (34)"
+pce:g:d:f:u:d,5,Flatware,Dishes and flatware
+pce:g:d:f:u:c,5,"Cookware, etc.",Nonelectric cookware and tableware
+pce:g:d:f:t,4,HH tools & equip.,Tools and equipment for house and garden (35)
+pce:g:d:f:t:t,5,HH tools,"Tools, hardware, and supplies"
+pce:g:d:f:t:o,5,HH outdoor equip.,Outdoor equipment and supplies
+pce:g:d:r,3,Rec. goods & vehicles,Recreational goods and vehicles
+pce:g:d:r:t,4,Rec. Audiovisual,"Video, audio, photographic, and information processing equipment and media (75, 76, and part of 93)"
+pce:g:d:r:t:v,5,AV equip.,Video and audio equipment
+pce:g:d:r:t:v:t,6,TVs,Televisions
+pce:g:d:r:t:v:o,6,Misc. video equip.,Other video equipment
+pce:g:d:r:t:v:a,6,Audio equip.,Audio equipment
+pce:g:d:r:t:v:r,6,AV media,Recording media
+pce:g:d:r:t:v:r:a,7,Audio media,"Audio discs, tapes, vinyl, and permanent digital downloads"
+pce:g:d:r:t:v:r:v,7,Video media,"Video discs, tapes, and permanent digital downloads"
+pce:g:d:r:t:p,5,Photo equip.,Photographic equipment
+pce:g:d:r:t:i,5,Info equip.,Information processing equipment
+pce:g:d:r:t:i:p,6,PCs,Personal computers/tablets and peripheral equipment
+pce:g:d:r:t:i:c,6,Rec. software,Computer software and accessories
+pce:g:d:r:t:i:t,6,Misc. info equip.,"Calculators, typewriters, and other information processing equipment"
+pce:g:d:r:s,4,Sport equip.,"Sporting equipment, supplies, guns, and ammunition (part of 80)"
+pce:g:d:r:v,4,Sport vehicles,Sports and recreational vehicles (79)
+pce:g:d:r:v:m,5,Motorcycles,Motorcycles
+pce:g:d:r:v:b,5,Bikes,Bicycles and accessories
+pce:g:d:r:v:p,5,Rec. vehicles,"Pleasure boats, aircraft, and other recreational vehicles"
+pce:g:d:r:v:p:b,6,Rec. boats,Pleasure boats
+pce:g:d:r:v:p:a,6,Rec. aircraft,Pleasure aircraft
+pce:g:d:r:v:p:o,6,Misc. rec. vehicles,Other recreational vehicles
+pce:g:d:r:b,4,Rec. books,Recreational books (part of 90)
+pce:g:d:r:m,4,Musical instruments,Musical instruments (part of 80)
+pce:g:d:o,3,Misc. durables,Other durable goods
+pce:g:d:o:j,4,Jewelry & watches,Jewelry and watches (part of 119)
+pce:g:d:o:j:j,5,Jewelry,Jewelry
+pce:g:d:o:j:w,5,Watches,Watches
+pce:g:d:o:t,4,Therapy equip.,Therapeutic appliances and equipment (42)
+pce:g:d:o:t:m,5,Medical therapy equip.,Therapeutic medical equipment
+pce:g:d:o:t:e,5,Glasses & contacts,Corrective eyeglasses and contact lenses
+pce:g:d:o:b,4,Educational books,Educational books (96)
+pce:g:d:o:l,4,Luggage,Luggage and similar personal items (part of 119)
+pce:g:d:o:c,4,Phones,Telephone and related communication equipment
+pce:g:n,2,Nondurables,Nondurable goods
+pce:g:n:f,3,Food & drinks at home,Food and beverages purchased for off-premises consumption
+pce:g:n:f:f,4,Food & nonalcoholic drinks at home,Food and nonalcoholic beverages purchased for off-premises consumption (4)
+pce:g:n:f:f:f,5,Food at home,Food purchased for off-premises consumption
+pce:g:n:f:f:f:c,6,Cereal & baked goods,Cereals and bakery products
+pce:g:n:f:f:f:c:c,7,Cereals,Cereals
+pce:g:n:f:f:f:c:b,7,Bakery products,Bakery products
+pce:g:n:f:f:f:m,6,Meats,Meats and poultry
+pce:g:n:f:f:f:m:b,7,Beef & veal,Beef and veal
+pce:g:n:f:f:f:m:p,7,Pork,Pork
+pce:g:n:f:f:f:m:o,7,Misc. meats,Other meats
+pce:g:n:f:f:f:m:a,7,Poultry,Poultry
+pce:g:n:f:f:f:f,6,Fish & seafood,Fish and seafood
+pce:g:n:f:f:f:d,6,Dairy products,"Milk, dairy products, and eggs"
+pce:g:n:f:f:f:d:m,7,Fresh milk,Fresh milk
+pce:g:n:f:f:f:d:p,7,Processed dairy,Processed dairy products
+pce:g:n:f:f:f:d:e,7,Eggs,Eggs
+pce:g:n:f:f:f:t,6,Fats & oils,Fats and oils
+pce:g:n:f:f:f:v,6,Fresh fruits & vegetables,Fresh fruits and vegetables
+pce:g:n:f:f:f:v:f,7,Fresh fruits,Fruit (fresh)
+pce:g:n:f:f:f:v:v,7,Fresh vegetables,Vegetables (fresh)
+pce:g:n:f:f:f:p,6,Processed fruits & vegetables,Processed fruits and vegetables
+pce:g:n:f:f:f:s,6,Sugars,Sugar and sweets
+pce:g:n:f:f:f:o,6,Misc. foods,"Food products, not elsewhere classified"
+pce:g:n:f:f:b,5,Nonalcoholic drinks at home,Nonalcoholic beverages purchased for off-premises consumption
+pce:g:n:f:f:b:c,6,Coffee & tea,"Coffee, tea, and other beverage materials"
+pce:g:n:f:f:b:m,6,Drinks & juices,"Mineral waters, soft drinks, and vegetable juices"
+pce:g:n:f:e,4,Alcoholic drinks at home,Alcoholic beverages purchased for off-premises consumption (5)
+pce:g:n:f:e:s,5,Spirits,Spirits
+pce:g:n:f:e:w,5,Wine,Wine
+pce:g:n:f:e:b,5,Beer,Beer
+pce:g:n:f:a,4,Food on farms,Food produced and consumed on farms (6)
+pce:g:n:c,3,Clothes & shoes,Clothing and footwear
+pce:g:n:c:g,4,Clothing,Garments
+pce:g:n:c:g:w,5,Women’s & girls’ clothing,Women's and girls' clothing (10)
+pce:g:n:c:g:m,5,Men’s & boys’ clothing,Men's and boys' clothing (11)
+pce:g:n:c:g:c,5,Children’s clothing,Children's and infants' clothing (12)
+pce:g:n:c:o,4,Misc. clothes & shoes,Other clothing materials and footwear (13 and 17)
+pce:g:n:c:o:r,5,Clothing materials,Clothing materials
+pce:g:n:c:o:m,5,Military clothing,Standard clothing issued to military personnel
+pce:g:n:c:o:s,5,Shoes,Shoes and other footwear
+pce:g:n:g,3,Gas & energy goods,Gasoline and other energy goods
+pce:g:n:g:v,4,Vehicle fuels & fluids,"Motor vehicle fuels, lubricants, and fluids (59)"
+pce:g:n:g:v:g,5,Gas,Gasoline and other motor fuel
+pce:g:n:g:v:l,5,Vehicle fluids,Lubricants and fluids
+pce:g:n:g:f,4,Fuel oil & other fuels,Fuel oil and other fuels (29)
+pce:g:n:g:f:f,5,Fuel oil,Fuel oil
+pce:g:n:g:f:o,5,Misc. fuels,Other fuels
+pce:g:n:o,3,Other nondurables,Other nondurable goods
+pce:g:n:o:m,4,Medical products,Pharmaceutical and other medical products (40 and 41)
+pce:g:n:o:m:p,5,Pharmaceuticals,Pharmaceutical products
+pce:g:n:o:m:p:p,6,Prescription drugs,Prescription drugs
+pce:g:n:o:m:p:n,6,Nonprescription drugs,Nonprescription drugs
+pce:g:n:o:m:o,5,Other medical products,Other medical products
+pce:g:n:o:r,4,Rec. nondurables,"Recreational items (parts of 80, 92, and 93)"
+pce:g:n:o:r:g,5,Games & toys,"Games, toys, and hobbies"
+pce:g:n:o:r:p,5,Pets,Pets and related products
+pce:g:n:o:r:f,5,Plant goods,"Flowers, seeds, and potted plants"
+pce:g:n:o:r:v,5,Film supplies,Film and photographic supplies
+pce:g:n:o:h,4,HH nondurable supplies,Household supplies (parts of 32 and 36)
+pce:g:n:o:h:c,5,HH cleaning,Household cleaning products
+pce:g:n:o:h:p,5,HH paper,Household paper products
+pce:g:n:o:h:l,5,HH linens,Household linens
+pce:g:n:o:h:s,5,Sewing items,Sewing items
+pce:g:n:o:h:o,5,Misc. HH products,Miscellaneous household products
+pce:g:n:o:c,4,Pers. care products,Personal care products (part of 118)
+pce:g:n:o:c:o,5,"Hair, dental, etc. products","Hair, dental, shaving, and miscellaneous personal care products except electrical products"
+pce:g:n:o:c:c,5,Cosmetic products,Cosmetic / perfumes / bath / nail preparations and implements
+pce:g:n:o:c:e,5,Pers. care appliances,Electric appliances for personal care
+pce:g:n:o:t,4,Tobacco,Tobacco (127)
+pce:g:n:o:s,4,Magazines & stationary,"Magazines, newspapers, and stationery (part of 90)"
+pce:g:n:o:s:n,5,Newspapers,Newspapers and periodicals
+pce:g:n:o:s:o,5,Stationary,Stationery and miscellaneous printed materials
+pce:g:n:o:a,4,Net spending abroad,Net expenditures abroad by U.S. residents (131)
+pce:g:n:o:a:r,5,Spending abroad,Expenditures abroad by U.S. residents
+pce:g:n:o:a:r:g,6,Govt. spending abroad,Government employees' expenditures abroad
+pce:g:n:o:a:r:p,6,Private spending abroad,Private employees' expenditures abroad
+pce:g:n:o:a~l,5,Remittances to nonresidents,Less: Personal remittances in kind to nonresidents
+pce:s,1,Services,Services
+pce:s:h,2,HH services,Household consumption expenditures (for services)
+pce:s:h:h,3,Housing & utilities,Housing and utilities
+pce:s:h:h:h,4,Housing,Housing
+pce:s:h:h:h:r,5,Tenant rents,Rental of tenant-occupied nonfarm housing (20)
+pce:s:h:h:h:r:m,6,Mobile home rents (tenant),Tenant-occupied mobile homes
+pce:s:h:h:h:r:s,6,Stationary home rents (tenant),Tenant-occupied stationary homes
+pce:s:h:h:h:r:d,6,Tenant appliances,Tenant landlord durables
+pce:s:h:h:h:o,5,Owner-occupied rents,Imputed rental of owner-occupied nonfarm housing (21)
+pce:s:h:h:h:o:m,6,Mobile home rents (owner),Owner-occupied mobile homes
+pce:s:h:h:h:o:s,6,Stationary home rents (owner),Owner-occupied stationary homes
+pce:s:h:h:h:f,5,Farm rents,Rental value of farm dwellings (22)
+pce:s:h:h:h:g,5,Group housing,Group housing (23)
+pce:s:h:h:u,4,HH utilities,Household utilities
+pce:s:h:h:u:w,5,Water & sanitation,Water supply and sanitation (25)
+pce:s:h:h:u:w:s,6,Water & sewage maintenance,Water supply and sewage maintenance
+pce:s:h:h:u:w:g,6,Garbage collection,Garbage and trash collection
+pce:s:h:h:u:e,5,Electricity & gas,Electricity and gas
+pce:s:h:h:u:e:e,6,Electricity,Electricity (27)
+pce:s:h:h:u:e:g,6,Natural gas,Natural gas (28)
+pce:s:h:c,3,Health care,Health care
+pce:s:h:c:o,4,Outpatient services,Outpatient services
+pce:s:h:c:o:d,5,Physician,Physician services (44)
+pce:s:h:c:o:t,5,Dental,Dental services (45)
+pce:s:h:c:o:p,5,Paramedical,Paramedical services (46)
+pce:s:h:c:o:p:h,6,Home health care,Home health care
+pce:s:h:c:o:p:l,6,Medical labs,Medical laboratories
+pce:s:h:c:o:p:o,6,Misc. medical services,Other professional medical services
+pce:s:h:c:o:p:o:s,7,Specialty outpatient,Specialty outpatient care facilities and health and allied services
+pce:s:h:c:o:p:o:o,7,All other medical services,All other professional medical services
+pce:s:h:c:h,4,Hospital & nursing homes,Hospital and nursing home services
+pce:s:h:c:h:h,5,Hospitals,Hospitals (51)
+pce:s:h:c:h:h:n,6,Nonprofit hospitals’,Nonprofit hospitals' services to households
+pce:s:h:c:h:h:p,6,Proprietary hospitals,Proprietary hospitals
+pce:s:h:c:h:h:g,6,Govt. hospitals,Government hospitals
+pce:s:h:c:h:n,5,Nursing homes,Nursing homes (52)
+pce:s:h:c:h:n:n,6,Nonprofit nursing homes,Nonprofit nursing homes' services to households
+pce:s:h:c:h:n:p,6,Proprietary & govt. nursing homes,Proprietary and government nursing homes
+pce:s:h:t,3,Trans. Services,Transportation services
+pce:s:h:t:v,4,Vehicle services,Motor vehicle services
+pce:s:h:t:v:m,5,Vehicle repair,Motor vehicle maintenance and repair (60)
+pce:s:h:t:v:o,5,Misc. vehicle services,Other motor vehicle services (61)
+pce:s:h:t:v:o:l,6,Vehicle leasing,Motor vehicle leasing
+pce:s:h:t:v:o:l:a,7,Auto leasing,Auto leasing
+pce:s:h:t:v:o:l:t,7,Truck leasing,Truck leasing
+pce:s:h:t:v:o:r,6,Vehicle rentals,Motor vehicle rental
+pce:s:h:t:v:o:f,6,Parking fees,Parking fees and tolls
+pce:s:h:t:p,4,Public transport,Public transportation
+pce:s:h:t:p:g,5,Ground transport,Ground transportation (63)
+pce:s:h:t:p:g:t,6,Railway transport,Railway transportation
+pce:s:h:t:p:g:r,6,Road transport,Road transportation
+pce:s:h:t:p:g:r:b,7,Buses,Intercity buses
+pce:s:h:t:p:g:r:t,7,Taxis & ride-sharing,Taxicabs and ride sharing services
+pce:s:h:t:p:g:r:m,7,Intracity mass transit,Intracity mass transit
+pce:s:h:t:p:g:r:o,7,Misc. ground transport,Other road transportation service
+pce:s:h:t:p:a,5,Air transport,Air transportation (64)
+pce:s:h:t:p:w,5,Water transport,Water transportation (65)
+pce:s:h:r,3,Rec. services,Recreation services
+pce:s:h:r:c,4,"Clubs, parks, & entertainment","Membership clubs, sports centers, parks, theaters, and museums (82)"
+pce:s:h:r:c:m,5,Clubs & sport centers,Membership clubs and participant sports centers
+pce:s:h:r:c:p,5,Parks & campgrounds,"Amusement parks, campgrounds, and related recreational services"
+pce:s:h:r:c:a,5,Spectator amusement,Admissions to specified spectator amusements
+pce:s:h:r:c:a:t,6,Movie theaters,Motion picture theaters
+pce:s:h:r:c:a:l,6,Live entertainment ex. sports,"Live entertainment, excluding sports"
+pce:s:h:r:c:a:s,6,Spectator sports,Spectator sports
+pce:s:h:r:c:l,5,Museums & libraries,Museums and libraries
+pce:s:h:r:v,4,AV services,"Audio-video, photographic, and information processing equipment services (parts of 77 and 93)"
+pce:s:h:r:v:t,5,Live TV services,"Cable, satellite, and other live television services"
+pce:s:h:r:v:p,5,Photo processing,Photo processing
+pce:s:h:r:v:s,5,Photo studios,Photo studios
+pce:s:h:r:v:r,5,AV equip. repairs,"Repair and rental of audio-visual, photographic, and information processing equipment"
+pce:s:h:r:v:v,5,AV streaming & rental,Video and audio streaming and rental
+pce:s:h:r:v:v:v,6,Video streaming & rental,Video streaming and rental
+pce:s:h:r:v:v:a,6,Audio streaming & radio,Audio streaming and radio services (including satellite radio)
+pce:s:h:r:g,4,Gambling,Gambling (91)
+pce:s:h:r:g:c,5,Casinos,Casino gambling
+pce:s:h:r:g:l,5,Lotteries,Lotteries
+pce:s:h:r:g:p,5,Pari-mutuel net receipts,Pari-mutuel net receipts
+pce:s:h:r:o,4,Misc. rec. services,"Other recreational services (81, 94, and part of 92)"
+pce:s:h:r:o:p,5,Vet. services,Veterinary and other services for pets
+pce:s:h:r:o:t,5,Package tours,Package tours
+pce:s:h:r:o:v,5,Rec. vehicle repairs,Maintenance and repair of recreational vehicles and sports equipment
+pce:s:h:f,3,Food & accommodations,Food services and accommodations
+pce:s:h:f:f,4,Food services,Food services
+pce:s:h:f:f:p,5,Meals & drinks,Purchased meals and beverages (102)
+pce:s:h:f:f:p:m,6,Meals & non-alc. drinks,Meals and nonalcoholic beverages
+pce:s:h:f:f:p:m:s,7,School meals,Meals at schools
+pce:s:h:f:f:p:m:s:e,8,K-12 meals,Elementary and secondary school lunches
+pce:s:h:f:f:p:m:s:h,8,Higher ed. meals,Higher education school lunches
+pce:s:h:f:f:p:m:o,7,Other meals,Other purchased meals
+pce:s:h:f:f:p:m:o:l,8,Fast food meals,Meals at limited service eating places
+pce:s:h:f:f:p:m:o:o,8,Full-service meals,Meals at other eating places
+pce:s:h:f:f:p:m:o:d,8,Meals at bars,Meals at drinking places
+pce:s:h:f:f:p:a,6,Alcoholic drinks,Alcohol in purchased meals
+pce:s:h:f:f:e,5,Food for employees,Food furnished to employees (including military) (103)
+pce:s:h:f:f:e:c,6,Food for civilians,Food supplied to civilians
+pce:s:h:f:f:e:m,6,Food for military,Food supplied to military
+pce:s:h:f:a,4,Accommodations,Accommodations (104)
+pce:s:h:f:a:h,5,Hotels & motels,Hotels and motels
+pce:s:h:f:a:s,5,Dorms,Housing at schools
+pce:s:h:i,3,Finance & insurance,Financial services and insurance
+pce:s:h:i:f,4,Finance,Financial services
+pce:s:h:i:f:n,5,Finance without payment,Financial services furnished without payment (107)
+pce:s:h:i:f:n:b,6,Commercial banks,Commercial banks
+pce:s:h:i:f:n:o,6,Other depository institutions,Other depository institutions and regulated investment companies
+pce:s:h:i:f:n:p,6,Pension funds,Pension funds
+pce:s:h:i:f:c,5,"Finance charges, fees, & commissions","Financial service charges, fees, and commissions (108)"
+pce:s:h:i:f:c:c,6,Finance charges & fees,Financial service charges and fees
+pce:s:h:i:f:c:s,6,Securities commissions,Securities commissions
+pce:s:h:i:f:c:s:d,7,Direct commissions,Direct commissions
+pce:s:h:i:f:c:s:d:e,8,Exchange-listed equities,Exchange-listed equities
+pce:s:h:i:f:c:s:d:o,8,Other direct commissions,Other direct commissions
+pce:s:h:i:f:c:s:i,7,Indirect commissions,Indirect commissions
+pce:s:h:i:f:c:s:i:c,8,OTC equity securities,Over-the-counter equity securities
+pce:s:h:i:f:c:s:i:o,8,Other imputed commissions,Other imputed commissions
+pce:s:h:i:f:c:s:m,7,Mutual fund sales charges,Mutual fund sales charges
+pce:s:h:i:f:c:m,6,Portfolio mgmt.,Portfolio management and investment advice services
+pce:s:h:i:f:c:t,6,Trust & fiduciary activities,"Trust, fiduciary, and custody activities"
+pce:s:h:i:i,4,Insurance,Insurance
+pce:s:h:i:i:l,5,Life insurance,Life insurance (110)
+pce:s:h:i:i:h,5,Net HH insurance,Net household insurance (111)
+pce:s:h:i:i:h:p,6,HH insurance premiums,Household insurance premiums and premium supplements
+pce:s:h:i:i:h~l,6,Less: HH insurance losses,Less: Household insurance normal losses
+pce:s:h:i:i:c,5,Net health insurance,Net health insurance (112)
+pce:s:h:i:i:c:m,6,Medical care & hospitalization,Medical care and hospitalization
+pce:s:h:i:i:c~l,6,Income loss,Income loss
+pce:s:h:i:i:c:w,6,Workers’ comp.,Workers' compensation
+pce:s:h:i:i:v,5,Net vehicle insurance,Net motor vehicle and other transportation insurance (116)
+pce:s:h:o,3,Other services,Other services
+pce:s:h:o:c,4,Comm. services,Communication
+pce:s:h:o:c:t,5,Telecomm. services,Telecommunication services (71)
+pce:s:h:o:c:t:l,6,Local land-line phone,"Land-line telephone services, local charges"
+pce:s:h:o:c:t:d,6,Long-distance land-line phone,"Land-line telephone services, long-distance charges"
+pce:s:h:o:c:t:c,6,Cellphone services,Cellular telephone services
+pce:s:h:o:c:p,5,Delivery services,Postal and delivery services (68)
+pce:s:h:o:c:p:f,6,USPS,First-class postal service (by U.S. Postal Service)
+pce:s:h:o:c:p:o,6,Non-USPS delivery,Other delivery services (by non-U.S. postal facilities)
+pce:s:h:o:c:i,5,Internet access,Internet access (72)
+pce:s:h:o:e,4,Edu. services,Education services
+pce:s:h:o:e:h,5,Higher ed. services,Higher education (97)
+pce:s:h:o:e:h:p,6,Proprietary & public higher ed.,Proprietary and public higher education
+pce:s:h:o:e:h:n,6,Nonprofit private higher ed.,Nonprofit private higher education services to households
+pce:s:h:o:e:k,5,Nursery & K-12 school,"Nursery, elementary, and secondary schools (98)"
+pce:s:h:o:e:k:s,6,K-12 schools,Elementary and secondary schools
+pce:s:h:o:e:k:c,6,Day care & nursery,Day care and nursery schools
+pce:s:h:o:e:v,5,Vocational schools,Commercial and vocational schools (99)
+pce:s:h:o:p,4,Professional & other services,Professional and other services (121)
+pce:s:h:o:p:l,5,Legal services,Legal services
+pce:s:h:o:p:b,5,Accounting & bus. services,Accounting and other business services
+pce:s:h:o:p:b:t,6,Tax prep.,Tax preparation and other related services
+pce:s:h:o:p:b:e,6,Empl. agency,Employment agency services
+pce:s:h:o:p:b:o,6,Other bus. Services,Other personal business services
+pce:s:h:o:p:u,5,Union dues,Labor organization dues
+pce:s:h:o:p:d,5,Professional org. dues,Professional association dues
+pce:s:h:o:p:f,5,Funeral services,Funeral and burial services
+pce:s:h:o:b,4,Pers. care & clothing services,Personal care and clothing services (14 and parts of 17 and 118)
+pce:s:h:o:b:p,5,Pers. care services,Personal care services
+pce:s:h:o:b:p:s,6,Salons,Hairdressing salons and personal grooming establishments
+pce:s:h:o:b:p:o,6,Misc. care services,Miscellaneous personal care services
+pce:s:h:o:b:c,5,Clothing services,Clothing and footwear services
+pce:s:h:o:b:c:l,6,Laundry,Laundry and drycleaning services
+pce:s:h:o:b:c:c,6,Clothing repair & rental,"Clothing repair, rental, and alterations"
+pce:s:h:o:b:c:f,6,Shoe repair,Repair and hire of footwear
+pce:s:h:o:s,4,Social services & religious acts.,Social services and religious activities (120)
+pce:s:h:o:s:c,5,Child care,Child care
+pce:s:h:o:s:a,5,Social assistance,Social assistance
+pce:s:h:o:s:a:e,6,Homes for the elderly,Homes for the elderly
+pce:s:h:o:s:a:m,6,Mental health residential,Residential mental health and substance abuse
+pce:s:h:o:s:a:f,6,Individual & fam. services,Individual and family services
+pce:s:h:o:s:a:v,6,Vocational rehab. services,Vocational rehabilitation services
+pce:s:h:o:s:a:c,6,Community food & other relief,Community food and housing / emergency / other relief services
+pce:s:h:o:s:a:o,6,Misc. social assistance,"Other social assistance, not elsewere classified"
+pce:s:h:o:s:o,5,Social advocacy,Social advocacy and civic and social organizations
+pce:s:h:o:s:r,5,Religious org. Services,Religious organizations' services to households
+pce:s:h:o:s:f,5,Foundation services,Foundations and grantmaking and giving services to households
+pce:s:h:o:h,4,HH maintenance,"Household maintenance (parts of 31, 33, and 36)"
+pce:s:h:o:h:d,5,Domestic services,Domestic services
+pce:s:h:o:h:m,5,Moving services,"Moving, storage, and freight services"
+pce:s:h:o:h:f,5,Furniture repair,"Repair of furniture, furnishings, and floor coverings"
+pce:s:h:o:h:a,5,Appliance repair,Repair of household appliances
+pce:s:h:o:h:o,5,Misc. HH maintenance,Other household services
+pce:s:h:o:f,4,Net foreign travel,Net foreign travel
+pce:s:h:o:f:r,5,US foreign travel,Foreign travel by U.S. residents (129)
+pce:s:h:o:f:r:f,6,Intl. travel fares,Passenger fares for foreign travel
+pce:s:h:o:f:r:t,6,Travel outside US,U.S. travel outside the United States
+pce:s:h:o:f:r:s,6,US student spending,U.S. student expenditures
+pce:s:h:o:f~l,5,Less: nonres. spending,Less: Expenditures in the United States by nonresidents (130)
+pce:s:h:o:f~l:t,6,Foreign travel in US,Foreign travel in the United States
+pce:s:h:o:f~l:m,6,Medical spending of foreigners,Medical expenditures of foreigners
+pce:s:h:o:f~l:s,6,Foreign student spending,Expenditures of foreign students in the United States
+pce:s:n,2,Nonprofit services,Final consumption expenditures of nonprofit institutions serving households (NPISHs) (132)
+pce:s:n:o,3,Nonprofit gross output,Gross output of nonprofit institutions (133)
+pce:s:n:o:h,4,Nonprofit health,"Health, gross output"
+pce:s:n:o:h:o,5,Nonprofit outpatient,"Outpatient services, gross output"
+pce:s:n:o:h:h,5,Nonprofit hospitals,"Nonprofit hospitals, gross output"
+pce:s:n:o:h:n,5,Nonprofit nursing homes,"Nonprofit nursing homes, gross output"
+pce:s:n:o:r,4,Nonprofit rec.,"Recreation services, gross output"
+pce:s:n:o:e,4,Nonprofit edu.,"Education services, gross output"
+pce:s:n:o:s,4,Nonprofit social services,"Social services, gross output"
+pce:s:n:o:b,4,Nonprofit religious orgs.,"Religious organizations, gross output"
+pce:s:n:o:f,4,Nonprofit foundations,"Foundations and grantmaking and giving establishments, gross output"
+pce:s:n:o:a,4,Nonprofit advocacy,"Social advocacy establishments, gross output"
+pce:s:n:o:c,4,Nonprofit civic orgs.,"Civic and social organizations, gross output"
+pce:s:n:o:p,4,Nonprofit professional advocacy,"Professional advocacy, gross output"
+pce:s:n~l,3,Less: nonprofit receipts,Less: Receipts from sales of goods and services by nonprofit institutions (134)
+pce:s:n~l:h,4,Less: nonprofit health,Health services to households
+pce:s:n~l:h:o,5,Less: nonprofit outpatient,Outpatient services to households
+pce:s:n~l:h:h,5,Less: nonprofit hospitals,Nonprofit hospitals services to households
+pce:s:n~l:h:n,5,Less: nonprofit nursing homes,Nonprofit nursing homes services to households
+pce:s:n~l:r,4,Less: nonprofit rec.,Recreation services to households
+pce:s:n~l:e,4,Less: nonprofit edu.,Education services to households
+pce:s:n~l:s,4,Less: nonprofit social services,Social services to households
+pce:s:n~l:b,4,Less: nonprofit religious orgs.,Religious organizations' services to households
+pce:s:n~l:f,4,Less: nonprofit foundations,Foundations and grantmaking and giving services to households
+pce:s:n~l:a,4,Less: nonprofit advocacy,Services of social advocacy establishments to households
+pce:s:n~l:c,4,Less: nonprofit civic orgs.,Civic and social organizations' services to households
+pce:s:n~l:p,4,Less: nonprofit prof. Advocacy,Professional advocacy services to households
+cpce,0,Control group,Control group
+cpcev,0,Food & energy,PCE food and energy
+cpcee,0,Energy,PCE energy goods and services
+cpcef,0,PCE ex. food,PCE excluding food
+cpecg,0,PCE ex. energy,PCE excluding energy
+cpcec,0,Core PCE,PCE excluding food and energy
+cpcegv,0,Core PCE Goods,PCE goods excluding food and energy
+cpcese,0,Core PCE Services,PCE services excluding energy
+mpce,0,PCE (mkt),Market-based PCE
+mpce:v,1,Vehicles (mkt),Market-based PCE motor vehicles and parts
+mpce:d,1,Durables ex. veh. (mkt),Market-based PCE durable goods other than motor vehicles and parts
+mpce:f,1,Food & drinks at home (mkt),Market-based PCE food and beverages purchased for off-premises consumption
+mpce:c,1,Clothing (mkt),Market-based PCE clothing and footwear
+mpce:g,1,Energy goods (mkt),Market-based PCE gasoline and other energy goods
+mpce:n,1,Nondurables (mkt),Market-based PCE other nondurable goods
+mpce:s,1,Services (mkt),Market-based PCE services
+mpce:s:h,2,Housing (mkt),Market-based PCE housing services
+mpce:s:u,2,Utilities (mkt),Market-based PCE household utilities
+mpce:s:c,2,Health care (mkt),Market-based PCE health care
+mpce:s:t,2,Transport (mkt),Market-based PCE transportation services
+mpce:s:r,2,Recreation (mkt),Market-based PCE recreation services
+mpce:s:f,2,Food & accommodations (mkt),Market-based PCE food services and accommodations
+mpce:s:i,2,Finance & insurance (mkt),Market-based PCE financial services and insurance
+mpce:s:o,2,Other services (mkt),Market-based PCE other services
+mpce:s:o:c,3,Communication (mkt),Market-based PCE communication services
+mpce:s:o:e,3,Education (mkt),Market-based PCE education
+mpce:s:o:p,3,Professional serv. (mkt),Market-based PCE professional services
+mpce:s:o:a,3,Personal care (mkt),Market-based PCE personal care and clothing services
+mpce:s:o:k,3,Child care (mkt),Market-based PCE child care
+mpce:s:o:h,3,HH maintenance (mkt),Market-based PCE household maintenance
+mpcej,0,Food & energy (mkt),Market-based PCE food and energy
+mpcem,0,PCE ex. food (mkt),Market-based PCE excluding food
+mpcep,0,PCE ex. energy (mkt),Market-based PCE excluding energy
+mpcex,0,Core PCE (mkt),Market-based PCE excluding food and energy

@@ -1,0 +1,338 @@
+,level,short_name,long_name
+cpi,0,,All items
+cpi:f,1,,Food
+cpi:f:h,2,,Food at home
+cpi:f:h:b,3,,Cereals and bakery products
+cpi:f:h:b:c,4,,Cereals and cereal products
+cpi:f:h:b:c:f,5,,Flour and prepared flour mixes
+cpi:f:h:b:c:c,5,,Breakfast cereal
+cpi:f:h:b:c:r,5,,"Rice, pasta, cornmeal"
+cpi:f:h:b:c:r:r,6,,Rice
+cpi:f:h:b:c:b,5,,Bakery products
+cpi:f:h:b:c:b:b,6,,Bread
+cpi:f:h:b:c:b:b:w,7,,White bread
+cpi:f:h:b:c:b:b:o,7,,Bread other than white
+cpi:f:h:b:c:b:r,6,,"Fresh biscuits, rolls, muffins"
+cpi:f:h:b:c:b:c,6,,"Cakes, cupcakes, and cookies"
+cpi:f:h:b:c:b:c:c,7,,Cookies
+cpi:f:h:b:c:b:c:p,7,,Fresh cakes and cupcakes
+cpi:f:h:b:c:b:o,6,,Other bakery products
+cpi:f:h:b:c:b:o:s,7,,"Fresh sweetrolls, coffeecakes, doughnuts"
+cpi:f:h:b:c:b:o:c,7,,"Crackers, bread, and cracker products"
+cpi:f:h:b:c:b:o:f,7,,"Frozen and refrigerated bakery products, pies, tarts, turnovers"
+cpi:f:h:m,3,,"Meats, poultry, fish, and eggs"
+cpi:f:h:m:m,4,,"Meats, poultry, and fish"
+cpi:f:h:m:m:m,5,,Meats
+cpi:f:h:m:m:m:b,6,,Beef and veal
+cpi:f:h:m:m:m:b:g,7,,Uncooked ground beef
+cpi:f:h:m:m:m:b:r,7,,Uncooked beef roasts
+cpi:f:h:m:m:m:b:s,7,,Uncooked beef steaks
+cpi:f:h:m:m:m:b:o,7,,Uncooked other beef and veal
+cpi:f:h:m:m:m:p,6,,Pork
+cpi:f:h:m:m:m:p:b,7,,"Bacon, breakfast sausage, and related products"
+cpi:f:h:m:m:m:p:b:b,8,,Bacon and related products
+cpi:f:h:m:m:m:p:b:s,8,,Breakfast sausage and related products
+cpi:f:h:m:m:m:p:h,7,,Ham
+cpi:f:h:m:m:m:p:h:c,8,,"Ham, excluding canned"
+cpi:f:h:m:m:m:p:c,7,,Pork chops
+cpi:f:h:m:m:m:p:o,7,,"Other pork including roasts, steaks, and ribs"
+cpi:f:h:m:m:m:o,6,,Other meats
+cpi:f:h:m:m:m:o:f,7,,Frankfurters
+cpi:f:h:m:m:m:o:l,7,,Lunchmeats
+cpi:f:h:m:m:m:f,6,,Poultry
+cpi:f:h:m:m:m:f:c,7,,Chicken
+cpi:f:h:m:m:m:f:c:w,8,,Fresh whole chicken
+cpi:f:h:m:m:m:f:c:f,8,,Fresh and frozen chicken parts
+cpi:f:h:m:m:m:f:o,7,,Other uncooked poultry including turkey
+cpi:f:h:m:m:m:s,6,,Fish and seafood
+cpi:f:h:m:m:m:s:f,7,,Fresh fish and seafood
+cpi:f:h:m:m:m:s:p,7,,Processed fish and seafood
+cpi:f:h:m:m:m:s:p:s,8,,Shelf stable fish and seafood
+cpi:f:h:m:m:m:s:p:f,8,,Frozen fish and seafood
+cpi:f:h:m:m:e,5,,Eggs
+cpi:f:h:d,3,,Dairy and related products
+cpi:f:h:d:m,4,,Milk
+cpi:f:h:d:m:f,5,,Fresh whole milk
+cpi:f:h:d:m:o,5,,Fresh milk other than whole
+cpi:f:h:d:c,4,,Cheese and related products
+cpi:f:h:d:i,4,,Ice cream and related products
+cpi:f:h:d:o,4,,Other dairy and related products
+cpi:f:h:v,3,,Fruits and vegetables
+cpi:f:h:v:f,4,,Fresh fruits and vegetables
+cpi:f:h:v:f:f,5,,Fresh fruits
+cpi:f:h:v:f:f:a,6,,Apples
+cpi:f:h:v:f:f:b,6,,Bananas
+cpi:f:h:v:f:f:c,6,,Citrus fruits
+cpi:f:h:v:f:f:c:o,7,,"Oranges, including tangerines"
+cpi:f:h:v:f:f:o,6,,Other fresh fruits
+cpi:f:h:v:f:v,5,,Fresh vegetables
+cpi:f:h:v:f:v:p,6,,Potatoes
+cpi:f:h:v:f:v:l,6,,Lettuce
+cpi:f:h:v:f:v:t,6,,Tomatoes
+cpi:f:h:v:f:v:o,6,,Other fresh vegetables
+cpi:f:h:v:f:p,5,,Processed fruits and vegetables
+cpi:f:h:v:f:p:c,6,,Canned fruits and vegetables
+cpi:f:h:v:f:p:c:f,7,,Canned fruits
+cpi:f:h:v:f:p:c:v,7,,Canned vegetables
+cpi:f:h:v:f:p:f,6,,Frozen fruits and vegetables
+cpi:f:h:v:f:p:f:v,7,,Frozen vegetables
+cpi:f:h:v:f:p:o,6,,Other processed fruits and vegetables including dried
+cpi:f:h:v:f:p:o:b,7,,"Dried beans, peas, and lentils"
+cpi:f:h:l,3,,Nonalcoholic beverages and beverage materials
+cpi:f:h:l:j,4,,Juices and nonalcoholic drinks
+cpi:f:h:l:j:c,5,,Carbonated drinks
+cpi:f:h:l:j:f,5,,Frozen noncarbonated juices and drinks
+cpi:f:h:l:j:n,5,,Nonfrozen noncarbonated juices and drinks
+cpi:f:h:l:m,4,,Beverage materials including coffee and tea
+cpi:f:h:l:m:c,5,,Coffee
+cpi:f:h:l:m:c:r,6,,Roasted coffee
+cpi:f:h:l:m:c:i,6,,Instant coffee
+cpi:f:h:l:m:o,5,,Other beverage materials including tea
+cpi:f:h:o,3,,Other food at home
+cpi:f:h:o:s,4,,Sugar and sweets
+cpi:f:h:o:s:s,5,,Sugar and sugar substitutes
+cpi:f:h:o:s:c,5,,Candy and chewing gum
+cpi:f:h:o:s:o,5,,Other sweets
+cpi:f:h:o:f,4,,Fats and oils
+cpi:f:h:o:f:b,5,,Butter and margarine
+cpi:f:h:o:f:b:b,6,,Butter
+cpi:f:h:o:f:b:m,6,,Margarine
+cpi:f:h:o:f:s,5,,Salad dressing
+cpi:f:h:o:f:o,5,,Other fats and oils including peanut butter
+cpi:f:h:o:f:o:p,6,,Peanut butter
+cpi:f:h:o:o,4,,Other foods
+cpi:f:h:o:o:s,5,,Soups
+cpi:f:h:o:o:f,5,,Frozen and freeze dried prepared foods
+cpi:f:h:o:o:k,5,,Snacks
+cpi:f:h:o:o:c,5,,"Spices, seasonings, condiments, sauces"
+cpi:f:h:o:o:c:s,6,,Salt and other seasonings and spices
+cpi:f:h:o:o:c:p,6,,"Olives, pickles, relishes"
+cpi:f:h:o:o:c:g,6,,Sauces and gravies
+cpi:f:h:o:o:c:o,6,,Other condiments
+cpi:f:h:o:o:b,5,,Baby food
+cpi:f:h:o:o:o,5,,Other miscellaneous foods
+cpi:f:h:o:o:o:s,6,,Prepared salads
+cpi:f:a,2,,Food away from home
+cpi:f:a:f,3,,Full service meals and snacks
+cpi:f:a:l,3,,Limited service meals and snacks
+cpi:f:a:e,3,,Food at employee sites and schools
+cpi:f:a:e:s,4,,Food at elementary and secondary schools
+cpi:f:a:v,3,,Food from vending machines and mobile vendors
+cpi:f:a:v:o,3,,Other food away from home
+cpi:e,1,,Energy
+cpi:e:c,2,,Energy commodities
+cpi:e:c:f,3,,Fuel oil and other fuels
+cpi:e:c:f:o,4,,Fuel oil
+cpi:e:c:f:p,4,,"Propane, kerosene, and firewood"
+cpi:e:c:m,3,,Motor fuel
+cpi:e:c:m:g,4,,Gasoline 
+cpi:e:c:m:g:r,5,,"Gasoline, unleaded regular"
+cpi:e:c:m:g:m,5,,"Gasoline, unleaded midgrade"
+cpi:e:c:m:g:p,5,,"Gasoline, unleaded premium"
+cpi:e:c:o,4,,Other motor fuels
+cpi:e:s,2,,Energy services
+cpi:e:s:e,3,,Electricity
+cpi:e:s:u,3,,Utility 
+cpi:i,1,,All items less food and energy
+cpi:i:c,2,,Commodities less food and energy commodities
+cpi:i:c:h,3,,Household furnishings and supplies
+cpi:i:c:h:w,4,,Window and floor coverings and other linens
+cpi:i:c:h:w:f,5,,Floor coverings
+cpi:i:c:h:w:w,5,,Window coverings
+cpi:i:c:h:w:o,5,,Other linens
+cpi:i:c:h:f,4,,Furniture and bedding
+cpi:i:c:h:f:b,5,,Bedroom furniture
+cpi:i:c:h:f:l,5,,"Living room, kitchen, and dining room furniture"
+cpi:i:c:h:f:o,5,,Other furniture
+cpi:i:c:h:a,4,,Appliances
+cpi:i:c:h:a:m,5,,Major appliances
+cpi:i:c:h:a:m:l,6,,Laundry equipment
+cpi:i:c:h:a:o,5,,Other appliances
+cpi:i:c:h:o,4,,Other household equipment and furnishings
+cpi:i:c:h:o:c,5,,"Clocks, lamps, and decorator items"
+cpi:i:c:h:o:p,5,,Indoor plants and flowers
+cpi:i:c:h:o:d,5,,Dishes and flatware
+cpi:i:c:h:o:t,5,,Nonelectric cookware and tableware
+cpi:i:c:h:t,4,,"Tools, hardware, outdoor equipment and supplies"
+cpi:i:c:h:t:h,5,,"Tools, hardware and supplies"
+cpi:i:c:h:t:o,5,,Outdoor equipment and supplies
+cpi:i:c:h:k,4,,Housekeeping supplies
+cpi:i:c:h:k:c,5,,Household cleaning products
+cpi:i:c:h:k:p,5,,Household paper products
+cpi:i:c:h:k:m,5,,Miscellaneous household products
+cpi:i:c:a,3,,Apparel
+cpi:i:c:a:m,4,,Men's and boys' apparel
+cpi:i:c:a:m:m,5,,Men's apparel
+cpi:i:c:a:m:m:o,6,,"Men's suits, sport coats, and outerwear"
+cpi:i:c:a:m:m:u,6,,"Men's underwear, nightwear, swimwear, and accessories"
+cpi:i:c:a:m:m:s,6,,Men's shirts and sweaters
+cpi:i:c:a:m:m:p,6,,Men's pants and shorts
+cpi:i:c:a:m:b,5,,Boys' apparel
+cpi:i:c:a:f,4,,Women's and girls' apparel
+cpi:i:c:a:f:w,5,,Women's apparel
+cpi:i:c:a:f:w:o,6,,Women's outerwear
+cpi:i:c:a:f:w:d,6,,Women's dresses
+cpi:i:c:a:f:w:s,6,,Women's suits and separates
+cpi:i:c:a:f:w:u,6,,"Women's underwear, nightwear, swimwear, and accessories"
+cpi:i:c:a:f:g,5,,Girls' apparel
+cpi:i:c:a:s,4,,Footwear
+cpi:i:c:a:s:m,5,,Men's footwear
+cpi:i:c:a:s:c,5,,Boys' and girls' footwear
+cpi:i:c:a:s:f,5,,Women's footwear
+cpi:i:c:a:b,4,,Infants' and toddlers' apparel
+cpi:i:c:a:j,4,,Jewelry and watches
+cpi:i:c:a:j:w,5,,Watches
+cpi:i:c:a:j:j,5,,Jewelry
+cpi:i:c:t,3,,Transportation commodities less motor fuel
+cpi:i:c:t:v,4,,New vehicles
+cpi:i:c:t:v:n,5,,New cars and trucks
+cpi:i:c:t:v:n:c,6,,New cars
+cpi:i:c:t:v:n:t,6,,New trucks
+cpi:i:c:t:u,4,,Used cars and trucks
+cpi:i:c:t:e,4,,Motor vehicle parts and equipment
+cpi:i:c:t:e:t,5,,Tires
+cpi:i:c:t:e:a,5,,Vehicle accessories other than tires
+cpi:i:c:t:e:a:p,6,,Vehicle parts and equipment other than tires
+cpi:i:c:t:e:a:f,6,,"Motor oil, coolant, and fluids"
+cpi:i:c:m,3,,Medical care commodities
+cpi:i:c:m:d,4,,Medicinal drugs
+cpi:i:c:m:d:p,5,,Prescription drugs
+cpi:i:c:m:d:n,5,,Nonprescription drugs
+cpi:i:c:m:e,4,,Medical equipment and supplies
+cpi:i:c:r,3,,Recreation commodities
+cpi:i:c:r:a,4,,Video and audio products
+cpi:i:c:r:a:t,5,,Televisions
+cpi:i:c:r:a:o,5,,Other video equipment
+cpi:i:c:r:a:a,5,,Audio equipment
+cpi:i:c:r:a:m,5,,Recorded music and music subscriptions
+cpi:i:c:r:p,4,,Pets and pet products
+cpi:i:c:r:p:f,5,,Pet food
+cpi:i:c:r:p:s,5,,"Purchase of pets, pet supplies, accessories"
+cpi:i:c:r:s,4,,Sporting goods
+cpi:i:c:r:s:v,5,,Sports vehicles including bicycles
+cpi:i:c:r:s:e,5,,Sports equipment
+cpi:i:c:r:d,4,,Photographic equipment and supplies
+cpi:i:c:r:d:e,5,,Photographic equipment
+cpi:i:c:r:r,4,,Recreational reading materials
+cpi:i:c:r:r:n,5,,Newspapers and magazines
+cpi:i:c:r:r:b,5,,Recreational books
+cpi:i:c:r:o,4,,Other recreational goods
+cpi:i:c:r:o:t,5,,Toys
+cpi:i:c:r:o:t:g,6,,"Toys, games, hobbies and playground equipment"
+cpi:i:c:r:o:s,5,,"Sewing machines, fabric and supplies"
+cpi:i:c:r:o:m,5,,Music instruments and accessories
+cpi:i:c:e,3,,Education and communication commodities
+cpi:i:c:e:b,4,,Educational books and supplies
+cpi:i:c:e:b:c,5,,College textbooks
+cpi:i:c:e:i,4,,Information technology commodities
+cpi:i:c:e:i:c,5,,"Computers, peripherals, and smart home assistants"
+cpi:i:c:e:i:s,5,,Computer software and accessories
+cpi:i:c:e:i:t,5,,"Telephone hardware, calculators, and other consumer information items"
+cpi:i:c:d,3,,Alcoholic beverages
+cpi:i:c:d:h,4,,Alcoholic beverages at home
+cpi:i:c:d:h:b,5,,"Beer, ale, and other malt beverages at home"
+cpi:i:c:d:h:s,5,,Distilled spirits at home
+cpi:i:c:d:h:s:w,6,,Whiskey at home
+cpi:i:c:d:h:s:o,6,,"Distilled spirits, excluding whiskey, at home"
+cpi:i:c:d:h:w,5,,Wine at home
+cpi:i:c:d:a,4,,Alcoholic beverages away from home
+cpi:i:c:d:a:b,5,,"Beer, ale, and other malt beverages away from home"
+cpi:i:c:d:a:w,5,,Wine away from home
+cpi:i:c:d:a:s,5,,Distilled spirits away from home
+cpi:i:c:o,3,,Other goods
+cpi:i:c:o:t,4,,Tobacco and smoking products
+cpi:i:c:o:t:c,5,,Cigarettes
+cpi:i:c:o:t:o,5,,Tobacco products other than cigarettes
+cpi:i:c:o:p,4,,Personal care products
+cpi:i:c:o:p:h,5,,"Hair, dental, shaving, and miscellaneous personal care products"
+cpi:i:c:o:p:c,5,,"Cosmetics, perfume, bath, nail preparations and implements"
+cpi:i:c:o:o,4,,Miscellaneous personal goods
+cpi:i:c:o:o:s,5,,"Stationery, stationery supplies, gift wrap"
+cpi:i:s,2,,Services less energy services
+cpi:i:s:s,3,,Shelter
+cpi:i:s:s:r,4,,Rent of shelter
+cpi:i:s:s:r:p,5,,Rent of primary residence
+cpi:i:s:s:r:a,5,,Lodging away from home
+cpi:i:s:s:r:a:s,6,,"Housing at school, excluding board"
+cpi:i:s:s:r:a:o,6,,Other lodging away from home including hotels and motels
+cpi:i:s:s:r:r,5,,Owners' equivalent rent of residences
+cpi:i:s:s:r:r:p,6,,Owners' equivalent rent of primary residence
+cpi:i:s:s:r:i,5,,Tenants' and household insurance
+cpi:i:s:w,3,,Water and sewer and trash collection services
+cpi:i:s:w:m,4,,Water and sewerage maintenance
+cpi:i:s:w:g,4,,Garbage and trash collection
+cpi:i:s:h,3,,Household operations
+cpi:i:s:h:d,4,,Domestic services
+cpi:i:s:h:g,4,,Gardening and lawncare services
+cpi:i:s:h:m,4,,"Moving, storage, freight expense"
+cpi:i:s:h:r,4,,Repair of household items
+cpi:i:s:m,3,,Medical care services
+cpi:i:s:m:p,4,,Professional services
+cpi:i:s:m:p:p,5,,Physicians' services
+cpi:i:s:m:p:d,5,,Dental services
+cpi:i:s:m:p:e,5,,Eyeglasses and eye care
+cpi:i:s:m:p:o,5,,Services by other medical professionals
+cpi:i:s:m:h,4,,Hospital and related services
+cpi:i:s:m:h:h,5,,Hospital services
+cpi:i:s:m:h:h:i,6,,Inpatient hospital services
+cpi:i:s:m:h:h:o,6,,Outpatient hospital services
+cpi:i:s:m:h:n,5,,Nursing homes and adult day services
+cpi:i:s:m:h:c,5,,Care of invalids and elderly at home
+cpi:i:s:m:i,4,,Health insurance
+cpi:i:s:t,3,,Transportation services
+cpi:i:s:t:l,4,,Leased cars and trucks
+cpi:i:s:t:l:c,4,,Car and truck rental
+cpi:i:s:t:l:r,4,,Motor vehicle maintenance and repair
+cpi:i:s:t:l:r:b,5,,Motor vehicle body work
+cpi:i:s:t:l:r:m,5,,Motor vehicle maintenance and servicing
+cpi:i:s:t:l:r:r,5,,Motor vehicle repair
+cpi:i:s:t:l:i,4,,Motor vehicle insurance
+cpi:i:s:t:l:f,4,,Motor vehicle fees
+cpi:i:s:t:l:s,5,,State motor vehicle registration and license fees
+cpi:i:s:t:l:p,5,,Parking and other fees
+cpi:i:s:t:l:p:f,6,,Parking fees and tolls
+cpi:i:s:t:p,4,,Public transportation
+cpi:i:s:t:p:a,5,,Airline fares
+cpi:i:s:t:p:o,5,,Other intercity transportation
+cpi:i:s:t:p:o:s,6,,Ship fare
+cpi:i:s:t:p:l,5,,Intracity transportation
+cpi:i:s:t:p:l:m,6,,Intracity mass transit
+cpi:i:s:r,3,,Recreation services
+cpi:i:s:r:a,4,,Video and audio services
+cpi:i:s:r:a:c,5,,Cable and satellite television service
+cpi:i:s:r:a:v,5,,"Video discs and other media, including rental of video"
+cpi:i:s:r:a:v:d,6,,Video discs and other media
+cpi:i:s:r:a:v:r,6,,Rental of video discs and other media
+cpi:i:s:r:p,4,,Pet services including veterinary
+cpi:i:s:r:p:v,5,,Veterinarian services
+cpi:i:s:r:d,4,,Photographers and photo processing
+cpi:i:s:r:o,4,,Other recreation services
+cpi:i:s:r:o:c,5,,"Club membership for shopping clubs, fraternal, or other organizations, or participant sports fees"
+cpi:i:s:r:o:a,5,,Admissions
+cpi:i:s:r:o:a:m,6,,"Admission to movies, theaters, and concerts"
+cpi:i:s:r:o:a:s,6,,Admission to sporting events
+cpi:i:s:r:o:a:f,5,,Fees for lessons or instructions
+cpi:i:s:e,3,,Education and communication services
+cpi:i:s:e:t,4,,"Tuition, other school fees, and childcare"
+cpi:i:s:e:t:c,5,,College tuition and fees
+cpi:i:s:e:t:e,5,,Elementary and high school tuition and fees
+cpi:i:s:e:t:d,5,,Day care and preschool
+cpi:i:s:e:t:t,5,,Technical and business school tuition and fees
+cpi:i:s:e:d,4,,Postage and delivery services
+cpi:i:s:e:d:p,5,,Postage
+cpi:i:s:e:d:d,5,,Delivery services
+cpi:i:s:e:p,4,,Telephone services
+cpi:i:s:e:p:w,5,,Wireless telephone services
+cpi:i:s:e:p:l,5,,Land-line telephone services
+cpi:i:s:e:i,4,,Internet services and electronic information providers
+cpi:i:s:o,3,,Other personal services
+cpi:i:s:o:p,4,,Personal care services
+cpi:i:s:o:p:h,5,,Haircuts and other personal care services
+cpi:i:s:o:m,4,,Miscellaneous personal services
+cpi:i:s:o:m:l,5,,Legal services
+cpi:i:s:o:m:f,5,,Funeral expenses
+cpi:i:s:o:m:c,5,,Laundry and dry cleaning services
+cpi:i:s:o:m:a,5,,Apparel services other than laundry and dry cleaning
+cpi:i:s:o:m:i,5,,Financial services
+cpi:i:s:o:m:i:c,6,,Checking account and other bank services
+cpi:i:s:o:m:i:t,6,,Tax return preparation and other accounting fees
