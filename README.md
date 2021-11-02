@@ -98,7 +98,7 @@ With the exception of the re-indexing method, all transformations accept `n` and
 
 
 ## visualization
-There is a plotting module built into `edan` which specializes in working with the hierarchical data that defines its tables. It was built with the aforementioned data transformations in mind, so any desired alterations above are seamlessly incorporated into the plotting functionality. A few examples and the code used to generate them follow:
+There is a plotting module built into `edan` which specializes in working with the hierarchical data that defines its tables. It was built with the aforementioned data transformations in mind, so any desired alterations above are seamlessly incorporated into the plotting functionality. In addition to the custom `edan` palette, a number of common plotting styles are built-in, including the Financial Times, the Bloomberg Terminal, the Economist, and the IMF (not pictured). A few examples and the code used to generate them follow:
 ```python
 import edan
 import edan.plotting as plt # wrapper of matplotlib.pyplot
@@ -114,6 +114,7 @@ gdp.plot(
 ![GDP Levels](https://github.com/hotzsauce/edan/blob/main/readme_figs/gdp_level.png?raw=true)
 
 
+The plotting package is still a work in progress while things more salient to economics are being worked on, as seen in the overlapping legend entries here:
 ```python
 ces_table = edan.ces.CESTable
 serv = ces_table['ces:p:s']
